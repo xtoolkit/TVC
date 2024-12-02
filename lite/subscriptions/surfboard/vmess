@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇳CN | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 7 = vmess, workers.dev, 443, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = 1, vmess-aead = false, ws-path = /glweidf.sbs/linkws, ws-headers = Host:"fragrant-heart-c94b.fticrh.workers.dev", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 7 = vmess, 104.21.238.3, 2086, username = bc65fac2-7dc7-426f-acdd-0779a5035bde, ws = true, tls = , vmess-aead = false, ws-path = github.com/Alvin9999, ws-headers = Host:"p1.613055.xyz", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 8 = vmess, workers.dev, 443, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = 1, vmess-aead = false, ws-path = /glweidf.sbs/linkws, ws-headers = Host:"fragrant-heart-c94b.fticrh.workers.dev", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7
-URL-TEST = url-test,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7
-FALLBACK = fallback,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7
+MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7,🇺🇸US | 🟢 | vmess | @Hope_Net | 8
+URL-TEST = url-test,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7,🇺🇸US | 🟢 | vmess | @Hope_Net | 8
+FALLBACK = fallback,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7,🇺🇸US | 🟢 | vmess | @Hope_Net | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
