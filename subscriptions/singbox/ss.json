@@ -106,16 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇦🇪AE | 🟢 | ss | @kingofilter | 0",
-                "🇧🇭BH | 🟢 | ss | @kingofilter | 7"
+                "🇵🇱PL | 🟢 | ss | @hcv2ray | 2",
+                "🇦🇪AE | 🟢 | ss | @kingofilter | 1",
+                "🇧🇭BH | 🟢 | ss | @kingofilter | 8"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇦🇪AE | 🟢 | ss | @kingofilter | 0",
-                "🇧🇭BH | 🟢 | ss | @kingofilter | 7"
+                "🇵🇱PL | 🟢 | ss | @hcv2ray | 2",
+                "🇦🇪AE | 🟢 | ss | @kingofilter | 1",
+                "🇧🇭BH | 🟢 | ss | @kingofilter | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,7 +140,17 @@
             "type": "dns"
         },
         {
-            "tag": "🇦🇪AE | 🟢 | ss | @kingofilter | 0",
+            "tag": "🇵🇱PL | 🟢 | ss | @hcv2ray | 2",
+            "type": "shadowsocks",
+            "server": "51.77.53.200",
+            "server_port": 7307,
+            "method": "aes-256-gcm",
+            "password": "FoOiGlkAA9yPEGP",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇦🇪AE | 🟢 | ss | @kingofilter | 1",
             "type": "shadowsocks",
             "server": "api.namasha.co",
             "server_port": 443,
@@ -148,7 +160,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇧🇭BH | 🟢 | ss | @kingofilter | 7",
+            "tag": "🇧🇭BH | 🟢 | ss | @kingofilter | 8",
             "type": "shadowsocks",
             "server": "series-a2-me.varzesh360.co",
             "server_port": 443,
