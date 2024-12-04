@@ -112,8 +112,8 @@
                 "🇮🇷IR | 🟢 | vmess | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 1",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 2"
+                "❔XX | 🟢 | vmess | @Hope_Net | 0",
+                "❔XX | 🟢 | vmess | @Hope_Net | 1"
             ]
         },
         {
@@ -126,8 +126,8 @@
                 "🇮🇷IR | 🟢 | vmess | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 1",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 2"
+                "❔XX | 🟢 | vmess | @Hope_Net | 0",
+                "❔XX | 🟢 | vmess | @Hope_Net | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -293,6 +293,23 @@
             }
         },
         {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 0",
+            "type": "vmess",
+            "server": "127.0.0.1",
+            "server_port": 1080,
+            "uuid": "acbcbaa-cbaa-acab-cdab-abccabbabacc",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 1",
             "type": "vmess",
             "server": "127.0.0.1",
@@ -307,30 +324,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇭🇰HK | 🟢 | vmess | @Hope_Net | 2",
-            "type": "vmess",
-            "server": "34.96.138.169",
-            "server_port": 55347,
-            "uuid": "fc7eb111-1292-4706-f4fb-afba1958924c",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
             }
         }
     ],
