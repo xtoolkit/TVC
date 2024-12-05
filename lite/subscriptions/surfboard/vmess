@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇷🇺RU | 🟢 | vmess | @ConfigsHUB | 12 = vmess, 176.32.33.100, 9668, username = 4c2a34ca-2da7-4c5c-9d74-6a3b0b586a47, ws = true, tls = , vmess-aead = true, ws-path = , ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇨🇳CN | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4
-URL-TEST = url-test,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4
-FALLBACK = fallback,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4
+MANUAL = select,URL-TEST,FALLBACK,🇷🇺RU | 🟢 | vmess | @ConfigsHUB | 12,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4
+URL-TEST = url-test,🇷🇺RU | 🟢 | vmess | @ConfigsHUB | 12,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4
+FALLBACK = fallback,🇷🇺RU | 🟢 | vmess | @ConfigsHUB | 12,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
