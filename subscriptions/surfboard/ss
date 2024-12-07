@@ -12,10 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇦🇪AE | 🟢 | ss | @VmessProtocol | 5 = ss, api.namasha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
+🇬🇧GB | 🟢 | ss | @kingofilter | 2 = ss, 109.120.186.9, 23022, encrypt-method = chacha20-ietf-poly1305, password = s#W0tqg%@N
+🇧🇭BH | 🟢 | ss | @kingofilter | 16 = ss, series-a2-me.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = Bog0ELmMM9DSxDdQ
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇦🇪AE | 🟢 | ss | @VmessProtocol | 5
-URL-TEST = url-test,🇦🇪AE | 🟢 | ss | @VmessProtocol | 5
-FALLBACK = fallback,🇦🇪AE | 🟢 | ss | @VmessProtocol | 5
+MANUAL = select,URL-TEST,FALLBACK,🇦🇪AE | 🟢 | ss | @VmessProtocol | 5,🇬🇧GB | 🟢 | ss | @kingofilter | 2,🇧🇭BH | 🟢 | ss | @kingofilter | 16
+URL-TEST = url-test,🇦🇪AE | 🟢 | ss | @VmessProtocol | 5,🇬🇧GB | 🟢 | ss | @kingofilter | 2,🇧🇭BH | 🟢 | ss | @kingofilter | 16
+FALLBACK = fallback,🇦🇪AE | 🟢 | ss | @VmessProtocol | 5,🇬🇧GB | 🟢 | ss | @kingofilter | 2,🇧🇭BH | 🟢 | ss | @kingofilter | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
