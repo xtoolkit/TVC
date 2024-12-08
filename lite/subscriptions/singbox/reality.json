@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
-                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 15",
+                "🇺🇸US | 🟢 | vless | @VmessProtocol | 15",
+                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 16",
                 "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -118,7 +119,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
-                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 15",
+                "🇺🇸US | 🟢 | vless | @VmessProtocol | 15",
+                "🇳🇱NL | 🟢 | vless | @VmessProtocol | 16",
                 "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -173,7 +175,36 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @VmessProtocol | 15",
+            "tag": "🇺🇸US | 🟢 | vless | @VmessProtocol | 15",
+            "type": "vless",
+            "server": "129.146.190.225",
+            "server_port": 18443,
+            "uuid": "fd921cf3-c900-42be-97c5-347a50abf76e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.tesla.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8233FxCRw1a_aCJ8d1HwHBMD_fABUNNW7rsrFe3vK0s",
+                    "short_id": "e6658462"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @VmessProtocol | 16",
             "type": "vless",
             "server": "51.158.243.62",
             "server_port": 443,
