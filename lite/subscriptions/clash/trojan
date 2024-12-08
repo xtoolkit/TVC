@@ -118,43 +118,43 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16","type":"trojan","server":"52.47.199.255","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17","type":"trojan","server":"15.237.230.200","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇺🇸US | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"3.128.185.122","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇨🇦CA | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"15.157.245.45","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇷🇺RU | 🔴 | trojan | @VmessProtocol | 16","type":"trojan","server":"get.fragmentary.info","port":443,"udp":false,"password":"PU3f7528NtNXnQqb9X263rGSD","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"get.fragmentary.info"}
+  - {"name":"🇬🇧GB | 🟢 | trojan | @PrivateVPNs | 16","type":"trojan","server":"18.133.41.102","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇬🇧GB | 🟢 | trojan | @PrivateVPNs | 17","type":"trojan","server":"52.56.222.154","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇺🇸US | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"18.216.74.101","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇺🇸US | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"3.128.185.122","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇷🇺RU | 🔴 | trojan | @VmessProtocol | 17","type":"trojan","server":"get.fragmentary.info","port":443,"udp":false,"password":"PU3f7528NtNXnQqb9X263rGSD","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"get.fragmentary.info"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17'
+      - '🇬🇧GB | 🟢 | trojan | @PrivateVPNs | 16'
+      - '🇬🇧GB | 🟢 | trojan | @PrivateVPNs | 17'
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
-      - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 17'
-      - '🇷🇺RU | 🔴 | trojan | @VmessProtocol | 16'
+      - '🇺🇸US | 🟢 | trojan | @DirectVPN | 17'
+      - '🇷🇺RU | 🔴 | trojan | @VmessProtocol | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17'
+      - '🇬🇧GB | 🟢 | trojan | @PrivateVPNs | 16'
+      - '🇬🇧GB | 🟢 | trojan | @PrivateVPNs | 17'
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
-      - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 17'
-      - '🇷🇺RU | 🔴 | trojan | @VmessProtocol | 16'
+      - '🇺🇸US | 🟢 | trojan | @DirectVPN | 17'
+      - '🇷🇺RU | 🔴 | trojan | @VmessProtocol | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 17'
+      - '🇬🇧GB | 🟢 | trojan | @PrivateVPNs | 16'
+      - '🇬🇧GB | 🟢 | trojan | @PrivateVPNs | 17'
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
-      - '🇨🇦CA | 🟢 | trojan | @DirectVPN | 17'
-      - '🇷🇺RU | 🔴 | trojan | @VmessProtocol | 16'
+      - '🇺🇸US | 🟢 | trojan | @DirectVPN | 17'
+      - '🇷🇺RU | 🔴 | trojan | @VmessProtocol | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
