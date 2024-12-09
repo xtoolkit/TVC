@@ -107,15 +107,15 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇭🇰HK | 🟢 | vmess | @mftizi | 18",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 23",
                 "❔XX | 🟢 | vmess | @customv2ray | 24",
                 "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 7",
                 "🇮🇷IR | 🟢 | vmess | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7"
+                "🇲🇽MX | 🟢 | vmess | @Hope_Net | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 6"
             ]
         },
         {
@@ -123,15 +123,15 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇭🇰HK | 🟢 | vmess | @mftizi | 18",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇺🇸US | 🟢 | vmess | @customv2ray | 23",
                 "❔XX | 🟢 | vmess | @customv2ray | 24",
                 "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 7",
                 "🇮🇷IR | 🟢 | vmess | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7"
+                "🇲🇽MX | 🟢 | vmess | @Hope_Net | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -156,9 +156,9 @@
         {
             "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
             "type": "vmess",
-            "server": "d.baodesign.top",
-            "server_port": 25004,
-            "uuid": "ba2e86ee-65fc-4b4e-97c7-165b5b64023b",
+            "server": "z3.fragranceninja.com",
+            "server_port": 12959,
+            "uuid": "a32313ad-5e39-4f9a-9cad-512041790050",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -168,14 +168,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "z3.fragranceninja.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "z3.fragranceninja.com"
+                }
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vmess | @mftizi | 18",
+            "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
             "type": "vmess",
-            "server": "143.92.42.65",
-            "server_port": 2902,
-            "uuid": "640c1077-d10b-4225-a9fb-d3e9c3ce7a00",
+            "server": "d.baodesign.top",
+            "server_port": 25004,
+            "uuid": "ba2e86ee-65fc-4b4e-97c7-165b5b64023b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -328,11 +345,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
+            "tag": "🇲🇽MX | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "caacbab-aabc-bcaa-adcb-aabaccbbccab",
+            "server": "79.127.229.54",
+            "server_port": 18000,
+            "uuid": "fa1897db-1925-4c86-a495-939a959af900",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -345,11 +362,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
             "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "caababc-baac-acab-bdca-baacbbacabcc",
+            "server_port": 8080,
+            "uuid": "caacbab-aabc-bcaa-adcb-aabaccbbccab",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
