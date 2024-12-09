@@ -126,6 +126,7 @@
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 15",
                 "🇳🇱NL | 🟢 | vless | @VmessProtocol | 16",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 9",
@@ -168,6 +169,7 @@
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 15",
                 "🇳🇱NL | 🟢 | vless | @VmessProtocol | 16",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 9",
@@ -751,6 +753,42 @@
                     "public_key": "1gKloUYtea1EJfBcatiTkmJVdCbb6SfVrnL6Lz-RYj0",
                     "short_id": "42"
                 }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 1",
+            "type": "vless",
+            "server": "109.207.172.223",
+            "server_port": 8443,
+            "uuid": "bb841267-9b32-4c2f-90bd-2929541bc314",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0UslOEYP-RXX7kOiWtEs7oMEHvJZrqILf2Fl-nCoPE4",
+                    "short_id": "12d1c921"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "JoinBadeChannel@antimeli",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
