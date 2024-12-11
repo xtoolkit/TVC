@@ -12,10 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 17 = ss, series-a2.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = W74XFALLLuw6m5IA
+🇦🇪AE | 🟢 | ss | @VmessProtocol | 13 = ss, series-a2-mec.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 17
-URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 17
-FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 17
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 17,🇦🇪AE | 🟢 | ss | @VmessProtocol | 13
+URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 17,🇦🇪AE | 🟢 | ss | @VmessProtocol | 13
+FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 17,🇦🇪AE | 🟢 | ss | @VmessProtocol | 13
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
