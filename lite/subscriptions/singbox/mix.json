@@ -154,13 +154,13 @@
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 234",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 235",
-                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 14",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 15",
+                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 16",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 0",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 4",
-                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 8",
                 "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 8",
@@ -230,13 +230,13 @@
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 234",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 235",
-                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 14",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 15",
+                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 16",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 0",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 4",
-                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 8",
                 "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 8",
@@ -1439,45 +1439,11 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 14",
-            "type": "vmess",
-            "server": "hms24.ivideos.sbs",
-            "server_port": 443,
-            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ivideos.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": "ivideos.sbs"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 15",
+            "tag": "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 16",
             "type": "vless",
-            "server": "EXPRESSVPN_420.fast.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "0fb47308-da7c-4b51-88e8-41bcc9d2a49f",
+            "server": "185.146.173.58",
+            "server_port": 8080,
+            "uuid": "ef4def1d-a5e3-4f4a-86fc-6de8505514e4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1487,9 +1453,40 @@
             },
             "transport": {
                 "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "185.146.173.58"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+            "type": "vless",
+            "server": "mio.splashthat.com",
+            "server_port": 443,
+            "uuid": "0fb47308-da7c-4b51-88e8-41bcc9d2a49f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "live.skornorth.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
                 "path": "\/@EXPRESSVPN_420------@EXPRESSVPN_420------@EXPRESSVPN_420------@EXPRESSVPN_420------@EXPRESSVPN_420------@EXPRESSVPN_420------@EXPRESSVPN_420------@EXPRESSVPN_420------@EXPRESSVPN_420",
                 "headers": {
-                    "Host": "EXPRESSVPN_420.fast.hosting-ip.com"
+                    "Host": "live.skornorth.com"
                 }
             }
         },
@@ -1583,7 +1580,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 1080,
@@ -1600,7 +1597,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "🇩🇪DE | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
             "server": "45.159.219.89",
             "server_port": 2082,
