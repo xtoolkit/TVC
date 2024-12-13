@@ -153,8 +153,10 @@ proxies:
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 13","type":"trojan","server":"35.180.16.11","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"15.188.17.168","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"13.50.204.192","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 9","type":"trojan","server":"18.163.113.200","port":45476,"udp":false,"password":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"hk12.bilibili.com"}
-  - {"name":"🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 11","type":"trojan","server":"134.195.196.138","port":443,"udp":false,"password":"f0eb8c92ce8946aaba856569cff1a16b","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"avianrecruit.com"}
+  - {"name":"🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 3","type":"trojan","server":"218.190.230.207","port":49364,"udp":false,"password":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"hk12.bilibili.com"}
+  - {"name":"🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 4","type":"trojan","server":"18.162.123.249","port":48539,"udp":false,"password":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"hk12.bilibili.com"}
+  - {"name":"🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 15","type":"trojan","server":"18.163.113.200","port":45476,"udp":false,"password":"aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"hk12.bilibili.com"}
+  - {"name":"🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 17","type":"trojan","server":"134.195.196.138","port":443,"udp":false,"password":"f0eb8c92ce8946aaba856569cff1a16b","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"avianrecruit.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -194,8 +196,10 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
-      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 9'
-      - '🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 11'
+      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 3'
+      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 4'
+      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 15'
+      - '🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -235,8 +239,10 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
-      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 9'
-      - '🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 11'
+      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 3'
+      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 4'
+      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 15'
+      - '🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -275,8 +281,10 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
-      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 9'
-      - '🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 11'
+      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 3'
+      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 4'
+      - '🇭🇰HK | 🔴 | trojan | @ConfigsHUB | 15'
+      - '🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 17'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
