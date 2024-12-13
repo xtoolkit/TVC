@@ -108,10 +108,11 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇲🇽MX | 🟢 | vmess | @v2ray1_ng | 7",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8"
             ]
         },
         {
@@ -120,10 +121,11 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇲🇽MX | 🟢 | vmess | @v2ray1_ng | 7",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -197,6 +199,23 @@
             }
         },
         {
+            "tag": "🇲🇽MX | 🟢 | vmess | @v2ray1_ng | 7",
+            "type": "vmess",
+            "server": "79.127.229.54",
+            "server_port": 18000,
+            "uuid": "fa1897db-1925-4c86-a495-939a959af900",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
             "type": "vmess",
             "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
@@ -255,11 +274,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "aabbcac-aacb-caba-dcba-baabccbcabca",
+            "server": "104.18.114.158",
+            "server_port": 2086,
+            "uuid": "7d92ffc9-02e1-4087-8a46-cc4d76560917",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -269,14 +288,21 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "104.18.114.158"
+                }
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "172.67.68.87",
-            "server_port": 8443,
-            "uuid": "a617b227-028b-420f-928f-e8c9ca551346",
+            "server": "hk1.tiljkc.top",
+            "server_port": 41002,
+            "uuid": "edd1ca31-bdf4-377e-bc3a-76635a33c9cd",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -289,7 +315,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "recordemailprevent.tickespace.ir",
+                "server_name": "hk1.tiljkc.top",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -298,11 +324,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/ordemailpr?@TEHRANARGO-@TEHRANARGO?ed=2560",
-                "headers": {
-                    "Host": "recordemailprevent.tickespace.ir"
-                }
+                "type": "http",
+                "host": [
+                    "hk1.tiljkc.top"
+                ],
+                "path": "\/"
             }
         }
     ],
