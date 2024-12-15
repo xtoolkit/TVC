@@ -151,8 +151,8 @@
                 "🇮🇷IR | 🔴 | vless | @proxystore11 | 2",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 3",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 8",
+                "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 4",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 5",
-                "🇳🇱NL | 🔴 | vless | @Outlinev2rayNG | 6",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 9",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 11",
@@ -216,8 +216,8 @@
                 "🇮🇷IR | 🔴 | vless | @proxystore11 | 2",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 3",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 8",
+                "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 4",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 5",
-                "🇳🇱NL | 🔴 | vless | @Outlinev2rayNG | 6",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 9",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 11",
@@ -1385,6 +1385,37 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 4",
+            "type": "vless",
+            "server": "de04.abvpn.ru",
+            "server_port": 443,
+            "uuid": "b6cdcef0-b61b-424d-81f8-41e40e762dde",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "de04.abvpn.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/websocket",
+                "headers": {
+                    "Host": "de04.abvpn.ru"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 5",
             "type": "vless",
             "server": "nufilter.fastly80-3.hosting-ip.com",
@@ -1403,37 +1434,6 @@
                 "headers": {
                     "Host": "nufilter.fastly80-3.hosting-ip.com"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @Outlinev2rayNG | 6",
-            "type": "vless",
-            "server": "45.149.12.119",
-            "server_port": 8443,
-            "uuid": "f988794c-cdb2-4842-b604-06e65cf6d040",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "societshaia7rysv.aminho3ien.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@iMrV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
