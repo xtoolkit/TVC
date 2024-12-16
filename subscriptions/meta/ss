@@ -124,9 +124,10 @@ proxies:
   - {"name":"🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 5","type":"ss","server":"81.19.141.45","port":52873,"password":"MCmbgTkHK76GKk7H66VZHS","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | 🟢 | ss | @VmessProtocol | 3","type":"ss","server":"142.4.216.225","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇴NO | 🟢 | ss | @VmessProtocol | 6","type":"ss","server":"51.13.114.127","port":60356,"password":"95JrBoQ4TdkeYgPzeDHVju","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 0","type":"ss","server":"52.237.155.68","port":443,"password":"mzyYriPYYnCWDxoy","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇦🇪AE | 🟢 | ss | @kingofilter | 6","type":"ss","server":"api.namasha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 12","type":"ss","server":"109.120.186.9","port":23022,"password":"s#W0tqg%@N","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 0","type":"ss","server":"freakconfig27.usecharge.ir","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 1","type":"ss","server":"52.237.155.68","port":443,"password":"mzyYriPYYnCWDxoy","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇦🇪AE | 🟢 | ss | @kingofilter | 7","type":"ss","server":"api.namasha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 13","type":"ss","server":"109.120.186.9","port":23022,"password":"s#W0tqg%@N","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -137,9 +138,10 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 5'
       - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 3'
       - '🇳🇴NO | 🟢 | ss | @VmessProtocol | 6'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 0'
-      - '🇦🇪AE | 🟢 | ss | @kingofilter | 6'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 12'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 0'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 1'
+      - '🇦🇪AE | 🟢 | ss | @kingofilter | 7'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -150,9 +152,10 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 5'
       - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 3'
       - '🇳🇴NO | 🟢 | ss | @VmessProtocol | 6'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 0'
-      - '🇦🇪AE | 🟢 | ss | @kingofilter | 6'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 12'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 0'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 1'
+      - '🇦🇪AE | 🟢 | ss | @kingofilter | 7'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -162,9 +165,10 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 5'
       - '🇨🇦CA | 🟢 | ss | @VmessProtocol | 3'
       - '🇳🇴NO | 🟢 | ss | @VmessProtocol | 6'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 0'
-      - '🇦🇪AE | 🟢 | ss | @kingofilter | 6'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 12'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 0'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 1'
+      - '🇦🇪AE | 🟢 | ss | @kingofilter | 7'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 13'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
