@@ -111,7 +111,7 @@
                 "🇨🇦CA | 🔴 | vless | @XsV2ray | 13",
                 "🇨🇦CA | 🔴 | vless | @XsV2ray | 14",
                 "🇸🇪SE | 🔴 | vless | @VlessConfig | 18",
-                "🇮🇪IE | 🔴 | vless | @VlessConfig | 19",
+                "🇸🇪SE | 🔴 | vless | @VlessConfig | 19",
                 "🇺🇸US | 🔴 | vless | @ipV2Ray | 19",
                 "🇺🇸US | 🔴 | vless | @ipV2Ray | 20",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 14",
@@ -155,9 +155,9 @@
                 "🇦🇹AT | 🔴 | vless | @Outlinev2rayNG | 5",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 10",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 11",
-                "🇺🇸US | 🔴 | vless | @mehrosaboran | 13",
-                "🇺🇸US | 🔴 | vless | @mehrosaboran | 14",
-                "🇺🇸US | 🔴 | vless | @nofiltering2 | 15",
+                "🇩🇪DE | 🟢 | vless | @mehrosaboran | 11",
+                "🇺🇸US | 🔴 | vless | @mehrosaboran | 12",
+                "🇺🇸US | 🟢 | vless | @nofiltering2 | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇺🇸US | 🔴 | vless | @kingofilter | 15",
@@ -176,7 +176,7 @@
                 "🇨🇦CA | 🔴 | vless | @XsV2ray | 13",
                 "🇨🇦CA | 🔴 | vless | @XsV2ray | 14",
                 "🇸🇪SE | 🔴 | vless | @VlessConfig | 18",
-                "🇮🇪IE | 🔴 | vless | @VlessConfig | 19",
+                "🇸🇪SE | 🔴 | vless | @VlessConfig | 19",
                 "🇺🇸US | 🔴 | vless | @ipV2Ray | 19",
                 "🇺🇸US | 🔴 | vless | @ipV2Ray | 20",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 14",
@@ -220,9 +220,9 @@
                 "🇦🇹AT | 🔴 | vless | @Outlinev2rayNG | 5",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 10",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 11",
-                "🇺🇸US | 🔴 | vless | @mehrosaboran | 13",
-                "🇺🇸US | 🔴 | vless | @mehrosaboran | 14",
-                "🇺🇸US | 🔴 | vless | @nofiltering2 | 15",
+                "🇩🇪DE | 🟢 | vless | @mehrosaboran | 11",
+                "🇺🇸US | 🔴 | vless | @mehrosaboran | 12",
+                "🇺🇸US | 🟢 | vless | @nofiltering2 | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇺🇸US | 🔴 | vless | @kingofilter | 15",
@@ -344,7 +344,7 @@
         {
             "tag": "🇸🇪SE | 🔴 | vless | @VlessConfig | 18",
             "type": "vless",
-            "server": "13.50.91.33",
+            "server": "16.171.99.80",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -373,9 +373,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | 🔴 | vless | @VlessConfig | 19",
+            "tag": "🇸🇪SE | 🔴 | vless | @VlessConfig | 19",
             "type": "vless",
-            "server": "176.34.200.182",
+            "server": "13.50.91.33",
             "server_port": 22222,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -1450,32 +1450,40 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @mehrosaboran | 13",
+            "tag": "🇩🇪DE | 🟢 | vless | @mehrosaboran | 11",
             "type": "vless",
-            "server": "visa.org",
-            "server_port": 2052,
-            "uuid": "87df614d-ade5-4fef-90f9-5e7edcaf56f5",
-            "flow": "",
+            "server": "188.245.215.203",
+            "server_port": 101,
+            "uuid": "01221054-0b45-4525-b83a-548f4026a759",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "visa.org"
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8mTajmw3Mfksrm8IA9Wb7kahBw8a4TZcOw98c_EN0TU",
+                    "short_id": "95f9"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @mehrosaboran | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @mehrosaboran | 12",
             "type": "vless",
             "server": "live.skornorth.com",
             "server_port": 443,
-            "uuid": "6c64357e-a5f0-483e-a55a-bae80ae9c2f8",
+            "uuid": "tel--ZEDMODEON",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1495,18 +1503,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/@custom_config",
+                "path": "\/@ZEDMODEON-ZEDMODEON-ZEDMODEON@ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-@ZEDMODEON",
                 "headers": {
                     "Host": "live.skornorth.com"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @nofiltering2 | 15",
+            "tag": "🇺🇸US | 🟢 | vless | @nofiltering2 | 15",
             "type": "vless",
-            "server": "fastlyipcloudflaretamiz.fast.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "V2RAXX",
+            "server": "199.232.125.55",
+            "server_port": 443,
+            "uuid": "39aa4714-b4d4-4d98-a6f2-78835d93fab9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1514,11 +1522,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "E.L.E.N.A.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram,V2RAXX,Telegram,V2RAXX?ed=443",
+                "path": "\/",
                 "headers": {
-                    "Host": "fastlyipcloudflaretamiz.fast.hosting-ip.com"
+                    "Host": "E.L.E.N.A.ir"
                 }
             }
         },
