@@ -122,7 +122,6 @@ dns:
 proxies:
   - {"name":"🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13","type":"vless","server":"95.217.31.246","port":18929,"udp":true,"uuid":"4100d055-5857-44fb-9b7b-9d699dd4f347","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"testv6.tigervp.xyz","reality-opts":{"public-key":"rFZOWxVcsZn5--1yLku3SGglZ0Y2Ban0buZIN3-vFwU","short-id":"cfef326c"}}
   - {"name":"🇩🇪DE | 🟢 | vless | @VmessProtocol | 10","type":"vless","server":"130.61.234.225","port":50005,"udp":true,"uuid":"1960c7f5-2131-4e32-90b5-25e306e1b8d4","tls":true,"network":"tcp","client-fingerprint":"edge","servername":"www.python.org","flow":"xtls-rprx-vision","reality-opts":{"public-key":"qCaV2kI9Oxts987YzeFkyyQHMnJnd5YA1GJuAkRVImg","short-id":"19e5124d"}}
-  - {"name":"🇩🇪DE | 🟢 | vless | @mehrosaboran | 12","type":"vless","server":"188.245.215.203","port":101,"udp":true,"uuid":"01221054-0b45-4525-b83a-548f4026a759","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.speedtest.net","reality-opts":{"public-key":"8mTajmw3Mfksrm8IA9Wb7kahBw8a4TZcOw98c_EN0TU","short-id":"95f9"}}
   - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
 proxy-groups:
   - name: MANUAL
@@ -132,7 +131,6 @@ proxy-groups:
       - FALLBACK
       - '🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13'
       - '🇩🇪DE | 🟢 | vless | @VmessProtocol | 10'
-      - '🇩🇪DE | 🟢 | vless | @mehrosaboran | 12'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: URL-TEST
     type: url-test
@@ -142,7 +140,6 @@ proxy-groups:
     proxies:
       - '🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13'
       - '🇩🇪DE | 🟢 | vless | @VmessProtocol | 10'
-      - '🇩🇪DE | 🟢 | vless | @mehrosaboran | 12'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: FALLBACK
     type: fallback
@@ -151,7 +148,6 @@ proxy-groups:
     proxies:
       - '🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13'
       - '🇩🇪DE | 🟢 | vless | @VmessProtocol | 10'
-      - '🇩🇪DE | 🟢 | vless | @mehrosaboran | 12'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
