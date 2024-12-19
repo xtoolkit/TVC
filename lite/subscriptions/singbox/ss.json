@@ -105,13 +105,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇳🇴NO | 🟢 | ss | @VmessProtocol | 10"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇳🇴NO | 🟢 | ss | @VmessProtocol | 10"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +134,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇴NO | 🟢 | ss | @VmessProtocol | 10",
+            "type": "shadowsocks",
+            "server": "51.13.114.127",
+            "server_port": 60356,
+            "method": "chacha20-ietf-poly1305",
+            "password": "95JrBoQ4TdkeYgPzeDHVju",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
