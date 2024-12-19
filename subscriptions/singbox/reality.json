@@ -112,14 +112,14 @@
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇩🇪DE | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🟢 | vless | @V2rayCollectorDonate | 9",
-                "🇬🇧GB | 🟢 | vless | @prrofile_purple | 99",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 140",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 141",
                 "❔XX | 🔴 | vless | @customv2ray | 0",
                 "❔XX | 🔴 | vless | @customv2ray | 11",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 1",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 4",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 6",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
-                "🇸🇪SE | 🔴 | vless | @v2ray1_ng | 2",
                 "🇫🇷FR | 🟢 | vless | @VmessProtocol | 1",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 10",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
@@ -153,14 +153,14 @@
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
                 "🇩🇪DE | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🟢 | vless | @V2rayCollectorDonate | 9",
-                "🇬🇧GB | 🟢 | vless | @prrofile_purple | 99",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 140",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 141",
                 "❔XX | 🔴 | vless | @customv2ray | 0",
                 "❔XX | 🔴 | vless | @customv2ray | 11",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 1",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 4",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 6",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
-                "🇸🇪SE | 🔴 | vless | @v2ray1_ng | 2",
                 "🇫🇷FR | 🟢 | vless | @VmessProtocol | 1",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 10",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
@@ -399,11 +399,40 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @prrofile_purple | 99",
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 140",
             "type": "vless",
-            "server": "endev.postsafir.ir",
+            "server": "san.dornagamesco.ir",
             "server_port": 1623,
-            "uuid": "f34fd091-12f9-444e-81a2-9b45ee14d00f",
+            "uuid": "c7f1126c-0aec-4ded-aca4-1099ebe367fb",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "uGYj7gkQdNaabDVQZdbHeSVizGPrzj8YD5jdYm7stG0",
+                    "short_id": "3a622700e73c6642"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 141",
+            "type": "vless",
+            "server": "san.dornagamesco.ir",
+            "server_port": 1621,
+            "uuid": "c7f1126c-0aec-4ded-aca4-1099ebe367fb",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -553,42 +582,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🔴 | vless | @v2ray1_ng | 2",
-            "type": "vless",
-            "server": "172.234.116.15",
-            "server_port": 51397,
-            "uuid": "97404b2d-4e43-4c0a-9618-1a5950c2f28d",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "microsoft.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "28uZ75mfydPEN62yeCphBbtfGRRIz6kKLO5jZNRYGGM",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@zerov2shop",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
