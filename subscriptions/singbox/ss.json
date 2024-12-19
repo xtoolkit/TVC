@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇨🇦CA | 🟢 | ss | @VmessProtocol | 6",
                 "🇳🇴NO | 🟢 | ss | @VmessProtocol | 9",
                 "❔XX | 🟢 | ss | @kingofilter | 4",
@@ -118,6 +119,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇨🇦CA | 🟢 | ss | @VmessProtocol | 6",
                 "🇳🇴NO | 🟢 | ss | @VmessProtocol | 9",
                 "❔XX | 🟢 | ss | @kingofilter | 4",
@@ -144,6 +146,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+            "type": "shadowsocks",
+            "server": "45.87.175.166",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | 🟢 | ss | @VmessProtocol | 6",
