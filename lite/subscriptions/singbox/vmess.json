@@ -113,7 +113,8 @@
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇮🇳IN | 🟢 | vmess | @free1_vpn | 0",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8"
+                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9"
             ]
         },
         {
@@ -127,7 +128,8 @@
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇮🇳IN | 🟢 | vmess | @free1_vpn | 0",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8"
+                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -310,11 +312,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "ccaabab-abca-caba-dacb-cbcabbccaaab",
+            "server": "176.32.35.194",
+            "server_port": 31416,
+            "uuid": "bd66c443-193a-4f06-8708-3d31a8be9401",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -324,6 +326,47 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "176.32.35.194"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+            "type": "vmess",
+            "server": "104.18.150.157",
+            "server_port": 8443,
+            "uuid": "04bd72e7-87ec-416d-8f3b-b0fbbf023555",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "104.18.150.157",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/r7ir567fu",
+                "headers": {
+                    "Host": "104.18.150.157"
+                }
             }
         }
     ],
