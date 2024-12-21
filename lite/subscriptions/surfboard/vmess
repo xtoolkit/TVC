@@ -13,12 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇺🇸US | 🟢 | vmess | @proxystore11 | 1 = vmess, de01.tiktokcloud.us.kg, 443, username = a76c1300-65a2-4e3d-a6cd-89cb902419e5, ws = true, tls = 1, vmess-aead = true, ws-path = /de01, ws-headers = Host:"de01.tiktokcloud.us.kg", skip-cert-verify = true, tfo = false
 🇨🇳CN | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇨🇦CA | 🟢 | vmess | @Hope_Net | 8 = vmess, 141.195.112.167, 20503, username = d886fc45-1ba4-41f9-932a-cb6424a13d90, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-🇩🇪DE | 🟢 | vmess | @Hope_Net | 9 = vmess, 5.39.252.182, 47545, username = c87e2a89-f984-41f2-8f70-f666b89cfd12, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇨🇦CA | 🟢 | vmess | @Hope_Net | 10 = vmess, 141.195.112.167, 20503, username = d886fc45-1ba4-41f9-932a-cb6424a13d90, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @proxystore11 | 1,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 8,🇩🇪DE | 🟢 | vmess | @Hope_Net | 9
-URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @proxystore11 | 1,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 8,🇩🇪DE | 🟢 | vmess | @Hope_Net | 9
-FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @proxystore11 | 1,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 8,🇩🇪DE | 🟢 | vmess | @Hope_Net | 9
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @proxystore11 | 1,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 10
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @proxystore11 | 1,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 10
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @proxystore11 | 1,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 10
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
