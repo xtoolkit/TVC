@@ -106,8 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🔴 | vless | @ConfigsHUB | 13",
-                "🇮🇱IL | 🟢 | vless | @ConfigsHUB | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 16"
@@ -117,8 +115,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🔴 | vless | @ConfigsHUB | 13",
-                "🇮🇱IL | 🟢 | vless | @ConfigsHUB | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 16"
@@ -142,64 +138,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇷FR | 🔴 | vless | @ConfigsHUB | 13",
-            "type": "vless",
-            "server": "213.176.66.228",
-            "server_port": 37021,
-            "uuid": "6fe5c2b2-37d1-4497-a7f2-e4e0d3bce178",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Gk3eR3mV55k5P3tg-MzqMpNolmML8q9zBOf6A102e1Y",
-                    "short_id": "bc721eb6"
-                }
-            }
-        },
-        {
-            "tag": "🇮🇱IL | 🟢 | vless | @ConfigsHUB | 14",
-            "type": "vless",
-            "server": "ukr.kitten-tube.com",
-            "server_port": 443,
-            "uuid": "ce7b5e36-a3a0-4f61-af4d-6ca132f892c5",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YiRDigHR3yK8jv7iHPS4lSO6Drmw4tiZiKyGQ09tdCQ",
-                    "short_id": "42d68CBD"
-                }
-            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @vpn_go67 | 20",
