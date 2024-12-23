@@ -126,6 +126,9 @@
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 0",
                 "🇹🇼TW | 🔴 | vless | @VmessProtocol | 1",
                 "🇫🇷FR | 🟢 | vless | @VmessProtocol | 10",
+                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 0",
+                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 0",
                 "🇫🇮FI | 🔴 | vless | @nofiltering2 | 13",
@@ -172,6 +175,9 @@
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 0",
                 "🇹🇼TW | 🔴 | vless | @VmessProtocol | 1",
                 "🇫🇷FR | 🟢 | vless | @VmessProtocol | 10",
+                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 0",
+                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 0",
                 "🇫🇮FI | 🔴 | vless | @nofiltering2 | 13",
@@ -793,6 +799,107 @@
                     "enabled": true,
                     "public_key": "Gk3eR3mV55k5P3tg-MzqMpNolmML8q9zBOf6A102e1Y",
                     "short_id": "bc721eb6"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 0",
+            "type": "vless",
+            "server": "45.138.24.74",
+            "server_port": 8443,
+            "uuid": "64b56571-1f22-4479-85b5-63aebc28cea0",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "daLrAi9S3YY1Dapy8-3Wo_Lt4akOcmJqNhfJjMT5XCU",
+                    "short_id": "531b669cdbf7"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "JoinBadeChannel@antimeli",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 17",
+            "type": "vless",
+            "server": "37.27.3.97",
+            "server_port": 2052,
+            "uuid": "8fa898a3-789a-44d4-8bc5-d0c77e94fcc7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wordpress.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BamXEb50W1rXENIC96WfSvMiFGE7hnbu_GcXkBv-8H8",
+                    "short_id": "4156caa9"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2052vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "108.181.154.229",
+            "server_port": 443,
+            "uuid": "71b60539-19bf-4282-b09f-7596ffc3cc8b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "OPE-zPWEJovJzhxKqSRYw4p09xfk1H9aitvnyhPncRA",
+                    "short_id": "Aa04cAc3"
                 }
             }
         },
