@@ -108,13 +108,12 @@
                 "URL-TEST",
                 "❔XX | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "❔XX | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @ShadowProxy66 | 35",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @free1_vpn | 1",
                 "❔XX | 🟢 | vmess | @free1_vpn | 2",
-                "❔XX | 🟢 | vmess | @Hope_Net | 12",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13"
+                "❔XX | 🟢 | vmess | @Hope_Net | 11",
+                "❔XX | 🟢 | vmess | @Hope_Net | 12"
             ]
         },
         {
@@ -123,13 +122,12 @@
             "outbounds": [
                 "❔XX | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "❔XX | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @ShadowProxy66 | 35",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @free1_vpn | 1",
                 "❔XX | 🟢 | vmess | @free1_vpn | 2",
-                "❔XX | 🟢 | vmess | @Hope_Net | 12",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13"
+                "❔XX | 🟢 | vmess | @Hope_Net | 11",
+                "❔XX | 🟢 | vmess | @Hope_Net | 12"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -176,23 +174,6 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @ShadowProxy66 | 35",
-            "type": "vmess",
-            "server": "78.47.102.195",
-            "server_port": 44484,
-            "uuid": "8a2ce574-2b74-4f10-a28e-b6d852e3f725",
-            "security": "auto",
-            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -302,11 +283,28 @@
             }
         },
         {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 11",
+            "type": "vmess",
+            "server": "5.78.95.241",
+            "server_port": 39121,
+            "uuid": "1989c64a-74d1-44a9-bd91-13c9f4687cf0",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 12",
             "type": "vmess",
-            "server": "45.94.68.206",
-            "server_port": 35384,
-            "uuid": "b3e95701-dbd0-4a2f-a701-6ec815fb5ad2",
+            "server": "217.142.132.109",
+            "server_port": 23451,
+            "uuid": "2abe4c96-8542-48c5-b19d-9eec92586680",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -318,28 +316,11 @@
                 "max_streams": 32
             },
             "transport": {
-                "type": "http",
-                "host": [
-                    "45.94.68.206"
-                ],
-                "path": "\/"
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 13",
-            "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "aaacbbc-caab-caab-adbc-acacbbccabab",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "217.142.132.109"
+                }
             }
         }
     ],
