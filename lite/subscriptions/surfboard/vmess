@@ -11,13 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @free1_vpn | 1 = vmess, www.speedtest.net, 8080, username = cc9be09e-c05e-4f54-831b-969ecb185692, ws = true, tls = , vmess-aead = true, ws-path = /njbvhfgxdgthj, ws-headers = Host:"gi7ip5kbae7a.libreone.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 12 = vmess, 217.142.132.109, 23451, username = 2abe4c96-8542-48c5-b19d-9eec92586680, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"seoul-1ddns.aboutanime.eu.org", skip-cert-verify = true, tfo = false
+🇨🇳CN | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @free1_vpn | 1 = vmess, www.speedtest.net, 8080, username = cc9be09e-c05e-4f54-831b-969ecb185692, ws = true, tls = , vmess-aead = true, ws-path = /njbvhfgxdgthj, ws-headers = Host:"gi7ip5kbae7a.libreone.com", skip-cert-verify = true, tfo = false
+🇷🇺RU | 🟢 | vmess | @Hope_Net | 9 = vmess, 176.32.35.194, 31416, username = d019aa37-84f0-4461-bc6c-5eafa7006f8f, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @free1_vpn | 1,❔XX | 🟢 | vmess | @Hope_Net | 12
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @free1_vpn | 1,❔XX | 🟢 | vmess | @Hope_Net | 12
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @free1_vpn | 1,❔XX | 🟢 | vmess | @Hope_Net | 12
+MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @free1_vpn | 1,🇷🇺RU | 🟢 | vmess | @Hope_Net | 9
+URL-TEST = url-test,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @free1_vpn | 1,🇷🇺RU | 🟢 | vmess | @Hope_Net | 9
+FALLBACK = fallback,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @free1_vpn | 1,🇷🇺RU | 🟢 | vmess | @Hope_Net | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
