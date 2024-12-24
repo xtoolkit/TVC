@@ -120,6 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2","type":"vless","server":"deu.kitten-tube.com","port":443,"udp":true,"uuid":"ce7b5e36-a3a0-4f61-af4d-6ca132f892c5","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"google.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"LRnxYf6GAqSZwr6JWbVSnq_pKW99mXJ5VjhtLJMzom0","short-id":"5c75A51C"}}
   - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
   - {"name":"🇩🇪DE | 🟢 | vless | @kingofilter | 17","type":"vless","server":"san.dornagamesco.ir","port":1621,"udp":true,"uuid":"738fbb8d-bd2d-402a-b7bc-e63ad84fb107","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"wwww.refersion.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"uGYj7gkQdNaabDVQZdbHeSVizGPrzj8YD5jdYm7stG0","short-id":"3a622700e73c6642"}}
 proxy-groups:
@@ -128,6 +129,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
       - '🇩🇪DE | 🟢 | vless | @kingofilter | 17'
   - name: URL-TEST
@@ -136,6 +138,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
       - '🇩🇪DE | 🟢 | vless | @kingofilter | 17'
   - name: FALLBACK
@@ -143,6 +146,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
       - '🇩🇪DE | 🟢 | vless | @kingofilter | 17'
 rule-providers:
