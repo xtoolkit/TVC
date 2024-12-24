@@ -126,9 +126,10 @@
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 0",
                 "🇹🇼TW | 🔴 | vless | @VmessProtocol | 1",
                 "🇫🇷FR | 🟢 | vless | @VmessProtocol | 10",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 10",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 11",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 1",
-                "🇫🇮FI | 🔴 | vless | @nofiltering2 | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 9",
@@ -173,9 +174,10 @@
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 0",
                 "🇹🇼TW | 🔴 | vless | @VmessProtocol | 1",
                 "🇫🇷FR | 🟢 | vless | @VmessProtocol | 10",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 10",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 11",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 1",
-                "🇫🇮FI | 🔴 | vless | @nofiltering2 | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 9",
@@ -799,6 +801,64 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vless | @ConfigsHUB | 10",
+            "type": "vless",
+            "server": "64.225.11.135",
+            "server_port": 8880,
+            "uuid": "29178444-df06-4058-945e-0f232a4dc4a3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HnDs92r-DnPDVa353mAPa09HQf_LX4F5nOoMZwIfPAY",
+                    "short_id": "8c"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 11",
+            "type": "vless",
+            "server": "mk.sjdfhaksjfhape.ir",
+            "server_port": 1002,
+            "uuid": "38169551-29a2-4d8f-b097-203a49996e9c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cJYCRNQRL0R1YZ69vFHgmmGi68XmvTdU2bVwzh4qChw",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
             "type": "vless",
             "server": "mysql-panel.karaj-game-farsi.ir",
@@ -861,42 +921,6 @@
                     "public_key": "LRnxYf6GAqSZwr6JWbVSnq_pKW99mXJ5VjhtLJMzom0",
                     "short_id": "5c75A51C"
                 }
-            }
-        },
-        {
-            "tag": "🇫🇮FI | 🔴 | vless | @nofiltering2 | 15",
-            "type": "vless",
-            "server": "panel2.seyyedmtmodidandansax.blog",
-            "server_port": 2052,
-            "uuid": "8fa898a3-789a-44d4-8bc5-d0c77e94fcc7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "phillipjeffries.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "BamXEb50W1rXENIC96WfSvMiFGE7hnbu_GcXkBv-8H8",
-                    "short_id": "4156caa9"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "2052vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
