@@ -106,20 +106,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇷FR | 🟢 | vless | @VmessProtocol | 10",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @kingofilter | 17"
+                "🇩🇪DE | 🟢 | vless | @kingofilter | 18"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷FR | 🟢 | vless | @VmessProtocol | 10",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @kingofilter | 17"
+                "🇩🇪DE | 🟢 | vless | @kingofilter | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,6 +142,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @VmessProtocol | 10",
+            "type": "vless",
+            "server": "213.176.66.228",
+            "server_port": 37021,
+            "uuid": "8363e5e4-b97f-4ddf-bbcd-4e8f8d826a35",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Gk3eR3mV55k5P3tg-MzqMpNolmML8q9zBOf6A102e1Y",
+                    "short_id": "bc721eb6"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2",
@@ -243,7 +274,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @kingofilter | 17",
+            "tag": "🇩🇪DE | 🟢 | vless | @kingofilter | 18",
             "type": "vless",
             "server": "san.dornagamesco.ir",
             "server_port": 1621,
