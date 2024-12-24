@@ -120,6 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇫🇮FI | 🔴 | vless | @nofiltering2 | 15","type":"vless","server":"panel2.seyyedmtmodidandansax.blog","port":2052,"udp":true,"uuid":"8fa898a3-789a-44d4-8bc5-d0c77e94fcc7","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"phillipjeffries.com","grpc-opts":{"grpc-service-name":"2052vless"},"reality-opts":{"public-key":"BamXEb50W1rXENIC96WfSvMiFGE7hnbu_GcXkBv-8H8","short-id":"4156caa9"}}
   - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
   - {"name":"🇩🇪DE | 🟢 | vless | @kingofilter | 17","type":"vless","server":"san.dornagamesco.ir","port":1621,"udp":true,"uuid":"738fbb8d-bd2d-402a-b7bc-e63ad84fb107","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"wwww.refersion.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"uGYj7gkQdNaabDVQZdbHeSVizGPrzj8YD5jdYm7stG0","short-id":"3a622700e73c6642"}}
 proxy-groups:
@@ -128,6 +129,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇫🇮FI | 🔴 | vless | @nofiltering2 | 15'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
       - '🇩🇪DE | 🟢 | vless | @kingofilter | 17'
   - name: URL-TEST
@@ -136,6 +138,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇫🇮FI | 🔴 | vless | @nofiltering2 | 15'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
       - '🇩🇪DE | 🟢 | vless | @kingofilter | 17'
   - name: FALLBACK
@@ -143,6 +146,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇫🇮FI | 🔴 | vless | @nofiltering2 | 15'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
       - '🇩🇪DE | 🟢 | vless | @kingofilter | 17'
 rule-providers:
