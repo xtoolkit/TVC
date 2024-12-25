@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 16",
                 "🇲🇽MX | 🟢 | vmess | @ShadowProxy66 | 17",
                 "🇩🇰DK | 🟢 | vmess | @ShadowProxy66 | 18",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -124,7 +124,7 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 16",
                 "🇲🇽MX | 🟢 | vmess | @ShadowProxy66 | 17",
                 "🇩🇰DK | 🟢 | vmess | @ShadowProxy66 | 18",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -188,11 +188,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 16",
             "type": "vmess",
-            "server": "104.16.61.8",
-            "server_port": 2086,
-            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "server": "45.145.167.103",
+            "server_port": 443,
+            "uuid": "425c5e6e-30a0-4984-8a13-ee6f72053162",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -203,11 +203,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "indiavideo.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/glweidf.sbs\/linkws",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "104.16.61.8"
+                    "Host": "indiavideo.sbs"
                 }
             }
         },
