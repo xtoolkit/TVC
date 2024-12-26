@@ -117,6 +117,7 @@
                 "🇦🇪AE | 🟢 | vless | @prrofile_purple | 139",
                 "🇩🇪DE | 🔴 | vless | @prrofile_purple | 140",
                 "❔XX | 🔴 | vless | @prrofile_purple | 145",
+                "🇳🇱NL | 🔴 | vless | @prrofile_purple | 163",
                 "❔XX | 🔴 | vless | @customv2ray | 2",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 1",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 4",
@@ -164,6 +165,7 @@
                 "🇦🇪AE | 🟢 | vless | @prrofile_purple | 139",
                 "🇩🇪DE | 🔴 | vless | @prrofile_purple | 140",
                 "❔XX | 🔴 | vless | @prrofile_purple | 145",
+                "🇳🇱NL | 🔴 | vless | @prrofile_purple | 163",
                 "❔XX | 🔴 | vless | @customv2ray | 2",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 1",
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 4",
@@ -557,6 +559,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN,@Everyday_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @prrofile_purple | 163",
+            "type": "vless",
+            "server": "45.138.24.54",
+            "server_port": 8443,
+            "uuid": "c5f93ab5-6856-44b1-9201-58cd724db720",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3J0W48-kFIfPRgaDWzHk01Bvf88N3z9dR-TsXJ36Bgs",
+                    "short_id": "0a46"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "JoinBadeChannel@antimeli",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
