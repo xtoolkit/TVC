@@ -120,6 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇮🇱IL | 🔴 | vless | @ConfigsHUB | 4","type":"vless","server":"138.124.25.81","port":3990,"udp":true,"uuid":"33dc6301-e4bf-4612-94f5-7006fe062892","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"refersion.com","reality-opts":{"public-key":"9Rb63f9TzE_MfARSSWTge7s3RpfPZfErIauYjKruRhQ","short-id":"1dfbb004e009c8f9"}}
   - {"name":"🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2","type":"vless","server":"mk.ksalfjhaslkfa.ir","port":1234,"udp":true,"uuid":"79548d0f-6d07-4370-bc64-eef441bb0395","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"stackoverflow.com","reality-opts":{"public-key":"appEoaCMnarRhUZDRn8zy40eQqy87IohvyWeFSPFjjE","short-id":"a172f284"}}
   - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
 proxy-groups:
@@ -128,6 +129,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇮🇱IL | 🔴 | vless | @ConfigsHUB | 4'
       - '🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: URL-TEST
@@ -136,6 +138,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇮🇱IL | 🔴 | vless | @ConfigsHUB | 4'
       - '🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: FALLBACK
@@ -143,6 +146,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇮🇱IL | 🔴 | vless | @ConfigsHUB | 4'
       - '🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 2'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
 rule-providers:
