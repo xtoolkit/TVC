@@ -123,7 +123,6 @@ proxies:
   - {"name":"🇩🇪DE | 🟢 | vless | @customv2ray | 19","type":"vless","server":"mk.ksalfjhaslkfa.ir","port":1234,"udp":true,"uuid":"79548d0f-6d07-4370-bc64-eef441bb0395","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"stackoverflow.com","reality-opts":{"public-key":"appEoaCMnarRhUZDRn8zy40eQqy87IohvyWeFSPFjjE","short-id":"a172f284"}}
   - {"name":"🇩🇪DE | 🔴 | vless | @proxyymeliii | 10","type":"vless","server":"49.12.193.246","port":443,"udp":false,"uuid":"b8f5ba57-4439-4fe0-b3bd-47f398b3869a","tls":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
-  - {"name":"🇩🇪DE | 🔴 | vless | @kingofilter | 17","type":"vless","server":"1618.postsafir.ir","port":1618,"udp":true,"uuid":"c7f1126c-0aec-4ded-aca4-1099ebe367fb","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"refersion.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"uGYj7gkQdNaabDVQZdbHeSVizGPrzj8YD5jdYm7stG0","short-id":"3a622700e73c6642"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -133,7 +132,6 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | vless | @customv2ray | 19'
       - '🇩🇪DE | 🔴 | vless | @proxyymeliii | 10'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
-      - '🇩🇪DE | 🔴 | vless | @kingofilter | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -143,7 +141,6 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | vless | @customv2ray | 19'
       - '🇩🇪DE | 🔴 | vless | @proxyymeliii | 10'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
-      - '🇩🇪DE | 🔴 | vless | @kingofilter | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -152,7 +149,6 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | vless | @customv2ray | 19'
       - '🇩🇪DE | 🔴 | vless | @proxyymeliii | 10'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
-      - '🇩🇪DE | 🔴 | vless | @kingofilter | 17'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
