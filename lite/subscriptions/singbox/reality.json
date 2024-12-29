@@ -106,22 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @customv2ray | 19",
-                "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
+                "❔XX | 🟢 | vless | @customv2ray | 19",
+                "❔XX | 🔴 | vless | @proxyymeliii | 10",
+                "❔XX | 🔴 | vless | @VmessProtocol | 13",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇪🇸ES | 🔴 | vless | @kingofilter | 14"
+                "❔XX | 🔴 | vless | @kingofilter | 14"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @customv2ray | 19",
-                "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
+                "❔XX | 🟢 | vless | @customv2ray | 19",
+                "❔XX | 🔴 | vless | @proxyymeliii | 10",
+                "❔XX | 🔴 | vless | @VmessProtocol | 13",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇪🇸ES | 🔴 | vless | @kingofilter | 14"
+                "❔XX | 🔴 | vless | @kingofilter | 14"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -144,7 +146,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @customv2ray | 19",
+            "tag": "❔XX | 🟢 | vless | @customv2ray | 19",
             "type": "vless",
             "server": "mk.ksalfjhaslkfa.ir",
             "server_port": 1234,
@@ -173,7 +175,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
+            "tag": "❔XX | 🔴 | vless | @proxyymeliii | 10",
             "type": "vless",
             "server": "49.12.193.246",
             "server_port": 443,
@@ -184,6 +186,42 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @VmessProtocol | 13",
+            "type": "vless",
+            "server": "ddns.200566.xyz",
+            "server_port": 30341,
+            "uuid": "1a668915-d98f-4440-8bac-2c51d508f811",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "addons.mozilla.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JKYZG1ImyL6B0TuQyE2XH0XWtX0pI6Cv0fe9ohsjcH0",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -259,7 +297,7 @@
             }
         },
         {
-            "tag": "🇪🇸ES | 🔴 | vless | @kingofilter | 14",
+            "tag": "❔XX | 🔴 | vless | @kingofilter | 14",
             "type": "vless",
             "server": "ns6.esfahansiman.com",
             "server_port": 2030,
