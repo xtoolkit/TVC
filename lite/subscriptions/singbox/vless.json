@@ -139,13 +139,15 @@
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
                 "🇺🇸US | 🔴 | vless | @proxyymeliii | 11",
                 "🇺🇸US | 🔴 | vless | @MsV2ray | 0",
-                "🇸🇪SE | 🔴 | vless | @v2ray1_ng | 14",
+                "🇺🇸US | 🔴 | vless | @v2ray1_ng | 12",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 14",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 15",
                 "❔XX | 🔴 | vless | @MTConfig | 13",
                 "🇹🇼TW | 🔴 | vless | @VmessProtocol | 13",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 344",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 345",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 9",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
                 "🇮🇷IR | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 3",
@@ -202,13 +204,15 @@
                 "🇩🇪DE | 🔴 | vless | @proxyymeliii | 10",
                 "🇺🇸US | 🔴 | vless | @proxyymeliii | 11",
                 "🇺🇸US | 🔴 | vless | @MsV2ray | 0",
-                "🇸🇪SE | 🔴 | vless | @v2ray1_ng | 14",
+                "🇺🇸US | 🔴 | vless | @v2ray1_ng | 12",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 14",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 15",
                 "❔XX | 🔴 | vless | @MTConfig | 13",
                 "🇹🇼TW | 🔴 | vless | @VmessProtocol | 13",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 344",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 345",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 9",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
                 "🇮🇷IR | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 3",
@@ -1026,17 +1030,24 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @v2ray1_ng | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @v2ray1_ng | 12",
             "type": "vless",
-            "server": "172.232.149.72",
-            "server_port": 17123,
-            "uuid": "14653802-4435-41ef-9210-64e4293f28b9",
+            "server": "bg.com",
+            "server_port": 80,
+            "uuid": "af74b39a-d1c2-45b9-810a-951e52209672",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2056",
+                "headers": {
+                    "Host": "bg.com"
+                }
             }
         },
         {
@@ -1217,6 +1228,68 @@
                 "path": "\/",
                 "headers": {
                     "Host": "hajlab.ucdavis.edu"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 9",
+            "type": "vless",
+            "server": "fishlab.ucdavis.edu",
+            "server_port": 443,
+            "uuid": "81d6bfab-8868-4655-8c8e-5e9e488b36c6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fishlab.ucdavis.edu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE?ed=2560",
+                "headers": {
+                    "Host": "fishlab.ucdavis.edu"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
+            "type": "vless",
+            "server": "104.16.3.35",
+            "server_port": 443,
+            "uuid": "6e3a65a5-3629-4861-aa73-eb8dec932c4e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "search.yandeximage.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@ConnectStixUrewsdlfB8Yu6ADoNQS2Cq",
+                "headers": {
+                    "Host": "search.yandeximage.ru"
                 }
             }
         },
