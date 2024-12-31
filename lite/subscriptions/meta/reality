@@ -121,9 +121,9 @@ dns:
 
 proxies:
   - {"name":"❔XX | 🟢 | vless | @customv2ray | 19","type":"vless","server":"[2a01:4f9:c011:7571::1]","port":8443,"udp":true,"uuid":"71b12378-8c5a-48c6-b716-82bd9fb90148","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"web.whatsapp.com","reality-opts":{"public-key":"pC_ce7-7TQe-rM1IaBAJsUENABoWl_cuu_KGe1NwPzc","short-id":"21cfdb2f50"}}
-  - {"name":"🇦🇪AE | 🟢 | vless | @VmessProtocol | 13","type":"vless","server":"181.215.205.104","port":443,"udp":true,"uuid":"ce7b5e36-a3a0-4f61-af4d-6ca132f892c5","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"adobe.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"ljzfoaXVBSNu3tw58-B0WNViso1aA9JSCX9GUcMDu0k","short-id":"4048A3da"}}
+  - {"name":"❔XX | 🟢 | vless | @VmessProtocol | 13","type":"vless","server":"181.215.205.104","port":443,"udp":true,"uuid":"ce7b5e36-a3a0-4f61-af4d-6ca132f892c5","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"adobe.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"ljzfoaXVBSNu3tw58-B0WNViso1aA9JSCX9GUcMDu0k","short-id":"4048A3da"}}
   - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
-  - {"name":"🇪🇸ES | 🔴 | vless | @kingofilter | 14","type":"vless","server":"ns6.esfahansiman.com","port":2030,"udp":true,"uuid":"7af0cefc-ab80-4701-a9fe-67dfddc2a0f7","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"refersion.com","grpc-opts":{"grpc-service-name":"@@jet_config-@jet_config-@jet_config"},"reality-opts":{"public-key":"YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E","short-id":"7fe29733"}}
+  - {"name":"❔XX | 🔴 | vless | @kingofilter | 14","type":"vless","server":"ns6.esfahansiman.com","port":2030,"udp":true,"uuid":"7af0cefc-ab80-4701-a9fe-67dfddc2a0f7","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"refersion.com","grpc-opts":{"grpc-service-name":"@@jet_config-@jet_config-@jet_config"},"reality-opts":{"public-key":"YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E","short-id":"7fe29733"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,9 +131,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '❔XX | 🟢 | vless | @customv2ray | 19'
-      - '🇦🇪AE | 🟢 | vless | @VmessProtocol | 13'
+      - '❔XX | 🟢 | vless | @VmessProtocol | 13'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
-      - '🇪🇸ES | 🔴 | vless | @kingofilter | 14'
+      - '❔XX | 🔴 | vless | @kingofilter | 14'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -141,18 +141,18 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '❔XX | 🟢 | vless | @customv2ray | 19'
-      - '🇦🇪AE | 🟢 | vless | @VmessProtocol | 13'
+      - '❔XX | 🟢 | vless | @VmessProtocol | 13'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
-      - '🇪🇸ES | 🔴 | vless | @kingofilter | 14'
+      - '❔XX | 🔴 | vless | @kingofilter | 14'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '❔XX | 🟢 | vless | @customv2ray | 19'
-      - '🇦🇪AE | 🟢 | vless | @VmessProtocol | 13'
+      - '❔XX | 🟢 | vless | @VmessProtocol | 13'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
-      - '🇪🇸ES | 🔴 | vless | @kingofilter | 14'
+      - '❔XX | 🔴 | vless | @kingofilter | 14'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
