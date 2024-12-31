@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | vless | @customv2ray | 19",
                 "🇦🇪AE | 🟢 | vless | @VmessProtocol | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -116,7 +115,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | vless | @customv2ray | 19",
                 "🇦🇪AE | 🟢 | vless | @VmessProtocol | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -140,35 +138,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @customv2ray | 19",
-            "type": "vless",
-            "server": "[2a01:4f9:c011:7571::1]",
-            "server_port": 8443,
-            "uuid": "71b12378-8c5a-48c6-b716-82bd9fb90148",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "web.whatsapp.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "pC_ce7-7TQe-rM1IaBAJsUENABoWl_cuu_KGe1NwPzc",
-                    "short_id": "21cfdb2f50"
-                }
-            }
         },
         {
             "tag": "🇦🇪AE | 🟢 | vless | @VmessProtocol | 14",
