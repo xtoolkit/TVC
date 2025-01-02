@@ -116,8 +116,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @free1_vpn | 7",
                 "🇮🇳IN | 🟢 | vmess | @free1_vpn | 8",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
-                "❔XX | 🟢 | vmess | @Hope_Net | 11"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "🇮🇹IT | 🟢 | vmess | @Hope_Net | 9"
             ]
         },
         {
@@ -134,8 +134,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @free1_vpn | 7",
                 "🇮🇳IN | 🟢 | vmess | @free1_vpn | 8",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
-                "❔XX | 🟢 | vmess | @Hope_Net | 11"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "🇮🇹IT | 🟢 | vmess | @Hope_Net | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -373,11 +373,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "cm1.awslcn.info",
-            "server_port": 25216,
-            "uuid": "243eab52-9ac1-405c-887c-eb112c0985b8",
+            "server": "129.159.84.71",
+            "server_port": 443,
+            "uuid": "60c0bbfa-c54f-49a9-81ba-779b0206a9fd",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -388,20 +388,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "129.159.84.71",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/ylks",
                 "headers": {
-                    "Host": "cm1.awslcn.info"
+                    "Host": "129.159.84.71"
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 11",
+            "tag": "🇮🇹IT | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "2603:c022:800d:f623:8083:3b44:9684:de8e",
-            "server_port": 8888,
-            "uuid": "d2cf49fe-8344-4994-b990-c49304878a73",
+            "server": "15074.kuaiyin02.top",
+            "server_port": 15074,
+            "uuid": "9f513161-576b-3abc-9c98-06e52c3a24c6",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -411,13 +421,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/wada12222",
-                "headers": {
-                    "Host": "2603:c022:800d:f623:8083:3b44:9684:de8e"
-                }
             }
         }
     ],
