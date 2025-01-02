@@ -119,6 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"89.185.84.185","port":12575,"password":"299QKvkXWWSo9cn9MHBas5","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @kingofilter | 14","type":"ss","server":"freakconfig27.usecharge.ir","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 15","type":"ss","server":"52.237.155.68","port":443,"password":"mzyYriPYYnCWDxoy","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -126,6 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '❔XX | 🟢 | ss | @kingofilter | 14'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -133,12 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '❔XX | 🟢 | ss | @kingofilter | 14'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '❔XX | 🟢 | ss | @kingofilter | 14'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 15'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
