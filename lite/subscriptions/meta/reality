@@ -120,8 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | vless | @proxyymeliii | 1","type":"vless","server":"49.12.193.246","port":443,"udp":false,"uuid":"bf82a225-edb7-4b16-b7b3-96421fc85a79","tls":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇫🇷FR | 🟢 | vless | @ConfigsHUB | 19","type":"vless","server":"speedy.o3co.ir","port":5600,"udp":true,"uuid":"2bbaf73f-434a-414f-b4f0-2520a2c5155e","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"refersion.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic"}}
+  - {"name":"❔XX | 🔴 | vless | @proxyymeliii | 1","type":"vless","server":"49.12.193.246","port":443,"udp":false,"uuid":"bf82a225-edb7-4b16-b7b3-96421fc85a79","tls":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
 proxy-groups:
   - name: MANUAL
@@ -129,8 +128,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🔴 | vless | @proxyymeliii | 1'
-      - '🇫🇷FR | 🟢 | vless | @ConfigsHUB | 19'
+      - '❔XX | 🔴 | vless | @proxyymeliii | 1'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: URL-TEST
     type: url-test
@@ -138,16 +136,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🔴 | vless | @proxyymeliii | 1'
-      - '🇫🇷FR | 🟢 | vless | @ConfigsHUB | 19'
+      - '❔XX | 🔴 | vless | @proxyymeliii | 1'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🔴 | vless | @proxyymeliii | 1'
-      - '🇫🇷FR | 🟢 | vless | @ConfigsHUB | 19'
+      - '❔XX | 🔴 | vless | @proxyymeliii | 1'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
