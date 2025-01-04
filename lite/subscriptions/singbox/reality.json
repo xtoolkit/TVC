@@ -106,6 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇹🇷TR | 🔴 | vless | @ConfigsHUB | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ]
@@ -114,6 +116,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇹🇷TR | 🔴 | vless | @ConfigsHUB | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ],
@@ -136,6 +140,64 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+            "type": "vless",
+            "server": "usaaaa.paneldegemeto.com",
+            "server_port": 443,
+            "uuid": "a0ea6749-a25a-681c-3175-cf2e6008b2d3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RCJrxssGE3akICKN-Z6bVSCyi5vlX0U8VzxxCG7eAwU",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇹🇷TR | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "turkiye.paneldegemeto.com",
+            "server_port": 443,
+            "uuid": "a0ea6749-a25a-681c-3175-cf2e6008b2d3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RCJrxssGE3akICKN-Z6bVSCyi5vlX0U8VzxxCG7eAwU",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @vpn_go67 | 20",
