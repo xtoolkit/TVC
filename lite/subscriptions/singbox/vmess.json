@@ -304,6 +304,40 @@
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
+            "server": "38.33.56.53",
+            "server_port": 37001,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "38.33.56.53",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/path\/1735725550785",
+                "headers": {
+                    "Host": "38.33.56.53"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
+            "type": "vmess",
             "server": "38.33.23.98",
             "server_port": 30003,
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
@@ -332,40 +366,6 @@
                 "path": "\/path\/1735812367788",
                 "headers": {
                     "Host": "38.33.23.98"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
-            "type": "vmess",
-            "server": "hms02opi.fxiaomi.sbs",
-            "server_port": 443,
-            "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hms02opi.fxiaomi.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/link",
-                "headers": {
-                    "Host": "hms02opi.fxiaomi.sbs"
                 }
             }
         }
