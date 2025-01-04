@@ -124,6 +124,7 @@
                 "❔XX | 🟢 | vless | @VmessProtocol | 5",
                 "❔XX | 🔴 | vless | @VmessProtocol | 6",
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 9",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 10",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 1",
                 "🇩🇪DE | 🔴 | vless | @nofiltering2 | 1",
@@ -167,6 +168,7 @@
                 "❔XX | 🟢 | vless | @VmessProtocol | 5",
                 "❔XX | 🔴 | vless | @VmessProtocol | 6",
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 9",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 10",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 1",
                 "🇩🇪DE | 🔴 | vless | @nofiltering2 | 1",
@@ -762,6 +764,42 @@
                     "public_key": "zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 10",
+            "type": "vless",
+            "server": "146.190.227.216",
+            "server_port": 19800,
+            "uuid": "1ed78b3b-127c-4f62-b381-db1a08e7b267",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "account.zula.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mgtUXHpKFStGsNpbUAZg",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "19800vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
