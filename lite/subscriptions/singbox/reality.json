@@ -106,9 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | vless | @VmessProtocol | 12",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 128",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 129",
+                "❔XX | 🟢 | vless | @VmessProtocol | 12",
+                "❔XX | 🟢 | vless | @DailyV2RY | 128",
+                "❔XX | 🟢 | vless | @DailyV2RY | 129",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ]
@@ -117,9 +118,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | vless | @VmessProtocol | 12",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 128",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 129",
+                "❔XX | 🟢 | vless | @VmessProtocol | 12",
+                "❔XX | 🟢 | vless | @DailyV2RY | 128",
+                "❔XX | 🟢 | vless | @DailyV2RY | 129",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ],
@@ -144,7 +146,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @VmessProtocol | 12",
+            "tag": "❔XX | 🟢 | vless | @VmessProtocol | 12",
             "type": "vless",
             "server": "cuvip.doubledou.icu",
             "server_port": 443,
@@ -173,7 +175,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 128",
+            "tag": "❔XX | 🟢 | vless | @DailyV2RY | 128",
             "type": "vless",
             "server": "3.147.57.165",
             "server_port": 1212,
@@ -202,7 +204,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 129",
+            "tag": "❔XX | 🟢 | vless | @DailyV2RY | 129",
             "type": "vless",
             "server": "100.26.1.43",
             "server_port": 1212,
@@ -227,6 +229,35 @@
                     "enabled": true,
                     "public_key": "RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A",
                     "short_id": "a4844ba7"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 15",
+            "type": "vless",
+            "server": "91.107.129.223",
+            "server_port": 42090,
+            "uuid": "express_v2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "CrfqNf37Q8FXrPxPOJV0j9HFKuO0KHoyG5WnruII51Y",
+                    "short_id": "3a"
                 }
             }
         },
