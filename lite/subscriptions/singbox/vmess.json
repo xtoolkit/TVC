@@ -115,8 +115,8 @@
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @free1_vpn | 10",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 5",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 6"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6"
             ]
         },
         {
@@ -132,8 +132,8 @@
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @free1_vpn | 10",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 5",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 6"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -354,11 +354,11 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "195.58.49.86",
-            "server_port": 45751,
-            "uuid": "9511bda3-0098-4159-9eb6-fa848b1525cf",
+            "server": "cf-vod.nimo.tv",
+            "server_port": 80,
+            "uuid": "3a18edb8-80c1-4cba-b912-4f10513da259",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -371,20 +371,20 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/vmessws",
                 "headers": {
-                    "Host": "195.58.49.86"
+                    "Host": "cf-vod.nimo.tv"
                 }
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 6",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "194.87.69.52",
-            "server_port": 45751,
-            "uuid": "8b661f5c-b10f-40fe-a09f-92b5dc1732f7",
+            "server": "38.174.190.80",
+            "server_port": 38007,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 64,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -393,11 +393,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "38.174.190.80",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/path\/102206282005",
                 "headers": {
-                    "Host": "194.87.69.52"
+                    "Host": "38.174.190.80"
                 }
             }
         }
