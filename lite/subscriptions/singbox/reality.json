@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | vless | @VmessProtocol | 12",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 156",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 157",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -117,7 +116,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | vless | @VmessProtocol | 12",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 156",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 157",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -142,35 +140,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vless | @VmessProtocol | 12",
-            "type": "vless",
-            "server": "cuvip.doubledou.icu",
-            "server_port": 443,
-            "uuid": "2add6241-8fe8-3922-8347-da25e8ced601",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tesla.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM",
-                    "short_id": ""
-                }
-            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 156",
