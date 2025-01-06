@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 156",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 157",
+                "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 160",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 161",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ]
@@ -116,8 +117,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 156",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 157",
+                "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 160",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 161",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ],
@@ -142,9 +144,45 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 156",
+            "tag": "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
             "type": "vless",
-            "server": "18.188.49.9",
+            "server": "193.46.81.83",
+            "server_port": 563,
+            "uuid": "telegram-i-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.latimes.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "b7yHxJvpMviU0y0ncrxzOuwWfwfGhzQ4nzJDPtfN4WM",
+                    "short_id": "4c5e6e2a09"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 160",
+            "type": "vless",
+            "server": "3.232.55.135",
             "server_port": 1212,
             "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
             "flow": "xtls-rprx-vision",
@@ -171,9 +209,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 157",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 161",
             "type": "vless",
-            "server": "18.117.76.223",
+            "server": "3.16.70.202",
             "server_port": 1212,
             "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
             "flow": "xtls-rprx-vision",
