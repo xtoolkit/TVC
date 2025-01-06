@@ -157,13 +157,14 @@
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 12",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 128",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 129",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 9",
                 "🇺🇸US | 🟢 | vmess | @free1_vpn | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 5",
                 "🇮🇳IN | 🔴 | vless | @flyv2ray | 12",
@@ -234,13 +235,14 @@
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 12",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 128",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 129",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 9",
                 "🇺🇸US | 🟢 | vmess | @free1_vpn | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 5",
                 "🇮🇳IN | 🔴 | vless | @flyv2ray | 12",
@@ -1448,11 +1450,47 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+            "tag": "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "Speedtest.net",
+            "server": "65.109.184.88",
+            "server_port": 11465,
+            "uuid": "b3dde6c2-3a26-4e8e-a419-bce31be1917b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "hVDQInln_5uu8lAl_H32z-xKbfKOwmGxHrlhAtBOfkM",
+                    "short_id": "53cac827f4ed"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@BLACK_VPN1",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "167.82.85.155",
             "server_port": 80,
-            "uuid": "b1f58d90-e65f-4566-91f3-1b96e9a68619",
+            "uuid": "253ef561-9e57-4336-befd-878ddd30df01",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1462,9 +1500,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--@Digiv2ray--",
+                "path": "\/",
                 "headers": {
-                    "Host": "Speedtest.net"
+                    "Host": "167.82.85.155"
                 }
             }
         },
@@ -1565,6 +1603,40 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+            "type": "vmess",
+            "server": "192.74.231.199",
+            "server_port": 37001,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "192.74.231.199",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/path\/1736040833184",
+                "headers": {
+                    "Host": "192.74.231.199"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
             "server": "38.11.44.115",
@@ -1595,40 +1667,6 @@
                 "path": "\/path\/1736075590186",
                 "headers": {
                     "Host": "38.11.44.115"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-            "type": "vmess",
-            "server": "199.180.103.23",
-            "server_port": 37007,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "199.180.103.23",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/path\/1735984102656",
-                "headers": {
-                    "Host": "199.180.103.23"
                 }
             }
         },
