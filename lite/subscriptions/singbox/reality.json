@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @VmessProtocol | 12",
+                "❔XX | 🟢 | vless | @VmessProtocol | 12",
+                "❔XX | 🔴 | vless | @VmessProtocol | 13",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 190",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 191",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -117,7 +118,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @VmessProtocol | 12",
+                "❔XX | 🟢 | vless | @VmessProtocol | 12",
+                "❔XX | 🔴 | vless | @VmessProtocol | 13",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 190",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 191",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -144,7 +146,36 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @VmessProtocol | 12",
+            "tag": "❔XX | 🟢 | vless | @VmessProtocol | 12",
+            "type": "vless",
+            "server": "[2407:3640:2185:9595:0:1:c2d0:9336]",
+            "server_port": 59008,
+            "uuid": "57c0ba73-b381-4fa6-aad0-f87c72a4d2d1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "addons.mozilla.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pthse3E3BBt3kWrXayFIWMQuLwMpKjwNOGkKHG5VZRc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @VmessProtocol | 13",
             "type": "vless",
             "server": "[2407:3640:2185:9595:0:1:c2d0:9336]",
             "server_port": 59009,
