@@ -16,12 +16,12 @@ DIRECT = direct
 🇸🇪SE | 🟢 | trojan | @DirectVPN | 15 = trojan, 13.61.133.131, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇸🇪SE | 🟢 | trojan | @DirectVPN | 16 = trojan, 16.170.70.116, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇨🇳CN | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 3 = vmess, 172.67.198.187, 443, username = 93ea486a-bada-42a4-ac38-d088b320fa1e, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"xmivideo.cfd", skip-cert-verify = true, tfo = false
 🇩🇪DE | 🟢 | vmess | @Hope_Net | 4 = vmess, 5.39.252.204, 10881, username = 71db106c-0d2f-4733-87cc-cba657b387e9, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"5.39.252.204", skip-cert-verify = true, tfo = false
-🇵🇱PL | 🟢 | vmess | @Hope_Net | 5 = vmess, 45.144.48.128, 8443, username = a4850481-9b95-430f-9b2d-192d2410b4f4, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15,🇸🇪SE | 🟢 | trojan | @DirectVPN | 16,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇩🇪DE | 🟢 | vmess | @Hope_Net | 4,🇵🇱PL | 🟢 | vmess | @Hope_Net | 5
-URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15,🇸🇪SE | 🟢 | trojan | @DirectVPN | 16,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇩🇪DE | 🟢 | vmess | @Hope_Net | 4,🇵🇱PL | 🟢 | vmess | @Hope_Net | 5
-FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15,🇸🇪SE | 🟢 | trojan | @DirectVPN | 16,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇩🇪DE | 🟢 | vmess | @Hope_Net | 4,🇵🇱PL | 🟢 | vmess | @Hope_Net | 5
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15,🇸🇪SE | 🟢 | trojan | @DirectVPN | 16,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 3,🇩🇪DE | 🟢 | vmess | @Hope_Net | 4
+URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15,🇸🇪SE | 🟢 | trojan | @DirectVPN | 16,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 3,🇩🇪DE | 🟢 | vmess | @Hope_Net | 4
+FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17,🇸🇪SE | 🟢 | trojan | @DirectVPN | 15,🇸🇪SE | 🟢 | trojan | @DirectVPN | 16,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 3,🇩🇪DE | 🟢 | vmess | @Hope_Net | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
