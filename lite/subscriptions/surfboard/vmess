@@ -11,15 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 18 = vmess, si.1808.site, 30002, username = d3d8b781-f30d-4902-8eb0-58b1ca936bec, ws = true, tls = 1, vmess-aead = true, ws-path = /hgqqvws, ws-headers = Host:"cc2.1808.site", skip-cert-verify = true, tfo = false
-🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 19 = vmess, si.1808.site, 30002, username = 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"obdii.cfd", skip-cert-verify = true, tfo = false
 🇨🇳CN | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇵🇱PL | 🟢 | vmess | @Hope_Net | 2 = vmess, 45.144.48.128, 8443, username = a4850481-9b95-430f-9b2d-192d2410b4f4, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-🇬🇧GB | 🟢 | vmess | @Hope_Net | 3 = vmess, 5.39.254.196, 23169, username = 398ce84e-4849-4e5f-9b1a-a56fbe233b81, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇩🇪DE | 🟢 | vmess | @Hope_Net | 2 = vmess, 5.39.252.204, 10881, username = 71db106c-0d2f-4733-87cc-cba657b387e9, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"5.39.252.204", skip-cert-verify = true, tfo = false
+🇵🇱PL | 🟢 | vmess | @Hope_Net | 3 = vmess, 45.144.48.128, 8443, username = a4850481-9b95-430f-9b2d-192d2410b4f4, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 18,🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 19,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇵🇱PL | 🟢 | vmess | @Hope_Net | 2,🇬🇧GB | 🟢 | vmess | @Hope_Net | 3
-URL-TEST = url-test,🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 18,🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 19,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇵🇱PL | 🟢 | vmess | @Hope_Net | 2,🇬🇧GB | 🟢 | vmess | @Hope_Net | 3
-FALLBACK = fallback,🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 18,🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 19,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇵🇱PL | 🟢 | vmess | @Hope_Net | 2,🇬🇧GB | 🟢 | vmess | @Hope_Net | 3
+MANUAL = select,URL-TEST,FALLBACK,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇩🇪DE | 🟢 | vmess | @Hope_Net | 2,🇵🇱PL | 🟢 | vmess | @Hope_Net | 3
+URL-TEST = url-test,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇩🇪DE | 🟢 | vmess | @Hope_Net | 2,🇵🇱PL | 🟢 | vmess | @Hope_Net | 3
+FALLBACK = fallback,🇨🇳CN | 🟢 | vmess | @yaney_01 | 4,🇩🇪DE | 🟢 | vmess | @Hope_Net | 2,🇵🇱PL | 🟢 | vmess | @Hope_Net | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
