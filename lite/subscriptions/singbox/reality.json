@@ -106,7 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 15",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 178",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 179",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 13",
                 "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -116,7 +118,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 15",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 178",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 179",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 13",
                 "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -142,11 +146,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 178",
             "type": "vless",
-            "server": "138.124.61.246",
-            "server_port": 443,
-            "uuid": "V2rayArgoN-",
+            "server": "18.191.223.242",
+            "server_port": 1212,
+            "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -156,17 +160,75 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "138.124.61.246",
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": null
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "1tA2CIltAtu_CMKCMWqH4zuRi-EA9LFG9Wz6SI0_sG4",
-                    "short_id": ""
+                    "public_key": "RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A",
+                    "short_id": "a4844ba7"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 179",
+            "type": "vless",
+            "server": "13.59.23.3",
+            "server_port": 1212,
+            "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A",
+                    "short_id": "a4844ba7"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 13",
+            "type": "vless",
+            "server": "150.241.102.95",
+            "server_port": 10799,
+            "uuid": "7e14954d-1233-4b71-bd16-585751d4c56c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "yw374OPQfpF0KpnFYX2zYnO8-NC7RkgGbbiMzmZYvDU",
+                    "short_id": "330602658f0ade"
                 }
             }
         },
