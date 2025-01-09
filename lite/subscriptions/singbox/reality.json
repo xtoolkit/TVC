@@ -106,8 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 178",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 179",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 163",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 164",
+                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 14",
+                "🇩🇪DE | 🔴 | vless | @nofiltering2 | 19",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ]
@@ -116,8 +118,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 178",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 179",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 163",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 164",
+                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 14",
+                "🇩🇪DE | 🔴 | vless | @nofiltering2 | 19",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ],
@@ -142,9 +146,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 178",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 163",
             "type": "vless",
-            "server": "18.191.223.242",
+            "server": "35.172.236.47",
             "server_port": 1212,
             "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
             "flow": "xtls-rprx-vision",
@@ -171,9 +175,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 179",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 164",
             "type": "vless",
-            "server": "13.59.23.3",
+            "server": "13.59.44.240",
             "server_port": 1212,
             "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
             "flow": "xtls-rprx-vision",
@@ -197,6 +201,71 @@
                     "public_key": "RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A",
                     "short_id": "a4844ba7"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 14",
+            "type": "vless",
+            "server": "liferobot.darkping.net",
+            "server_port": 1633,
+            "uuid": "13782dab-ef84-4ce7-b5ad-f3c7e4a9c0f2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q",
+                    "short_id": "9bc0a55a5379c0ed"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @nofiltering2 | 19",
+            "type": "vless",
+            "server": "arash1.ailreza.org.tr",
+            "server_port": 4030,
+            "uuid": "d0200b5f-809b-4a37-9e85-ebe69346846b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lHSrAqdEQ-QuZHqifEry3JQuInA3-BZCZpBWFhEBwjs",
+                    "short_id": "d33833fa07a73354"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "4030vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
