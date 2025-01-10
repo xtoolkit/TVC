@@ -146,7 +146,7 @@
                 "❔XX | 🔴 | vless | @MTConfig | 15",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 175",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 176",
-                "🇮🇷IR | 🔴 | vless | @ConfigsHUB | 17",
+                "🇧🇪BE | 🔴 | vless | @ConfigsHUB | 17",
                 "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 9",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
@@ -207,7 +207,7 @@
                 "❔XX | 🔴 | vless | @MTConfig | 15",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 175",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 176",
-                "🇮🇷IR | 🔴 | vless | @ConfigsHUB | 17",
+                "🇧🇪BE | 🔴 | vless | @ConfigsHUB | 17",
                 "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 9",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
@@ -1211,17 +1211,39 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @ConfigsHUB | 17",
+            "tag": "🇧🇪BE | 🔴 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "178.239.144.176",
-            "server_port": 2015,
-            "uuid": "4334573e-15b8-4376-94cf-a8aa0ce722b3",
-            "flow": "",
+            "server": "141.227.136.32",
+            "server_port": 38818,
+            "uuid": "0d30dbbd-442b-4522-a098-7e3b9117d83f",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3uG4qqXt1YcoCdfVxisTqXFhVF4HwBhpVKEoFz8jsz4",
+                    "short_id": "ae4ab95b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
