@@ -106,9 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 291",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 292",
-                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 17",
+                "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
                 "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 5",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -118,9 +119,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 291",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 292",
-                "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 17",
+                "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
                 "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 5",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -144,6 +146,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
+            "type": "vless",
+            "server": "91.184.241.49",
+            "server_port": 1300,
+            "uuid": "b69f3e77-cdf1-4b84-851a-4b7ebede5433",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "rosbalt.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
+                    "short_id": "765e8e700426816c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "1300vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 291",
@@ -204,11 +242,11 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @ConfigsHUB | 17",
+            "tag": "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
             "type": "vless",
-            "server": "91.184.241.49",
-            "server_port": 1300,
-            "uuid": "b69f3e77-cdf1-4b84-851a-4b7ebede5433",
+            "server": "138.124.24.252",
+            "server_port": 8443,
+            "uuid": "4ca8471c-3e70-47e3-b09e-9541f259618b",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -218,7 +256,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "rosbalt.ru",
+                "server_name": "yahoo.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -227,16 +265,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
-                    "short_id": "765e8e700426816c"
+                    "public_key": "AraqCk8OydZjw2ZT-9WEmt_D1vIrtOf88o5YlbKqgRM",
+                    "short_id": "1b7d7614d14c"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "1300vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
