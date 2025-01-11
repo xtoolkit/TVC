@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 13",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 311",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 312",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -118,7 +119,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 13",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 311",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 312",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -180,11 +182,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 13",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 311",
             "type": "vless",
-            "server": "deko.tinadresses.ir",
-            "server_port": 5048,
-            "uuid": "db5f9170-55bd-9aea-d46d-78342d83fcf8",
+            "server": "3.147.73.26",
+            "server_port": 1212,
+            "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -203,16 +205,38 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "qdfo8UQXXsXPViln7MbAIIvVgKrDnuRoFBGVTJDm134",
-                    "short_id": "31e7200536a1ad45"
+                    "public_key": "RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A",
+                    "short_id": "a4844ba7"
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 312",
+            "type": "vless",
+            "server": "3.144.42.39",
+            "server_port": 1212,
+            "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
-            "transport": {
-                "type": "grpc",
-                "service_name": "666vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A",
+                    "short_id": "a4844ba7"
+                }
             }
         },
         {
