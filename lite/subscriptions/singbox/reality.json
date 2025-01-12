@@ -106,26 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @VmessProtocol | 6",
-                "❔XX | 🔴 | vless | @DailyV2RY | 303",
-                "❔XX | 🔴 | vless | @DailyV2RY | 304",
-                "❔XX | 🔴 | vless | @proxystore11 | 0",
-                "❔XX | 🔴 | vless | @mehrosaboran | 7",
+                "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 303",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 304",
+                "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
+                "🇫🇷FR | 🔴 | vless | @mehrosaboran | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
-                "❔XX | 🔴 | vless | @vpn_go67 | 21"
+                "❔XX | 🔴 | vless | @vpn_go67 | 21",
+                "🇳🇱NL | 🟢 | vless | @kingofilter | 14"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @VmessProtocol | 6",
-                "❔XX | 🔴 | vless | @DailyV2RY | 303",
-                "❔XX | 🔴 | vless | @DailyV2RY | 304",
-                "❔XX | 🔴 | vless | @proxystore11 | 0",
-                "❔XX | 🔴 | vless | @mehrosaboran | 7",
+                "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 303",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 304",
+                "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
+                "🇫🇷FR | 🔴 | vless | @mehrosaboran | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
-                "❔XX | 🔴 | vless | @vpn_go67 | 21"
+                "❔XX | 🔴 | vless | @vpn_go67 | 21",
+                "🇳🇱NL | 🟢 | vless | @kingofilter | 14"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,7 +150,7 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @VmessProtocol | 6",
+            "tag": "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
             "type": "vless",
             "server": "91.184.241.49",
             "server_port": 1300,
@@ -184,7 +186,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @DailyV2RY | 303",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 303",
             "type": "vless",
             "server": "13.58.144.224",
             "server_port": 1212,
@@ -213,7 +215,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @DailyV2RY | 304",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 304",
             "type": "vless",
             "server": "107.20.18.124",
             "server_port": 1212,
@@ -242,7 +244,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @proxystore11 | 0",
+            "tag": "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
             "type": "vless",
             "server": "138.124.24.252",
             "server_port": 8443,
@@ -271,7 +273,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @mehrosaboran | 7",
+            "tag": "🇫🇷FR | 🔴 | vless | @mehrosaboran | 7",
             "type": "vless",
             "server": "91.134.100.48",
             "server_port": 55235,
@@ -376,6 +378,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @kingofilter | 14",
+            "type": "vless",
+            "server": "174.138.13.224",
+            "server_port": 15891,
+            "uuid": "ae2228d1-9b8f-4914-9e0a-68a115f8dbe1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4FNDHgDP2lnetuRioH6DsE9kMnDyhkJ2NHLMpZgyci0",
+                    "short_id": "10f1"
+                }
             }
         }
     ],
