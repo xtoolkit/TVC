@@ -153,8 +153,8 @@
                 "❔XX | 🔴 | vless | @VmessProtocol | 6",
                 "❔XX | 🔴 | vless | @DailyV2RY | 313",
                 "❔XX | 🟢 | vless | @DailyV2RY | 314",
-                "❔XX | 🟢 | trojan | @ConfigsHUB | 17",
-                "❔XX | 🟢 | trojan | @ConfigsHUB | 18",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 11",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 12",
                 "❔XX | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vmess | @proxystore11 | 1",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
@@ -230,8 +230,8 @@
                 "❔XX | 🔴 | vless | @VmessProtocol | 6",
                 "❔XX | 🔴 | vless | @DailyV2RY | 313",
                 "❔XX | 🟢 | vless | @DailyV2RY | 314",
-                "❔XX | 🟢 | trojan | @ConfigsHUB | 17",
-                "❔XX | 🟢 | trojan | @ConfigsHUB | 18",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 11",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 12",
                 "❔XX | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vmess | @proxystore11 | 1",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
@@ -1435,11 +1435,13 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | trojan | @ConfigsHUB | 17",
-            "type": "trojan",
-            "server": "51.44.129.184",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 11",
+            "type": "vless",
+            "server": "clientproo.xyz",
+            "server_port": 47252,
+            "uuid": "Tel-AB_841",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -1447,34 +1449,45 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
+                "server_name": "docker.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "plm7PtLeSp27aIMuf1qPJaLxyYpSGZGG-EFUjw-giUM",
+                    "short_id": "a3f762"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-id:@BugFreeNet[@AB_841]",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "❔XX | 🟢 | trojan | @ConfigsHUB | 18",
-            "type": "trojan",
-            "server": "3.97.132.69",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 12",
+            "type": "vless",
+            "server": "65.21.149.150",
+            "server_port": 443,
+            "uuid": "95089f63-c732-4594-bfcb-c8180bd09a1c",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "65.21.149.150"
                 }
             }
         },
