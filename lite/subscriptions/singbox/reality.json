@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 1",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
                 "🇫🇷FR | 🔴 | vless | @mehrosaboran | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -118,6 +119,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 6",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 1",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
                 "🇫🇷FR | 🔴 | vless | @mehrosaboran | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -174,6 +176,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "1300vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 1",
+            "type": "vless",
+            "server": "deko.tinadresses.ir",
+            "server_port": 5048,
+            "uuid": "db5f9170-55bd-9aea-d46d-78342d83fcf8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qdfo8UQXXsXPViln7MbAIIvVgKrDnuRoFBGVTJDm134",
+                    "short_id": "31e7200536a1ad45"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "666vless",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
