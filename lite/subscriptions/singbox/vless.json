@@ -143,15 +143,15 @@
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 11",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 267",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 268",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 12",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 13",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 10",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 11",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 9",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇫🇮FI | 🔴 | vless | @fnet00 | 3",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 7",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 9",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 7",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -204,15 +204,15 @@
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 11",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 267",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 268",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 12",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 13",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 10",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 11",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 9",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇫🇮FI | 🔴 | vless | @fnet00 | 3",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 7",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 9",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 7",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -1167,42 +1167,65 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 12",
+            "tag": "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 10",
             "type": "vless",
-            "server": "NUFiLTER.fastly80-3.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "6ed1700c-TELEGRAM-NUFiLTER",
-            "flow": "",
+            "server": "109.120.139.49",
+            "server_port": 8443,
+            "uuid": "219ee52a-0e91-4f36-93a5-3e28a4830a7a",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080",
-                "headers": {
-                    "Host": "NUFiLTER.fastly80-3.hosting-ip.com"
+            "tls": {
+                "enabled": true,
+                "server_name": "bunny.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "os2QbCQyqdqE4vr-vVWTQMBiqxFXEDSLhMncRy5RIwg",
+                    "short_id": "f8d8d12585198cb5"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 13",
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 11",
             "type": "vless",
-            "server": "TLS.zeoaeriedo-saioesrio.ir",
-            "server_port": 2000,
-            "uuid": "8b43abce-8170-432c-9d85-cc93807aa098",
-            "flow": "",
+            "server": "138.199.145.158",
+            "server_port": 4030,
+            "uuid": "f7bbb6ad-d01f-4a42-b96e-1865b058d136",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lHSrAqdEQ-QuZHqifEry3JQuInA3-BZCZpBWFhEBwjs",
+                    "short_id": "d33833fa07a73354"
+                }
+            },
             "transport": {
                 "type": "grpc",
-                "service_name": "\/@TLS_v2ray-------@TLS_v2ray-------@TLS_v2ray-------@TLS_v2ray-------@TLS_v2ray-------@TLS_v2ray-------@TLS_v2ray",
+                "service_name": "4030vless",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1308,7 +1331,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 7",
+            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
             "type": "vless",
             "server": "NUFiLTER.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -1329,7 +1352,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
+            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 9",
             "type": "vless",
             "server": "NUFiLTER.fastly80-3.hosting-ip.com",
             "server_port": 80,
