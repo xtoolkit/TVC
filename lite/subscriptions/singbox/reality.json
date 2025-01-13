@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇸🇪SE | 🔴 | vless | @VmessProtocol | 10",
+                "🇸🇪SE | 🔴 | vless | @VmessProtocol | 11",
+                "🇨🇦CA | 🟢 | vless | @ConfigsHUB | 14",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
                 "🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -117,7 +118,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇸🇪SE | 🔴 | vless | @VmessProtocol | 10",
+                "🇸🇪SE | 🔴 | vless | @VmessProtocol | 11",
+                "🇨🇦CA | 🟢 | vless | @ConfigsHUB | 14",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 0",
                 "🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -144,7 +146,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @VmessProtocol | 10",
+            "tag": "🇸🇪SE | 🔴 | vless | @VmessProtocol | 11",
             "type": "vless",
             "server": "91.184.241.49",
             "server_port": 1300,
@@ -177,6 +179,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vless | @ConfigsHUB | 14",
+            "type": "vless",
+            "server": "178.128.236.252",
+            "server_port": 443,
+            "uuid": "1c8ea5a2-e986-42d6-9039-867aed7ca528",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "isna.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "MM2ZuhIbjaM6h7NOhWQZM8R8hkSE7Qc0uaEwzZ9YuQ0",
+                    "short_id": "15bf9cd93a696bc5"
+                }
             }
         },
         {
