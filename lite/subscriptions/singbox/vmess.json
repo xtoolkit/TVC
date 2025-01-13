@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @prrofile_purple | 158",
+                "🇨🇿CZ | 🟢 | vmess | @prrofile_purple | 158",
                 "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 12",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -124,7 +124,7 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @prrofile_purple | 158",
+                "🇨🇿CZ | 🟢 | vmess | @prrofile_purple | 158",
                 "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 12",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
@@ -188,11 +188,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @prrofile_purple | 158",
+            "tag": "🇨🇿CZ | 🟢 | vmess | @prrofile_purple | 158",
             "type": "vmess",
-            "server": "dl6.novenipv6.sbs",
-            "server_port": 100,
-            "uuid": "bb3d8f2d-66db-4042-bd6a-fb256ed09b0d",
+            "server": "94.131.97.127",
+            "server_port": 8880,
+            "uuid": "dd1154b1-d5fa-5e52-a108-75e568c4ad06",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -202,6 +202,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "vmess-grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -347,6 +354,40 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
+            "server": "108.186.26.168",
+            "server_port": 37004,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "108.186.26.168",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/path\/1736675184805",
+                "headers": {
+                    "Host": "108.186.26.168"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+            "type": "vmess",
             "server": "www.darkroom.lol",
             "server_port": 8080,
             "uuid": "22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0",
@@ -365,30 +406,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "www.darkroom.lol"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-            "type": "vmess",
-            "server": "s1.db-link02.top",
-            "server_port": 80,
-            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/dabai.in104.17.169.115",
-                "headers": {
-                    "Host": "s1.db-link02.top"
                 }
             }
         }
