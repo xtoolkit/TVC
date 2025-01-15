@@ -145,8 +145,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 15",
-                "🇳🇱NL | 🔴 | vless | @DailyV2RY | 291",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 292",
+                "🇫🇷FR | 🟢 | vless | @DailyV2RY | 280",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 281",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 8",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 9",
@@ -210,8 +210,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
                 "🇸🇪SE | 🔴 | vless | @VmessProtocol | 15",
-                "🇳🇱NL | 🔴 | vless | @DailyV2RY | 291",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 292",
+                "🇫🇷FR | 🟢 | vless | @DailyV2RY | 280",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 281",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 8",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 9",
@@ -1199,32 +1199,40 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @DailyV2RY | 291",
+            "tag": "🇫🇷FR | 🟢 | vless | @DailyV2RY | 280",
             "type": "vless",
-            "server": "199.247.29.45",
-            "server_port": 8080,
-            "uuid": "61560ad9-d553-4bb6-c169-dd1755abab01",
-            "flow": "",
+            "server": "v06.kermanloop.ir",
+            "server_port": 2087,
+            "uuid": "304416a2-4cab-4f20-8270-420dbe0358c8",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "199.247.29.45"
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "p7D1-djJiLWoHcOpkhwz1BqAxoN6OwTwfFFDAzp9nBs",
+                    "short_id": "d1d37795627fd805"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 292",
+            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 281",
             "type": "vless",
-            "server": "harlan.ns.cloudflare.com",
+            "server": "hajlab.ucdavis.edu",
             "server_port": 443,
-            "uuid": "121833de-9e06-4ffc-930e-8fc2361386f1",
+            "uuid": "050769b9-a6d1-4bf2-8af7-fe50c8e2207f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1234,7 +1242,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "rzw2uw.alligator27.com",
+                "server_name": "hajlab.ucdavis.edu",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1244,9 +1252,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/wss",
+                "path": "\/",
                 "headers": {
-                    "Host": "rzw2uw.alligator27.com"
+                    "Host": "hajlab.ucdavis.edu"
                 }
             }
         },
