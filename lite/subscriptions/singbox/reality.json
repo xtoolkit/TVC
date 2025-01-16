@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🔴 | vless | @DailyV2RY | 225",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇩🇪DE | 🟢 | vless | @nofiltering2 | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -118,7 +117,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🔴 | vless | @DailyV2RY | 225",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇩🇪DE | 🟢 | vless | @nofiltering2 | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -144,35 +142,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇷FR | 🔴 | vless | @DailyV2RY | 225",
-            "type": "vless",
-            "server": "51.91.144.205",
-            "server_port": 443,
-            "uuid": "64f18b9a-e1e7-435e-a3c1-bd77355048f8",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "rTfR-BEdiTCoOXrHhheBl7Zp-iLo7B17smIsXpcMpUs",
-                    "short_id": "9d4201950f21a3"
-                }
-            }
         },
         {
             "tag": "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
