@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇪🇸ES | 🔴 | vless | @v2ray1_ng | 11",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇩🇪DE | 🟢 | vless | @nofiltering2 | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -117,6 +118,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇪🇸ES | 🔴 | vless | @v2ray1_ng | 11",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇩🇪DE | 🟢 | vless | @nofiltering2 | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -142,6 +144,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇪🇸ES | 🔴 | vless | @v2ray1_ng | 11",
+            "type": "vless",
+            "server": "ns9.esfahansiman.com",
+            "server_port": 1210,
+            "uuid": "f51aebe4-678e-41ac-96bf-fecd259e3616",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ubuntu.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E",
+                    "short_id": "7fe29733"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@@jet_config-@jet_config-@jet_config",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
