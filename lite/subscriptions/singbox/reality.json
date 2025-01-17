@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 227",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 248",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 249",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -117,7 +118,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 227",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 248",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 249",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -144,9 +146,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 227",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 248",
             "type": "vless",
-            "server": "34.218.58.222",
+            "server": "3.135.195.87",
             "server_port": 443,
             "uuid": "2b50b3d0-63e2-4927-b7b8-59790681071b",
             "flow": "xtls-rprx-vision",
@@ -169,6 +171,35 @@
                     "enabled": true,
                     "public_key": "PUZ33dJSwX3bsLDidLH01AZA62ckDeYH31lbx4OSN3c",
                     "short_id": "af6e23a61da9"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 249",
+            "type": "vless",
+            "server": "167.71.245.36",
+            "server_port": 443,
+            "uuid": "0151855f-b44d-4518-882b-47a53d8d5254",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4S2DW38N-ZoaadW9C9RIzkzW6BlJXU7Ma2hwvUX7Jhk",
+                    "short_id": "ae358f8d"
                 }
             }
         },
