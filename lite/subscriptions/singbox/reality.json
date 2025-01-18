@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 13",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -115,6 +116,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 13",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21"
@@ -138,6 +140,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 13",
+            "type": "vless",
+            "server": "5.75.193.5",
+            "server_port": 48363,
+            "uuid": "e8e6921c-da08-4d51-af5a-9d7710134fcf",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "docker.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "w8xfpG5vc5edKaa7eizbn0dWQ22Ayo_1cIuI-DOUPHk",
+                    "short_id": "29bc6c739408"
+                }
+            }
         },
         {
             "tag": "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
