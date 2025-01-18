@@ -143,6 +143,7 @@
                 "🇫🇷FR | 🔴 | vless | @fnet00 | 3",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 4",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 2",
+                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 10",
                 "🇩🇪DE | 🔴 | vless | @nofiltering2 | 3",
                 "🇫🇷FR | 🟢 | vless | @nofiltering2 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
@@ -206,6 +207,7 @@
                 "🇫🇷FR | 🔴 | vless | @fnet00 | 3",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 4",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 2",
+                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 10",
                 "🇩🇪DE | 🔴 | vless | @nofiltering2 | 3",
                 "🇫🇷FR | 🟢 | vless | @nofiltering2 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
@@ -1346,6 +1348,42 @@
             "server": "amin.4en1.net",
             "server_port": 1777,
             "uuid": "61125d5f-1eb4-47f4-a6cb-4826e220e5ca",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "globalsign.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "jkJpzKFOelmStHPCJNnzmoFzAIBn0AQM3UUmKC1TWm4",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM?ed=2048",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 10",
+            "type": "vless",
+            "server": "amin.4en1.net",
+            "server_port": 1777,
+            "uuid": "55e346e0-5258-49e8-9ee1-8942ca3bff44",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
