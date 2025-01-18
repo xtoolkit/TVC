@@ -119,6 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇸🇪SE | 🟢 | ss | @azadi_az_inja_migzare | 0","type":"ss","server":"homa.cybsecguru.com","port":55551,"password":"UNJXwrcb3vkdQbR6P5VGHA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @VmessProtocol | 15","type":"ss","server":"45.158.171.66","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -126,6 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇸🇪SE | 🟢 | ss | @azadi_az_inja_migzare | 0'
+      - '🇳🇱NL | 🟢 | ss | @VmessProtocol | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -133,12 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇸🇪SE | 🟢 | ss | @azadi_az_inja_migzare | 0'
+      - '🇳🇱NL | 🟢 | ss | @VmessProtocol | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇸🇪SE | 🟢 | ss | @azadi_az_inja_migzare | 0'
+      - '🇳🇱NL | 🟢 | ss | @VmessProtocol | 15'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
