@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 267",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 5",
                 "🇫🇷FR | 🟢 | vless | @nofiltering2 | 10",
@@ -118,6 +119,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 267",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 5",
                 "🇫🇷FR | 🟢 | vless | @nofiltering2 | 10",
@@ -144,6 +146,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 267",
+            "type": "vless",
+            "server": "34.219.206.100",
+            "server_port": 443,
+            "uuid": "3c040157-b103-423e-89ac-23c768dea8a7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.openstreetmap.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HG9t2HhmBcU3u63xzmV227fg0O2ka5BLcKeYA74Lah4",
+                    "short_id": "a45eed54009e54de"
+                }
+            }
         },
         {
             "tag": "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
