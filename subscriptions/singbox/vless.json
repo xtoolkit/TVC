@@ -443,6 +443,7 @@
                 "🇩🇪DE | 🔴 | vless | @nofiltering2 | 5",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 7",
                 "🇫🇷FR | 🟢 | vless | @nofiltering2 | 10",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 3",
@@ -823,6 +824,7 @@
                 "🇩🇪DE | 🔴 | vless | @nofiltering2 | 5",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 7",
                 "🇫🇷FR | 🟢 | vless | @nofiltering2 | 10",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 3",
@@ -9219,6 +9221,42 @@
                     "public_key": "os2QbCQyqdqE4vr-vVWTQMBiqxFXEDSLhMncRy5RIwg",
                     "short_id": "f8d8d12585198cb5"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
+            "type": "vless",
+            "server": "mehdi.vact.ir",
+            "server_port": 2083,
+            "uuid": "ID-proxy_mtm",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "CWXxQcl33vnJNew9-YGs21-uKGs5oWdLn_R705IVoiE",
+                    "short_id": "e946a4502f73d6f2"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Proxy_mtm-Channel-Proxy_mtm-Channel-Proxy_mtm-Channel",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
