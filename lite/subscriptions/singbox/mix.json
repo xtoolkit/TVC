@@ -158,18 +158,19 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @free1_vpn | 19",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 20",
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 0",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 5",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 6",
                 "🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
-                "🇱🇻LV | 🔴 | vless | @FreakConfig | 1",
+                "🇱🇻LV | 🔴 | vless | @FreakConfig | 2",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 13",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🟢 | vless | @mehrosaboran | 9",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 3",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
-                "🇷🇺RU | 🔴 | vless | @proxy_mtm | 1",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇺🇸US | 🔴 | vless | @kingofilter | 15",
@@ -237,18 +238,19 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @free1_vpn | 19",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 20",
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 0",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 5",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 6",
                 "🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
-                "🇱🇻LV | 🔴 | vless | @FreakConfig | 1",
+                "🇱🇻LV | 🔴 | vless | @FreakConfig | 2",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 13",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🟢 | vless | @mehrosaboran | 9",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 3",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
-                "🇷🇺RU | 🔴 | vless | @proxy_mtm | 1",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇺🇸US | 🔴 | vless | @kingofilter | 15",
@@ -1598,6 +1600,40 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🟢 | vmess | @Hope_Net | 0",
+            "type": "vmess",
+            "server": "gt021.bestforxray.buzz",
+            "server_port": 443,
+            "uuid": "c1fd780a-3408-4f48-a932-5832a28ce9f6",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "gt021.bestforxray.buzz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "gt021.bestforxray.buzz"
+                }
+            }
+        },
+        {
             "tag": "🇻🇳VN | 🔴 | vless | @fnet00 | 5",
             "type": "vless",
             "server": "157.10.53.154",
@@ -1699,7 +1735,7 @@
             }
         },
         {
-            "tag": "🇱🇻LV | 🔴 | vless | @FreakConfig | 1",
+            "tag": "🇱🇻LV | 🔴 | vless | @FreakConfig | 2",
             "type": "vless",
             "server": "94.131.104.66",
             "server_port": 8880,
@@ -1869,24 +1905,46 @@
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "Proxy_mtm-Channel-Proxy_mtm-Channel-Proxy_mtm-Channel-Proxy_mtm-Channel-Proxy_mtm-Channel-Proxy_mtm",
+                "service_name": "ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
             }
         },
         {
-            "tag": "🇷🇺RU | 🔴 | vless | @proxy_mtm | 1",
+            "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 1",
             "type": "vless",
-            "server": "95.142.37.74",
-            "server_port": 20011,
-            "uuid": "c26181b5-b49e-480e-a3d5-eb1583a1f38d",
-            "flow": "",
+            "server": "mehdi.vact.ir",
+            "server_port": 2083,
+            "uuid": "Telegram-proxy_mtm",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "CWXxQcl33vnJNew9-YGs21-uKGs5oWdLn_R705IVoiE",
+                    "short_id": "e946a4502f73d6f2"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Proxy_mtm-Channel-Proxy_mtm-Channel-Proxy_mtm-Channel-Proxy_mtm-Channel-Proxy_mtm-Channel-Proxy_mtm",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
