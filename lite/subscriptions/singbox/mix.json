@@ -165,8 +165,8 @@
                 "🇱🇻LV | 🔴 | vless | @FreakConfig | 3",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 13",
-                "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 9",
+                "🇩🇪DE | 🟢 | vless | @mehrosaboran | 10",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 7",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 8",
                 "🇬🇧GB | 🔴 | vless | @proxy_mtm | 3",
@@ -244,8 +244,8 @@
                 "🇱🇻LV | 🔴 | vless | @FreakConfig | 3",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 13",
-                "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 9",
+                "🇩🇪DE | 🟢 | vless | @mehrosaboran | 10",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 7",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 8",
                 "🇬🇧GB | 🔴 | vless | @proxy_mtm | 3",
@@ -1670,37 +1670,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
-            "type": "vless",
-            "server": "fishlab.ucdavis.edu",
-            "server_port": 443,
-            "uuid": "4e642fc6-9f6d-45a2-97d0-1919dbf47e86",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fishlab.ucdavis.edu",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed=2480",
-                "headers": {
-                    "Host": "fishlab.ucdavis.edu"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @mehrosaboran | 9",
             "type": "vless",
             "server": "python.org",
@@ -1719,6 +1688,42 @@
                 "headers": {
                     "Host": "python.org"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @mehrosaboran | 10",
+            "type": "vless",
+            "server": "kamyar.vact.ir",
+            "server_port": 2083,
+            "uuid": "8bafd6a7-1aea-4703-8553-54ed657d39f8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TuZN_1XtdIQrXoKk5MFJR62hyz7FkIilrMEguBWtvmE",
+                    "short_id": "4ea00ce2"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
