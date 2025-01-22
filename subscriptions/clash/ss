@@ -119,9 +119,8 @@ dns:
 
 proxies:
   - {"name":"❔XX | 🟢 | ss | @VmessProtocol | 6","type":"ss","server":"freakconfig86.usecharge.ir","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @kingofilter | 2","type":"ss","server":"45.158.171.151","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇦🇪AE | 🟢 | ss | @kingofilter | 8","type":"ss","server":"api.namasha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @kingofilter | 18","type":"ss","server":"kingofilter65.usecharge.ir","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @kingofilter | 3","type":"ss","server":"45.158.171.151","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇦🇪AE | 🟢 | ss | @kingofilter | 9","type":"ss","server":"api.namasha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,9 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '❔XX | 🟢 | ss | @VmessProtocol | 6'
-      - '🇳🇱NL | 🟢 | ss | @kingofilter | 2'
-      - '🇦🇪AE | 🟢 | ss | @kingofilter | 8'
-      - '❔XX | 🟢 | ss | @kingofilter | 18'
+      - '🇳🇱NL | 🟢 | ss | @kingofilter | 3'
+      - '🇦🇪AE | 🟢 | ss | @kingofilter | 9'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,18 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '❔XX | 🟢 | ss | @VmessProtocol | 6'
-      - '🇳🇱NL | 🟢 | ss | @kingofilter | 2'
-      - '🇦🇪AE | 🟢 | ss | @kingofilter | 8'
-      - '❔XX | 🟢 | ss | @kingofilter | 18'
+      - '🇳🇱NL | 🟢 | ss | @kingofilter | 3'
+      - '🇦🇪AE | 🟢 | ss | @kingofilter | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '❔XX | 🟢 | ss | @VmessProtocol | 6'
-      - '🇳🇱NL | 🟢 | ss | @kingofilter | 2'
-      - '🇦🇪AE | 🟢 | ss | @kingofilter | 8'
-      - '❔XX | 🟢 | ss | @kingofilter | 18'
+      - '🇳🇱NL | 🟢 | ss | @kingofilter | 3'
+      - '🇦🇪AE | 🟢 | ss | @kingofilter | 9'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
