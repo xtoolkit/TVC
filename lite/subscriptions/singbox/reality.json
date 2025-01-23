@@ -106,10 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇸🇪SE | 🟢 | vless | @proxy_kafee | 3",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 7",
-                "🇬🇧GB | 🔴 | vless | @proxy_mtm | 4",
-                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 5",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @kingofilter | 18",
@@ -120,10 +120,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇸🇪SE | 🟢 | vless | @proxy_kafee | 3",
                 "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 7",
-                "🇬🇧GB | 🔴 | vless | @proxy_mtm | 4",
-                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 5",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @kingofilter | 18",
@@ -148,6 +148,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇸🇪SE | 🟢 | vless | @proxy_kafee | 3",
+            "type": "vless",
+            "server": "Wedbaz-Sweden.zpowerio.ir",
+            "server_port": 443,
+            "uuid": "5f913408-aa39-4927-8510-a067beeb337b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fYduc27KzmdrSI1S_LCBUxk3zDSe69dA5uKieS2oUEE",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
@@ -208,47 +237,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @proxy_mtm | 4",
-            "type": "vless",
-            "server": "v06.blkrose.ir",
-            "server_port": 2053,
-            "uuid": "1fb52030-a522-4665-8a35-09b6710b062d",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sourceforge.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "nr4qs7JSJShNXIpWKNGReZXaFw910k1X93NDevapa0E",
-                    "short_id": "5640288dca4f8519"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "2053vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 5",
+            "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
             "type": "vless",
             "server": "mehdi.vact.ir",
             "server_port": 2083,
-            "uuid": "Telegram-proxy_mtm",
+            "uuid": "17c2f19f-a032-411a-9665-b684182dca36",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -267,13 +260,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "CWXxQcl33vnJNew9-YGs21-uKGs5oWdLn_R705IVoiE",
-                    "short_id": "e946a4502f73d6f2"
+                    "public_key": "AGJqBirLnXNaPZafTvgKKSRR14V83keXoXWUBDCqyGg",
+                    "short_id": "caa6ba10e8654f5d"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM-ID-PROXY_MTM",
+                "service_name": "ID-PROXY_MTM-PROXY_MTM",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
