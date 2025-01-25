@@ -106,10 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇸🇪SE | 🟢 | vless | @proxy_kafee | 5",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇭🇰HK | 🟢 | vless | @VmessProtocol | 14",
-                "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
+                "🇬🇧GB | 🔴 | vless | @DailyV2RY | 215",
+                "🇬🇧GB | 🟢 | vless | @DailyV2RY | 216",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 8",
                 "🇫🇷FR | 🟢 | vless | @mehrosaboran | 10",
                 "🇩🇪DE | 🟢 | vless | @mehrosaboran | 11",
@@ -123,10 +123,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇸🇪SE | 🟢 | vless | @proxy_kafee | 5",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇭🇰HK | 🟢 | vless | @VmessProtocol | 14",
-                "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
+                "🇬🇧GB | 🔴 | vless | @DailyV2RY | 215",
+                "🇬🇧GB | 🟢 | vless | @DailyV2RY | 216",
                 "🇻🇳VN | 🔴 | vless | @fnet00 | 8",
                 "🇫🇷FR | 🟢 | vless | @mehrosaboran | 10",
                 "🇩🇪DE | 🟢 | vless | @mehrosaboran | 11",
@@ -154,35 +154,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇸🇪SE | 🟢 | vless | @proxy_kafee | 5",
-            "type": "vless",
-            "server": "Wedbaz-Sweden.zpowerio.ir",
-            "server_port": 443,
-            "uuid": "06aa1d12-d67d-4579-b623-ae6c671c7796",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "fYduc27KzmdrSI1S_LCBUxk3zDSe69dA5uKieS2oUEE",
-                    "short_id": ""
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
@@ -243,11 +214,11 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @proxystore11 | 1",
+            "tag": "🇬🇧GB | 🔴 | vless | @DailyV2RY | 215",
             "type": "vless",
-            "server": "138.124.24.252",
-            "server_port": 8443,
-            "uuid": "4ca8471c-3e70-47e3-b09e-9541f259618b",
+            "server": "v26.blkrose.ir",
+            "server_port": 2053,
+            "uuid": "1fb52030-a522-4665-8a35-09b6710b062d",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -257,7 +228,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yahoo.com",
+                "server_name": "sourceforge.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -266,9 +237,52 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "AraqCk8OydZjw2ZT-9WEmt_D1vIrtOf88o5YlbKqgRM",
-                    "short_id": "1b7d7614d14c"
+                    "public_key": "nr4qs7JSJShNXIpWKNGReZXaFw910k1X93NDevapa0E",
+                    "short_id": "5640288dca4f8519"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2053vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @DailyV2RY | 216",
+            "type": "vless",
+            "server": "v06.blkrose.ir",
+            "server_port": 2053,
+            "uuid": "1fb52030-a522-4665-8a35-09b6710b062d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "nr4qs7JSJShNXIpWKNGReZXaFw910k1X93NDevapa0E",
+                    "short_id": "5640288dca4f8519"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2053vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
