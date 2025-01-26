@@ -107,10 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇸🇬SG | 🔴 | vless | @proxy_kafee | 3",
+                "🇩🇪DE | 🟢 | vless | @customv2ray | 15",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 31",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
-                "🇩🇪DE | 🟢 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -123,10 +123,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇸🇬SG | 🔴 | vless | @proxy_kafee | 3",
+                "🇩🇪DE | 🟢 | vless | @customv2ray | 15",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 31",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
-                "🇩🇪DE | 🟢 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -187,6 +187,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @customv2ray | 15",
+            "type": "vless",
+            "server": "SVNTEAM.MiSVN.iR",
+            "server_port": 443,
+            "uuid": "SVNTEAM2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "193rx1HPJxmcw5Igm1lZeCcPnBx1dVfBroBl5FR9BEE",
+                    "short_id": ""
+                }
             }
         },
         {
@@ -281,42 +310,6 @@
                     "public_key": "W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg",
                     "short_id": ""
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @mehrosaboran | 8",
-            "type": "vless",
-            "server": "amin.4en1.net",
-            "server_port": 1777,
-            "uuid": "93b54823-d635-4e7b-953c-f397a662d5a7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "globalsign.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "jkJpzKFOelmStHPCJNnzmoFzAIBn0AQM3UUmKC1TWm4",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "\/@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM?ed=2048",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
