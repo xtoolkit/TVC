@@ -162,8 +162,8 @@
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 4",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @kingofilter | 13",
-                "🇺🇸US | 🔴 | vless | @kingofilter | 14",
+                "🇫🇮FI | 🔴 | vless | @kingofilter | 15",
+                "🇮🇷IR | 🔴 | vless | @kingofilter | 16",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 13",
                 "🇮🇷IR | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
@@ -230,8 +230,8 @@
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 4",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @kingofilter | 13",
-                "🇺🇸US | 🔴 | vless | @kingofilter | 14",
+                "🇫🇮FI | 🔴 | vless | @kingofilter | 15",
+                "🇮🇷IR | 🔴 | vless | @kingofilter | 16",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 13",
                 "🇮🇷IR | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
@@ -1676,11 +1676,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @kingofilter | 13",
+            "tag": "🇫🇮FI | 🔴 | vless | @kingofilter | 15",
             "type": "vless",
-            "server": "91.107.158.170",
-            "server_port": 50487,
-            "uuid": "@v2rayng_vpnn",
+            "server": "37.27.3.97",
+            "server_port": 2052,
+            "uuid": "8bca284c-d2f2-4367-999c-5f490a872c2d",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1690,7 +1690,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "mmd.10.isovpn.shop",
+                "server_name": "wordpress.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1699,40 +1699,30 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "90_55z-OU-LDKBHjY-7mgxKiLSud0fU7m5Yo0PjMbBw",
-                    "short_id": ""
+                    "public_key": "BamXEb50W1rXENIC96WfSvMiFGE7hnbu_GcXkBv-8H8",
+                    "short_id": "4156caa9"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2052vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @kingofilter | 14",
+            "tag": "🇮🇷IR | 🔴 | vless | @kingofilter | 16",
             "type": "vless",
-            "server": "fishlab.ucdavis.edu",
-            "server_port": 443,
-            "uuid": "___VPNCUSTOMIZE___",
+            "server": "178.239.144.176",
+            "server_port": 2015,
+            "uuid": "4334573e-15b8-4376-94cf-a8aa0ce722b3",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fishlab.ucdavis.edu",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE-telegram-VPNCUSTOMIZE?ed=2560",
-                "headers": {
-                    "Host": "fishlab.ucdavis.edu"
-                }
             }
         },
         {
