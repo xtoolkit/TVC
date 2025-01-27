@@ -120,8 +120,8 @@
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 2",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 7",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 8",
+                "🇬🇧GB | 🟢 | vless | @proxy_kafee | 1",
                 "🇺🇸US | 🔴 | vless | @proxy_kafee | 2",
-                "🇸🇬SG | 🔴 | vless | @proxy_kafee | 3",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "🇺🇸US | 🔴 | vless | @v2logy | 10",
                 "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
@@ -147,8 +147,8 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 12",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 291",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 292",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 294",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 295",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
                 "🇮🇹IT | 🟢 | vless | @Outlinev2rayNG | 8",
                 "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 9",
@@ -188,8 +188,8 @@
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 2",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 7",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 8",
+                "🇬🇧GB | 🟢 | vless | @proxy_kafee | 1",
                 "🇺🇸US | 🔴 | vless | @proxy_kafee | 2",
-                "🇸🇬SG | 🔴 | vless | @proxy_kafee | 3",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "🇺🇸US | 🔴 | vless | @v2logy | 10",
                 "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
@@ -215,8 +215,8 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 12",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 291",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 292",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 294",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 295",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
                 "🇮🇹IT | 🟢 | vless | @Outlinev2rayNG | 8",
                 "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 9",
@@ -584,6 +584,42 @@
             }
         },
         {
+            "tag": "🇬🇧GB | 🟢 | vless | @proxy_kafee | 1",
+            "type": "vless",
+            "server": "57.128.160.167",
+            "server_port": 2053,
+            "uuid": "bb04da46-54ef-401a-920f-6738f0b64a76",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "nr4qs7JSJShNXIpWKNGReZXaFw910k1X93NDevapa0E",
+                    "short_id": "5640288dca4f8519"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2053vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @proxy_kafee | 2",
             "type": "vless",
             "server": "151.101.3.8",
@@ -602,42 +638,6 @@
                 "headers": {
                     "Host": "151.101.3.8"
                 }
-            }
-        },
-        {
-            "tag": "🇸🇬SG | 🔴 | vless | @proxy_kafee | 3",
-            "type": "vless",
-            "server": "swedeeen.mehrdadsadaf.com",
-            "server_port": 30756,
-            "uuid": "d45deab2-5e28-4ca9-b594-20b2fe775cfa",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "rosbalt.ru",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
-                    "short_id": "765e8e700426816c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "1300vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -1290,7 +1290,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 291",
+            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 294",
             "type": "vless",
             "server": "hajlab.ucdavis.edu",
             "server_port": 443,
@@ -1321,7 +1321,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 292",
+            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 295",
             "type": "vless",
             "server": "hajlab.ucdavis.edu",
             "server_port": 443,
