@@ -105,13 +105,18 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +136,26 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 18",
+            "type": "shadowsocks",
+            "server": "54.36.174.181",
+            "server_port": 7002,
+            "method": "aes-256-gcm",
+            "password": "RexnBgU7EV5ADxG",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19",
+            "type": "shadowsocks",
+            "server": "series-a1.samanehha.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
