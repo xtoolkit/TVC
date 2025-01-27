@@ -110,16 +110,16 @@
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
-                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 0",
-                "🇬🇧GB | 🟢 | vless | @proxy_kafee | 1",
+                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 0",
+                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 1",
+                "🇬🇧GB | 🟢 | vless | @proxy_kafee | 2",
                 "🇩🇪DE | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🟢 | vless | @V2rayCollectorDonate | 9",
                 "🇩🇪DE | 🔴 | vless | @prrofile_purple | 127",
                 "🇫🇮FI | 🔴 | vless | @prrofile_purple | 143",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 144",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 151",
-                "🇩🇪DE | 🟢 | vless | @customv2ray | 8",
-                "🇩🇪DE | 🟢 | vless | @customv2ray | 15",
+                "🇩🇪DE | 🟢 | vless | @customv2ray | 4",
                 "🇷🇺RU | 🟢 | vless | @ShadowProxy66 | 18",
                 "🇯🇵JP | 🟢 | vless | @ShadowProxy66 | 19",
                 "🇦🇷AR | 🟢 | vless | @ShadowProxy66 | 20",
@@ -195,16 +195,16 @@
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
                 "🇫🇮FI | 🟢 | vless | @CUSTOMVPNSERVER | 13",
-                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 0",
-                "🇬🇧GB | 🟢 | vless | @proxy_kafee | 1",
+                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 0",
+                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 1",
+                "🇬🇧GB | 🟢 | vless | @proxy_kafee | 2",
                 "🇩🇪DE | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🟢 | vless | @V2rayCollectorDonate | 9",
                 "🇩🇪DE | 🔴 | vless | @prrofile_purple | 127",
                 "🇫🇮FI | 🔴 | vless | @prrofile_purple | 143",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 144",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 151",
-                "🇩🇪DE | 🟢 | vless | @customv2ray | 8",
-                "🇩🇪DE | 🟢 | vless | @customv2ray | 15",
+                "🇩🇪DE | 🟢 | vless | @customv2ray | 4",
                 "🇷🇺RU | 🟢 | vless | @ShadowProxy66 | 18",
                 "🇯🇵JP | 🟢 | vless | @ShadowProxy66 | 19",
                 "🇦🇷AR | 🟢 | vless | @ShadowProxy66 | 20",
@@ -415,7 +415,43 @@
             }
         },
         {
-            "tag": "🇦🇪AE | 🟢 | vless | @proxy_kafee | 0",
+            "tag": "🇳🇱NL | 🟢 | vless | @proxy_kafee | 0",
+            "type": "vless",
+            "server": "24.144.78.124",
+            "server_port": 4793,
+            "uuid": "556d0b18-ab99-407d-801e-9fab778b51a2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "IfTrRXLeimq41Lwj2HqGHda1O9kI6OLt7T4yxTklciw",
+                    "short_id": "64176758f3181759"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tok",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇦🇪AE | 🟢 | vless | @proxy_kafee | 1",
             "type": "vless",
             "server": "193.123.90.77",
             "server_port": 443,
@@ -444,7 +480,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @proxy_kafee | 1",
+            "tag": "🇬🇧GB | 🟢 | vless | @proxy_kafee | 2",
             "type": "vless",
             "server": "57.128.160.167",
             "server_port": 2053,
@@ -675,40 +711,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @customv2ray | 8",
-            "type": "vless",
-            "server": "svnteam.misvn.ir",
-            "server_port": 443,
-            "uuid": "SVNTEAM2",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "193rx1HPJxmcw5Igm1lZeCcPnBx1dVfBroBl5FR9BEE",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @customv2ray | 15",
+            "tag": "🇩🇪DE | 🟢 | vless | @customv2ray | 4",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
-            "uuid": "SVNTEAM2",
+            "uuid": "SVNTEAM1",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
