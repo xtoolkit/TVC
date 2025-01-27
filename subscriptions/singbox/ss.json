@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | ss | @VmessProtocol | 7",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+                "❔XX | 🟢 | ss | @VmessProtocol | 10",
                 "🇳🇱NL | 🟢 | ss | @kingofilter | 6",
                 "🇦🇪AE | 🟢 | ss | @kingofilter | 12"
             ]
@@ -115,7 +116,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | ss | @VmessProtocol | 7",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+                "❔XX | 🟢 | ss | @VmessProtocol | 10",
                 "🇳🇱NL | 🟢 | ss | @kingofilter | 6",
                 "🇦🇪AE | 🟢 | ss | @kingofilter | 12"
             ],
@@ -140,7 +142,17 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | ss | @VmessProtocol | 7",
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+            "type": "shadowsocks",
+            "server": "69.50.95.174",
+            "server_port": 443,
+            "method": "aes-256-gcm",
+            "password": "pKEW8JPByTVTLtM",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @VmessProtocol | 10",
             "type": "shadowsocks",
             "server": "freakconfig86.usecharge.ir",
             "server_port": 443,
