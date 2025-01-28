@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 2",
                 "🇦🇪AE | 🟢 | vless | @proxy_kafee | 3",
-                "🇬🇧GB | 🟢 | vless | @proxy_kafee | 4",
+                "🇦🇪AE | 🟢 | vless | @v2ray1_ng | 12",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 13",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 7",
@@ -122,8 +123,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 2",
                 "🇦🇪AE | 🟢 | vless | @proxy_kafee | 3",
-                "🇬🇧GB | 🟢 | vless | @proxy_kafee | 4",
+                "🇦🇪AE | 🟢 | vless | @v2ray1_ng | 12",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 13",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 7",
@@ -152,6 +154,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @proxy_kafee | 2",
+            "type": "vless",
+            "server": "24.144.78.124",
+            "server_port": 4793,
+            "uuid": "556d0b18-ab99-407d-801e-9fab778b51a2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "IfTrRXLeimq41Lwj2HqGHda1O9kI6OLt7T4yxTklciw",
+                    "short_id": "64176758f3181759"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tok",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇦🇪AE | 🟢 | vless | @proxy_kafee | 3",
@@ -183,11 +221,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @proxy_kafee | 4",
+            "tag": "🇦🇪AE | 🟢 | vless | @v2ray1_ng | 12",
             "type": "vless",
-            "server": "57.128.160.167",
-            "server_port": 2053,
-            "uuid": "bb04da46-54ef-401a-920f-6738f0b64a76",
+            "server": "db02.ssr.ee",
+            "server_port": 443,
+            "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -197,7 +235,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "sourceforge.net",
+                "server_name": "itunes.apple.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -206,16 +244,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "nr4qs7JSJShNXIpWKNGReZXaFw910k1X93NDevapa0E",
-                    "short_id": "5640288dca4f8519"
+                    "public_key": "0Vvc6EFXPQHWWqyhG4wek-MEh_q6a9CDMY7U-TSHGV4",
+                    "short_id": "6ba85179e30d4fc2"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "2053vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
