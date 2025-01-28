@@ -145,8 +145,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
-                "🇬🇧GB | 🔴 | vless | @DailyV2RY | 358",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 359",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 363",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 364",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 12",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
                 "🇮🇹IT | 🟢 | vless | @Outlinev2rayNG | 11",
@@ -210,8 +210,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
-                "🇬🇧GB | 🔴 | vless | @DailyV2RY | 358",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 359",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 363",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 364",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 12",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
                 "🇮🇹IT | 🟢 | vless | @Outlinev2rayNG | 11",
@@ -482,9 +482,9 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @ARv2ray | 18",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "telegram-ArV2ray",
+            "server": "151.101.194.133",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -492,11 +492,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "mio.splashthat.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry",
+                "path": "\/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "mio.splashthat.com"
                 }
             }
         },
@@ -1254,32 +1264,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @DailyV2RY | 358",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 363",
             "type": "vless",
-            "server": "64.176.179.28",
-            "server_port": 8080,
-            "uuid": "0c21461b-a34c-4ba3-bf7a-00f56077aec0",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "64.176.179.28"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 359",
-            "type": "vless",
-            "server": "wear.net",
+            "server": "live.skornorth.com",
             "server_port": 443,
-            "uuid": "046fd332-80a6-43b0-91b0-7238a1dfc36c",
+            "uuid": "5150600b-d270-4be8-8d78-c5784d3c093b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1289,7 +1278,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "wear.net",
+                "server_name": "live.skornorth.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1301,7 +1290,36 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "wear.net"
+                    "Host": "live.skornorth.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 364",
+            "type": "vless",
+            "server": "159.65.45.22",
+            "server_port": 443,
+            "uuid": "322550e3-eb60-428c-8702-33fe8ee9bf9e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xpowIXhk1fHJGVcpdK42XimKjV0Xz_063a3vGd4NTz4",
+                    "short_id": "1e50d63d46"
                 }
             }
         },
