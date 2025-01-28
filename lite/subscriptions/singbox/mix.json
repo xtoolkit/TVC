@@ -121,8 +121,8 @@
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 7",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 8",
+                "🇺🇸US | 🔴 | vless | @proxy_kafee | 2",
                 "🇳🇱NL | 🟢 | vless | @proxy_kafee | 3",
-                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 4",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "🇺🇸US | 🔴 | vless | @v2logy | 10",
                 "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
@@ -160,12 +160,11 @@
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇮🇷IR | 🔴 | vless | @free1_vpn | 13",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
+                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
                 "🇭🇰HK | 🟢 | vmess | @fnet00 | 10",
                 "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 8",
-                "telegram@v2ray_alpha&security=none&encryption=none&type=ws#🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 9",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
                 "❔XX | 🔴 | vless | @FreakConfig | 0",
                 "🇱🇻LV | 🔴 | vless | @FreakConfig | 1",
@@ -204,8 +203,8 @@
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 7",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 8",
+                "🇺🇸US | 🔴 | vless | @proxy_kafee | 2",
                 "🇳🇱NL | 🟢 | vless | @proxy_kafee | 3",
-                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 4",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "🇺🇸US | 🔴 | vless | @v2logy | 10",
                 "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
@@ -243,12 +242,11 @@
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇮🇷IR | 🔴 | vless | @free1_vpn | 13",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
+                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
                 "🇭🇰HK | 🟢 | vmess | @fnet00 | 10",
                 "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 8",
-                "telegram@v2ray_alpha&security=none&encryption=none&type=ws#🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 9",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
                 "❔XX | 🔴 | vless | @FreakConfig | 0",
                 "🇱🇻LV | 🔴 | vless | @FreakConfig | 1",
@@ -638,6 +636,37 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @proxy_kafee | 2",
+            "type": "vless",
+            "server": "160.153.0.131",
+            "server_port": 8443,
+            "uuid": "96a1b724-68d2-4f4d-ab25-38ecd83577bc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"
+                }
+            }
+        },
+        {
             "tag": "🇳🇱NL | 🟢 | vless | @proxy_kafee | 3",
             "type": "vless",
             "server": "24.144.78.124",
@@ -671,35 +700,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇦🇪AE | 🟢 | vless | @proxy_kafee | 4",
-            "type": "vless",
-            "server": "193.123.90.77",
-            "server_port": 443,
-            "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "itunes.apple.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "3tyvN86mGzMnYhAMX06SJMYSWhG02rqzTr7GjS-OaWI",
-                    "short_id": "6ba85179e30d4fc2"
-                }
             }
         },
         {
@@ -1606,11 +1606,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "104.19.150.10",
-            "server_port": 2095,
-            "uuid": "94f332b0-c5d3-4531-a1d6-6e6358cc6c72",
+            "server": "127.0.0.1",
+            "server_port": 8080,
+            "uuid": "accbaba-acba-baca-dbca-cacbbbbacaac",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1623,11 +1623,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "cbacbaa-caba-acba-cadb-cacbccbbaaab",
+            "server": "104.19.150.10",
+            "server_port": 2095,
+            "uuid": "94f332b0-c5d3-4531-a1d6-6e6358cc6c72",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1711,20 +1711,6 @@
                 "headers": {
                     "Host": "165.232.69.178"
                 }
-            }
-        },
-        {
-            "tag": "telegram@v2ray_alpha&security=none&encryption=none&type=ws#🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 9",
-            "type": "vless",
-            "server": "45.159.249.213",
-            "server_port": 2052,
-            "uuid": "ed1baf3b-f38f-559a-86c5-53b3c3492ce1",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
