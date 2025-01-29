@@ -159,7 +159,7 @@
                 "🇮🇷IR | 🔴 | vless | @free1_vpn | 13",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 14",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
-                "❔XX | 🟢 | vmess | @Hope_Net | 2",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
                 "🇩🇪DE | 🟢 | vmess | @fnet00 | 7",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
@@ -171,7 +171,7 @@
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇦🇪AE | 🟢 | ss | @kingofilter | 14",
+                "🇳🇱NL | 🔴 | vless | @kingofilter | 13",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 12",
                 "🇮🇷IR | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
@@ -235,7 +235,7 @@
                 "🇮🇷IR | 🔴 | vless | @free1_vpn | 13",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 14",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
-                "❔XX | 🟢 | vmess | @Hope_Net | 2",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
                 "🇩🇪DE | 🟢 | vmess | @fnet00 | 7",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
@@ -247,7 +247,7 @@
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇦🇪AE | 🟢 | ss | @kingofilter | 14",
+                "🇳🇱NL | 🔴 | vless | @kingofilter | 13",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 12",
                 "🇮🇷IR | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
@@ -1504,6 +1504,30 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
             "type": "vmess",
+            "server": "s4.db-link02.top",
+            "server_port": 8880,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/dabai.in104.25.239.131",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
+            "type": "vmess",
             "server": "s1.db-link01.top",
             "server_port": 8880,
             "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
@@ -1523,23 +1547,6 @@
                 "headers": {
                     "Host": "100-250-32-53.s1.db-link01.top"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 2",
-            "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "bcaacba-cbaa-abca-bdac-bcabaabcccab",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -1814,14 +1821,25 @@
             }
         },
         {
-            "tag": "🇦🇪AE | 🟢 | ss | @kingofilter | 14",
-            "type": "shadowsocks",
-            "server": "api.namasha.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇳🇱NL | 🔴 | vless | @kingofilter | 13",
+            "type": "vless",
+            "server": "108.61.99.185",
+            "server_port": 8080,
+            "uuid": "f57fd500-ed58-43c9-984c-685fc25a369d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "108.61.99.185"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 12",
