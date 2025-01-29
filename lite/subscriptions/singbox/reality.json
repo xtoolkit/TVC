@@ -106,32 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇮FI | 🔴 | vless | @prrofile_purple | 150",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 365",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 366",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
-                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 15",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 13"
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 12"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇮FI | 🔴 | vless | @prrofile_purple | 150",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 365",
-                "🇺🇸US | 🟢 | vless | @DailyV2RY | 366",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
-                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 15",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 13"
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 12"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -152,35 +144,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇮FI | 🔴 | vless | @prrofile_purple | 150",
-            "type": "vless",
-            "server": "65.109.211.154",
-            "server_port": 443,
-            "uuid": "d76542c9-916e-41bb-ad0d-fa37971a8b2e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "CM7AaS7XYEohx4ZNbecHqTqhyX9-Q4MQKlHji1xxI2I",
-                    "short_id": "4b272f845593"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
@@ -212,64 +175,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 365",
-            "type": "vless",
-            "server": "sv1.cloudjetn.com",
-            "server_port": 443,
-            "uuid": "100a18b8-bab3-4c42-96ec-6b96691d6a0f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "CgiGam2CJMM33Tb7ZEBHt52pztMD7SQ9sqdfDZro-0Y",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 366",
-            "type": "vless",
-            "server": "sv1.cloudjetm.com",
-            "server_port": 443,
-            "uuid": "100a18b8-bab3-4c42-96ec-6b96691d6a0f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "CgiGam2CJMM33Tb7ZEBHt52pztMD7SQ9sqdfDZro-0Y",
-                    "short_id": ""
-                }
-            }
-        },
-        {
             "tag": "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
             "type": "vless",
             "server": "hk04.ssr.ee",
@@ -296,42 +201,6 @@
                     "public_key": "7FUPFfHmcQGEF1WsK5UV28TAj_cZcBXgm_M9pFHBcEg",
                     "short_id": "6ba85179e30d4fc2"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 10",
-            "type": "vless",
-            "server": "g.soskom.ir",
-            "server_port": 443,
-            "uuid": "d4edcbd3-d93b-4335-ac0c-617f31a72a8f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zT6tM7lUqiWV_KuA1hp-ckrXDCA0d9_DG40JQGlh6zo",
-                    "short_id": "a27ce1b2604c96"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Tel:@NT_Safe",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -436,7 +305,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 13",
+            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 12",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
