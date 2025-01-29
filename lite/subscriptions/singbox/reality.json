@@ -106,13 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 3",
+                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
-                "🇦🇪AE | 🟢 | vless | @Outlinev2rayNG | 3",
-                "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 4",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
+                "🇩🇪DE | 🟢 | vless | @kingofilter | 15",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 13"
             ]
         },
@@ -120,13 +119,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 3",
+                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 9",
-                "🇦🇪AE | 🟢 | vless | @Outlinev2rayNG | 3",
-                "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 4",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
+                "🇩🇪DE | 🟢 | vless | @kingofilter | 15",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 13"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -150,11 +148,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @proxy_kafee | 3",
+            "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
             "type": "vless",
-            "server": "24.144.78.124",
-            "server_port": 4793,
-            "uuid": "556d0b18-ab99-407d-801e-9fab778b51a2",
+            "server": "188.245.184.26",
+            "server_port": 1633,
+            "uuid": "4587344d-418a-4b5a-91a5-495d7c883bad",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -164,7 +162,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "refersion.com",
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -173,16 +171,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "IfTrRXLeimq41Lwj2HqGHda1O9kI6OLt7T4yxTklciw",
-                    "short_id": "64176758f3181759"
+                    "public_key": "ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q",
+                    "short_id": "9bc0a55a5379c0ed"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Tok",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -210,64 +201,6 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "🇦🇪AE | 🟢 | vless | @Outlinev2rayNG | 3",
-            "type": "vless",
-            "server": "193.123.90.77",
-            "server_port": 443,
-            "uuid": "9d0a75d2-f747-4afa-b43f-d208af9e8f9a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "itunes.apple.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "3tyvN86mGzMnYhAMX06SJMYSWhG02rqzTr7GjS-OaWI",
-                    "short_id": "6ba85179e30d4fc2"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 4",
-            "type": "vless",
-            "server": "171.22.120.155",
-            "server_port": 443,
-            "uuid": "2aa0325b-b3a3-4fff-b798-d9fb4301297f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c",
                     "short_id": ""
                 }
             }
@@ -378,6 +311,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @kingofilter | 15",
+            "type": "vless",
+            "server": "91.107.158.170",
+            "server_port": 50487,
+            "uuid": "@v2rayng_vpnn",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mmd.10.isovpn.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "90_55z-OU-LDKBHjY-7mgxKiLSud0fU7m5Yo0PjMbBw",
+                    "short_id": ""
+                }
             }
         },
         {
