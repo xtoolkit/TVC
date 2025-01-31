@@ -106,10 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vless | @prrofile_purple | 150",
                 "🇫🇮FI | 🔴 | vless | @free1_vpn | 15",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
-                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
+                "🇺🇸US | 🔴 | vless | @mehrosaboran | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 14"
@@ -119,10 +118,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vless | @prrofile_purple | 150",
                 "🇫🇮FI | 🔴 | vless | @free1_vpn | 15",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
-                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
+                "🇺🇸US | 🔴 | vless | @mehrosaboran | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 14"
@@ -146,35 +144,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vless | @prrofile_purple | 150",
-            "type": "vless",
-            "server": "185.255.112.175",
-            "server_port": 5650,
-            "uuid": "269815c8-4a82-e025-5f9b-39f1d8f65e04",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic",
-                    "short_id": ""
-                }
-            }
         },
         {
             "tag": "🇫🇮FI | 🔴 | vless | @free1_vpn | 15",
@@ -235,11 +204,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
+            "tag": "🇺🇸US | 🔴 | vless | @mehrosaboran | 7",
             "type": "vless",
-            "server": "Amin11.auiyf.com",
-            "server_port": 443,
-            "uuid": "02957986-ccd7-4244-f7a8-4a0dbc0c85c1",
+            "server": "44.204.200.90",
+            "server_port": 8080,
+            "uuid": "adcf449b-3b1a-475d-a394-0a539113411c",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -248,21 +217,19 @@
                 "max_streams": 32
             },
             "tls": {
+                "enabled": true,
+                "server_name": "api.openai.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
                 "reality": {
                     "enabled": true,
-                    "public_key": "UUYC2_gNNVUIpGrNghmPKdJZRwbF0elm-cpKW8W2cWU",
-                    "short_id": ""
-                },
-                "utls": {
-                    "fingerprint": "chrome"
+                    "public_key": "rxXEdeqeS9T5dxIYEObsr5eUO5rRqvau6_GOjV1Igz8",
+                    "short_id": "76ca2e"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "\/@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
