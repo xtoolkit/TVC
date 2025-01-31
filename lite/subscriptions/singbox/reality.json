@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇷FR | 🟢 | vless | @prrofile_purple | 150",
                 "🇫🇮FI | 🔴 | vless | @free1_vpn | 15",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
@@ -118,6 +119,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷FR | 🟢 | vless | @prrofile_purple | 150",
                 "🇫🇮FI | 🔴 | vless | @free1_vpn | 15",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
@@ -144,6 +146,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @prrofile_purple | 150",
+            "type": "vless",
+            "server": "185.255.112.175",
+            "server_port": 5650,
+            "uuid": "269815c8-4a82-e025-5f9b-39f1d8f65e04",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "🇫🇮FI | 🔴 | vless | @free1_vpn | 15",
