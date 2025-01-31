@@ -144,8 +144,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 354",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 355",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 349",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 350",
                 "🇫🇮FI | 🔴 | vless | @free1_vpn | 15",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
@@ -157,6 +157,7 @@
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
+                "🇳🇱NL | 🔴 | vless | @kingofilter | 14",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 14",
                 "🇮🇷IR | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
@@ -205,8 +206,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 354",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 355",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 349",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 350",
                 "🇫🇮FI | 🔴 | vless | @free1_vpn | 15",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
@@ -218,6 +219,7 @@
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
+                "🇳🇱NL | 🔴 | vless | @kingofilter | 14",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 14",
                 "🇮🇷IR | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
@@ -1186,11 +1188,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 354",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 349",
             "type": "vless",
             "server": "tgju.org",
             "server_port": 80,
-            "uuid": "0da84da8-51a6-4746-b536-8c0757fafe4f",
+            "uuid": "2a1c95c9-d504-4b70-8a8f-65f53ac4de96",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1207,11 +1209,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 355",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 350",
             "type": "vless",
-            "server": "tgju.org",
-            "server_port": 80,
-            "uuid": "029b6907-0d15-4810-a683-eede2e919613",
+            "server": "angelina.ns.cloudflare.com",
+            "server_port": 443,
+            "uuid": "0a8b9e1b-fab0-4b02-aee2-5606c482064e",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1219,11 +1221,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "1qll9f.isfshzist.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/wss",
                 "headers": {
-                    "Host": "tgju.org"
+                    "Host": "1qll9f.isfshzist.com"
                 }
             }
         },
@@ -1508,6 +1520,27 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @kingofilter | 14",
+            "type": "vless",
+            "server": "108.61.99.185",
+            "server_port": 8080,
+            "uuid": "f57fd500-ed58-43c9-984c-685fc25a369d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "108.61.99.185"
+                }
             }
         },
         {
