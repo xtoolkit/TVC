@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 12",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
+                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 9",
-                "🇳🇱NL | 🔴 | vless | @mehrosaboran | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 14"
@@ -121,8 +121,8 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 12",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
+                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 9",
-                "🇳🇱NL | 🔴 | vless | @mehrosaboran | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 14"
@@ -206,6 +206,37 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
+            "type": "vless",
+            "server": "Amin11.auiyf.com",
+            "server_port": 443,
+            "uuid": "36c50cb1-5c0f-4d8c-d597-802e36bdbdff",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UUYC2_gNNVUIpGrNghmPKdJZRwbF0elm-cpKW8W2cWU",
+                    "short_id": ""
+                },
+                "utls": {
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 9",
             "type": "vless",
             "server": "Amin11.auiyf.com",
@@ -234,35 +265,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @mehrosaboran | 10",
-            "type": "vless",
-            "server": "194.54.158.180",
-            "server_port": 88,
-            "uuid": "5b26f55a-abae-4369-ad39-5a9fe9aa2850",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "kNa3coKJyfYtOaZ2w-U4wGmLiCOqEvURGRiEBufn23M",
-                    "short_id": "5b0c3b354bfc"
-                }
             }
         },
         {
