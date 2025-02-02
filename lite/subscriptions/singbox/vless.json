@@ -150,8 +150,8 @@
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 1",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
+                "🇮🇷IR | 🔴 | vless | @Outlinev2rayNG | 8",
                 "🇬🇧GB | 🔴 | vless | @Outlinev2rayNG | 9",
-                "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 10",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
                 "❔XX | 🔴 | vless | @FreakConfig | 2",
                 "🇱🇻LV | 🔴 | vless | @FreakConfig | 3",
@@ -216,8 +216,8 @@
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 1",
                 "🇭🇰HK | 🔴 | vless | @fnet00 | 8",
+                "🇮🇷IR | 🔴 | vless | @Outlinev2rayNG | 8",
                 "🇬🇧GB | 🔴 | vless | @Outlinev2rayNG | 9",
-                "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 10",
                 "🇺🇸US | 🔴 | vless | @v2rayng_vpnrog | 0",
                 "❔XX | 🔴 | vless | @FreakConfig | 2",
                 "🇱🇻LV | 🔴 | vless | @FreakConfig | 3",
@@ -1334,6 +1334,27 @@
             }
         },
         {
+            "tag": "🇮🇷IR | 🔴 | vless | @Outlinev2rayNG | 8",
+            "type": "vless",
+            "server": "2.189.104.10",
+            "server_port": 52418,
+            "uuid": "c31d6b4e-6105-4197-c94d-c45bce6c23a2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "2.189.104.10"
+                }
+            }
+        },
+        {
             "tag": "🇬🇧GB | 🔴 | vless | @Outlinev2rayNG | 9",
             "type": "vless",
             "server": "62.60.155.152",
@@ -1345,30 +1366,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 10",
-            "type": "vless",
-            "server": "147.135.125.117",
-            "server_port": 443,
-            "uuid": "3b9bc773-05eb-4d5f-8c1f-57342c0c4f40",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135010103.sec19org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
