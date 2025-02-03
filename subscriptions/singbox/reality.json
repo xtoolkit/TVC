@@ -115,6 +115,7 @@
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 138",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 145",
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 8",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 11",
                 "🇫🇷FR | 🟢 | vless | @v2ray1_ng | 7",
                 "🇺🇸US | 🟢 | vless | @vless_vmess | 3",
                 "🇩🇪DE | 🔴 | vless | @MTConfig | 4",
@@ -189,6 +190,7 @@
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 138",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 145",
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 8",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 11",
                 "🇫🇷FR | 🟢 | vless | @v2ray1_ng | 7",
                 "🇺🇸US | 🟢 | vless | @vless_vmess | 3",
                 "🇩🇪DE | 🔴 | vless | @MTConfig | 4",
@@ -553,6 +555,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ShadowProxy66 | 11",
+            "type": "vless",
+            "server": "[2a0b:4140:bc60:1::1001]",
+            "server_port": 33000,
+            "uuid": "9b5b1213-6d79-4ee6-a6f8-5b1996920585",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9yGrcvDCV-3M_aOR7wzTPqSk4XjrrpdvhFV0cgMFAls",
+                    "short_id": "75bca3"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "b",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
