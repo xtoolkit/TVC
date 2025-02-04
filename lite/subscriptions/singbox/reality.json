@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 8",
-                "🇨🇦CA | 🟢 | vless | @DailyV2RY | 339",
+                "🇨🇦CA | 🟢 | vless | @DailyV2RY | 330",
+                "🇨🇦CA | 🟢 | vless | @DailyV2RY | 331",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "🇳🇱NL | 🔴 | vless | @mehrosaboran | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -120,7 +121,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 8",
-                "🇨🇦CA | 🟢 | vless | @DailyV2RY | 339",
+                "🇨🇦CA | 🟢 | vless | @DailyV2RY | 330",
+                "🇨🇦CA | 🟢 | vless | @DailyV2RY | 331",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "🇳🇱NL | 🔴 | vless | @mehrosaboran | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -184,9 +186,45 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vless | @DailyV2RY | 339",
+            "tag": "🇨🇦CA | 🟢 | vless | @DailyV2RY | 330",
             "type": "vless",
-            "server": "v04.blkrose.ir",
+            "server": "v06.blkrose.ir",
+            "server_port": 2053,
+            "uuid": "08f7c98e-506c-4aca-a3ab-6fc99d015555",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "nr4qs7JSJShNXIpWKNGReZXaFw910k1X93NDevapa0E",
+                    "short_id": "5640288dca4f8519"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2053vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vless | @DailyV2RY | 331",
+            "type": "vless",
+            "server": "v01.blkrose.ir",
             "server_port": 2053,
             "uuid": "08f7c98e-506c-4aca-a3ab-6fc99d015555",
             "flow": "xtls-rprx-vision",
