@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @customv2ray | 8",
                 "🇨🇦CA | 🟢 | vless | @DailyV2RY | 321",
+                "🇺🇸US | 🔴 | vless | @free1_vpn | 16",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "🇳🇱NL | 🔴 | vless | @mehrosaboran | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -119,8 +119,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @customv2ray | 8",
                 "🇨🇦CA | 🟢 | vless | @DailyV2RY | 321",
+                "🇺🇸US | 🔴 | vless | @free1_vpn | 16",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "🇳🇱NL | 🔴 | vless | @mehrosaboran | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -146,42 +146,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @customv2ray | 8",
-            "type": "vless",
-            "server": "mehdi.vact.ir",
-            "server_port": 2083,
-            "uuid": "4f170ba9-9c5d-4744-9f67-a7c17bc027e4",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "vfi66o8MxMTXKAisfXGCHEIniNEqirtzA2BmuOJyBxw",
-                    "short_id": "8ad6cca2f7"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇨🇦CA | 🟢 | vless | @DailyV2RY | 321",
@@ -217,6 +181,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @free1_vpn | 16",
+            "type": "vless",
+            "server": "44.222.237.59",
+            "server_port": 8080,
+            "uuid": "d6143486-36c8-445b-b2b5-f3d389298f72",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "api.openai.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "yXtksaZJPAeCdqGkd9OzsufzBj9uGEOTOP4Dm9003GU",
+                    "short_id": "721e34c7"
+                }
             }
         },
         {
