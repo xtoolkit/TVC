@@ -107,12 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 0",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 57",
                 "🇫🇷FR | 🟢 | vless | @v2ray1_ng | 9",
                 "🇯🇵JP | 🟢 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 17",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
-                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 6",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 7",
+                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 19"
@@ -123,12 +124,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 0",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 57",
                 "🇫🇷FR | 🟢 | vless | @v2ray1_ng | 9",
                 "🇯🇵JP | 🟢 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 17",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
-                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 6",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 7",
+                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 19"
@@ -180,6 +182,42 @@
                     "public_key": "wYrjf_ib_AYKP-aLE1fI8n3czBWoKI41Fx89QIpxlxQ",
                     "short_id": "3e4083278c"
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ShadowProxy66 | 57",
+            "type": "vless",
+            "server": "[2a0b:4140:bc60:1::1001]",
+            "server_port": 33000,
+            "uuid": "9b5b1213-6d79-4ee6-a6f8-5b1996920585",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9yGrcvDCV-3M_aOR7wzTPqSk4XjrrpdvhFV0cgMFAls",
+                    "short_id": "75bca3"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "b",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -299,7 +337,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 6",
+            "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 7",
             "type": "vless",
             "server": "Amin11.auiyf.com",
             "server_port": 443,
@@ -330,7 +368,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 7",
+            "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 8",
             "type": "vless",
             "server": "Amin11.auiyf.com",
             "server_port": 443,
