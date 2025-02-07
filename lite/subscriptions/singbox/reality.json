@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 0",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -117,7 +116,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 0",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -142,35 +140,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 0",
-            "type": "vless",
-            "server": "44.200.154.162",
-            "server_port": 443,
-            "uuid": "45540661-2a83-4b79-a9c3-79c65a47f2cf",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "api.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "wYrjf_ib_AYKP-aLE1fI8n3czBWoKI41Fx89QIpxlxQ",
-                    "short_id": "3e4083278c"
-                }
-            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @fnet00 | 6",
