@@ -110,8 +110,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8"
             ]
         },
         {
@@ -122,8 +122,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -238,11 +238,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "cacaabb-aacb-acab-cbda-acbbcabccaba",
+            "server": "198.41.209.70",
+            "server_port": 80,
+            "uuid": "e6543319-0574-42ac-b778-1c4325d626f5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -252,14 +252,21 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "abacacb-cbaa-baac-dbca-bbcacacababc",
+            "server": "nl.899994.xyz",
+            "server_port": 8443,
+            "uuid": "a0605527-28e4-449c-80ee-5642cc16a8af",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -269,6 +276,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/index",
+                "headers": {
+                    "Host": ""
+                }
             }
         }
     ],

@@ -160,16 +160,16 @@
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "🇳🇱NL | 🔴 | vless | @fnet00 | 3",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 4",
-                "🇦🇹AT | 🔴 | vless | @Outlinev2rayNG | 10",
+                "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 10",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 11",
                 "❔XX | 🔴 | vless | @FreakConfig | 8",
                 "❔XX | 🔴 | vless | @FreakConfig | 9",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 13",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 14",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 9",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 9",
@@ -242,16 +242,16 @@
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 1",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "🇳🇱NL | 🔴 | vless | @fnet00 | 3",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 4",
-                "🇦🇹AT | 🔴 | vless | @Outlinev2rayNG | 10",
+                "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 10",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 11",
                 "❔XX | 🔴 | vless | @FreakConfig | 8",
                 "❔XX | 🔴 | vless | @FreakConfig | 9",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 13",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 14",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 8",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 9",
                 "🇺🇸US | 🔴 | vless | @nofiltering2 | 9",
@@ -1594,11 +1594,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "cacaabb-aacb-acab-cbda-acbbcabccaba",
+            "server": "198.41.209.70",
+            "server_port": 80,
+            "uuid": "e6543319-0574-42ac-b778-1c4325d626f5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1608,14 +1608,21 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "abacacb-cbaa-baac-dbca-bbcacacababc",
+            "server": "nl.899994.xyz",
+            "server_port": 8443,
+            "uuid": "a0605527-28e4-449c-80ee-5642cc16a8af",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1625,6 +1632,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/index",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -1681,7 +1705,7 @@
             }
         },
         {
-            "tag": "🇦🇹AT | 🔴 | vless | @Outlinev2rayNG | 10",
+            "tag": "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 10",
             "type": "vless",
             "server": "dd4.trackid.ir",
             "server_port": 443,
@@ -1789,7 +1813,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
+            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 13",
             "type": "vless",
             "server": "NUFiLTER.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -1810,7 +1834,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 13",
+            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 14",
             "type": "vless",
             "server": "NUFiLTER.fastly80-3.hosting-ip.com",
             "server_port": 80,
