@@ -124,7 +124,6 @@ proxies:
   - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17","type":"trojan","server":"63.177.130.95","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"51.21.121.40","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"13.48.20.11","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @fnet00 | 5","type":"trojan","server":"deliver.missionsec.io","port":28331,"udp":false,"password":"C9zSyneYN7Rl3K38qxu5y3axI82CaEXZ0SwjZFplDpYaTcOABDDOC6SeF4R3Ag","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"deliver.missionsec.io"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -135,7 +134,6 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 16'
-      - '🇺🇸US | 🔴 | trojan | @fnet00 | 5'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -146,7 +144,6 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 16'
-      - '🇺🇸US | 🔴 | trojan | @fnet00 | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -156,7 +153,6 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 16'
-      - '🇺🇸US | 🔴 | trojan | @fnet00 | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
