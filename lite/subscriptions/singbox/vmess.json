@@ -111,7 +111,7 @@
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 151",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 9",
+                "❔XX | 🟢 | vmess | @Hope_Net | 9",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 10"
             ]
         },
@@ -124,7 +124,7 @@
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 151",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 9",
+                "❔XX | 🟢 | vmess | @Hope_Net | 9",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -257,11 +257,11 @@
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "140.245.42.84",
-            "server_port": 23452,
-            "uuid": "786eeff8-126a-4d90-827d-da5d9410f0d4",
+            "server": "127.0.0.1",
+            "server_port": 2080,
+            "uuid": "acbabac-acba-baca-bdac-bbbcbcaacaac",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -271,21 +271,14 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "140.245.42.84"
-                }
             }
         },
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "zmkkyc.whmvmkwuey.store",
-            "server_port": 443,
-            "uuid": "ba3c4c6b-b22c-471b-ae14-4de9e81cdc34",
+            "server": "108.162.192.217",
+            "server_port": 2087,
+            "uuid": "db5afae4-ac23-41a6-8378-f307a9a47436",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -298,7 +291,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "zmkkyc.whmvmkwuey.store",
+                "server_name": "108.162.192.217",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -307,11 +300,11 @@
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "zmkkyc.whmvmkwuey.store"
-                }
+                "type": "grpc",
+                "service_name": "\/",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
