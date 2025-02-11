@@ -130,7 +130,6 @@
                 "❔XX | 🔴 | vless | @prrofile_purple | 151",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 11",
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 12",
-                "🇷🇺RU | 🟢 | vless | @v2rayNG_Matsuri | 0",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 4",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 5",
                 "🇫🇮FI | 🔴 | vless | @ShadowProxy66 | 18",
@@ -201,7 +200,6 @@
                 "❔XX | 🔴 | vless | @prrofile_purple | 151",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 11",
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 12",
-                "🇷🇺RU | 🟢 | vless | @v2rayNG_Matsuri | 0",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 4",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 5",
                 "🇫🇮FI | 🔴 | vless | @ShadowProxy66 | 18",
@@ -463,9 +461,9 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @ARv2ray | 12",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "telegram-ArV2ray",
+            "server": "151.101.194.133",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -473,11 +471,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "mio.splashthat.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry",
+                "path": "\/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "mio.splashthat.com"
                 }
             }
         },
@@ -804,35 +812,6 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vless | @v2rayNG_Matsuri | 0",
-            "type": "vless",
-            "server": "103.71.22.3",
-            "server_port": 443,
-            "uuid": "009cccba-c0ec-4297-9898-5115898a7246",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "spb33.hipay.su",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "n3NmzivS8eutbp8V2dcDqe-UyZynD1jszNy3l-2wzkw",
-                    "short_id": "afc6da8dd99e4b83"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 4",
             "type": "vless",
             "server": "104.18.165.30",
@@ -915,8 +894,8 @@
         {
             "tag": "❔XX | 🔴 | vless | @ServerNett | 12",
             "type": "vless",
-            "server": "[2a01:4f8:c010:1d97::1]",
-            "server_port": 51047,
+            "server": "[2a01:4f8:1c17:ee5c::1]",
+            "server_port": 30562,
             "uuid": "TELEGRAM-ServerNett",
             "flow": "",
             "packet_encoding": "xudp",
@@ -929,8 +908,8 @@
         {
             "tag": "❔XX | 🔴 | vless | @ServerNett | 13",
             "type": "vless",
-            "server": "[2a01:4f8:c010:5aa8::1]",
-            "server_port": 13776,
+            "server": "[2a01:4f8:c010:1d97::1]",
+            "server_port": 51047,
             "uuid": "TELEGRAM-ServerNett",
             "flow": "",
             "packet_encoding": "xudp",
