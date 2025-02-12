@@ -166,7 +166,8 @@
                 "🇩🇪DE | 🔴 | vless | @kingofilter | 6",
                 "🇨🇦CA | 🟢 | vless | @kingofilter | 11",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 1",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 19"
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 19",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 21"
             ]
         },
         {
@@ -233,7 +234,8 @@
                 "🇩🇪DE | 🔴 | vless | @kingofilter | 6",
                 "🇨🇦CA | 🟢 | vless | @kingofilter | 11",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 1",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 19"
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 19",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 21"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -2290,6 +2292,35 @@
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
             "uuid": "SVNTEAM4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "193rx1HPJxmcw5Igm1lZeCcPnBx1dVfBroBl5FR9BEE",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 21",
+            "type": "vless",
+            "server": "SVNTEAM.MiSVN.iR",
+            "server_port": 443,
+            "uuid": "SVNTEAM3",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
