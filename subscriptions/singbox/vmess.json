@@ -117,8 +117,7 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 12",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 13",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
-                "🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 0",
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 13",
+                "🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 8",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 124",
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 136",
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 19",
@@ -141,7 +140,8 @@
                 "🇸🇬SG | 🟢 | vmess | @Hope_Net | 7",
                 "🇷🇺RU | 🟢 | vmess | @Hope_Net | 8",
                 "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10"
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @ISVvpn | 1"
             ]
         },
         {
@@ -159,8 +159,7 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 12",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 13",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
-                "🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 0",
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 13",
+                "🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 8",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 124",
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 136",
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 19",
@@ -183,7 +182,8 @@
                 "🇸🇬SG | 🟢 | vmess | @Hope_Net | 7",
                 "🇷🇺RU | 🟢 | vmess | @Hope_Net | 8",
                 "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10"
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @ISVvpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -393,7 +393,7 @@
             }
         },
         {
-            "tag": "🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 0",
+            "tag": "🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 8",
             "type": "vmess",
             "server": "pq-brazil1.09vpn.com",
             "server_port": 80,
@@ -413,40 +413,6 @@
                 "path": "\/vmess\/",
                 "headers": {
                     "Host": "pq-brazil1.09vpn.com"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 13",
-            "type": "vmess",
-            "server": "az05.beyondy.cfd",
-            "server_port": 443,
-            "uuid": "3f638f34-8dba-4186-bc43-2716a7ddd4be",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "az05.beyondy.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/link",
-                "headers": {
-                    "Host": "az05.beyondy.cfd"
                 }
             }
         },
@@ -990,6 +956,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @ISVvpn | 1",
+            "type": "vmess",
+            "server": "zula.ir",
+            "server_port": 8443,
+            "uuid": "35302031-3032-4035-b020-313032203130",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vip1.isvpy.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ws",
+                "headers": {
+                    "Host": "vip1.isvpy.ir"
+                }
             }
         }
     ],
