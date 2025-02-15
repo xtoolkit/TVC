@@ -124,9 +124,9 @@ proxies:
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"13.61.246.160","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"13.49.200.55","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 18","type":"vmess","server":"183.236.51.23","port":"56601","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"67.220.95.102","port":8009,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
   - {"name":"🇨🇳CN | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"🇫🇷FR | 🟢 | vmess | @Hope_Net | 8","type":"vmess","server":"irvideo.cfd","port":443,"cipher":"auto","uuid":"e537f2f5-2a0c-4f59-92c9-832ca6433bf3","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"irvideo.cfd"}}}
+  - {"name":"🇯🇵JP | 🟢 | vmess | @Hope_Net | 8","type":"vmess","server":"13.112.49.171","port":"48897","cipher":"auto","uuid":"3374de7b-61ca-4ef4-ae94-ad0e0e759db0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 9","type":"vmess","server":"104.21.13.222","port":8443,"cipher":"auto","uuid":"e88b85c6-93b4-47f6-b3fb-2c55dcb1289f","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dyajvws","headers":{"host":"lax2.ibgfw.top"}}}
   - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 10","type":"ss","server":"api.namasha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -140,9 +140,9 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 16'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 18'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
-      - '🇫🇷FR | 🟢 | vmess | @Hope_Net | 8'
+      - '🇯🇵JP | 🟢 | vmess | @Hope_Net | 8'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
       - '🇬🇧GB | 🟢 | ss | @kingofilter | 10'
   - name: URL-TEST
     type: url-test
@@ -156,9 +156,9 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 16'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 18'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
-      - '🇫🇷FR | 🟢 | vmess | @Hope_Net | 8'
+      - '🇯🇵JP | 🟢 | vmess | @Hope_Net | 8'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
       - '🇬🇧GB | 🟢 | ss | @kingofilter | 10'
   - name: FALLBACK
     type: fallback
@@ -171,9 +171,9 @@ proxy-groups:
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 16'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 18'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
-      - '🇫🇷FR | 🟢 | vmess | @Hope_Net | 8'
+      - '🇯🇵JP | 🟢 | vmess | @Hope_Net | 8'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
       - '🇬🇧GB | 🟢 | ss | @kingofilter | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve

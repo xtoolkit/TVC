@@ -137,7 +137,6 @@
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 15",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 16",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @prrofile_purple | 158",
                 "🇺🇸US | 🔴 | vless | @prrofile_purple | 159",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 11",
@@ -163,8 +162,8 @@
                 "🇺🇸US | 🔴 | vless | @sinabigo | 0",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 8",
-                "❔XX | 🟢 | vmess | @Hope_Net | 9",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "@vpnAndroid2,@vpnAndroid2,@vpnAndroid2,@vpnAndroid2&security=none&encryption=none&host=EevpnAndroid2.69.mu.&type=ws#🇪🇪EE | 🔴 | vless | @Outlinev2rayNG | 10",
                 "❔XX | 🔴 | vless | @FreakConfig | 11",
@@ -220,7 +219,6 @@
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 15",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 16",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @prrofile_purple | 158",
                 "🇺🇸US | 🔴 | vless | @prrofile_purple | 159",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 11",
@@ -246,8 +244,8 @@
                 "🇺🇸US | 🔴 | vless | @sinabigo | 0",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 8",
-                "❔XX | 🟢 | vmess | @Hope_Net | 9",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "@vpnAndroid2,@vpnAndroid2,@vpnAndroid2,@vpnAndroid2&security=none&encryption=none&host=EevpnAndroid2.69.mu.&type=ws#🇪🇪EE | 🔴 | vless | @Outlinev2rayNG | 10",
                 "❔XX | 🔴 | vless | @FreakConfig | 11",
@@ -1018,16 +1016,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17",
-            "type": "shadowsocks",
-            "server": "67.220.95.102",
-            "server_port": 8009,
-            "method": "aes-256-gcm",
-            "password": "XKFKl2rULjIp74",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @prrofile_purple | 158",
             "type": "vless",
             "server": "tgju.org",
@@ -1679,11 +1667,28 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "irvideo.cfd",
-            "server_port": 443,
-            "uuid": "e537f2f5-2a0c-4f59-92c9-832ca6433bf3",
+            "server": "13.112.49.171",
+            "server_port": 48897,
+            "uuid": "3374de7b-61ca-4ef4-ae94-ad0e0e759db0",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+            "type": "vmess",
+            "server": "104.21.13.222",
+            "server_port": 8443,
+            "uuid": "e88b85c6-93b4-47f6-b3fb-2c55dcb1289f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1696,7 +1701,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "",
+                "server_name": "lax2.ibgfw.top",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1706,27 +1711,10 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/dyajvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "lax2.ibgfw.top"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
-            "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "cbabaca-baac-baac-adcb-babccbaaabcc",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
