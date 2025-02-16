@@ -156,14 +156,14 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
                 "🇮🇩ID | 🔴 | vless | @VmessProtocol | 8",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 319",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 320",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 327",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 328",
                 "🇺🇸US | 🔴 | vless | @sinabigo | 0",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 13",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "❔XX | 🟢 | vmess | @Hope_Net | 8",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 15",
                 "❔XX | 🔴 | vless | @FreakConfig | 12",
@@ -237,14 +237,14 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
                 "🇮🇩ID | 🔴 | vless | @VmessProtocol | 8",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 319",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 320",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 327",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 328",
                 "🇺🇸US | 🔴 | vless | @sinabigo | 0",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 13",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "❔XX | 🟢 | vmess | @Hope_Net | 8",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 15",
                 "❔XX | 🔴 | vless | @FreakConfig | 12",
@@ -1510,11 +1510,42 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 319",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 327",
+            "type": "vless",
+            "server": "jermaine.ns.cloudflare.com",
+            "server_port": 443,
+            "uuid": "0de43a13-c2a0-4dc8-a19a-b0c57e8fb469",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "o7qgfk.payperflower.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/wss",
+                "headers": {
+                    "Host": "o7qgfk.payperflower.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 328",
             "type": "vless",
             "server": "tgju.org",
             "server_port": 80,
-            "uuid": "22a5e6df-bc01-4bc3-a7e5-cef069a533ac",
+            "uuid": "04cfc03e-6c57-4e9b-9417-8bb3a803db66",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1527,27 +1558,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "tgju.org"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 320",
-            "type": "vless",
-            "server": "45.63.38.41",
-            "server_port": 8080,
-            "uuid": "18867194-22b6-4d8b-d00d-0f377899d080",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "45.63.38.41"
                 }
             }
         },
@@ -1680,8 +1690,8 @@
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
             "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "aaacbcb-acba-acab-cbda-abaccbaacbcb",
+            "server_port": 1080,
+            "uuid": "bcacaab-acab-baac-dbac-acbbbaccabac",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1694,11 +1704,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "172.66.45.40",
-            "server_port": 2052,
-            "uuid": "fcc685c0-e718-11ef-b933-205c6d5f5d78",
+            "server": "127.0.0.1",
+            "server_port": 2080,
+            "uuid": "aaacbcb-acba-acab-cbda-abaccbaacbcb",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1708,13 +1718,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ek147r26\/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
