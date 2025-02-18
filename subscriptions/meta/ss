@@ -128,7 +128,8 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 9","type":"ss","server":"69.50.95.245","port":7002,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
   - {"name":"🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 12","type":"ss","server":"54.36.174.181","port":445,"password":"zDNVedRFPQexG9v","cipher":"aes-256-gcm"}
   - {"name":"🇪🇪EE | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"147.45.60.33","port":16356,"password":"LqlPI19oqnunGNSLMvdXyB","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 5","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 0","type":"ss","server":"45.87.175.171","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 6","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -143,7 +144,8 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 9'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 12'
       - '🇪🇪EE | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 5'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 0'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -158,7 +160,8 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 9'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 12'
       - '🇪🇪EE | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 5'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 0'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -172,7 +175,8 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 9'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 12'
       - '🇪🇪EE | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 5'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 0'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
