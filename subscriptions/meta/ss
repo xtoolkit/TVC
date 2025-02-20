@@ -131,8 +131,8 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 15","type":"ss","server":"23.154.136.154","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
   - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"198.105.123.190","port":46902,"password":"2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"172.233.128.126","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 1","type":"ss","server":"45.87.175.171","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 7","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 2","type":"ss","server":"45.87.175.171","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 8","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -150,8 +150,8 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 15'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 1'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 7'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 2'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 8'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -169,8 +169,8 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 15'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 1'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 7'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 2'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 8'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -187,8 +187,8 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 15'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 1'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 7'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 2'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 8'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
