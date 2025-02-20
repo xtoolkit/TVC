@@ -257,9 +257,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @nofiltering2 | 13",
             "type": "vmess",
-            "server": "104.19.150.10",
-            "server_port": 2095,
-            "uuid": "94f332b0-c5d3-4531-a1d6-6e6358cc6c72",
+            "server": "zula.ir",
+            "server_port": 8443,
+            "uuid": "35362031-3032-4035-b520-393720393920",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -269,6 +269,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "de-2.stunnel.cc",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ws",
+                "headers": {
+                    "Host": "de-2.stunnel.cc"
+                }
             }
         }
     ],
