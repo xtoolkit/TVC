@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇸🇬SG | 🟢 | ss | @DeamNet_Proxy | 17 = ss, sgp.fastsoonlink.com, 40005, encrypt-method = chacha20-ietf-poly1305, password = 3FB23A19-9424-40C7-9139-3540228283FA
 🇺🇸US | 🟢 | ss | @kingofilter | 8 = ss, series-a1.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = W74XFALLLuw6m5IA
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇸🇬SG | 🟢 | ss | @DeamNet_Proxy | 17,🇺🇸US | 🟢 | ss | @kingofilter | 8
-URL-TEST = url-test,🇸🇬SG | 🟢 | ss | @DeamNet_Proxy | 17,🇺🇸US | 🟢 | ss | @kingofilter | 8
-FALLBACK = fallback,🇸🇬SG | 🟢 | ss | @DeamNet_Proxy | 17,🇺🇸US | 🟢 | ss | @kingofilter | 8
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @kingofilter | 8
+URL-TEST = url-test,🇺🇸US | 🟢 | ss | @kingofilter | 8
+FALLBACK = fallback,🇺🇸US | 🟢 | ss | @kingofilter | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
