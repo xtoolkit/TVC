@@ -124,11 +124,12 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"54.145.8.92","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇬🇧GB | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"18.169.119.226","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 18","type":"vmess","server":"183.236.51.23","port":"56601","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17","type":"vmess","server":"142.4.108.147","port":"38007","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/181721272114","headers":{"host":"142.4.108.147"}}}
+  - {"name":"🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"54.36.174.181","port":3389,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"69.50.95.218","port":2375,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
   - {"name":"🇯🇵JP | 🟢 | trojan | @VmessProtocol | 10","type":"trojan","server":"www.tiktok.com.jp3.viefast.net","port":443,"udp":false,"password":"3bcd9e33-8377-4b32-af33-217158577ff3","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"kdlsupport.zendesk.com"}
   - {"name":"🇨🇳CN | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
   - {"name":"🇸🇬SG | 🟢 | vmess | @Hope_Net | 5","type":"vmess","server":"140.245.36.72","port":"23452","cipher":"auto","uuid":"b466111f-0ad8-4f12-899c-5ff14446c088","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"westsg2-ddns.oraclenat.cc"}}}
-  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 9","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 10","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -141,11 +142,12 @@ proxy-groups:
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
       - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 17'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 18'
-      - '🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17'
+      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇯🇵JP | 🟢 | trojan | @VmessProtocol | 10'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
       - '🇸🇬SG | 🟢 | vmess | @Hope_Net | 5'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 9'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 10'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -158,11 +160,12 @@ proxy-groups:
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
       - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 17'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 18'
-      - '🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17'
+      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇯🇵JP | 🟢 | trojan | @VmessProtocol | 10'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
       - '🇸🇬SG | 🟢 | vmess | @Hope_Net | 5'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 9'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -174,11 +177,12 @@ proxy-groups:
       - '🇺🇸US | 🟢 | trojan | @DirectVPN | 16'
       - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 17'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 18'
-      - '🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17'
+      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇯🇵JP | 🟢 | trojan | @VmessProtocol | 10'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
       - '🇸🇬SG | 🟢 | vmess | @Hope_Net | 5'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 9'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
