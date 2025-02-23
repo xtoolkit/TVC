@@ -11,15 +11,16 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 18 = trojan, 52.16.180.238, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 19 = trojan, 34.254.112.25, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇸🇪SE | 🟢 | trojan | @DirectVPN | 18 = trojan, 13.53.32.38, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇺🇸US | 🟢 | trojan | @DirectVPN | 19 = trojan, 44.212.170.132, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇯🇵JP | 🟢 | trojan | @VmessProtocol | 10 = trojan, www.tiktok.com.jp3.viefast.net, 443, password = 3bcd9e33-8377-4b32-af33-217158577ff3, udp-delay = true, skip-cert-verify = false, sni = kdlsupport.zendesk.com, ws = false
+🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18 = trojan, 13.61.51.48, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19 = trojan, 13.50.23.87, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 18 = trojan, 18.153.144.26, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇸🇪SE | 🟢 | trojan | @DirectVPN | 19 = trojan, 13.49.217.245, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+❔XX | 🟢 | trojan | @VmessProtocol | 10 = trojan, model-fly.adder289.quest, 443, password = 3747000103274291200, udp-delay = true, skip-cert-verify = false, sni = model-fly.adder289.quest, ws = false
+🇯🇵JP | 🟢 | trojan | @VmessProtocol | 11 = trojan, www.tiktok.com.jp3.viefast.net, 443, password = 3bcd9e33-8377-4b32-af33-217158577ff3, udp-delay = true, skip-cert-verify = false, sni = kdlsupport.zendesk.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 18,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 19,🇸🇪SE | 🟢 | trojan | @DirectVPN | 18,🇺🇸US | 🟢 | trojan | @DirectVPN | 19,🇯🇵JP | 🟢 | trojan | @VmessProtocol | 10
-URL-TEST = url-test,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 18,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 19,🇸🇪SE | 🟢 | trojan | @DirectVPN | 18,🇺🇸US | 🟢 | trojan | @DirectVPN | 19,🇯🇵JP | 🟢 | trojan | @VmessProtocol | 10
-FALLBACK = fallback,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 18,🇮🇪IE | 🟢 | trojan | @PrivateVPNs | 19,🇸🇪SE | 🟢 | trojan | @DirectVPN | 18,🇺🇸US | 🟢 | trojan | @DirectVPN | 19,🇯🇵JP | 🟢 | trojan | @VmessProtocol | 10
+MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18,🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇸🇪SE | 🟢 | trojan | @DirectVPN | 19,❔XX | 🟢 | trojan | @VmessProtocol | 10,🇯🇵JP | 🟢 | trojan | @VmessProtocol | 11
+URL-TEST = url-test,🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18,🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇸🇪SE | 🟢 | trojan | @DirectVPN | 19,❔XX | 🟢 | trojan | @VmessProtocol | 10,🇯🇵JP | 🟢 | trojan | @VmessProtocol | 11
+FALLBACK = fallback,🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18,🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇸🇪SE | 🟢 | trojan | @DirectVPN | 19,❔XX | 🟢 | trojan | @VmessProtocol | 10,🇯🇵JP | 🟢 | trojan | @VmessProtocol | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
