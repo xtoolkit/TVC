@@ -179,12 +179,14 @@
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 13",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 14",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 15",
-                "🚩CF | 🔴 | vless | @Lockey_vpn | 0",
+                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 0",
                 "🚩CF | 🔴 | vless | @Lockey_vpn | 1",
                 "🚩CF | 🔴 | vless | @Lockey_vpn | 2",
-                "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 3",
-                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 4",
-                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 5",
+                "🚩CF | 🔴 | vless | @Lockey_vpn | 3",
+                "🚩CF | 🔴 | vless | @Lockey_vpn | 4",
+                "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 5",
+                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 6",
+                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 7",
                 "🇺🇸US | 🟢 | vless | @vpn_xw | 0",
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 0",
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 3",
@@ -532,12 +534,14 @@
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 13",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 14",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 15",
-                "🚩CF | 🔴 | vless | @Lockey_vpn | 0",
+                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 0",
                 "🚩CF | 🔴 | vless | @Lockey_vpn | 1",
                 "🚩CF | 🔴 | vless | @Lockey_vpn | 2",
-                "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 3",
-                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 4",
-                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 5",
+                "🚩CF | 🔴 | vless | @Lockey_vpn | 3",
+                "🚩CF | 🔴 | vless | @Lockey_vpn | 4",
+                "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 5",
+                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 6",
+                "🇺🇸US | 🔴 | vless | @Lockey_vpn | 7",
                 "🇺🇸US | 🟢 | vless | @vpn_xw | 0",
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 0",
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 3",
@@ -2785,17 +2789,34 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @Lockey_vpn | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @Lockey_vpn | 0",
             "type": "vless",
-            "server": "104.17.148.22",
-            "server_port": 8880,
-            "uuid": "a85962e7-4c37-477a-a16a-892bbeea60ac",
+            "server": "alfred.dnss-mobile.ir",
+            "server_port": 443,
+            "uuid": "c2a1fe98-5a25-4173-be3e-9fe9c7591484",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "alfred.dnss-mobile.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/alfred",
+                "headers": {
+                    "Host": "alfred.dnss-mobile.ir"
+                }
             }
         },
         {
@@ -2803,7 +2824,7 @@
             "type": "vless",
             "server": "104.17.148.22",
             "server_port": 8880,
-            "uuid": "fdca651d-be66-43b6-cad0-dee49a6bbda6",
+            "uuid": "2e56a2e4-d8ac-4990-843c-d813e889fcbd",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2817,6 +2838,34 @@
             "type": "vless",
             "server": "104.17.148.22",
             "server_port": 8880,
+            "uuid": "a85962e7-4c37-477a-a16a-892bbeea60ac",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @Lockey_vpn | 3",
+            "type": "vless",
+            "server": "104.17.148.22",
+            "server_port": 8880,
+            "uuid": "fdca651d-be66-43b6-cad0-dee49a6bbda6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @Lockey_vpn | 4",
+            "type": "vless",
+            "server": "104.17.148.22",
+            "server_port": 8880,
             "uuid": "57147109-749f-4c9b-c6b3-2dce03f0466f",
             "flow": "",
             "packet_encoding": "xudp",
@@ -2827,7 +2876,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 3",
+            "tag": "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 5",
             "type": "vless",
             "server": "r.iphone-shopp.ir",
             "server_port": 5743,
@@ -2863,7 +2912,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Lockey_vpn | 4",
+            "tag": "🇺🇸US | 🔴 | vless | @Lockey_vpn | 6",
             "type": "vless",
             "server": "151.101.2.216",
             "server_port": 80,
@@ -2884,7 +2933,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Lockey_vpn | 5",
+            "tag": "🇺🇸US | 🔴 | vless | @Lockey_vpn | 7",
             "type": "vless",
             "server": "151.101.2.216",
             "server_port": 80,
