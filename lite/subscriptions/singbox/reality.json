@@ -113,7 +113,8 @@
                 "🇩🇪DE | 🔴 | vless | @flyv2ray | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 19"
+                "🇩🇪DE | 🟢 | vless | @kingofilter | 9",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 16"
             ]
         },
         {
@@ -127,7 +128,8 @@
                 "🇩🇪DE | 🔴 | vless | @flyv2ray | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 19"
+                "🇩🇪DE | 🟢 | vless | @kingofilter | 9",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 16"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -388,11 +390,47 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 19",
+            "tag": "🇩🇪DE | 🟢 | vless | @kingofilter | 9",
+            "type": "vless",
+            "server": "c1.vact.ir",
+            "server_port": 2083,
+            "uuid": "63f4f2b2-b9de-4a27-beb6-ca478bc3e3f9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "djRaMcDJDRJywTzoexhKfnoPjHCYQK3gpn3ph2R3dDk",
+                    "short_id": "906d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 16",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
-            "uuid": "SVNTEAM4",
+            "uuid": "SVNTEAM1",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
