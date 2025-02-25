@@ -129,6 +129,7 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | vmess | @v2ray1_ng | 9","type":"vmess","server":"104.19.150.10","port":"2095","cipher":"auto","uuid":"94f332b0-c5d3-4531-a1d6-6e6358cc6c72","alterId":"0","tls":false,"skip-cert-verify":true,"network":"httpupgrade"}
   - {"name":"❔XX | 🟢 | trojan | @VmessProtocol | 12","type":"trojan","server":"model-fly.adder289.quest","port":443,"udp":false,"password":"3747000103274291200","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"model-fly.adder289.quest"}
   - {"name":"🇨🇳CN | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"🇦🇪AE | 🟢 | ss | @proxy_mtm | 22","type":"ss","server":"3.28.107.6","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -146,6 +147,7 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @v2ray1_ng | 9'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 12'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
+      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 22'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -163,6 +165,7 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @v2ray1_ng | 9'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 12'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
+      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 22'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -179,6 +182,7 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @v2ray1_ng | 9'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 12'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
+      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 22'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
