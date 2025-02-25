@@ -120,35 +120,31 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇲🇪ME | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"beta.mattenadene.org","port":54075,"password":"o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"45.87.175.166","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇦🇪AE | 🟢 | ss | @proxy_mtm | 22","type":"ss","server":"3.28.107.6","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"149.202.82.172","port":5003,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"107.181.155.244","port":55330,"password":"TjTxgBFTGHrHS6x2RVJmVN3wPco1gcJaR4hnofLBt9gGA9kG724TCAARfVxBKA1fEq5mKtqi68ugML8XVfP16EU4EtctfA5E","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇲🇪ME | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
-      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 22'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇲🇪ME | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
-      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 22'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇲🇪ME | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
-      - '🇦🇪AE | 🟢 | ss | @proxy_mtm | 22'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}

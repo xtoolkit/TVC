@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇲🇪ME | 🟢 | ss | @DeamNet_Proxy | 18 = ss, beta.mattenadene.org, 54075, encrypt-method = chacha20-ietf-poly1305, password = o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19 = ss, 45.87.175.166, 8080, encrypt-method = chacha20-ietf-poly1305, password = 1RWwXhwfAB5gAEozU4G2Pg
-🇦🇪AE | 🟢 | ss | @proxy_mtm | 22 = ss, 3.28.107.6, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
+🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18 = ss, 149.202.82.172, 5003, encrypt-method = aes-256-gcm, password = g5MeD6Ft3CWlJId
+🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19 = ss, 107.181.155.244, 55330, encrypt-method = chacha20-ietf-poly1305, password = TjTxgBFTGHrHS6x2RVJmVN3wPco1gcJaR4hnofLBt9gGA9kG724TCAARfVxBKA1fEq5mKtqi68ugML8XVfP16EU4EtctfA5E
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇲🇪ME | 🟢 | ss | @DeamNet_Proxy | 18,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19,🇦🇪AE | 🟢 | ss | @proxy_mtm | 22
-URL-TEST = url-test,🇲🇪ME | 🟢 | ss | @DeamNet_Proxy | 18,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19,🇦🇪AE | 🟢 | ss | @proxy_mtm | 22
-FALLBACK = fallback,🇲🇪ME | 🟢 | ss | @DeamNet_Proxy | 18,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19,🇦🇪AE | 🟢 | ss | @proxy_mtm | 22
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19
+URL-TEST = url-test,🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19
+FALLBACK = fallback,🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
