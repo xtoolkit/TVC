@@ -165,7 +165,8 @@
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 2",
                 "🇩🇪DE | 🟢 | vless | @SvnTeam | 0",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 2"
+                "🇩🇪DE | 🟢 | vless | @SvnTeam | 1",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 3"
             ]
         },
         {
@@ -231,7 +232,8 @@
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 2",
                 "🇩🇪DE | 🟢 | vless | @SvnTeam | 0",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 2"
+                "🇩🇪DE | 🟢 | vless | @SvnTeam | 1",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -2248,6 +2250,35 @@
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
+            "uuid": "6c76ee27-5281-4d1f-9e28-9a33e0bb0820",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @SvnTeam | 1",
+            "type": "vless",
+            "server": "SVNTEAM.MiSVN.iR",
+            "server_port": 443,
             "uuid": "88da5abf-08f2-44fe-951e-358e96bc86ba",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
@@ -2273,7 +2304,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 2",
+            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 3",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
