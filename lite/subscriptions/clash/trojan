@@ -118,10 +118,10 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 16","type":"trojan","server":"13.50.96.181","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 17","type":"trojan","server":"16.171.130.175","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"3.77.226.3","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"13.49.247.59","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16","type":"trojan","server":"18.196.213.193","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17","type":"trojan","server":"18.199.47.157","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"51.21.159.253","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"13.48.140.216","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"❔XX | 🟢 | trojan | @VmessProtocol | 12","type":"trojan","server":"model-fly.adder289.quest","port":443,"udp":false,"password":"3747000103274291200","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"model-fly.adder289.quest"}
 proxy-groups:
   - name: MANUAL
@@ -129,10 +129,10 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 17'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 16'
-      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 17'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 16'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 12'
   - name: URL-TEST
     type: url-test
@@ -140,20 +140,20 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 17'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 16'
-      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 17'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 16'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 17'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 16'
-      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 17'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 16'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 17'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 16'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 12'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
