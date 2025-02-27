@@ -115,7 +115,7 @@
                 "❔XX | 🟢 | vless | @ipV2Ray | 13",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 7",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 8",
-                "🇺🇸US | 🔴 | vless | @ARv2ray | 16",
+                "🇨🇦CA | 🔴 | vless | @ARv2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 17",
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 7",
@@ -161,8 +161,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 6",
                 "❔XX | 🟢 | vless | @free1_vpn | 7",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
                 "❔XX | 🟢 | vmess | @Hope_Net | 8",
-                "🇺🇿UZ | 🟢 | vmess | @Hope_Net | 9",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 3",
                 "❔XX | 🟢 | vless | @FreakConfig | 11",
@@ -194,7 +194,7 @@
                 "❔XX | 🟢 | vless | @ipV2Ray | 13",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 7",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 8",
-                "🇺🇸US | 🔴 | vless | @ARv2ray | 16",
+                "🇨🇦CA | 🔴 | vless | @ARv2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 17",
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 7",
@@ -240,8 +240,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 6",
                 "❔XX | 🟢 | vless | @free1_vpn | 7",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
                 "❔XX | 🟢 | vmess | @Hope_Net | 8",
-                "🇺🇿UZ | 🟢 | vmess | @Hope_Net | 9",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 3",
                 "❔XX | 🟢 | vless | @FreakConfig | 11",
@@ -535,7 +535,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ARv2ray | 16",
+            "tag": "🇨🇦CA | 🔴 | vless | @ARv2ray | 16",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -1654,11 +1654,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "bbaacac-baca-aacb-bcad-abbaabacccbc",
+            "server": "104.31.16.9",
+            "server_port": 2053,
+            "uuid": "ad3d0eb7-24a6-403b-9225-feeacb8219b9",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1668,14 +1668,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "qurantv.quranir.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "qurantv.quranir.com"
+                }
             }
         },
         {
-            "tag": "🇺🇿UZ | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "92.223.44.168",
-            "server_port": 20118,
-            "uuid": "e9f666fb-12d9-4f1b-e9e6-3e48e615e714",
+            "server": "127.0.0.1",
+            "server_port": 8080,
+            "uuid": "accbaab-caba-aabc-dacb-bcabccacbaba",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
