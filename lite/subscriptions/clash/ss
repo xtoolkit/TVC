@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"54.36.174.181","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"149.202.82.172","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 8","type":"ss","server":"45.87.175.171","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 8'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 8'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 8'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
