@@ -145,6 +145,7 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
+                "🇸🇬SG | 🟢 | vless | @VmessProtocol | 13",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
                 "🇬🇧GB | 🟢 | vless | @DailyV2RY | 349",
                 "🇬🇧GB | 🟢 | vless | @DailyV2RY | 350",
@@ -152,6 +153,8 @@
                 "❔XX | 🟢 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 3",
+                "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 9",
+                "🇨🇷CR | 🔴 | vless | @Outlinev2rayNG | 10",
                 "❔XX | 🟢 | vless | @FreakConfig | 11",
                 "❔XX | 🔴 | vless | @FreakConfig | 12",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 7",
@@ -210,6 +213,7 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
+                "🇸🇬SG | 🟢 | vless | @VmessProtocol | 13",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
                 "🇬🇧GB | 🟢 | vless | @DailyV2RY | 349",
                 "🇬🇧GB | 🟢 | vless | @DailyV2RY | 350",
@@ -217,6 +221,8 @@
                 "❔XX | 🟢 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 3",
+                "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 9",
+                "🇨🇷CR | 🔴 | vless | @Outlinev2rayNG | 10",
                 "❔XX | 🟢 | vless | @FreakConfig | 11",
                 "❔XX | 🔴 | vless | @FreakConfig | 12",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 7",
@@ -1256,6 +1262,35 @@
             }
         },
         {
+            "tag": "🇸🇬SG | 🟢 | vless | @VmessProtocol | 13",
+            "type": "vless",
+            "server": "259284b7.ddns-link-b5.uk",
+            "server_port": 10036,
+            "uuid": "326B6124-9762-4A48-8CCA-D8B6E3999226",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "swcdn.apple.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+                    "short_id": "686c0ef0"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
             "type": "vless",
             "server": "ww.speedmeter.life",
@@ -1432,6 +1467,73 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 9",
+            "type": "vless",
+            "server": "mehdi.vact.ir",
+            "server_port": 443,
+            "uuid": "MTMVPN",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BqyR1J0knEz_ExHwER9WKfxCeoMduUlb4oCGTez7-yg",
+                    "short_id": "6b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇷CR | 🔴 | vless | @Outlinev2rayNG | 10",
+            "type": "vless",
+            "server": "190.93.244.221",
+            "server_port": 443,
+            "uuid": "42f36835-730c-4ecc-9daf-20121ae7ba47",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "gozargah.validbv7996.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "gozargah.validbv7996.ir"
+                }
             }
         },
         {
