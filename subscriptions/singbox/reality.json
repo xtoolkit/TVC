@@ -134,7 +134,7 @@
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 14",
                 "🇺🇸US | 🟢 | vless | @vless_vmess | 3",
                 "🇩🇪DE | 🔴 | vless | @MTConfig | 4",
-                "🇸🇬SG | 🟢 | vless | @VmessProtocol | 13",
+                "🇸🇬SG | 🟢 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 343",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 344",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 345",
@@ -152,6 +152,7 @@
                 "❔XX | 🔴 | vless | @flyv2ray | 8",
                 "❔XX | 🔴 | vless | @nofiltering2 | 9",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 9",
@@ -205,7 +206,7 @@
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 14",
                 "🇺🇸US | 🟢 | vless | @vless_vmess | 3",
                 "🇩🇪DE | 🔴 | vless | @MTConfig | 4",
-                "🇸🇬SG | 🟢 | vless | @VmessProtocol | 13",
+                "🇸🇬SG | 🟢 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 343",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 344",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 345",
@@ -223,6 +224,7 @@
                 "❔XX | 🔴 | vless | @flyv2ray | 8",
                 "❔XX | 🔴 | vless | @nofiltering2 | 9",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 9",
@@ -1223,7 +1225,7 @@
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vless | @VmessProtocol | 13",
+            "tag": "🇸🇬SG | 🟢 | vless | @VmessProtocol | 14",
             "type": "vless",
             "server": "259284b7.ddns-link-b5.uk",
             "server_port": 10036,
@@ -1780,6 +1782,42 @@
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
+            "type": "vless",
+            "server": "mehdi.vact.ir",
+            "server_port": 443,
+            "uuid": "Telegram-channel-mtmvpn",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BqyR1J0knEz_ExHwER9WKfxCeoMduUlb4oCGTez7-yg",
+                    "short_id": "6b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "TELEGRAM-MTMVPN-TELEGRAM-MTMVPN-TELEGRAM-MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
             "type": "vless",
             "server": "mehdi.vact.ir",
             "server_port": 443,
