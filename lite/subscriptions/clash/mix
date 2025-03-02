@@ -127,6 +127,7 @@ proxies:
   - {"name":"🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"54.36.174.181","port":9101,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | 🟢 | vmess | @prrofile_purple | 150","type":"vmess","server":"104.19.150.10","port":"2095","cipher":"auto","uuid":"94f332b0-c5d3-4531-a1d6-6e6358cc6c72","alterId":"0","tls":false,"skip-cert-verify":true,"network":"httpupgrade"}
   - {"name":"🇨🇳CN | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 4","type":"vmess","server":"biazh.mmzhk.website","port":"443","cipher":"auto","uuid":"4187fdd4-ffae-4a3d-b620-ab23e04599fc","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"biazh.mmzhk.website"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -142,6 +143,7 @@ proxy-groups:
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇺🇸US | 🟢 | vmess | @prrofile_purple | 150'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -157,6 +159,7 @@ proxy-groups:
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇺🇸US | 🟢 | vmess | @prrofile_purple | 150'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -171,6 +174,7 @@ proxy-groups:
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇺🇸US | 🟢 | vmess | @prrofile_purple | 150'
       - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve

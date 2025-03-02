@@ -111,7 +111,7 @@
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 150",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "❔XX | 🟢 | vmess | @Hope_Net | 5"
             ]
         },
@@ -124,7 +124,7 @@
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 150",
                 "🇨🇳CN | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "❔XX | 🟢 | vmess | @Hope_Net | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -257,11 +257,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "acbbcaa-abca-bcaa-cabd-cbacccaaabbb",
+            "server": "biazh.mmzhk.website",
+            "server_port": 443,
+            "uuid": "4187fdd4-ffae-4a3d-b620-ab23e04599fc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -271,14 +271,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "biazh.mmzhk.website",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "biazh.mmzhk.website"
+                }
             }
         },
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
             "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "baaccab-abca-aacb-adbc-aabbcacbcbca",
+            "server_port": 2080,
+            "uuid": "acbbcaa-abca-bcaa-cabd-cbacccaaabbb",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
