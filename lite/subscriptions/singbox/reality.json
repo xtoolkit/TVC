@@ -110,6 +110,7 @@
                 "❔XX | 🟢 | vless | @ipV2Ray | 13",
                 "🇺🇸US | 🟢 | vless | @vpn_xw | 0",
                 "🇸🇬SG | 🟢 | vless | @VmessProtocol | 15",
+                "❔XX | 🟢 | vless | @free1_vpn | 10",
                 "❔XX | 🔴 | vless | @flyv2ray | 8",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 5",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 6",
@@ -126,6 +127,7 @@
                 "❔XX | 🟢 | vless | @ipV2Ray | 13",
                 "🇺🇸US | 🟢 | vless | @vpn_xw | 0",
                 "🇸🇬SG | 🟢 | vless | @VmessProtocol | 15",
+                "❔XX | 🟢 | vless | @free1_vpn | 10",
                 "❔XX | 🔴 | vless | @flyv2ray | 8",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 5",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 6",
@@ -281,6 +283,42 @@
                     "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
                     "short_id": "686c0ef0"
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @free1_vpn | 10",
+            "type": "vless",
+            "server": "c1.vact.ir",
+            "server_port": 443,
+            "uuid": "5525c973-837a-4a25-9073-b6dd238b8a75",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "hoF3B2vCaQoCTF7xh_vcQDCzia2rJTDAyTuvlhn5YgM",
+                    "short_id": "fcb2"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
