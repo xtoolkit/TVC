@@ -160,7 +160,7 @@
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 3",
                 "🇫🇮FI | 🟢 | vless | @Outlinev2rayNG | 12",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 13",
+                "🇫🇮FI | 🟢 | vless | @Outlinev2rayNG | 13",
                 "❔XX | 🟢 | vless | @FreakConfig | 14",
                 "❔XX | 🟢 | vless | @FreakConfig | 15",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
@@ -234,7 +234,7 @@
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 3",
                 "🇫🇮FI | 🟢 | vless | @Outlinev2rayNG | 12",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 13",
+                "🇫🇮FI | 🟢 | vless | @Outlinev2rayNG | 13",
                 "❔XX | 🟢 | vless | @FreakConfig | 14",
                 "❔XX | 🟢 | vless | @FreakConfig | 15",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
@@ -1556,7 +1556,7 @@
         {
             "tag": "🇫🇮FI | 🟢 | vless | @Outlinev2rayNG | 12",
             "type": "vless",
-            "server": "panel.seyyedmtmodidandansax.blog",
+            "server": "panel2.seyyedmtmodidandansax.blog",
             "server_port": 2089,
             "uuid": "3a857328-3b53-4333-85b2-a6f2aa22ceb7",
             "flow": "xtls-rprx-vision",
@@ -1583,23 +1583,31 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 13",
+            "tag": "🇫🇮FI | 🟢 | vless | @Outlinev2rayNG | 13",
             "type": "vless",
-            "server": "tgju.org",
-            "server_port": 80,
-            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-            "flow": "",
+            "server": "panel.seyyedmtmodidandansax.blog",
+            "server_port": 2089,
+            "uuid": "3a857328-3b53-4333-85b2-a6f2aa22ceb7",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "tgju.org"
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg",
+                    "short_id": "e3c5c005cae07eb8"
                 }
             }
         },
