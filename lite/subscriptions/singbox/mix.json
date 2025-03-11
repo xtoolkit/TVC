@@ -135,7 +135,8 @@
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 16",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "🇸🇪SE | 🟢 | vmess | @prrofile_purple | 159",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 8",
@@ -156,7 +157,7 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
-                "❔XX | 🔴 | vless | @VmessProtocol | 15",
+                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 11",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 316",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 317",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
@@ -217,7 +218,8 @@
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 16",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "🇸🇪SE | 🟢 | vmess | @prrofile_purple | 159",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @customv2ray | 8",
@@ -238,7 +240,7 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 2",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 3",
-                "❔XX | 🔴 | vless | @VmessProtocol | 15",
+                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 11",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 316",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 317",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
@@ -981,11 +983,28 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
-            "server": "188.114.99.134",
-            "server_port": 443,
-            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+            "server": "107.148.207.249",
+            "server_port": 48712,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 19",
+            "type": "vmess",
+            "server": "47.92.152.169",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -995,23 +1014,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "linde06.indiavideo.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": "linde06.indiavideo.sbs"
-                }
             }
         },
         {
@@ -1521,17 +1523,27 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @VmessProtocol | 15",
+            "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 11",
             "type": "vless",
-            "server": "sev4-basic.gilandashog.com",
-            "server_port": 2083,
-            "uuid": "7469b758-e05e-477b-b66c-da51ad913eab",
-            "flow": "",
+            "server": "91.107.139.138",
+            "server_port": 443,
+            "uuid": "9e55e24c-8de9-4357-8a37-9cf1212c6491",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mods.lnmarketplace.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
@@ -1794,28 +1806,7 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 13",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/MTMVPN\/?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 14",
-            "type": "vless",
-            "server": "104.26.15.85",
+            "server": "172.67.204.84",
             "server_port": 80,
             "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
             "flow": "",
@@ -1827,9 +1818,30 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/tmevpnAndroid2\/?ed=2560",
                 "headers": {
-                    "Host": "104.26.15.85"
+                    "Host": "172.67.204.84"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 14",
+            "type": "vless",
+            "server": "join.mosiv2.fastly80-3.hosting-ip.com",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "join.mosiv2.fastly80-3.hosting-ip.com"
                 }
             }
         },
