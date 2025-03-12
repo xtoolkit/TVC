@@ -137,8 +137,7 @@
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 16",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 16",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @prrofile_purple | 158",
                 "🇺🇸US | 🔴 | vless | @prrofile_purple | 159",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 8",
@@ -166,8 +165,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vless | @free1_vpn | 4",
                 "❔XX | 🟢 | vless | @free1_vpn | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 3",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 10",
@@ -222,8 +221,7 @@
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 16",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 16",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @prrofile_purple | 158",
                 "🇺🇸US | 🔴 | vless | @prrofile_purple | 159",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 8",
@@ -251,8 +249,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vless | @free1_vpn | 4",
                 "❔XX | 🟢 | vless | @free1_vpn | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 2",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 3",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 10",
@@ -1029,24 +1027,38 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 16",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.samanehha.co",
+            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "188.114.96.2",
             "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17",
-            "type": "shadowsocks",
-            "server": "45.87.175.157",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "QCXDxuDlTTMD7jtgHUjIoj",
-            "plugin": "",
-            "plugin_opts": ""
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @prrofile_purple | 158",
@@ -1757,7 +1769,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
             "server": "35.87.149.172",
             "server_port": 33443,
@@ -1791,7 +1803,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
             "server": "207.90.237.96",
             "server_port": 23008,
