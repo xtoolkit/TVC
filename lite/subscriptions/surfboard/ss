@@ -11,10 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇧🇾BY | 🟢 | ss | @DeamNet_Proxy | 17 = ss, 95.128.71.141, 41348, encrypt-method = chacha20-ietf-poly1305, password = MsIBFw6XPmfcpLZXhUNpJdr1g7FObZCT5AgAEzF3OEGf1T5d
+🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 18 = ss, 142.4.216.225, 80, encrypt-method = chacha20-ietf-poly1305, password = JIhN6rBKkaEboLNXVSv5rq
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK
-URL-TEST = url-test
-FALLBACK = fallback
+MANUAL = select,URL-TEST,FALLBACK,🇧🇾BY | 🟢 | ss | @DeamNet_Proxy | 17,🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 18
+URL-TEST = url-test,🇧🇾BY | 🟢 | ss | @DeamNet_Proxy | 17,🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 18
+FALLBACK = fallback,🇧🇾BY | 🟢 | ss | @DeamNet_Proxy | 17,🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
