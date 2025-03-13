@@ -110,10 +110,11 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
+                "🇫🇷FR | 🟢 | vmess | @V2rayng_Fast | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 7"
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 5"
             ]
         },
         {
@@ -124,10 +125,11 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
+                "🇫🇷FR | 🟢 | vmess | @V2rayng_Fast | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 7"
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -218,6 +220,23 @@
             }
         },
         {
+            "tag": "🇫🇷FR | 🟢 | vmess | @V2rayng_Fast | 0",
+            "type": "vmess",
+            "server": "51.77.20.131",
+            "server_port": 22324,
+            "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vmess | @yaney_01 | 4",
             "type": "vmess",
             "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
@@ -276,33 +295,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
-            "server": "74.48.159.226",
-            "server_port": 38848,
-            "uuid": "20fed645-619c-4ca1-c00e-743ea8a3b51f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/6c8e5a1b",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 7",
-            "type": "vmess",
-            "server": "13.213.13.22",
+            "server": "18.143.169.73",
             "server_port": 40000,
             "uuid": "13364789-a8b2-4bcd-8df7-a794fb6f87e5",
             "security": "auto",
@@ -320,6 +315,40 @@
                 "path": "\/bby",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 5",
+            "type": "vmess",
+            "server": "13.231.143.163",
+            "server_port": 22443,
+            "uuid": "3519dfc0-fa27-41cc-8c19-981818f9f6d5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tls.11.node-for-bigairport.win",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tls.11.node-for-bigairport.win"
                 }
             }
         }
