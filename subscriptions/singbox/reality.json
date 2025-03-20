@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @v2_team | 1",
                 "🇵🇱PL | 🔴 | vless | @V2pedia | 2",
                 "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | 🟢 | vless | @vpn_xw | 1",
@@ -164,7 +163,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @v2_team | 1",
                 "🇵🇱PL | 🔴 | vless | @V2pedia | 2",
                 "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | 🟢 | vless | @vpn_xw | 1",
@@ -236,35 +234,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @v2_team | 1",
-            "type": "vless",
-            "server": "195.201.249.29",
-            "server_port": 443,
-            "uuid": "3d044bd1-2de9-4bc2-b1d1-f55102fdf1f5",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "3boboxyL1-ER1h5995Q9M9kIOEoflWM1dCoj-UqQh3E",
-                    "short_id": "e110ad656c15553b"
-                }
-            }
         },
         {
             "tag": "🇵🇱PL | 🔴 | vless | @V2pedia | 2",
