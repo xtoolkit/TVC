@@ -162,7 +162,7 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 4",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 5",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 7",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 7",
                 "❔XX | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 13",
                 "🇯🇵JP | 🔴 | vless | @Outlinev2rayNG | 14",
@@ -242,7 +242,7 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 4",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 5",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 7",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 7",
                 "❔XX | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 13",
                 "🇯🇵JP | 🔴 | vless | @Outlinev2rayNG | 14",
@@ -1613,11 +1613,11 @@
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "140.245.43.23",
-            "server_port": 23452,
-            "uuid": "150a990b-3a9b-4742-866a-8e1611faf316",
+            "server": "130.162.174.70",
+            "server_port": 443,
+            "uuid": "9b456c2a-f2c1-45e1-87a9-b7628b04bb24",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1628,11 +1628,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "130.162.174.70",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "140.245.43.23"
+                    "Host": "130.162.174.70"
                 }
             }
         },
@@ -1640,8 +1650,8 @@
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
             "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "aacbcab-baac-abac-bcda-cacbabababcc",
+            "server_port": 2080,
+            "uuid": "bbacaac-cbaa-aabc-acbd-babaccbacacb",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
