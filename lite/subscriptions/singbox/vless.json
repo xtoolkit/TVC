@@ -147,6 +147,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 8",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 256",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 257",
                 "❔XX | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 4",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 5",
@@ -154,7 +156,7 @@
                 "🇯🇵JP | 🔴 | vless | @Outlinev2rayNG | 14",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 9",
-                "🇸🇪SE | 🔴 | vless | @nofiltering2 | 7",
+                "🇸🇪SE | 🔴 | vless | @nofiltering2 | 9",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -213,6 +215,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 8",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 256",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 257",
                 "❔XX | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 4",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 5",
@@ -220,7 +224,7 @@
                 "🇯🇵JP | 🔴 | vless | @Outlinev2rayNG | 14",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 8",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 9",
-                "🇸🇪SE | 🔴 | vless | @nofiltering2 | 7",
+                "🇸🇪SE | 🔴 | vless | @nofiltering2 | 9",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -1249,6 +1253,58 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 256",
+            "type": "vless",
+            "server": "angelina.ns.cloudflare.com",
+            "server_port": 443,
+            "uuid": "10525b84-7f6e-43ef-912b-87434df813f4",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "news5.testsnew.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/wss",
+                "headers": {
+                    "Host": "news5.testsnew.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 257",
+            "type": "vless",
+            "server": "tgju.org",
+            "server_port": 80,
+            "uuid": "068dac46-f5d0-4972-94a1-e5f2a2e561ba",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tgju.org"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🔴 | vless | @proxystore11 | 0",
             "type": "vless",
             "server": "ipv6.proxystore11.news",
@@ -1421,7 +1477,7 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @nofiltering2 | 7",
+            "tag": "🇸🇪SE | 🔴 | vless | @nofiltering2 | 9",
             "type": "vless",
             "server": "185.146.173.37",
             "server_port": 8443,
