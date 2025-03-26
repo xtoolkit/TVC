@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 6",
                 "❔XX | 🔴 | vless | @proxystore11 | 4",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 16",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -117,6 +118,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 6",
                 "❔XX | 🔴 | vless | @proxystore11 | 4",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 16",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -142,6 +144,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 6",
+            "type": "vless",
+            "server": "185.161.251.211",
+            "server_port": 1633,
+            "uuid": "d1d6e7bb-6674-4ace-a9b3-c2212c9628ea",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q",
+                    "short_id": "9bc0a55a5379c0ed"
+                }
+            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @proxystore11 | 4",
