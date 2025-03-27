@@ -147,10 +147,11 @@
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 15",
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
-                "🇬🇧GB | 🔴 | vless | @VmessProtocol | 12",
+                "🇯🇵JP | 🔴 | vless | @VmessProtocol | 13",
+                "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 129",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 130",
-                "❔XX | 🔴 | vless | @proxystore11 | 4",
+                "❔XX | 🔴 | vless | @proxystore11 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 9",
                 "🇸🇪SE | 🔴 | vless | @FreakConfig | 8",
@@ -217,10 +218,11 @@
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 15",
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
-                "🇬🇧GB | 🔴 | vless | @VmessProtocol | 12",
+                "🇯🇵JP | 🔴 | vless | @VmessProtocol | 13",
+                "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 129",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 130",
-                "❔XX | 🔴 | vless | @proxystore11 | 4",
+                "❔XX | 🔴 | vless | @proxystore11 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 9",
                 "🇸🇪SE | 🔴 | vless | @FreakConfig | 8",
@@ -617,7 +619,7 @@
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "cc88cead-f721-4a29-9ca1-edd26c36b295",
+            "uuid": "6992db6a-f9ff-43c9-8b54-a34cf64d1ec5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -638,7 +640,7 @@
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "f4c77527-f29e-4c9f-84b1-ff5085968bdc",
+            "uuid": "cc88cead-f721-4a29-9ca1-edd26c36b295",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1258,17 +1260,55 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @VmessProtocol | 12",
+            "tag": "🇯🇵JP | 🔴 | vless | @VmessProtocol | 13",
             "type": "vless",
-            "server": "154.81.182.74",
-            "server_port": 32040,
-            "uuid": "5ddb70da-5498-498d-916c-dbddbe9315f5",
+            "server": "156.238.18.153",
+            "server_port": 2095,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "156.238.18.153"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @VmessProtocol | 14",
+            "type": "vless",
+            "server": "104.18.41.190",
+            "server_port": 8443,
+            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "5-55sfjslf.ifenxiang.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "5-55sfjslf.ifenxiang.cfd"
+                }
             }
         },
         {
@@ -1334,7 +1374,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @proxystore11 | 4",
+            "tag": "❔XX | 🔴 | vless | @proxystore11 | 5",
             "type": "vless",
             "server": "ipv6.proxystore11.news",
             "server_port": 443,
