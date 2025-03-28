@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
                 "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 11",
+                "❔XX | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 10"
@@ -119,6 +120,7 @@
             "outbounds": [
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
                 "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 11",
+                "❔XX | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 10"
@@ -206,6 +208,42 @@
                     "public_key": "paO1TMygT5PynUTEFWKHOym9ULbXoU7RyO-STHiDU1k",
                     "short_id": "31c87861"
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @proxy_mtm | 7",
+            "type": "vless",
+            "server": "mehdi20.vact.ir",
+            "server_port": 443,
+            "uuid": "d3fb8889-3f54-4ef8-9083-a6478dd4bd03",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "euMUHS3boiZ0500KTjnU9l_RTX1RP9VFOGEo82gFUyE",
+                    "short_id": "ce1be0"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Join---MTMVPN-Join---MTMVPN-Join---MTMVPN-Join---MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
