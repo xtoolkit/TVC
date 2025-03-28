@@ -111,6 +111,7 @@
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 7",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 3",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 4",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 10"
@@ -125,6 +126,7 @@
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 7",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 3",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 4",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 10"
@@ -284,7 +286,43 @@
             "type": "vless",
             "server": "mehdi21.vact.ir",
             "server_port": 443,
-            "uuid": "3a98dee0-8d9f-4f17-a1b0-706b72bcab11",
+            "uuid": "MTMVPN",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vLtM7H2Bbmzw5-Tevlxh2soD0WML7GJNeAg6gdhsCzo",
+                    "short_id": "ba66"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Join---MTMVPN-Join---MTMVPN-Join---MTMVPN-Join---MTMVPN-Join---MTMVPN-Join---MTMVPN-Join---MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 4",
+            "type": "vless",
+            "server": "mehdi21.vact.ir",
+            "server_port": 443,
+            "uuid": "cd0c5ec0-882e-4989-ac3e-a5f0c17f7116",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
