@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "❔XX | 🔴 | vless | @customv2ray | 7",
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 15",
                 "🇩🇪DE | 🟢 | vless | @DailyV2RY | 113",
                 "❔XX | 🔴 | vless | @proxystore11 | 8",
@@ -121,6 +122,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "❔XX | 🔴 | vless | @customv2ray | 7",
                 "🇺🇸US | 🟢 | vless | @VmessProtocol | 15",
                 "🇩🇪DE | 🟢 | vless | @DailyV2RY | 113",
                 "❔XX | 🔴 | vless | @proxystore11 | 8",
@@ -150,6 +152,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @customv2ray | 7",
+            "type": "vless",
+            "server": "mehdi9.vact.ir",
+            "server_port": 443,
+            "uuid": "Join-proxy_mtm-channel",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Zxm8F7CUF28zUKUMcH2jE05qXJ1LuY6djreVLgeze2k",
+                    "short_id": "3e"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-Telegram-MTMVPN-telegram-MTMVPN-Telegram-MTMVPN-telegram-MTMVPN-MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇺🇸US | 🟢 | vless | @VmessProtocol | 15",
