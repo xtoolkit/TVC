@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 108",
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
-                "🇳🇱NL | 🟢 | vless | @free1_vpn | 6",
+                "🇳🇱NL | 🟢 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 7",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 3",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 4",
@@ -120,8 +121,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 108",
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
-                "🇳🇱NL | 🟢 | vless | @free1_vpn | 6",
+                "🇳🇱NL | 🟢 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 7",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 3",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 4",
@@ -148,6 +150,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 108",
+            "type": "vless",
+            "server": "18.219.53.180",
+            "server_port": 8443,
+            "uuid": "73c732f2-d435-4197-9f33-0d7c1f47d3a9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @proxystore11 | 6",
@@ -186,7 +217,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @free1_vpn | 6",
+            "tag": "🇳🇱NL | 🟢 | vless | @free1_vpn | 7",
             "type": "vless",
             "server": "194.49.53.185",
             "server_port": 443,
