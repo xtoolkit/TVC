@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "❔XX | 🔴 | vless | @customv2ray | 7",
                 "❔XX | 🔴 | vless | @proxystore11 | 9",
+                "🇳🇱NL | 🟢 | vless | @free1_vpn | 8",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 8",
                 "❔XX | 🔴 | vless | @proxy_mtm | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -121,6 +122,7 @@
             "outbounds": [
                 "❔XX | 🔴 | vless | @customv2ray | 7",
                 "❔XX | 🔴 | vless | @proxystore11 | 9",
+                "🇳🇱NL | 🟢 | vless | @free1_vpn | 8",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 8",
                 "❔XX | 🔴 | vless | @proxy_mtm | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -217,6 +219,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @free1_vpn | 8",
+            "type": "vless",
+            "server": "194.49.53.185",
+            "server_port": 443,
+            "uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maviks.eu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
+                    "short_id": "21181028b56c8702"
+                }
             }
         },
         {
