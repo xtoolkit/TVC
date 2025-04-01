@@ -106,8 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @EliV2ray | 2",
-                "🇨🇦CA | 🔴 | vless | @EliV2ray | 3",
+                "🇨🇦CA | 🔴 | vless | @EliV2ray | 1",
                 "🇺🇸US | 🔴 | vless | @Parsashonam | 43",
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 44",
                 "🇨🇦CA | 🔴 | vless | @v2_team | 0",
@@ -148,7 +147,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 153",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 154",
                 "❔XX | 🔴 | vless | @proxystore11 | 9",
-                "🇺🇸US | 🔴 | vless | @free1_vpn | 6",
+                "🇺🇸US | 🔴 | vless | @free1_vpn | 8",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 8",
                 "🇸🇪SE | 🔴 | vless | @Outlinev2rayNG | 9",
                 "🇬🇧GB | 🔴 | vless | @FreakConfig | 8",
@@ -173,8 +172,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @EliV2ray | 2",
-                "🇨🇦CA | 🔴 | vless | @EliV2ray | 3",
+                "🇨🇦CA | 🔴 | vless | @EliV2ray | 1",
                 "🇺🇸US | 🔴 | vless | @Parsashonam | 43",
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 44",
                 "🇨🇦CA | 🔴 | vless | @v2_team | 0",
@@ -215,7 +213,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 153",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 154",
                 "❔XX | 🔴 | vless | @proxystore11 | 9",
-                "🇺🇸US | 🔴 | vless | @free1_vpn | 6",
+                "🇺🇸US | 🔴 | vless | @free1_vpn | 8",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 8",
                 "🇸🇪SE | 🔴 | vless | @Outlinev2rayNG | 9",
                 "🇬🇧GB | 🔴 | vless | @FreakConfig | 8",
@@ -256,28 +254,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @EliV2ray | 2",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "47a1d435-472c-5ee4-a7bb-30a970fddac9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@ELiV2RAY--@ELiV2RAY--@ELiV2RAY--@ELiV2RAY--@ELiV2RAY--@ELiV2RAY--@ELiV2RAY--@ELiV2RAY",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @EliV2ray | 3",
+            "tag": "🇨🇦CA | 🔴 | vless | @EliV2ray | 1",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -1308,11 +1285,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @free1_vpn | 6",
+            "tag": "🇺🇸US | 🔴 | vless | @free1_vpn | 8",
             "type": "vless",
-            "server": "104.19.54.50",
-            "server_port": 8080,
-            "uuid": "5ce32ac4-adf6-40d0-ab49-8c0aed7bd62a",
+            "server": "162.159.153.2",
+            "server_port": 443,
+            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1320,11 +1297,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "5-55sfjslf.ifenxiang.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/telegram-ipv2ry-telegram-ipv2ry-telegram-ipv2ry",
+                "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
                 "headers": {
-                    "Host": "104.19.54.50"
+                    "Host": "5-55sfjslf.ifenxiang.cfd"
                 }
             }
         },
