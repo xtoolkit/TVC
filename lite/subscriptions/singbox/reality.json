@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇵🇱PL | 🔴 | vless | @V2pedia | 5",
+                "🇬🇧GB | 🟢 | vless | @prrofile_purple | 147",
                 "❔XX | 🔴 | vless | @customv2ray | 7",
                 "❔XX | 🔴 | vless | @proxystore11 | 10",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 9",
@@ -121,6 +122,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇵🇱PL | 🔴 | vless | @V2pedia | 5",
+                "🇬🇧GB | 🟢 | vless | @prrofile_purple | 147",
                 "❔XX | 🔴 | vless | @customv2ray | 7",
                 "❔XX | 🔴 | vless | @proxystore11 | 10",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 9",
@@ -183,6 +185,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @prrofile_purple | 147",
+            "type": "vless",
+            "server": "18.175.135.22",
+            "server_port": 8443,
+            "uuid": "73c732f2-d435-4197-9f33-0d7c1f47d3a9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
             }
         },
         {
