@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 16 = ss, 45.87.175.157, 8080, encrypt-method = chacha20-ietf-poly1305, password = cvII85TrW6n0OGyfpHVS1u
 🇺🇸US | 🟢 | ss | @kingofilter | 2 = ss, 45.87.175.10, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
 🇬🇧GB | 🟢 | ss | @kingofilter | 9 = ss, series-a2.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = mps3FwmDjLrWaOVg
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 16,🇺🇸US | 🟢 | ss | @kingofilter | 2,🇬🇧GB | 🟢 | ss | @kingofilter | 9
-URL-TEST = url-test,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 16,🇺🇸US | 🟢 | ss | @kingofilter | 2,🇬🇧GB | 🟢 | ss | @kingofilter | 9
-FALLBACK = fallback,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 16,🇺🇸US | 🟢 | ss | @kingofilter | 2,🇬🇧GB | 🟢 | ss | @kingofilter | 9
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @kingofilter | 2,🇬🇧GB | 🟢 | ss | @kingofilter | 9
+URL-TEST = url-test,🇺🇸US | 🟢 | ss | @kingofilter | 2,🇬🇧GB | 🟢 | ss | @kingofilter | 9
+FALLBACK = fallback,🇺🇸US | 🟢 | ss | @kingofilter | 2,🇬🇧GB | 🟢 | ss | @kingofilter | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
