@@ -11,13 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 15 = vmess, pq-brazil1.09vpn.com, 80, username = c04c3b34-70fd-4fec-963e-c12d09f36bef, ws = true, tls = , vmess-aead = true, ws-path = /vmess/, ws-headers = Host:"pq-brazil1.09vpn.com", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @proxystore11 | 9 = vmess, cname.proxystore11.news, 443, username = d11859ff-fb2f-4204-a44e-f673ea709ca5, ws = true, tls = 1, vmess-aead = true, ws-path = /PjgO08tnfHPy9fx8, ws-headers = Host:"cdn.proxystore11.news", skip-cert-verify = true, tfo = false
 🇭🇰HK | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @nofiltering2 | 8 = vmess, 172.67.170.13, 443, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"glweidf.sbs", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @proxystore11 | 9,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @nofiltering2 | 8
-URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @proxystore11 | 9,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @nofiltering2 | 8
-FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @proxystore11 | 9,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @nofiltering2 | 8
+MANUAL = select,URL-TEST,FALLBACK,🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 15,🇺🇸US | 🟢 | vmess | @proxystore11 | 9,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4
+URL-TEST = url-test,🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 15,🇺🇸US | 🟢 | vmess | @proxystore11 | 9,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4
+FALLBACK = fallback,🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 15,🇺🇸US | 🟢 | vmess | @proxystore11 | 9,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
