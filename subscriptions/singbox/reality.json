@@ -130,8 +130,9 @@
                 "🇨🇭CH | 🟢 | vless | @FreakConfig | 4",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 9",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
-                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 7",
-                "❔XX | 🔴 | vless | @proxy_mtm | 9",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 9",
+                "❔XX | 🔴 | vless | @proxy_mtm | 11",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 9",
@@ -185,8 +186,9 @@
                 "🇨🇭CH | 🟢 | vless | @FreakConfig | 4",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 9",
                 "🇩🇪DE | 🔴 | vless | @proxy_mtm | 0",
-                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 7",
-                "❔XX | 🔴 | vless | @proxy_mtm | 9",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
+                "🇩🇪DE | 🔴 | vless | @proxy_mtm | 9",
+                "❔XX | 🔴 | vless | @proxy_mtm | 11",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 8",
                 "❔XX | 🔴 | vless | @vpn_go67 | 9",
@@ -980,6 +982,42 @@
             "type": "vless",
             "server": "mehdi23.vact.ir",
             "server_port": 443,
+            "uuid": "49768258-d35c-4866-bf1d-48c11e28f741",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wpAf93EihwHYk0bmtLSFh8eSfrszEha4bHV1ETW69Qg",
+                    "short_id": "a4"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "join---MTMVPN----MTMVPN-join---MTMVPN----MTMVPN-join---MTMVPN----MTMVPN-join---MTMVPN----MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 2",
+            "type": "vless",
+            "server": "mehdi23.vact.ir",
+            "server_port": 443,
             "uuid": "c9996505-847e-42cf-9214-0d6c232dd860",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
@@ -1012,7 +1050,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 7",
+            "tag": "🇩🇪DE | 🔴 | vless | @proxy_mtm | 9",
             "type": "vless",
             "server": "mehdi23.vact.ir",
             "server_port": 443,
@@ -1048,7 +1086,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @proxy_mtm | 9",
+            "tag": "❔XX | 🔴 | vless | @proxy_mtm | 11",
             "type": "vless",
             "server": "mehdi22.vact.ir",
             "server_port": 2083,
