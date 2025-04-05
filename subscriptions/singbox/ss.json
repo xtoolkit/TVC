@@ -106,16 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | ss | @kingofilter | 2",
-                "🇬🇧GB | 🟢 | ss | @kingofilter | 9"
+                "🇬🇧GB | 🟢 | ss | @kingofilter | 5",
+                "🇺🇸US | 🟢 | ss | @kingofilter | 10",
+                "🇬🇧GB | 🟢 | ss | @kingofilter | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | ss | @kingofilter | 2",
-                "🇬🇧GB | 🟢 | ss | @kingofilter | 9"
+                "🇬🇧GB | 🟢 | ss | @kingofilter | 5",
+                "🇺🇸US | 🟢 | ss | @kingofilter | 10",
+                "🇬🇧GB | 🟢 | ss | @kingofilter | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,7 +140,17 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @kingofilter | 2",
+            "tag": "🇬🇧GB | 🟢 | ss | @kingofilter | 5",
+            "type": "shadowsocks",
+            "server": "admin.c4.havij.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "VR9JkPKbufOZQ2lr",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @kingofilter | 10",
             "type": "shadowsocks",
             "server": "45.87.175.10",
             "server_port": 8080,
@@ -148,7 +160,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @kingofilter | 9",
+            "tag": "🇬🇧GB | 🟢 | ss | @kingofilter | 17",
             "type": "shadowsocks",
             "server": "series-a2.samanehha.co",
             "server_port": 443,
