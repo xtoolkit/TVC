@@ -11,14 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18 = vmess, irvideo.cfd, 443, username = e537f2f5-2a0c-4f59-92c9-832ca6433bf3, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"irvideo.cfd", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19 = vmess, 160.153.1.81, 443, username = 62aa5f80-0328-4004-a375-7f5a59df4022, ws = true, tls = 1, vmess-aead = true, ws-path = /LINKWS, ws-headers = Host:"hms19.best-tizi.top", skip-cert-verify = true, tfo = false
 🇭🇰HK | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 2 = vmess, 104.21.48.1, 80, username = e936e1fa-ed0c-4e20-b2d8-880f02a8fb35, ws = true, tls = , vmess-aead = false, ws-path = /qwertyuiop, ws-headers = Host:"usvmess.rnmcnm.com", skip-cert-verify = true, tfo = false
+🇸🇬SG | 🟢 | vmess | @Hope_Net | 1 = vmess, 217.142.187.146, 23452, username = 786eeff8-126a-4d90-827d-da5d9410f0d4, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"westsg2-ddns.oraclenat.cc", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 2
-URL-TEST = url-test,🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 2
-FALLBACK = fallback,🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 2
+MANUAL = select,URL-TEST,FALLBACK,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 1
+URL-TEST = url-test,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 1
+FALLBACK = fallback,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
