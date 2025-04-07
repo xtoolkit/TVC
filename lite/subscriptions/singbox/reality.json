@@ -107,8 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇵🇱PL | 🔴 | vless | @V2pedia | 6",
-                "🇳🇱NL | 🟢 | vless | @prrofile_purple | 151",
                 "🇮🇪IE | 🟢 | vless | @DailyV2RY | 244",
+                "❔XX | 🔴 | vless | @proxystore11 | 5",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -120,8 +120,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇵🇱PL | 🔴 | vless | @V2pedia | 6",
-                "🇳🇱NL | 🟢 | vless | @prrofile_purple | 151",
                 "🇮🇪IE | 🟢 | vless | @DailyV2RY | 244",
+                "❔XX | 🔴 | vless | @proxystore11 | 5",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -184,35 +184,6 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @prrofile_purple | 151",
-            "type": "vless",
-            "server": "185.193.158.9",
-            "server_port": 443,
-            "uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "maviks.eu",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
-                    "short_id": "21181028b56c8702"
-                }
-            }
-        },
-        {
             "tag": "🇮🇪IE | 🟢 | vless | @DailyV2RY | 244",
             "type": "vless",
             "server": "18.202.50.85",
@@ -239,6 +210,42 @@
                     "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @proxystore11 | 5",
+            "type": "vless",
+            "server": "ipv6.proxystore11.news",
+            "server_port": 443,
+            "uuid": "d11859ff-fb2f-4204-a44e-f673ea709ca5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.afp.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qTjnHPhsqfvEpnCP4cTXXvVQI34F2uXhWxl0ddtgpTc",
+                    "short_id": "b5f32071b5f64f"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "L6ocyVFZGNHz4gxKwgJ",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
