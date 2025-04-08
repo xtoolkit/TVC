@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18 = vmess, 172.66.44.6, 8880, username = 3f638f34-8dba-4186-bc43-2716a7ddd4be, ws = true, tls = , vmess-aead = true, ws-path = /az05.beyondy.cfd/link?/TM@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560, ws-headers = Host:"yellow-paper-029c.yvonna.workers.dev", skip-cert-verify = true, tfo = false
 🇭🇰HK | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 5 = vmess, 104.18.118.195, 8443, username = 3bb3c730-e107-49c5-a0b2-b576d1b26a5e, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"1743919978.speed.zjgza.cccp.freefly.pp.ua", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 6 = vmess, 104.18.118.195, 8443, username = 3bb3c730-e107-49c5-a0b2-b576d1b26a5e, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"1743919978.speed.zjgza.cccp.freefly.pp.ua", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
-URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
-FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
+MANUAL = select,URL-TEST,FALLBACK,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 6
+URL-TEST = url-test,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 6
+FALLBACK = fallback,🇭🇰HK | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
