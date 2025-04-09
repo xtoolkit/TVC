@@ -155,8 +155,7 @@
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 15",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 304",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 305",
+                "🇨🇳CN | 🔴 | vless | @DailyV2RY | 308",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇭🇰HK | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
@@ -235,8 +234,7 @@
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 15",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 304",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 305",
+                "🇨🇳CN | 🔴 | vless | @DailyV2RY | 308",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇭🇰HK | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
@@ -1449,44 +1447,26 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 304",
+            "tag": "🇨🇳CN | 🔴 | vless | @DailyV2RY | 308",
             "type": "vless",
-            "server": "144.202.31.75",
-            "server_port": 8080,
-            "uuid": "0d30e345-d1c2-4b70-bc0a-aecf2c1ec244",
-            "flow": "",
+            "server": "gysz0000.dynu.net",
+            "server_port": 11839,
+            "uuid": "459b4a80-bd61-4ecd-a26b-e9c1809d9e45",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "144.202.31.75"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 305",
-            "type": "vless",
-            "server": "45.76.168.21",
-            "server_port": 8080,
-            "uuid": "044ea0d1-309e-42a3-b9b0-a9fab400929e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "45.76.168.21"
+            "tls": {
+                "enabled": true,
+                "server_name": "www.nvidia.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
