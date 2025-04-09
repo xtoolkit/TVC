@@ -112,7 +112,7 @@
                 "❔XX | 🔴 | vless | @XsV2ray | 10",
                 "🇬🇧GB | 🔴 | vless | @VlessConfig | 14",
                 "🇬🇧GB | 🔴 | vless | @VlessConfig | 15",
-                "🇺🇸US | 🔴 | vless | @ipV2Ray | 8",
+                "🇨🇦CA | 🔴 | vless | @ipV2Ray | 8",
                 "🇺🇸US | 🔴 | vless | @ipV2Ray | 9",
                 "🇦🇹AT | 🔴 | vless | @V2pedia | 6",
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 7",
@@ -148,7 +148,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 15",
-                "🇨🇳CN | 🔴 | vless | @DailyV2RY | 308",
+                "🇬🇧GB | 🔴 | vless | @DailyV2RY | 316",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 317",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 7",
                 "🇸🇬SG | 🟢 | vless | @Outlinev2rayNG | 11",
@@ -179,7 +180,7 @@
                 "❔XX | 🔴 | vless | @XsV2ray | 10",
                 "🇬🇧GB | 🔴 | vless | @VlessConfig | 14",
                 "🇬🇧GB | 🔴 | vless | @VlessConfig | 15",
-                "🇺🇸US | 🔴 | vless | @ipV2Ray | 8",
+                "🇨🇦CA | 🔴 | vless | @ipV2Ray | 8",
                 "🇺🇸US | 🔴 | vless | @ipV2Ray | 9",
                 "🇦🇹AT | 🔴 | vless | @V2pedia | 6",
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 7",
@@ -215,7 +216,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 15",
-                "🇨🇳CN | 🔴 | vless | @DailyV2RY | 308",
+                "🇬🇧GB | 🔴 | vless | @DailyV2RY | 316",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 317",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 7",
                 "🇸🇬SG | 🟢 | vless | @Outlinev2rayNG | 11",
@@ -398,7 +400,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ipV2Ray | 8",
+            "tag": "🇨🇦CA | 🔴 | vless | @ipV2Ray | 8",
             "type": "vless",
             "server": "104.19.54.50",
             "server_port": 8080,
@@ -1284,26 +1286,44 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🔴 | vless | @DailyV2RY | 308",
+            "tag": "🇬🇧GB | 🔴 | vless | @DailyV2RY | 316",
             "type": "vless",
-            "server": "gysz0000.dynu.net",
-            "server_port": 11839,
-            "uuid": "459b4a80-bd61-4ecd-a26b-e9c1809d9e45",
-            "flow": "xtls-rprx-vision",
+            "server": "45.32.180.9",
+            "server_port": 8080,
+            "uuid": "44f3dce9-14bd-4c61-eea7-6b301e0bb034",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.nvidia.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "45.32.180.9"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 317",
+            "type": "vless",
+            "server": "tgju.org",
+            "server_port": 80,
+            "uuid": "13692dc2-200c-4e3a-99f5-8ab0024fd1ae",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tgju.org"
                 }
             }
         },
