@@ -148,7 +148,6 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 2","type":"vmess","server":"de01.sh-cloudflare.sbs","port":"2096","cipher":"auto","uuid":"b3928f8d-ea81-4d75-bcec-4016a072adff","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"de01.sh-cloudflare.sbs"}}}
   - {"name":"🇹🇷TR | 🟢 | vmess | @Hope_Net | 4","type":"vmess","server":"193.31.116.198","port":34019,"cipher":"auto","uuid":"cad62fef-382b-4f53-8963-8d545231e9a1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🚩CF | 🟢 | vmess | @Hope_Net | 5","type":"vmess","server":"104.18.119.222","port":"2096","cipher":"auto","uuid":"3bb3c730-e107-49c5-a0b2-b576d1b26a5e","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
-  - {"name":"🚩CF | 🟢 | vmess | @Hope_Net | 6","type":"vmess","server":"104.21.96.1","port":8443,"cipher":"auto","uuid":"914584ee-3515-46ac-a09d-4677a2e9dc9a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us01.sh-cloudflare.sbs"}}}
   - {"name":"❔XX | 🟢 | vmess | @FreakConfig | 0","type":"vmess","server":"2a01:4f8:c010:6ca3::1","port":"41358","cipher":"auto","uuid":"68719eee-35cf-4980-adb3-b3986f566bf7","alterId":"0","tls":false,"skip-cert-verify":true,"network":"kcp"}
 proxy-groups:
   - name: MANUAL
@@ -186,7 +185,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 2'
       - '🇹🇷TR | 🟢 | vmess | @Hope_Net | 4'
       - '🚩CF | 🟢 | vmess | @Hope_Net | 5'
-      - '🚩CF | 🟢 | vmess | @Hope_Net | 6'
       - '❔XX | 🟢 | vmess | @FreakConfig | 0'
   - name: URL-TEST
     type: url-test
@@ -224,7 +222,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 2'
       - '🇹🇷TR | 🟢 | vmess | @Hope_Net | 4'
       - '🚩CF | 🟢 | vmess | @Hope_Net | 5'
-      - '🚩CF | 🟢 | vmess | @Hope_Net | 6'
       - '❔XX | 🟢 | vmess | @FreakConfig | 0'
   - name: FALLBACK
     type: fallback
@@ -261,7 +258,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 2'
       - '🇹🇷TR | 🟢 | vmess | @Hope_Net | 4'
       - '🚩CF | 🟢 | vmess | @Hope_Net | 5'
-      - '🚩CF | 🟢 | vmess | @Hope_Net | 6'
       - '❔XX | 🟢 | vmess | @FreakConfig | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
