@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @Parsashonam | 0",
                 "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
@@ -163,6 +164,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @Parsashonam | 0",
                 "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 5",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
@@ -234,6 +236,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @Parsashonam | 0",
+            "type": "vless",
+            "server": "91.107.191.151",
+            "server_port": 443,
+            "uuid": "4b808569-4e1f-4e25-b0d7-786b05b7dbcc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "anandtech.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LcvWkpJPr4jmfVT5Ksey5XDuE-crOmUXkA5nZYnGEgc",
+                    "short_id": "c0918c0227b6e0"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 5",
