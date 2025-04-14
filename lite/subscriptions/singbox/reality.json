@@ -106,11 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "❔XX | 🔴 | vless | @prrofile_purple | 142",
                 "❔XX | 🔴 | vless | @customv2ray | 7",
                 "❔XX | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇨🇭CH | 🟢 | vless | @FreakConfig | 4",
-                "❔XX | 🔴 | vless | @proxy_mtm | 4",
+                "❔XX | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 8"
@@ -120,11 +121,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "❔XX | 🔴 | vless | @prrofile_purple | 142",
                 "❔XX | 🔴 | vless | @customv2ray | 7",
                 "❔XX | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇨🇭CH | 🟢 | vless | @FreakConfig | 4",
-                "❔XX | 🔴 | vless | @proxy_mtm | 4",
+                "❔XX | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 8"
@@ -148,6 +150,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @prrofile_purple | 142",
+            "type": "vless",
+            "server": "mehdi21.vact.ir",
+            "server_port": 443,
+            "uuid": "Join---MTMVPN",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vLtM7H2Bbmzw5-Tevlxh2soD0WML7GJNeAg6gdhsCzo",
+                    "short_id": "ba66"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-channel-MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @customv2ray | 7",
@@ -287,7 +325,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @proxy_mtm | 4",
+            "tag": "❔XX | 🔴 | vless | @proxy_mtm | 7",
             "type": "vless",
             "server": "me16.zemestanil.ir",
             "server_port": 2087,
