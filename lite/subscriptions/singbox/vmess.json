@@ -109,11 +109,11 @@
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 19",
+                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇭🇰HK | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 4",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 5",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 2",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0"
             ]
         },
@@ -124,11 +124,11 @@
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 19",
+                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇭🇰HK | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 4",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 5",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 2",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -203,11 +203,11 @@
             }
         },
         {
-            "tag": "🇧🇷BR | 🟢 | vmess | @DeamNet_Proxy | 19",
+            "tag": "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
-            "server": "pq-brazil1.09vpn.com",
-            "server_port": 80,
-            "uuid": "c04c3b34-70fd-4fec-963e-c12d09f36bef",
+            "server": "146.59.55.50",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -218,11 +218,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "o.metuji.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess\/",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "pq-brazil1.09vpn.com"
+                    "Host": "o.metuji.com"
                 }
             }
         },
@@ -285,11 +295,11 @@
             }
         },
         {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
-            "server": "156.238.18.68",
-            "server_port": 8443,
-            "uuid": "c313606f-98c2-4d7b-ba74-48b94f61b11d",
+            "server": "c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com",
+            "server_port": 17232,
+            "uuid": "8d888b92-eec8-11ef-bca1-f23c91cfbbc9",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -299,31 +309,14 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "156.238.18.68",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?maps.app.goo.gl\/K3hM5xrwZV7bQVBa7?ed=2560",
-                "headers": {
-                    "Host": "156.238.18.68"
-                }
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
-            "server": "b2bb1a46-surog0-t2cl3c-14ubl.cm.plebai.net",
-            "server_port": 15229,
-            "uuid": "d0f35ada-c39c-11ef-8a98-f23c91cfbbc9",
+            "server": "2a668e37-surog0-sxm4ot-zn8y.cm5.p5pv.com",
+            "server_port": 17234,
+            "uuid": "44e76f8c-7362-11ec-bb74-f23c9164ca5d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
