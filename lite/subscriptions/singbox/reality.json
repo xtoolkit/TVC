@@ -106,9 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 360",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
-                "🇩🇪DE | 🟢 | vless | @FreakConfig | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 8"
@@ -118,9 +116,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 360",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
-                "🇩🇪DE | 🟢 | vless | @FreakConfig | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 8"
@@ -144,35 +140,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 360",
-            "type": "vless",
-            "server": "jp3.interld123456789.com",
-            "server_port": 10002,
-            "uuid": "374e925e-7f93-4d82-8d03-fd713bebfa24",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "addons.mozilla.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc",
-                    "short_id": "ad081079"
-                }
-            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @proxystore11 | 3",
@@ -208,35 +175,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @FreakConfig | 3",
-            "type": "vless",
-            "server": "mw2.niassa.ir",
-            "server_port": 443,
-            "uuid": "b78fb3f5-e6a9-4e00-859f-3a886b19b394",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "eset.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "3Yzz5Unz5elPLlaQkzgBxirSUbvIRbg9XlJ1Vruc4RI",
-                    "short_id": "8819"
-                }
             }
         },
         {
