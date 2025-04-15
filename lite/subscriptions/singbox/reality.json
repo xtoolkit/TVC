@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "❔XX | 🔴 | vless | @DailyV2RY | 360",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇩🇪DE | 🟢 | vless | @FreakConfig | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -117,6 +118,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "❔XX | 🔴 | vless | @DailyV2RY | 360",
                 "❔XX | 🔴 | vless | @proxystore11 | 3",
                 "🇩🇪DE | 🟢 | vless | @FreakConfig | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -142,6 +144,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @DailyV2RY | 360",
+            "type": "vless",
+            "server": "jp3.interld123456789.com",
+            "server_port": 10002,
+            "uuid": "374e925e-7f93-4d82-8d03-fd713bebfa24",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "addons.mozilla.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc",
+                    "short_id": "ad081079"
+                }
+            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @proxystore11 | 3",
