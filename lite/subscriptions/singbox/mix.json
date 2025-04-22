@@ -129,10 +129,10 @@
                 "🇺🇸US | 🔴 | vless | @v2logy | 10",
                 "❔XX | 🔴 | vless | @V2rayCollectorDonate | 20",
                 "❔XX | 🔴 | vless | @V2rayCollectorDonate | 21",
-                "🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18",
-                "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 19",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 18",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
+                "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18",
+                "🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
@@ -161,8 +161,8 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 10",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
+                "🇹🇼TW | 🟢 | vmess | @Hope_Net | 2",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 12",
                 "🇺🇸US | 🔴 | vless | @FreakConfig | 3",
@@ -212,10 +212,10 @@
                 "🇺🇸US | 🔴 | vless | @v2logy | 10",
                 "❔XX | 🔴 | vless | @V2rayCollectorDonate | 20",
                 "❔XX | 🔴 | vless | @V2rayCollectorDonate | 21",
-                "🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18",
-                "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 19",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 18",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
+                "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18",
+                "🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
@@ -244,8 +244,8 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 10",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
+                "🇹🇼TW | 🟢 | vmess | @Hope_Net | 2",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 12",
                 "🇺🇸US | 🔴 | vless | @FreakConfig | 3",
@@ -772,7 +772,29 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 18",
+            "tag": "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 18",
+            "type": "trojan",
+            "server": "18.199.33.145",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🟢 | trojan | @PrivateVPNs | 19",
             "type": "trojan",
             "server": "13.51.117.155",
             "server_port": 22222,
@@ -794,31 +816,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 19",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "3.66.82.87",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 18",
-            "type": "trojan",
-            "server": "13.51.117.155",
+            "server": "18.199.33.145",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -838,9 +838,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "3.66.82.87",
+            "server": "13.51.117.155",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -1531,7 +1531,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
+            "tag": "🇹🇼TW | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
             "server": "443ip.yangmie.online",
             "server_port": 443,
@@ -1565,7 +1565,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
             "server": "bookmyshow.com",
             "server_port": 443,
