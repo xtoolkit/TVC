@@ -112,8 +112,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
                 "🇨🇳CN | 🟢 | vmess | @Hope_Net | 2",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0"
             ]
         },
@@ -127,8 +127,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
                 "🇨🇳CN | 🟢 | vmess | @Hope_Net | 2",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -278,11 +278,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 2",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
             "type": "vmess",
-            "server": "5c460570-sux8g0-tbfsbm-nde6.cm5.p5pv.com",
-            "server_port": 17231,
-            "uuid": "b19e8df4-fba9-11ea-9777-f23c9164ca5d",
+            "server": "bookmyshow.com",
+            "server_port": 443,
+            "uuid": "1b578c96-a426-43c4-a2c0-91278d5ddf2d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -292,14 +292,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "bookmyshow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "bookmyshow.com"
+                }
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
-            "server": "xdd.dashuai.cyou",
-            "server_port": 45075,
-            "uuid": "1e4b5958-8f5b-4a7e-9045-66120ce7614e",
+            "server": "5c460570-sux8g0-tbfsbm-nde6.cm5.p5pv.com",
+            "server_port": 17231,
+            "uuid": "b19e8df4-fba9-11ea-9777-f23c9164ca5d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
