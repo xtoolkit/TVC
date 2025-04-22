@@ -106,20 +106,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🟢 | vless | @ShadowProxy66 | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "❔XX | 🔴 | vless | @SvnTeam | 8"
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 8"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🟢 | vless | @ShadowProxy66 | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "❔XX | 🔴 | vless | @SvnTeam | 8"
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,6 +142,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @ShadowProxy66 | 2",
+            "type": "vless",
+            "server": "77.83.85.188",
+            "server_port": 443,
+            "uuid": "hcjmtjTh7KyDcy",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "onlycats.photos",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gxUAoyb1cC5eT4826CfWOWNPrdW5nshZsAP1AV_yAlc",
+                    "short_id": "ec0e9a33"
+                }
+            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @proxystore11 | 9",
@@ -250,7 +281,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @SvnTeam | 8",
+            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 8",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
