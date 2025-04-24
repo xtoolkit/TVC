@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 144",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -116,6 +117,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 144",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -140,6 +142,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 144",
+            "type": "vless",
+            "server": "195.201.40.204",
+            "server_port": 20597,
+            "uuid": "accf1d4f-372f-49e5-86c5-51bd8200973c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "MU9tLMUx7ema8O_JO1cUfAz_to6gMl1MWyRfkaufoHs",
+                    "short_id": "8fd3c72fdff6"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
