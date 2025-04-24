@@ -109,12 +109,12 @@
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇺🇸US | 🟢 | vmess | @proxystore11 | 8",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 9",
+                "🇺🇸US | 🟢 | vmess | @proxystore11 | 10",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @free1_vpn | 6",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0"
             ]
         },
@@ -125,12 +125,12 @@
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
-                "🇺🇸US | 🟢 | vmess | @proxystore11 | 8",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 9",
+                "🇺🇸US | 🟢 | vmess | @proxystore11 | 10",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @free1_vpn | 6",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -205,7 +205,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 8",
+            "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 9",
             "type": "vmess",
             "server": "cname.proxystore11.news",
             "server_port": 443,
@@ -239,7 +239,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 9",
+            "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 10",
             "type": "vmess",
             "server": "cname.proxystore11.news",
             "server_port": 443,
@@ -331,11 +331,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @free1_vpn | 6",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
-            "server": "15.204.86.120",
-            "server_port": 35696,
-            "uuid": "cad0504a-a9dc-4d29-8844-b11b69f14a8d",
+            "server": "104.18.10.143",
+            "server_port": 80,
+            "uuid": "06135553-6f54-4d32-af08-83bc94823e7e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -345,14 +345,21 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/s15.html",
+                "headers": {
+                    "Host": "104.18.10.143"
+                }
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
-            "server": "c9061f82-svc1s0-sy94f1-1nc6m.cm5.p5pv.com",
-            "server_port": 17231,
-            "uuid": "85d450b2-1c2b-11f0-8a7b-f23c913c8d2b",
+            "server": "7fa54343-7c0a-45c9.2031.pp.ua",
+            "server_port": 443,
+            "uuid": "15b24b56-d667-4fa8-b548-f3dc942fb461",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -362,6 +369,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "7fa54343-7c0a-45c9.2031.pp.ua",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/usYhm60UxQ8YJFJxz",
+                "headers": {
+                    "Host": "7fa54343-7c0a-45c9.2031.pp.ua"
+                }
             }
         },
         {
