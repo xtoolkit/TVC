@@ -106,7 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
+                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 8"
@@ -116,7 +118,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
+                "🇩🇪DE | 🔴 | vless | @mehrosaboran | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 8"
@@ -140,6 +144,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 0",
+            "type": "vless",
+            "server": "188.245.250.75",
+            "server_port": 7022,
+            "uuid": "ce462cc3-9983-45da-b030-728fb7b5684e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Sm0gGVH8qJHECOVhNaN2j52ayfqYcrZggyQMxiQP2Fo",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
@@ -168,6 +201,42 @@
                     "public_key": "k9oHeYY0hNmcd6BRZQTX9sp0ZQR7Bx85fPMu0v4uvwc",
                     "short_id": "c5a5eca0d8234375"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @mehrosaboran | 3",
+            "type": "vless",
+            "server": "91.107.168.205",
+            "server_port": 443,
+            "uuid": "be2d7d04-4500-4ea5-bb00-ce593e969607",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UUYC2_gNNVUIpGrNghmPKdJZRwbF0elm-cpKW8W2cWU",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "\/@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
