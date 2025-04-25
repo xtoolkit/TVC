@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 145",
+                "❔XX | 🟢 | vless | @ipV2Ray | 8",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 152",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 1",
@@ -120,7 +121,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 145",
+                "❔XX | 🟢 | vless | @ipV2Ray | 8",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 152",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇩🇪DE | 🔴 | vless | @mehrosaboran | 1",
@@ -150,7 +152,43 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 145",
+            "tag": "❔XX | 🟢 | vless | @ipV2Ray | 8",
+            "type": "vless",
+            "server": "ip.zemestanil.ir",
+            "server_port": 2087,
+            "uuid": "bfb2d7dd-1625-4848-91a9-5587ff4c9e34",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "eh2L2wZTmATAq7ZUCYywcxrdPLOLSCOas6VTXR8w5H4",
+                    "short_id": "fa"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 152",
             "type": "vless",
             "server": "195.201.40.204",
             "server_port": 20597,
