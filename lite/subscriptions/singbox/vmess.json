@@ -109,12 +109,13 @@
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 12",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 9",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 10",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 4",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 5",
+                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 2",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0"
             ]
         },
@@ -125,12 +126,13 @@
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 12",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 9",
                 "🇺🇸US | 🟢 | vmess | @proxystore11 | 10",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 4",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 5",
+                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 2",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -195,6 +197,23 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 12",
+            "type": "vmess",
+            "server": "15.204.86.120",
+            "server_port": 35696,
+            "uuid": "cad0504a-a9dc-4d29-8844-b11b69f14a8d",
+            "security": "auto",
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -331,45 +350,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
-            "server": "tk.hzlt.tkddns.xyz",
-            "server_port": 22642,
-            "uuid": "98e96c9f-4bb3-39d4-9a2c-fac04257f7c7",
-            "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tk.hzlt.tkddns.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "tk.hzlt.tkddns.xyz"
-                }
-            }
-        },
-        {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 5",
-            "type": "vmess",
-            "server": "v18.nmcf.me",
-            "server_port": 8000,
-            "uuid": "b0c2f4e7-0743-4141-896c-1d58452ee05c",
+            "server": "195.58.49.84",
+            "server_port": 22023,
+            "uuid": "ad1acd0f-db53-4fb3-aa6a-501027386119",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -382,10 +367,27 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/nmkj",
+                "path": "\/",
                 "headers": {
-                    "Host": "v18.nmcf.me"
+                    "Host": "195.58.49.84"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
+            "type": "vmess",
+            "server": "33e096fb-sva740-sxnljm-1jr1u.cm5.p5pv.com",
+            "server_port": 17234,
+            "uuid": "2c01eae6-0b6a-11ee-a058-f23c91369f2d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
