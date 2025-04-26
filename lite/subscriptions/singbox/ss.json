@@ -105,16 +105,13 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST",
-                "🇭🇺HU | 🟢 | ss | @kingofilter | 40"
+                "URL-TEST"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "🇭🇺HU | 🟢 | ss | @kingofilter | 40"
-            ],
+            "outbounds": [],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -134,16 +131,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇭🇺HU | 🟢 | ss | @kingofilter | 40",
-            "type": "shadowsocks",
-            "server": "86.104.75.103",
-            "server_port": 49264,
-            "method": "chacha20-ietf-poly1305",
-            "password": "LI4obOEIDLzDjd7xYlhhTJ",
-            "plugin": "",
-            "plugin_opts": ""
         }
     ],
     "route": {
