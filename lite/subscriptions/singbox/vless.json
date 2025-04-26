@@ -137,7 +137,7 @@
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 6",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 1",
                 "❔XX | 🔴 | vless | @ServerNett | 10",
-                "🇩🇪DE | 🔴 | vless | @ServerNett | 11",
+                "🇫🇮FI | 🔴 | vless | @ServerNett | 11",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @MsV2ray | 2",
@@ -150,8 +150,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇨🇭CH | 🔴 | vless | @VmessProtocol | 14",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 358",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 359",
+                "🇵🇱PL | 🔴 | vless | @DailyV2RY | 354",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 355",
                 "🇭🇰HK | 🔴 | vless | @free1_vpn | 9",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇸🇪SE | 🔴 | vless | @Outlinev2rayNG | 14",
@@ -209,7 +209,7 @@
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 6",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 1",
                 "❔XX | 🔴 | vless | @ServerNett | 10",
-                "🇩🇪DE | 🔴 | vless | @ServerNett | 11",
+                "🇫🇮FI | 🔴 | vless | @ServerNett | 11",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @MsV2ray | 2",
@@ -222,8 +222,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 13",
                 "🇨🇭CH | 🔴 | vless | @VmessProtocol | 14",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 358",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 359",
+                "🇵🇱PL | 🔴 | vless | @DailyV2RY | 354",
+                "🇺🇸US | 🟢 | vless | @DailyV2RY | 355",
                 "🇭🇰HK | 🔴 | vless | @free1_vpn | 9",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇸🇪SE | 🔴 | vless | @Outlinev2rayNG | 14",
@@ -963,7 +963,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ServerNett | 11",
+            "tag": "🇫🇮FI | 🔴 | vless | @ServerNett | 11",
             "type": "vless",
             "server": "3900230223.torob.com.tr",
             "server_port": 1522,
@@ -1293,31 +1293,55 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 358",
+            "tag": "🇵🇱PL | 🔴 | vless | @DailyV2RY | 354",
             "type": "vless",
-            "server": "35.166.230.80",
-            "server_port": 80,
-            "uuid": "3202d35a-c51c-4055-bcd7-3eb000c13dc3",
+            "server": "64.176.69.246",
+            "server_port": 8080,
+            "uuid": "1c1a7076-c6f8-46ec-f7c9-788f93b12023",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "64.176.69.246"
+                }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 359",
+            "tag": "🇺🇸US | 🟢 | vless | @DailyV2RY | 355",
             "type": "vless",
-            "server": "34.220.241.164",
-            "server_port": 80,
-            "uuid": "3202d35a-c51c-4055-bcd7-3eb000c13dc3",
+            "server": "162.159.8.55",
+            "server_port": 443,
+            "uuid": "15298f41-e80b-463a-b85b-0c903258a1c8",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cr7.medicaltreatment.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "cr7.medicaltreatment.ir"
+                }
             }
         },
         {
