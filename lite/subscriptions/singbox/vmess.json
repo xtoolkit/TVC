@@ -113,8 +113,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 9",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 9"
             ]
         },
         {
@@ -128,8 +128,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 9",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -302,11 +302,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "2c7f0fc0-svlb40-t1bnjq-1krtb.cm5.p5pv.com",
-            "server_port": 17233,
-            "uuid": "60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d",
+            "server": "104.18.149.75",
+            "server_port": 443,
+            "uuid": "de94cc0a-0592-4969-b1fc-97ea8f0ea0b3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -316,14 +316,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "104.18.149.75",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/aa",
+                "headers": {
+                    "Host": "104.18.149.75"
+                }
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "04c77dd5-sux8g0-sv9of9-lys7.cm5.p5pv.com",
-            "server_port": 17235,
-            "uuid": "18c0664c-74f1-11ee-b51e-f23c9164ca5d",
+            "server": "c6147365-svjgg0-t28b6o-ef48.cu.plebai.net",
+            "server_port": 5228,
+            "uuid": "cb15123a-084c-11f0-8eab-f23c91cfbbc9",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
