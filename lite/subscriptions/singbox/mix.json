@@ -157,9 +157,9 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "❔XX | 🟢 | vless | @VmessProtocol | 14",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 15",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 368",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 370",
+                "🇨🇿CZ | 🔴 | vless | @DailyV2RY | 371",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 11",
-                "🇺🇸US | 🔴 | vless | @proxystore11 | 12",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 7",
@@ -240,9 +240,9 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "❔XX | 🟢 | vless | @VmessProtocol | 14",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 15",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 368",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 370",
+                "🇨🇿CZ | 🔴 | vless | @DailyV2RY | 371",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 11",
-                "🇺🇸US | 🔴 | vless | @proxystore11 | 12",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 7",
@@ -1455,11 +1455,42 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 368",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 370",
             "type": "vless",
-            "server": "tgju.org",
-            "server_port": 80,
-            "uuid": "2d9b8b5e-90aa-448c-9a70-643320ebdac6",
+            "server": "whatismyipaddress.com",
+            "server_port": 443,
+            "uuid": "30619cf0-d2fa-4dae-9020-2c7a10dcc624",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "638814307734941209.vienna-pnthprx-aaaaa.info",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/jdcgcfws",
+                "headers": {
+                    "Host": "638814307734941209.vienna-pnthprx-aaaaa.info"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇿CZ | 🔴 | vless | @DailyV2RY | 371",
+            "type": "vless",
+            "server": "194.182.79.116",
+            "server_port": 25243,
+            "uuid": "14353d8e-a07c-486b-a125-916da7d7f12f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1468,11 +1499,11 @@
                 "max_streams": 32
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "tgju.org"
-                }
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1504,37 +1535,6 @@
                 "headers": {
                     "Host": "panel.proxystore11.news"
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @proxystore11 | 12",
-            "type": "vless",
-            "server": "cname.proxystore11.news",
-            "server_port": 8443,
-            "uuid": "6c5b33a8-feee-44f0-92a1-ea0bec3f3754",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "panel.proxystore11.news",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "panel.proxystore11.news",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
