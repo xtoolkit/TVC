@@ -13,11 +13,10 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
 🇨🇳CN | 🟢 | vmess | @Hope_Net | 2 = vmess, 59.42.247.189, 8004, username = 64841534-0e32-452e-a038-c443fe1fdef0, ws = true, tls = , vmess-aead = true, ws-path = /nmkj, ws-headers = Host:"www.bing.com", skip-cert-verify = true, tfo = false
-🇯🇵JP | 🟢 | vmess | @Hope_Net | 3 = vmess, cg1c10.waimaoglobaldirect.cc, 443, username = 3493e94c-1769-43d8-8308-f87b460adc65, ws = true, tls = 1, vmess-aead = true, ws-path = /api/v1/graphql, ws-headers = Host:"cg1c10.waimaoglobaldirect.cc", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 2,🇯🇵JP | 🟢 | vmess | @Hope_Net | 3
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 2,🇯🇵JP | 🟢 | vmess | @Hope_Net | 3
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 2,🇯🇵JP | 🟢 | vmess | @Hope_Net | 3
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 2
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 2
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
