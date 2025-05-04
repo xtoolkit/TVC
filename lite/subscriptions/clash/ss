@@ -118,8 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"28meQdVpma7JkCtsEUWcS6gieKmFXiawCwgFMcJqCXMqS2d9WrGpucynNaiy6mUasdbkMiRVDJ5BhSrrAugCuCJnXubRBHez","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"45.87.175.154","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"YZvzh9FMJh6ac6moh8xtkMogmwEZDL5nF99PSFDk7NffhikzuHe3CUUYzudGcaLW5vMzECV29QiH856gj62VnAcgQ2oHY5DV","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +126,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +133,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
