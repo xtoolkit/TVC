@@ -152,8 +152,8 @@
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 5",
                 "🇺🇸US | 🟢 | vless | @free1_vpn | 11",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 5",
-                "🇳🇱NL | 🔴 | vless | @Outlinev2rayNG | 6",
+                "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 6",
+                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🔴 | vless | @FreakConfig | 8",
                 "❔XX | 🔴 | vless | @FreakConfig | 9",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 16",
@@ -221,8 +221,8 @@
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 5",
                 "🇺🇸US | 🟢 | vless | @free1_vpn | 11",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 5",
-                "🇳🇱NL | 🔴 | vless | @Outlinev2rayNG | 6",
+                "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 6",
+                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🔴 | vless | @FreakConfig | 8",
                 "❔XX | 🔴 | vless | @FreakConfig | 9",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 16",
@@ -1322,7 +1322,43 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 5",
+            "tag": "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 6",
+            "type": "vless",
+            "server": "germanmel.mehrdadsadaf.com",
+            "server_port": 7594,
+            "uuid": "2a219df1-a04b-4424-bfd2-cb37aeb10b2c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
+                    "short_id": "765e8e700426816c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "7594vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 7",
             "type": "vless",
             "server": "104.16.41.28",
             "server_port": 443,
@@ -1349,37 +1385,6 @@
                 "path": "\/sinavm-sinavm\/?ed=2560flow=-udp443",
                 "headers": {
                     "Host": "d5.medicaltreatment.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @Outlinev2rayNG | 6",
-            "type": "vless",
-            "server": "45.131.6.160",
-            "server_port": 443,
-            "uuid": "838f5273-5d2d-4630-a0f5-9cc8e4aef4d6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "CxNiMjJz.cAfUnEaR.InFo",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "CxNiMjJz.cAfUnEaR.InFo"
                 }
             }
         },
