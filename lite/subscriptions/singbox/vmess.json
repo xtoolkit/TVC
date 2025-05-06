@@ -112,8 +112,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 6",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 5"
             ]
         },
         {
@@ -126,8 +126,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 6",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -276,10 +276,34 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 6",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
-            "server": "9626e517-svfr40-te0v28-1mh67.cm5.p5pv.com",
-            "server_port": 17234,
+            "server": "172.67.7.29",
+            "server_port": 80,
+            "uuid": "0ad4e581-231b-4676-ad75-d8d2db103795",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/s15.html",
+                "headers": {
+                    "Host": "172.67.7.29"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 5",
+            "type": "vmess",
+            "server": "72c12481-svc1s0-te0v28-1mh67.cm5.p5pv.com",
+            "server_port": 17233,
             "uuid": "e1c7fbbc-96b6-11ef-8563-f23c913c8d2b",
             "security": "auto",
             "alter_id": 0,
@@ -290,40 +314,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-            "type": "vmess",
-            "server": "us01.sh-cloudflare.sbs",
-            "server_port": 8443,
-            "uuid": "2bd0c9d7-f239-437e-a1e1-6cf830af2a1a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "us01.sh-cloudflare.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "us01.sh-cloudflare.sbs"
-                }
             }
         }
     ],
