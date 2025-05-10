@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 7",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -118,7 +117,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 7",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -144,35 +142,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 7",
-            "type": "vless",
-            "server": "164.90.182.56",
-            "server_port": 2053,
-            "uuid": "HelloWorld!",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "iubenda.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "lxmu1b8ExuOnk1tyM-p7hAaGtA6DS6gdS0daUdktjwE",
-                    "short_id": "beb4c6"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
