@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vless | @ipV2Ray | 0",
                 "🇩🇪DE | 🟢 | vless | @ipV2Ray | 1",
+                "🇩🇪DE | 🟢 | vless | @ipV2Ray | 2",
                 "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 6",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
@@ -122,6 +123,7 @@
                 "🇺🇸US | 🟢 | vless | @vless_vmess | 3",
                 "❔XX | 🔴 | vless | @MTConfig | 4",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
+                "🇩🇪DE | 🔴 | vless | @proxystore11 | 3",
                 "🇩🇪DE | 🟢 | vless | @FreakConfig | 0",
                 "🇩🇪DE | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
@@ -157,6 +159,7 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | vless | @ipV2Ray | 0",
                 "🇩🇪DE | 🟢 | vless | @ipV2Ray | 1",
+                "🇩🇪DE | 🟢 | vless | @ipV2Ray | 2",
                 "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 6",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 12",
@@ -171,6 +174,7 @@
                 "🇺🇸US | 🟢 | vless | @vless_vmess | 3",
                 "❔XX | 🔴 | vless | @MTConfig | 4",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
+                "🇩🇪DE | 🔴 | vless | @proxystore11 | 3",
                 "🇩🇪DE | 🟢 | vless | @FreakConfig | 0",
                 "🇩🇪DE | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
@@ -222,6 +226,42 @@
         {
             "tag": "🇩🇪DE | 🟢 | vless | @ipV2Ray | 0",
             "type": "vless",
+            "server": "Tabriz-Website.thorav.ir",
+            "server_port": 443,
+            "uuid": "c0f1cac3-5df2-4ee9-8b60-d5f9c58634a9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "S9lLMRBlLXUp4RhsWgDvTubO0znlS5e7xTARW_9ajB8",
+                    "short_id": "b1417d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @ipV2Ray | 1",
+            "type": "vless",
             "server": "Tabriz-Website.acveo.ir",
             "server_port": 443,
             "uuid": "d51cf642-a151-4492-b47e-6f24d31f9161",
@@ -256,7 +296,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @ipV2Ray | 1",
+            "tag": "🇩🇪DE | 🟢 | vless | @ipV2Ray | 2",
             "type": "vless",
             "server": "Tabriz-Website.acveo.ir",
             "server_port": 443,
@@ -722,6 +762,35 @@
                     "enabled": true,
                     "public_key": "7Dd-Z14Mxvy_CJmFe5Q-StNR2ZloyDeMAC6MEVSq4yg",
                     "short_id": "e9"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @proxystore11 | 3",
+            "type": "vless",
+            "server": "vip1.proxystore11.news",
+            "server_port": 15110,
+            "uuid": "579921f5-52af-4c14-b463-7095271532ff",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "y7msPZW4eWBT4CJ5v_blgiXUd06HuKvTs3rhlpw9fnk",
+                    "short_id": "0570"
                 }
             }
         },
