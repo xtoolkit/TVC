@@ -106,6 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 139",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 140",
+                "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 8",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -117,6 +120,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 139",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 140",
+                "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 8",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -142,6 +148,93 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 139",
+            "type": "vless",
+            "server": "45.150.174.81",
+            "server_port": 443,
+            "uuid": "c8898cfd-9927-4f36-b7bc-40de76076b80",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maviks.eu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo",
+                    "short_id": "f203719d3ff9a5f5"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 140",
+            "type": "vless",
+            "server": "91.238.82.240",
+            "server_port": 443,
+            "uuid": "c8898cfd-9927-4f36-b7bc-40de76076b80",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maviks.eu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo",
+                    "short_id": "f203719d3ff9a5f5"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 8",
+            "type": "vless",
+            "server": "164.90.182.56",
+            "server_port": 2053,
+            "uuid": "HelloWorld!",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "iubenda.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lxmu1b8ExuOnk1tyM-p7hAaGtA6DS6gdS0daUdktjwE",
+                    "short_id": "beb4c6"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
