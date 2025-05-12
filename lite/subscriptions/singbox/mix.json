@@ -137,9 +137,10 @@
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
-                "🇺🇸US | 🔴 | vless | @prrofile_purple | 146",
-                "🇩🇪DE | 🔴 | vless | @prrofile_purple | 147",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 147",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 148",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 5",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 6",
                 "❔XX | 🔴 | vless | @ServerNett | 12",
@@ -177,7 +178,7 @@
                 "🇸🇪SE | 🔴 | vless | @kingofilter | 24",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 7",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 8",
+                "❔XX | 🔴 | vless | @SvnTeam | 8",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
                 "❔XX | 🔴 | vless | @VpnSkyy | 3"
@@ -218,9 +219,10 @@
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 18",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
-                "🇺🇸US | 🔴 | vless | @prrofile_purple | 146",
-                "🇩🇪DE | 🔴 | vless | @prrofile_purple | 147",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 147",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 148",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 5",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 6",
                 "❔XX | 🔴 | vless | @ServerNett | 12",
@@ -258,7 +260,7 @@
                 "🇸🇪SE | 🔴 | vless | @kingofilter | 24",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 7",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 8",
+                "❔XX | 🔴 | vless | @SvnTeam | 8",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
                 "❔XX | 🔴 | vless | @VpnSkyy | 3"
@@ -959,6 +961,16 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
+            "type": "shadowsocks",
+            "server": "45.87.175.166",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
             "type": "vless",
             "server": "104.16.148.244",
@@ -990,38 +1002,61 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @prrofile_purple | 146",
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 147",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "148ff673-b389-4b67-82c3-ae5225f2ce33",
-            "flow": "",
+            "server": "45.150.174.81",
+            "server_port": 443,
+            "uuid": "c8898cfd-9927-4f36-b7bc-40de76076b80",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
-                "headers": {
-                    "Host": "www.speedtest.net"
+            "tls": {
+                "enabled": true,
+                "server_name": "maviks.eu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo",
+                    "short_id": "f203719d3ff9a5f5"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @prrofile_purple | 147",
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 148",
             "type": "vless",
-            "server": "144.76.231.24",
-            "server_port": 36231,
-            "uuid": "965c9185-1ff2-44a8-b0d3-579822748c0f",
-            "flow": "",
+            "server": "91.238.82.240",
+            "server_port": 443,
+            "uuid": "c8898cfd-9927-4f36-b7bc-40de76076b80",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maviks.eu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo",
+                    "short_id": "f203719d3ff9a5f5"
+                }
             }
         },
         {
@@ -1915,7 +1950,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 8",
+            "tag": "❔XX | 🔴 | vless | @SvnTeam | 8",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
