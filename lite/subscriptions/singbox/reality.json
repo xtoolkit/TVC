@@ -106,9 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 147",
-                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 148",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
+                "🇩🇪DE | 🟢 | vless | @FreakConfig | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 8"
@@ -118,9 +117,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 147",
-                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 148",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
+                "🇩🇪DE | 🟢 | vless | @FreakConfig | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 8"
@@ -144,64 +142,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 147",
-            "type": "vless",
-            "server": "45.150.174.81",
-            "server_port": 443,
-            "uuid": "c8898cfd-9927-4f36-b7bc-40de76076b80",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "maviks.eu",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo",
-                    "short_id": "f203719d3ff9a5f5"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 148",
-            "type": "vless",
-            "server": "91.238.82.240",
-            "server_port": 443,
-            "uuid": "c8898cfd-9927-4f36-b7bc-40de76076b80",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "maviks.eu",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo",
-                    "short_id": "f203719d3ff9a5f5"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
@@ -229,6 +169,35 @@
                     "enabled": true,
                     "public_key": "7Dd-Z14Mxvy_CJmFe5Q-StNR2ZloyDeMAC6MEVSq4yg",
                     "short_id": "e9"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @FreakConfig | 0",
+            "type": "vless",
+            "server": "23.88.62.209",
+            "server_port": 2089,
+            "uuid": "15f858a5-3b51-4fe1-a66b-39871f86cc3f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg",
+                    "short_id": "e3c5c005cae07eb8"
                 }
             }
         },
