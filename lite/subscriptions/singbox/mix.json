@@ -150,8 +150,8 @@
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @MsV2ray | 2",
                 "🇺🇸US | 🔴 | vless | @MsV2ray | 3",
-                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 5",
                 "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 6",
+                "🇺🇸US | 🔴 | vless | @v2ray1_ng | 7",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 14",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 15",
                 "❔XX | 🔴 | vless | @MTConfig | 11",
@@ -162,8 +162,8 @@
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🔴 | vless | @free1_vpn | 8",
                 "🇸🇬SG | 🟢 | vmess | @free1_vpn | 9",
+                "🇨🇾CY | 🔴 | vless | @free1_vpn | 10",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 6",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 7",
@@ -231,8 +231,8 @@
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @MsV2ray | 2",
                 "🇺🇸US | 🔴 | vless | @MsV2ray | 3",
-                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 5",
                 "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 6",
+                "🇺🇸US | 🔴 | vless | @v2ray1_ng | 7",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 14",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 15",
                 "❔XX | 🔴 | vless | @MTConfig | 11",
@@ -243,8 +243,8 @@
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🔴 | vless | @free1_vpn | 8",
                 "🇸🇬SG | 🟢 | vmess | @free1_vpn | 9",
+                "🇨🇾CY | 🔴 | vless | @free1_vpn | 10",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 6",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 7",
@@ -1222,23 +1222,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 5",
-            "type": "vmess",
-            "server": "37.221.125.159",
-            "server_port": 33940,
-            "uuid": "353e0787-71bc-442d-9c9d-902f90359eb5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 6",
             "type": "vless",
             "server": "45.80.111.113",
@@ -1266,6 +1249,37 @@
                 "path": "\/",
                 "headers": {
                     "Host": "NuWoLcZn28.qUiCkOrA.OrG"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @v2ray1_ng | 7",
+            "type": "vless",
+            "server": "162.159.153.28",
+            "server_port": 2083,
+            "uuid": "6965e558-73a4-4808-a778-67e8a82d15aa",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "1.659118019.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
+                "headers": {
+                    "Host": "1.659118019.uk"
                 }
             }
         },
@@ -1557,37 +1571,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @free1_vpn | 8",
-            "type": "vless",
-            "server": "104.24.251.4",
-            "server_port": 443,
-            "uuid": "15cc8d40-f0c0-4e5c-9f43-da04c368353c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "66.sgfc.dpdns.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
-                "headers": {
-                    "Host": "66.sgfc.dpdns.org"
-                }
-            }
-        },
-        {
             "tag": "🇸🇬SG | 🟢 | vmess | @free1_vpn | 9",
             "type": "vmess",
             "server": "84.247.146.189",
@@ -1602,6 +1585,37 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇾CY | 🔴 | vless | @free1_vpn | 10",
+            "type": "vless",
+            "server": "154.92.9.2",
+            "server_port": 8443,
+            "uuid": "de537efd-4d7c-4f3c-aea5-19d3f36c7b1b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "txmt.conetcdata.dpdns.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed",
+                "headers": {
+                    "Host": "txmt.conetcdata.dpdns.org"
+                }
             }
         },
         {
