@@ -160,11 +160,11 @@
                 "❔XX | 🔴 | vless | @flyv2ray | 16",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇳🇱NL | 🔴 | vless | @kingofilter | 16",
                 "🇺🇸US | 🟢 | vless | @kingofilter | 17",
+                "🇭🇰HK | 🔴 | vless | @kingofilter | 18",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 7",
-                "❔XX | 🔴 | vless | @SvnTeam | 8",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 8",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
                 "❔XX | 🔴 | vless | @VpnSkyy | 3"
@@ -228,11 +228,11 @@
                 "❔XX | 🔴 | vless | @flyv2ray | 16",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇳🇱NL | 🔴 | vless | @kingofilter | 16",
                 "🇺🇸US | 🟢 | vless | @kingofilter | 17",
+                "🇭🇰HK | 🔴 | vless | @kingofilter | 18",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 7",
-                "❔XX | 🔴 | vless | @SvnTeam | 8",
+                "🇩🇪DE | 🔴 | vless | @SvnTeam | 8",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🔴 | vless | @VpnSkyy | 2",
                 "❔XX | 🔴 | vless | @VpnSkyy | 3"
@@ -1568,20 +1568,6 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @kingofilter | 16",
-            "type": "vless",
-            "server": "64.227.77.203",
-            "server_port": 443,
-            "uuid": "e872a768-33c9-4b5a-b04a-aabce97fb1ef",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇺🇸US | 🟢 | vless | @kingofilter | 17",
             "type": "vless",
             "server": "172.82.67.154",
@@ -1607,6 +1593,37 @@
                     "enabled": true,
                     "public_key": "dHyiM189GsudgANJT4X9fxzsTnBUvoEUAjrJFnPGp2I",
                     "short_id": "eeb3b8"
+                }
+            }
+        },
+        {
+            "tag": "🇭🇰HK | 🔴 | vless | @kingofilter | 18",
+            "type": "vless",
+            "server": "103.160.204.59",
+            "server_port": 443,
+            "uuid": "d6b8011a-c725-435a-9fec-bf6d3530392c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vlee.amclubs.nyc.mn",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "vlee.amclubs.nyc.mn"
                 }
             }
         },
@@ -1656,7 +1673,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @SvnTeam | 8",
+            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 8",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
