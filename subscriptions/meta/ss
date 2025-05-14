@@ -122,8 +122,8 @@ dns:
 proxies:
   - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 6","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"29mQbRJ8ps1x3EnWgAGRCBGrLSP5sxhxpoka6DdCe5cfb1YAvEFZxEXPCWjxsQbSDjFPFqM8KNnDQYfW1s1fsnCuHsGbCxGr","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15","type":"ss","server":"193.29.139.164","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 1","type":"ss","server":"85.210.120.237","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇦CA | 🟢 | ss | @kingofilter | 6","type":"ss","server":"142.4.216.225","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 2","type":"ss","server":"85.210.120.237","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇦CA | 🟢 | ss | @kingofilter | 7","type":"ss","server":"142.4.216.225","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,8 +132,8 @@ proxy-groups:
       - FALLBACK
       - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 6'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 1'
-      - '🇨🇦CA | 🟢 | ss | @kingofilter | 6'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 2'
+      - '🇨🇦CA | 🟢 | ss | @kingofilter | 7'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -142,8 +142,8 @@ proxy-groups:
     proxies:
       - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 6'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 1'
-      - '🇨🇦CA | 🟢 | ss | @kingofilter | 6'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 2'
+      - '🇨🇦CA | 🟢 | ss | @kingofilter | 7'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -151,8 +151,8 @@ proxy-groups:
     proxies:
       - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 6'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 1'
-      - '🇨🇦CA | 🟢 | ss | @kingofilter | 6'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 2'
+      - '🇨🇦CA | 🟢 | ss | @kingofilter | 7'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
