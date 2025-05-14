@@ -148,7 +148,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇳🇱NL | 🔴 | vless | @VmessProtocol | 13",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
-                "🇨🇦CA | 🔴 | vless | @DailyV2RY | 345",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 341",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 342",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 1",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "🇱🇻LV | 🔴 | vless | @free1_vpn | 9",
@@ -216,7 +217,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 12",
                 "🇳🇱NL | 🔴 | vless | @VmessProtocol | 13",
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 14",
-                "🇨🇦CA | 🔴 | vless | @DailyV2RY | 345",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 341",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 342",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 1",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "🇱🇻LV | 🔴 | vless | @free1_vpn | 9",
@@ -1258,31 +1260,44 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DailyV2RY | 345",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 341",
             "type": "vless",
-            "server": "138.197.158.97",
-            "server_port": 39493,
-            "uuid": "26fc8b18-8f9a-4960-8686-3c00cf027280",
-            "flow": "xtls-rprx-vision",
+            "server": "144.202.11.194",
+            "server_port": 8080,
+            "uuid": "113955c8-4ae9-496e-849d-e13a9b0dd67a",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "varzeshtviuwsofogleugvwsoyutruyrrteytmci.24digitalmarkting.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "A_KkC4kfUn6JpQjDaz5nBaTepXG7eQP3uGnAh60ri14",
-                    "short_id": "3b191bba"
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "144.202.11.194"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @DailyV2RY | 342",
+            "type": "vless",
+            "server": "95.179.250.82",
+            "server_port": 8080,
+            "uuid": "09ce853e-6c54-47d3-b22b-620a32d3c8a3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "95.179.250.82"
                 }
             }
         },
