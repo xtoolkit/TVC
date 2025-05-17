@@ -168,8 +168,8 @@
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 13",
                 "🇸🇪SE | 🔴 | vless | @Outlinev2rayNG | 14",
-                "❔XX | 🔴 | vless | @flyv2ray | 13",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 14",
+                "❔XX | 🔴 | vless | @flyv2ray | 9",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇳🇱NL | 🔴 | vless | @kingofilter | 19",
@@ -247,8 +247,8 @@
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🟢 | vless | @Outlinev2rayNG | 13",
                 "🇸🇪SE | 🔴 | vless | @Outlinev2rayNG | 14",
-                "❔XX | 🔴 | vless | @flyv2ray | 13",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 14",
+                "❔XX | 🔴 | vless | @flyv2ray | 9",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇳🇱NL | 🔴 | vless | @kingofilter | 19",
@@ -1719,25 +1719,47 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @flyv2ray | 13",
+            "tag": "❔XX | 🔴 | vless | @flyv2ray | 9",
             "type": "vless",
-            "server": "website.acveo.ir",
-            "server_port": 8080,
-            "uuid": "bb344773-1c6f-45f1-a73d-5c2028ace9db",
-            "flow": "",
+            "server": "Tabriz-Website.acveo.ir",
+            "server_port": 443,
+            "uuid": "95b72ff8-d3ac-4f80-aab2-6a175e2eb9d9",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "S9lLMRBlLXUp4RhsWgDvTubO0znlS5e7xTARW_9ajB8",
+                    "short_id": "b1417d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 10",
             "type": "vless",
             "server": "zmaoz.faculty.ucdavis.edu",
             "server_port": 80,
-            "uuid": "6351a164-aa3e-4702-9b7f-8f12328854c5",
+            "uuid": "0d083787-080d-4eaa-a741-e78c8fcd9547",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
