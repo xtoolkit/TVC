@@ -418,12 +418,14 @@
                 "🇳🇱NL | 🟢 | vless | @free1_vpn | 5",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 6",
                 "🇫🇮FI | 🔴 | vless | @free1_vpn | 9",
-                "🇩🇪DE | 🔴 | vless | @free1_vpn | 10",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🚩CF | 🔴 | vless | @Outlinev2rayNG | 0",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 1",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 7",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 0",
+                "🚩CF | 🔴 | vless | @Outlinev2rayNG | 1",
+                "🚩CF | 🔴 | vless | @Outlinev2rayNG | 2",
+                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 3",
+                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 9",
+                "🇩🇪DE | 🔴 | vless | @flyv2ray | 0",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 3",
@@ -781,12 +783,14 @@
                 "🇳🇱NL | 🟢 | vless | @free1_vpn | 5",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 6",
                 "🇫🇮FI | 🔴 | vless | @free1_vpn | 9",
-                "🇩🇪DE | 🔴 | vless | @free1_vpn | 10",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🚩CF | 🔴 | vless | @Outlinev2rayNG | 0",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 1",
-                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 7",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 0",
+                "🚩CF | 🔴 | vless | @Outlinev2rayNG | 1",
+                "🚩CF | 🔴 | vless | @Outlinev2rayNG | 2",
+                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 3",
+                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 9",
+                "🇩🇪DE | 🔴 | vless | @flyv2ray | 0",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 3",
@@ -8247,30 +8251,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @free1_vpn | 10",
-            "type": "vless",
-            "server": "89.144.25.236",
-            "server_port": 443,
-            "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kavir.lnmarketplace.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
             "type": "vless",
             "server": "162.19.228.119",
@@ -8294,6 +8274,58 @@
         {
             "tag": "🚩CF | 🔴 | vless | @Outlinev2rayNG | 0",
             "type": "vless",
+            "server": "104.21.56.44",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/TELEGRAM@MARAMBASHI_MARAMBASHI",
+                "headers": {
+                    "Host": "104.21.56.44"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @Outlinev2rayNG | 1",
+            "type": "vless",
+            "server": "104.21.69.44",
+            "server_port": 443,
+            "uuid": "f12977e6-d296-4d94-9aaf-d31770b70f84",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cr77.hedieh.dpdns.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "cr77.hedieh.dpdns.org"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @Outlinev2rayNG | 2",
+            "type": "vless",
             "server": "104.17.148.22",
             "server_port": 8880,
             "uuid": "6ec52bc7-fcd7-4841-ab69-70d6e03a6eda",
@@ -8313,7 +8345,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 3",
             "type": "vless",
             "server": "151.101.130.228",
             "server_port": 80,
@@ -8334,7 +8366,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 7",
+            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 9",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 2052,
@@ -8355,7 +8387,21 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 0",
+            "tag": "🇩🇪DE | 🔴 | vless | @flyv2ray | 0",
+            "type": "vless",
+            "server": "32232334.web-manage.com.tr",
+            "server_port": 1519,
+            "uuid": "94b7bd2b-f373-4c5b-9892-5e16fde812bf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 1",
             "type": "vless",
             "server": "zmaoz.faculty.ucdavis.edu",
             "server_port": 80,
