@@ -154,8 +154,8 @@
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 8",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 11",
-                "🇫🇮FI | 🔴 | vless | @flyv2ray | 1",
-                "🇫🇮FI | 🔴 | vless | @flyv2ray | 2",
+                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 12",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇺🇸US | 🔴 | vless | @kingofilter | 10",
@@ -219,8 +219,8 @@
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 8",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 0",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 11",
-                "🇫🇮FI | 🔴 | vless | @flyv2ray | 1",
-                "🇫🇮FI | 🔴 | vless | @flyv2ray | 2",
+                "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 12",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇺🇸US | 🔴 | vless | @kingofilter | 10",
@@ -1342,6 +1342,27 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 11",
             "type": "vless",
+            "server": "104.17.148.22",
+            "server_port": 8880,
+            "uuid": "6ec52bc7-fcd7-4841-ab69-70d6e03a6eda",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "104.17.148.22"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 12",
+            "type": "vless",
             "server": "151.101.130.228",
             "server_port": 80,
             "uuid": "2404f667-5969-4883-a71a-ea2e0db2d25b",
@@ -1361,53 +1382,24 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @flyv2ray | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 0",
             "type": "vless",
-            "server": "32892393.web-manage.com.tr",
-            "server_port": 2172,
-            "uuid": "94b7bd2b-f373-4c5b-9892-5e16fde812bf",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.chess.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "chessgame",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇫🇮FI | 🔴 | vless | @flyv2ray | 2",
-            "type": "vless",
-            "server": "32232334.web-manage.com.tr",
-            "server_port": 1519,
-            "uuid": "94b7bd2b-f373-4c5b-9892-5e16fde812bf",
+            "server": "NUFiLTER.fastly80-3.hosting-ip.com",
+            "server_port": 80,
+            "uuid": "TELEGRAM-NUFiLTER",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=8080",
+                "headers": {
+                    "Host": "NUFiLTER.fastly80-3.hosting-ip.com"
+                }
             }
         },
         {
