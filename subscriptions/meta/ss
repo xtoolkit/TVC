@@ -120,9 +120,13 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇲🇽MX | 🟢 | ss | @DeamNet_Proxy | 10","type":"ss","server":"147.78.1.27","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 12","type":"ss","server":"64.74.163.218","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"67.220.95.102","port":3306,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"194.87.45.189","port":443,"password":"nOfkKboDAxhTx2k1cAltIz","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"67.220.95.102","port":8882,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 5","type":"ss","server":"67.220.95.102","port":7002,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 9","type":"ss","server":"213.109.147.242","port":62685,"password":"VpKABcOpNNA0l5G2AVOmw8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"23.154.136.132","port":3306,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"86.104.74.243","port":14255,"password":"fDDmH4QefmWqMJ8UURZrGh","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"185.5.38.111","port":55988,"password":"XJLSHUkevoRHmidSp5xeGd8gwuBBBTTp1yVYCg6kYBA2FgJbMwGjnLuTnqcmNKWKdgPDH8d7m9ag7VfsBBhW1rMc47cgX5up","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 6","type":"ss","server":"85.210.120.237","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | 🟢 | ss | @kingofilter | 11","type":"ss","server":"142.4.216.225","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
@@ -131,9 +135,13 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇲🇽MX | 🟢 | ss | @DeamNet_Proxy | 10'
-      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 12'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 0'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 5'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 9'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇬🇧GB | 🟢 | ss | @kingofilter | 6'
       - '🇨🇦CA | 🟢 | ss | @kingofilter | 11'
   - name: URL-TEST
@@ -142,9 +150,13 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇲🇽MX | 🟢 | ss | @DeamNet_Proxy | 10'
-      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 12'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 0'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 5'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 9'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇬🇧GB | 🟢 | ss | @kingofilter | 6'
       - '🇨🇦CA | 🟢 | ss | @kingofilter | 11'
   - name: FALLBACK
@@ -152,9 +164,13 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇲🇽MX | 🟢 | ss | @DeamNet_Proxy | 10'
-      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 12'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 0'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 5'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 9'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇬🇧GB | 🟢 | ss | @kingofilter | 6'
       - '🇨🇦CA | 🟢 | ss | @kingofilter | 11'
 rule-providers:
