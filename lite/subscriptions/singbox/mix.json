@@ -167,7 +167,7 @@
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇺🇸US | 🔴 | vless | @kingofilter | 12",
-                "🇨🇦CA | 🟢 | ss | @kingofilter | 13",
+                "🇺🇸US | 🔴 | vless | @kingofilter | 13",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 7",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 8",
@@ -241,7 +241,7 @@
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇺🇸US | 🔴 | vless | @kingofilter | 12",
-                "🇨🇦CA | 🟢 | ss | @kingofilter | 13",
+                "🇺🇸US | 🔴 | vless | @kingofilter | 13",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇺🇸US | 🔴 | vless | @SvnTeam | 7",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 8",
@@ -1671,6 +1671,37 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @kingofilter | 12",
             "type": "vless",
+            "server": "162.159.153.28",
+            "server_port": 2083,
+            "uuid": "6965e558-73a4-4808-a778-67e8a82d15aa",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "1.659118019.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
+                "headers": {
+                    "Host": "1.659118019.uk"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @kingofilter | 13",
+            "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
             "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
@@ -1698,16 +1729,6 @@
                     "Host": "ipsychO.SUEx12.Ir"
                 }
             }
-        },
-        {
-            "tag": "🇨🇦CA | 🟢 | ss | @kingofilter | 13",
-            "type": "shadowsocks",
-            "server": "142.4.216.225",
-            "server_port": 80,
-            "method": "chacha20-ietf-poly1305",
-            "password": "JIhN6rBKkaEboLNXVSv5rq",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
