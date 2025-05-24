@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | ss | @VmessProtocol | 0",
+                "🇺🇸US | 🟢 | ss | @VmessProtocol | 1",
+                "🇬🇧GB | 🟢 | ss | @VmessProtocol | 2",
                 "🇹🇷TR | 🟢 | ss | @kingofilter | 0",
                 "🇳🇱NL | 🟢 | ss | @kingofilter | 1",
                 "🇩🇪DE | 🟢 | ss | @kingofilter | 2"
@@ -116,7 +117,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | ss | @VmessProtocol | 0",
+                "🇺🇸US | 🟢 | ss | @VmessProtocol | 1",
+                "🇬🇧GB | 🟢 | ss | @VmessProtocol | 2",
                 "🇹🇷TR | 🟢 | ss | @kingofilter | 0",
                 "🇳🇱NL | 🟢 | ss | @kingofilter | 1",
                 "🇩🇪DE | 🟢 | ss | @kingofilter | 2"
@@ -142,7 +144,17 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @VmessProtocol | 0",
+            "tag": "🇺🇸US | 🟢 | ss | @VmessProtocol | 1",
+            "type": "shadowsocks",
+            "server": "45.87.175.35",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | ss | @VmessProtocol | 2",
             "type": "shadowsocks",
             "server": "74.177.178.193",
             "server_port": 443,
