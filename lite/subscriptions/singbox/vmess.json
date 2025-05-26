@@ -114,7 +114,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇦🇺AU | 🟢 | vmess | @Hope_Net | 8"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8"
             ]
         },
         {
@@ -129,7 +129,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇦🇺AU | 🟢 | vmess | @Hope_Net | 8"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -297,9 +297,26 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
+            "server": "198.251.83.208",
+            "server_port": 45235,
+            "uuid": "469e0b31-30c3-4dab-800d-711232634ce1",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+            "type": "vmess",
             "server": "104.21.64.1",
-            "server_port": 2096,
-            "uuid": "b3928f8d-ea81-4d75-bcec-4016a072adff",
+            "server_port": 2053,
+            "uuid": "996016f7-da89-45f1-b3b4-555bc799ed86",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -312,7 +329,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "de01.sh-cloudflare.sbs",
+                "server_name": "104.21.64.1",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -324,25 +341,8 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "de01.sh-cloudflare.sbs"
+                    "Host": "104.21.64.1"
                 }
-            }
-        },
-        {
-            "tag": "🇦🇺AU | 🟢 | vmess | @Hope_Net | 8",
-            "type": "vmess",
-            "server": "154.26.153.161",
-            "server_port": 21759,
-            "uuid": "e5f16fad-f9c3-452b-8e71-bc9504e29fc9",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
