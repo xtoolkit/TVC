@@ -109,7 +109,8 @@
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 36",
                 "🇨🇦CA | 🔴 | vless | @v2_team | 4",
                 "🇺🇸US | 🔴 | vless | @XsV2ray | 8",
-                "🇫🇷FR | 🔴 | vless | @VlessConfig | 12",
+                "🇫🇷FR | 🔴 | vless | @VlessConfig | 16",
+                "🇫🇷FR | 🔴 | vless | @VlessConfig | 17",
                 "❔XX | 🟢 | vless | @ipV2Ray | 8",
                 "❔XX | 🟢 | vless | @ipV2Ray | 9",
                 "🇺🇸US | 🔴 | vless | @melov2ray | 33",
@@ -144,7 +145,7 @@
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 15",
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
-                "❔XX | 🔴 | vless | @VmessProtocol | 16",
+                "🇺🇸US | 🔴 | vless | @VmessProtocol | 16",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 358",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 359",
                 "🇮🇷IR | 🟢 | vless | @proxystore11 | 1",
@@ -174,7 +175,8 @@
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 36",
                 "🇨🇦CA | 🔴 | vless | @v2_team | 4",
                 "🇺🇸US | 🔴 | vless | @XsV2ray | 8",
-                "🇫🇷FR | 🔴 | vless | @VlessConfig | 12",
+                "🇫🇷FR | 🔴 | vless | @VlessConfig | 16",
+                "🇫🇷FR | 🔴 | vless | @VlessConfig | 17",
                 "❔XX | 🟢 | vless | @ipV2Ray | 8",
                 "❔XX | 🟢 | vless | @ipV2Ray | 9",
                 "🇺🇸US | 🔴 | vless | @melov2ray | 33",
@@ -209,7 +211,7 @@
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 15",
                 "❔XX | 🔴 | vless | @MTConfig | 11",
                 "❔XX | 🔴 | vless | @MTConfig | 12",
-                "❔XX | 🔴 | vless | @VmessProtocol | 16",
+                "🇺🇸US | 🔴 | vless | @VmessProtocol | 16",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 358",
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 359",
                 "🇮🇷IR | 🟢 | vless | @proxystore11 | 1",
@@ -318,9 +320,40 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🔴 | vless | @VlessConfig | 12",
+            "tag": "🇫🇷FR | 🔴 | vless | @VlessConfig | 16",
             "type": "vless",
-            "server": "13.37.71.81",
+            "server": "51.44.232.118",
+            "server_port": 22224,
+            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram-channel-vlessconfig",
+                "headers": {
+                    "Host": "trojan.burgerip.co.uk"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🔴 | vless | @VlessConfig | 17",
+            "type": "vless",
+            "server": "13.38.213.47",
             "server_port": 22224,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -1193,11 +1226,11 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @VmessProtocol | 16",
+            "tag": "🇺🇸US | 🔴 | vless | @VmessProtocol | 16",
             "type": "vless",
-            "server": "germany.khoreshtsabzi.ir",
-            "server_port": 1773,
-            "uuid": "93489dc6-47a3-4532-b050-6fb193b855e9",
+            "server": "104.17.128.1",
+            "server_port": 2096,
+            "uuid": "d6b8011a-c725-435a-9fec-bf6d3530392c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1205,12 +1238,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "vlee.amclubs.nyc.mn",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
-                "type": "grpc",
-                "service_name": "17783vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "vlee.amclubs.nyc.mn"
+                }
             }
         },
         {
