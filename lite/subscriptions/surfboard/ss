@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇳🇱NL | 🟢 | ss | @kingofilter | 4 = ss, 103.106.1.92, 23492, encrypt-method = chacha20-ietf-poly1305, password = yMX9WGPgUEcRZmlaa0YHHC
 🇩🇪DE | 🟢 | ss | @kingofilter | 5 = ss, 45.150.32.13, 38707, encrypt-method = chacha20-ietf-poly1305, password = NMiJKeh4yMumfyYVvjq0LR
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @kingofilter | 4,🇩🇪DE | 🟢 | ss | @kingofilter | 5
-URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @kingofilter | 4,🇩🇪DE | 🟢 | ss | @kingofilter | 5
-FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @kingofilter | 4,🇩🇪DE | 🟢 | ss | @kingofilter | 5
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | ss | @kingofilter | 5
+URL-TEST = url-test,🇩🇪DE | 🟢 | ss | @kingofilter | 5
+FALLBACK = fallback,🇩🇪DE | 🟢 | ss | @kingofilter | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
