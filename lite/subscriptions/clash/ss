@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | 🟢 | ss | @kingofilter | 5","type":"ss","server":"45.150.32.13","port":38707,"password":"NMiJKeh4yMumfyYVvjq0LR","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇹🇷TR | 🟢 | ss | @kingofilter | 4","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @kingofilter | 5","type":"ss","server":"103.106.1.92","port":23492,"password":"yMX9WGPgUEcRZmlaa0YHHC","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🟢 | ss | @kingofilter | 5'
+      - '🇹🇷TR | 🟢 | ss | @kingofilter | 4'
+      - '🇳🇱NL | 🟢 | ss | @kingofilter | 5'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🟢 | ss | @kingofilter | 5'
+      - '🇹🇷TR | 🟢 | ss | @kingofilter | 4'
+      - '🇳🇱NL | 🟢 | ss | @kingofilter | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🟢 | ss | @kingofilter | 5'
+      - '🇹🇷TR | 🟢 | ss | @kingofilter | 4'
+      - '🇳🇱NL | 🟢 | ss | @kingofilter | 5'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
