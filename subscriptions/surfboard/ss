@@ -14,14 +14,13 @@ DIRECT = direct
 🇺🇸US | 🟢 | ss | @VmessProtocol | 0 = ss, 45.87.175.181, 8080, encrypt-method = chacha20-ietf-poly1305, password = 1RWwXhwfAB5gAEozU4G2Pg
 🇺🇸US | 🟢 | ss | @VmessProtocol | 2 = ss, 45.87.175.35, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
 🇬🇧GB | 🟢 | ss | @VmessProtocol | 5 = ss, 74.177.178.193, 443, encrypt-method = chacha20-ietf-poly1305, password = 1xO2cqPazqjGfCfd
-🇹🇷TR | 🟢 | ss | @kingofilter | 0 = ss, 185.39.204.12, 16297, encrypt-method = chacha20-ietf-poly1305, password = G0o2hE4eLuR2wwyFao0lsJ
-🇺🇸US | 🟢 | ss | @kingofilter | 2 = ss, 45.87.175.164, 8080, encrypt-method = chacha20-ietf-poly1305, password = 4a2rfixophdjffa8KVA4Aa
-🇳🇱NL | 🟢 | ss | @kingofilter | 4 = ss, 103.106.1.92, 23492, encrypt-method = chacha20-ietf-poly1305, password = yMX9WGPgUEcRZmlaa0YHHC
-🇩🇪DE | 🟢 | ss | @kingofilter | 5 = ss, 45.150.32.13, 38707, encrypt-method = chacha20-ietf-poly1305, password = NMiJKeh4yMumfyYVvjq0LR
+🇹🇷TR | 🟢 | ss | @kingofilter | 1 = ss, 185.39.204.12, 16297, encrypt-method = chacha20-ietf-poly1305, password = G0o2hE4eLuR2wwyFao0lsJ
+🇺🇸US | 🟢 | ss | @kingofilter | 3 = ss, 45.87.175.164, 8080, encrypt-method = chacha20-ietf-poly1305, password = 4a2rfixophdjffa8KVA4Aa
+🇳🇱NL | 🟢 | ss | @kingofilter | 5 = ss, 103.106.1.92, 23492, encrypt-method = chacha20-ietf-poly1305, password = yMX9WGPgUEcRZmlaa0YHHC
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @VmessProtocol | 0,🇺🇸US | 🟢 | ss | @VmessProtocol | 2,🇬🇧GB | 🟢 | ss | @VmessProtocol | 5,🇹🇷TR | 🟢 | ss | @kingofilter | 0,🇺🇸US | 🟢 | ss | @kingofilter | 2,🇳🇱NL | 🟢 | ss | @kingofilter | 4,🇩🇪DE | 🟢 | ss | @kingofilter | 5
-URL-TEST = url-test,🇺🇸US | 🟢 | ss | @VmessProtocol | 0,🇺🇸US | 🟢 | ss | @VmessProtocol | 2,🇬🇧GB | 🟢 | ss | @VmessProtocol | 5,🇹🇷TR | 🟢 | ss | @kingofilter | 0,🇺🇸US | 🟢 | ss | @kingofilter | 2,🇳🇱NL | 🟢 | ss | @kingofilter | 4,🇩🇪DE | 🟢 | ss | @kingofilter | 5
-FALLBACK = fallback,🇺🇸US | 🟢 | ss | @VmessProtocol | 0,🇺🇸US | 🟢 | ss | @VmessProtocol | 2,🇬🇧GB | 🟢 | ss | @VmessProtocol | 5,🇹🇷TR | 🟢 | ss | @kingofilter | 0,🇺🇸US | 🟢 | ss | @kingofilter | 2,🇳🇱NL | 🟢 | ss | @kingofilter | 4,🇩🇪DE | 🟢 | ss | @kingofilter | 5
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @VmessProtocol | 0,🇺🇸US | 🟢 | ss | @VmessProtocol | 2,🇬🇧GB | 🟢 | ss | @VmessProtocol | 5,🇹🇷TR | 🟢 | ss | @kingofilter | 1,🇺🇸US | 🟢 | ss | @kingofilter | 3,🇳🇱NL | 🟢 | ss | @kingofilter | 5
+URL-TEST = url-test,🇺🇸US | 🟢 | ss | @VmessProtocol | 0,🇺🇸US | 🟢 | ss | @VmessProtocol | 2,🇬🇧GB | 🟢 | ss | @VmessProtocol | 5,🇹🇷TR | 🟢 | ss | @kingofilter | 1,🇺🇸US | 🟢 | ss | @kingofilter | 3,🇳🇱NL | 🟢 | ss | @kingofilter | 5
+FALLBACK = fallback,🇺🇸US | 🟢 | ss | @VmessProtocol | 0,🇺🇸US | 🟢 | ss | @VmessProtocol | 2,🇬🇧GB | 🟢 | ss | @VmessProtocol | 5,🇹🇷TR | 🟢 | ss | @kingofilter | 1,🇺🇸US | 🟢 | ss | @kingofilter | 3,🇳🇱NL | 🟢 | ss | @kingofilter | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
