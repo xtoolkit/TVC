@@ -127,8 +127,8 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @VmessProtocol | 3","type":"ss","server":"45.87.175.181","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @VmessProtocol | 5","type":"ss","server":"45.87.175.35","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @VmessProtocol | 8","type":"ss","server":"74.177.178.193","port":443,"password":"1xO2cqPazqjGfCfd","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇹🇷TR | 🟢 | ss | @kingofilter | 4","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 6","type":"ss","server":"45.87.175.164","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇹🇷TR | 🟢 | ss | @kingofilter | 5","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 7","type":"ss","server":"45.87.175.164","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -142,8 +142,8 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 3'
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 5'
       - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 8'
-      - '🇹🇷TR | 🟢 | ss | @kingofilter | 4'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 6'
+      - '🇹🇷TR | 🟢 | ss | @kingofilter | 5'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 7'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -157,8 +157,8 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 3'
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 5'
       - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 8'
-      - '🇹🇷TR | 🟢 | ss | @kingofilter | 4'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 6'
+      - '🇹🇷TR | 🟢 | ss | @kingofilter | 5'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 7'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -171,8 +171,8 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 3'
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 5'
       - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 8'
-      - '🇹🇷TR | 🟢 | ss | @kingofilter | 4'
-      - '🇺🇸US | 🟢 | ss | @kingofilter | 6'
+      - '🇹🇷TR | 🟢 | ss | @kingofilter | 5'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 7'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
