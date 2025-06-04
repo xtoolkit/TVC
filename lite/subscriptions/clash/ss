@@ -119,7 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"166.88.131.195","port":52952,"password":"LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇹🇷TR | 🟢 | ss | @kingofilter | 7","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 9","type":"ss","server":"45.87.175.164","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇹🇷TR | 🟢 | ss | @kingofilter | 7'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 9'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇹🇷TR | 🟢 | ss | @kingofilter | 7'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇹🇷TR | 🟢 | ss | @kingofilter | 7'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 9'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
