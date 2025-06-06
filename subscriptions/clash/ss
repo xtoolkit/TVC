@@ -131,9 +131,10 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @VmessProtocol | 3","type":"ss","server":"45.87.175.181","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @VmessProtocol | 5","type":"ss","server":"45.87.175.35","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @VmessProtocol | 8","type":"ss","server":"74.177.178.193","port":443,"password":"1xO2cqPazqjGfCfd","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 0","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇩🇪DE | 🟢 | ss | @kingofilter | 2","type":"ss","server":"45.144.54.33","port":52703,"password":"l3gh4XX7l9nuQwETBNU85v","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇹🇷TR | 🟢 | ss | @kingofilter | 9","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @kingofilter | 0","type":"ss","server":"45.87.175.178","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 1","type":"ss","server":"series-a2-me.varzesh360.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | 🟢 | ss | @kingofilter | 3","type":"ss","server":"45.144.54.33","port":52703,"password":"l3gh4XX7l9nuQwETBNU85v","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇹🇷TR | 🟢 | ss | @kingofilter | 10","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -153,9 +154,10 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 3'
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 5'
       - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 8'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 0'
-      - '🇩🇪DE | 🟢 | ss | @kingofilter | 2'
-      - '🇹🇷TR | 🟢 | ss | @kingofilter | 9'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 0'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 1'
+      - '🇩🇪DE | 🟢 | ss | @kingofilter | 3'
+      - '🇹🇷TR | 🟢 | ss | @kingofilter | 10'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -175,9 +177,10 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 3'
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 5'
       - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 8'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 0'
-      - '🇩🇪DE | 🟢 | ss | @kingofilter | 2'
-      - '🇹🇷TR | 🟢 | ss | @kingofilter | 9'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 0'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 1'
+      - '🇩🇪DE | 🟢 | ss | @kingofilter | 3'
+      - '🇹🇷TR | 🟢 | ss | @kingofilter | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -196,9 +199,10 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 3'
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 5'
       - '🇬🇧GB | 🟢 | ss | @VmessProtocol | 8'
-      - '🇬🇧GB | 🟢 | ss | @kingofilter | 0'
-      - '🇩🇪DE | 🟢 | ss | @kingofilter | 2'
-      - '🇹🇷TR | 🟢 | ss | @kingofilter | 9'
+      - '🇺🇸US | 🟢 | ss | @kingofilter | 0'
+      - '🇬🇧GB | 🟢 | ss | @kingofilter | 1'
+      - '🇩🇪DE | 🟢 | ss | @kingofilter | 3'
+      - '🇹🇷TR | 🟢 | ss | @kingofilter | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
