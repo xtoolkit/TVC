@@ -106,9 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | vless | @ipV2Ray | 7",
+                "🇩🇪DE | 🟢 | vless | @ipV2Ray | 7",
                 "❔XX | 🟢 | vless | @ipV2Ray | 8",
-                "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
+                "🇩🇪DE | 🔴 | vless | @ARv2ray | 16",
                 "❔XX | 🟢 | vless | @DailyV2RY | 286",
                 "❔XX | 🟢 | vless | @DailyV2RY | 287",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 7",
@@ -123,9 +123,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | vless | @ipV2Ray | 7",
+                "🇩🇪DE | 🟢 | vless | @ipV2Ray | 7",
                 "❔XX | 🟢 | vless | @ipV2Ray | 8",
-                "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
+                "🇩🇪DE | 🔴 | vless | @ARv2ray | 16",
                 "❔XX | 🟢 | vless | @DailyV2RY | 286",
                 "❔XX | 🟢 | vless | @DailyV2RY | 287",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 7",
@@ -156,7 +156,43 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | vless | @ipV2Ray | 7",
+            "tag": "🇩🇪DE | 🟢 | vless | @ipV2Ray | 7",
+            "type": "vless",
+            "server": "95.164.16.166",
+            "server_port": 3567,
+            "uuid": "9fdef857-437d-40af-82ca-2c76de893eb6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3iP1kIE9A4r0dbC6OoERB95RKv6tZmCHUaNq4tf90lo",
+                    "short_id": "86"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @ipV2Ray | 8",
             "type": "vless",
             "server": "Mashhad-Website.thorav.ir",
             "server_port": 2087,
@@ -192,47 +228,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @ipV2Ray | 8",
+            "tag": "🇩🇪DE | 🔴 | vless | @ARv2ray | 16",
             "type": "vless",
-            "server": "Mashhad-Website.thorav.ir",
-            "server_port": 2087,
-            "uuid": "a7f573cf-f042-4133-8fa5-b24088621d83",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.cdn77.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "yXSBn5-hiNy4K9Lg_w2E0cGXSkcwXtwGn6r46UJ96HU",
-                    "short_id": "55"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
-            "type": "vless",
-            "server": "193.46.81.83",
+            "server": "193.46.81.67",
             "server_port": 3567,
-            "uuid": "telegram-id-ArV2ray3",
+            "uuid": "telegram-id-ArV2ray4",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
