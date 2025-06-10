@@ -119,9 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14","type":"trojan","server":"13.36.9.255","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15","type":"trojan","server":"18.198.168.170","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"13.36.9.255","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"18.198.168.170","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇳🇱NL | 🟢 | trojan | @v2ray1_ng | 9","type":"trojan","server":"94.131.20.3","port":443,"udp":false,"password":"3482c71a-d01c-4ae5-b454-fa8cb3785f66","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"chop-wrist-bud.stark-industries.solutions"}
 proxy-groups:
   - name: MANUAL
@@ -130,9 +128,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14'
-      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇳🇱NL | 🟢 | trojan | @v2ray1_ng | 9'
   - name: URL-TEST
     type: url-test
@@ -141,9 +137,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14'
-      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇳🇱NL | 🟢 | trojan | @v2ray1_ng | 9'
   - name: FALLBACK
     type: fallback
@@ -151,9 +145,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14'
-      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇳🇱NL | 🟢 | trojan | @v2ray1_ng | 9'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
