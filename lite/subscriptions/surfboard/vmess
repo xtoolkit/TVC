@@ -12,12 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 4 = vmess, 64.181.248.196, 3306, username = 979e39d7-fdf8-4e51-afb6-4d181c56170f, ws = true, tls = 1, vmess-aead = true, ws-path = /ray, ws-headers = Host:"ora.aihi.uk", skip-cert-verify = true, tfo = false
-🇷🇺RU | 🟢 | vmess | @Hope_Net | 5 = vmess, 45.147.201.231, 20027, username = 9b5d72fd-3e66-4909-a3a5-0f259a9ad68f, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 6 = vmess, 64.181.248.196, 3306, username = 979e39d7-fdf8-4e51-afb6-4d181c56170f, ws = true, tls = 1, vmess-aead = true, ws-path = /ray, ws-headers = Host:"ora.aihi.uk", skip-cert-verify = true, tfo = false
+🇷🇺RU | 🟢 | vmess | @Hope_Net | 7 = vmess, 45.147.201.231, 20027, username = 9b5d72fd-3e66-4909-a3a5-0f259a9ad68f, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4,🇷🇺RU | 🟢 | vmess | @Hope_Net | 5
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4,🇷🇺RU | 🟢 | vmess | @Hope_Net | 5
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4,🇷🇺RU | 🟢 | vmess | @Hope_Net | 5
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 6,🇷🇺RU | 🟢 | vmess | @Hope_Net | 7
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 6,🇷🇺RU | 🟢 | vmess | @Hope_Net | 7
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 6,🇷🇺RU | 🟢 | vmess | @Hope_Net | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
