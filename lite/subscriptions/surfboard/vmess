@@ -12,12 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇨🇳CN | 🟢 | vmess | @Hope_Net | 5 = vmess, 59.42.247.189, 8004, username = 7365fecd-64ef-485d-bf16-838abc3dddc3, ws = true, tls = , vmess-aead = true, ws-path = /nmkj, ws-headers = Host:"www.bing.com", skip-cert-verify = true, tfo = false
-🇷🇺RU | 🟢 | vmess | @Hope_Net | 6 = vmess, 45.147.201.231, 22037, username = 9fda1993-4f4b-47e9-893a-ec9aaefb0f84, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇨🇳CN | 🟢 | vmess | @Hope_Net | 5 = vmess, v5.heduian.link, 30805, username = cbb3f877-d1fb-344c-87a9-d153bffd5484, ws = true, tls = , vmess-aead = false, ws-path = /oooo, ws-headers = Host:"v5.heduian.link", skip-cert-verify = true, tfo = false
+🇨🇳CN | 🟢 | vmess | @Hope_Net | 6 = vmess, 59.42.247.189, 8004, username = 7365fecd-64ef-485d-bf16-838abc3dddc3, ws = true, tls = , vmess-aead = true, ws-path = /nmkj, ws-headers = Host:"www.bing.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 5,🇷🇺RU | 🟢 | vmess | @Hope_Net | 6
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 5,🇷🇺RU | 🟢 | vmess | @Hope_Net | 6
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 5,🇷🇺RU | 🟢 | vmess | @Hope_Net | 6
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 5,🇨🇳CN | 🟢 | vmess | @Hope_Net | 6
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 5,🇨🇳CN | 🟢 | vmess | @Hope_Net | 6
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 5,🇨🇳CN | 🟢 | vmess | @Hope_Net | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
