@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @prrofile_purple | 143",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 10",
                 "🇬🇧GB | 🟢 | vless | @flyv2ray | 4",
                 "🇬🇧GB | 🔴 | vless | @mehrosaboran | 0",
@@ -120,7 +119,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @prrofile_purple | 143",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 10",
                 "🇬🇧GB | 🟢 | vless | @flyv2ray | 4",
                 "🇬🇧GB | 🔴 | vless | @mehrosaboran | 0",
@@ -148,42 +146,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @prrofile_purple | 143",
-            "type": "vless",
-            "server": "193.46.81.83",
-            "server_port": 3567,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "maps.google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
-                    "short_id": "c14b9292de5a8d6f"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @free1_vpn | 10",
