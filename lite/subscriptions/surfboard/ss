@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19 = ss, 203.23.128.33, 990, encrypt-method = chacha20-ietf-poly1305, password = f8f7aCzcPKbsF8p3
-🇺🇸US | 🟢 | ss | @VmessProtocol | 12 = ss, 45.87.175.35, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
+🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17 = ss, 45.87.175.35, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
+🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18 = ss, 45.87.175.188, 8080, encrypt-method = chacha20-ietf-poly1305, password = 1RWwXhwfAB5gAEozU4G2Pg
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19,🇺🇸US | 🟢 | ss | @VmessProtocol | 12
-URL-TEST = url-test,🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19,🇺🇸US | 🟢 | ss | @VmessProtocol | 12
-FALLBACK = fallback,🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19,🇺🇸US | 🟢 | ss | @VmessProtocol | 12
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18
+URL-TEST = url-test,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18
+FALLBACK = fallback,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
