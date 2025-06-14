@@ -11,16 +11,16 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇮🇳IN | 🟢 | vmess | @DeamNet_Proxy | 4 = vmess, 152.67.8.205, 80, username = 9db4c708-aef8-4359-821b-38e47990be0d, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇳🇱NL | 🟢 | vmess | @yaney_01 | 1 = vmess, 45.199.138.217, 41000, username = f9fa3a9c-f7d5-414f-88e6-6970585d9949, ws = true, tls = 1, vmess-aead = false, ws-path = /path/282018252526, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @yaney_01 | 2 = vmess, 107.149.119.43, 37000, username = 418048af-a293-4b99-9b0c-98ca3580dd24, ws = true, tls = 1, vmess-aead = false, ws-path = /path/040318142507, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 3 = vmess, admin.arzonhost.ir, 2086, username = 7d93e992-48cf-42d4-84f8-75768e815a4c, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"admin.arzonhost.ir", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 4 = vmess, yymg06.haibo168.com, 443, username = a6301e28-0b8a-40f5-a210-c33ed2559e13, ws = true, tls = 1, vmess-aead = true, ws-path = /yymg1234, ws-headers = Host:"yymg06.haibo168.com", skip-cert-verify = true, tfo = false
-🇨🇳CN | 🟢 | vmess | @Hope_Net | 7 = vmess, tk.hzlt.tkddns.xyz, 22642, username = 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, ws = true, tls = 1, vmess-aead = false, ws-path = /, ws-headers = Host:"zxjp-b.tkong.cc", skip-cert-verify = true, tfo = false
+🇨🇳CN | 🟢 | vmess | @Hope_Net | 1 = vmess, 59.42.247.189, 8004, username = 64841534-0e32-452e-a038-c443fe1fdef0, ws = true, tls = , vmess-aead = true, ws-path = /nmkj, ws-headers = Host:"www.bing.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 7
-URL-TEST = url-test,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 7
-FALLBACK = fallback,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 7
+MANUAL = select,URL-TEST,FALLBACK,🇮🇳IN | 🟢 | vmess | @DeamNet_Proxy | 4,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 1
+URL-TEST = url-test,🇮🇳IN | 🟢 | vmess | @DeamNet_Proxy | 4,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 1
+FALLBACK = fallback,🇮🇳IN | 🟢 | vmess | @DeamNet_Proxy | 4,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
