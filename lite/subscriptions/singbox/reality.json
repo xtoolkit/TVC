@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "❔XX | 🟢 | vless | @prrofile_purple | 138",
-                "🇬🇧GB | 🟢 | vless | @v2ray1_ng | 3",
+                "🇬🇧GB | 🟢 | vless | @v2ray1_ng | 5",
+                "🇳🇱NL | 🔴 | vless | @flyv2ray | 11",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🟢 | vless | @SvnTeam | 3",
@@ -119,7 +120,8 @@
             "type": "urltest",
             "outbounds": [
                 "❔XX | 🟢 | vless | @prrofile_purple | 138",
-                "🇬🇧GB | 🟢 | vless | @v2ray1_ng | 3",
+                "🇬🇧GB | 🟢 | vless | @v2ray1_ng | 5",
+                "🇳🇱NL | 🔴 | vless | @flyv2ray | 11",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🟢 | vless | @SvnTeam | 3",
@@ -175,7 +177,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @v2ray1_ng | 3",
+            "tag": "🇬🇧GB | 🟢 | vless | @v2ray1_ng | 5",
             "type": "vless",
             "server": "werst.roverlow.com",
             "server_port": 8310,
@@ -201,6 +203,42 @@
                     "public_key": "aHjoi8siLgys7wnncHZTl6XdNmG2OqdZ5UF-yhUi-Wc",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @flyv2ray | 11",
+            "type": "vless",
+            "server": "89.34.230.130",
+            "server_port": 443,
+            "uuid": "4880b0ff-963e-49bf-9174-e657720c5dc0",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kc9EHs9UXsCn42r88iPSkIC7gQomKoPC9D9mabtkcks",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
