@@ -120,11 +120,12 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15","type":"vmess","server":"88.198.93.175","port":"8880","cipher":"auto","uuid":"58531009-b664-445b-b896-7bb9026b744d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18","type":"vmess","server":"112.132.215.12","port":"50002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"raw"}
   - {"name":"🇨🇭CH | 🟢 | vmess | @v2ray_vpn_ir | 0","type":"vmess","server":"186.190.215.193","port":"22324","cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
   - {"name":"🇩🇪DE | 🟢 | vmess | @free1_vpn | 6","type":"vmess","server":"5.75.207.190","port":"8880","cipher":"auto","uuid":"a36bc162-c700-49e4-90b8-f1542b3fa9fb","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
-  - {"name":"❔XX | 🟢 | vmess | @Hope_Net | 18","type":"vmess","server":"3b6b9155-svdwg0-tdwxjg-vmdo.lzc.plebai.net","port":"5126","cipher":"auto","uuid":"24e32978-4858-11eb-8684-f23c913c8d2b","alterId":"2","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"broadcastlv.chat.bilibili.com"}}}
-  - {"name":"🇨🇳CN | 🟢 | vmess | @Hope_Net | 19","type":"vmess","server":"v39.heduian.link","port":"30839","cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":"2","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"baidu.com"}}}
+  - {"name":"🇨🇳CN | 🟢 | vmess | @Hope_Net | 13","type":"vmess","server":"xdd.dashuai.cyou","port":"45063","cipher":"auto","uuid":"b9d7e1b2-912d-4e7c-b679-c310a9be23c9","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳CN | 🟢 | vmess | @Hope_Net | 14","type":"vmess","server":"3ef20940-svlb40-swdyrj-1tbzx.cm5.p5pv.com","port":"17232","cipher":"auto","uuid":"6b43d15a-e7bf-11ef-9862-f23c913c8d2b","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -133,11 +134,12 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18'
       - '🇨🇭CH | 🟢 | vmess | @v2ray_vpn_ir | 0'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
       - '🇩🇪DE | 🟢 | vmess | @free1_vpn | 6'
-      - '❔XX | 🟢 | vmess | @Hope_Net | 18'
-      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 19'
+      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 13'
+      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 14'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -146,11 +148,12 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18'
       - '🇨🇭CH | 🟢 | vmess | @v2ray_vpn_ir | 0'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
       - '🇩🇪DE | 🟢 | vmess | @free1_vpn | 6'
-      - '❔XX | 🟢 | vmess | @Hope_Net | 18'
-      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 19'
+      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 13'
+      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 14'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -158,11 +161,12 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18'
       - '🇨🇭CH | 🟢 | vmess | @v2ray_vpn_ir | 0'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
       - '🇩🇪DE | 🟢 | vmess | @free1_vpn | 6'
-      - '❔XX | 🟢 | vmess | @Hope_Net | 18'
-      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 19'
+      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 13'
+      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 14'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
