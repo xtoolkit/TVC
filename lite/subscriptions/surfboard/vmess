@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 7 = vmess, 172.64.83.72, 80, username = ef01906d-5e58-4170-ba53-33820d7b0f97, ws = true, tls = , vmess-aead = true, ws-path = /s15.html, ws-headers = Host:"646767809641862025050919020651648.s15.chibaba.filegear-sg.me", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 8 = vmess, 172.67.147.182, 80, username = 3ca48a3c-f2c4-4c6d-a86d-f00b52b64d08, ws = true, tls = , vmess-aead = true, ws-path = /s15.html, ws-headers = Host:"750879059381672025050919021774649.s15.chibaba.filegear-sg.me", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 4 = vmess, bookmyshow.com, 443, username = a10ccbe4-354d-486a-9ed9-6ad32fafc8f8, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"jpv.xiaoqi555.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7,🇺🇸US | 🟢 | vmess | @Hope_Net | 8
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7,🇺🇸US | 🟢 | vmess | @Hope_Net | 8
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7,🇺🇸US | 🟢 | vmess | @Hope_Net | 8
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
