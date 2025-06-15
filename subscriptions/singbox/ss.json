@@ -106,18 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 3",
-                "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 6",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 7"
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 6",
+                "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 9",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 10"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 3",
-                "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 6",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 7"
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 6",
+                "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 9",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,7 +142,17 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 3",
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2",
+            "type": "shadowsocks",
+            "server": "23.154.136.51",
+            "server_port": 5499,
+            "method": "aes-256-gcm",
+            "password": "lGqs95QkFHo2NV",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 6",
             "type": "shadowsocks",
             "server": "admin.c3.webramz.co",
             "server_port": 443,
@@ -150,7 +162,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 6",
+            "tag": "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 9",
             "type": "shadowsocks",
             "server": "64.227.144.190",
             "server_port": 50690,
@@ -160,7 +172,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 7",
+            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 10",
             "type": "shadowsocks",
             "server": "api.namasha.co",
             "server_port": 443,
