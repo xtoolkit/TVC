@@ -106,22 +106,26 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 134",
+                "🇬🇧GB | 🟢 | vless | @prrofile_purple | 135",
                 "🇬🇧GB | 🟢 | vless | @free1_vpn | 5",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @SvnTeam | 3",
-                "🇩🇪DE | 🟢 | vless | @SvnTeam | 4"
+                "❔XX | 🟢 | vless | @SvnTeam | 3",
+                "❔XX | 🟢 | vless | @SvnTeam | 4"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 134",
+                "🇬🇧GB | 🟢 | vless | @prrofile_purple | 135",
                 "🇬🇧GB | 🟢 | vless | @free1_vpn | 5",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @SvnTeam | 3",
-                "🇩🇪DE | 🟢 | vless | @SvnTeam | 4"
+                "❔XX | 🟢 | vless | @SvnTeam | 3",
+                "❔XX | 🟢 | vless | @SvnTeam | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,6 +146,64 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 134",
+            "type": "vless",
+            "server": "de.accesspoints.cloakify.app",
+            "server_port": 28495,
+            "uuid": "7e296434-2d17-48d3-928d-19eaa34aecb1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ",
+                    "short_id": "0ecc2c1392"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @prrofile_purple | 135",
+            "type": "vless",
+            "server": "173.234.79.240",
+            "server_port": 2020,
+            "uuid": "a229a57d-d1d2-c3d0-73fa-3b1061688ccd",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qdfo8UQXXsXPViln7MbAIIvVgKrDnuRoFBGVTJDm134",
+                    "short_id": "31e7200536a1ad45"
+                }
+            }
         },
         {
             "tag": "🇬🇧GB | 🟢 | vless | @free1_vpn | 5",
@@ -245,7 +307,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @SvnTeam | 3",
+            "tag": "❔XX | 🟢 | vless | @SvnTeam | 3",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
@@ -274,7 +336,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @SvnTeam | 4",
+            "tag": "❔XX | 🟢 | vless | @SvnTeam | 4",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
