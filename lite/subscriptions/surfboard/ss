@@ -11,12 +11,10 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17 = ss, 64.227.144.190, 50690, encrypt-method = chacha20-ietf-poly1305, password = 3PiNbHH0gSHsiXw7Qh4VYV
-🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 18 = ss, api.namasha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 18
-URL-TEST = url-test,🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 18
-FALLBACK = fallback,🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 18
+MANUAL = select,URL-TEST,FALLBACK
+URL-TEST = url-test
+FALLBACK = fallback
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
