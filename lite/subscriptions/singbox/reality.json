@@ -107,14 +107,14 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | 🟢 | vless | @Parsashonam | 9",
+                "❔XX | 🔴 | vless | @ipV2Ray | 7",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 127",
-                "🇬🇧GB | 🟢 | vless | @free1_vpn | 6",
-                "🇫🇷FR | 🟢 | vless | @flyv2ray | 15",
-                "🇳🇱NL | 🔴 | vless | @flyv2ray | 16",
+                "🇬🇧GB | 🟢 | vless | @free1_vpn | 7",
+                "🇳🇱NL | 🔴 | vless | @flyv2ray | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @SvnTeam | 3",
-                "🇩🇪DE | 🟢 | vless | @SvnTeam | 4"
+                "❔XX | 🟢 | vless | @SvnTeam | 3",
+                "❔XX | 🟢 | vless | @SvnTeam | 4"
             ]
         },
         {
@@ -122,14 +122,14 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | 🟢 | vless | @Parsashonam | 9",
+                "❔XX | 🔴 | vless | @ipV2Ray | 7",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 127",
-                "🇬🇧GB | 🟢 | vless | @free1_vpn | 6",
-                "🇫🇷FR | 🟢 | vless | @flyv2ray | 15",
-                "🇳🇱NL | 🔴 | vless | @flyv2ray | 16",
+                "🇬🇧GB | 🟢 | vless | @free1_vpn | 7",
+                "🇳🇱NL | 🔴 | vless | @flyv2ray | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @SvnTeam | 3",
-                "🇩🇪DE | 🟢 | vless | @SvnTeam | 4"
+                "❔XX | 🟢 | vless | @SvnTeam | 3",
+                "❔XX | 🟢 | vless | @SvnTeam | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -181,6 +181,42 @@
             }
         },
         {
+            "tag": "❔XX | 🔴 | vless | @ipV2Ray | 7",
+            "type": "vless",
+            "server": "www.speedtest-divar.ir",
+            "server_port": 443,
+            "uuid": "0d46bbe1-bfd1-45ad-be2d-03b531a2881b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fauxid.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BwXeuQqugoDcQvIWNNUJ5iz7DYldgMJq23Gl9y-S-yc",
+                    "short_id": "eaab9c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 127",
             "type": "vless",
             "server": "arvancloud.fn.ir.systemgamingirani.ir",
@@ -210,7 +246,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @free1_vpn | 6",
+            "tag": "🇬🇧GB | 🟢 | vless | @free1_vpn | 7",
             "type": "vless",
             "server": "werst.roverlow.com",
             "server_port": 8310,
@@ -239,11 +275,11 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @flyv2ray | 15",
+            "tag": "🇳🇱NL | 🔴 | vless | @flyv2ray | 14",
             "type": "vless",
-            "server": "51.44.208.42",
+            "server": "Iq.MotOrpHrotAn.iR",
             "server_port": 443,
-            "uuid": "7f93e196-1b2f-4a42-8051-5815554c05db",
+            "uuid": "26f09a9b-fbb4-4bd6-f1b6-f2a1a6bc3ffb",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -253,7 +289,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "zula.ir",
+                "server_name": "ftp.debian.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -262,42 +298,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg",
-                    "short_id": "7a2b"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @flyv2ray | 16",
-            "type": "vless",
-            "server": "89.34.230.69",
-            "server_port": 443,
-            "uuid": "f14c088d-16a4-4add-e753-c02ec313f05c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "maps.google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "1I2en5PvdIfXRrlfeqzaHZd0tRMyNyrq0J9IakEfchQ",
+                    "public_key": "-Ox6yMpUevQDoD5KShgQLhfBPQg8gdFoEXWx46IRcB0",
                     "short_id": ""
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER",
+                "service_name": "telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -376,7 +383,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @SvnTeam | 3",
+            "tag": "❔XX | 🟢 | vless | @SvnTeam | 3",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
@@ -405,7 +412,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @SvnTeam | 4",
+            "tag": "❔XX | 🟢 | vless | @SvnTeam | 4",
             "type": "vless",
             "server": "SVNTEAM.MiSVN.iR",
             "server_port": 443,
