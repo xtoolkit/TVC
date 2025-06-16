@@ -120,12 +120,11 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15","type":"vmess","server":"88.198.93.175","port":"8880","cipher":"auto","uuid":"58531009-b664-445b-b896-7bb9026b744d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 17","type":"vmess","server":"84.247.147.243","port":"51566","cipher":"auto","uuid":"ae6ae977-17f2-43fd-a336-20b3b3a9e791","alterId":"0","tls":false,"skip-cert-verify":true,"network":"raw"}
   - {"name":"🇫🇮FI | 🟢 | vmess | @prrofile_purple | 128","type":"vmess","server":"65.109.203.186","port":"8443","cipher":"auto","uuid":"9d8b498c-559f-4405-9edd-0ec5f3bab6c2","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇩🇪DE | 🟢 | vmess | @prrofile_purple | 129","type":"vmess","server":"5.75.207.190","port":"2087","cipher":"auto","uuid":"a36bc162-c700-49e4-90b8-f1542b3fa9fb","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"🇨🇳CN | 🟢 | vmess | @Hope_Net | 8","type":"vmess","server":"e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net","port":"5229","cipher":"auto","uuid":"60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳CN | 🟢 | vmess | @Hope_Net | 9","type":"vmess","server":"v8.heduian.link","port":"30808","cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":"2","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"v8.heduian.link"}}}
+  - {"name":"🇨🇳CN | 🟢 | vmess | @Hope_Net | 7","type":"vmess","server":"e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net","port":"5229","cipher":"auto","uuid":"60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳CN | 🟢 | vmess | @Hope_Net | 8","type":"vmess","server":"v8.heduian.link","port":"30808","cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":"2","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/oooo","headers":{"host":"v8.heduian.link"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -134,12 +133,11 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 17'
       - '🇫🇮FI | 🟢 | vmess | @prrofile_purple | 128'
       - '🇩🇪DE | 🟢 | vmess | @prrofile_purple | 129'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
+      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 7'
       - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 8'
-      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 9'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -148,12 +146,11 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 17'
       - '🇫🇮FI | 🟢 | vmess | @prrofile_purple | 128'
       - '🇩🇪DE | 🟢 | vmess | @prrofile_purple | 129'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
+      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 7'
       - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 8'
-      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -161,12 +158,11 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 17'
       - '🇫🇮FI | 🟢 | vmess | @prrofile_purple | 128'
       - '🇩🇪DE | 🟢 | vmess | @prrofile_purple | 129'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
+      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 7'
       - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 8'
-      - '🇨🇳CN | 🟢 | vmess | @Hope_Net | 9'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
