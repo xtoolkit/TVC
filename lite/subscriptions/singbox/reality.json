@@ -106,9 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🟢 | vless | @Parsashonam | 9",
+                "🇳🇱NL | 🟢 | vless | @Parsashonam | 11",
                 "❔XX | 🔴 | vless | @ipV2Ray | 7",
                 "🇬🇧GB | 🟢 | vless | @free1_vpn | 7",
+                "🇳🇱NL | 🔴 | vless | @Outlinev2rayNG | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🟢 | vless | @SvnTeam | 3",
@@ -119,9 +120,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🟢 | vless | @Parsashonam | 9",
+                "🇳🇱NL | 🟢 | vless | @Parsashonam | 11",
                 "❔XX | 🔴 | vless | @ipV2Ray | 7",
                 "🇬🇧GB | 🟢 | vless | @free1_vpn | 7",
+                "🇳🇱NL | 🔴 | vless | @Outlinev2rayNG | 1",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🟢 | vless | @SvnTeam | 3",
@@ -148,7 +150,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @Parsashonam | 9",
+            "tag": "🇳🇱NL | 🟢 | vless | @Parsashonam | 11",
             "type": "vless",
             "server": "193.124.49.40",
             "server_port": 443,
@@ -239,6 +241,42 @@
                     "public_key": "aHjoi8siLgys7wnncHZTl6XdNmG2OqdZ5UF-yhUi-Wc",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @Outlinev2rayNG | 1",
+            "type": "vless",
+            "server": "89.34.230.69",
+            "server_port": 443,
+            "uuid": "TELEGRAM-NUFiLTER",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "WW5gbx_PS5aqRsmlfV7Gh7k1uHK2NMsVvp0KGrd3t0g",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
