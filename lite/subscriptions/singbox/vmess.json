@@ -110,8 +110,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 6"
             ]
         },
         {
@@ -122,8 +122,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -238,13 +238,30 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "hk2.rtmp.online",
-            "server_port": 443,
-            "uuid": "1d7dc43f-ee28-4e2f-a104-8bfb9b2c70b8",
+            "server": "142.171.118.132",
+            "server_port": 23564,
+            "uuid": "28cf94d4-46cc-4151-b94e-1073a4594dc5",
             "security": "auto",
             "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 6",
+            "type": "vmess",
+            "server": "tk.hzlt.tkddns.xyz",
+            "server_port": 22641,
+            "uuid": "98e96c9f-4bb3-39d4-9a2c-fac04257f7c7",
+            "security": "auto",
+            "alter_id": 2,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -255,7 +272,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "hk2.rtmp.online",
+                "server_name": "tk.hzlt.tkddns.xyz",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -267,41 +284,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "hk2.rtmp.online"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-            "type": "vmess",
-            "server": "codepen.io",
-            "server_port": 443,
-            "uuid": "5453ae26-250d-4e79-b4ec-016baf806865",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "codepen.io",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/1WWeeRtTt.131.PP.ua\/h7Rcu0y30lhjdVjJ3gc4aj",
-                "headers": {
-                    "Host": "codepen.io"
+                    "Host": "tk.hzlt.tkddns.xyz"
                 }
             }
         }
