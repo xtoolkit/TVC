@@ -11,10 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17 = ss, 23.154.136.51, 5499, encrypt-method = aes-256-gcm, password = lGqs95QkFHo2NV
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK
-URL-TEST = url-test
-FALLBACK = fallback
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17
+URL-TEST = url-test,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17
+FALLBACK = fallback,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
