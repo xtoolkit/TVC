@@ -108,10 +108,12 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇫🇮FI | 🟢 | vmess | @prrofile_purple | 128",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 4",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5"
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 9"
             ]
         },
         {
@@ -120,10 +122,12 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇫🇮FI | 🟢 | vmess | @prrofile_purple | 128",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 4",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5"
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -170,6 +174,40 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "84.247.147.243",
+            "server_port": 51566,
+            "uuid": "ae6ae977-17f2-43fd-a336-20b3b3a9e791",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vmess | @prrofile_purple | 128",
+            "type": "vmess",
+            "server": "65.109.203.186",
+            "server_port": 8443,
+            "uuid": "9d8b498c-559f-4405-9edd-0ec5f3bab6c2",
+            "security": "auto",
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -238,11 +276,11 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "47.83.137.220",
-            "server_port": 57888,
-            "uuid": "b68f8c35-935e-444f-8944-291bf15a56a5",
+            "server": "e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net",
+            "server_port": 5229,
+            "uuid": "60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -255,13 +293,13 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "cg1c15.waimaoglobaldirect.cc",
-            "server_port": 443,
-            "uuid": "07d85fd8-fc9a-4484-9bcf-a72921c87e82",
+            "server": "v8.heduian.link",
+            "server_port": 30808,
+            "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 2,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -270,21 +308,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "cg1c15.waimaoglobaldirect.cc",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/api\/v1\/graphql",
+                "path": "\/oooo",
                 "headers": {
-                    "Host": "cg1c15.waimaoglobaldirect.cc"
+                    "Host": "v8.heduian.link"
                 }
             }
         }
