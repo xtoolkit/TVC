@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇭🇰HK | 🟢 | vmess | @Hope_Net | 15 = vmess, 0cebe071-sv0xs0-tdbt1l-1gabf.hk3.p5pv.com, 80, username = df84b552-97a9-11ec-bb74-f23c9164ca5d, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"broadcastlv.chat.bilibili.com", skip-cert-verify = true, tfo = false
-🇭🇰HK | 🟢 | vmess | @Hope_Net | 16 = vmess, 5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com, 80, username = 9b94a182-5a1b-11ee-b866-f23c9164ca5d, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"broadcastlv.chat.bilibili.com", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 17 = vmess, a8a86683-svc1s0-t0r7l4-1ruih.lzb.plebai.net, 80, username = 3549abda-3854-11ef-b71e-f23c9164ca5d, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"broadcastlv.chat.bilibili.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 15,🇭🇰HK | 🟢 | vmess | @Hope_Net | 16
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 15,🇭🇰HK | 🟢 | vmess | @Hope_Net | 16
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 15,🇭🇰HK | 🟢 | vmess | @Hope_Net | 16
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 17
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 17
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
