@@ -107,6 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @ipV2Ray | 9",
+                "🇮🇷IR | 🔴 | vless | @flyv2ray | 10",
+                "🇮🇷IR | 🔴 | vless | @flyv2ray | 11",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🟢 | vless | @SvnTeam | 3",
@@ -118,6 +120,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @ipV2Ray | 9",
+                "🇮🇷IR | 🔴 | vless | @flyv2ray | 10",
+                "🇮🇷IR | 🔴 | vless | @flyv2ray | 11",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🟢 | vless | @SvnTeam | 3",
@@ -174,6 +178,78 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @flyv2ray | 10",
+            "type": "vless",
+            "server": "warzone.adventuregameclub.com",
+            "server_port": 52894,
+            "uuid": "5f7e9bfc-1e25-4968-86d1-acaf001962bb",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "EfMRQn3g2dhdJODEadS3dh796eC6_2HXcPMyniqpHX0",
+                    "short_id": "bd4cf0b027b1"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "mail",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @flyv2ray | 11",
+            "type": "vless",
+            "server": "greencard.winuklottery.com",
+            "server_port": 52894,
+            "uuid": "bc316567-4c62-4f17-adad-92c89af629d7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "EfMRQn3g2dhdJODEadS3dh796eC6_2HXcPMyniqpHX0",
+                    "short_id": "bd4cf0b027b1"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "mail",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
