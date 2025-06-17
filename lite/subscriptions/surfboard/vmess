@@ -12,12 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇸🇬SG | 🟢 | vmess | @Hope_Net | 13 = vmess, ml02.333210.xyz, 40000, username = f8d8531b-a2b2-4515-911b-10c2f8ab7f26, ws = true, tls = , vmess-aead = true, ws-path = /bby, ws-headers = Host:"ml02.333210.xyz", skip-cert-verify = true, tfo = false
-🇭🇰HK | 🟢 | vmess | @Hope_Net | 14 = vmess, 626edbe1-sv2sg0-t7hu58-1q1la.hgc1.tcpbbr.net, 80, username = 25b46954-9a33-11ee-8b86-f23c91cfbbc9, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"broadcastlv.chat.bilibili.com", skip-cert-verify = true, tfo = false
+🇭🇰HK | 🟢 | vmess | @Hope_Net | 8 = vmess, 664c47cb-sv2sg0-sy8f4e-ukt4.hgc1.tcpbbr.net, 80, username = 6589f6d0-e192-11ec-bd7c-f23c913c8d2b, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"broadcastlv.chat.bilibili.com", skip-cert-verify = true, tfo = false
+🇭🇰HK | 🟢 | vmess | @Hope_Net | 9 = vmess, 40b0c626-sv6hs0-t9pv2z-1pbw0.hk.p5pv.com, 80, username = 00e03540-7101-11ef-941f-f23c9164ca5d, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"broadcastlv.chat.bilibili.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 13,🇭🇰HK | 🟢 | vmess | @Hope_Net | 14
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 13,🇭🇰HK | 🟢 | vmess | @Hope_Net | 14
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 13,🇭🇰HK | 🟢 | vmess | @Hope_Net | 14
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 8,🇭🇰HK | 🟢 | vmess | @Hope_Net | 9
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 8,🇭🇰HK | 🟢 | vmess | @Hope_Net | 9
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 8,🇭🇰HK | 🟢 | vmess | @Hope_Net | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
