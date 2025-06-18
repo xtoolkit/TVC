@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇭🇰HK | 🟢 | vmess | @Hope_Net | 9 = vmess, 9242939a-sv0xs0-swwhoz-1me9w.wtt5.p5pv.com, 8101, username = 408e7148-df67-11ed-8e13-f23c91cfbbc9, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"broadcastlv.chat.bilibili.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 10 = vmess, 8c00ea67-sv2sg0-svc6zc-tf26.sv.plebai.net, 1281, username = baefe2f4-b41a-11ee-91e9-f23c913c8d2b, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"broadcastlv.chat.bilibili.com", skip-cert-verify = true, tfo = false
+🇨🇳CN | 🟢 | vmess | @Hope_Net | 5 = vmess, v25.heduian.link, 30825, username = cbb3f877-d1fb-344c-87a9-d153bffd5484, ws = true, tls = , vmess-aead = false, ws-path = /oooo, ws-headers = Host:"baidu.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 9,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 9,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 9,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 5
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 5
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
