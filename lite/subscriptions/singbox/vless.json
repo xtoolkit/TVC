@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @Parsashonam | 9",
-                "🇸🇪SE | 🔴 | vless | @Parsashonam | 10",
+                "🇨🇦CA | 🔴 | vless | @Parsashonam | 10",
+                "🇸🇪SE | 🔴 | vless | @Parsashonam | 11",
                 "🇨🇦CA | 🔴 | vless | @v2_team | 1",
                 "🇮🇷IR | 🔴 | vless | @v2_team | 2",
                 "🇮🇷IR | 🔴 | vless | @XsV2ray | 1",
@@ -119,9 +119,11 @@
                 "🇺🇸US | 🔴 | vless | @melov2ray | 15",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 2",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 15",
+                "🇮🇷IR | 🟢 | vless | @shh_proxy | 0",
                 "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 17",
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 18",
                 "🇺🇸US | 🔴 | vless | @lightning6 | 11",
+                "🇺🇸US | 🔴 | vless | @lightning6 | 12",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 6",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 7",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
@@ -167,8 +169,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @Parsashonam | 9",
-                "🇸🇪SE | 🔴 | vless | @Parsashonam | 10",
+                "🇨🇦CA | 🔴 | vless | @Parsashonam | 10",
+                "🇸🇪SE | 🔴 | vless | @Parsashonam | 11",
                 "🇨🇦CA | 🔴 | vless | @v2_team | 1",
                 "🇮🇷IR | 🔴 | vless | @v2_team | 2",
                 "🇮🇷IR | 🔴 | vless | @XsV2ray | 1",
@@ -180,9 +182,11 @@
                 "🇺🇸US | 🔴 | vless | @melov2ray | 15",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 2",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 15",
+                "🇮🇷IR | 🟢 | vless | @shh_proxy | 0",
                 "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 17",
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 18",
                 "🇺🇸US | 🔴 | vless | @lightning6 | 11",
+                "🇺🇸US | 🔴 | vless | @lightning6 | 12",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 6",
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 7",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
@@ -244,7 +248,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @Parsashonam | 9",
+            "tag": "🇨🇦CA | 🔴 | vless | @Parsashonam | 10",
             "type": "vless",
             "server": "104.23.126.162",
             "server_port": 2052,
@@ -258,7 +262,7 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @Parsashonam | 10",
+            "tag": "🇸🇪SE | 🔴 | vless | @Parsashonam | 11",
             "type": "vless",
             "server": "185.146.173.39",
             "server_port": 8880,
@@ -503,6 +507,35 @@
             }
         },
         {
+            "tag": "🇮🇷IR | 🟢 | vless | @shh_proxy | 0",
+            "type": "vless",
+            "server": "37.202.228.131",
+            "server_port": 443,
+            "uuid": "fec72195-811f-455d-9185-381c58d2c396",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "khanacademy.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ikTKkSZZZ18NraMIwbLCP8ln6NmsD77VTSKWTESIOAk",
+                    "short_id": "6acf3ba5790e4324"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @Lockey_vpn | 17",
             "type": "vless",
             "server": "alfred.dnss-mobile.ir",
@@ -549,6 +582,27 @@
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @lightning6 | 11",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "4690de53-98ac-451c-836e-398645ea5615",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @lightning6 | 12",
             "type": "vless",
             "server": "151.101.64.155",
             "server_port": 80,
