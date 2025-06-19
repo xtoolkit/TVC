@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 6 = vmess, a4902353-suvds0-tcubko-1r05y.se.plebai.net, 8083, username = d2a03964-ec12-11ee-893c-f23c91cfbbc9, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"a4902353-suvds0-tcubko-1r05y.se.plebai.net", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 10 = vmess, 2b72f3b0-sunz40-suqjqq-1pr35.se.plebai.net, 8083, username = 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"2b72f3b0-sunz40-suqjqq-1pr35.se.plebai.net", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, 95eeab25-sunz40-t5bgb3-l4nv.se.plebai.net, 8083, username = 1469e09e-027c-11ec-a0fc-f23c913c8d2b, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"95eeab25-sunz40-t5bgb3-l4nv.se.plebai.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 6
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 6
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 6
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 10,❔XX | 🟢 | vmess | @Hope_Net | 11
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 10,❔XX | 🟢 | vmess | @Hope_Net | 11
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 10,❔XX | 🟢 | vmess | @Hope_Net | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
