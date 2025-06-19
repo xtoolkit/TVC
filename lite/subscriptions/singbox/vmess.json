@@ -111,8 +111,8 @@
                 "❔XX | 🟢 | vmess | @prrofile_purple | 101",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 11",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 12"
+                "❔XX | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11"
             ]
         },
         {
@@ -124,8 +124,8 @@
                 "❔XX | 🟢 | vmess | @prrofile_purple | 101",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 11",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 12"
+                "❔XX | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -257,11 +257,11 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 11",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "195.58.49.84",
-            "server_port": 22002,
-            "uuid": "fd3d4f2e-1ff7-4bd1-916a-991ccb3dc2e1",
+            "server": "127.0.0.1",
+            "server_port": 1080,
+            "uuid": "cacbbaa-caab-cbaa-cbda-abcbcacababc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -271,21 +271,14 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "195.58.49.84"
-                }
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "yes.mojcn.com",
-            "server_port": 16618,
-            "uuid": "6400c720-13f6-45b0-81ea-419b89873cd2",
+            "server": "104.21.112.1",
+            "server_port": 8443,
+            "uuid": "658b87e0-5d92-4424-d344-c167acd6a77f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -296,11 +289,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "ny1-sub.890699.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/ny1-sub.890699.xyz",
                 "headers": {
-                    "Host": "yes.mojcn.com"
+                    "Host": "ny1-sub.890699.xyz"
                 }
             }
         }
