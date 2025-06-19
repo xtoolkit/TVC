@@ -157,8 +157,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇷🇺RU | 🔴 | vless | @free1_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 7",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 7",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 4",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 5",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 1",
@@ -234,8 +234,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇷🇺RU | 🔴 | vless | @free1_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 7",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 7",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 4",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 5",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 1",
@@ -1440,11 +1440,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "4f387ddd-sunz40-taklwz-12bd.cu.plebai.net",
-            "server_port": 5229,
-            "uuid": "ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9",
+            "server": "www.visa.com.tw",
+            "server_port": 443,
+            "uuid": "66e5c8dd-3176-458e-8fb0-1ed91d2f9602",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1454,14 +1454,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.visa.com.tw",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess-argo",
+                "headers": {
+                    "Host": "www.visa.com.tw"
+                }
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com",
-            "server_port": 17232,
-            "uuid": "8d888b92-eec8-11ef-bca1-f23c91cfbbc9",
+            "server": "cbe195c0-supts0-svp9t7-1oijm.lza.plebai.net",
+            "server_port": 7612,
+            "uuid": "bf140bc0-3f68-11ee-953a-f23c9164ca5d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1471,6 +1488,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "cbe195c0-supts0-svp9t7-1oijm.lza.plebai.net"
+                }
             }
         },
         {
