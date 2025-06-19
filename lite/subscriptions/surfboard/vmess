@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 8 = vmess, 1744007541.tencentapp.cn, 2053, username = 381cb6d1-6ad4-4909-8494-b8d786cf78ce, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"1744007541.tencentapp.cn", skip-cert-verify = true, tfo = false
-🇮🇹IT | 🟢 | vmess | @Hope_Net | 9 = vmess, 158.180.228.226, 443, username = 9b456c2a-f2c1-45e1-87a9-b7628b04bb24, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇨🇳CN | 🟢 | vmess | @Hope_Net | 9 = vmess, yes.mojcn.com, 16618, username = 6400c720-13f6-45b0-81ea-419b89873cd2, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"66d0c215104536850c337da2227b21cb.mobgslb.tbcache.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8,🇮🇹IT | 🟢 | vmess | @Hope_Net | 9
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8,🇮🇹IT | 🟢 | vmess | @Hope_Net | 9
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8,🇮🇹IT | 🟢 | vmess | @Hope_Net | 9
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 9
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 9
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇳CN | 🟢 | vmess | @Hope_Net | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
