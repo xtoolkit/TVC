@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @ipV2Ray | 9",
                 "🇬🇧GB | 🟢 | vless | @V2pedia | 2",
                 "🇹🇼TW | 🟢 | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | 🟢 | vless | @ShadowSocks_s | 2",
@@ -122,7 +121,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @ipV2Ray | 9",
                 "🇬🇧GB | 🟢 | vless | @V2pedia | 2",
                 "🇹🇼TW | 🟢 | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | 🟢 | vless | @ShadowSocks_s | 2",
@@ -152,42 +150,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @ipV2Ray | 9",
-            "type": "vless",
-            "server": "www.speedtest-divar.ir",
-            "server_port": 443,
-            "uuid": "0d46bbe1-bfd1-45ad-be2d-03b531a2881b",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fauxid.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "BwXeuQqugoDcQvIWNNUJ5iz7DYldgMJq23Gl9y-S-yc",
-                    "short_id": "eaab9c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇬🇧GB | 🟢 | vless | @V2pedia | 2",
