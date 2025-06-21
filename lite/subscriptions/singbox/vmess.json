@@ -108,10 +108,11 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇮🇷IR | 🟢 | vmess | @v2ray_vpn_ir | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
-                "🇨🇭CH | 🟢 | vmess | @Hope_Net | 5"
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6"
             ]
         },
         {
@@ -120,10 +121,11 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇮🇷IR | 🟢 | vmess | @v2ray_vpn_ir | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
-                "🇨🇭CH | 🟢 | vmess | @Hope_Net | 5"
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -170,6 +172,23 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🟢 | vmess | @v2ray_vpn_ir | 4",
+            "type": "vmess",
+            "server": "alakaskanaa.abletodothingsorg.com",
+            "server_port": 8081,
+            "uuid": "98a140b5-544e-4f53-aff1-d3210f7885fb",
+            "security": "auto",
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -238,11 +257,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "104.19.32.0",
-            "server_port": 443,
-            "uuid": "93ea486a-bada-42a4-ac38-d088b320fa1e",
+            "server": "13.212.37.38",
+            "server_port": 40000,
+            "uuid": "13364789-a8b2-4bcd-8df7-a794fb6f87e5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -253,30 +272,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "104.19.32.0",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/bby",
                 "headers": {
-                    "Host": "104.19.32.0"
+                    "Host": ""
                 }
             }
         },
         {
-            "tag": "🇨🇭CH | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "185.18.250.249",
-            "server_port": 8443,
-            "uuid": "e88b85c6-93b4-47f6-b3fb-2c55dcb1289f",
+            "server": "54.200.36.136",
+            "server_port": 42360,
+            "uuid": "3519dfc0-fa27-41cc-8c19-981818f9f6d5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -289,7 +298,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "185.18.250.249",
+                "server_name": "0000000000000000000000000080.cgroup-node-for-bigairport.sbs",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -299,9 +308,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/dyajvws",
+                "path": "\/",
                 "headers": {
-                    "Host": "185.18.250.249"
+                    "Host": "0000000000000000000000000080.cgroup-node-for-bigairport.sbs"
                 }
             }
         }
