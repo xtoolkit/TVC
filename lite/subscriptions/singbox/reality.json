@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @ipV2Ray | 9",
+                "🇬🇧GB | 🟢 | vless | @V2pedia | 2",
                 "🇹🇼TW | 🟢 | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | 🟢 | vless | @ShadowSocks_s | 2",
                 "🇮🇷IR | 🟢 | vless | @free1_vpn | 5",
@@ -122,6 +123,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @ipV2Ray | 9",
+                "🇬🇧GB | 🟢 | vless | @V2pedia | 2",
                 "🇹🇼TW | 🟢 | vless | @ShadowSocks_s | 1",
                 "🇩🇪DE | 🟢 | vless | @ShadowSocks_s | 2",
                 "🇮🇷IR | 🟢 | vless | @free1_vpn | 5",
@@ -185,6 +187,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @V2pedia | 2",
+            "type": "vless",
+            "server": "a3.gozarino.com",
+            "server_port": 2323,
+            "uuid": "f684156b-84d8-477e-bd91-4033d72b58df",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E",
+                    "short_id": ""
+                }
             }
         },
         {
