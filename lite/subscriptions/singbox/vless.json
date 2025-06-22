@@ -141,8 +141,8 @@
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "🇦🇪AE | 🔴 | vless | @v2rayNG_Matsuri | 6",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 0",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 1",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 14",
@@ -151,8 +151,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 9",
                 "🇬🇧GB | 🔴 | vless | @lrnbymaa | 2",
                 "❔XX | 🔴 | vless | @lrnbymaa | 3",
+                "🇩🇪DE | 🔴 | vless | @free1_vpn | 2",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 3",
-                "🇺🇸US | 🔴 | vless | @free1_vpn | 4",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 4",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 5",
                 "🇮🇷IR | 🔴 | vless | @Outlinev2rayNG | 14",
@@ -207,8 +207,8 @@
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "🇦🇪AE | 🔴 | vless | @v2rayNG_Matsuri | 6",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 0",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 1",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 14",
@@ -217,8 +217,8 @@
                 "❔XX | 🔴 | vless | @MTConfig | 9",
                 "🇬🇧GB | 🔴 | vless | @lrnbymaa | 2",
                 "❔XX | 🔴 | vless | @lrnbymaa | 3",
+                "🇩🇪DE | 🔴 | vless | @free1_vpn | 2",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 3",
-                "🇺🇸US | 🔴 | vless | @free1_vpn | 4",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 4",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 5",
                 "🇮🇷IR | 🔴 | vless | @Outlinev2rayNG | 14",
@@ -1016,25 +1016,32 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
             "type": "vless",
-            "server": "z4.magicnetwork.info",
-            "server_port": 443,
-            "uuid": "44f305cf-ce57-09eb-f65c-af5105eaa19c",
-            "flow": "",
+            "server": "104.17.147.22",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "104.17.147.22"
+                }
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 2",
+            "tag": "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 1",
             "type": "vless",
-            "server": "91.99.148.251",
-            "server_port": 5969,
-            "uuid": "953d71f0-9241-4903-95b4-cce61e90015e",
+            "server": "z4.magicnetwork.info",
+            "server_port": 443,
+            "uuid": "44f305cf-ce57-09eb-f65c-af5105eaa19c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1265,6 +1272,20 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @free1_vpn | 2",
+            "type": "vless",
+            "server": "91.99.150.156",
+            "server_port": 1517,
+            "uuid": "33d0980e-4054-474b-8f7c-05bf426963f1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @free1_vpn | 3",
             "type": "vless",
             "server": "104.24.56.187",
@@ -1282,27 +1303,6 @@
                 "path": "\/?ed=2560",
                 "headers": {
                     "Host": "104.24.56.187"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @free1_vpn | 4",
-            "type": "vless",
-            "server": "104.17.209.145",
-            "server_port": 80,
-            "uuid": "92f481b6-ad92-43e4-a683-2bb0aeaa9846",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "dw.alibichareh.dpdns.org"
                 }
             }
         },
