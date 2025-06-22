@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇮🇷IR | 🟢 | vless | @lrnbymaa | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 0"
@@ -115,6 +116,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇮🇷IR | 🟢 | vless | @lrnbymaa | 14",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 0"
@@ -138,6 +140,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇮🇷IR | 🟢 | vless | @lrnbymaa | 14",
+            "type": "vless",
+            "server": "tunelvs9.myprofilegodbot.site",
+            "server_port": 42960,
+            "uuid": "baf84b13-f799-4c6f-a949-0da188d752df",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "hSBSMUSr8C0IPnjB8r-aP_hBD45iOEYaP5cL3Ot0Ggo",
+                    "short_id": "be206114"
+                }
+            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @vpn_go67 | 20",
