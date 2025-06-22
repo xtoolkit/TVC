@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18 = vmess, 172.67.170.103, 443, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"glweidf.sbs", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 3 = vmess, 18.237.175.133, 33443, username = 3519dfc0-fa27-41cc-8c19-981818f9f6d5, ws = true, tls = 1, vmess-aead = false, ws-path = /, ws-headers = Host:"tls.19.node-for-bigairport.win", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 4 = vmess, 104.17.221.248, 2052, username = 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, ws = true, tls = , vmess-aead = true, ws-path = /dabai.in104.18.179.207, ws-headers = Host:"100-70-193-42.s1.cn-db.top", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 3
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 3
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 3
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
