@@ -107,11 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @v2ray_vpn_ir | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 11"
+                "❔XX | 🟢 | vmess | @Hope_Net | 8",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 9"
             ]
         },
         {
@@ -119,11 +118,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @v2ray_vpn_ir | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 11"
+                "❔XX | 🟢 | vmess | @Hope_Net | 8",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -160,30 +158,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @v2ray_vpn_ir | 0",
-            "type": "vmess",
-            "server": "www.kernels.bid",
-            "server_port": 80,
-            "uuid": "25ec39f7-7cdd-4c3c-bc3c-60e9a8927b4a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
@@ -245,37 +219,13 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "16.mamamajd.site",
-            "server_port": 23616,
-            "uuid": "195c1e0b-ef90-3321-98e8-eccd06880846",
+            "server": "LA04.890603.XYz",
+            "server_port": 443,
+            "uuid": "60cdd89e-a9cf-4850-8577-e3c6abf5515d",
             "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "16.mamamajd.site"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 11",
-            "type": "vmess",
-            "server": "tk.hzlt.tkddns.xyz",
-            "server_port": 22641,
-            "uuid": "98e96c9f-4bb3-39d4-9a2c-fac04257f7c7",
-            "security": "auto",
-            "alter_id": 2,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -286,7 +236,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tk.hzlt.tkddns.xyz",
+                "server_name": "LA04.890603.XYz",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -296,9 +246,33 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/gyCVORfjoXYyHHcJBuLd",
                 "headers": {
-                    "Host": "tk.hzlt.tkddns.xyz"
+                    "Host": "LA04.890603.XYz"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 9",
+            "type": "vmess",
+            "server": "13.229.204.50",
+            "server_port": 40000,
+            "uuid": "13364789-a8b2-4bcd-8df7-a794fb6f87e5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/bby",
+                "headers": {
+                    "Host": ""
                 }
             }
         }
