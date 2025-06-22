@@ -118,8 +118,9 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"67.220.95.102","port":8881,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3","type":"ss","server":"67.220.95.102","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"45.87.175.178","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"67.220.95.102","port":8881,"password":"kDWvXYZoTBcGkC4","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"67.220.95.102","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
