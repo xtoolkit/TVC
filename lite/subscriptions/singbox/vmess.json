@@ -111,8 +111,8 @@
                 "🇮🇷IR | 🟢 | vmess | @V2rayng_Fast | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 7"
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 6",
+                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 7"
             ]
         },
         {
@@ -124,8 +124,8 @@
                 "🇮🇷IR | 🟢 | vmess | @V2rayng_Fast | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 7"
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 6",
+                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -257,13 +257,13 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "babcaac-aabc-bcaa-dabc-baabaccbcabc",
+            "server": "18.183.95.169",
+            "server_port": 444,
+            "uuid": "02bf7660-c38f-30b4-b740-2f9b4d717704",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -274,11 +274,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇵🇱PL | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "183.236.51.36",
-            "server_port": 59003,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "server": "146.59.55.50",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -288,6 +288,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "146.59.55.50",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "146.59.55.50"
+                }
             }
         }
     ],
