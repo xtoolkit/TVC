@@ -107,8 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
+                "🇳🇱NL | 🔴 | vless | @vmessorg | 1",
                 "❔XX | 🔴 | vless | @MTConfig | 4",
-                "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 12",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 0"
@@ -119,8 +119,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🟢 | vless | @CUSTOMVPNSERVER | 9",
+                "🇳🇱NL | 🔴 | vless | @vmessorg | 1",
                 "❔XX | 🔴 | vless | @MTConfig | 4",
-                "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 12",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 0"
@@ -175,6 +175,35 @@
             }
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @vmessorg | 1",
+            "type": "vless",
+            "server": "s1.donyayedigitali.pics",
+            "server_port": 2323,
+            "uuid": "08052317-7036-4906-b7da-19934f8fe6e6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🔴 | vless | @MTConfig | 4",
             "type": "vless",
             "server": "g.soskom.ir",
@@ -208,35 +237,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 12",
-            "type": "vless",
-            "server": "night.dl.darinips.com",
-            "server_port": 443,
-            "uuid": "fde86c85-6d4d-420b-bfde-47687763517e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "journalofbigdata.springeropen.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "3WnHdv9A0tNParChTLxPnDteRD841h8thOGR7MBgAhY",
-                    "short_id": ""
-                }
             }
         },
         {
