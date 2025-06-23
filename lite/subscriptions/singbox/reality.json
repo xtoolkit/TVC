@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vless | @v2rayNG_Matsuri | 0",
                 "🇳🇱NL | 🟢 | vless | @Capoit | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -117,7 +116,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vless | @v2rayNG_Matsuri | 0",
                 "🇳🇱NL | 🟢 | vless | @Capoit | 0",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -142,35 +140,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vless | @v2rayNG_Matsuri | 0",
-            "type": "vless",
-            "server": "us.dreamily.app",
-            "server_port": 8300,
-            "uuid": "ee02da34-a09d-4582-96c2-731fc2f329af",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "journalofbigdata.springeropen.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E",
-                    "short_id": ""
-                }
-            }
         },
         {
             "tag": "🇳🇱NL | 🟢 | vless | @Capoit | 0",
