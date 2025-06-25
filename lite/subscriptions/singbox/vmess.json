@@ -110,8 +110,8 @@
                 "❔XX | 🟢 | vmess | @proxystore11 | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6"
+                "❔XX | 🟢 | vmess | @Hope_Net | 7",
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 8"
             ]
         },
         {
@@ -122,8 +122,8 @@
                 "❔XX | 🟢 | vmess | @proxystore11 | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6"
+                "❔XX | 🟢 | vmess | @Hope_Net | 7",
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -238,11 +238,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
             "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "abccbaa-baca-cbaa-adcb-bcbacbbcacaa",
+            "server_port": 2080,
+            "uuid": "aaabccb-caba-aacb-abdc-bbbaccacbcaa",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -255,11 +255,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+            "tag": "🇳🇱NL | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "104.21.16.1",
-            "server_port": 2096,
-            "uuid": "db7e482f-c836-438d-9bd8-ffbfdb428c7d",
+            "server": "152.70.57.182",
+            "server_port": 443,
+            "uuid": "e537f2f5-2a0c-4f59-92c9-832ca6433bf3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -272,7 +272,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "esna.twn24.ir",
+                "server_name": "irvideo.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -281,11 +281,11 @@
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "\/mehdi",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "irvideo.cfd"
+                }
             }
         }
     ],
