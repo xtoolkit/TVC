@@ -110,8 +110,8 @@
                 "❔XX | 🟢 | vmess | @proxystore11 | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 4",
-                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 5"
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6"
             ]
         },
         {
@@ -122,8 +122,8 @@
                 "❔XX | 🟢 | vmess | @proxystore11 | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 4",
-                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 5"
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -238,13 +238,13 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "23.162.200.91",
-            "server_port": 20182,
-            "uuid": "cc9b66b7-1de7-4aa9-9642-575a8ae3ff19",
+            "server": "17.mamamajd.site",
+            "server_port": 23617,
+            "uuid": "c8eecd08-d056-351f-9701-edec6e693f64",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 2,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -252,14 +252,21 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "17.mamamajd.site"
+                }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "88.198.172.25",
-            "server_port": 15145,
-            "uuid": "28690833-392e-4cf4-85df-ec85c84492bc",
+            "server": "104.21.80.1",
+            "server_port": 2096,
+            "uuid": "f5872144-9948-4a00-fe93-0e6325401adb",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -270,9 +277,19 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "esna.twn24.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "grpc",
-                "service_name": "JbiB8V66V78Hf5bivfsis8vH",
+                "service_name": "\/mehdi",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
