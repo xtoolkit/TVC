@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 0 = ss, 5.180.45.142, 18429, encrypt-method = chacha20-ietf-poly1305, password = Uzm5jb6HSHQIneryDj2sgW
+🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 2 = ss, 5.180.45.142, 18429, encrypt-method = chacha20-ietf-poly1305, password = Uzm5jb6HSHQIneryDj2sgW
 🇬🇧GB | 🟢 | ss | @kingofilter | 0 = ss, admin.c4.webramz.co, 443, encrypt-method = chacha20-ietf-poly1305, password = 69MUii7VDwMqh7Hz
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 0,🇬🇧GB | 🟢 | ss | @kingofilter | 0
-URL-TEST = url-test,🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 0,🇬🇧GB | 🟢 | ss | @kingofilter | 0
-FALLBACK = fallback,🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 0,🇬🇧GB | 🟢 | ss | @kingofilter | 0
+MANUAL = select,URL-TEST,FALLBACK,🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 2,🇬🇧GB | 🟢 | ss | @kingofilter | 0
+URL-TEST = url-test,🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 2,🇬🇧GB | 🟢 | ss | @kingofilter | 0
+FALLBACK = fallback,🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 2,🇬🇧GB | 🟢 | ss | @kingofilter | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
