@@ -120,6 +120,8 @@ dns:
 proxies:
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"🇫🇷FR | 🟢 | vmess | @Hope_Net | 10","type":"vmess","server":"az05.beyondy.cfd","port":443,"cipher":"auto","uuid":"3f638f34-8dba-4186-bc43-2716a7ddd4be","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/link","headers":{"host":"az05.beyondy.cfd"}}}
+  - {"name":"❔XX | 🟢 | vmess | @Hope_Net | 11","type":"vmess","server":"127.1.1.127","port":"80","cipher":"auto","uuid":"602736e4-a2e8-4eb3-9fc9-7c7082925365","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | 🟢 | vmess | @fnet00 | 3","type":"vmess","server":"151.101.3.8","port":"80","cipher":"auto","uuid":"1f7e2947-c4a5-4e3c-b284-777ff73a086e","alterId":"0","tls":false,"skip-cert-verify":true,"network":"xhttp"}
 proxy-groups:
   - name: MANUAL
@@ -129,6 +131,8 @@ proxy-groups:
       - FALLBACK
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
+      - '🇫🇷FR | 🟢 | vmess | @Hope_Net | 10'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 11'
       - '🇺🇸US | 🟢 | vmess | @fnet00 | 3'
   - name: URL-TEST
     type: url-test
@@ -138,6 +142,8 @@ proxy-groups:
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
+      - '🇫🇷FR | 🟢 | vmess | @Hope_Net | 10'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 11'
       - '🇺🇸US | 🟢 | vmess | @fnet00 | 3'
   - name: FALLBACK
     type: fallback
@@ -146,6 +152,8 @@ proxy-groups:
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
+      - '🇫🇷FR | 🟢 | vmess | @Hope_Net | 10'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 11'
       - '🇺🇸US | 🟢 | vmess | @fnet00 | 3'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
