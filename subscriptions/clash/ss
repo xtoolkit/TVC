@@ -118,9 +118,13 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"92.38.171.215","port":31348,"password":"0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"45.87.175.157","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 16","type":"ss","server":"81.19.141.45","port":443,"password":"3TnQdgm2mVJQbuSCXmR5Vc","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"freakconfig13.felafel.org","port":443,"password":"1xO2cqPazqjGfCfd","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 3","type":"ss","server":"92.118.205.228","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"185.47.253.227","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 6","type":"ss","server":"64.227.144.190","port":50690,"password":"CEA6CczvgBW0Spg3Vib4LS","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇸🇪SE | 🟢 | ss | @DeamNet_Proxy | 8","type":"ss","server":"international-isp.outline360.online","port":8243,"password":"mEx9wDjkDULjIITkXYBVla","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 9","type":"ss","server":"92.38.171.215","port":31348,"password":"0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13","type":"ss","server":"45.87.175.157","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @kingofilter | 1","type":"ss","server":"admin.c4.webramz.co","port":443,"password":"69MUii7VDwMqh7Hz","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -128,9 +132,13 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
-      - '🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 16'
+      - '🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 6'
+      - '🇸🇪SE | 🟢 | ss | @DeamNet_Proxy | 8'
+      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 9'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13'
       - '🇬🇧GB | 🟢 | ss | @kingofilter | 1'
   - name: URL-TEST
     type: url-test
@@ -138,18 +146,26 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
-      - '🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 16'
+      - '🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 6'
+      - '🇸🇪SE | 🟢 | ss | @DeamNet_Proxy | 8'
+      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 9'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13'
       - '🇬🇧GB | 🟢 | ss | @kingofilter | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4'
-      - '🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 16'
+      - '🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 4'
+      - '🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 6'
+      - '🇸🇪SE | 🟢 | ss | @DeamNet_Proxy | 8'
+      - '🇪🇸ES | 🟢 | ss | @DeamNet_Proxy | 9'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13'
       - '🇬🇧GB | 🟢 | ss | @kingofilter | 1'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
