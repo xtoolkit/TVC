@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 0"
@@ -116,7 +115,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 10",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "🇩🇪DE | 🔴 | vless | @SvnTeam | 0"
@@ -140,42 +138,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇮FI | 🔴 | vless | @Outlinev2rayNG | 10",
-            "type": "vless",
-            "server": "shoping-lgai.igshopingai.biz.tr",
-            "server_port": 443,
-            "uuid": "b122a0c7-c947-4fd7-8efa-c0a1e1fb9e7f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "afternic.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "J5aaCYQft4PeaMxenmrVh5WUQYRXuKNUtblM9TRpXAk",
-                    "short_id": "cc26b226"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Dev",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @vpn_go67 | 20",
