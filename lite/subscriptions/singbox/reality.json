@@ -107,15 +107,15 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 10",
-                "🇳🇱NL | 🟢 | vless | @vmessorg | 11",
+                "🇩🇪DE | 🟢 | vless | @vmessorg | 12",
                 "🇫🇮FI | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇬🇧GB | 🟢 | vless | @DailyV2RY | 65",
                 "🇬🇧GB | 🟢 | vless | @DailyV2RY | 66",
+                "🇩🇪DE | 🔴 | vless | @proxystore11 | 4",
                 "@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn&fp=safari&spx=\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam?ed=2048&type=tcp&sni=www.latimes.com#🇹🇷TR | 🟢 | vless | @mehrosaboran | 9",
                 "🇺🇸US | 🟢 | vless | @proxy_mtm | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
-                "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 0"
+                "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ]
         },
         {
@@ -123,15 +123,15 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 10",
-                "🇳🇱NL | 🟢 | vless | @vmessorg | 11",
+                "🇩🇪DE | 🟢 | vless | @vmessorg | 12",
                 "🇫🇮FI | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇬🇧GB | 🟢 | vless | @DailyV2RY | 65",
                 "🇬🇧GB | 🟢 | vless | @DailyV2RY | 66",
+                "🇩🇪DE | 🔴 | vless | @proxystore11 | 4",
                 "@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn,@bored_vpn,--@bored_vpn&fp=safari&spx=\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam\/@XpnTeam?ed=2048&type=tcp&sni=www.latimes.com#🇹🇷TR | 🟢 | vless | @mehrosaboran | 9",
                 "🇺🇸US | 🟢 | vless | @proxy_mtm | 2",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
-                "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🔴 | vless | @SvnTeam | 0"
+                "❔XX | 🔴 | vless | @vpn_go67 | 21"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -183,7 +183,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @vmessorg | 11",
+            "tag": "🇩🇪DE | 🟢 | vless | @vmessorg | 12",
             "type": "vless",
             "server": "pfwie.marfanet.com",
             "server_port": 55700,
@@ -295,6 +295,35 @@
                     "enabled": true,
                     "public_key": "_N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw",
                     "short_id": "e1afb93bfe75a34b"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @proxystore11 | 4",
+            "type": "vless",
+            "server": "vip1.proxystore11.news",
+            "server_port": 2052,
+            "uuid": "5744c1a5-1f2b-4a8b-a99c-47b906d05c1c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vultr.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-4S95rjoZIG_AeUxIlwedx89e7C_X4jnePY3RsiF4io",
+                    "short_id": "f8fcb589"
                 }
             }
         },
@@ -426,35 +455,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @SvnTeam | 0",
-            "type": "vless",
-            "server": "SvnFree.GiSvn.ir",
-            "server_port": 443,
-            "uuid": "SVNTEAM1",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "193rx1HPJxmcw5Igm1lZeCcPnBx1dVfBroBl5FR9BEE",
-                    "short_id": ""
-                }
             }
         }
     ],
