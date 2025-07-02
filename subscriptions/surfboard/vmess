@@ -15,10 +15,11 @@ DIRECT = direct
 🇺🇸US | 🟢 | vmess | @yaney_01 | 2 = vmess, 107.149.119.43, 37000, username = 418048af-a293-4b99-9b0c-98ca3580dd24, ws = true, tls = 1, vmess-aead = false, ws-path = /path/040318142507, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 3 = vmess, admin.arzonhost.ir, 2086, username = 7d93e992-48cf-42d4-84f8-75768e815a4c, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"admin.arzonhost.ir", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
+🇭🇰HK | 🟢 | vmess | @Hope_Net | 0 = vmess, 20.6.155.159, 2080, username = 63769deb-4153-4b98-aba3-31bc07e53a2d, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"hk4.556855.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
-URL-TEST = url-test,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
-FALLBACK = fallback,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
+MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 0
+URL-TEST = url-test,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 0
+FALLBACK = fallback,🇳🇱NL | 🟢 | vmess | @yaney_01 | 1,🇺🇸US | 🟢 | vmess | @yaney_01 | 2,❔XX | 🟢 | vmess | @yaney_01 | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @Hope_Net | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
