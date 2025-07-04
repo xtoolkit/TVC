@@ -106,18 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 12",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 13",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 14"
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 14",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 15"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 12",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 13",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 14"
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 14",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 15"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,7 +142,17 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 12",
+            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0",
+            "type": "shadowsocks",
+            "server": "admin.c1.webramz.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "1xO2cqPazqjGfCfd",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 13",
             "type": "shadowsocks",
             "server": "admin.c2.webramz.co",
             "server_port": 443,
@@ -150,7 +162,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 13",
+            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 14",
             "type": "shadowsocks",
             "server": "admin.c1.webramz.co",
             "server_port": 443,
@@ -160,7 +172,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 14",
+            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 15",
             "type": "shadowsocks",
             "server": "freakconfig13.felafel.org",
             "server_port": 443,
