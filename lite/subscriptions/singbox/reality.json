@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @Parsashonam | 15",
                 "🇦🇲AM | 🟢 | vless | @ipV2Ray | 3",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 15",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 2",
@@ -118,7 +117,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @Parsashonam | 15",
                 "🇦🇲AM | 🟢 | vless | @ipV2Ray | 3",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 15",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 2",
@@ -144,42 +142,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @Parsashonam | 15",
-            "type": "vless",
-            "server": "S1.LoadBalance.LAT",
-            "server_port": 9090,
-            "uuid": "6fcb287e-1b92-4c03-b5ca-aa668dad2f51",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "OTv4I7eaaqHgYAlL5EIrDlotApPujvk9OoJU58FRGz4",
-                    "short_id": "e17185329455b179"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "mgrpcm",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
         },
         {
             "tag": "🇦🇲AM | 🟢 | vless | @ipV2Ray | 3",
