@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @Parsashonam | 14",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 15",
-                "🇨🇦CA | 🔴 | vless | @v2_team | 0",
                 "🇨🇦CA | 🔴 | vless | @v2_team | 1",
+                "🇮🇷IR | 🔴 | vless | @v2_team | 2",
                 "🇮🇷IR | 🔴 | vless | @XsV2ray | 3",
                 "🇮🇷IR | 🔴 | vless | @XsV2ray | 4",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 14",
@@ -156,8 +156,8 @@
                 "🇨🇾CY | 🔴 | vless | @free1_vpn | 7",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 4",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 4",
-                "🇳🇱NL | 🔴 | vless | @flyv2ray | 3",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 3",
+                "🇳🇱NL | 🔴 | vless | @flyv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 3",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 4",
                 "🇮🇷IR | 🔴 | vless | @nofiltering2 | 11",
@@ -175,8 +175,8 @@
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @Parsashonam | 14",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 15",
-                "🇨🇦CA | 🔴 | vless | @v2_team | 0",
                 "🇨🇦CA | 🔴 | vless | @v2_team | 1",
+                "🇮🇷IR | 🔴 | vless | @v2_team | 2",
                 "🇮🇷IR | 🔴 | vless | @XsV2ray | 3",
                 "🇮🇷IR | 🔴 | vless | @XsV2ray | 4",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 14",
@@ -223,8 +223,8 @@
                 "🇨🇾CY | 🔴 | vless | @free1_vpn | 7",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 4",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 4",
-                "🇳🇱NL | 🔴 | vless | @flyv2ray | 3",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @flyv2ray | 3",
+                "🇳🇱NL | 🔴 | vless | @flyv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 3",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 4",
                 "🇮🇷IR | 🔴 | vless | @nofiltering2 | 11",
@@ -313,7 +313,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @v2_team | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @v2_team | 1",
             "type": "vless",
             "server": "ns.cloudflare.com",
             "server_port": 2086,
@@ -327,11 +327,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @v2_team | 1",
+            "tag": "🇮🇷IR | 🔴 | vless | @v2_team | 2",
             "type": "vless",
-            "server": "ns.cloudflare.com",
-            "server_port": 2086,
-            "uuid": "8ed5d5c6-08c6-40ed-8f15-ff724c4ecad9",
+            "server": "94.182.105.30",
+            "server_port": 44062,
+            "uuid": "dea94163-2cb3-466f-b32d-05922f0a02c4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1438,7 +1438,28 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @flyv2ray | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 3",
+            "type": "vless",
+            "server": "tgju.org",
+            "server_port": 80,
+            "uuid": "9c3087e8-e9b9-4940-c87b-e5ff64da58d2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/olem\/ws?ed=1024",
+                "headers": {
+                    "Host": "tgju.org"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @flyv2ray | 4",
             "type": "vless",
             "server": "188.227.84.154",
             "server_port": 8443,
@@ -1449,27 +1470,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 4",
-            "type": "vless",
-            "server": "e.mosic7.info",
-            "server_port": 80,
-            "uuid": "7c9e3c1d-a360-4429-9189-e45a98de7fde",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=443",
-                "headers": {
-                    "Host": "e.mosic7.info"
-                }
             }
         },
         {
