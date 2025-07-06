@@ -109,8 +109,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 6",
+                "❔XX | 🟢 | vmess | @Hope_Net | 2",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 5",
                 "🇦🇹AT | 🟢 | vmess | @FreakConfig | 0"
             ]
@@ -122,8 +122,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 6",
+                "❔XX | 🟢 | vmess | @Hope_Net | 2",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 5",
                 "🇦🇹AT | 🟢 | vmess | @FreakConfig | 0"
             ],
@@ -223,11 +223,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
-            "server": "s2.db-link02.top",
-            "server_port": 2082,
-            "uuid": "13514c2c-d5a4-335f-965a-5dc292e36759",
+            "server": "zmkkyc.whmvmkwuey.store",
+            "server_port": 443,
+            "uuid": "0148730d-70e1-466e-830a-14597bcfa88c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -238,35 +238,55 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/dabai.in104.24.60.200",
-                "headers": {
-                    "Host": "s2.db-link02.top"
+            "tls": {
+                "enabled": true,
+                "server_name": "zmkkyc.whmvmkwuey.store",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 6",
-            "type": "vmess",
-            "server": "140.245.47.58",
-            "server_port": 23452,
-            "uuid": "33afaa7d-05f8-42ef-8542-799a37d8f4b3",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "140.245.47.58"
+                    "Host": "zmkkyc.whmvmkwuey.store"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 3",
+            "type": "vmess",
+            "server": "66.42.62.27",
+            "server_port": 46088,
+            "uuid": "06cef6a6-42db-48fc-ad07-7099c4fd449e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "default.sg.vultr.ddns.ad.989567.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/login",
+                "headers": {
+                    "Host": "default.sg.vultr.ddns.ad.989567.xyz"
                 }
             }
         },
