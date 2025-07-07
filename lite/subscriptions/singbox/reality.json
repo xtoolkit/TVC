@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇦🇲AM | 🟢 | vless | @ipV2Ray | 3",
+                "🇦🇲AM | 🟢 | vless | @ipV2Ray | 4",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 15",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 4",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 5",
@@ -119,6 +120,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇦🇲AM | 🟢 | vless | @ipV2Ray | 3",
+                "🇦🇲AM | 🟢 | vless | @ipV2Ray | 4",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 15",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 4",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 5",
@@ -147,6 +149,42 @@
         },
         {
             "tag": "🇦🇲AM | 🟢 | vless | @ipV2Ray | 3",
+            "type": "vless",
+            "server": "45.83.143.71",
+            "server_port": 443,
+            "uuid": "f8ff8435-f201-471b-b08b-602cef6ca180",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KuXbGeSIqhg5_bFaYN1ZW7F4m4LyjLio8Yh1YEE46xM",
+                    "short_id": "8a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇦🇲AM | 🟢 | vless | @ipV2Ray | 4",
             "type": "vless",
             "server": "45.83.143.71",
             "server_port": 2087,
