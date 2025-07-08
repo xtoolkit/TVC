@@ -105,13 +105,18 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 27",
+                "🇺🇸US | 🟢 | ss | @vmess_vless_v2rayng | 28"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 27",
+                "🇺🇸US | 🟢 | ss | @vmess_vless_v2rayng | 28"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +136,26 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 27",
+            "type": "shadowsocks",
+            "server": "185.39.204.12",
+            "server_port": 16297,
+            "method": "chacha20-ietf-poly1305",
+            "password": "G0o2hE4eLuR2wwyFao0lsJ",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @vmess_vless_v2rayng | 28",
+            "type": "shadowsocks",
+            "server": "45.87.175.157",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
