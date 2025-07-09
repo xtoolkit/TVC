@@ -110,7 +110,7 @@
                 "🇳🇱NL | 🟢 | vmess | @customv2ray | 7",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 3",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
                 "❔XX | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇦🇹AT | 🟢 | vmess | @FreakConfig | 5",
@@ -125,7 +125,7 @@
                 "🇳🇱NL | 🟢 | vmess | @customv2ray | 7",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 3",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
                 "❔XX | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇦🇹AT | 🟢 | vmess | @FreakConfig | 5",
@@ -244,11 +244,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 3",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "abccbaa-caab-acba-cdba-bbbbcacacaac",
+            "server": "172.67.131.135",
+            "server_port": 443,
+            "uuid": "00b553cd-5226-483b-8327-2ad12a253d9a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -258,14 +258,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sth.happyground.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "6mHwqI1HSSVtXxCxshcV",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
             "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "abacabc-aacb-baca-cadb-ababcaacbcbc",
+            "server_port": 8080,
+            "uuid": "aabacbc-cbaa-aabc-adbc-bbbacbccaaca",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
