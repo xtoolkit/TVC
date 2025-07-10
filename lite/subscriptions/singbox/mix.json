@@ -119,8 +119,8 @@
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 15",
                 "🇦🇲AM | 🟢 | vless | @ipV2Ray | 3",
                 "🇦🇲AM | 🟢 | vless | @ipV2Ray | 4",
-                "🇺🇸US | 🔴 | vless | @melov2ray | 15",
-                "🇺🇸US | 🔴 | vless | @melov2ray | 16",
+                "🇺🇸US | 🔴 | vless | @melov2ray | 20",
+                "🇺🇸US | 🔴 | vless | @melov2ray | 21",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 21",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 22",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 16",
@@ -186,8 +186,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 0",
-                "❔XX | 🟢 | vmess | @Hope_Net | 1",
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 10",
                 "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 11",
@@ -229,8 +229,8 @@
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 15",
                 "🇦🇲AM | 🟢 | vless | @ipV2Ray | 3",
                 "🇦🇲AM | 🟢 | vless | @ipV2Ray | 4",
-                "🇺🇸US | 🔴 | vless | @melov2ray | 15",
-                "🇺🇸US | 🔴 | vless | @melov2ray | 16",
+                "🇺🇸US | 🔴 | vless | @melov2ray | 20",
+                "🇺🇸US | 🔴 | vless | @melov2ray | 21",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 21",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 22",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 16",
@@ -296,8 +296,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 0",
-                "❔XX | 🟢 | vmess | @Hope_Net | 1",
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 10",
                 "🇩🇪DE | 🔴 | vless | @Outlinev2rayNG | 11",
@@ -657,7 +657,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @melov2ray | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @melov2ray | 20",
             "type": "vless",
             "server": "zmaoz.faculty.ucdavis.edu",
             "server_port": 80,
@@ -678,7 +678,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @melov2ray | 16",
+            "tag": "🇺🇸US | 🔴 | vless | @melov2ray | 21",
             "type": "vless",
             "server": "speedtest.net",
             "server_port": 80,
@@ -2156,11 +2156,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 0",
+            "tag": "🇫🇷FR | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 2080,
-            "uuid": "acbcaab-acab-aabc-adcb-abababacbccc",
+            "server": "45.145.167.103",
+            "server_port": 443,
+            "uuid": "425c5e6e-30a0-4984-8a13-ee6f72053162",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -2170,14 +2170,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 1",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
             "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "cacbaab-bcaa-bcaa-bacd-bcaacbacbcba",
+            "server_port": 2080,
+            "uuid": "acbcaab-acab-aabc-adcb-abababacbccc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
