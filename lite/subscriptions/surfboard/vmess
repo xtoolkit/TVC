@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 5 = vmess, buffalo.899994.xyz, 8443, username = a0605527-28e4-449c-80ee-5642cc16a8af, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"buffalo.899994.xyz", skip-cert-verify = true, tfo = false
-🇷🇺RU | 🟢 | vmess | @Hope_Net | 6 = vmess, 195.58.49.42, 23532, username = 98ad0351-d756-4eac-8de0-e7a4e9761f87, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 5 = vmess, 104.17.74.206, 2082, username = a71c8f6c-5210-45a0-8f47-1d2556ee3083, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"ybr.redbullplus.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 5,🇷🇺RU | 🟢 | vmess | @Hope_Net | 6
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 5,🇷🇺RU | 🟢 | vmess | @Hope_Net | 6
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 5,🇷🇺RU | 🟢 | vmess | @Hope_Net | 6
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
