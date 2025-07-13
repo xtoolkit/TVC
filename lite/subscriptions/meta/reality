@@ -122,6 +122,7 @@ dns:
 proxies:
   - {"name":"🇳🇱NL | 🟢 | vless | @ipV2Ray | 1","type":"vless","server":"95.164.17.75","port":443,"udp":true,"uuid":"a943a9e0-792e-4efe-af1e-54751a44fef8","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"ftp.debian.org","grpc-opts":{"grpc-service-name":"Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry"},"reality-opts":{"public-key":"pasVbAjcNpjQvgsHBN_WKxQPXwNdXsI4nXYC1usoV0s","short-id":"df"}}
   - {"name":"🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 1","type":"vless","server":"real-all3.sdcards.ir","port":8501,"udp":true,"uuid":"8369bccd-ec80-4c73-ba46-17edbe003e87","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"tgju.org","reality-opts":{"public-key":"OJ0wA5wp55uZdD16dutlTZvx1x-rbMMXmiO9D_MMCHI","short-id":"e701a013553059ba"}}
+  - {"name":"🇩🇪DE | 🔴 | vless | @Capoit | 10","type":"vless","server":"mrzh.wizard2shop.org","port":2050,"udp":true,"uuid":"368295df-be7e-481d-982e-4748397f00a2","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"wordpress.org","grpc-opts":{"grpc-service-name":"xyz"},"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","short-id":"6ba85179e30d4fc2"}}
   - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
 proxy-groups:
   - name: MANUAL
@@ -131,6 +132,7 @@ proxy-groups:
       - FALLBACK
       - '🇳🇱NL | 🟢 | vless | @ipV2Ray | 1'
       - '🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 1'
+      - '🇩🇪DE | 🔴 | vless | @Capoit | 10'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: URL-TEST
     type: url-test
@@ -140,6 +142,7 @@ proxy-groups:
     proxies:
       - '🇳🇱NL | 🟢 | vless | @ipV2Ray | 1'
       - '🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 1'
+      - '🇩🇪DE | 🔴 | vless | @Capoit | 10'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: FALLBACK
     type: fallback
@@ -148,6 +151,7 @@ proxy-groups:
     proxies:
       - '🇳🇱NL | 🟢 | vless | @ipV2Ray | 1'
       - '🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 1'
+      - '🇩🇪DE | 🔴 | vless | @Capoit | 10'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
