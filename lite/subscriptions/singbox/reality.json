@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
+                "🇨🇿CZ | 🔴 | vless | @v2rayngvpn | 16",
                 "🇺🇸US | 🟢 | vless | @v2ray1_ng | 6",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 9",
                 "🇫🇷FR | 🟢 | vless | @Capoit | 12",
@@ -123,6 +124,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
+                "🇨🇿CZ | 🔴 | vless | @v2rayngvpn | 16",
                 "🇺🇸US | 🟢 | vless | @v2ray1_ng | 6",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 9",
                 "🇫🇷FR | 🟢 | vless | @Capoit | 12",
@@ -184,6 +186,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇿CZ | 🔴 | vless | @v2rayngvpn | 16",
+            "type": "vless",
+            "server": "194.182.79.163",
+            "server_port": 10108,
+            "uuid": "edeffe9e-4725-428e-a1c0-7b6a96124f8d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wGHsRP4taNR7OgyRPba24krQVhH9ZRbR7pvDxVsGjj0",
+                    "short_id": "ed"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
