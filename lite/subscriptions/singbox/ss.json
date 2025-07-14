@@ -105,18 +105,13 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST",
-                "🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 21",
-                "🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 22"
+                "URL-TEST"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 21",
-                "🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 22"
-            ],
+            "outbounds": [],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -136,26 +131,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 21",
-            "type": "shadowsocks",
-            "server": "admin.c4.webramz.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "69MUii7VDwMqh7Hz",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 22",
-            "type": "shadowsocks",
-            "server": "85.210.120.237",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Bog0ELmMM9DSxDdQ",
-            "plugin": "",
-            "plugin_opts": ""
         }
     ],
     "route": {

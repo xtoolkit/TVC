@@ -11,12 +11,10 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 21 = ss, admin.c4.webramz.co, 443, encrypt-method = chacha20-ietf-poly1305, password = 69MUii7VDwMqh7Hz
-🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 22 = ss, 85.210.120.237, 443, encrypt-method = chacha20-ietf-poly1305, password = Bog0ELmMM9DSxDdQ
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 21,🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 22
-URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 21,🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 22
-FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 21,🇬🇧GB | 🟢 | ss | @vmess_vless_v2rayng | 22
+MANUAL = select,URL-TEST,FALLBACK
+URL-TEST = url-test
+FALLBACK = fallback
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
