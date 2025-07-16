@@ -120,8 +120,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
                 "🇩🇪DE | 🟢 | vmess | @customv2ray | 12",
-                "🇩🇪DE | 🟢 | vmess | @customv2ray | 18",
-                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 169",
+                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 140",
+                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 141",
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
@@ -153,8 +153,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
                 "🇩🇪DE | 🟢 | vmess | @customv2ray | 12",
-                "🇩🇪DE | 🟢 | vmess | @customv2ray | 18",
-                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 169",
+                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 140",
+                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 141",
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
@@ -426,24 +426,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @customv2ray | 18",
-            "type": "vmess",
-            "server": "panel1.ipyar.org",
-            "server_port": 42684,
-            "uuid": "c4bd9eba-8aea-4d5e-a2ee-b5de65ac14e1",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @DailyV2RY | 169",
+            "tag": "🇺🇸US | 🟢 | vmess | @DailyV2RY | 140",
             "type": "vmess",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -473,6 +456,40 @@
                 "path": "\/linkvkwss",
                 "headers": {
                     "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @DailyV2RY | 141",
+            "type": "vmess",
+            "server": "www.meter.net",
+            "server_port": 2083,
+            "uuid": "d218dfe5-fae6-408e-b615-8666df7f0924",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.meter.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/wssss",
+                "headers": {
+                    "Host": "www.meter.net"
                 }
             }
         },
