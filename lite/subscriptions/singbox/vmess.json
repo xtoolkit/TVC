@@ -112,8 +112,8 @@
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 0",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 2",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇿🇦ZA | 🟢 | vmess | @iP_CF | 59"
             ]
@@ -128,8 +128,8 @@
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 0",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 2",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇿🇦ZA | 🟢 | vmess | @iP_CF | 59"
             ],
@@ -297,7 +297,31 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 0",
+            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 2",
+            "type": "vmess",
+            "server": "5.39.254.196",
+            "server_port": 23985,
+            "uuid": "398ce84e-4849-4e5f-9b1a-a56fbe233b81",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "5.39.254.196"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
             "server": "fiwejniavzoj.xn--fiqs8sjz2bull.com",
             "server_port": 19490,
@@ -311,40 +335,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 1",
-            "type": "vmess",
-            "server": "199.180.100.98",
-            "server_port": 31003,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "199.180.100.98",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/path\/1737280757504",
-                "headers": {
-                    "Host": "199.180.100.98"
-                }
             }
         },
         {
