@@ -111,8 +111,8 @@
                 "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 1",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 2",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
+                "🇹🇷TR | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇿🇦ZA | 🟢 | vmess | @iP_CF | 60"
             ]
@@ -126,8 +126,8 @@
                 "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 1",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 2",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
+                "🇹🇷TR | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇿🇦ZA | 🟢 | vmess | @iP_CF | 60"
             ],
@@ -261,11 +261,11 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 1",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
-            "server": "46.29.161.228",
-            "server_port": 5743,
-            "uuid": "4df72db1-be01-4bdb-88f8-3684d45c6a64",
+            "server": "104.16.68.38",
+            "server_port": 2095,
+            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -278,18 +278,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/glweidf.cfd\/linkws",
                 "headers": {
-                    "Host": "46.29.161.228"
+                    "Host": "104.16.68.38"
                 }
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 2",
+            "tag": "🇹🇷TR | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
-            "server": "176.32.33.124",
-            "server_port": 29025,
-            "uuid": "d82cf9dc-4695-4fb8-83ae-56e4a76a0e76",
+            "server": "202.78.162.5",
+            "server_port": 443,
+            "uuid": "118287d2-e968-42e1-80d0-12fa2f5d38d6",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -300,11 +300,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "202.78.162.5",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/@forwardv2ray",
                 "headers": {
-                    "Host": "176.32.33.124"
+                    "Host": "202.78.162.5"
                 }
             }
         },
