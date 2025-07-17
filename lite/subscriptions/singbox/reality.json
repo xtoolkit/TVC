@@ -108,9 +108,10 @@
                 "URL-TEST",
                 "🇺🇸US | 🟢 | vless | @v2_team | 1",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
-                "🇳🇱NL | 🟢 | vless | @v2rayngvpn | 16",
+                "🇨🇿CZ | 🔴 | vless | @v2rayngvpn | 14",
                 "🇩🇪DE | 🟢 | vless | @proxystore11 | 7",
                 "🇩🇪DE | 🟢 | vless | @proxystore11 | 8",
+                "🇺🇸US | 🟢 | vless | @free1_vpn | 11",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 15",
                 "🇳🇱NL | 🔴 | vless | @Capoit | 16",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -125,9 +126,10 @@
             "outbounds": [
                 "🇺🇸US | 🟢 | vless | @v2_team | 1",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
-                "🇳🇱NL | 🟢 | vless | @v2rayngvpn | 16",
+                "🇨🇿CZ | 🔴 | vless | @v2rayngvpn | 14",
                 "🇩🇪DE | 🟢 | vless | @proxystore11 | 7",
                 "🇩🇪DE | 🟢 | vless | @proxystore11 | 8",
+                "🇺🇸US | 🟢 | vless | @free1_vpn | 11",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 15",
                 "🇳🇱NL | 🔴 | vless | @Capoit | 16",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -221,11 +223,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @v2rayngvpn | 16",
+            "tag": "🇨🇿CZ | 🔴 | vless | @v2rayngvpn | 14",
             "type": "vless",
-            "server": "85.234.65.120",
-            "server_port": 443,
-            "uuid": "fdc0229d-2037-48c4-94d3-496e67cce5d8",
+            "server": "194.182.79.117",
+            "server_port": 35307,
+            "uuid": "a879196c-d849-4416-9b87-464733270cc5",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -235,7 +237,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "github.com",
+                "server_name": "sourceforge.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -244,9 +246,16 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "307pppp6s7XwguGbsjY3xaJPIubgj_D8zNJT5SmtsVA",
-                    "short_id": "f90c"
+                    "public_key": "q9S56XnvF1SLqCwmld0MJ4TnpAu4PI2GKcl71fK4kAA",
+                    "short_id": "df322bfe"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Join-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -304,6 +313,35 @@
                     "enabled": true,
                     "public_key": "GJiZKVIVsg4fH4Gdic4WeDqdcA4Rcc3XTQj9QzdLR2E",
                     "short_id": "c335ccde845adf"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @free1_vpn | 11",
+            "type": "vless",
+            "server": "103.175.79.10",
+            "server_port": 443,
+            "uuid": "49ed01ad-3bb4-204f-b0ff-a58f658fd618",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speed.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4e-unF1RO2v--E7-X3aqxnCSPaK9QaTfJ7LawAr2bRI",
+                    "short_id": ""
                 }
             }
         },
