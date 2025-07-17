@@ -111,8 +111,8 @@
                 "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 8",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 5",
+                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇿🇦ZA | 🟢 | vmess | @iP_CF | 60"
             ]
@@ -126,8 +126,8 @@
                 "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 8",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 5",
+                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇿🇦ZA | 🟢 | vmess | @iP_CF | 60"
             ],
@@ -261,28 +261,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇳🇱NL | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "185.168.195.211",
-            "server_port": 8080,
-            "uuid": "02788b47-d952-55e0-98de-d743d01bd007",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
-            "type": "vmess",
-            "server": "yx2.changyouVPN.top",
-            "server_port": 8880,
-            "uuid": "ae55ed7f-63b7-40fe-b639-dad4d2c9a8db",
+            "server": "141.148.242.28",
+            "server_port": 443,
+            "uuid": "60c0bbfa-c54f-49a9-81ba-779b0206a9fd",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -293,12 +276,39 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "141.148.242.28",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/ylks",
                 "headers": {
-                    "Host": "yx2.changyouVPN.top"
+                    "Host": "141.148.242.28"
                 }
+            }
+        },
+        {
+            "tag": "🇭🇰HK | 🟢 | vmess | @Hope_Net | 6",
+            "type": "vmess",
+            "server": "154.83.88.106",
+            "server_port": 8888,
+            "uuid": "63ab66f1-4d71-424e-8f2d-f4fb90fc92a2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
