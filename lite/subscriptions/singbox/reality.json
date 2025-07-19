@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇺🇸US | 🟢 | vless | @v2_team | 1",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+                "🇩🇪DE | 🔴 | vless | @shh_proxy | 6",
                 "🇨🇿CZ | 🔴 | vless | @DarkTeam_VPN | 4",
                 "🇳🇱NL | 🟢 | vless | @customv2ray | 15",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 11",
@@ -126,6 +127,7 @@
             "outbounds": [
                 "🇺🇸US | 🟢 | vless | @v2_team | 1",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+                "🇩🇪DE | 🔴 | vless | @shh_proxy | 6",
                 "🇨🇿CZ | 🔴 | vless | @DarkTeam_VPN | 4",
                 "🇳🇱NL | 🟢 | vless | @customv2ray | 15",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 11",
@@ -220,6 +222,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @shh_proxy | 6",
+            "type": "vless",
+            "server": "193.108.117.141",
+            "server_port": 32379,
+            "uuid": "83d44fab-c989-4510-a459-835c39df3bef",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zhaket.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VFq1meciB_O8ayCOw0ZDGTNIRFbRW79nwIvjAk1v8BA",
+                    "short_id": "2b6778"
+                }
             }
         },
         {
