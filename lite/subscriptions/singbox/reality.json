@@ -109,12 +109,14 @@
                 "🇺🇸US | 🟢 | vless | @v2_team | 1",
                 "🇨🇿CZ | 🔴 | vless | @V2pedia | 6",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+                "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 7",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 8",
                 "🇨🇿CZ | 🔴 | vless | @DarkTeam_VPN | 3",
                 "🇳🇱NL | 🟢 | vless | @customv2ray | 15",
+                "🇫🇷FR | 🔴 | vless | @v2rayngvpn | 14",
                 "🇷🇺RU | 🟢 | vless | @ShadowProxy66 | 0",
-                "🇸🇬SG | 🟢 | vless | @DailyV2RY | 155",
+                "🇨🇦CA | 🟢 | vless | @DailyV2RY | 155",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 11",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 15",
                 "🇨🇿CZ | 🔴 | vless | @mehrosaboran | 9",
@@ -132,12 +134,14 @@
                 "🇺🇸US | 🟢 | vless | @v2_team | 1",
                 "🇨🇿CZ | 🔴 | vless | @V2pedia | 6",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+                "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 7",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 8",
                 "🇨🇿CZ | 🔴 | vless | @DarkTeam_VPN | 3",
                 "🇳🇱NL | 🟢 | vless | @customv2ray | 15",
+                "🇫🇷FR | 🔴 | vless | @v2rayngvpn | 14",
                 "🇷🇺RU | 🟢 | vless | @ShadowProxy66 | 0",
-                "🇸🇬SG | 🟢 | vless | @DailyV2RY | 155",
+                "🇨🇦CA | 🟢 | vless | @DailyV2RY | 155",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 11",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 15",
                 "🇨🇿CZ | 🔴 | vless | @mehrosaboran | 9",
@@ -234,6 +238,42 @@
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+            "type": "vless",
+            "server": "193.46.81.91",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0ZELy90Fb5sh7DULwsa14x1B1NY-NO2Ga847T_Z-oXY",
+                    "short_id": "688c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
             "type": "vless",
             "server": "193.46.81.91",
             "server_port": 2041,
@@ -392,6 +432,42 @@
             }
         },
         {
+            "tag": "🇫🇷FR | 🔴 | vless | @v2rayngvpn | 14",
+            "type": "vless",
+            "server": "join-dailyconfigs.resurrection-time.sbs",
+            "server_port": 35673,
+            "uuid": "8551c77e-3777-4c26-a5b9-22f53771e54f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "slack.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "X0Qh1nKfoT6KDIvVnHsGU8lYKHsW2fmn0Tm1QNsFRg8",
+                    "short_id": "752105e2e443eece"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs-DailyConfigs?ed=2060",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇷🇺RU | 🟢 | vless | @ShadowProxy66 | 0",
             "type": "vless",
             "server": "a.ru.maviks.ru",
@@ -421,7 +497,7 @@
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vless | @DailyV2RY | 155",
+            "tag": "🇨🇦CA | 🟢 | vless | @DailyV2RY | 155",
             "type": "vless",
             "server": "amazon-20.cristiano.name.ng",
             "server_port": 443,
