@@ -111,10 +111,9 @@
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 7",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 13",
                 "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
                 "🇷🇺RU | 🔴 | vless | @v2ray1_ng | 6",
-                "🇮🇪IE | 🟢 | vless | @DailyV2RY | 132",
-                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 133",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 11",
                 "🇨🇿CZ | 🔴 | vless | @mehrosaboran | 9",
                 "🇩🇪DE | 🟢 | vless | @nofiltering2 | 24",
@@ -133,10 +132,9 @@
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 7",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 13",
                 "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
                 "🇷🇺RU | 🔴 | vless | @v2ray1_ng | 6",
-                "🇮🇪IE | 🟢 | vless | @DailyV2RY | 132",
-                "🇩🇪DE | 🟢 | vless | @DailyV2RY | 133",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 11",
                 "🇨🇿CZ | 🔴 | vless | @mehrosaboran | 9",
                 "🇩🇪DE | 🟢 | vless | @nofiltering2 | 24",
@@ -332,6 +330,42 @@
             }
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @customv2ray | 13",
+            "type": "vless",
+            "server": "server2.fergalvpnmod.com",
+            "server_port": 25126,
+            "uuid": "bab6b157-a6e8-4756-a485-dcb4ca476eb9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AtKTc84OxbQltdeNKIgGRpUBmO1nKRCyqV6OuZmGIik",
+                    "short_id": "1e"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@FergalVpnMod",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
             "type": "vless",
             "server": "91.107.254.202",
@@ -394,64 +428,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇮🇪IE | 🟢 | vless | @DailyV2RY | 132",
-            "type": "vless",
-            "server": "34.244.27.66",
-            "server_port": 443,
-            "uuid": "4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "store.steampowered.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4",
-                    "short_id": "f5"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @DailyV2RY | 133",
-            "type": "vless",
-            "server": "real-all3-2.sdcards.ir",
-            "server_port": 8501,
-            "uuid": "ac37eb9c-0db8-4056-8f61-e8db4e2da35e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "OJ0wA5wp55uZdD16dutlTZvx1x-rbMMXmiO9D_MMCHI",
-                    "short_id": "e701a013553059ba"
-                }
             }
         },
         {
