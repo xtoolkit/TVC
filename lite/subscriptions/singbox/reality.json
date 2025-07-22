@@ -107,12 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🟢 | vless | @v2_team | 1",
-                "🇨🇿CZ | 🔴 | vless | @V2pedia | 8",
-                "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+                "🇨🇿CZ | 🔴 | vless | @V2pedia | 9",
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
+                "🇳🇱NL | 🔴 | vless | @shh_proxy | 6",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 7",
                 "🇳🇱NL | 🔴 | vless | @customv2ray | 13",
-                "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
                 "🇷🇺RU | 🔴 | vless | @v2ray1_ng | 6",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 11",
                 "🇨🇿CZ | 🔴 | vless | @mehrosaboran | 9",
@@ -128,12 +128,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🟢 | vless | @v2_team | 1",
-                "🇨🇿CZ | 🔴 | vless | @V2pedia | 8",
-                "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+                "🇨🇿CZ | 🔴 | vless | @V2pedia | 9",
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
+                "🇳🇱NL | 🔴 | vless | @shh_proxy | 6",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 7",
                 "🇳🇱NL | 🔴 | vless | @customv2ray | 13",
-                "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
                 "🇷🇺RU | 🔴 | vless | @v2ray1_ng | 6",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 11",
                 "🇨🇿CZ | 🔴 | vless | @mehrosaboran | 9",
@@ -193,7 +193,7 @@
             }
         },
         {
-            "tag": "🇨🇿CZ | 🔴 | vless | @V2pedia | 8",
+            "tag": "🇨🇿CZ | 🔴 | vless | @V2pedia | 9",
             "type": "vless",
             "server": "194.182.79.117",
             "server_port": 35307,
@@ -229,9 +229,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ARv2ray | 17",
+            "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 17",
             "type": "vless",
-            "server": "193.46.81.91",
+            "server": "84.32.103.234",
             "server_port": 443,
             "uuid": "telegram-id-ArV2ray",
             "flow": "xtls-rprx-vision",
@@ -268,7 +268,7 @@
             "tag": "🇩🇪DE | 🔴 | vless | @ARv2ray | 18",
             "type": "vless",
             "server": "193.46.81.91",
-            "server_port": 2041,
+            "server_port": 443,
             "uuid": "telegram-id-ArV2ray",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
@@ -298,6 +298,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @shh_proxy | 6",
+            "type": "vless",
+            "server": "45.150.33.157",
+            "server_port": 50810,
+            "uuid": "412dce1a-f2b6-4603-9fb9-be8a848bc855",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zhaket.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "J0pRUeUHMS_olwz0xLOMJxIxe-DhsCZA3qnAMRC4zTg",
+                    "short_id": "aa60a00122200b76"
+                }
             }
         },
         {
@@ -363,35 +392,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
-            "type": "vless",
-            "server": "91.107.254.202",
-            "server_port": 443,
-            "uuid": "Telegram---V2RAYNGCLOUD---",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "firebase.googleapis.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "ios"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "VaX6bp_MHNDUuqYS7vbyXiw-ptqGCTutnV6K_jYE-3A",
-                    "short_id": "54705fe6"
-                }
             }
         },
         {
