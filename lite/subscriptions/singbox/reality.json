@@ -106,12 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @v2_team | 1",
+                "🇺🇸US | 🟢 | vless | @v2_team | 2",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 9",
+                "🇩🇪DE | 🟢 | vless | @v2rayngvpn | 15",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 14",
-                "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 7",
-                "❔XX | 🔴 | vless | @Capoit | 23",
-                "🇨🇿CZ | 🔴 | vless | @Capoit | 24",
+                "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 8",
+                "❔XX | 🔴 | vless | @Capoit | 27",
+                "🇨🇿CZ | 🔴 | vless | @Capoit | 28",
                 "🇳🇱NL | 🔴 | vless | @flyv2ray | 6",
                 "🇨🇭CH | 🟢 | vless | @iP_CF | 64",
                 "🇦🇪AE | 🟢 | vless | @mehrosaboran | 7",
@@ -126,12 +127,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @v2_team | 1",
+                "🇺🇸US | 🟢 | vless | @v2_team | 2",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 9",
+                "🇩🇪DE | 🟢 | vless | @v2rayngvpn | 15",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 14",
-                "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 7",
-                "❔XX | 🔴 | vless | @Capoit | 23",
-                "🇨🇿CZ | 🔴 | vless | @Capoit | 24",
+                "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 8",
+                "❔XX | 🔴 | vless | @Capoit | 27",
+                "🇨🇿CZ | 🔴 | vless | @Capoit | 28",
                 "🇳🇱NL | 🔴 | vless | @flyv2ray | 6",
                 "🇨🇭CH | 🟢 | vless | @iP_CF | 64",
                 "🇦🇪AE | 🟢 | vless | @mehrosaboran | 7",
@@ -162,11 +164,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @v2_team | 1",
+            "tag": "🇺🇸US | 🟢 | vless | @v2_team | 2",
             "type": "vless",
-            "server": "gr.globalunlimitedinternet.xyz",
-            "server_port": 1911,
-            "uuid": "56ac4f3a-8cbf-4748-966e-0e723317e0af",
+            "server": "54.167.27.87",
+            "server_port": 15434,
+            "uuid": "a45e0c2d-388e-4e66-8720-291da22cd7eb",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -176,25 +178,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "refersion.com",
+                "server_name": "journalofbigdata.springeropen.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "VCwUyNFL_IMTZfEKeIUYEuXbPfzCpuUBGNW1kAu2VW4",
-                    "short_id": "32aaf12b"
+                    "public_key": "K47eUyJ8fZSVg8DtY50GPcpa8VmSwnH5N3e6SKth0VM",
+                    "short_id": ""
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "grpc.reality",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -223,6 +218,35 @@
                     "enabled": true,
                     "public_key": "J0pRUeUHMS_olwz0xLOMJxIxe-DhsCZA3qnAMRC4zTg",
                     "short_id": "aa60a00122200b76"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @v2rayngvpn | 15",
+            "type": "vless",
+            "server": "91.99.165.137",
+            "server_port": 2012,
+            "uuid": "81294d12-9b29-438d-8af2-2bfcba7bd450",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.pcmag.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "I9RNJ9pJ1WzWsYnRFk7u1XWsFhWBS03iUDjQXwWsERY",
+                    "short_id": ""
                 }
             }
         },
@@ -256,7 +280,7 @@
             }
         },
         {
-            "tag": "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 7",
+            "tag": "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 8",
             "type": "vless",
             "server": "45.83.20.34",
             "server_port": 58164,
@@ -285,7 +309,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @Capoit | 23",
+            "tag": "❔XX | 🔴 | vless | @Capoit | 27",
             "type": "vless",
             "server": "[2001:15e8:110:6eb6::1]",
             "server_port": 29706,
@@ -321,7 +345,7 @@
             }
         },
         {
-            "tag": "🇨🇿CZ | 🔴 | vless | @Capoit | 24",
+            "tag": "🇨🇿CZ | 🔴 | vless | @Capoit | 28",
             "type": "vless",
             "server": "194.182.79.64",
             "server_port": 14074,
