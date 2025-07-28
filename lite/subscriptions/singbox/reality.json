@@ -107,8 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @v2_team | 0",
-                "🇳🇱NL | 🔴 | vless | @shh_proxy | 9",
-                "🇩🇪DE | 🔴 | vless | @proxystore11 | 16",
+                "🇳🇱NL | 🔴 | vless | @shh_proxy | 10",
+                "🇳🇱NL | 🔴 | vless | @shh_proxy | 11",
+                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 1",
+                "🇩🇪DE | 🟢 | vless | @proxystore11 | 15",
                 "❔XX | 🔴 | vless | @Capoit | 27",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 28",
                 "🇳🇱NL | 🔴 | vless | @flyv2ray | 7",
@@ -126,8 +128,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @v2_team | 0",
-                "🇳🇱NL | 🔴 | vless | @shh_proxy | 9",
-                "🇩🇪DE | 🔴 | vless | @proxystore11 | 16",
+                "🇳🇱NL | 🔴 | vless | @shh_proxy | 10",
+                "🇳🇱NL | 🔴 | vless | @shh_proxy | 11",
+                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 1",
+                "🇩🇪DE | 🟢 | vless | @proxystore11 | 15",
                 "❔XX | 🔴 | vless | @Capoit | 27",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 28",
                 "🇳🇱NL | 🔴 | vless | @flyv2ray | 7",
@@ -196,7 +200,36 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @shh_proxy | 9",
+            "tag": "🇳🇱NL | 🔴 | vless | @shh_proxy | 10",
+            "type": "vless",
+            "server": "45.150.33.157",
+            "server_port": 50810,
+            "uuid": "1ea87307-1d00-4c15-af3f-b363f8562ac5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zhaket.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "J0pRUeUHMS_olwz0xLOMJxIxe-DhsCZA3qnAMRC4zTg",
+                    "short_id": "aa60a00122200b76"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @shh_proxy | 11",
             "type": "vless",
             "server": "45.150.33.157",
             "server_port": 50810,
@@ -225,11 +258,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @proxystore11 | 16",
+            "tag": "🇳🇱NL | 🟢 | vless | @proxy_kafee | 1",
             "type": "vless",
-            "server": "vip1.proxystore11.news",
-            "server_port": 2052,
-            "uuid": "ffab2209-312c-4042-899d-478eb8f21c8e",
+            "server": "185.33.24.229",
+            "server_port": 28495,
+            "uuid": "7e296434-2d17-48d3-928d-19eaa34aecb1",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -239,7 +272,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "vultr.com",
+                "server_name": "dl.google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -248,8 +281,37 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "-4S95rjoZIG_AeUxIlwedx89e7C_X4jnePY3RsiF4io",
-                    "short_id": "f8fcb589"
+                    "public_key": "KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ",
+                    "short_id": "0ecc2c1392"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @proxystore11 | 15",
+            "type": "vless",
+            "server": "vip1.proxystore11.news",
+            "server_port": 10358,
+            "uuid": "92c7897a-6494-4719-aefd-aea8280314ce",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "axD7U8DCmchSVZemN_DTRYdnNZ141CxTSkTabDdzNEk",
+                    "short_id": "b373044d"
                 }
             }
         },
