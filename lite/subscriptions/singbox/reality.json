@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | vless | @v2_team | 2",
+                "🇩🇪DE | 🔴 | vless | @v2_team | 0",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 9",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 15",
                 "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 8",
@@ -126,7 +126,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | vless | @v2_team | 2",
+                "🇩🇪DE | 🔴 | vless | @v2_team | 0",
                 "🇳🇱NL | 🔴 | vless | @shh_proxy | 9",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 15",
                 "🇧🇪BE | 🟢 | vless | @Outlinev2rayNG | 8",
@@ -162,11 +162,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @v2_team | 2",
+            "tag": "🇩🇪DE | 🔴 | vless | @v2_team | 0",
             "type": "vless",
-            "server": "54.167.27.87",
-            "server_port": 15434,
-            "uuid": "a45e0c2d-388e-4e66-8720-291da22cd7eb",
+            "server": "gr.globalunlimitedinternet.xyz",
+            "server_port": 1911,
+            "uuid": "56ac4f3a-8cbf-4748-966e-0e723317e0af",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -176,18 +176,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "journalofbigdata.springeropen.com",
+                "server_name": "refersion.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "K47eUyJ8fZSVg8DtY50GPcpa8VmSwnH5N3e6SKth0VM",
-                    "short_id": ""
+                    "public_key": "VCwUyNFL_IMTZfEKeIUYEuXbPfzCpuUBGNW1kAu2VW4",
+                    "short_id": "32aaf12b"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc.reality",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
