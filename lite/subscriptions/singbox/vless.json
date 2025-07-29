@@ -110,6 +110,7 @@
                 "🇨🇦CA | 🔴 | vless | @EliV2ray | 5",
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 17",
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 18",
+                "🇩🇪DE | 🔴 | vless | @v2_team | 0",
                 "🇩🇪DE | 🔴 | vless | @v2_team | 1",
                 "🇺🇸US | 🔴 | vless | @NIM_VPN_ir | 9",
                 "🇺🇸US | 🔴 | vless | @NIM_VPN_ir | 10",
@@ -150,8 +151,8 @@
                 "🇺🇸US | 🔴 | vless | @UnlimitedDev | 11",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 28",
                 "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 13",
-                "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 13",
                 "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
+                "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 15",
                 "🇩🇪DE | 🔴 | vless | @FalconPolV2rayNG | 7",
                 "🇮🇷IR | 🔴 | vless | @FalconPolV2rayNG | 8",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
@@ -200,6 +201,7 @@
                 "🇨🇦CA | 🔴 | vless | @EliV2ray | 5",
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 17",
                 "🇸🇪SE | 🔴 | vless | @Parsashonam | 18",
+                "🇩🇪DE | 🔴 | vless | @v2_team | 0",
                 "🇩🇪DE | 🔴 | vless | @v2_team | 1",
                 "🇺🇸US | 🔴 | vless | @NIM_VPN_ir | 9",
                 "🇺🇸US | 🔴 | vless | @NIM_VPN_ir | 10",
@@ -240,8 +242,8 @@
                 "🇺🇸US | 🔴 | vless | @UnlimitedDev | 11",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 28",
                 "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 13",
-                "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 13",
                 "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
+                "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 15",
                 "🇩🇪DE | 🔴 | vless | @FalconPolV2rayNG | 7",
                 "🇮🇷IR | 🔴 | vless | @FalconPolV2rayNG | 8",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
@@ -369,6 +371,42 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @v2_team | 0",
+            "type": "vless",
+            "server": "gr.globalunlimitedinternet.xyz",
+            "server_port": 1911,
+            "uuid": "7eac3c03-5204-4d53-833a-a131639f1f5f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VCwUyNFL_IMTZfEKeIUYEuXbPfzCpuUBGNW1kAu2VW4",
+                    "short_id": "32aaf12b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc.reality",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1306,7 +1344,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 13",
+            "tag": "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
             "type": "vless",
             "server": "91.107.166.105",
             "server_port": 43937,
@@ -1320,7 +1358,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 14",
+            "tag": "🇩🇪DE | 🔴 | vless | @v2rayngvpn | 15",
             "type": "vless",
             "server": "91.99.153.233",
             "server_port": 8443,
