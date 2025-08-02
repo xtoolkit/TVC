@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 6 = vmess, 172.67.70.92, 2082, username = 5f3f09ad-89cb-4e94-a7ad-aa8239913555, ws = true, tls = , vmess-aead = true, ws-path = /github.com/Alvin9999, ws-headers = Host:"ip16.6929198.xyz", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @FreakConfig | 15 = vmess, 172.67.131.27, 2053, username = 350e2b01-d410-44a6-90ba-6483f1062972, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"rak2d4.89060004.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 6,🇺🇸US | 🟢 | vmess | @FreakConfig | 15
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 6,🇺🇸US | 🟢 | vmess | @FreakConfig | 15
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 6,🇺🇸US | 🟢 | vmess | @FreakConfig | 15
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @FreakConfig | 15
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @FreakConfig | 15
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @FreakConfig | 15
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
