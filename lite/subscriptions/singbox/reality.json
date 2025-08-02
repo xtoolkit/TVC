@@ -108,7 +108,9 @@
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @v2_team | 3",
                 "🇩🇪DE | 🔴 | vless | @v2_team | 4",
-                "🇨🇳CN | 🟢 | vless | @v2rayNG_Matsuri | 9",
+                "🇩🇪DE | 🔴 | vless | @prrofile_purple | 153",
+                "❔XX | 🔴 | vless | @customv2ray | 36",
+                "🇨🇿CZ | 🔴 | vless | @v2rayNG_Matsuri | 8",
                 "🇩🇪DE | 🟢 | vless | @ServerNett | 7",
                 "❔XX | 🟢 | vless | @ServerNett | 8",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 14",
@@ -128,7 +130,9 @@
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @v2_team | 3",
                 "🇩🇪DE | 🔴 | vless | @v2_team | 4",
-                "🇨🇳CN | 🟢 | vless | @v2rayNG_Matsuri | 9",
+                "🇩🇪DE | 🔴 | vless | @prrofile_purple | 153",
+                "❔XX | 🔴 | vless | @customv2ray | 36",
+                "🇨🇿CZ | 🔴 | vless | @v2rayNG_Matsuri | 8",
                 "🇩🇪DE | 🟢 | vless | @ServerNett | 7",
                 "❔XX | 🟢 | vless | @ServerNett | 8",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 14",
@@ -234,11 +238,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vless | @v2rayNG_Matsuri | 9",
+            "tag": "🇩🇪DE | 🔴 | vless | @prrofile_purple | 153",
             "type": "vless",
-            "server": "47.122.155.37",
-            "server_port": 16777,
-            "uuid": "a74de79a-3ee9-4bf1-a56c-001631608b69",
+            "server": "server1.fergalvpnmod.com",
+            "server_port": 28338,
+            "uuid": "0b9ee474-19f6-4d7f-9281-96f239e6cebc",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -248,7 +252,43 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yahoo.com",
+                "server_name": "cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "MJwVQS7Qs5U_FYJn_osHZJSQ9ioxZRHC2HDPVwt7nmw",
+                    "short_id": "9ecc4615ce"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram:@FergalVpnMod",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @customv2ray | 36",
+            "type": "vless",
+            "server": "[2001:15e8:110:6e8e::1]",
+            "server_port": 11747,
+            "uuid": "172a19c2-80f6-4c10-8f10-3a1e80846762",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -257,9 +297,52 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "Cn-2697DwC-noUw528vcEYpCGoRU-Vc0ylOpSM94-yE",
-                    "short_id": "57ac8ef7df"
+                    "public_key": "tcU9NYYuI86TwcXCesNVN2aED32Uzuw3rE-glcJ8Dgw",
+                    "short_id": "07097bf90a38b8ae"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇨🇿CZ | 🔴 | vless | @v2rayNG_Matsuri | 8",
+            "type": "vless",
+            "server": "194.182.79.216",
+            "server_port": 43708,
+            "uuid": "edb86e51-2e28-4c6f-9244-e472b27c697c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "U7hggIW1N_h8wh3XqaEDH1JwVk5_yF1Kd2L3JfXNRW0",
+                    "short_id": "c9f107e34d7a09"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
