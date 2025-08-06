@@ -109,9 +109,10 @@
                 "🇩🇪DE | 🔴 | vless | @v2_team | 3",
                 "🇩🇪DE | 🔴 | vless | @v2_team | 4",
                 "🇫🇷FR | 🔴 | vless | @DarkTeam_VPN | 0",
+                "🇫🇮FI | 🔴 | vless | @v2rayngvpn | 11",
                 "🇩🇪DE | 🟢 | vless | @ServerNett | 2",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 14",
-                "🇫🇮FI | 🟢 | vless | @free1_vpn | 3",
+                "🇫🇮FI | 🟢 | vless | @free1_vpn | 4",
                 "🇭🇺HU | 🟢 | vless | @Capoit | 23",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -128,9 +129,10 @@
                 "🇩🇪DE | 🔴 | vless | @v2_team | 3",
                 "🇩🇪DE | 🔴 | vless | @v2_team | 4",
                 "🇫🇷FR | 🔴 | vless | @DarkTeam_VPN | 0",
+                "🇫🇮FI | 🔴 | vless | @v2rayngvpn | 11",
                 "🇩🇪DE | 🟢 | vless | @ServerNett | 2",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 14",
-                "🇫🇮FI | 🟢 | vless | @free1_vpn | 3",
+                "🇫🇮FI | 🟢 | vless | @free1_vpn | 4",
                 "🇭🇺HU | 🟢 | vless | @Capoit | 23",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -261,6 +263,42 @@
             }
         },
         {
+            "tag": "🇫🇮FI | 🔴 | vless | @v2rayngvpn | 11",
+            "type": "vless",
+            "server": "65.109.194.11",
+            "server_port": 23584,
+            "uuid": "33b8247e-1a56-4fb6-a5cd-5424572be295",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "P493rf_2oHCfasd8wnbUs2KS8Z6D-nZibDPvwUbd_24",
+                    "short_id": "c92637"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "32135vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🟢 | vless | @ServerNett | 2",
             "type": "vless",
             "server": "5.75.201.180",
@@ -319,7 +357,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🟢 | vless | @free1_vpn | 3",
+            "tag": "🇫🇮FI | 🟢 | vless | @free1_vpn | 4",
             "type": "vless",
             "server": "list.dayhostpro.com",
             "server_port": 14685,
