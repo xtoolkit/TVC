@@ -153,8 +153,8 @@
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 9",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 12",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 5",
-                "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 2",
-                "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 5",
+                "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 3",
+                "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 6",
                 "❔XX | 🔴 | vless | @Capoit | 1",
                 "🇫🇮FI | 🟢 | vless | @Capoit | 5",
                 "🇮🇹IT | 🟢 | vless | @Capoit | 6",
@@ -189,6 +189,7 @@
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 0",
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 1",
                 "🇩🇪DE | 🔴 | vless | @kingofilter | 5",
+                "🇩🇪DE | 🟢 | vless | @kingofilter | 7",
                 "❔XX | 🔴 | vless | @SvnTeam | 5",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
                 "❔XX | 🔴 | vless | @SvnTeam | 7"
@@ -245,8 +246,8 @@
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 9",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 12",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 5",
-                "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 2",
-                "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 5",
+                "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 3",
+                "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 6",
                 "❔XX | 🔴 | vless | @Capoit | 1",
                 "🇫🇮FI | 🟢 | vless | @Capoit | 5",
                 "🇮🇹IT | 🟢 | vless | @Capoit | 6",
@@ -281,6 +282,7 @@
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 0",
                 "🇩🇪DE | 🟢 | vless | @kingofilter | 1",
                 "🇩🇪DE | 🔴 | vless | @kingofilter | 5",
+                "🇩🇪DE | 🟢 | vless | @kingofilter | 7",
                 "❔XX | 🔴 | vless | @SvnTeam | 5",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
                 "❔XX | 🔴 | vless | @SvnTeam | 7"
@@ -1795,7 +1797,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 2",
+            "tag": "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 3",
             "type": "vless",
             "server": "gb01-vlr01.tcp-reset-club.net",
             "server_port": 443,
@@ -1824,7 +1826,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 5",
+            "tag": "🇳🇱NL | 🟢 | vless | @Outlinev2rayNG | 6",
             "type": "vless",
             "server": "nl01-vlr01.tcp-reset-club.net",
             "server_port": 443,
@@ -2976,6 +2978,35 @@
             "server": "91.99.216.9",
             "server_port": 8443,
             "uuid": "b7aba45f-5cdd-4543-a619-8124a5fe7f87",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "r3FLw76bxhgit74mzJTglRM-ujPZ9f-HemByQ-uZqms",
+                    "short_id": "27e6b66aa77662fb"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @kingofilter | 7",
+            "type": "vless",
+            "server": "91.99.216.9",
+            "server_port": 8443,
+            "uuid": "72efd5fb-8614-4549-881f-136648f914bf",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
