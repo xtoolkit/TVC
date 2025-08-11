@@ -107,9 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 149",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 16",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17"
             ]
         },
@@ -118,9 +119,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 149",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 16",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -151,6 +153,23 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 149",
+            "type": "vmess",
+            "server": "159.89.22.229",
+            "server_port": 8080,
+            "uuid": "ff5c50fc-0ca7-53f9-007c-5b3f6511f1e1",
+            "security": "auto",
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -219,9 +238,33 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 16",
             "type": "vmess",
-            "server": "104.21.238.235",
+            "server": "104.26.0.234",
+            "server_port": 2082,
+            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "104.26.0.234"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+            "type": "vmess",
+            "server": "104.18.114.247",
             "server_port": 2095,
             "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
             "security": "auto",
@@ -238,31 +281,7 @@
                 "type": "ws",
                 "path": "\/github.com\/Alvin9999",
                 "headers": {
-                    "Host": "104.21.238.235"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-            "type": "vmess",
-            "server": "104.26.0.25",
-            "server_port": 2086,
-            "uuid": "bc65fac2-7dc7-426f-acdd-0779a5035bde",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/github.com\/Alvin9999",
-                "headers": {
-                    "Host": "104.26.0.25"
+                    "Host": "104.18.114.247"
                 }
             }
         }
