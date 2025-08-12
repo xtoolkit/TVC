@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇸🇬SG | 🟢 | vmess | @Hope_Net | 7 = vmess, 103.136.68.92, 5452, username = 28f6d888-cbc5-4210-8cd2-b40cf566d9a8, ws = true, tls = , vmess-aead = true, ws-path = , ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 4 = vmess, 104.21.69.44, 443, username = 3d76a285-87f8-4ac0-9793-70e2600b3b29, ws = true, tls = 1, vmess-aead = false, ws-path = /6mHwql1HSSV5FOZe0UV1BYvuQ, ws-headers = Host:"download.game-one.ir", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 5 = vmess, 104.17.148.22, 2095, username = 278e7536-3a5b-4205-a7f9-ac97c1e994a7, ws = true, tls = , vmess-aead = true, ws-path = /aVa-pC.coM.ZoomiT.iR?ed=1024, ws-headers = Host:"panel.SEYYEDmtmodidandansax.bloG.", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 7
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 7
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 7
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
