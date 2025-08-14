@@ -120,31 +120,31 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇺🇸US | 🟢 | ss | @iP_CF | 34","type":"ss","server":"45.87.175.192","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @iP_CF | 35","type":"ss","server":"45.87.175.178","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @iP_CF | 38","type":"ss","server":"45.87.175.192","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @iP_CF | 39","type":"ss","server":"45.87.175.178","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🟢 | ss | @iP_CF | 34'
-      - '🇺🇸US | 🟢 | ss | @iP_CF | 35'
+      - '🇺🇸US | 🟢 | ss | @iP_CF | 38'
+      - '🇺🇸US | 🟢 | ss | @iP_CF | 39'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🟢 | ss | @iP_CF | 34'
-      - '🇺🇸US | 🟢 | ss | @iP_CF | 35'
+      - '🇺🇸US | 🟢 | ss | @iP_CF | 38'
+      - '🇺🇸US | 🟢 | ss | @iP_CF | 39'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇺🇸US | 🟢 | ss | @iP_CF | 34'
-      - '🇺🇸US | 🟢 | ss | @iP_CF | 35'
+      - '🇺🇸US | 🟢 | ss | @iP_CF | 38'
+      - '🇺🇸US | 🟢 | ss | @iP_CF | 39'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
