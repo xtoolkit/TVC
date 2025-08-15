@@ -110,11 +110,11 @@
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 149",
                 "🇫🇮FI | 🟢 | vmess | @v2ray1_ng | 3",
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 7",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8"
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 6",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7"
             ]
         },
         {
@@ -125,11 +125,11 @@
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 149",
                 "🇫🇮FI | 🟢 | vmess | @v2ray1_ng | 3",
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 7",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8"
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 6",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -227,11 +227,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
+            "tag": "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 19",
             "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
+            "server": "51.254.21.193",
+            "server_port": 20086,
+            "uuid": "9bcecb26-920a-4e68-b296-88526310bff6",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -241,6 +241,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -302,9 +309,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "149.7.16.174",
+            "server": "172.99.190.206",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
@@ -336,11 +343,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "42.236.73.72",
-            "server_port": 443,
-            "uuid": "044f0177-0675-4dcf-89d4-804b6788e518",
+            "server": "104.21.238.203",
+            "server_port": 8443,
+            "uuid": "9201ffaa-6ca3-4f57-8b1f-266a2f390e43",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -353,12 +360,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.zitian.cn",
+                "server_name": "http1.9290254.xyz",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "http1.9290254.xyz"
                 }
             }
         }
