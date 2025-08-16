@@ -121,6 +121,8 @@
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 149",
                 "🇫🇮FI | 🟢 | vmess | @v2ray1_ng | 3",
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 14",
+                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18",
                 "🇹🇼TW | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -158,6 +160,8 @@
                 "🇮🇷IR | 🟢 | vmess | @prrofile_purple | 149",
                 "🇫🇮FI | 🟢 | vmess | @v2ray1_ng | 3",
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 14",
+                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18",
                 "🇹🇼TW | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -455,6 +459,57 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 14",
+            "type": "vmess",
+            "server": "somebody.sanaei1.milxbywkaiwnx.xyz",
+            "server_port": 52994,
+            "uuid": "cd0392bf-7587-4174-9042-8742d7511304",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18",
+            "type": "vmess",
+            "server": "57.129.64.238",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kapelleng.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "kapelleng.com"
+                }
             }
         },
         {
