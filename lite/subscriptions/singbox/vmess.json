@@ -108,11 +108,10 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
-                "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 3"
+                "🇨🇦CA | 🟢 | vmess | @yaney_01 | 5",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 1",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2"
             ]
         },
         {
@@ -121,11 +120,10 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇩🇪DE | 🟢 | vmess | @SafeNet_Server | 3",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
-                "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 3"
+                "🇨🇦CA | 🟢 | vmess | @yaney_01 | 5",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 1",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -182,23 +180,6 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
-            "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "❔XX | 🟢 | vmess | @yaney_01 | 4",
             "type": "vmess",
             "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
@@ -223,7 +204,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+            "tag": "🇨🇦CA | 🟢 | vmess | @yaney_01 | 5",
             "type": "vmess",
             "server": "104.26.8.210",
             "server_port": 443,
@@ -257,6 +238,30 @@
             }
         },
         {
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 1",
+            "type": "vmess",
+            "server": "104.21.238.73",
+            "server_port": 2082,
+            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "104.21.238.73"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
             "server": "104.26.0.114",
@@ -277,30 +282,6 @@
                 "path": "\/github.com\/Alvin9999",
                 "headers": {
                     "Host": "104.26.0.114"
-                }
-            }
-        },
-        {
-            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 3",
-            "type": "vmess",
-            "server": "176.32.33.158",
-            "server_port": 3071,
-            "uuid": "021bd44d-1012-45a2-b82a-39e1bdb4df42",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
                 }
             }
         }
