@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🔴 | vless | @Parsashonam | 12",
                 "🇩🇪DE | 🟢 | vless | @v2_team | 5",
                 "🇺🇸US | 🔴 | vless | @v2_team | 6",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 11",
@@ -127,6 +128,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🔴 | vless | @Parsashonam | 12",
                 "🇩🇪DE | 🟢 | vless | @v2_team | 5",
                 "🇺🇸US | 🔴 | vless | @v2_team | 6",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 11",
@@ -162,6 +164,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @Parsashonam | 12",
+            "type": "vless",
+            "server": "91.99.16.244",
+            "server_port": 443,
+            "uuid": "Parsashonam-298",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "Google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "sa5RHNjAAD3hYv4OU_YYU08gRUsmPs5JdZES5Xy3pn8",
+                    "short_id": "61e683d41fdb"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @v2_team | 5",
