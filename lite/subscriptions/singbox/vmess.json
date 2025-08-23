@@ -107,11 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇦🇪AE | 🟢 | vmess | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇦UA | 🟢 | vmess | @Hope_Net | 10",
-                "❔XX | 🟢 | vmess | @Hope_Net | 11"
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 10",
+                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 11"
             ]
         },
         {
@@ -119,11 +118,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇦🇪AE | 🟢 | vmess | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇦UA | 🟢 | vmess | @Hope_Net | 10",
-                "❔XX | 🟢 | vmess | @Hope_Net | 11"
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 10",
+                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -160,30 +158,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇦🇪AE | 🟢 | vmess | @ConfigsHUB | 18",
-            "type": "vmess",
-            "server": "94.140.0.241",
-            "server_port": 8880,
-            "uuid": "248be52b-35d9-34cb-9b73-e12b78bc1301",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/dabai.in",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
@@ -245,9 +219,9 @@
             }
         },
         {
-            "tag": "🇺🇦UA | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "🇳🇱NL | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "89.116.180.209",
+            "server": "185.148.107.184",
             "server_port": 443,
             "uuid": "9b38d152-6b12-4de0-a20d-87a8c9034cc4",
             "security": "auto",
@@ -262,7 +236,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "89.116.180.209",
+                "server_name": "185.148.107.184",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -274,16 +248,16 @@
                 "type": "ws",
                 "path": "\/@RaFaV2Bot",
                 "headers": {
-                    "Host": "89.116.180.209"
+                    "Host": "185.148.107.184"
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 11",
+            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "cbbaaac-aacb-acab-acbd-acbacaacbbbc",
+            "server": "185.221.160.87",
+            "server_port": 443,
+            "uuid": "9b38d152-6b12-4de0-a20d-87a8c9034cc4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -293,6 +267,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "185.221.160.87",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@RaFaV2Bot",
+                "headers": {
+                    "Host": "185.221.160.87"
+                }
             }
         }
     ],
