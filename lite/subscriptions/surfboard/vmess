@@ -12,12 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 0 = vmess, 104.17.148.22, 8880, username = 9456ae5b-e864-4093-9bec-b9403ce78971, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"2ig.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列列男事的事列上赛.abkon.cyou.", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 1 = vmess, 104.17.148.22, 8880, username = 9456ae5b-e864-4093-9bec-b9403ce78971, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"2ig.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列列男事的事列上赛.abkon.cyou.", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @fnet00 | 1 = vmess, v2ray.codefyinc.com, 443, username = 2c981164-9b93-4bca-94ff-b78d3f8498d7, ws = true, tls = 1, vmess-aead = true, ws-path = /vmessws, ws-headers = Host:"v2ray.codefyinc.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 0,🇺🇸US | 🟢 | vmess | @fnet00 | 1
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 0,🇺🇸US | 🟢 | vmess | @fnet00 | 1
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 0,🇺🇸US | 🟢 | vmess | @fnet00 | 1
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 1,🇺🇸US | 🟢 | vmess | @fnet00 | 1
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 1,🇺🇸US | 🟢 | vmess | @fnet00 | 1
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 1,🇺🇸US | 🟢 | vmess | @fnet00 | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
