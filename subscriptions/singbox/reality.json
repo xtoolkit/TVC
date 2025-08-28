@@ -148,8 +148,9 @@
                 "❔XX | 🟢 | vless | @prrofile_purple | 148",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 22",
                 "🇨🇦CA | 🔴 | vless | @VmessProtocol | 0",
-                "🇰🇷KR | 🟢 | vless | @ConfigsHUB | 5",
-                "🇷🇺RU | 🔴 | vless | @ConfigsHUB | 15",
+                "🇨🇦CA | 🟢 | vless | @ConfigsHUB | 2",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 5",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 7",
                 "🇦🇹AT | 🟢 | vless | @FreakConfig | 2",
                 "🇦🇱AL | 🟢 | vless | @FreakConfig | 3",
                 "🇷🇺RU | 🟢 | vless | @FreakConfig | 5",
@@ -224,8 +225,9 @@
                 "❔XX | 🟢 | vless | @prrofile_purple | 148",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 22",
                 "🇨🇦CA | 🔴 | vless | @VmessProtocol | 0",
-                "🇰🇷KR | 🟢 | vless | @ConfigsHUB | 5",
-                "🇷🇺RU | 🔴 | vless | @ConfigsHUB | 15",
+                "🇨🇦CA | 🟢 | vless | @ConfigsHUB | 2",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 5",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 7",
                 "🇦🇹AT | 🟢 | vless | @FreakConfig | 2",
                 "🇦🇱AL | 🟢 | vless | @FreakConfig | 3",
                 "🇷🇺RU | 🟢 | vless | @FreakConfig | 5",
@@ -1555,7 +1557,7 @@
             }
         },
         {
-            "tag": "🇰🇷KR | 🟢 | vless | @ConfigsHUB | 5",
+            "tag": "🇨🇦CA | 🟢 | vless | @ConfigsHUB | 2",
             "type": "vless",
             "server": "amazon-20.cristiano.name.ng",
             "server_port": 443,
@@ -1584,11 +1586,11 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🔴 | vless | @ConfigsHUB | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 5",
             "type": "vless",
-            "server": "213.183.41.63",
-            "server_port": 443,
-            "uuid": "3c631fef-c28c-4dfe-aacc-9e67ace7d5b3",
+            "server": "gr.globalunlimitedinternet.xyz",
+            "server_port": 1911,
+            "uuid": "ad91dd85-29e2-4a6b-b024-16cac7c7093e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1598,7 +1600,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "skyroom.online",
+                "server_name": "refersion.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1607,13 +1609,49 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "9tNnOU3bIHtyZfWaPv1J1ns78jDfzCdh6dRLjhQGlX8",
-                    "short_id": "1f"
+                    "public_key": "VCwUyNFL_IMTZfEKeIUYEuXbPfzCpuUBGNW1kAu2VW4",
+                    "short_id": "32aaf12b"
                 }
             },
             "transport": {
                 "type": "grpc",
                 "service_name": "t.me\/entryNET",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 7",
+            "type": "vless",
+            "server": "gr.globalunlimitedinternet.xyz",
+            "server_port": 1911,
+            "uuid": "ad91dd85-29e2-4a6b-b024-16cac7c7093e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VCwUyNFL_IMTZfEKeIUYEuXbPfzCpuUBGNW1kAu2VW4",
+                    "short_id": "32aaf12b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc.reality",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
