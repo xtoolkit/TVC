@@ -107,7 +107,6 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 2",
@@ -120,7 +119,6 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 2",
@@ -162,30 +160,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 17",
-            "type": "vmess",
-            "server": "npmjs.com",
-            "server_port": 8080,
-            "uuid": "pmxnbcrrfd",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/download\/cdn",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
@@ -250,8 +224,8 @@
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
             "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "babccaa-abac-baac-acdb-babcccaaabbc",
+            "server_port": 1080,
+            "uuid": "bcaaacb-cbaa-baca-adbc-bbaccbcabcaa",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -266,9 +240,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
-            "server": "104.19.57.4",
-            "server_port": 2082,
-            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
+            "server": "00000000000000000000000002.node-for-smallairport.win",
+            "server_port": 11521,
+            "uuid": "ab0ab89d-de80-44bd-b938-cafda772976d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -279,11 +253,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "00000000000000000000000002.node-for-smallairport.win",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/github.com\/Alvin9999",
+                "path": "\/",
                 "headers": {
-                    "Host": "104.19.57.4"
+                    "Host": "00000000000000000000000002.node-for-smallairport.win"
                 }
             }
         },
