@@ -114,7 +114,9 @@
                 "🇳🇱NL | 🟢 | vless | @shh_proxy | 11",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇷🇺RU | 🟢 | vless | @v2rayNG_Matsuri | 5",
+                "🇺🇸US | 🟢 | vless | @v2rayngvpn | 15",
                 "🇨🇦CA | 🔴 | vless | @VmessProtocol | 1",
+                "🇬🇧GB | 🔴 | vless | @ConfigsHUB | 17",
                 "🇫🇮FI | 🔴 | vless | @FreakConfig | 19",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -135,7 +137,9 @@
                 "🇳🇱NL | 🟢 | vless | @shh_proxy | 11",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇷🇺RU | 🟢 | vless | @v2rayNG_Matsuri | 5",
+                "🇺🇸US | 🟢 | vless | @v2rayngvpn | 15",
                 "🇨🇦CA | 🔴 | vless | @VmessProtocol | 1",
+                "🇬🇧GB | 🔴 | vless | @ConfigsHUB | 17",
                 "🇫🇮FI | 🔴 | vless | @FreakConfig | 19",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
@@ -410,6 +414,35 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vless | @v2rayngvpn | 15",
+            "type": "vless",
+            "server": "198.199.84.91",
+            "server_port": 2053,
+            "uuid": "1df79df3-908d-4458-8eb0-fd31b0e2e22f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.openstreetmap.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "PVM-pgM-Y1_yxII9Oi8yWK6OkXmJmQynk9DkMEj4YW8",
+                    "short_id": "54c3eae868b911"
+                }
+            }
+        },
+        {
             "tag": "🇨🇦CA | 🔴 | vless | @VmessProtocol | 1",
             "type": "vless",
             "server": "40.233.102.224",
@@ -436,6 +469,42 @@
                     "public_key": "LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo",
                     "short_id": "f430927d"
                 }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🔴 | vless | @ConfigsHUB | 17",
+            "type": "vless",
+            "server": "rep.en.xpnvip.ir",
+            "server_port": 2689,
+            "uuid": "9f8a9503-562a-4c09-87e5-e90c9599e852",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "L4WAAdlTv7i2tDZwPcvYrCfZg2IDCI_sp5LElu3u91U",
+                    "short_id": "b6c24852f86067a6"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "nama",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
