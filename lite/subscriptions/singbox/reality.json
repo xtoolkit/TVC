@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @EliV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 21",
+                "❔XX | 🔴 | vless | @v2_team | 0",
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 4",
                 "🇬🇧GB | 🔴 | vless | @NIM_VPN_ir | 5",
                 "🇳🇱NL | 🟢 | vless | @shh_proxy | 11",
@@ -129,6 +130,7 @@
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @EliV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 21",
+                "❔XX | 🔴 | vless | @v2_team | 0",
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 4",
                 "🇬🇧GB | 🔴 | vless | @NIM_VPN_ir | 5",
                 "🇳🇱NL | 🟢 | vless | @shh_proxy | 11",
@@ -219,6 +221,42 @@
                     "public_key": "sa5RHNjAAD3hYv4OU_YYU08gRUsmPs5JdZES5Xy3pn8",
                     "short_id": "61e683d41fdb"
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @v2_team | 0",
+            "type": "vless",
+            "server": "V2TEAM",
+            "server_port": 1911,
+            "uuid": "56ac4f3a-8cbf-4748-966e-0e723317e0af",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VCwUyNFL_IMTZfEKeIUYEuXbPfzCpuUBGNW1kAu2VW4",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc.reality",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
