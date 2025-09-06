@@ -153,9 +153,6 @@ proxies:
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 13","type":"trojan","server":"35.180.235.199","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"63.176.195.141","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"35.159.253.19","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🔴 | trojan | @ConfigsHUB | 2","type":"trojan","server":"62.133.60.60","port":2083,"udp":false,"password":"Q78UNLOg1VquAOOgiavnsA","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"h110vpngermany.outlinekeys.net"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @ConfigsHUB | 3","type":"trojan","server":"199.34.228.71","port":8443,"udp":false,"password":"Aimer","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"epgb.aimercc.dpdns.org"}
-  - {"name":"🚩CF | 🔴 | trojan | @ConfigsHUB | 4","type":"trojan","server":"172.64.35.66","port":443,"udp":false,"password":"Aimer","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"epgb.aimercc.dpdns.org"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -195,9 +192,6 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
-      - '🇩🇪DE | 🔴 | trojan | @ConfigsHUB | 2'
-      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 3'
-      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -237,9 +231,6 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
-      - '🇩🇪DE | 🔴 | trojan | @ConfigsHUB | 2'
-      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 3'
-      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -278,9 +269,6 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
-      - '🇩🇪DE | 🔴 | trojan | @ConfigsHUB | 2'
-      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 3'
-      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
