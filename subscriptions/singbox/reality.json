@@ -122,7 +122,8 @@
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 50",
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 58",
                 "🇳🇱NL | 🔴 | vless | @rxv2ray | 0",
-                "🇩🇪DE | 🟢 | vless | @rxv2ray | 12",
+                "🇳🇱NL | 🔴 | vless | @rxv2ray | 1",
+                "🇩🇪DE | 🟢 | vless | @rxv2ray | 13",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 5",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 8",
@@ -149,14 +150,13 @@
                 "🇷🇺RU | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 1",
                 "🇷🇺RU | 🟢 | vless | @v2ray1_ng | 2",
-                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 13",
+                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 14",
                 "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 0",
                 "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 1",
                 "🇮🇱IL | 🟢 | vless | @Outlinev2rayNG | 3",
                 "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 5",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 8",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 9",
-                "🇳🇱NL | 🔴 | vless | @FreakConfig | 0",
                 "🇺🇸US | 🟢 | vless | @FreakConfig | 5",
                 "🇫🇷FR | 🟢 | vless | @FreakConfig | 7",
                 "🇨🇦CA | 🟢 | vless | @FreakConfig | 9",
@@ -207,7 +207,8 @@
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 50",
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 58",
                 "🇳🇱NL | 🔴 | vless | @rxv2ray | 0",
-                "🇩🇪DE | 🟢 | vless | @rxv2ray | 12",
+                "🇳🇱NL | 🔴 | vless | @rxv2ray | 1",
+                "🇩🇪DE | 🟢 | vless | @rxv2ray | 13",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 2",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 5",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 8",
@@ -234,14 +235,13 @@
                 "🇷🇺RU | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 1",
                 "🇷🇺RU | 🟢 | vless | @v2ray1_ng | 2",
-                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 13",
+                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 14",
                 "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 0",
                 "🇺🇸US | 🟢 | vless | @Outlinev2rayNG | 1",
                 "🇮🇱IL | 🟢 | vless | @Outlinev2rayNG | 3",
                 "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 5",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 8",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 9",
-                "🇳🇱NL | 🔴 | vless | @FreakConfig | 0",
                 "🇺🇸US | 🟢 | vless | @FreakConfig | 5",
                 "🇫🇷FR | 🟢 | vless | @FreakConfig | 7",
                 "🇨🇦CA | 🟢 | vless | @FreakConfig | 9",
@@ -773,6 +773,35 @@
             "type": "vless",
             "server": "FreakConfig.snapfood.org",
             "server_port": 443,
+            "uuid": "FreakConfig2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vrloCSqsCVu25b3CHtyJ5RWo_nsUxp0PK-3LdLaKJFs",
+                    "short_id": "6993f143e90756"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @rxv2ray | 1",
+            "type": "vless",
+            "server": "FreakConfig.snapfood.org",
+            "server_port": 443,
             "uuid": "FreakConfig",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
@@ -798,7 +827,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @rxv2ray | 12",
+            "tag": "🇩🇪DE | 🟢 | vless | @rxv2ray | 13",
             "type": "vless",
             "server": "dash.mamadpanelnew.ir",
             "server_port": 443,
@@ -1595,7 +1624,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 13",
+            "tag": "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 14",
             "type": "vless",
             "server": "178.128.138.210",
             "server_port": 443,
@@ -1794,35 +1823,6 @@
                     "enabled": true,
                     "public_key": "7CZYqSQtB-Zb70_FTuqaN_WAOwt5zftAalppzh2xHxk",
                     "short_id": "32aaf12b"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @FreakConfig | 0",
-            "type": "vless",
-            "server": "FreakConfig.snapfood.org",
-            "server_port": 443,
-            "uuid": "FreakConfig2",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "vrloCSqsCVu25b3CHtyJ5RWo_nsUxp0PK-3LdLaKJFs",
-                    "short_id": "6993f143e90756"
                 }
             }
         },
