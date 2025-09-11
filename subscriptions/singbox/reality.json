@@ -149,7 +149,8 @@
                 "🇳🇱NL | 🟢 | vless | @ShadowProxy66 | 3",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 1",
                 "🇷🇺RU | 🟢 | vless | @v2ray1_ng | 3",
-                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 2",
+                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 3",
+                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 14",
                 "🇮🇱IL | 🟢 | vless | @Outlinev2rayNG | 1",
                 "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 3",
                 "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 5",
@@ -234,7 +235,8 @@
                 "🇳🇱NL | 🟢 | vless | @ShadowProxy66 | 3",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 1",
                 "🇷🇺RU | 🟢 | vless | @v2ray1_ng | 3",
-                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 2",
+                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 3",
+                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 14",
                 "🇮🇱IL | 🟢 | vless | @Outlinev2rayNG | 1",
                 "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 3",
                 "🇬🇧GB | 🟢 | vless | @Outlinev2rayNG | 5",
@@ -1595,7 +1597,43 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 2",
+            "tag": "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 3",
+            "type": "vless",
+            "server": "2.realitysec1.ir",
+            "server_port": 2689,
+            "uuid": "fc4b7d09-5270-437a-9067-faaeb20e8946",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "L4WAAdlTv7i2tDZwPcvYrCfZg2IDCI_sp5LElu3u91U",
+                    "short_id": "b6c24852f86067a6"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "t.me\/entryNET",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 14",
             "type": "vless",
             "server": "185.200.240.134",
             "server_port": 443,
