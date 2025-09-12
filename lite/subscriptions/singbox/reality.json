@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @Parsashonam | 22",
                 "❔XX | 🔴 | vless | @v2_team | 0",
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 4",
                 "🇬🇧GB | 🔴 | vless | @NIM_VPN_ir | 5",
@@ -126,7 +125,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @Parsashonam | 22",
                 "❔XX | 🔴 | vless | @v2_team | 0",
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 4",
                 "🇬🇧GB | 🔴 | vless | @NIM_VPN_ir | 5",
@@ -160,35 +158,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @Parsashonam | 22",
-            "type": "vless",
-            "server": "91.99.16.244",
-            "server_port": 443,
-            "uuid": "Parsashonam-303",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "Google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "sa5RHNjAAD3hYv4OU_YYU08gRUsmPs5JdZES5Xy3pn8",
-                    "short_id": "61e683d41fdb"
-                }
-            }
         },
         {
             "tag": "❔XX | 🔴 | vless | @v2_team | 0",
