@@ -163,11 +163,12 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇫🇷FR | 🔴 | vless | @SafeNet_Server | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 2",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 17",
+                "🇱🇻LV | 🟢 | vless | @ConfigsHUB | 18",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 8",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 2",
-                "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 5",
+                "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🔴 | vless | @Capoit | 13",
                 "🇺🇸US | 🔴 | vless | @Capoit | 14",
                 "🇺🇸US | 🔴 | vless | @FreakConfig | 15",
@@ -247,11 +248,12 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇫🇷FR | 🔴 | vless | @SafeNet_Server | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 2",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 17",
+                "🇱🇻LV | 🟢 | vless | @ConfigsHUB | 18",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 8",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 2",
-                "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 5",
+                "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 7",
                 "🇺🇸US | 🔴 | vless | @Capoit | 13",
                 "🇺🇸US | 🔴 | vless | @Capoit | 14",
                 "🇺🇸US | 🔴 | vless | @FreakConfig | 15",
@@ -1559,23 +1561,60 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇺🇸US | 🟢 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "172.66.40.99",
-            "server_port": 8880,
-            "uuid": "d447f445-8ac8-46ad-8f93-474a8c57c738",
-            "flow": "",
+            "server": "206.81.6.239",
+            "server_port": 443,
+            "uuid": "c2c5b83f-4892-c49f-b9d1-7af232611820",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420",
-                "headers": {
-                    "Host": "172.66.40.99"
+            "tls": {
+                "enabled": true,
+                "server_name": "androidcentral.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc",
+                    "short_id": "6ea3daaac3d6bede"
+                }
+            }
+        },
+        {
+            "tag": "🇱🇻LV | 🟢 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "77.73.238.211",
+            "server_port": 16109,
+            "uuid": "6bb90b5a-db5b-401d-afa9-49667e75de1e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SaMw05aDLQh_Bb55XStVfvcBinGmCmCrZGqg5yI6s2s",
+                    "short_id": "46ef6b9bc8"
                 }
             }
         },
@@ -1622,7 +1661,7 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 5",
+            "tag": "🇫🇷FR | 🟢 | vless | @Outlinev2rayNG | 7",
             "type": "vless",
             "server": "paisaoutt.outline360bot.com",
             "server_port": 443,
