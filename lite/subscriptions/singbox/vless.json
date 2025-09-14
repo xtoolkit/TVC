@@ -140,7 +140,6 @@
                 "🇺🇸US | 🔴 | vless | @customv2ray | 34",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 35",
                 "🇺🇸US | 🔴 | vless | @UnlimitedDev | 11",
-                "🇺🇸US | 🔴 | vless | @UnlimitedDev | 12",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 9",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 10",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 2",
@@ -160,7 +159,8 @@
                 "🇫🇷FR | 🔴 | vless | @SafeNet_Server | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 1",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 2",
-                "🇦🇪AE | 🔴 | vless | @ConfigsHUB | 19",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 5",
                 "🇮🇷IR | 🔴 | vless | @free1_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 14",
@@ -223,7 +223,6 @@
                 "🇺🇸US | 🔴 | vless | @customv2ray | 34",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 35",
                 "🇺🇸US | 🔴 | vless | @UnlimitedDev | 11",
-                "🇺🇸US | 🔴 | vless | @UnlimitedDev | 12",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 9",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 10",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 2",
@@ -243,7 +242,8 @@
                 "🇫🇷FR | 🔴 | vless | @SafeNet_Server | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 1",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 2",
-                "🇦🇪AE | 🔴 | vless | @ConfigsHUB | 19",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 5",
                 "🇮🇷IR | 🔴 | vless | @free1_vpn | 6",
                 "🇺🇸US | 🔴 | vless | @Outlinev2rayNG | 14",
@@ -1055,27 +1055,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @UnlimitedDev | 12",
-            "type": "vless",
-            "server": "numberland.ir",
-            "server_port": 8080,
-            "uuid": "0a5cb919-247b-4e6c-e1ee-99ae0e58798d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@unlimiteddev----@unlimiteddev-----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimitedev----@unlimitedev----@unlimiteddev----@unlimiteddev?ed=2480",
-                "headers": {
-                    "Host": "numberland.ir"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 9",
             "type": "vless",
             "server": "numberland.ir",
@@ -1465,17 +1444,46 @@
             }
         },
         {
-            "tag": "🇦🇪AE | 🔴 | vless | @ConfigsHUB | 19",
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "93.127.180.92",
-            "server_port": 8443,
-            "uuid": "c2174355-eca6-4be5-91e9-0be20ef6ff1b",
+            "server": "m47a.vip784.com",
+            "server_port": 33801,
+            "uuid": "b9793e0b-b030-4ac6-a503-8f2081d1cada",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "206.81.6.239",
+            "server_port": 443,
+            "uuid": "c2c5b83f-4892-c49f-b9d1-7af232611820",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "androidcentral.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc",
+                    "short_id": "6ea3daaac3d6bede"
+                }
             }
         },
         {
