@@ -121,7 +121,8 @@
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 136",
                 "🇫🇮FI | 🟢 | vmess | @prrofile_purple | 152",
                 "🇷🇺RU | 🟢 | vmess | @prrofile_purple | 154",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 12",
+                "🇬🇧GB | 🟢 | vmess | @ConfigsHUB | 0",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 2",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -159,7 +160,8 @@
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 136",
                 "🇫🇮FI | 🟢 | vmess | @prrofile_purple | 152",
                 "🇷🇺RU | 🟢 | vmess | @prrofile_purple | 154",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 12",
+                "🇬🇧GB | 🟢 | vmess | @ConfigsHUB | 0",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 2",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -467,11 +469,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 12",
+            "tag": "🇬🇧GB | 🟢 | vmess | @ConfigsHUB | 0",
             "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
+            "server": "51.38.64.209",
+            "server_port": 44023,
+            "uuid": "7da457da-ed0f-437d-c81d-6c35885bbea3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -481,6 +483,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 2",
+            "type": "vmess",
+            "server": "fapeng.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fapeng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "fapeng.org"
+                }
             }
         },
         {
