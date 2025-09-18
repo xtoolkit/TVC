@@ -120,7 +120,7 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 145",
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
-                "🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 6",
+                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 15",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -131,9 +131,7 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 2",
                 "❔XX | 🟢 | vmess | @Hope_Net | 3",
                 "🇰🇷KR | 🟢 | vmess | @Hope_Net | 4",
-                "🇸🇪SE | 🟢 | vmess | @Hope_Net | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7"
+                "🇸🇪SE | 🟢 | vmess | @Hope_Net | 5"
             ]
         },
         {
@@ -154,7 +152,7 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 145",
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
-                "🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 6",
+                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 15",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -165,9 +163,7 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 2",
                 "❔XX | 🟢 | vmess | @Hope_Net | 3",
                 "🇰🇷KR | 🟢 | vmess | @Hope_Net | 4",
-                "🇸🇪SE | 🟢 | vmess | @Hope_Net | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7"
+                "🇸🇪SE | 🟢 | vmess | @Hope_Net | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -452,11 +448,11 @@
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 6",
+            "tag": "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 15",
             "type": "vmess",
-            "server": "38.60.199.177",
+            "server": "yichueng.org",
             "server_port": 443,
-            "uuid": "81fd1594-a68e-4bf2-bd46-f8f9ed453db6",
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -469,12 +465,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "",
+                "server_name": "yichueng.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "yichueng.org"
                 }
             }
         },
@@ -749,40 +752,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
-            "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "cbaaabc-abac-abac-abcd-bbacbcacaacb",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7",
-            "type": "vmess",
-            "server": "61.120.9.18",
-            "server_port": 43720,
-            "uuid": "f248d0e9-19f7-ea7f-6659-17a610dfe8d6",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
