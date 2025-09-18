@@ -111,8 +111,8 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 16",
-                "❔XX | 🟢 | vmess | @Hope_Net | 17"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16"
             ]
         },
         {
@@ -124,8 +124,8 @@
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 16",
-                "❔XX | 🟢 | vmess | @Hope_Net | 17"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -284,11 +284,11 @@
             }
         },
         {
-            "tag": "🇰🇷KR | 🟢 | vmess | @Hope_Net | 16",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
             "type": "vmess",
-            "server": "158.180.91.206",
-            "server_port": 46271,
-            "uuid": "f99bfe05-e351-47df-e752-ac0aaea976dc",
+            "server": "172.67.71.160",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -299,22 +299,32 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "obdii.cfd"
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 17",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
             "type": "vmess",
-            "server": "an.hkddisney.org",
+            "server": "104.21.77.29",
             "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "uuid": "8d90c129-4156-4d6c-9115-24df25f26a02",
             "security": "auto",
-            "alter_id": 1,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -335,7 +345,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/linkws",
                 "headers": {
                     "Host": ""
                 }
