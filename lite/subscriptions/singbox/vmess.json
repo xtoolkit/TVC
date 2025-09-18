@@ -110,8 +110,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 5",
-                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 6"
+                "❔XX | 🟢 | vmess | @Hope_Net | 6",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7"
             ]
         },
         {
@@ -122,8 +122,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 5",
-                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 6"
+                "❔XX | 🟢 | vmess | @Hope_Net | 6",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -255,7 +255,24 @@
             }
         },
         {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
+            "type": "vmess",
+            "server": "127.0.0.1",
+            "server_port": 8080,
+            "uuid": "cbaaabc-abac-abac-abcd-bbacbcacaacb",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
             "server": "61.120.9.18",
             "server_port": 43720,
@@ -269,40 +286,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vmess | @Hope_Net | 6",
-            "type": "vmess",
-            "server": "193.160.130.245",
-            "server_port": 443,
-            "uuid": "9b456c2a-f2c1-45e1-87a9-b7628b04bb24",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": ""
-                }
             }
         }
     ],
