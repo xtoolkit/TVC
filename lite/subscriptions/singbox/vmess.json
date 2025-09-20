@@ -107,11 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 4",
+                "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 5",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 11",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13",
-                "🇨🇱CL | 🟢 | vmess | @Hope_Net | 14"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "❔XX | 🟢 | vmess | @Hope_Net | 15"
             ]
         },
         {
@@ -119,11 +120,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 4",
+                "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 5",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 11",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13",
-                "🇨🇱CL | 🟢 | vmess | @Hope_Net | 14"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "❔XX | 🟢 | vmess | @Hope_Net | 15"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -163,7 +165,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 4",
+            "tag": "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 5",
             "type": "vmess",
             "server": "kampong.org",
             "server_port": 443,
@@ -193,6 +195,33 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "kampong.org"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 11",
+            "type": "vmess",
+            "server": "rokna.farsonline24.ir",
+            "server_port": 2096,
+            "uuid": "c2dd76ba-6870-49ec-b8e5-b321f87b0521",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "rokna.farsonline24.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
@@ -255,7 +284,31 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+            "type": "vmess",
+            "server": "104.16.61.8",
+            "server_port": 2052,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/glweidf.sbs\/linkws",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 15",
             "type": "vmess",
             "server": "an.kalavryta.org",
             "server_port": 443,
@@ -285,30 +338,6 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "an.kalavryta.org"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇱CL | 🟢 | vmess | @Hope_Net | 14",
-            "type": "vmess",
-            "server": "172.64.194.76",
-            "server_port": 2082,
-            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/github.com\/Alvin9999",
-                "headers": {
-                    "Host": "172.64.194.76"
                 }
             }
         }
