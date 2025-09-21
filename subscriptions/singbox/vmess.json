@@ -121,8 +121,9 @@
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 118",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 153",
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 1",
-                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 5",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 3",
+                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 5",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 2",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 4",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -136,7 +137,8 @@
                 "❔XX | 🟢 | vmess | @Hope_Net | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 8"
+                "🚩CF | 🟢 | vmess | @Hope_Net | 8",
+                "🇩🇪DE | 🟢 | vmess | @iP_CF | 0"
             ]
         },
         {
@@ -158,8 +160,9 @@
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 118",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 153",
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 1",
-                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 5",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 3",
+                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 5",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 2",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 4",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -173,7 +176,8 @@
                 "❔XX | 🟢 | vmess | @Hope_Net | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 8"
+                "🚩CF | 🟢 | vmess | @Hope_Net | 8",
+                "🇩🇪DE | 🟢 | vmess | @iP_CF | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -485,7 +489,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 5",
+            "tag": "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 5",
             "type": "vmess",
             "server": "kampong.org",
             "server_port": 443,
@@ -519,7 +523,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 3",
+            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 2",
             "type": "vmess",
             "server": null,
             "server_port": 0,
@@ -533,6 +537,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 4",
+            "type": "vmess",
+            "server": "91.134.8.102",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "serkat.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "serkat.org"
+                }
             }
         },
         {
@@ -937,6 +975,40 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "ritchier.info"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @iP_CF | 0",
+            "type": "vmess",
+            "server": "serkat.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "serkat.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "serkat.org"
                 }
             }
         }
