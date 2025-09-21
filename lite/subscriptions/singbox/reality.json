@@ -113,10 +113,10 @@
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇷🇺RU | 🟢 | vless | @customv2ray | 34",
                 "🇺🇸US | 🟢 | vless | @v2rayNG_Matsuri | 8",
+                "🇹🇷TR | 🟢 | vless | @v2rayngvpn | 12",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 4",
                 "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 5",
-                "🇦🇲AM | 🔴 | vless | @ConfigsHUB | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
@@ -134,10 +134,10 @@
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇷🇺RU | 🟢 | vless | @customv2ray | 34",
                 "🇺🇸US | 🟢 | vless | @v2rayNG_Matsuri | 8",
+                "🇹🇷TR | 🟢 | vless | @v2rayngvpn | 12",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 4",
                 "🇩🇪DE | 🔴 | vless | @v2ray1_ng | 5",
-                "🇦🇲AM | 🔴 | vless | @ConfigsHUB | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
@@ -374,6 +374,35 @@
             }
         },
         {
+            "tag": "🇹🇷TR | 🟢 | vless | @v2rayngvpn | 12",
+            "type": "vless",
+            "server": "ytr.amiraizo.com",
+            "server_port": 2560,
+            "uuid": "c7515fa7-6119-4a81-8fef-6d3ea24afffe",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "2hoQE6WBJlr4DHrp7TxqPOT8i24iodEaCQp-qugbD3U",
+                    "short_id": "e41865e506628f44"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
             "type": "vless",
             "server": "45.205.29.218",
@@ -458,42 +487,6 @@
                     "public_key": "YWbuHeDHnHpfJMPsAOIJOIeQgzfCK_47CjY7TbWA5hI",
                     "short_id": "354b9cbe48"
                 }
-            }
-        },
-        {
-            "tag": "🇦🇲AM | 🔴 | vless | @ConfigsHUB | 18",
-            "type": "vless",
-            "server": "armania.gojustore.site",
-            "server_port": 7033,
-            "uuid": "d9a58f30-9335-436d-baa9-27efa4773491",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "telewebion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "iLik9C9our-5dRYuvFtrYOzd1NedgTsqUKew2ogLdgE",
-                    "short_id": "16b6cda7ab793526"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "7034vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
