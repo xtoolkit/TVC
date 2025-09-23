@@ -122,7 +122,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 6",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 4",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 0",
+                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 1",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -138,7 +139,7 @@
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-                "🇨🇦CA | 🟢 | vmess | @iP_CF | 1"
+                "🇩🇪DE | 🟢 | vmess | @iP_CF | 1"
             ]
         },
         {
@@ -161,7 +162,8 @@
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 6",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 4",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 0",
+                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 1",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -177,7 +179,7 @@
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-                "🇨🇦CA | 🟢 | vmess | @iP_CF | 1"
+                "🇩🇪DE | 🟢 | vmess | @iP_CF | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -540,11 +542,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 4",
+            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 0",
             "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
+            "server": "2001:41d0:70e:c100::",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -554,6 +556,57 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "serkat.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "serkat.org"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 1",
+            "type": "vmess",
+            "server": "57.129.59.193",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "serkat.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "serkat.org"
+                }
             }
         },
         {
@@ -1003,7 +1056,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @iP_CF | 1",
+            "tag": "🇩🇪DE | 🟢 | vmess | @iP_CF | 1",
             "type": "vmess",
             "server": "serkat.org",
             "server_port": 443,
