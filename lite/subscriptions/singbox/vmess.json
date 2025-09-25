@@ -109,8 +109,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19"
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 18",
+                "❔XX | 🟢 | vmess | @Hope_Net | 19"
             ]
         },
         {
@@ -120,8 +120,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19"
+                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 18",
+                "❔XX | 🟢 | vmess | @Hope_Net | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -219,35 +219,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇫🇷FR | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "172.64.166.8",
-            "server_port": 2082,
-            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/github.com\/Alvin9999",
-                "headers": {
-                    "Host": "172.64.166.8"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
-            "type": "vmess",
-            "server": "172.67.175.56",
+            "server": "hms04.xmivideo.cfd",
             "server_port": 443,
-            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "uuid": "93ea486a-bada-42a4-ac38-d088b320fa1e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -260,7 +236,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "172.67.175.56",
+                "server_name": "hms04.xmivideo.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -272,7 +248,41 @@
                 "type": "ws",
                 "path": "\/linkws",
                 "headers": {
-                    "Host": "172.67.175.56"
+                    "Host": "hms04.xmivideo.cfd"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 19",
+            "type": "vmess",
+            "server": "e.masjide.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 1,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "e.masjide.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "e.masjide.org"
                 }
             }
         }
