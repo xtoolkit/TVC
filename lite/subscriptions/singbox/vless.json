@@ -158,6 +158,8 @@
                 "🇩🇪DE | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
+                "🇺🇦UA | 🟢 | vless | @ConfigsHUB | 18",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 19",
                 "🇵🇱PL | 🔴 | vless | @Capoit | 12",
                 "🇫🇷FR | 🔴 | vless | @Capoit | 13",
                 "🇳🇱NL | 🔴 | vless | @FreakConfig | 13",
@@ -233,6 +235,8 @@
                 "🇩🇪DE | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
+                "🇺🇦UA | 🟢 | vless | @ConfigsHUB | 18",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 19",
                 "🇵🇱PL | 🔴 | vless | @Capoit | 12",
                 "🇫🇷FR | 🔴 | vless | @Capoit | 13",
                 "🇳🇱NL | 🔴 | vless | @FreakConfig | 13",
@@ -1393,6 +1397,49 @@
             "server": "speedtestcustom.com",
             "server_port": 80,
             "uuid": "66cadee1-3b32-45e9-b8af-fa951510b4a7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇦UA | 🟢 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "185.126.255.180",
+            "server_port": 443,
+            "uuid": "387d6d9a-5594-4b2a-a60d-5b2cb1f57638",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AdkdFL1GILtsxWSOcwdB-budJOiw2cXac8eIPxYIokw",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 19",
+            "type": "vless",
+            "server": "sss92681.tas-bazi.com",
+            "server_port": 443,
+            "uuid": "54801305-3e0e-4d90-8996-b67065155465",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
