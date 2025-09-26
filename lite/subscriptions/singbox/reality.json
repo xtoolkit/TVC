@@ -107,11 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 14",
-                "🇺🇸US | 🟢 | vless | @NIM_VPN_ir | 3",
+                "🇨🇦CA | 🟢 | vless | @NIM_VPN_ir | 3",
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 4",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
+                "❔XX | 🟢 | vless | @customv2ray | 30",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 31",
                 "🇫🇷FR | 🔴 | vless | @ShadowProxy66 | 0",
-                "🇳🇱NL | 🔴 | vless | @FreakConfig | 14",
+                "🇳🇱NL | 🔴 | vless | @FreakConfig | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
@@ -123,11 +125,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 14",
-                "🇺🇸US | 🟢 | vless | @NIM_VPN_ir | 3",
+                "🇨🇦CA | 🟢 | vless | @NIM_VPN_ir | 3",
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 4",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
+                "❔XX | 🟢 | vless | @customv2ray | 30",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 31",
                 "🇫🇷FR | 🔴 | vless | @ShadowProxy66 | 0",
-                "🇳🇱NL | 🔴 | vless | @FreakConfig | 14",
+                "🇳🇱NL | 🔴 | vless | @FreakConfig | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
@@ -183,7 +187,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @NIM_VPN_ir | 3",
+            "tag": "🇨🇦CA | 🟢 | vless | @NIM_VPN_ir | 3",
             "type": "vless",
             "server": "prteam.darkping.net",
             "server_port": 2422,
@@ -270,6 +274,64 @@
             }
         },
         {
+            "tag": "❔XX | 🟢 | vless | @customv2ray | 30",
+            "type": "vless",
+            "server": "[2a01:4f8:1c1a:dc2b::1]",
+            "server_port": 4430,
+            "uuid": "Parsashonam-Bot-21",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5CE4ZpwvR-EmkymzU3V6yeeTcSTCpIBg473J8-6IFnM",
+                    "short_id": "9aa6af3aa2d41f"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @customv2ray | 31",
+            "type": "vless",
+            "server": "FreakConfig.snapfood.org",
+            "server_port": 443,
+            "uuid": "FreakConfig1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vrloCSqsCVu25b3CHtyJ5RWo_nsUxp0PK-3LdLaKJFs",
+                    "short_id": "6993f143e90756"
+                }
+            }
+        },
+        {
             "tag": "🇫🇷FR | 🔴 | vless | @ShadowProxy66 | 0",
             "type": "vless",
             "server": "51.210.181.3",
@@ -299,7 +361,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @FreakConfig | 14",
+            "tag": "🇳🇱NL | 🔴 | vless | @FreakConfig | 15",
             "type": "vless",
             "server": "FreakConfig.snapfood.org",
             "server_port": 443,
