@@ -119,9 +119,11 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 133",
-                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 4",
+                "🇬🇧GB | 🟢 | vmess | @v2ray1_ng | 4",
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 5",
                 "❔XX | 🟢 | vmess | @v2ray1_ng | 6",
+                "🇨🇦CA | 🟢 | vmess | @ConfigsHUB | 0",
+                "🇲🇾MY | 🟢 | vmess | @ConfigsHUB | 1",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -135,7 +137,7 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 6",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "🇩🇪DE | 🟢 | vmess | @iP_CF | 1"
+                "🇫🇷FR | 🟢 | vmess | @iP_CF | 1"
             ]
         },
         {
@@ -155,9 +157,11 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
                 "🇺🇸US | 🟢 | vmess | @prrofile_purple | 133",
-                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 4",
+                "🇬🇧GB | 🟢 | vmess | @v2ray1_ng | 4",
                 "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 5",
                 "❔XX | 🟢 | vmess | @v2ray1_ng | 6",
+                "🇨🇦CA | 🟢 | vmess | @ConfigsHUB | 0",
+                "🇲🇾MY | 🟢 | vmess | @ConfigsHUB | 1",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -171,7 +175,7 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 6",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "🇩🇪DE | 🟢 | vmess | @iP_CF | 1"
+                "🇫🇷FR | 🟢 | vmess | @iP_CF | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -432,7 +436,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 4",
+            "tag": "🇬🇧GB | 🟢 | vmess | @v2ray1_ng | 4",
             "type": "vmess",
             "server": "yichueng.org",
             "server_port": 443,
@@ -514,6 +518,64 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @ConfigsHUB | 0",
+            "type": "vmess",
+            "server": "seribus.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "seribus.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "seribus.org"
+                }
+            }
+        },
+        {
+            "tag": "🇲🇾MY | 🟢 | vmess | @ConfigsHUB | 1",
+            "type": "vmess",
+            "server": "45.89.107.51",
+            "server_port": 20521,
+            "uuid": "3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
             }
         },
         {
@@ -810,7 +872,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @iP_CF | 1",
+            "tag": "🇫🇷FR | 🟢 | vmess | @iP_CF | 1",
             "type": "vmess",
             "server": "serkat.org",
             "server_port": 443,
