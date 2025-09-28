@@ -12,12 +12,14 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | 🟢 | vmess | @v2ray1_ng | 11 = vmess, newyork.cloudflareservervpn.sbs, 2096, username = 8c111c4f-af43-43fe-bbf8-d7e075479557, ws = true, tls = 1, vmess-aead = true, ws-path = /newyork, ws-headers = Host:"newyork.cloudflareservervpn.sbs", skip-cert-verify = true, tfo = false
+🇫🇮FI | 🟢 | vmess | @ConfigsHUB | 19 = vmess, 65.109.217.125, 8443, username = 5a38afce-c5eb-4cb8-8e5e-bb4f03462b44, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 9 = vmess, 172.64.166.8, 2095, username = 18d96190-c10f-448f-a82a-2d36df5c3cde, ws = true, tls = , vmess-aead = true, ws-path = /github.com/Alvin9999, ws-headers = Host:"ip12.6016725.xyz", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @Hope_Net | 10 = vmess, 104.18.14.19, 2082, username = 5f3f09ad-89cb-4e94-a7ad-aa8239913555, ws = true, tls = , vmess-aead = false, ws-path = /github.com/Alvin9999, ws-headers = Host:"ip18.6929198.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @v2ray1_ng | 11,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
-URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @v2ray1_ng | 11,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
-FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @v2ray1_ng | 11,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @v2ray1_ng | 11,🇫🇮FI | 🟢 | vmess | @ConfigsHUB | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 9,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @v2ray1_ng | 11,🇫🇮FI | 🟢 | vmess | @ConfigsHUB | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 9,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @v2ray1_ng | 11,🇫🇮FI | 🟢 | vmess | @ConfigsHUB | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 9,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
