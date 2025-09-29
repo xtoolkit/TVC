@@ -107,9 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇬🇧GB | 🟢 | vmess | @v2ray1_ng | 8",
+                "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 10",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @free1_vpn | 9",
                 "❔XX | 🟢 | vmess | @Hope_Net | 1",
                 "❔XX | 🟢 | vmess | @Hope_Net | 2"
             ]
@@ -119,9 +120,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇬🇧GB | 🟢 | vmess | @v2ray1_ng | 8",
+                "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 10",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @free1_vpn | 9",
                 "❔XX | 🟢 | vmess | @Hope_Net | 1",
                 "❔XX | 🟢 | vmess | @Hope_Net | 2"
             ],
@@ -163,7 +165,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vmess | @v2ray1_ng | 8",
+            "tag": "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 10",
             "type": "vmess",
             "server": "yichueng.org",
             "server_port": 443,
@@ -251,6 +253,40 @@
                 "path": "\/66",
                 "headers": {
                     "Host": "104.26.8.210"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @free1_vpn | 9",
+            "type": "vmess",
+            "server": "newyork.cloudflareservervpn.sbs",
+            "server_port": 2096,
+            "uuid": "8c111c4f-af43-43fe-bbf8-d7e075479557",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "newyork.cloudflareservervpn.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/newyork",
+                "headers": {
+                    "Host": "newyork.cloudflareservervpn.sbs"
                 }
             }
         },
