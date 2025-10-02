@@ -107,12 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 9",
-                "❔XX | 🟢 | vless | @NIM_VPN_ir | 3",
+                "🇨🇦CA | 🟢 | vless | @NIM_VPN_ir | 3",
                 "🇬🇧GB | 🔴 | vless | @XsV2ray | 3",
                 "❔XX | 🔴 | vless | @XsV2ray | 4",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 14",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 15",
-                "🇨🇦CA | 🔴 | vless | @melov2ray | 23",
+                "🇺🇸US | 🔴 | vless | @melov2ray | 23",
                 "🇺🇸US | 🔴 | vless | @melov2ray | 24",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 9",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 18",
@@ -162,6 +162,7 @@
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 10",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇪🇸ES | 🔴 | vless | @Capoit | 12",
                 "🇧🇪BE | 🔴 | vless | @Capoit | 13",
                 "🇺🇸US | 🔴 | vless | @FreakConfig | 18",
@@ -185,12 +186,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 9",
-                "❔XX | 🟢 | vless | @NIM_VPN_ir | 3",
+                "🇨🇦CA | 🟢 | vless | @NIM_VPN_ir | 3",
                 "🇬🇧GB | 🔴 | vless | @XsV2ray | 3",
                 "❔XX | 🔴 | vless | @XsV2ray | 4",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 14",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 15",
-                "🇨🇦CA | 🔴 | vless | @melov2ray | 23",
+                "🇺🇸US | 🔴 | vless | @melov2ray | 23",
                 "🇺🇸US | 🔴 | vless | @melov2ray | 24",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 9",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 18",
@@ -240,6 +241,7 @@
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 10",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇪🇸ES | 🔴 | vless | @Capoit | 12",
                 "🇧🇪BE | 🔴 | vless | @Capoit | 13",
                 "🇺🇸US | 🔴 | vless | @FreakConfig | 18",
@@ -307,7 +309,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @NIM_VPN_ir | 3",
+            "tag": "🇨🇦CA | 🟢 | vless | @NIM_VPN_ir | 3",
             "type": "vless",
             "server": "prteam.darkping.net",
             "server_port": 2422,
@@ -443,7 +445,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @melov2ray | 23",
+            "tag": "🇺🇸US | 🔴 | vless | @melov2ray | 23",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -1510,9 +1512,40 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "172.66.40.99",
-            "server_port": 8880,
-            "uuid": "d447f445-8ac8-46ad-8f93-474a8c57c738",
+            "server": "104.25.35.227",
+            "server_port": 443,
+            "uuid": "060a8fe8-7175-4ded-94a5-d9808bc645b6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cf.vless.sandesh.fr",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "cf.vless.sandesh.fr"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
+            "type": "vless",
+            "server": "stock.hostmonit.com",
+            "server_port": 80,
+            "uuid": "0d7bff32-241b-4f97-af9a-f8e7c7fe8ce3",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1522,9 +1555,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420----@EXPRESSVPN_420",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "172.66.40.99"
+                    "Host": "stock.hostmonit.com"
                 }
             }
         },
