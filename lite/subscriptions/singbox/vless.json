@@ -144,7 +144,8 @@
                 "🇺🇸US | 🔴 | vless | @vmessorg | 6",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 7",
                 "🇦🇿AZ | 🔴 | vless | @v2rayNG_Matsuri | 12",
-                "🇹🇷TR | 🔴 | vless | @v2rayngvpn | 13",
+                "🇺🇸US | 🔴 | vless | @v2rayngvpn | 13",
+                "🇹🇷TR | 🔴 | vless | @v2rayngvpn | 14",
                 "🇮🇷IR | 🔴 | vless | @FalconPolV2rayNG | 8",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 9",
                 "🇺🇸US | 🔴 | vless | @ServerNett | 0",
@@ -160,7 +161,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 300",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 10",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 17",
                 "🇹🇷TR | 🔴 | vless | @free1_vpn | 10",
                 "🇪🇸ES | 🔴 | vless | @Capoit | 15",
                 "🇧🇪BE | 🔴 | vless | @Capoit | 16",
@@ -222,7 +223,8 @@
                 "🇺🇸US | 🔴 | vless | @vmessorg | 6",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 7",
                 "🇦🇿AZ | 🔴 | vless | @v2rayNG_Matsuri | 12",
-                "🇹🇷TR | 🔴 | vless | @v2rayngvpn | 13",
+                "🇺🇸US | 🔴 | vless | @v2rayngvpn | 13",
+                "🇹🇷TR | 🔴 | vless | @v2rayngvpn | 14",
                 "🇮🇷IR | 🔴 | vless | @FalconPolV2rayNG | 8",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 9",
                 "🇺🇸US | 🔴 | vless | @ServerNett | 0",
@@ -238,7 +240,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 300",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 10",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 17",
                 "🇹🇷TR | 🔴 | vless | @free1_vpn | 10",
                 "🇪🇸ES | 🔴 | vless | @Capoit | 15",
                 "🇧🇪BE | 🔴 | vless | @Capoit | 16",
@@ -1151,7 +1153,28 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @v2rayngvpn | 13",
+            "tag": "🇺🇸US | 🔴 | vless | @v2rayngvpn | 13",
+            "type": "vless",
+            "server": "172.66.40.99",
+            "server_port": 8880,
+            "uuid": "2232318f-0a4d-423b-89ef-71f711e4ef86",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN",
+                "headers": {
+                    "Host": "172.66.40.99"
+                }
+            }
+        },
+        {
+            "tag": "🇹🇷TR | 🔴 | vless | @v2rayngvpn | 14",
             "type": "vless",
             "server": "panel-tr.turkcloud.ir",
             "server_port": 8081,
@@ -1486,23 +1509,31 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "91.99.104.102",
-            "server_port": 443,
-            "uuid": "a9aca3a3-6b75-4d0c-9b1f-1b84b884fae8",
-            "flow": "",
+            "server": "masterserver1.byte-server.ir",
+            "server_port": 1331,
+            "uuid": "34a89207-93fd-4df8-9cdf-355a0c3426e4",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws?ed",
-                "headers": {
-                    "Host": "91.99.104.102"
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "l_LBBQyt6du7ZgBadETGtx8zLgUd36-4mZVCSI9qqwA",
+                    "short_id": "077dc29a23d311f2"
                 }
             }
         },
