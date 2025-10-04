@@ -112,8 +112,8 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vmess | @free1_vpn | 9",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 6",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7"
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 7",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 8"
             ]
         },
         {
@@ -126,8 +126,8 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vmess | @free1_vpn | 9",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 6",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7"
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 7",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -293,7 +293,41 @@
             }
         },
         {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 6",
+            "tag": "🇩🇪DE | 🟢 | vmess | @Hope_Net | 7",
+            "type": "vmess",
+            "server": "fapeng.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 1,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fapeng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "fapeng.org"
+                }
+            }
+        },
+        {
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
             "server": "rcyux-g01.jp03-7d22-vm0.entry.fr0307a.art",
             "server_port": 21581,
@@ -317,23 +351,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7",
-            "type": "vmess",
-            "server": "f0jof-g01.jp05-6786-vm0.entry.fr0307a.art",
-            "server_port": 46482,
-            "uuid": "02bf7660-c38f-30b4-b740-2f9b4d717704",
-            "security": "auto",
-            "alter_id": 1,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
