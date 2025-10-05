@@ -108,12 +108,11 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 1",
-                "🇦🇺AU | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 9",
-                "🇬🇧GB | 🟢 | vmess | @FreakConfig | 21"
+                "🇨🇦CA | 🟢 | vmess | @FreakConfig | 20"
             ]
         },
         {
@@ -122,12 +121,11 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇹🇷TR | 🟢 | vmess | @ShadowProxy66 | 1",
-                "🇦🇺AU | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 9",
-                "🇬🇧GB | 🟢 | vmess | @FreakConfig | 21"
+                "🇨🇦CA | 🟢 | vmess | @FreakConfig | 20"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -172,23 +170,6 @@
             "server": "164.138.202.114",
             "server_port": 21639,
             "uuid": "6d3aba4a-2c2c-49ca-9515-de9d0b00d5a5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇦🇺AU | 🟢 | vmess | @ConfigsHUB | 17",
-            "type": "vmess",
-            "server": "46.250.243.56",
-            "server_port": 50394,
-            "uuid": "a75f3f95-ad4e-4498-fc72-dd740dd02bfc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -259,9 +240,43 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+            "type": "vmess",
+            "server": "172.64.171.223",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "172.64.171.223",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "172.64.171.223"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "104.19.46.103",
+            "server": "162.159.140.56",
             "server_port": 2095,
             "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
             "security": "auto",
@@ -278,41 +293,14 @@
                 "type": "ws",
                 "path": "\/github.com\/Alvin9999",
                 "headers": {
-                    "Host": "104.19.46.103"
+                    "Host": "162.159.140.56"
                 }
             }
         },
         {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "🇨🇦CA | 🟢 | vmess | @FreakConfig | 20",
             "type": "vmess",
-            "server": "rgytk-g01.jp06-7c5a-vm0.entry.fr0307a.art",
-            "server_port": 28783,
-            "uuid": "02bf7660-c38f-30b4-b740-2f9b4d717704",
-            "security": "auto",
-            "alter_id": 1,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "rgytk-g01.jp06-7c5a-vm0.entry.fr0307a.art",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | vmess | @FreakConfig | 21",
-            "type": "vmess",
-            "server": "yichueng.org",
+            "server": "lammaland.org",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
@@ -327,7 +315,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yichueng.org",
+                "server_name": "lammaland.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -339,7 +327,7 @@
                 "type": "ws",
                 "path": "\/linkvws",
                 "headers": {
-                    "Host": "yichueng.org"
+                    "Host": "lammaland.org"
                 }
             }
         }
