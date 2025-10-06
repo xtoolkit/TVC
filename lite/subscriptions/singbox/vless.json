@@ -160,10 +160,10 @@
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
                 "🇩🇪DE | 🔴 | vless | @vmess_vless_v2rayng | 17",
                 "🇮🇳IN | 🔴 | vless | @VmessProtocol | 4",
-                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 291",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 292",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 288",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 16",
                 "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 9",
                 "🇦🇹AT | 🔴 | vless | @Capoit | 16",
@@ -243,10 +243,10 @@
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
                 "🇩🇪DE | 🔴 | vless | @vmess_vless_v2rayng | 17",
                 "🇮🇳IN | 🔴 | vless | @VmessProtocol | 4",
-                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 291",
-                "🇺🇸US | 🔴 | vless | @DailyV2RY | 292",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 288",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 16",
                 "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 9",
                 "🇦🇹AT | 🔴 | vless | @Capoit | 16",
@@ -1504,11 +1504,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @DailyV2RY | 291",
+            "tag": "🇩🇪DE | 🔴 | vless | @DailyV2RY | 288",
             "type": "vless",
-            "server": "91.99.104.102",
+            "server": "91.99.150.201",
             "server_port": 443,
-            "uuid": "a9aca3a3-6b75-4d0c-9b1f-1b84b884fae8",
+            "uuid": "9eeaebce-523f-4fa2-a4b9-547f86159cf1",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1522,20 +1522,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 292",
-            "type": "vless",
-            "server": "m62a.vip784.com",
-            "server_port": 33801,
-            "uuid": "f5e384e0-676a-4f48-aaa1-7e2c83df7127",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -1567,24 +1553,46 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+            "tag": "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 16",
             "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 80,
-            "uuid": "9dde0cfb-2f92-432e-9c52-6d2dec6803bb",
-            "flow": "",
+            "server": "nld19.freednet.org",
+            "server_port": 443,
+            "uuid": "3dc1f5cf-799b-4407-b468-2c4c57f83813",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "104.17.147.22"
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cybo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
+                    "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+            "type": "vless",
+            "server": "104.18.26.94",
+            "server_port": 80,
+            "uuid": "bc0a2570-d5fb-4906-b0f0-d47cdcd0a381",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
