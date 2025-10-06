@@ -124,7 +124,6 @@
                 "🇨🇿CZ | 🟢 | vmess | @prrofile_purple | 126",
                 "🇫🇷FR | 🟢 | vmess | @customv2ray | 19",
                 "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 0",
-                "🇮🇳IN | 🟢 | vmess | @ConfigsHUB | 11",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -137,8 +136,8 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 4",
                 "🚩CF | 🟢 | vmess | @Hope_Net | 5",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 6",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇫🇷FR | 🟢 | vmess | @FreakConfig | 11",
+                "🇺🇸US | 🟢 | vmess | @FreakConfig | 0",
+                "🇵🇱PL | 🟢 | vmess | @FreakConfig | 12",
                 "🇩🇪DE | 🟢 | vmess | @iP_CF | 6"
             ]
         },
@@ -164,7 +163,6 @@
                 "🇨🇿CZ | 🟢 | vmess | @prrofile_purple | 126",
                 "🇫🇷FR | 🟢 | vmess | @customv2ray | 19",
                 "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 0",
-                "🇮🇳IN | 🟢 | vmess | @ConfigsHUB | 11",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -177,8 +175,8 @@
                 "🚩CF | 🟢 | vmess | @Hope_Net | 4",
                 "🚩CF | 🟢 | vmess | @Hope_Net | 5",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 6",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇫🇷FR | 🟢 | vmess | @FreakConfig | 11",
+                "🇺🇸US | 🟢 | vmess | @FreakConfig | 0",
+                "🇵🇱PL | 🟢 | vmess | @FreakConfig | 12",
                 "🇩🇪DE | 🟢 | vmess | @iP_CF | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -603,30 +601,6 @@
             }
         },
         {
-            "tag": "🇮🇳IN | 🟢 | vmess | @ConfigsHUB | 11",
-            "type": "vmess",
-            "server": "152.67.8.205",
-            "server_port": 80,
-            "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
             "tag": "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
             "type": "vmess",
             "server": "45.199.138.217",
@@ -941,11 +915,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @FreakConfig | 0",
             "type": "vmess",
-            "server": "108.181.200.220",
-            "server_port": 17163,
-            "uuid": "d54814a1-7a93-45f8-9117-db317a25d100",
+            "server": "jamekk.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -955,10 +929,27 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jamekk.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "jamekk.org"
+                }
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vmess | @FreakConfig | 11",
+            "tag": "🇵🇱PL | 🟢 | vmess | @FreakConfig | 12",
             "type": "vmess",
             "server": "kampong.org",
             "server_port": 443,
