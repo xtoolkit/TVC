@@ -111,7 +111,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "❔XX | 🟢 | vmess | @Hope_Net | 5",
-                "🇵🇱PL | 🟢 | vmess | @FreakConfig | 11"
+                "🇩🇪DE | 🟢 | vmess | @FreakConfig | 9",
+                "🇬🇧GB | 🟢 | vmess | @FreakConfig | 10"
             ]
         },
         {
@@ -123,7 +124,8 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
                 "❔XX | 🟢 | vmess | @Hope_Net | 5",
-                "🇵🇱PL | 🟢 | vmess | @FreakConfig | 11"
+                "🇩🇪DE | 🟢 | vmess | @FreakConfig | 9",
+                "🇬🇧GB | 🟢 | vmess | @FreakConfig | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -262,9 +264,9 @@
             }
         },
         {
-            "tag": "🇵🇱PL | 🟢 | vmess | @FreakConfig | 11",
+            "tag": "🇩🇪DE | 🟢 | vmess | @FreakConfig | 9",
             "type": "vmess",
-            "server": "jamekk.org",
+            "server": "kampong.org",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
@@ -279,7 +281,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "jamekk.org",
+                "server_name": "kampong.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -291,7 +293,41 @@
                 "type": "ws",
                 "path": "\/linkvws",
                 "headers": {
-                    "Host": "jamekk.org"
+                    "Host": "kampong.org"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vmess | @FreakConfig | 10",
+            "type": "vmess",
+            "server": "57.128.189.143",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lammaland.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "lammaland.org"
                 }
             }
         }
