@@ -107,11 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇨🇦CA | 🟢 | vmess | @DailyV2RY | 260",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
-                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 14",
-                "🇺🇸US | 🟢 | vmess | @iP_CF | 6"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "🇩🇪DE | 🟢 | vmess | @FreakConfig | 13",
+                "🇩🇪DE | 🟢 | vmess | @iP_CF | 6"
             ]
         },
         {
@@ -119,11 +121,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇨🇦CA | 🟢 | vmess | @DailyV2RY | 260",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
-                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 14",
-                "🇺🇸US | 🟢 | vmess | @iP_CF | 6"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "🇩🇪DE | 🟢 | vmess | @FreakConfig | 13",
+                "🇩🇪DE | 🟢 | vmess | @iP_CF | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -160,6 +164,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @DailyV2RY | 260",
+            "type": "vmess",
+            "server": "148.113.153.109",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yichueng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "yichueng.org"
+                }
             }
         },
         {
@@ -223,41 +261,7 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": "38.14.107.233",
-            "server_port": 38003,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/path\/340434130032",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vmess | @Hope_Net | 14",
-            "type": "vmess",
-            "server": "23.162.152.177",
+            "server": "kalavryta.org",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
@@ -272,7 +276,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "",
+                "server_name": "kalavryta.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -284,12 +288,80 @@
                 "type": "ws",
                 "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "kalavryta.org"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @iP_CF | 6",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+            "type": "vmess",
+            "server": "172.67.71.160",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @FreakConfig | 13",
+            "type": "vmess",
+            "server": "jamekk.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jamekk.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "jamekk.org"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @iP_CF | 6",
             "type": "vmess",
             "server": "serkat.org",
             "server_port": 443,
