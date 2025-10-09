@@ -119,8 +119,9 @@ dns:
 
 proxies:
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18","type":"vmess","server":"91.107.157.89","port":"8880","cipher":"auto","uuid":"eb4a1b6f-80a7-41c2-9173-dde2c204d333","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇱🇻LV | 🟢 | vmess | @DeamNet_Proxy | 15","type":"vmess","server":"216.173.69.250","port":"8443","cipher":"auto","uuid":"91382092-2330-455b-8a1c-9c129cfe661a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"216.173.69.250"}}}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"❔XX | 🟢 | vmess | @Hope_Net | 14","type":"vmess","server":"denc36.xtooltech.cfd","port":"443","cipher":"auto","uuid":"b321fd5d-e6ec-4293-a644-164e3885f52e","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"adenc36v.xtooltech.cfd"}}}
   - {"name":"🇸🇬SG | 🟢 | vmess | @FreakConfig | 11","type":"vmess","server":"62.146.235.12","port":"550","cipher":"auto","uuid":"48b986d8-7da2-47a2-85de-2306c9259953","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
@@ -129,8 +130,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18'
+      - '🇱🇻LV | 🟢 | vmess | @DeamNet_Proxy | 15'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 14'
       - '🇸🇬SG | 🟢 | vmess | @FreakConfig | 11'
   - name: URL-TEST
     type: url-test
@@ -139,8 +141,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18'
+      - '🇱🇻LV | 🟢 | vmess | @DeamNet_Proxy | 15'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 14'
       - '🇸🇬SG | 🟢 | vmess | @FreakConfig | 11'
   - name: FALLBACK
     type: fallback
@@ -148,8 +151,9 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18'
+      - '🇱🇻LV | 🟢 | vmess | @DeamNet_Proxy | 15'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 14'
       - '🇸🇬SG | 🟢 | vmess | @FreakConfig | 11'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
