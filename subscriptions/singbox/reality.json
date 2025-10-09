@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🔴 | vless | @EliV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 0",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 6",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 10",
@@ -136,13 +137,11 @@
                 "🇷🇺RU | 🟢 | vless | @customv2ray | 24",
                 "🇷🇺RU | 🟢 | vless | @customv2ray | 27",
                 "🇷🇺RU | 🟢 | vless | @customv2ray | 32",
-                "🇨🇭CH | 🟢 | vless | @v2rayngvpn | 1",
-                "❔XX | 🟢 | vless | @v2rayngvpn | 2",
-                "🇫🇷FR | 🔴 | vless | @v2rayngvpn | 15",
-                "🇷🇴RO | 🟢 | vless | @v2rayngvpn | 17",
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 16",
+                "🇨🇭CH | 🟢 | vless | @v2rayngvpn | 3",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 4",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 15",
                 "🇷🇺RU | 🟢 | vless | @free1_vpn | 11",
-                "🇰🇿KZ | 🟢 | vless | @FreakConfig | 6",
+                "🇰🇿KZ | 🟢 | vless | @FreakConfig | 0",
                 "🇺🇸US | 🟢 | vless | @iP_CF | 5",
                 "🇩🇪DE | 🔴 | vless | @nofiltering2 | 5",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
@@ -170,6 +169,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🔴 | vless | @EliV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 0",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 6",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 10",
@@ -200,13 +200,11 @@
                 "🇷🇺RU | 🟢 | vless | @customv2ray | 24",
                 "🇷🇺RU | 🟢 | vless | @customv2ray | 27",
                 "🇷🇺RU | 🟢 | vless | @customv2ray | 32",
-                "🇨🇭CH | 🟢 | vless | @v2rayngvpn | 1",
-                "❔XX | 🟢 | vless | @v2rayngvpn | 2",
-                "🇫🇷FR | 🔴 | vless | @v2rayngvpn | 15",
-                "🇷🇴RO | 🟢 | vless | @v2rayngvpn | 17",
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 16",
+                "🇨🇭CH | 🟢 | vless | @v2rayngvpn | 3",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 4",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 15",
                 "🇷🇺RU | 🟢 | vless | @free1_vpn | 11",
-                "🇰🇿KZ | 🟢 | vless | @FreakConfig | 6",
+                "🇰🇿KZ | 🟢 | vless | @FreakConfig | 0",
                 "🇺🇸US | 🟢 | vless | @iP_CF | 5",
                 "🇩🇪DE | 🔴 | vless | @nofiltering2 | 5",
                 "❔XX | 🔴 | vless | @vpn_go67 | 7",
@@ -248,6 +246,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @EliV2ray | 0",
+            "type": "vless",
+            "server": "crocodilesrver.ir",
+            "server_port": 8443,
+            "uuid": "join-ELiV2RAY",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7BoCcBCb-cYVcE_3z3qcF-ZzOlezFqR-NkwkecMC6A8",
+                    "short_id": "930fb8b1d8aac565"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @Parsashonam | 0",
@@ -1134,7 +1161,7 @@
             }
         },
         {
-            "tag": "🇨🇭CH | 🟢 | vless | @v2rayngvpn | 1",
+            "tag": "🇨🇭CH | 🟢 | vless | @v2rayngvpn | 3",
             "type": "vless",
             "server": "sw.baziir.ir",
             "server_port": 443,
@@ -1163,7 +1190,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @v2rayngvpn | 2",
+            "tag": "❔XX | 🟢 | vless | @v2rayngvpn | 4",
             "type": "vless",
             "server": "[2a03:b0c0:3:f0:0:1:4139:b000]",
             "server_port": 9696,
@@ -1192,11 +1219,11 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🔴 | vless | @v2rayngvpn | 15",
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 15",
             "type": "vless",
-            "server": "kiliyanmbappe7.vtuix.ir",
-            "server_port": 7033,
-            "uuid": "6bbe1d1f-8f92-4b80-b947-767be682034b",
+            "server": "185.113.10.132",
+            "server_port": 8650,
+            "uuid": "ae9f99cf-bfbf-4ed0-9504-64da0f724669",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1206,72 +1233,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "telewebion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "iLik9C9our-5dRYuvFtrYOzd1NedgTsqUKew2ogLdgE",
-                    "short_id": "16b6cda7ab793526"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "7034vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇷🇴RO | 🟢 | vless | @v2rayngvpn | 17",
-            "type": "vless",
-            "server": "31.6.1.187",
-            "server_port": 27229,
-            "uuid": "2bd64599-c483-420b-bc1b-709f2388ce12",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "store.steampowered.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "1_vS_JKpOvJnqPUDyaREbXWd5M59bIIKsNyV5Kt0uD8",
-                    "short_id": "cd1f804d"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 16",
-            "type": "vless",
-            "server": "de.nitroo-tech.ru",
-            "server_port": 443,
-            "uuid": "cd79807f-bcef-46b8-93b6-229676a0c1a0",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
+                "server_name": "cloudflare.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1280,8 +1242,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "y_AlGiUJiCRWCT8FyrfUm-Cmpm0bl0cSUMRP3VZ9X0I",
-                    "short_id": "89dbda1a1c9369"
+                    "public_key": "YWbuHeDHnHpfJMPsAOIJOIeQgzfCK_47CjY7TbWA5hI",
+                    "short_id": "354b9cbe48"
                 }
             }
         },
@@ -1315,7 +1277,7 @@
             }
         },
         {
-            "tag": "🇰🇿KZ | 🟢 | vless | @FreakConfig | 6",
+            "tag": "🇰🇿KZ | 🟢 | vless | @FreakConfig | 0",
             "type": "vless",
             "server": "91.147.92.153",
             "server_port": 443,
