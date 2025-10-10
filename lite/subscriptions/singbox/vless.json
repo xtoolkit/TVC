@@ -114,7 +114,7 @@
                 "❔XX | 🔴 | vless | @XsV2ray | 4",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 14",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 15",
-                "🇺🇸US | 🔴 | vless | @melov2ray | 7",
+                "🇺🇸US | 🔴 | vless | @melov2ray | 12",
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 8",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 17",
                 "🇺🇸US | 🔴 | vless | @shh_proxy | 10",
@@ -158,6 +158,8 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
+                "🇫🇷FR | 🟢 | vless | @ConfigsHUB | 18",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 9",
                 "🇫🇷FR | 🔴 | vless | @Capoit | 16",
                 "🇨🇦CA | 🔴 | vless | @Capoit | 17",
@@ -188,7 +190,7 @@
                 "❔XX | 🔴 | vless | @XsV2ray | 4",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 14",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 15",
-                "🇺🇸US | 🔴 | vless | @melov2ray | 7",
+                "🇺🇸US | 🔴 | vless | @melov2ray | 12",
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 8",
                 "🇺🇸US | 🔴 | vless | @ARv2ray | 17",
                 "🇺🇸US | 🔴 | vless | @shh_proxy | 10",
@@ -232,6 +234,8 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
+                "🇫🇷FR | 🟢 | vless | @ConfigsHUB | 18",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 9",
                 "🇫🇷FR | 🔴 | vless | @Capoit | 16",
                 "🇨🇦CA | 🔴 | vless | @Capoit | 17",
@@ -470,11 +474,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @melov2ray | 7",
+            "tag": "🇺🇸US | 🔴 | vless | @melov2ray | 12",
             "type": "vless",
             "server": "tgju.org",
             "server_port": 80,
-            "uuid": "539bccb6-2a84-4464-b99e-ea781f2fdaa6",
+            "uuid": "85d892d9-b1c0-4c63-b10c-14ca0c21ffc0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1421,6 +1425,64 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "rack4.biseda2.eu",
+            "server_port": 443,
+            "uuid": "3fc4876d-9b5a-4c78-9504-33d054c49e3f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "rack4.biseda2.eu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "WNcXg-3WpjyiJ0bZiQ9xeQz954-l8DHWUa2tikS2WWg",
+                    "short_id": "7e66"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 19",
+            "type": "vless",
+            "server": "94.143.231.62",
+            "server_port": 443,
+            "uuid": "2e532561-7a61-4fdf-a534-706682c2e209",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "deepl.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "V6i1V9804ZfgT8nutUwDs5IDQdcY9pK5uO075SW4ml4",
+                    "short_id": "2d46a79deebf50fd"
+                }
             }
         },
         {
