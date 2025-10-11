@@ -106,10 +106,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @Parsashonam | 10",
+                "🇩🇪DE | 🔴 | vless | @Parsashonam | 8",
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 3",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇭🇰HK | 🟢 | vless | @v2rayngvpn | 11",
+                "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 17",
                 "🇰🇿KZ | 🟢 | vless | @FreakConfig | 6",
                 "🇺🇸US | 🟢 | vless | @iP_CF | 5",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -122,10 +123,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @Parsashonam | 10",
+                "🇩🇪DE | 🔴 | vless | @Parsashonam | 8",
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 3",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇭🇰HK | 🟢 | vless | @v2rayngvpn | 11",
+                "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 17",
                 "🇰🇿KZ | 🟢 | vless | @FreakConfig | 6",
                 "🇺🇸US | 🟢 | vless | @iP_CF | 5",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
@@ -154,11 +156,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @Parsashonam | 10",
+            "tag": "🇩🇪DE | 🔴 | vless | @Parsashonam | 8",
             "type": "vless",
             "server": "91.99.16.244",
             "server_port": 443,
-            "uuid": "Parsashonam-311",
+            "uuid": "Parsashonam-312",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -266,6 +268,35 @@
                     "enabled": true,
                     "public_key": "htcthWNaaiAyVoF9U8aN4jS75fQpNxcbis9KyPCs70o",
                     "short_id": "b94c"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 17",
+            "type": "vless",
+            "server": "45.15.127.196",
+            "server_port": 443,
+            "uuid": "6d2e2298-7bef-476f-b06d-6062980d75db",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU",
+                    "short_id": ""
                 }
             }
         },
