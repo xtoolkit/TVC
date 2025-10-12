@@ -107,12 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2",
+                "🇬🇧GB | 🟢 | vmess | @ShadowProxy66 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13",
-                "❔XX | 🟢 | vmess | @Hope_Net | 14",
-                "🇫🇷FR | 🟢 | vmess | @iP_CF | 7"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "❔XX | 🟢 | vmess | @Hope_Net | 15",
+                "🇩🇪DE | 🟢 | vmess | @iP_CF | 7"
             ]
         },
         {
@@ -120,12 +120,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2",
+                "🇬🇧GB | 🟢 | vmess | @ShadowProxy66 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13",
-                "❔XX | 🟢 | vmess | @Hope_Net | 14",
-                "🇫🇷FR | 🟢 | vmess | @iP_CF | 7"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+                "❔XX | 🟢 | vmess | @Hope_Net | 15",
+                "🇩🇪DE | 🟢 | vmess | @iP_CF | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -165,7 +165,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2",
+            "tag": "🇬🇧GB | 🟢 | vmess | @ShadowProxy66 | 2",
             "type": "vmess",
             "server": "pelang.org",
             "server_port": 443,
@@ -257,7 +257,41 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
+            "type": "vmess",
+            "server": "an.kalavryta.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 1,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "an.kalavryta.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "an.kalavryta.org"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 15",
             "type": "vmess",
             "server": "bs.masjidd.homes",
             "server_port": 443,
@@ -291,24 +325,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 14",
-            "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "aaccabb-baca-bcaa-dabc-accacbbababc",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vmess | @iP_CF | 7",
+            "tag": "🇩🇪DE | 🟢 | vmess | @iP_CF | 7",
             "type": "vmess",
             "server": "serkat.org",
             "server_port": 443,
