@@ -161,7 +161,7 @@
                 "🇱🇹LT | 🔴 | vless | @VmessProtocol | 8",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 13",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 19",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇦🇺AU | 🔴 | vless | @free1_vpn | 6",
                 "🇩🇪DE | 🔴 | vless | @Capoit | 13",
                 "🇺🇸US | 🔴 | vless | @Capoit | 14",
@@ -240,7 +240,7 @@
                 "🇱🇹LT | 🔴 | vless | @VmessProtocol | 8",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 13",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 19",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇦🇺AU | 🔴 | vless | @free1_vpn | 6",
                 "🇩🇪DE | 🔴 | vless | @Capoit | 13",
                 "🇺🇸US | 🔴 | vless | @Capoit | 14",
@@ -1516,17 +1516,34 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 19",
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "91.98.22.20",
-            "server_port": 22933,
-            "uuid": "3c1a04bb-165a-476d-af02-3dc5590f8742",
+            "server": "172.66.40.99",
+            "server_port": 443,
+            "uuid": "telegram-id-Arfilter",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.arfilter.blog",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "headers": {
+                    "Host": "www.arfilter.blog"
+                }
             }
         },
         {
