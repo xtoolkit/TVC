@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇹🇭TH | 🟢 | vmess | @DeamNet_Proxy | 18 = vmess, 185.84.161.150, 20086, username = ebba0676-e05a-49ec-8344-d96d749e01c0, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 18 = vmess, speed.cloudflare.com, 80, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = , vmess-aead = true, ws-path = /glweidf.sbs/linkws, ws-headers = Host:"7ehhjdelicate-unit-e634.bowik41429.workers.dev", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇹🇭TH | 🟢 | vmess | @DeamNet_Proxy | 18,❔XX | 🟢 | vmess | @yaney_01 | 4
-URL-TEST = url-test,🇹🇭TH | 🟢 | vmess | @DeamNet_Proxy | 18,❔XX | 🟢 | vmess | @yaney_01 | 4
-FALLBACK = fallback,🇹🇭TH | 🟢 | vmess | @DeamNet_Proxy | 18,❔XX | 🟢 | vmess | @yaney_01 | 4
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 18
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 18
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
