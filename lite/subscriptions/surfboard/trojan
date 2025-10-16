@@ -11,13 +11,16 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14 = trojan, 52.29.184.35, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇩🇪DE | 🟢 | trojan | @DirectVPN | 14 = trojan, 52.29.184.35, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇺🇸US | 🟢 | trojan | @ConfigsHUB | 17 = trojan, 151.101.66.228, 443, password = b98aec40-e52c-4e26-87d5-c406fe342dd7, udp-delay = true, skip-cert-verify = false, sni = seminarsinmcb.faculty.ucdavis.edu, ws = false
+🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14 = trojan, 3.120.122.197, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15 = trojan, 52.29.184.35, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 14 = trojan, 3.120.122.197, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 15 = trojan, 52.29.184.35, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇵🇱PL | 🔴 | trojan | @ConfigsHUB | 16 = trojan, 91.206.179.250, 443, password = 3648425794742788096, udp-delay = true, skip-cert-verify = false, ws = false
+🇺🇸US | 🔴 | trojan | @ConfigsHUB | 17 = trojan, 162.159.44.217, 443, password = blue2024, udp-delay = true, skip-cert-verify = false, sni = ta.promote.icu, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇺🇸US | 🟢 | trojan | @ConfigsHUB | 17
-URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇺🇸US | 🟢 | trojan | @ConfigsHUB | 17
-FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇺🇸US | 🟢 | trojan | @ConfigsHUB | 17
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15,🇵🇱PL | 🔴 | trojan | @ConfigsHUB | 16,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 17
+URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15,🇵🇱PL | 🔴 | trojan | @ConfigsHUB | 16,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 17
+FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15,🇵🇱PL | 🔴 | trojan | @ConfigsHUB | 16,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
