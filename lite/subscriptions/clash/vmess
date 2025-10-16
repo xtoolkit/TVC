@@ -120,7 +120,6 @@ dns:
 proxies:
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇱🇻LV | 🟢 | vmess | @DeamNet_Proxy | 14","type":"vmess","server":"216.173.69.250","port":"8443","cipher":"auto","uuid":"91382092-2330-455b-8a1c-9c129cfe661a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"google.com"}}}
-  - {"name":"🇫🇮FI | 🟢 | vmess | @ConfigsHUB | 17","type":"vmess","server":"46.62.214.228","port":"8081","cipher":"auto","uuid":"c95e701f-0f45-40dd-9fd6-be5e45ef6275","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +129,6 @@ proxy-groups:
       - FALLBACK
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
       - '🇱🇻LV | 🟢 | vmess | @DeamNet_Proxy | 14'
-      - '🇫🇮FI | 🟢 | vmess | @ConfigsHUB | 17'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
   - name: URL-TEST
     type: url-test
@@ -140,7 +138,6 @@ proxy-groups:
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
       - '🇱🇻LV | 🟢 | vmess | @DeamNet_Proxy | 14'
-      - '🇫🇮FI | 🟢 | vmess | @ConfigsHUB | 17'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
   - name: FALLBACK
     type: fallback
@@ -149,7 +146,6 @@ proxy-groups:
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
       - '🇱🇻LV | 🟢 | vmess | @DeamNet_Proxy | 14'
-      - '🇫🇮FI | 🟢 | vmess | @ConfigsHUB | 17'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
