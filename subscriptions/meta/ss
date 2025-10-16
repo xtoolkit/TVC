@@ -124,9 +124,9 @@ proxies:
   - {"name":"🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 9","type":"ss","server":"193.46.56.185","port":6683,"password":"iw8GoN42dciNxDBd0RwAdL","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇫🇮FI | 🟢 | ss | @vmess_vless_v2rayng | 10","type":"ss","server":"83.147.216.70","port":64519,"password":"UlT89D0rvcr05tKft1NB5a","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @iP_CF | 7","type":"ss","server":"164.92.156.41","port":24206,"password":"zI7kiNZ0UfV9cXB73a4nRD","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @proxy_mtm | 1","type":"ss","server":"77.91.101.132","port":43458,"password":"SSh5aoQdcX0nZXCAH5yF75","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @proxy_mtm | 6","type":"ss","server":"45.87.175.197","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇩🇪DE | 🟢 | ss | @proxy_mtm | 10","type":"ss","server":"212.224.125.154","port":57456,"password":"c40641c1f89e7acb","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @proxy_mtm | 6","type":"ss","server":"77.91.101.132","port":43458,"password":"SSh5aoQdcX0nZXCAH5yF75","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @proxy_mtm | 11","type":"ss","server":"45.87.175.197","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | 🟢 | ss | @proxy_mtm | 15","type":"ss","server":"212.224.125.154","port":57456,"password":"c40641c1f89e7acb","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -137,9 +137,9 @@ proxy-groups:
       - '🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 9'
       - '🇫🇮FI | 🟢 | ss | @vmess_vless_v2rayng | 10'
       - '🇳🇱NL | 🟢 | ss | @iP_CF | 7'
-      - '🇬🇧GB | 🟢 | ss | @proxy_mtm | 1'
-      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 6'
-      - '🇩🇪DE | 🟢 | ss | @proxy_mtm | 10'
+      - '🇬🇧GB | 🟢 | ss | @proxy_mtm | 6'
+      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 11'
+      - '🇩🇪DE | 🟢 | ss | @proxy_mtm | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -150,9 +150,9 @@ proxy-groups:
       - '🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 9'
       - '🇫🇮FI | 🟢 | ss | @vmess_vless_v2rayng | 10'
       - '🇳🇱NL | 🟢 | ss | @iP_CF | 7'
-      - '🇬🇧GB | 🟢 | ss | @proxy_mtm | 1'
-      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 6'
-      - '🇩🇪DE | 🟢 | ss | @proxy_mtm | 10'
+      - '🇬🇧GB | 🟢 | ss | @proxy_mtm | 6'
+      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 11'
+      - '🇩🇪DE | 🟢 | ss | @proxy_mtm | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -162,9 +162,9 @@ proxy-groups:
       - '🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 9'
       - '🇫🇮FI | 🟢 | ss | @vmess_vless_v2rayng | 10'
       - '🇳🇱NL | 🟢 | ss | @iP_CF | 7'
-      - '🇬🇧GB | 🟢 | ss | @proxy_mtm | 1'
-      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 6'
-      - '🇩🇪DE | 🟢 | ss | @proxy_mtm | 10'
+      - '🇬🇧GB | 🟢 | ss | @proxy_mtm | 6'
+      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 11'
+      - '🇩🇪DE | 🟢 | ss | @proxy_mtm | 15'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
