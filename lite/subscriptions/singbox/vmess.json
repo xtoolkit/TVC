@@ -109,9 +109,9 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 15",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 16",
-                "🇨🇦CA | 🟢 | vmess | @iP_CF | 10"
+                "🇺🇸US | 🟢 | vmess | @iP_CF | 10"
             ]
         },
         {
@@ -121,9 +121,9 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 15",
                 "🇨🇦CA | 🟢 | vmess | @Hope_Net | 16",
-                "🇨🇦CA | 🟢 | vmess | @iP_CF | 10"
+                "🇺🇸US | 🟢 | vmess | @iP_CF | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -221,11 +221,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 15",
             "type": "vmess",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "3f638f34-8dba-4186-bc43-2716a7ddd4be",
+            "server": "irhms03.dongfeng.cfd",
+            "server_port": 443,
+            "uuid": "fa5b55cd-cafc-4de0-a4c8-722e02a9f58e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -236,22 +236,32 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "hms03.dongfeng.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/az05.beyondy.cfd:443\/link",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": ""
+                    "Host": "hms03.dongfeng.cfd"
                 }
             }
         },
         {
             "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 16",
             "type": "vmess",
-            "server": "23.162.200.94",
+            "server": "23.162.200.141",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -279,7 +289,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @iP_CF | 10",
+            "tag": "🇺🇸US | 🟢 | vmess | @iP_CF | 10",
             "type": "vmess",
             "server": "serkat.org",
             "server_port": 443,
