@@ -107,12 +107,15 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇸🇪SE | 🟢 | vmess | @DailyV2RY | 199",
+                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 6",
+                "🇸🇪SE | 🟢 | vmess | @DailyV2RY | 197",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 17",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @iP_CF | 10"
+                "❔XX | 🟢 | vmess | @Hope_Net | 18",
+                "🇫🇷FR | 🟢 | vmess | @iP_CF | 10"
             ]
         },
         {
@@ -120,12 +123,15 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇸🇪SE | 🟢 | vmess | @DailyV2RY | 199",
+                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 6",
+                "🇸🇪SE | 🟢 | vmess | @DailyV2RY | 197",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 17",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇦CA | 🟢 | vmess | @iP_CF | 10"
+                "❔XX | 🟢 | vmess | @Hope_Net | 18",
+                "🇫🇷FR | 🟢 | vmess | @iP_CF | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -165,7 +171,75 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | vmess | @DailyV2RY | 199",
+            "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "57.129.25.22",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "57.129.25.22",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "57.129.25.22"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 6",
+            "type": "vmess",
+            "server": "pelang.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🟢 | vmess | @DailyV2RY | 197",
             "type": "vmess",
             "server": "185.146.173.25",
             "server_port": 80,
@@ -185,6 +259,40 @@
                 "path": "\/",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 18",
+            "type": "vmess",
+            "server": "91.134.8.102",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "serkat.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "serkat.org"
                 }
             }
         },
@@ -249,28 +357,11 @@
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "abccaba-acba-cbaa-acdb-bcacacaacbbb",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 18",
-            "type": "vmess",
-            "server": "149.7.16.188",
+            "server": "masjidd.homes",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -298,7 +389,41 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @iP_CF | 10",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 18",
+            "type": "vmess",
+            "server": "linde06.indiavideo.sbs",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vmess | @iP_CF | 10",
             "type": "vmess",
             "server": "serkat.org",
             "server_port": 443,
