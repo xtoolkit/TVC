@@ -158,14 +158,15 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 17",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇱🇹LT | 🔴 | vless | @VmessProtocol | 8",
-                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 204",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 221",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 13",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 15",
+                "🇱🇹LT | 🔴 | vless | @ConfigsHUB | 16",
                 "🇬🇧GB | 🔴 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 8",
                 "🇳🇴NO | 🔴 | vless | @Capoit | 17",
                 "🇮🇹IT | 🔴 | vless | @Capoit | 18",
-                "🇩🇪DE | 🔴 | vless | @FreakConfig | 14",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 15",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇩🇪DE | 🔴 | vless | @flyv2ray | 13",
@@ -241,14 +242,15 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 17",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇱🇹LT | 🔴 | vless | @VmessProtocol | 8",
-                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 204",
+                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 221",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 13",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 15",
+                "🇱🇹LT | 🔴 | vless | @ConfigsHUB | 16",
                 "🇬🇧GB | 🔴 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 8",
                 "🇳🇴NO | 🔴 | vless | @Capoit | 17",
                 "🇮🇹IT | 🔴 | vless | @Capoit | 18",
-                "🇩🇪DE | 🔴 | vless | @FreakConfig | 14",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 15",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
                 "🇩🇪DE | 🔴 | vless | @flyv2ray | 13",
@@ -1469,7 +1471,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @DailyV2RY | 204",
+            "tag": "🇩🇪DE | 🔴 | vless | @DailyV2RY | 221",
             "type": "vless",
             "server": "91.99.177.240",
             "server_port": 443,
@@ -1508,6 +1510,68 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 15",
+            "type": "vless",
+            "server": "104.17.210.171",
+            "server_port": 443,
+            "uuid": "c98a16e4-0dc5-42f0-b3db-30f04525c123",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vless10-9sc.pages.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "vless10-9sc.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "🇱🇹LT | 🔴 | vless | @ConfigsHUB | 16",
+            "type": "vless",
+            "server": "www.wodophonex.blog",
+            "server_port": 55877,
+            "uuid": "fc859b7f-4a1e-4f59-be63-d77235d9b3a0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.wodophonex.blog",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "www.wodophonex.blog"
+                }
             }
         },
         {
@@ -1603,7 +1667,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @FreakConfig | 14",
+            "tag": "🇩🇪DE | 🔴 | vless | @FreakConfig | 15",
             "type": "vless",
             "server": "3.70.168.130",
             "server_port": 25670,
@@ -1614,27 +1678,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @FreakConfig | 15",
-            "type": "vless",
-            "server": "49.13.21.6",
-            "server_port": 443,
-            "uuid": "b345b731-7aa1-47ff-8378-bc4762877ea9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws?ed=2560",
-                "headers": {
-                    "Host": "49.13.21.6"
-                }
             }
         },
         {
