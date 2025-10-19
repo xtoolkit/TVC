@@ -107,15 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
-                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 8",
+                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 8",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @free1_vpn | 6",
+                "❔XX | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-                "🇫🇷FR | 🟢 | vmess | @FreakConfig | 16",
+                "🇫🇷FR | 🟢 | vmess | @FreakConfig | 17",
                 "🇩🇪DE | 🟢 | vmess | @iP_CF | 10"
             ]
         },
@@ -124,15 +122,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
-                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 8",
+                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 8",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @free1_vpn | 6",
+                "❔XX | 🟢 | vmess | @Hope_Net | 6",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-                "🇫🇷FR | 🟢 | vmess | @FreakConfig | 16",
+                "🇫🇷FR | 🟢 | vmess | @FreakConfig | 17",
                 "🇩🇪DE | 🟢 | vmess | @iP_CF | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -173,65 +169,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
-            "type": "vmess",
-            "server": "154.64.243.19",
-            "server_port": 38533,
-            "uuid": "9bc23ccf-4769-4e9a-b278-2dfa8d9ef425",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "154.64.243.19"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
-            "type": "vmess",
-            "server": "masjide.org",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "masjide.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "masjide.org"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 8",
+            "tag": "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 8",
             "type": "vmess",
             "server": "jamekk.org",
             "server_port": 443,
@@ -357,6 +295,40 @@
             }
         },
         {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
+            "type": "vmess",
+            "server": "z8.fragranceninja.com",
+            "server_port": 12910,
+            "uuid": "a32313ad-5e39-4f9a-9cad-512041790050",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "z8.fragranceninja.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "z8.fragranceninja.com"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
             "server": "172.64.103.211",
@@ -391,41 +363,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-            "type": "vmess",
-            "server": "172.67.131.108",
-            "server_port": 443,
-            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vmess | @FreakConfig | 16",
+            "tag": "🇫🇷FR | 🟢 | vmess | @FreakConfig | 17",
             "type": "vmess",
             "server": "51.38.191.100",
             "server_port": 550,
