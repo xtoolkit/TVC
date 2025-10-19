@@ -161,7 +161,7 @@
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 204",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 13",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇨🇭CH | 🔴 | vless | @ConfigsHUB | 16",
                 "🇬🇧GB | 🔴 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 8",
                 "🇳🇴NO | 🔴 | vless | @Capoit | 17",
@@ -245,7 +245,7 @@
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 204",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 13",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇨🇭CH | 🔴 | vless | @ConfigsHUB | 16",
                 "🇬🇧GB | 🔴 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 8",
                 "🇳🇴NO | 🔴 | vless | @Capoit | 17",
@@ -1513,12 +1513,12 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+            "tag": "🇨🇭CH | 🔴 | vless | @ConfigsHUB | 16",
             "type": "vless",
-            "server": "104.17.210.171",
+            "server": "23.166.88.109",
             "server_port": 443,
-            "uuid": "c98a16e4-0dc5-42f0-b3db-30f04525c123",
-            "flow": "",
+            "uuid": "535915c5-b455-4ac1-a186-78353570a251",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1527,20 +1527,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "vless10-9sc.pages.dev",
+                "server_name": "www.microsoft.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "safari"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mbUkRT2YVvtaeGlZbLsfdQ-P1j07sEBBRzn9dZQ-DHY",
+                    "short_id": "be8a0c77d5ff88d5"
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "vless10-9sc.pages.dev"
-                }
+                "type": "grpc",
+                "service_name": "t.me\/entryNET",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {

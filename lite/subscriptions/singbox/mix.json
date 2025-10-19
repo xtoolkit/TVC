@@ -166,13 +166,14 @@
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 204",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 13",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇨🇭CH | 🔴 | vless | @ConfigsHUB | 16",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇬🇧GB | 🔴 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 8",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 12",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 14",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 15",
                 "🇳🇴NO | 🔴 | vless | @Capoit | 17",
                 "🇮🇹IT | 🔴 | vless | @Capoit | 18",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 14",
@@ -260,13 +261,14 @@
                 "🇩🇪DE | 🔴 | vless | @DailyV2RY | 204",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 12",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 13",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇨🇭CH | 🔴 | vless | @ConfigsHUB | 16",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇬🇧GB | 🔴 | vless | @free1_vpn | 7",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 8",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 12",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 14",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 15",
                 "🇳🇴NO | 🔴 | vless | @Capoit | 17",
                 "🇮🇹IT | 🔴 | vless | @Capoit | 18",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 14",
@@ -1638,12 +1640,12 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+            "tag": "🇨🇭CH | 🔴 | vless | @ConfigsHUB | 16",
             "type": "vless",
-            "server": "104.17.210.171",
+            "server": "23.166.88.109",
             "server_port": 443,
-            "uuid": "c98a16e4-0dc5-42f0-b3db-30f04525c123",
-            "flow": "",
+            "uuid": "535915c5-b455-4ac1-a186-78353570a251",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1652,20 +1654,42 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "vless10-9sc.pages.dev",
+                "server_name": "www.microsoft.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "safari"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mbUkRT2YVvtaeGlZbLsfdQ-P1j07sEBBRzn9dZQ-DHY",
+                    "short_id": "be8a0c77d5ff88d5"
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "vless10-9sc.pages.dev"
-                }
+                "type": "grpc",
+                "service_name": "t.me\/entryNET",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
@@ -1777,27 +1801,10 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 14",
             "type": "vmess",
-            "server": "d.baodesign.top",
-            "server_port": 25004,
-            "uuid": "ba2e86ee-65fc-4b4e-97c7-165b5b64023b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 13",
-            "type": "vmess",
-            "server": "z2.fragranceninja.com",
-            "server_port": 12968,
+            "server": "z3.fragranceninja.com",
+            "server_port": 12970,
             "uuid": "a32313ad-5e39-4f9a-9cad-512041790050",
             "security": "auto",
             "alter_id": 0,
@@ -1811,19 +1818,39 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "z2.fragranceninja.com",
+                "server_name": "z3.fragranceninja.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 15",
+            "type": "vmess",
+            "server": "z3.fragranceninja.com",
+            "server_port": 12960,
+            "uuid": "a32313ad-5e39-4f9a-9cad-512041790050",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "z2.fragranceninja.com"
+            "tls": {
+                "enabled": true,
+                "server_name": "z3.fragranceninja.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
