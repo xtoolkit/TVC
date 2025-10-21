@@ -11,12 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19 = vmess, 154.53.40.110, 443, username = 606ece17-7279-4a43-b879-f8502103de8f, ws = true, tls = 1, vmess-aead = true, ws-path = /vmessws, ws-headers = Host:"vall.codefyinc.com", skip-cert-verify = true, tfo = false
+🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 8 = vmess, 45.76.181.246, 12345, username = 52263901-b3cf-4d7d-b4fd-a12fe178ef2a, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 12 = vmess, 172.64.167.5, 2095, username = 18d96190-c10f-448f-a82a-2d36df5c3cde, ws = true, tls = , vmess-aead = true, ws-path = github.com/Alvin9999, ws-headers = Host:"ip2.6016725.xyz", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 8 = vmess, 104.21.238.101, 2095, username = 18d96190-c10f-448f-a82a-2d36df5c3cde, ws = true, tls = , vmess-aead = false, ws-path = github.com/Alvin9999, ws-headers = Host:"ip3.6016725.xyz", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 9 = vmess, 172.67.198.187, 443, username = 93ea486a-bada-42a4-ac38-d088b320fa1e, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"xmivideo.cfd", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 12
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 12
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 12
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19,🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 8,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8,🇺🇸US | 🟢 | vmess | @Hope_Net | 9
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19,🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 8,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8,🇺🇸US | 🟢 | vmess | @Hope_Net | 9
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19,🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 8,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8,🇺🇸US | 🟢 | vmess | @Hope_Net | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
