@@ -124,6 +124,7 @@ proxies:
   - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 13","type":"trojan","server":"15.188.198.23","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 12","type":"trojan","server":"15.237.152.121","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 13","type":"trojan","server":"15.188.198.23","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"nl.scpnb.top","port":39371,"udp":false,"password":"qEqueKB1ej","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cloudflare.com"}
   - {"name":"🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"23.162.152.30","port":8443,"udp":false,"password":"installshield","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
@@ -135,6 +136,7 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 13'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 12'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 3'
   - name: URL-TEST
     type: url-test
@@ -146,6 +148,7 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 13'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 12'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 3'
   - name: FALLBACK
     type: fallback
@@ -156,6 +159,7 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 13'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 12'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 3'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
