@@ -110,10 +110,10 @@
                 "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇦CA | 🟢 | vmess | @free1_vpn | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-                "🇩🇪DE | 🟢 | vmess | @iP_CF | 10"
+                "🇩🇪DE | 🟢 | vmess | @free1_vpn | 7",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 6",
+                "🇺🇸US | 🟢 | vmess | @iP_CF | 10"
             ]
         },
         {
@@ -124,10 +124,10 @@
                 "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇦CA | 🟢 | vmess | @free1_vpn | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-                "🇩🇪DE | 🟢 | vmess | @iP_CF | 10"
+                "🇩🇪DE | 🟢 | vmess | @free1_vpn | 7",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 6",
+                "🇺🇸US | 🟢 | vmess | @iP_CF | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -259,7 +259,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @free1_vpn | 7",
+            "tag": "🇩🇪DE | 🟢 | vmess | @free1_vpn | 7",
             "type": "vmess",
             "server": "jamekk.org",
             "server_port": 443,
@@ -293,30 +293,13 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "caabbac-baac-aacb-acdb-bccaaacbbcba",
+            "server": "104.21.83.115",
+            "server_port": 443,
+            "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
             "security": "auto",
             "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-            "type": "vmess",
-            "server": "an.anaviriti.info",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -327,7 +310,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "an.anaviriti.info",
+                "server_name": "104.21.83.115",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -337,14 +320,38 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/link",
                 "headers": {
-                    "Host": "an.anaviriti.info"
+                    "Host": "104.21.83.115"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @iP_CF | 10",
+            "tag": "🇵🇱PL | 🟢 | vmess | @Hope_Net | 6",
+            "type": "vmess",
+            "server": "128.204.223.42",
+            "server_port": 37382,
+            "uuid": "9bc5a428-a0ac-4100-84f6-c3bd3b214ebe",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@FreeIranWeb",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @iP_CF | 10",
             "type": "vmess",
             "server": "serkat.org",
             "server_port": 443,
