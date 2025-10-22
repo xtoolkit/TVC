@@ -135,7 +135,7 @@
                 "❔XX | 🔴 | vless | @V2rayCollectorDonate | 20",
                 "❔XX | 🔴 | vless | @V2rayCollectorDonate | 21",
                 "❔XX | 🔴 | vless | @V2rayNGn | 9",
-                "🇨🇦CA | 🔴 | vless | @V2rayNGn | 10",
+                "🇺🇸US | 🔴 | vless | @V2rayNGn | 10",
                 "🇺🇸US | 🟢 | vless | @prrofile_purple | 154",
                 "🇩🇪DE | 🔴 | vless | @prrofile_purple | 155",
                 "❔XX | 🟢 | vless | @customv2ray | 25",
@@ -155,9 +155,11 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 17",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇱🇹LT | 🔴 | vless | @VmessProtocol | 10",
-                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 240",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 241",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 242",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 12",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 6",
                 "🇷🇴RO | 🔴 | vless | @Capoit | 16",
                 "🇺🇸US | 🔴 | vless | @Capoit | 17",
@@ -213,7 +215,7 @@
                 "❔XX | 🔴 | vless | @V2rayCollectorDonate | 20",
                 "❔XX | 🔴 | vless | @V2rayCollectorDonate | 21",
                 "❔XX | 🔴 | vless | @V2rayNGn | 9",
-                "🇨🇦CA | 🔴 | vless | @V2rayNGn | 10",
+                "🇺🇸US | 🔴 | vless | @V2rayNGn | 10",
                 "🇺🇸US | 🟢 | vless | @prrofile_purple | 154",
                 "🇩🇪DE | 🔴 | vless | @prrofile_purple | 155",
                 "❔XX | 🟢 | vless | @customv2ray | 25",
@@ -233,9 +235,11 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 17",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇱🇹LT | 🔴 | vless | @VmessProtocol | 10",
-                "🇩🇪DE | 🔴 | vless | @DailyV2RY | 240",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 241",
+                "🇺🇸US | 🔴 | vless | @DailyV2RY | 242",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 12",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 6",
                 "🇷🇴RO | 🔴 | vless | @Capoit | 16",
                 "🇺🇸US | 🔴 | vless | @Capoit | 17",
@@ -922,7 +926,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @V2rayNGn | 10",
+            "tag": "🇺🇸US | 🔴 | vless | @V2rayNGn | 10",
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
@@ -1377,17 +1381,55 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @DailyV2RY | 240",
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 241",
             "type": "vless",
-            "server": "3.71.10.184",
-            "server_port": 25670,
-            "uuid": "08cb0591-5193-4a0c-9105-ceb09fba67fe",
+            "server": "ipw.gfdv54cvghhgfhgj-njhgj64.info",
+            "server_port": 2096,
+            "uuid": "e60c6be1-42cc-472e-b35d-6568fe8a49b2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "condor.zulair.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "condor.zulair.site"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 242",
+            "type": "vless",
+            "server": "tgju.org",
+            "server_port": 80,
+            "uuid": "422af888-aaec-469e-8e4e-59a9429e7dd0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tgju.org"
+                }
             }
         },
         {
@@ -1416,6 +1458,37 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "162.159.152.53",
+            "server_port": 443,
+            "uuid": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vless.hubp.de",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET",
+                "headers": {
+                    "Host": "vless.hubp.de"
+                }
             }
         },
         {
