@@ -121,10 +121,11 @@ dns:
 
 proxies:
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17","type":"vmess","server":"112.132.215.34","port":"50007","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"0","tls":false,"skip-cert-verify":true,"network":"raw"}
   - {"name":"🇧🇪BE | 🟢 | vmess | @customv2ray | 27","type":"vmess","server":"192.121.170.52","port":"20522","cipher":"auto","uuid":"08f870ed-520c-483a-bdec-c4884aad4665","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/telegram_@sswia","headers":{"host":""}}}
   - {"name":"🇸🇬SG | 🟢 | vmess | @DailyV2RY | 242","type":"vmess","server":"46.250.233.133","port":"550","cipher":"auto","uuid":"abdd76c7-116d-41f2-8538-11239dde5f43","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 8","type":"vmess","server":"104.21.9.236","port":443,"cipher":"auto","uuid":"62aa5f80-0328-4004-a375-7f5a59df4022","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"hms19.best-tizi.top"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 9","type":"vmess","server":"104.21.9.236","port":443,"cipher":"auto","uuid":"62aa5f80-0328-4004-a375-7f5a59df4022","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"hms19.best-tizi.top"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,10 +133,11 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17'
       - '🇧🇪BE | 🟢 | vmess | @customv2ray | 27'
       - '🇸🇬SG | 🟢 | vmess | @DailyV2RY | 242'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 8'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -143,20 +145,22 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17'
       - '🇧🇪BE | 🟢 | vmess | @customv2ray | 27'
       - '🇸🇬SG | 🟢 | vmess | @DailyV2RY | 242'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 8'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17'
       - '🇧🇪BE | 🟢 | vmess | @customv2ray | 27'
       - '🇸🇬SG | 🟢 | vmess | @DailyV2RY | 242'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 8'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
