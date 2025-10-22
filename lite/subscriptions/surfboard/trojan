@@ -13,12 +13,12 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14 = trojan, 63.179.171.101, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇩🇪DE | 🟢 | trojan | @DirectVPN | 14 = trojan, 63.179.171.101, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, nl.scpnb.top, 39371, password = qEqueKB1ej, udp-delay = true, skip-cert-verify = false, sni = cloudflare.com, ws = false
-🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, 23.162.152.30, 8443, password = installshield, udp-delay = true, skip-cert-verify = false, ws = false
+🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, nl.scpnb.top, 39371, password = qEqueKB1ej, udp-delay = true, skip-cert-verify = false, sni = cloudflare.com, ws = false
+🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 23.162.152.30, 8443, password = installshield, udp-delay = true, skip-cert-verify = false, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 2,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 3
-URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 2,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 3
-FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 2,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 3
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 3,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4
+URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 3,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4
+FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 3,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
