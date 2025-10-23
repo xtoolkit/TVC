@@ -158,6 +158,8 @@
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 242",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 10",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 15",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 16",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 0",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 7",
                 "🇺🇸US | 🔴 | vless | @Capoit | 16",
@@ -234,6 +236,8 @@
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 242",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 10",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 11",
+                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 15",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 16",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 0",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 7",
                 "🇺🇸US | 🔴 | vless | @Capoit | 16",
@@ -1422,6 +1426,49 @@
             "server": "151.101.3.8",
             "server_port": 80,
             "uuid": "639be4f9-50e8-45e5-be5a-e815a15dc460",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 15",
+            "type": "vless",
+            "server": "85.17.142.172",
+            "server_port": 1504,
+            "uuid": "261e2282-9ccc-4e48-aed2-fa1244b6fdf5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gVZhQqdCjhe1A2HtU2yMre0dFQXX6hOOLY2vhmJhXQs",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 16",
+            "type": "vless",
+            "server": "sss92681.tas-bazi.com",
+            "server_port": 443,
+            "uuid": "54801305-3e0e-4d90-8996-b67065155465",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
