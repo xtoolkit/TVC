@@ -119,11 +119,11 @@ dns:
 
 proxies:
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"❔XX | 🟢 | vmess | @v2ray1_ng | 8","type":"vmess","server":"2001:bc8:32d7:302::10","port":"44579","cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
+  - {"name":"❔XX | 🟢 | vmess | @v2ray1_ng | 9","type":"vmess","server":"2001:bc8:32d7:302::10","port":"44579","cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇸🇬SG | 🟢 | vmess | @DailyV2RY | 247","type":"vmess","server":"109.123.236.157","port":"550","cipher":"auto","uuid":"9371b4ae-59a6-46ad-8413-4021b65a103c","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"🇵🇱PL | 🟢 | vmess | @Hope_Net | 8","type":"vmess","server":"128.204.223.42","port":"41663","cipher":"auto","uuid":"11ccf64c-445b-4d8a-9830-9147e391f663","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 9","type":"vmess","server":"107.148.192.152","port":"41911","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇵🇱PL | 🟢 | vmess | @Hope_Net | 10","type":"vmess","server":"128.204.223.42","port":"41663","cipher":"auto","uuid":"11ccf64c-445b-4d8a-9830-9147e391f663","alterId":"0","tls":true,"skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"","grpc-mode":"gun"}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 11","type":"vmess","server":"107.148.192.152","port":"41911","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,11 +131,11 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '❔XX | 🟢 | vmess | @v2ray1_ng | 8'
+      - '❔XX | 🟢 | vmess | @v2ray1_ng | 9'
       - '🇸🇬SG | 🟢 | vmess | @DailyV2RY | 247'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇵🇱PL | 🟢 | vmess | @Hope_Net | 8'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
+      - '🇵🇱PL | 🟢 | vmess | @Hope_Net | 10'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 11'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -143,22 +143,22 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '❔XX | 🟢 | vmess | @v2ray1_ng | 8'
+      - '❔XX | 🟢 | vmess | @v2ray1_ng | 9'
       - '🇸🇬SG | 🟢 | vmess | @DailyV2RY | 247'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇵🇱PL | 🟢 | vmess | @Hope_Net | 8'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
+      - '🇵🇱PL | 🟢 | vmess | @Hope_Net | 10'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 11'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '❔XX | 🟢 | vmess | @v2ray1_ng | 8'
+      - '❔XX | 🟢 | vmess | @v2ray1_ng | 9'
       - '🇸🇬SG | 🟢 | vmess | @DailyV2RY | 247'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇵🇱PL | 🟢 | vmess | @Hope_Net | 8'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
+      - '🇵🇱PL | 🟢 | vmess | @Hope_Net | 10'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 11'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
