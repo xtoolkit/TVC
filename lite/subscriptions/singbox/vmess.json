@@ -107,10 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇸🇬SG | 🟢 | vmess | @DailyV2RY | 241",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇹🇼TW | 🟢 | vmess | @Hope_Net | 9",
-                "🇸🇪SE | 🟢 | vmess | @Hope_Net | 10"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10"
             ]
         },
         {
@@ -118,10 +119,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇸🇬SG | 🟢 | vmess | @DailyV2RY | 241",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇹🇼TW | 🟢 | vmess | @Hope_Net | 9",
-                "🇸🇪SE | 🟢 | vmess | @Hope_Net | 10"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -151,6 +153,23 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇸🇬SG | 🟢 | vmess | @DailyV2RY | 241",
+            "type": "vmess",
+            "server": "194.233.73.188",
+            "server_port": 550,
+            "uuid": "5b6d6e64-d97a-4523-92b3-717a461cc861",
+            "security": "auto",
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -219,13 +238,13 @@
             }
         },
         {
-            "tag": "🇹🇼TW | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "103.177.33.19",
-            "server_port": 30013,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "server": "serkat.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
-            "alter_id": 64,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -236,7 +255,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.35709620.xyz",
+                "server_name": "serkat.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -246,18 +265,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/path\/351212081517",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "www.35709620.xyz"
+                    "Host": "serkat.org"
                 }
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "185.146.173.129",
-            "server_port": 443,
-            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+            "server": "172.67.68.87",
+            "server_port": 8443,
+            "uuid": "a617b227-028b-420f-928f-e8c9ca551346",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -270,7 +289,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "nt-haze-7dad.rogap16875.workers.dev",
+                "server_name": "recordemailprevent.tickespace.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -280,9 +299,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/afrhms16v.bestxray.buzz\/linkws",
+                "path": "\/ordemailpr",
                 "headers": {
-                    "Host": "nt-haze-7dad.rogap16875.workers.dev"
+                    "Host": "recordemailprevent.tickespace.ir"
                 }
             }
         }
