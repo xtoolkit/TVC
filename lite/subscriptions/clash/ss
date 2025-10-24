@@ -120,7 +120,6 @@ dns:
 proxies:
   - {"name":"🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"5.129.201.43","port":23256,"password":"yALtyAtHfbw1Vu4pqh6wUc","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @iP_CF | 10","type":"ss","server":"164.92.156.41","port":24206,"password":"zI7kiNZ0UfV9cXB73a4nRD","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @proxy_mtm | 12","type":"ss","server":"45.87.175.155","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - FALLBACK
       - '🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇳🇱NL | 🟢 | ss | @iP_CF | 10'
-      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +136,6 @@ proxy-groups:
     proxies:
       - '🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇳🇱NL | 🟢 | ss | @iP_CF | 10'
-      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +143,6 @@ proxy-groups:
     proxies:
       - '🇷🇺RU | 🟢 | ss | @OutlineVpnOfficial | 16'
       - '🇳🇱NL | 🟢 | ss | @iP_CF | 10'
-      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 12'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
