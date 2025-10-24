@@ -108,11 +108,10 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇸🇬SG | 🟢 | vmess | @DailyV2RY | 263",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "❔XX | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
                 "🇲🇾MY | 🟢 | vmess | @v2Line | 7",
                 "🇨🇦CA | 🟢 | vmess | @FreakConfig | 10"
@@ -124,11 +123,10 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇸🇬SG | 🟢 | vmess | @DailyV2RY | 263",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "❔XX | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
                 "🇲🇾MY | 🟢 | vmess | @v2Line | 7",
                 "🇨🇦CA | 🟢 | vmess | @FreakConfig | 10"
@@ -176,23 +174,6 @@
             "server": "62.146.235.13",
             "server_port": 550,
             "uuid": "aad228b6-3aa8-44c4-94d6-6094040f496a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
-            "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -265,9 +246,43 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
+            "server": "jpcft01.xqc.best",
+            "server_port": 443,
+            "uuid": "af8f416e-d277-49e3-8b6c-905b7596e31f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jpcft01.xqc.best",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "jpcft01.xqc.best"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
+            "type": "vmess",
             "server": "sgcft01.xqc.best",
             "server_port": 443,
-            "uuid": "80f7e803-9228-421b-8819-62692217e310",
+            "uuid": "57491970-c0b7-4f85-b576-86cc861eb64e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -293,40 +308,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "sgcft01.xqc.best"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 19",
-            "type": "vmess",
-            "server": "xr004.louwangzhiyu.xyz",
-            "server_port": 30000,
-            "uuid": "24736b9a-d471-4e52-818d-5025180c9ea4",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "xr004.louwangzhiyu.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "xr004.louwangzhiyu.xyz"
                 }
             }
         },
