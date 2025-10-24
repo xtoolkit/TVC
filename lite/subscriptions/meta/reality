@@ -121,7 +121,9 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17","type":"vless","server":"91.107.254.202","port":8443,"udp":true,"uuid":"a6580107-b1e0-4057-9f47-ac7f28de457a","tls":true,"network":"xhttp","client-fingerprint":"chrome","servername":"firebase.googleapis.com","reality-opts":{"public-key":"4Xu_jqRD-mbhEwNyntlz_6zU4VhsE0-QWCxAbhEL_H4","short-id":"7ab467"}}
-  - {"name":"🇩🇪DE | 🔴 | vless | @v2rayngvpn | 15","type":"vless","server":"91.107.168.153","port":2096,"udp":true,"uuid":"4417a0bc-4cdf-4c98-a172-4011ce6ecc6c","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"zula.ir","reality-opts":{"public-key":"JaJSsa3aKBX0okFvB6B8w8uFO850L4jHFdKcqMIhzm4"}}
+  - {"name":"🇩🇪DE | 🔴 | vless | @v2rayngvpn | 16","type":"vless","server":"91.107.168.153","port":2096,"udp":true,"uuid":"4417a0bc-4cdf-4c98-a172-4011ce6ecc6c","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"zula.ir","reality-opts":{"public-key":"JaJSsa3aKBX0okFvB6B8w8uFO850L4jHFdKcqMIhzm4"}}
+  - {"name":"🇪🇪EE | 🔴 | vless | @ConfigsHUB | 16","type":"vless","server":"64.188.78.60","port":443,"udp":true,"uuid":"37e7881f-ff59-4858-83cd-c6b4b03cba4a","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.google.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"0ZbtEmi2lk_KUh1-w6g08hnSn863LZwj30vSHWS-NCU","short-id":"ee009b"}}
+  - {"name":"🇩🇪DE | 🔴 | vless | @FreakConfig | 16","type":"vless","server":"91.107.180.84","port":2096,"udp":true,"uuid":"29e43ae0-30b0-44ad-b63b-3b3da88f2825","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"zula.ir","reality-opts":{"public-key":"w_DApm-Tiu8YpaXxkYD9xSfvpfhwsq1VUEK_ItSCbBA"}}
   - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +132,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17'
-      - '🇩🇪DE | 🔴 | vless | @v2rayngvpn | 15'
+      - '🇩🇪DE | 🔴 | vless | @v2rayngvpn | 16'
+      - '🇪🇪EE | 🔴 | vless | @ConfigsHUB | 16'
+      - '🇩🇪DE | 🔴 | vless | @FreakConfig | 16'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: URL-TEST
     type: url-test
@@ -139,7 +143,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17'
-      - '🇩🇪DE | 🔴 | vless | @v2rayngvpn | 15'
+      - '🇩🇪DE | 🔴 | vless | @v2rayngvpn | 16'
+      - '🇪🇪EE | 🔴 | vless | @ConfigsHUB | 16'
+      - '🇩🇪DE | 🔴 | vless | @FreakConfig | 16'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
   - name: FALLBACK
     type: fallback
@@ -147,7 +153,9 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17'
-      - '🇩🇪DE | 🔴 | vless | @v2rayngvpn | 15'
+      - '🇩🇪DE | 🔴 | vless | @v2rayngvpn | 16'
+      - '🇪🇪EE | 🔴 | vless | @ConfigsHUB | 16'
+      - '🇩🇪DE | 🔴 | vless | @FreakConfig | 16'
       - '❔XX | 🔴 | vless | @vpn_go67 | 21'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
