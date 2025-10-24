@@ -110,8 +110,10 @@
                 "🇸🇬SG | 🟢 | vmess | @DailyV2RY | 263",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 18",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 19",
+                "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
+                "🇲🇾MY | 🟢 | vmess | @v2Line | 7"
             ]
         },
         {
@@ -122,8 +124,10 @@
                 "🇸🇬SG | 🟢 | vmess | @DailyV2RY | 263",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 18",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 19",
+                "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
+                "🇲🇾MY | 🟢 | vmess | @v2Line | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -238,10 +242,44 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "112.5.37.116",
-            "server_port": 43563,
+            "server": "jpcft01.xqc.best",
+            "server_port": 443,
+            "uuid": "8c542015-0896-464a-a5ac-2166b77f5392",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jpcft01.xqc.best",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "jpcft01.xqc.best"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 19",
+            "type": "vmess",
+            "server": "36.133.9.177",
+            "server_port": 23567,
             "uuid": "a4a981bb-b3b1-4cd3-a502-4772462945d9",
             "security": "auto",
             "alter_id": 0,
@@ -257,16 +295,16 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "112.5.37.116"
+                    "Host": "36.133.9.177"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
+            "tag": "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
             "type": "vmess",
-            "server": "sgcft01.xqc.best",
-            "server_port": 443,
-            "uuid": "bba4f99b-7d62-4928-9a5c-2ea65c4ae582",
+            "server": "47.76.157.234",
+            "server_port": 55125,
+            "uuid": "87227bd9-1506-4d48-bd6b-0b80a8c2aae7",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -277,21 +315,35 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "sgcft01.xqc.best",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/arki",
+                "headers": {
+                    "Host": ""
                 }
+            }
+        },
+        {
+            "tag": "🇲🇾MY | 🟢 | vmess | @v2Line | 7",
+            "type": "vmess",
+            "server": "47.250.45.234",
+            "server_port": 43063,
+            "uuid": "c77f48f5-4be3-4461-b52b-49998e7b897b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/arki",
                 "headers": {
-                    "Host": "sgcft01.xqc.best"
+                    "Host": ""
                 }
             }
         }
