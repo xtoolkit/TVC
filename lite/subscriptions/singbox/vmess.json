@@ -111,7 +111,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
                 "🇲🇾MY | 🟢 | vmess | @v2Line | 7"
             ]
@@ -125,7 +125,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
                 "🇲🇾MY | 🟢 | vmess | @v2Line | 7"
             ],
@@ -246,7 +246,7 @@
             "type": "vmess",
             "server": "jpcft01.xqc.best",
             "server_port": 443,
-            "uuid": "8c542015-0896-464a-a5ac-2166b77f5392",
+            "uuid": "4254108e-504c-46d3-8ecd-c3660826492a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -276,11 +276,11 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 19",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
             "type": "vmess",
-            "server": "36.133.9.177",
-            "server_port": 23567,
-            "uuid": "a4a981bb-b3b1-4cd3-a502-4772462945d9",
+            "server": "jpcft01.xqc.best",
+            "server_port": 443,
+            "uuid": "57491970-c0b7-4f85-b576-86cc861eb64e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -291,11 +291,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "jpcft01.xqc.best",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "36.133.9.177"
+                    "Host": "jpcft01.xqc.best"
                 }
             }
         },
