@@ -112,8 +112,7 @@
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
-                "🇲🇾MY | 🟢 | vmess | @v2Line | 7",
-                "🇨🇦CA | 🟢 | vmess | @FreakConfig | 11"
+                "🇲🇾MY | 🟢 | vmess | @v2Line | 7"
             ]
         },
         {
@@ -126,8 +125,7 @@
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
-                "🇲🇾MY | 🟢 | vmess | @v2Line | 7",
-                "🇨🇦CA | 🟢 | vmess | @FreakConfig | 11"
+                "🇲🇾MY | 🟢 | vmess | @v2Line | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -227,9 +225,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "172.64.166.2",
-            "server_port": 2095,
-            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
+            "server": "hkcft01.xqc.best",
+            "server_port": 443,
+            "uuid": "70387357-82fa-4a2f-a9ad-3edb1e0071da",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -240,20 +238,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "hkcft01.xqc.best",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/github.com\/Alvin9999",
+                "path": "\/",
                 "headers": {
-                    "Host": ""
+                    "Host": "hkcft01.xqc.best"
                 }
             }
         },
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "104.17.106.151",
-            "server_port": 2082,
-            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
+            "server": "jpcft01.xqc.best",
+            "server_port": 443,
+            "uuid": "17fd275a-9850-4ca9-97b8-ef53abc66e5e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -264,11 +272,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "jpcft01.xqc.best",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/github.com\/Alvin9999",
+                "path": "\/",
                 "headers": {
-                    "Host": "104.17.106.151"
+                    "Host": "jpcft01.xqc.best"
                 }
             }
         },
@@ -318,23 +336,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🟢 | vmess | @FreakConfig | 11",
-            "type": "vmess",
-            "server": "51.79.69.203",
-            "server_port": 550,
-            "uuid": "5f4dc799-fa0d-47a0-946b-8ad0ef562095",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
