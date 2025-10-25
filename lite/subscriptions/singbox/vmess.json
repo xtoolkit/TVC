@@ -108,11 +108,12 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 9",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @free1_vpn | 10",
-                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 12",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 12",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 7",
                 "🇲🇾MY | 🟢 | vmess | @v2Line | 8"
             ]
@@ -123,11 +124,12 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 9",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @free1_vpn | 10",
-                "🇫🇷FR | 🟢 | vmess | @Hope_Net | 12",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 12",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 7",
                 "🇲🇾MY | 🟢 | vmess | @v2Line | 8"
             ],
@@ -200,6 +202,23 @@
                 "headers": {
                     "Host": "fapeng.org"
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 17",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
@@ -285,11 +304,11 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "hms19.best-tizi.top",
+            "server": "104.21.61.246",
             "server_port": 443,
-            "uuid": "62aa5f80-0328-4004-a375-7f5a59df4022",
+            "uuid": "f9ccede9-ca9c-4719-b105-e494742499e3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -302,7 +321,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "",
+                "server_name": "kmz3.sassanidempire.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -312,18 +331,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/",
                 "headers": {
-                    "Host": ""
+                    "Host": "kmz3.sassanidempire.com"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 12",
             "type": "vmess",
-            "server": "104.19.45.50",
-            "server_port": 2082,
-            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
+            "server": "23.162.200.227",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -334,11 +353,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "23.162.200.227",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/github.com\/Alvin9999",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "104.19.45.50"
+                    "Host": "23.162.200.227"
                 }
             }
         },
