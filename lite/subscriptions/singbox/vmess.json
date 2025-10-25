@@ -108,13 +108,14 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇬🇧GB | 🟢 | vmess | @oneclickvpnkeys | 4",
+                "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @free1_vpn | 10",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 13",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
-                "🇩🇪DE | 🟢 | vmess | @v2Line | 8",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 9"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 9",
+                "🇭🇰HK | 🟢 | vmess | @v2Line | 10"
             ]
         },
         {
@@ -123,13 +124,14 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇬🇧GB | 🟢 | vmess | @oneclickvpnkeys | 4",
+                "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @free1_vpn | 10",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 13",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
-                "🇩🇪DE | 🟢 | vmess | @v2Line | 8",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 9"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+                "🇺🇸US | 🟢 | vmess | @v2Line | 9",
+                "🇭🇰HK | 🟢 | vmess | @v2Line | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -183,6 +185,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vmess | @v2ray1_ng | 9",
+            "type": "vmess",
+            "server": "141.94.155.224",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fapeng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "fapeng.org"
+                }
             }
         },
         {
@@ -268,26 +304,9 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
             "type": "vmess",
-            "server": "c.baodesign.top",
-            "server_port": 25003,
-            "uuid": "ba2e86ee-65fc-4b4e-97c7-165b5b64023b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 14",
-            "type": "vmess",
-            "server": "fapeng.org",
+            "server": "b.besar.homes",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
@@ -302,7 +321,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fapeng.org",
+                "server_name": "b.besar.homes",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -314,16 +333,16 @@
                 "type": "ws",
                 "path": "\/linkvws",
                 "headers": {
-                    "Host": "fapeng.org"
+                    "Host": "b.besar.homes"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @v2Line | 8",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": "57.129.25.25",
+            "server": "104.21.24.170",
             "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -336,7 +355,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "server_name": "",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -346,9 +365,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+                    "Host": ""
                 }
             }
         },
@@ -371,6 +390,30 @@
             "transport": {
                 "type": "ws",
                 "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇭🇰HK | 🟢 | vmess | @v2Line | 10",
+            "type": "vmess",
+            "server": "8.217.209.82",
+            "server_port": 55764,
+            "uuid": "6c8454bc-100e-443b-a267-c5f2b8e097c7",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/arki",
                 "headers": {
                     "Host": ""
                 }
