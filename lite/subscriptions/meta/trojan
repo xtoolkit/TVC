@@ -126,6 +126,7 @@ proxies:
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 13","type":"trojan","server":"3.77.10.254","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇯🇵JP | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"2c6f2139-838e-4478-9e47-55140df12640.hkglink.xyz","port":12103,"udp":false,"password":"d0ed2685-82ae-4f09-ac6d-a456146b05ba","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"116.yuanul.com"}
   - {"name":"🇯🇵JP | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"2c6f2139-838e-4478-9e47-55140df12640.hkglink.xyz","port":10106,"udp":false,"password":"d0ed2685-82ae-4f09-ac6d-a456146b05ba","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"sni.eos-suzhou-4.cmecloud.cn"}
+  - {"name":"🇺🇸US | 🟢 | trojan | @ConfigsHUB | 18","type":"trojan","server":"172.66.44.223","port":443,"udp":false,"password":"bba5ce00-09e4-4fce-8d26-35db5b4e38d4","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cfpage-39t.pages.dev"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -138,6 +139,7 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 13'
       - '🇯🇵JP | 🔴 | trojan | @oneclickvpnkeys | 3'
       - '🇯🇵JP | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇺🇸US | 🟢 | trojan | @ConfigsHUB | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -150,6 +152,7 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 13'
       - '🇯🇵JP | 🔴 | trojan | @oneclickvpnkeys | 3'
       - '🇯🇵JP | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇺🇸US | 🟢 | trojan | @ConfigsHUB | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -161,6 +164,7 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 13'
       - '🇯🇵JP | 🔴 | trojan | @oneclickvpnkeys | 3'
       - '🇯🇵JP | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇺🇸US | 🟢 | trojan | @ConfigsHUB | 18'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
