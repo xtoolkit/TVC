@@ -108,12 +108,11 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇫🇷FR | 🟢 | vmess | @free1_vpn | 8",
-                "❔XX | 🟢 | vmess | @Hope_Net | 12",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+                "❔XX | 🟢 | vmess | @Hope_Net | 16",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 7",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8"
             ]
@@ -124,12 +123,11 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "❔XX | 🟢 | vmess | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇫🇷FR | 🟢 | vmess | @free1_vpn | 8",
-                "❔XX | 🟢 | vmess | @Hope_Net | 12",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+                "❔XX | 🟢 | vmess | @Hope_Net | 16",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 7",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8"
             ],
@@ -202,23 +200,6 @@
                 "headers": {
                     "Host": "kampong.org"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 18",
-            "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -314,7 +295,31 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+            "type": "vmess",
+            "server": "151.101.2.133",
+            "server_port": 80,
+            "uuid": "a888b89a-08ac-40e6-8ad7-cfce9569f967",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/racevpn",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 16",
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
@@ -328,30 +333,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
-            "type": "vmess",
-            "server": "104.26.4.60",
-            "server_port": 2095,
-            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/github.com\/Alvin9999",
-                "headers": {
-                    "Host": "104.26.4.60"
-                }
             }
         },
         {
