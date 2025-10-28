@@ -107,11 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇸🇪SE | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8",
                 "🇲🇾MY | 🟢 | vmess | @v2Line | 9"
             ]
@@ -121,11 +120,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇸🇪SE | 🟢 | vmess | @ConfigsHUB | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8",
                 "🇲🇾MY | 🟢 | vmess | @v2Line | 9"
             ],
@@ -157,23 +155,6 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🟢 | vmess | @ConfigsHUB | 17",
-            "type": "vmess",
-            "server": "ksadk\/23.korosh.shop",
-            "server_port": 2060,
-            "uuid": "1648bc92-d210-4d17-9174-710231d5b23e",
-            "security": "auto",
-            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -242,7 +223,41 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+            "type": "vmess",
+            "server": "lammaland.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 1,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lammaland.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "lammaland.org"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
             "server": "162.159.44.149",
             "server_port": 2052,
@@ -263,23 +278,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-            "type": "vmess",
-            "server": "198.2.218.108",
-            "server_port": 41400,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
