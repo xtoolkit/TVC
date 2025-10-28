@@ -110,7 +110,6 @@
                 "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 7",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8"
             ]
@@ -123,7 +122,6 @@
                 "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 7",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8"
             ],
@@ -167,11 +165,11 @@
         {
             "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
-            "server": "57.129.28.214",
+            "server": "57.129.59.200",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -182,7 +180,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "57.129.28.214",
+                "server_name": "57.129.59.200",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -194,7 +192,7 @@
                 "type": "ws",
                 "path": "\/linkvws",
                 "headers": {
-                    "Host": "57.129.28.214"
+                    "Host": "57.129.59.200"
                 }
             }
         },
@@ -253,30 +251,6 @@
                 "path": "\/66",
                 "headers": {
                     "Host": "104.26.8.210"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
-            "type": "vmess",
-            "server": "154.21.195.169",
-            "server_port": 42432,
-            "uuid": "7ccbe715-92bb-4254-edc6-43a447d0987a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
