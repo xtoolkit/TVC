@@ -107,11 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 14",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 11"
             ]
@@ -121,11 +121,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 14",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 10",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 11"
             ],
@@ -167,47 +167,13 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 18",
-            "type": "vmess",
-            "server": "15.235.83.227",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mankadmu.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "mankadmu.com"
-                }
-            }
-        },
-        {
             "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
             "type": "vmess",
-            "server": "57.129.64.157",
+            "server": "57.129.64.163",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -218,7 +184,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "57.129.64.157",
+                "server_name": "yichueng.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -230,7 +196,7 @@
                 "type": "ws",
                 "path": "\/linkvws",
                 "headers": {
-                    "Host": "57.129.64.157"
+                    "Host": "yichueng.org"
                 }
             }
         },
@@ -293,11 +259,11 @@
             }
         },
         {
-            "tag": "🇵🇱PL | 🟢 | vmess | @Hope_Net | 14",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
             "type": "vmess",
-            "server": "172.64.198.249",
-            "server_port": 2095,
-            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
+            "server": "hms082.gwdef.sbs",
+            "server_port": 443,
+            "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -308,9 +274,53 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/github.com\/Alvin9999",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+            "type": "vmess",
+            "server": "172.67.131.17",
+            "server_port": 443,
+            "uuid": "62aa5f80-0328-4004-a375-7f5a59df4022",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
                 "headers": {
                     "Host": ""
                 }
