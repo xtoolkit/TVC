@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17 = ss, fin.outlinebot1.ru, 5904, encrypt-method = chacha20-ietf-poly1305, password = 5TZnwPb23pQS39lIucspJw
 🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17 = ss, 45.87.175.197, 8080, encrypt-method = chacha20-ietf-poly1305, password = k1dBOmOB4oqi7Ump37a1bQ
-🇳🇱NL | 🟢 | ss | @iP_CF | 12 = ss, 164.92.156.41, 24206, encrypt-method = chacha20-ietf-poly1305, password = zI7kiNZ0UfV9cXB73a4nRD
+🇳🇱NL | 🟢 | ss | @iP_CF | 13 = ss, 164.92.156.41, 24206, encrypt-method = chacha20-ietf-poly1305, password = zI7kiNZ0UfV9cXB73a4nRD
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17,🇳🇱NL | 🟢 | ss | @iP_CF | 12
-URL-TEST = url-test,🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17,🇳🇱NL | 🟢 | ss | @iP_CF | 12
-FALLBACK = fallback,🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17,🇳🇱NL | 🟢 | ss | @iP_CF | 12
+MANUAL = select,URL-TEST,FALLBACK,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17,🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17,🇳🇱NL | 🟢 | ss | @iP_CF | 13
+URL-TEST = url-test,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17,🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17,🇳🇱NL | 🟢 | ss | @iP_CF | 13
+FALLBACK = fallback,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17,🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 17,🇳🇱NL | 🟢 | ss | @iP_CF | 13
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
