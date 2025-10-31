@@ -113,6 +113,7 @@
                 "❔XX | 🔴 | vless | @XsV2ray | 4",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 16",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 17",
+                "🇺🇸US | 🔴 | vless | @VPNCUSTOMIZE | 0",
                 "🇺🇸US | 🔴 | vless | @melov2ray | 1",
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 8",
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 9",
@@ -159,11 +160,10 @@
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 12",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 9",
-                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 18",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @Capoit | 15",
                 "🇺🇸US | 🔴 | vless | @Capoit | 16",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
+                "🇨🇾CY | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @iP_CF | 12",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 11",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 12",
@@ -190,6 +190,7 @@
                 "❔XX | 🔴 | vless | @XsV2ray | 4",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 16",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 17",
+                "🇺🇸US | 🔴 | vless | @VPNCUSTOMIZE | 0",
                 "🇺🇸US | 🔴 | vless | @melov2ray | 1",
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 8",
                 "🇩🇪DE | 🔴 | vless | @V2pedia | 9",
@@ -236,11 +237,10 @@
                 "🇺🇸US | 🔴 | vless | @VmessProtocol | 12",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 9",
-                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 18",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @Capoit | 15",
                 "🇺🇸US | 🔴 | vless | @Capoit | 16",
-                "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
+                "🇨🇾CY | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @iP_CF | 12",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 11",
                 "🇺🇸US | 🔴 | vless | @mehrosaboran | 12",
@@ -466,6 +466,37 @@
                 "path": "\/telegram-channel-vlessconfig",
                 "headers": {
                     "Host": "trojan.burgerip.co.uk"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @VPNCUSTOMIZE | 0",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "ff91ef8a-521b-4728-8498-153fcb569dec",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telegram.VPNCUSTOMIZE.dns.txt.ssl.u1r.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/--Telegram---VPNUSTOMIZE--",
+                "headers": {
+                    "Host": "telegram.VPNCUSTOMIZE.dns.txt.ssl.u1r.ir"
                 }
             }
         },
@@ -1435,37 +1466,6 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 18",
-            "type": "vless",
-            "server": "46.62.214.228",
-            "server_port": 443,
-            "uuid": "33d7bcae-57c5-4336-8aff-e01c99594c0d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cyrus.v2bazzar.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "cyrus.v2bazzar.ir"
-                }
-            }
-        },
-        {
             "tag": "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
             "type": "vless",
             "server": "a-lf-0.okamii.ir",
@@ -1508,7 +1508,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @flyv2ray | 12",
+            "tag": "🇨🇾CY | 🔴 | vless | @flyv2ray | 12",
             "type": "vless",
             "server": "best.cdniran.info",
             "server_port": 443,
