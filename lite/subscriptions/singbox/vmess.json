@@ -112,8 +112,8 @@
                 "🇸🇪SE | 🟢 | vmess | @prrofile_purple | 146",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
                 "🇷🇺RU | 🟢 | vmess | @Hope_Net | 4",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 7",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8"
             ]
@@ -128,8 +128,8 @@
                 "🇸🇪SE | 🟢 | vmess | @prrofile_purple | 146",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
                 "🇷🇺RU | 🟢 | vmess | @Hope_Net | 4",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 7",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8"
             ],
@@ -294,6 +294,40 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
+            "type": "vmess",
+            "server": "plex.com",
+            "server_port": 443,
+            "uuid": "a888b89a-08ac-40e6-8ad7-cfce9569f967",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "plex.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/racevpn",
+                "headers": {
+                    "Host": "plex.com"
+                }
+            }
+        },
+        {
             "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
             "server": "45.67.32.147",
@@ -324,30 +358,6 @@
                 "path": "\/makeacall",
                 "headers": {
                     "Host": "free.hardtofind.42web.io"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-            "type": "vmess",
-            "server": "172.64.166.8",
-            "server_port": 2095,
-            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/github.com\/Alvin9999",
-                "headers": {
-                    "Host": "172.64.166.8"
                 }
             }
         },
