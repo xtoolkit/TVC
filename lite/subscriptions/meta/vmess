@@ -124,9 +124,8 @@ proxies:
   - {"name":"🇫🇷FR | 🟢 | vmess | @oneclickvpnkeys | 4","type":"vmess","server":"51.255.173.12","port":"550","cipher":"auto","uuid":"f608615c-03fe-472c-9aee-97391946095b","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5","type":"vmess","server":"siris.090227.xyz","port":"2053","cipher":"auto","uuid":"bc5e171b-fe66-47af-a600-b972104fe995","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vo1vmess","headers":{"host":"vo1.shigure.eu.org"}}}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 8","type":"vmess","server":"bwdraper.faculty.ucdavis.edu","port":"443","cipher":"auto","uuid":"587eeb1a-9d5e-4407-886f-9e9492e42273","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/express_v2ray?ed=2560","headers":{"host":"icomedbackbitches.com"}}}
-  - {"name":"🇯🇵JP | 🟢 | vmess | @v2Line | 8","type":"vmess","server":"8.211.164.215","port":"20522","cipher":"auto","uuid":"73193cce-7ca1-4b08-93ff-4ee8b0147374","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/telegram_@sswia","headers":{"host":""}}}
-  - {"name":"🇭🇰HK | 🟢 | vmess | @v2Line | 9","type":"vmess","server":"47.238.78.223","port":"48299","cipher":"auto","uuid":"3938d563-100e-4c67-8f3e-777dee04324f","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/arki","headers":{"host":""}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 9","type":"vmess","server":"bwdraper.faculty.ucdavis.edu","port":"443","cipher":"auto","uuid":"587eeb1a-9d5e-4407-886f-9e9492e42273","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/express_v2ray?ed=2560","headers":{"host":"icomedbackbitches.com"}}}
+  - {"name":"🇭🇰HK | 🟢 | vmess | @v2Line | 7","type":"vmess","server":"47.86.85.95","port":"26006","cipher":"auto","uuid":"7d719104-729e-4698-a597-59798aa64f0f","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/arki","headers":{"host":""}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -137,9 +136,8 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | vmess | @oneclickvpnkeys | 4'
       - '🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 8'
-      - '🇯🇵JP | 🟢 | vmess | @v2Line | 8'
-      - '🇭🇰HK | 🟢 | vmess | @v2Line | 9'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
+      - '🇭🇰HK | 🟢 | vmess | @v2Line | 7'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -150,9 +148,8 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | vmess | @oneclickvpnkeys | 4'
       - '🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 8'
-      - '🇯🇵JP | 🟢 | vmess | @v2Line | 8'
-      - '🇭🇰HK | 🟢 | vmess | @v2Line | 9'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
+      - '🇭🇰HK | 🟢 | vmess | @v2Line | 7'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -162,9 +159,8 @@ proxy-groups:
       - '🇫🇷FR | 🟢 | vmess | @oneclickvpnkeys | 4'
       - '🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 8'
-      - '🇯🇵JP | 🟢 | vmess | @v2Line | 8'
-      - '🇭🇰HK | 🟢 | vmess | @v2Line | 9'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
+      - '🇭🇰HK | 🟢 | vmess | @v2Line | 7'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
