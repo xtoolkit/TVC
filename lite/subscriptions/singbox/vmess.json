@@ -111,8 +111,8 @@
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "❔XX | 🟢 | vmess | @Hope_Net | 9",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 8",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 9"
             ]
@@ -126,8 +126,8 @@
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "❔XX | 🟢 | vmess | @Hope_Net | 9",
                 "🇯🇵JP | 🟢 | vmess | @v2Line | 8",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 9"
             ],
@@ -278,11 +278,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "cbbaaac-abca-acab-dcba-acbccabacbba",
+            "server": "bwdraper.faculty.ucdavis.edu",
+            "server_port": 443,
+            "uuid": "587eeb1a-9d5e-4407-886f-9e9492e42273",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -292,14 +292,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "bwdraper.faculty.ucdavis.edu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/express_v2ray?ed=2560",
+                "headers": {
+                    "Host": "bwdraper.faculty.ucdavis.edu"
+                }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
-            "uuid": "bcaaacb-aabc-abac-dcba-bbcaaaaccbcb",
+            "uuid": "cbbaaac-abca-acab-dcba-acbccabacbba",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
