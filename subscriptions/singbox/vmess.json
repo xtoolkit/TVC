@@ -128,6 +128,8 @@
                 "🇸🇪SE | 🟢 | vmess | @prrofile_purple | 152",
                 "🇺🇸US | 🟢 | vmess | @vmess_vless_v2rayng | 2",
                 "🇩🇪DE | 🟢 | vmess | @DailyV2RY | 345",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 1",
+                "🇭🇰HK | 🟢 | vmess | @ConfigsHUB | 17",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -156,7 +158,6 @@
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 6",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 7",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8",
-                "🇨🇳CN | 🟢 | vmess | @FreakConfig | 15",
                 "🇫🇮FI | 🟢 | vmess | @ISVvpn | 0",
                 "🇩🇪DE | 🟢 | vmess | @ISVvpn | 1",
                 "🇩🇪DE | 🟢 | vmess | @ISVvpn | 2",
@@ -189,6 +190,8 @@
                 "🇸🇪SE | 🟢 | vmess | @prrofile_purple | 152",
                 "🇺🇸US | 🟢 | vmess | @vmess_vless_v2rayng | 2",
                 "🇩🇪DE | 🟢 | vmess | @DailyV2RY | 345",
+                "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 1",
+                "🇭🇰HK | 🟢 | vmess | @ConfigsHUB | 17",
                 "🇳🇱NL | 🟢 | vmess | @yaney_01 | 1",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
@@ -217,7 +220,6 @@
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 6",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 7",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 8",
-                "🇨🇳CN | 🟢 | vmess | @FreakConfig | 15",
                 "🇫🇮FI | 🟢 | vmess | @ISVvpn | 0",
                 "🇩🇪DE | 🟢 | vmess | @ISVvpn | 1",
                 "🇩🇪DE | 🟢 | vmess | @ISVvpn | 2",
@@ -694,6 +696,64 @@
             "transport": {
                 "type": "ws",
                 "path": "\/linkvws",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vmess | @ConfigsHUB | 1",
+            "type": "vmess",
+            "server": "141.94.155.224",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fapeng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "fapeng.org"
+                }
+            }
+        },
+        {
+            "tag": "🇭🇰HK | 🟢 | vmess | @ConfigsHUB | 17",
+            "type": "vmess",
+            "server": "103.229.127.212",
+            "server_port": 32381,
+            "uuid": "93e463b6-af2b-437b-90f8-dba172a70d11",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/arki",
                 "headers": {
                     "Host": ""
                 }
@@ -1398,30 +1458,6 @@
             "transport": {
                 "type": "ws",
                 "path": "\/arki",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇨🇳CN | 🟢 | vmess | @FreakConfig | 15",
-            "type": "vmess",
-            "server": "119.29.98.43",
-            "server_port": 20521,
-            "uuid": "682b8828-6cb4-476b-99ea-33ac91e30c77",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
