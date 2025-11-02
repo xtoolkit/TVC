@@ -122,6 +122,7 @@ dns:
 proxies:
   - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"promo1o.bystrivpn.ru","port":443,"password":"0NeN5ta7FLa5B9DLytU0um","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @iP_CF | 13","type":"ss","server":"164.92.156.41","port":24206,"password":"zI7kiNZ0UfV9cXB73a4nRD","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @proxy_mtm | 9","type":"ss","server":"45.87.175.168","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,6 +131,7 @@ proxy-groups:
       - FALLBACK
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @iP_CF | 13'
+      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 9'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,6 +140,7 @@ proxy-groups:
     proxies:
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @iP_CF | 13'
+      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -145,6 +148,7 @@ proxy-groups:
     proxies:
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @iP_CF | 13'
+      - '🇺🇸US | 🟢 | ss | @proxy_mtm | 9'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
