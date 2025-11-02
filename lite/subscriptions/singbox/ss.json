@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇳🇱NL | 🟢 | ss | @iP_CF | 13"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇳🇱NL | 🟢 | ss | @iP_CF | 13"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
+            "type": "shadowsocks",
+            "server": "exchange.gameaurela.click",
+            "server_port": 52952,
+            "method": "chacha20-ietf-poly1305",
+            "password": "LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇳🇱NL | 🟢 | ss | @iP_CF | 13",
