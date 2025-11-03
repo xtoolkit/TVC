@@ -159,11 +159,12 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 17",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇯🇵JP | 🔴 | vless | @VmessProtocol | 11",
-                "🇨🇾CY | 🔴 | vless | @DailyV2RY | 392",
+                "🇦🇲AM | 🔴 | vless | @DailyV2RY | 393",
+                "🇨🇭CH | 🔴 | vless | @DailyV2RY | 394",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 18",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 16",
+                "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 17",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @Capoit | 11",
                 "🇺🇸US | 🔴 | vless | @Capoit | 12",
@@ -237,11 +238,12 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 17",
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇯🇵JP | 🔴 | vless | @VmessProtocol | 11",
-                "🇨🇾CY | 🔴 | vless | @DailyV2RY | 392",
+                "🇦🇲AM | 🔴 | vless | @DailyV2RY | 393",
+                "🇨🇭CH | 🔴 | vless | @DailyV2RY | 394",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 18",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 16",
+                "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 17",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @Capoit | 11",
                 "🇺🇸US | 🔴 | vless | @Capoit | 12",
@@ -1469,12 +1471,26 @@
             }
         },
         {
-            "tag": "🇨🇾CY | 🔴 | vless | @DailyV2RY | 392",
+            "tag": "🇦🇲AM | 🔴 | vless | @DailyV2RY | 393",
             "type": "vless",
-            "server": "ipw.gfdv54cvghhgfhgj-njhgj64.info",
-            "server_port": 443,
-            "uuid": "5ec3a039-ea63-4bf9-a848-a65c9bfa66f5",
+            "server": "178.160.211.182",
+            "server_port": 20155,
+            "uuid": "dc28e2d3-7c69-47c6-b5b0-f76914454294",
             "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇭CH | 🔴 | vless | @DailyV2RY | 394",
+            "type": "vless",
+            "server": "23.166.88.109",
+            "server_port": 443,
+            "uuid": "535915c5-b455-4ac1-a186-78353570a251",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1483,20 +1499,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "gb-8981.shenzogmbh.com",
+                "server_name": "www.microsoft.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "safari"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mbUkRT2YVvtaeGlZbLsfdQ-P1j07sEBBRzn9dZQ-DHY",
+                    "short_id": "be8a0c77d5ff88d5"
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/api\/v1",
-                "headers": {
-                    "Host": "gb-8981.shenzogmbh.com"
-                }
+                "type": "grpc",
+                "service_name": "aec69a9d2944dd7468412f47",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -1528,40 +1549,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 18",
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 16",
             "type": "vless",
-            "server": "38.180.178.197",
-            "server_port": 8443,
-            "uuid": "996eb6d9-d4c3-4201-b9a9-fe8b2992c7d8",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "wikipedia.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "2NlTGmJ-GCV5MySPu3UcrLIwQ2e3CueMKBd_IEczGHk",
-                    "short_id": "e5015b"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
-            "type": "vless",
-            "server": "104.18.82.55",
-            "server_port": 443,
-            "uuid": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+            "server": "v2ngfast.heloisfood.ir",
+            "server_port": 2718,
+            "uuid": "8df2b423-d068-4ebd-aff0-e0d14e2423ce",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1569,22 +1561,26 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "vless.hubp.de",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
-                "type": "ws",
-                "path": "\/Join---T-T",
-                "headers": {
-                    "Host": "vless.hubp.de"
-                }
+                "type": "grpc",
+                "service_name": "@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 17",
+            "type": "vless",
+            "server": "filmnet.filimnet.com",
+            "server_port": 80,
+            "uuid": "0afa42bd-838e-42ca-a36b-24ca2e5c5a69",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
