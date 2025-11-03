@@ -163,8 +163,7 @@
                 "🇨🇭CH | 🔴 | vless | @DailyV2RY | 394",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 16",
-                "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 17",
+                "🇬🇷GR | 🔴 | vless | @ConfigsHUB | 19",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @Capoit | 11",
                 "🇺🇸US | 🔴 | vless | @Capoit | 12",
@@ -242,8 +241,7 @@
                 "🇨🇭CH | 🔴 | vless | @DailyV2RY | 394",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 16",
-                "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 17",
+                "🇬🇷GR | 🔴 | vless | @ConfigsHUB | 19",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @Capoit | 11",
                 "🇺🇸US | 🔴 | vless | @Capoit | 12",
@@ -1549,38 +1547,32 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 16",
+            "tag": "🇬🇷GR | 🔴 | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "v2ngfast.heloisfood.ir",
-            "server_port": 2718,
-            "uuid": "8df2b423-d068-4ebd-aff0-e0d14e2423ce",
-            "flow": "",
+            "server": "185.242.84.181",
+            "server_port": 443,
+            "uuid": "677615f7-87d5-5019-a44d-4fc3ff8d59d7",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 17",
-            "type": "vless",
-            "server": "filmnet.filimnet.com",
-            "server_port": 80,
-            "uuid": "0afa42bd-838e-42ca-a36b-24ca2e5c5a69",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            "tls": {
+                "enabled": true,
+                "server_name": "vk.cc",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "eYFJombyzUhLsqA8NfdHUBJdStTt7NN-Z63fuyAJUTc",
+                    "short_id": "1127691d"
+                }
             }
         },
         {
