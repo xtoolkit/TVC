@@ -107,11 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇰🇿KZ | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 6",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 7"
             ]
@@ -121,11 +122,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇰🇿KZ | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 6",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 6",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 7"
             ],
@@ -164,6 +166,30 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇰🇿KZ | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "3h-kazakhstan1.09vpn.com",
+            "server_port": 80,
+            "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess\/",
+                "headers": {
+                    "Host": "3h-kazakhstan1.09vpn.com"
+                }
             }
         },
         {
@@ -249,7 +275,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
             "server": "104.26.15.148",
             "server_port": 80,
@@ -273,7 +299,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
             "server": "127.0.0.1",
             "server_port": 8080,
