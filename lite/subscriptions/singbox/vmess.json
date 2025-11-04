@@ -111,8 +111,8 @@
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 14",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 15",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 16",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 5"
             ]
@@ -126,8 +126,8 @@
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 14",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
+                "🇳🇱NL | 🟢 | vmess | @Hope_Net | 15",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 16",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 5"
             ],
@@ -268,7 +268,41 @@
             }
         },
         {
-            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 14",
+            "tag": "🇳🇱NL | 🟢 | vmess | @Hope_Net | 15",
+            "type": "vmess",
+            "server": "156.249.18.4",
+            "server_port": 30000,
+            "uuid": "84d1de11-ce12-4a15-8312-1338356d4ac4",
+            "security": "auto",
+            "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "156.249.18.4",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "156.249.18.4"
+                }
+            }
+        },
+        {
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 16",
             "type": "vmess",
             "server": "157.254.193.68",
             "server_port": 10020,
@@ -288,40 +322,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "157.254.193.68"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
-            "type": "vmess",
-            "server": "mycfwork.herokuapp.com",
-            "server_port": 443,
-            "uuid": "07a3a1e3-d52e-4acc-958e-c301681b5f09",
-            "security": "auto",
-            "alter_id": 4,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mycfwork.herokuapp.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "mycfwork.herokuapp.com"
                 }
             }
         },
