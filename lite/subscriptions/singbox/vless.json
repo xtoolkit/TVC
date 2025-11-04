@@ -163,8 +163,8 @@
                 "🇯🇵JP | 🔴 | vless | @VmessProtocol | 11",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
-                "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 18",
-                "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 19",
+                "🇭🇰HK | 🟢 | vless | @ConfigsHUB | 18",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 19",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @Capoit | 10",
                 "🇺🇸US | 🔴 | vless | @Capoit | 11",
@@ -244,8 +244,8 @@
                 "🇯🇵JP | 🔴 | vless | @VmessProtocol | 11",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
-                "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 18",
-                "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 19",
+                "🇭🇰HK | 🟢 | vless | @ConfigsHUB | 18",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 19",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "🇺🇸US | 🔴 | vless | @Capoit | 10",
                 "🇺🇸US | 🔴 | vless | @Capoit | 11",
@@ -1539,12 +1539,12 @@
             }
         },
         {
-            "tag": "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇭🇰HK | 🟢 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "95.141.37.73",
+            "server": "27.50.48.8",
             "server_port": 443,
-            "uuid": "1820765e-c193-4ae1-a96c-f2c476becb4b",
-            "flow": "xtls-rprx-vision",
+            "uuid": "602b380a-9fdf-4425-bc07-aae9a95cfc4b",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1553,47 +1553,41 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "aws.com",
+                "server_name": "vless.hubp.de",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw",
-                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "vless.hubp.de"
                 }
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 19",
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "213.142.156.56",
-            "server_port": 4444,
-            "uuid": "aea2c185-aca0-4259-b6d8-4840f7aff9a3",
-            "flow": "xtls-rprx-vision",
+            "server": "V2rayNGSelllBoT.m.heloisfood.ir",
+            "server_port": 6673,
+            "uuid": "8df2b423-d068-4ebd-aff0-e0d14e2423ce",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "store.steampowered.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "5if9NWaLaNEfwV9GuafHuas8q3wrxtsgf_-eInEOaSA",
-                    "short_id": "7cb7ad2e83f550a0"
-                }
+            "transport": {
+                "type": "grpc",
+                "service_name": "@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT---@V2rayNGSelllBoT",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
