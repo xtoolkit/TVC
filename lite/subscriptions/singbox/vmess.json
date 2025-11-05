@@ -107,12 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
-                "🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 6",
+                "🇬🇧GB | 🟢 | vmess | @oneclickvpnkeys | 5",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
-                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 13",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 12",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5"
             ]
@@ -122,12 +122,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
-                "🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 6",
+                "🇬🇧GB | 🟢 | vmess | @oneclickvpnkeys | 5",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
-                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 13",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+                "🇩🇪DE | 🟢 | vmess | @Hope_Net | 12",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5"
             ],
@@ -169,7 +169,24 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
+            "tag": "🇬🇧GB | 🟢 | vmess | @oneclickvpnkeys | 5",
+            "type": "vmess",
+            "server": "212.135.120.156",
+            "server_port": 38387,
+            "uuid": "02f53ab9-a22e-44a1-9507-92a6d0939fa2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6",
             "type": "vmess",
             "server": "t1.620720.xyz",
             "server_port": 8443,
@@ -200,23 +217,6 @@
                 "headers": {
                     "Host": "t1.620720.xyz"
                 }
-            }
-        },
-        {
-            "tag": "🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 6",
-            "type": "vmess",
-            "server": "82.197.69.131",
-            "server_port": 39674,
-            "uuid": "5a89386a-827b-4f54-8778-2f1b5122c6ef",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -278,11 +278,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "cf-az01-81.clashzone.xyz",
-            "server_port": 8443,
-            "uuid": "430b6895-2e0f-4716-9410-e1339d0f9af6",
+            "server": "66.235.200.21",
+            "server_port": 443,
+            "uuid": "56a2188b-2ab7-402c-b9b8-34847fdf0958",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -295,7 +295,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cf-az01-81.clashzone.xyz",
+                "server_name": "66.235.200.21",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -307,16 +307,16 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "cf-az01-81.clashzone.xyz"
+                    "Host": "66.235.200.21"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "🇩🇪DE | 🟢 | vmess | @Hope_Net | 12",
             "type": "vmess",
-            "server": "162.55.62.193",
+            "server": "162.55.174.135",
             "server_port": 80,
-            "uuid": "2aac77de-b3e4-4017-845c-ca1380f2e8d0",
+            "uuid": "4d9aa6db-705a-4bfa-b05b-8f442c839557",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -331,7 +331,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "162.55.62.193"
+                    "Host": "162.55.174.135"
                 }
             }
         },
