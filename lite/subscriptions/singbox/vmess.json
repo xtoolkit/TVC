@@ -111,8 +111,8 @@
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 7",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
-                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 14",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 13",
+                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 14",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 3"
             ]
@@ -126,8 +126,8 @@
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 7",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
-                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 14",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 13",
+                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 14",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 3"
             ],
@@ -285,11 +285,35 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": "cacerts.digicert.com",
+            "server": "51.75.160.126",
+            "server_port": 80,
+            "uuid": "b739a204-ea0d-428b-bbf5-a632ec05edcf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "51.75.160.126"
+                }
+            }
+        },
+        {
+            "tag": "🇰🇷KR | 🟢 | vmess | @Hope_Net | 14",
+            "type": "vmess",
+            "server": "152.67.218.38",
             "server_port": 443,
-            "uuid": "6fea1649-425b-4092-bf53-29792152c925",
+            "uuid": "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -302,7 +326,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cacerts.digicert.com",
+                "server_name": "152.67.218.38",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -314,31 +338,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "cacerts.digicert.com"
-                }
-            }
-        },
-        {
-            "tag": "🇵🇱PL | 🟢 | vmess | @Hope_Net | 14",
-            "type": "vmess",
-            "server": "70.34.252.176",
-            "server_port": 8081,
-            "uuid": "984ff24e-2bbb-4461-a761-bf8ccb77b80d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "70.34.252.176"
+                    "Host": "152.67.218.38"
                 }
             }
         },
