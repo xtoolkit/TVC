@@ -12,13 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 12 = vmess, 66.235.200.21, 443, username = 56a2188b-2ab7-402c-b9b8-34847fdf0958, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇭🇰HK | 🟢 | vmess | @v2Line | 4 = vmess, 8.218.71.140, 57714, username = a2e3f41e-97a6-4dbb-b926-7093ff574f74, ws = true, tls = , vmess-aead = true, ws-path = /arki?ed=2048, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇸🇪SE | 🟢 | vmess | @FreakConfig | 15 = vmess, 185.146.173.25, 80, username = ed1b5743-389b-48a2-8d60-3790eded7ca6, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 12,🇭🇰HK | 🟢 | vmess | @v2Line | 4,🇸🇪SE | 🟢 | vmess | @FreakConfig | 15
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 12,🇭🇰HK | 🟢 | vmess | @v2Line | 4,🇸🇪SE | 🟢 | vmess | @FreakConfig | 15
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 12,🇭🇰HK | 🟢 | vmess | @v2Line | 4,🇸🇪SE | 🟢 | vmess | @FreakConfig | 15
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @v2Line | 4,🇸🇪SE | 🟢 | vmess | @FreakConfig | 15
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @v2Line | 4,🇸🇪SE | 🟢 | vmess | @FreakConfig | 15
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @v2Line | 4,🇸🇪SE | 🟢 | vmess | @FreakConfig | 15
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
