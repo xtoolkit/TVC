@@ -110,11 +110,10 @@
                 "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 6",
-                "🇭🇰HK | 🟢 | vmess | @ConfigsHUB | 15",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 12",
-                "🇹🇷TR | 🟢 | vmess | @Hope_Net | 13",
+                "❔XX | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 3"
             ]
@@ -127,11 +126,10 @@
                 "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 6",
-                "🇭🇰HK | 🟢 | vmess | @ConfigsHUB | 15",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇷🇺RU | 🟢 | vmess | @Hope_Net | 12",
-                "🇹🇷TR | 🟢 | vmess | @Hope_Net | 13",
+                "❔XX | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 3"
             ],
@@ -258,30 +256,6 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vmess | @ConfigsHUB | 15",
-            "type": "vmess",
-            "server": "47.243.251.240",
-            "server_port": 8842,
-            "uuid": "aed654a3-97bb-4ba6-a6c3-faea46befc72",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/arki",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
             "tag": "❔XX | 🟢 | vmess | @yaney_01 | 4",
             "type": "vmess",
             "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
@@ -340,11 +314,11 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "91.193.181.192",
-            "server_port": 8090,
-            "uuid": "08bc30e1-be39-4eb4-e887-e6579be15a45",
+            "server": "cf-lt-dns.sharecentre.online",
+            "server_port": 443,
+            "uuid": "20e92881-5fb4-4b05-bc77-57929476dc69",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -355,20 +329,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "cf-lt-dns.sharecentre.online",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "91.193.181.192"
+                    "Host": "cf-lt-dns.sharecentre.online"
                 }
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "185.242.161.206",
-            "server_port": 25212,
-            "uuid": "43a988d1-8c8c-4303-9e03-8d651de6f376",
+            "server": "51.81.220.195",
+            "server_port": 80,
+            "uuid": "6fea1649-425b-4092-bf53-29792152c925",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -383,7 +367,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "185.242.161.206"
+                    "Host": "51.81.220.195"
                 }
             }
         },
