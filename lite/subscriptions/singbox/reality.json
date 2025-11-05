@@ -111,8 +111,11 @@
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 3",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 142",
+                "🇮🇳IN | 🟢 | vless | @v2rayngvpn | 13",
+                "🇱🇻LV | 🟢 | vless | @v2rayngvpn | 14",
                 "🇳🇱NL | 🟢 | vless | @v2ray1_ng | 7",
-                "🇫🇮FI | 🔴 | vless | @proxy_mtm | 6",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 15",
+                "🇫🇮FI | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
@@ -128,8 +131,11 @@
                 "❔XX | 🟢 | vless | @NIM_VPN_ir | 3",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 142",
+                "🇮🇳IN | 🟢 | vless | @v2rayngvpn | 13",
+                "🇱🇻LV | 🟢 | vless | @v2rayngvpn | 14",
                 "🇳🇱NL | 🟢 | vless | @v2ray1_ng | 7",
-                "🇫🇮FI | 🔴 | vless | @proxy_mtm | 6",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 15",
+                "🇫🇮FI | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
@@ -301,6 +307,64 @@
             }
         },
         {
+            "tag": "🇮🇳IN | 🟢 | vless | @v2rayngvpn | 13",
+            "type": "vless",
+            "server": "india2.clearorbitllc.com",
+            "server_port": 443,
+            "uuid": "b41b3c10-91f1-42ed-b597-2ebdaddb9a96",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "india2.clearorbitllc.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "x4izG3bGdBtEw3bArBaEI4ItTLfKgnEcTct4GjvTUUQ",
+                    "short_id": "157c0871"
+                }
+            }
+        },
+        {
+            "tag": "🇱🇻LV | 🟢 | vless | @v2rayngvpn | 14",
+            "type": "vless",
+            "server": "188.253.19.234",
+            "server_port": 444,
+            "uuid": "b63444c6-3fdd-40f3-a8a5-41e36ebda1cc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "GJhAveZRyo-TOH_lMlI0YxNb3Lv-3-7esgvKx8aRHik",
+                    "short_id": "dd42e28556"
+                }
+            }
+        },
+        {
             "tag": "🇳🇱NL | 🟢 | vless | @v2ray1_ng | 7",
             "type": "vless",
             "server": "nl2.inet.monster",
@@ -330,7 +394,36 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @proxy_mtm | 6",
+            "tag": "🇳🇱NL | 🟢 | vless | @FreakConfig | 15",
+            "type": "vless",
+            "server": "185.33.24.229",
+            "server_port": 28495,
+            "uuid": "7e296434-2d17-48d3-928d-19eaa34aecb1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ",
+                    "short_id": "0ecc2c1392"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @proxy_mtm | 7",
             "type": "vless",
             "server": "65.109.216.229",
             "server_port": 2053,
