@@ -112,7 +112,7 @@
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 17",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 3"
@@ -128,7 +128,7 @@
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 17",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 3"
@@ -304,11 +304,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "104.19.32.46",
-            "server_port": 2086,
-            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "server": "jp-amd1.018999.xyz",
+            "server_port": 443,
+            "uuid": "65e619e7-0bf1-4f5b-a390-5735b01a3713",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -319,20 +319,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "jp-amd1.018999.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "104.19.32.46"
+                    "Host": "jp-amd1.018999.xyz"
                 }
             }
         },
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "uicdn.cf",
-            "server_port": 80,
-            "uuid": "6fea1649-425b-4092-bf53-29792152c925",
+            "server": "172.66.44.197",
+            "server_port": 443,
+            "uuid": "fa4cb529-3ac9-4268-bb04-ed4253813508",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -343,11 +353,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "172.66.44.197",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "uicdn.cf"
+                    "Host": "172.66.44.197"
                 }
             }
         },
