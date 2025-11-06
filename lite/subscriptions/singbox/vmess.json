@@ -107,12 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-                "🇹🇷TR | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 3"
             ]
@@ -122,12 +123,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-                "🇹🇷TR | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 3"
             ],
@@ -166,6 +168,33 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "38.54.98.110",
+            "server_port": 2052,
+            "uuid": "665d9b8f-153d-4907-adac-de12afd9c851",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "38.54.98.110",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
@@ -277,9 +306,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "104.19.21.230",
+            "server": "104.19.32.46",
             "server_port": 2086,
-            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -294,16 +323,16 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "104.19.21.230"
+                    "Host": "104.19.32.46"
                 }
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "202.78.162.5",
-            "server_port": 443,
-            "uuid": "716eded6-2201-4dbd-9d63-1638c9e8e677",
+            "server": "uicdn.cf",
+            "server_port": 80,
+            "uuid": "6fea1649-425b-4092-bf53-29792152c925",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -314,21 +343,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "202.78.162.5",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "202.78.162.5"
+                    "Host": "uicdn.cf"
                 }
             }
         },
