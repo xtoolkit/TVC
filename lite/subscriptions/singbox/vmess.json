@@ -112,7 +112,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇭🇰HK | 🟢 | vmess | @Hope_Net | 17",
-                "🇮🇲IM | 🟢 | vmess | @Hope_Net | 18",
+                "❔XX | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 3"
             ]
@@ -127,7 +127,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇭🇰HK | 🟢 | vmess | @Hope_Net | 17",
-                "🇮🇲IM | 🟢 | vmess | @Hope_Net | 18",
+                "❔XX | 🟢 | vmess | @Hope_Net | 18",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 2",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 3"
             ],
@@ -280,33 +280,9 @@
         {
             "tag": "🇭🇰HK | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "47.243.230.222",
-            "server_port": 35668,
-            "uuid": "ab4df3ef-e77f-4f2a-bfb8-63604412f73b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "http",
-                "host": [
-                    "47.243.230.222"
-                ],
-                "path": "\/"
-            }
-        },
-        {
-            "tag": "🇮🇲IM | 🟢 | vmess | @Hope_Net | 18",
-            "type": "vmess",
-            "server": "45.95.241.251",
+            "server": "fullaccesstohongkongnet.azurewebsites.net",
             "server_port": 443,
-            "uuid": "d1ace408-1102-4919-9ee8-88f85c8a91e3",
+            "uuid": "274f11c6-f69b-40b9-8966-f39e06e97be7",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -319,7 +295,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "45.95.241.251",
+                "server_name": "fullaccesstohongkongnet.azurewebsites.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -331,7 +307,31 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "45.95.241.251"
+                    "Host": "fullaccesstohongkongnet.azurewebsites.net"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 18",
+            "type": "vmess",
+            "server": "hn1.safepn.net",
+            "server_port": 80,
+            "uuid": "ee76cecf-1219-42be-ae3f-6b8077e4cacc",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "hn1.safepn.net"
                 }
             }
         },
