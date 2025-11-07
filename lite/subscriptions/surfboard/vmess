@@ -12,13 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇷🇺RU | 🟢 | vmess | @Hope_Net | 18 = vmess, 45.136.244.181, 80, username = a25881f3-967f-3265-bc7f-9e66857b016b, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"45.136.244.181", skip-cert-verify = true, tfo = false
-🇳🇱NL | 🟢 | vmess | @Hope_Net | 19 = vmess, 46.182.107.82, 443, username = 37c29f42-b7c7-40c7-9da9-743dcc4895bc, ws = true, tls = 1, vmess-aead = false, ws-path = /, ws-headers = Host:"46.182.107.82", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 18 = vmess, 23.224.101.102, 443, username = 946ba5df-5771-4873-a3cb-892378526147, ws = true, tls = 1, vmess-aead = false, ws-path = /, ws-headers = Host:"23.224.101.102", skip-cert-verify = true, tfo = false
 🇭🇰HK | 🟢 | vmess | @v2Line | 5 = vmess, 8.218.26.234, 21502, username = e711fa61-ab3e-471d-b660-6d9cbcd4f15e, ws = true, tls = , vmess-aead = true, ws-path = /arki?ed=2048, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇷🇺RU | 🟢 | vmess | @Hope_Net | 18,🇳🇱NL | 🟢 | vmess | @Hope_Net | 19,🇭🇰HK | 🟢 | vmess | @v2Line | 5
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇷🇺RU | 🟢 | vmess | @Hope_Net | 18,🇳🇱NL | 🟢 | vmess | @Hope_Net | 19,🇭🇰HK | 🟢 | vmess | @v2Line | 5
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇷🇺RU | 🟢 | vmess | @Hope_Net | 18,🇳🇱NL | 🟢 | vmess | @Hope_Net | 19,🇭🇰HK | 🟢 | vmess | @v2Line | 5
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 18,🇭🇰HK | 🟢 | vmess | @v2Line | 5
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 18,🇭🇰HK | 🟢 | vmess | @v2Line | 5
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 18,🇭🇰HK | 🟢 | vmess | @v2Line | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
