@@ -161,13 +161,13 @@
                 "🇯🇵JP | 🔴 | vless | @VmessProtocol | 12",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
-                "🇺🇸US | 🔴 | trojan | @ConfigsHUB | 17",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
+                "🇭🇰HK | 🔴 | vless | @ConfigsHUB | 18",
+                "🇹🇼TW | 🟢 | vmess | @ConfigsHUB | 19",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇷CR | 🟢 | vmess | @Hope_Net | 18",
-                "🇦🇺AU | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 5",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 6",
                 "🇺🇸US | 🔴 | vless | @Capoit | 11",
@@ -252,13 +252,13 @@
                 "🇯🇵JP | 🔴 | vless | @VmessProtocol | 12",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 8",
-                "🇺🇸US | 🔴 | trojan | @ConfigsHUB | 17",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
+                "🇭🇰HK | 🔴 | vless | @ConfigsHUB | 18",
+                "🇹🇼TW | 🟢 | vmess | @ConfigsHUB | 19",
                 "🇳🇱NL | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇨🇷CR | 🟢 | vmess | @Hope_Net | 18",
-                "🇦🇺AU | 🟢 | vmess | @Hope_Net | 19",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 5",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 6",
                 "🇺🇸US | 🔴 | vless | @Capoit | 11",
@@ -1521,23 +1521,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | trojan | @ConfigsHUB | 17",
-            "type": "trojan",
-            "server": "104.18.144.129",
-            "server_port": 443,
-            "password": "NISHIKUITAN222",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇭🇰HK | 🔴 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "91.107.245.98",
+            "server": "27.50.48.8",
             "server_port": 443,
-            "uuid": "98a4587a-b33f-43c2-af75-5c041d97deaf",
+            "uuid": "602b380a-9fdf-4425-bc07-aae9a95cfc4b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1545,11 +1533,45 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "vless.hubp.de",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip---fotonvip",
+                "path": "\/snippets\/ip=tp50000.kr.proxyip.fgfw.eu.org:50000",
                 "headers": {
-                    "Host": "91.107.245.98"
+                    "Host": "vless.hubp.de"
+                }
+            }
+        },
+        {
+            "tag": "🇹🇼TW | 🟢 | vmess | @ConfigsHUB | 19",
+            "type": "vmess",
+            "server": "83.147.13.228",
+            "server_port": 8080,
+            "uuid": "26d77d7a-d4ea-40cd-8da5-54a9c84e7362",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ec-McAuth\/index",
+                "headers": {
+                    "Host": "83.147.13.228"
                 }
             }
         },
@@ -1626,11 +1648,11 @@
             }
         },
         {
-            "tag": "🇨🇷CR | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "190.93.244.2",
+            "server": "172.64.154.155",
             "server_port": 443,
-            "uuid": "40d496a6-ceeb-4096-baeb-4cc52b205621",
+            "uuid": "5f64fa65-7b14-49c5-954d-aa15c6bfcacd",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1643,7 +1665,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "190.93.244.2",
+                "server_name": "172.64.154.155",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1655,16 +1677,16 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "190.93.244.2"
+                    "Host": "172.64.154.155"
                 }
             }
         },
         {
-            "tag": "🇦🇺AU | 🟢 | vmess | @Hope_Net | 19",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 19",
             "type": "vmess",
-            "server": "20.72img.xyz",
-            "server_port": 443,
-            "uuid": "81d93f62-15a2-4994-adb9-0b5d906aac7e",
+            "server": "173.245.49.10",
+            "server_port": 8443,
+            "uuid": "a6a37e04-5e81-44c9-be53-baa3ff46eb8b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1677,7 +1699,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "20.72img.xyz",
+                "server_name": "173.245.49.10",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -1689,7 +1711,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "20.72img.xyz"
+                    "Host": "173.245.49.10"
                 }
             }
         },
