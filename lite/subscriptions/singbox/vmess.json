@@ -112,10 +112,10 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 18",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 5",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 6",
-                "🇭🇰HK | 🟢 | vmess | @FreakConfig | 16"
+                "🇭🇰HK | 🟢 | vmess | @FreakConfig | 17"
             ]
         },
         {
@@ -128,10 +128,10 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 18",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 5",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 6",
-                "🇭🇰HK | 🟢 | vmess | @FreakConfig | 16"
+                "🇭🇰HK | 🟢 | vmess | @FreakConfig | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -272,9 +272,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "104.18.3.2",
-            "server_port": 80,
-            "uuid": "cb1d03f1-693a-42dc-9dd2-0369a413fe55",
+            "server": "161.35.229.94",
+            "server_port": 443,
+            "uuid": "27848739-7e62-4138-9fd3-098a63964b6b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -285,20 +285,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "161.35.229.94",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "104.18.3.2"
+                    "Host": "161.35.229.94"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "www.speedtest.net",
-            "server_port": 2095,
-            "uuid": "e4ce2e2e-98a9-4cfd-b89e-8d322837edcb",
+            "server": "31.22.109.209",
+            "server_port": 443,
+            "uuid": "36793d2c-0d5a-4a84-8862-f9c93e9af5b5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -309,11 +319,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "31.22.109.209",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "31.22.109.209"
                 }
             }
         },
@@ -376,7 +396,7 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vmess | @FreakConfig | 16",
+            "tag": "🇭🇰HK | 🟢 | vmess | @FreakConfig | 17",
             "type": "vmess",
             "server": "8.218.120.209",
             "server_port": 15160,

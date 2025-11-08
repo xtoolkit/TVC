@@ -124,8 +124,8 @@ proxies:
   - {"name":"❔XX | 🟢 | vmess | @oneclickvpnkeys | 4","type":"vmess","server":"2001:bc8:32d7:302::10","port":"44579","cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇪🇸ES | 🟢 | vmess | @oneclickvpnkeys | 5","type":"vmess","server":"208.76.223.218","port":"27092","cipher":"auto","uuid":"a0596ba6-72a3-4366-8992-77088da65bd8","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 17","type":"vmess","server":"104.18.3.2","port":"80","cipher":"auto","uuid":"cb1d03f1-693a-42dc-9dd2-0369a413fe55","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sshsg1.cloudtik.biz.id"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 18","type":"vmess","server":"www.speedtest.net","port":"2095","cipher":"auto","uuid":"e4ce2e2e-98a9-4cfd-b89e-8d322837edcb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"www.speedtest.net"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 17","type":"vmess","server":"161.35.229.94","port":"443","cipher":"auto","uuid":"27848739-7e62-4138-9fd3-098a63964b6b","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"161.35.229.94"}}}
+  - {"name":"🇬🇧GB | 🟢 | vmess | @Hope_Net | 18","type":"vmess","server":"31.22.109.209","port":"443","cipher":"auto","uuid":"36793d2c-0d5a-4a84-8862-f9c93e9af5b5","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"🇸🇪SE | 🟢 | vmess | @v2Line | 5","type":"vmess","server":"185.146.173.25","port":"80","cipher":"auto","uuid":"ed1b5743-389b-48a2-8d60-3790eded7ca6","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir."}}}
 proxy-groups:
   - name: MANUAL
@@ -138,7 +138,7 @@ proxy-groups:
       - '🇪🇸ES | 🟢 | vmess | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 17'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 18'
+      - '🇬🇧GB | 🟢 | vmess | @Hope_Net | 18'
       - '🇸🇪SE | 🟢 | vmess | @v2Line | 5'
   - name: URL-TEST
     type: url-test
@@ -151,7 +151,7 @@ proxy-groups:
       - '🇪🇸ES | 🟢 | vmess | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 17'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 18'
+      - '🇬🇧GB | 🟢 | vmess | @Hope_Net | 18'
       - '🇸🇪SE | 🟢 | vmess | @v2Line | 5'
   - name: FALLBACK
     type: fallback
@@ -163,7 +163,7 @@ proxy-groups:
       - '🇪🇸ES | 🟢 | vmess | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 17'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 18'
+      - '🇬🇧GB | 🟢 | vmess | @Hope_Net | 18'
       - '🇸🇪SE | 🟢 | vmess | @v2Line | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
