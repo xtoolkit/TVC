@@ -112,11 +112,12 @@
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 17",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 5",
+                "🇩🇪DE | 🟢 | vless | @v2rayngvpn | 14",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 4",
+                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 15",
                 "🇫🇮FI | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @kingofilter | 1",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
                 "❔XX | 🔴 | vless | @SvnTeam | 7"
             ]
@@ -131,11 +132,12 @@
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 17",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 5",
+                "🇩🇪DE | 🟢 | vless | @v2rayngvpn | 14",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 4",
+                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 15",
                 "🇫🇮FI | 🔴 | vless | @proxy_mtm | 7",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
-                "🇩🇪DE | 🟢 | vless | @kingofilter | 1",
                 "❔XX | 🔴 | vless | @SvnTeam | 6",
                 "❔XX | 🔴 | vless | @SvnTeam | 7"
             ],
@@ -334,6 +336,35 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🟢 | vless | @v2rayngvpn | 14",
+            "type": "vless",
+            "server": "finland4.clear-vpn.org",
+            "server_port": 443,
+            "uuid": "c07c396a-6206-4d1a-9605-2952af00f2fc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "e8R6bqFhE4LBJeH-V9y8As5nu7KvUnIEOh2tDhm4mRE",
+                    "short_id": "a2820e7a894f37"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 4",
             "type": "vless",
             "server": "deu406.unboundaccess.org",
@@ -359,6 +390,35 @@
                     "enabled": true,
                     "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
                     "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 15",
+            "type": "vless",
+            "server": "earthshaker.fonixapp.org",
+            "server_port": 43326,
+            "uuid": "7b6df8d0-100c-48e1-beec-30effe41c04e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "e4jsuyfW6xyjfYOVsFI4AKnJihGp4MMqtRv5TaVurlw",
+                    "short_id": "c3"
                 }
             }
         },
@@ -468,35 +528,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @kingofilter | 1",
-            "type": "vless",
-            "server": "91.98.224.242",
-            "server_port": 8443,
-            "uuid": "344d875b-c192-447d-9ca6-8a655d4db8b8",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "r3FLw76bxhgit74mzJTglRM-ujPZ9f-HemByQ-uZqms",
-                    "short_id": "27e6b66aa77662fb"
-                }
             }
         },
         {
