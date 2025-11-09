@@ -107,12 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
-                "🇬🇧GB | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 2",
-                "❔XX | 🟢 | vmess | @Hope_Net | 3",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 3",
+                "❔XX | 🟢 | vmess | @Hope_Net | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 5",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 6"
             ]
@@ -122,12 +122,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
-                "🇬🇧GB | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 2",
-                "❔XX | 🟢 | vmess | @Hope_Net | 3",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 3",
+                "❔XX | 🟢 | vmess | @Hope_Net | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 5",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 6"
             ],
@@ -169,6 +169,30 @@
             }
         },
         {
+            "tag": "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 3",
+            "type": "vmess",
+            "server": "51.79.103.76",
+            "server_port": 80,
+            "uuid": "58fe1542-5290-40ad-815a-77707a81afe5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/IOebhLMhl1CTbFHbL95myfRX2",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
             "type": "vmess",
             "server": "193.124.24.247",
@@ -183,40 +207,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | vmess | @oneclickvpnkeys | 5",
-            "type": "vmess",
-            "server": "144.126.204.85",
-            "server_port": 443,
-            "uuid": "f95da449-747a-4ecc-b4ba-9f0f715a25df",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "xg1b6.waimaohots.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/api\/v1\/graphql",
-                "headers": {
-                    "Host": "xg1b6.waimaohots.com"
-                }
             }
         },
         {
@@ -278,7 +268,41 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 2",
+            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 3",
+            "type": "vmess",
+            "server": "68.168.31.196",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "68.168.31.196",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "68.168.31.196"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
             "server": "cvs-deo.shopeemobile.com",
             "server_port": 2086,
@@ -298,40 +322,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "cvs-deo.shopeemobile.com"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 3",
-            "type": "vmess",
-            "server": "denc36.xtooltech.cfd",
-            "server_port": 443,
-            "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "denc36.xtooltech.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "denc36.xtooltech.cfd"
                 }
             }
         },
