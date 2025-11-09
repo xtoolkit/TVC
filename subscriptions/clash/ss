@@ -118,59 +118,55 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"ss.017.node-for-bigairport.win","port":15098,"password":"c69374da-2208-4cbd-b81e-cdf88b5e7f53","cipher":"aes-256-gcm"}
+  - {"name":"🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"ss.017.node-for-bigairport.win","port":15098,"password":"c69374da-2208-4cbd-b81e-cdf88b5e7f53","cipher":"aes-256-gcm"}
   - {"name":"🇺🇸US | 🟢 | ss | @vmess_vless_v2rayng | 9","type":"ss","server":"45.87.175.171","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 10","type":"ss","server":"193.46.56.185","port":6683,"password":"iw8GoN42dciNxDBd0RwAdL","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇫🇮FI | 🟢 | ss | @vmess_vless_v2rayng | 11","type":"ss","server":"83.147.216.70","port":64519,"password":"UlT89D0rvcr05tKft1NB5a","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 0","type":"ss","server":"78.129.140.11","port":443,"password":"exT8E3dwH0w0dkvJPGjh1I","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 1","type":"ss","server":"104.192.227.162","port":443,"password":"uug3RoSFa4UDiD3SrHXEvA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇹🇷TR | 🟢 | ss | @OutlineVpnOfficial | 2","type":"ss","server":"62.133.63.230","port":1580,"password":"KgcKQpFCkXnOJXceV68o12","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇾CY | 🟢 | ss | @OutlineVpnOfficial | 7","type":"ss","server":"134.255.210.49","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇵🇾PY | 🟢 | ss | @OutlineVpnOfficial | 16","type":"ss","server":"38.165.233.18","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇾CY | 🟢 | ss | @OutlineVpnOfficial | 6","type":"ss","server":"134.255.210.49","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇵🇾PY | 🟢 | ss | @OutlineVpnOfficial | 15","type":"ss","server":"38.165.233.18","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 4'
       - '🇺🇸US | 🟢 | ss | @vmess_vless_v2rayng | 9'
       - '🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 10'
       - '🇫🇮FI | 🟢 | ss | @vmess_vless_v2rayng | 11'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 1'
-      - '🇹🇷TR | 🟢 | ss | @OutlineVpnOfficial | 2'
-      - '🇨🇾CY | 🟢 | ss | @OutlineVpnOfficial | 7'
-      - '🇵🇾PY | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇨🇾CY | 🟢 | ss | @OutlineVpnOfficial | 6'
+      - '🇵🇾PY | 🟢 | ss | @OutlineVpnOfficial | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 4'
       - '🇺🇸US | 🟢 | ss | @vmess_vless_v2rayng | 9'
       - '🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 10'
       - '🇫🇮FI | 🟢 | ss | @vmess_vless_v2rayng | 11'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 1'
-      - '🇹🇷TR | 🟢 | ss | @OutlineVpnOfficial | 2'
-      - '🇨🇾CY | 🟢 | ss | @OutlineVpnOfficial | 7'
-      - '🇵🇾PY | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇨🇾CY | 🟢 | ss | @OutlineVpnOfficial | 6'
+      - '🇵🇾PY | 🟢 | ss | @OutlineVpnOfficial | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 4'
       - '🇺🇸US | 🟢 | ss | @vmess_vless_v2rayng | 9'
       - '🇹🇷TR | 🟢 | ss | @vmess_vless_v2rayng | 10'
       - '🇫🇮FI | 🟢 | ss | @vmess_vless_v2rayng | 11'
       - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 0'
       - '🇺🇸US | 🟢 | ss | @OutlineVpnOfficial | 1'
-      - '🇹🇷TR | 🟢 | ss | @OutlineVpnOfficial | 2'
-      - '🇨🇾CY | 🟢 | ss | @OutlineVpnOfficial | 7'
-      - '🇵🇾PY | 🟢 | ss | @OutlineVpnOfficial | 16'
+      - '🇨🇾CY | 🟢 | ss | @OutlineVpnOfficial | 6'
+      - '🇵🇾PY | 🟢 | ss | @OutlineVpnOfficial | 15'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
