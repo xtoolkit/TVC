@@ -107,11 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 0",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 1",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 2",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 7",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 8"
@@ -122,11 +123,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 0",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 1",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 2",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 6",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
                 "❔XX | 🟢 | vmess | @Hope_Net | 7",
                 "🇸🇪SE | 🟢 | vmess | @v2Line | 7",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 8"
@@ -169,7 +171,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 0",
+            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 1",
             "type": "vmess",
             "server": "38.12.83.217",
             "server_port": 30002,
@@ -186,7 +188,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 1",
+            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 2",
             "type": "vmess",
             "server": "104.21.46.90",
             "server_port": 443,
@@ -216,6 +218,30 @@
                 "path": "\/ri9mOOVJuAimB74kgXZ",
                 "headers": {
                     "Host": "fde63b24-7fe1-5a22-949e-a30c5a39eb58.freevpnatm.dpdns.org"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 18",
+            "type": "vmess",
+            "server": "802c049624443240.hhshdihasgifghleagfuwefogybweufwef.ir",
+            "server_port": 80,
+            "uuid": "21193f5b-ec53-4f48-a736-5170219414f4",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
                 }
             }
         },
@@ -278,7 +304,41 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+            "type": "vmess",
+            "server": "172.67.196.112",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "linde06.indiavideo.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "linde06.indiavideo.sbs"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
             "server": "armus.ptuu.cf",
             "server_port": 443,
@@ -309,23 +369,6 @@
                 "headers": {
                     "Host": "armus.ptuu.cf"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
-            "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "ccbaaba-cbaa-bcaa-dacb-bbcaabcbcaac",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
