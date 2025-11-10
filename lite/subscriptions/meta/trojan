@@ -122,6 +122,7 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14","type":"trojan","server":"13.37.78.244","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"13.37.78.244","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"69.84.182.108","port":8443,"udp":false,"password":"06ce4048-f18e-4e14-b897-dc1f570cb263","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cdn-node-oss-64.paofu.de"}
   - {"name":"🇩🇪DE | 🔴 | trojan | @iP_CF | 9","type":"trojan","server":"66.59.208.7","port":17136,"udp":false,"password":"mXP68BRNvU","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
@@ -131,6 +132,7 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🇩🇪DE | 🔴 | trojan | @iP_CF | 9'
   - name: URL-TEST
     type: url-test
@@ -140,6 +142,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🇩🇪DE | 🔴 | trojan | @iP_CF | 9'
   - name: FALLBACK
     type: fallback
@@ -148,6 +151,7 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🇩🇪DE | 🔴 | trojan | @iP_CF | 9'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
