@@ -106,30 +106,30 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 1",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 2",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 1",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
-                "❔XX | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
-                "❔XX | 🟢 | vmess | @v2Line | 7",
-                "❔XX | 🟢 | vmess | @v2Line | 8"
+                "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 7",
+                "🇭🇰HK | 🟢 | vmess | @v2Line | 7",
+                "🇸🇪SE | 🟢 | vmess | @v2Line | 8"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 1",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 2",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 1",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
-                "❔XX | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
-                "❔XX | 🟢 | vmess | @v2Line | 7",
-                "❔XX | 🟢 | vmess | @v2Line | 8"
+                "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 7",
+                "🇭🇰HK | 🟢 | vmess | @v2Line | 7",
+                "🇸🇪SE | 🟢 | vmess | @v2Line | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -152,7 +152,7 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @mftizi | 17",
+            "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
             "type": "vmess",
             "server": "183.236.51.23",
             "server_port": 53002,
@@ -169,7 +169,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 1",
+            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 1",
             "type": "vmess",
             "server": "38.12.83.217",
             "server_port": 30002,
@@ -186,7 +186,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 2",
+            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 2",
             "type": "vmess",
             "server": "104.21.46.90",
             "server_port": 443,
@@ -244,7 +244,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @yaney_01 | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
             "type": "vmess",
             "server": "104.26.8.210",
             "server_port": 443,
@@ -278,11 +278,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "cbcbaaa-bcaa-abca-dbac-cbabcbacaacb",
+            "server": "www.Kayak.com",
+            "server_port": 443,
+            "uuid": "6529ee7d-b090-4515-8595-8bbdb6227fe1",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -292,14 +292,31 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.Kayak.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/racevpn?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn",
+                "headers": {
+                    "Host": "www.Kayak.com"
+                }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "172.67.215.103",
-            "server_port": 8080,
-            "uuid": "22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0",
+            "server": "23.227.38.3",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -312,14 +329,14 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/github.com\/Alvin9999",
                 "headers": {
-                    "Host": "172.67.215.103"
+                    "Host": "23.227.38.3"
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @v2Line | 7",
+            "tag": "🇭🇰HK | 🟢 | vmess | @v2Line | 7",
             "type": "vmess",
             "server": "8.218.113.19",
             "server_port": 54100,
@@ -343,7 +360,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @v2Line | 8",
+            "tag": "🇸🇪SE | 🟢 | vmess | @v2Line | 8",
             "type": "vmess",
             "server": "185.146.173.25",
             "server_port": 80,
