@@ -107,7 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
@@ -121,7 +121,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
@@ -167,7 +167,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
             "type": "vmess",
             "server": "15.235.83.228",
             "server_port": 443,
@@ -261,6 +261,30 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
+            "server": "104.22.58.63",
+            "server_port": 80,
+            "uuid": "fd200446-f7f8-4549-b4d8-4a23baea04bf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+            "type": "vmess",
             "server": "p1.v2raybrasil.xyz",
             "server_port": 443,
             "uuid": "51991d4c-bcbd-4424-a4f0-6ad9b6cc4d83",
@@ -289,40 +313,6 @@
                 "path": "\/v2raybrasil.com",
                 "headers": {
                     "Host": "nsusa.v2ray.com.br"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
-            "type": "vmess",
-            "server": "172.66.213.38",
-            "server_port": 443,
-            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "green-morning-ce19.mehdipost667.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/afrhms16v.bestxray.buzz\/linkws",
-                "headers": {
-                    "Host": "green-morning-ce19.mehdipost667.workers.dev"
                 }
             }
         },
