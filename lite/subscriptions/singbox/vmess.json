@@ -108,11 +108,11 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+                "🇩🇪DE | 🟢 | vmess | @free1_vpn | 4",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇫🇷FR | 🟢 | vmess | @v2Line | 4",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 5"
             ]
@@ -123,11 +123,11 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+                "🇩🇪DE | 🟢 | vmess | @free1_vpn | 4",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
                 "🇫🇷FR | 🟢 | vmess | @v2Line | 4",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 5"
             ],
@@ -193,40 +193,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @v2ray1_ng | 3",
-            "type": "vmess",
-            "server": "57.129.28.212",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fapeng.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "fapeng.org"
-                }
-            }
-        },
-        {
             "tag": "❔XX | 🟢 | vmess | @yaney_01 | 4",
             "type": "vmess",
             "server": "ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub",
@@ -285,11 +251,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+            "tag": "🇩🇪DE | 🟢 | vmess | @free1_vpn | 4",
             "type": "vmess",
-            "server": "104.22.58.63",
-            "server_port": 80,
-            "uuid": "fd200446-f7f8-4549-b4d8-4a23baea04bf",
+            "server": "57.129.28.212",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -300,20 +266,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "fapeng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "104.22.58.63"
+                    "Host": "fapeng.org"
                 }
             }
         },
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 17",
             "type": "vmess",
-            "server": "172.67.156.210",
+            "server": "172.67.175.56",
             "server_port": 443,
-            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -339,6 +315,30 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 18",
+            "type": "vmess",
+            "server": "104.22.58.63",
+            "server_port": 80,
+            "uuid": "fd200446-f7f8-4549-b4d8-4a23baea04bf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
+                "headers": {
+                    "Host": "104.22.58.63"
                 }
             }
         },
