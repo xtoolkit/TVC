@@ -154,8 +154,8 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 6",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
-                "🇵🇱PL | 🟢 | vless | @ConfigsHUB | 18",
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 19",
+                "🇫🇷FR | 🔴 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @Capoit | 19",
                 "🇺🇸US | 🔴 | vless | @Capoit | 20",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 11",
@@ -230,8 +230,8 @@
                 "🇺🇸US | 🔴 | vless | @vmess_vless_v2rayng | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 6",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 7",
-                "🇵🇱PL | 🟢 | vless | @ConfigsHUB | 18",
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 19",
+                "🇫🇷FR | 🔴 | vless | @ConfigsHUB | 17",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @Capoit | 19",
                 "🇺🇸US | 🔴 | vless | @Capoit | 20",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 11",
@@ -1352,11 +1352,11 @@
             }
         },
         {
-            "tag": "🇵🇱PL | 🟢 | vless | @ConfigsHUB | 18",
+            "tag": "🇫🇷FR | 🔴 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "pl.jykvpn.com",
-            "server_port": 443,
-            "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+            "server": "45.10.59.133",
+            "server_port": 53942,
+            "uuid": "28fb84ee-eed0-49f3-87cc-4805676c4a2b",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1366,46 +1366,48 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cdnjs.com",
+                "server_name": "canva.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "6nOPlQCw4Obbu6yjSZXtwhlVeYlPSBdPFJ3ku8QkFls",
+                    "short_id": "1d5290fe"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "8.39.125.85",
+            "server_port": 443,
+            "uuid": "f64bdc57-0f54-4705-bf75-cfd646d98c06",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "snippets.nneko.netlib.re",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
-                    "short_id": "4c02bbbfa833b3b6"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 19",
-            "type": "vless",
-            "server": "cent1de.maga171717.sbs",
-            "server_port": 443,
-            "uuid": "706fae5e-3fc6-41a4-8eb7-3b3df7bad72b",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "snicent1de.maga171717.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "WWg8Ccc6a3aGGgSRe4tOYrIotlussqEKlhAk3A1PsW4",
-                    "short_id": "913f32684b4776f9"
+            "transport": {
+                "type": "ws",
+                "path": "\/----Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12--Arshiavpn12",
+                "headers": {
+                    "Host": "snippets.nneko.netlib.re"
                 }
             }
         },
