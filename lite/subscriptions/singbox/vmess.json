@@ -110,7 +110,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+                "🇹🇼TW | 🟢 | vmess | @Hope_Net | 16",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 3",
                 "🇸🇬SG | 🟢 | vmess | @v2Line | 4"
             ]
@@ -123,7 +123,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+                "🇹🇼TW | 🟢 | vmess | @Hope_Net | 16",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 3",
                 "🇸🇬SG | 🟢 | vmess | @v2Line | 4"
             ],
@@ -225,9 +225,9 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 15",
             "type": "vmess",
-            "server": "104.18.20.153",
-            "server_port": 80,
-            "uuid": "9930a5cf-4db1-442b-a1d4-876bede83295",
+            "server": "172.66.213.38",
+            "server_port": 443,
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -238,20 +238,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
+                "path": "\/afrhms16v.bestxray.buzz\/linkws",
                 "headers": {
                     "Host": ""
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 16",
+            "tag": "🇹🇼TW | 🟢 | vmess | @Hope_Net | 16",
             "type": "vmess",
-            "server": "104.18.84.104",
-            "server_port": 80,
-            "uuid": "211d8a34-9c48-4435-b4bf-343ae1cbda0e",
+            "server": "154.40.60.172",
+            "server_port": 12945,
+            "uuid": "8259cb1c-dd6c-4739-9c88-af550d977525",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -261,6 +271,16 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             },
             "transport": {
                 "type": "ws",
