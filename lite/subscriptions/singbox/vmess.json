@@ -111,8 +111,8 @@
                 "🇸🇪SE | 🟢 | vmess | @v2ray1_ng | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
-                "❔XX | 🟢 | vmess | @Hope_Net | 12",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 9",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 10",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 3",
                 "🇸🇬SG | 🟢 | vmess | @v2Line | 4"
             ]
@@ -126,8 +126,8 @@
                 "🇸🇪SE | 🟢 | vmess | @v2ray1_ng | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
-                "❔XX | 🟢 | vmess | @Hope_Net | 12",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 9",
+                "🇨🇦CA | 🟢 | vmess | @Hope_Net | 10",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 3",
                 "🇸🇬SG | 🟢 | vmess | @v2Line | 4"
             ],
@@ -275,45 +275,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "104.160.166.253",
-            "server_port": 30000,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "104.160.166.253",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/path\/181721272114",
-                "headers": {
-                    "Host": "104.160.166.253"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 12",
-            "type": "vmess",
-            "server": "ah.yd01.paopaocloud.cyou",
-            "server_port": 10020,
-            "uuid": "d8c5b486-84bb-3887-a1d9-07455ea608f2",
+            "server": "51.79.223.202",
+            "server_port": 80,
+            "uuid": "d34b55f6-3e85-11ed-b327-7f562a0dd2e6",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -324,21 +290,35 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "ah.yd01.paopaocloud.cyou",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
+                "headers": {
+                    "Host": "51.79.223.202"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @Hope_Net | 10",
+            "type": "vmess",
+            "server": "shopify.com",
+            "server_port": 80,
+            "uuid": "4397d066-f753-4300-e7ed-44797ddfcd24",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/v2ray",
+                "path": "\/aries",
                 "headers": {
-                    "Host": "ah.yd01.paopaocloud.cyou"
+                    "Host": "shopify.com"
                 }
             }
         },
