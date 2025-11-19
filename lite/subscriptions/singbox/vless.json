@@ -161,6 +161,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 5",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 4",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 14",
                 "🇺🇸US | 🔴 | vless | @Capoit | 15",
@@ -241,6 +242,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 5",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 4",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 14",
                 "🇺🇸US | 🔴 | vless | @Capoit | 15",
@@ -1478,6 +1480,37 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "104.18.82.55",
+            "server_port": 443,
+            "uuid": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vless.hubp.de",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "vless.hubp.de"
+                }
             }
         },
         {

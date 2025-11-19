@@ -169,13 +169,13 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 5",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 17",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 18",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
                 "🇳🇱NL | 🟢 | vmess | @Hope_Net | 10",
-                "❔XX | 🟢 | vmess | @Hope_Net | 11",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 14",
@@ -266,13 +266,13 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 18",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 5",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 17",
-                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 18",
+                "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 19",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
                 "🇳🇱NL | 🟢 | vmess | @Hope_Net | 10",
-                "❔XX | 🟢 | vmess | @Hope_Net | 11",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 14",
@@ -1676,16 +1676,13 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 17",
-            "type": "vmess",
-            "server": "165.140.216.141",
+            "tag": "🇺🇸US | 🟢 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "104.18.82.55",
             "server_port": 443,
-            "uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "uuid": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -1693,17 +1690,24 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "",
+                "server_name": "vless.hubp.de",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "vless.hubp.de"
+                }
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 18",
+            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 19",
             "type": "vmess",
             "server": "165.140.216.141",
             "server_port": 443,
@@ -1817,11 +1821,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "141.11.187.74",
-            "server_port": 34885,
-            "uuid": "88d652d9-93ee-4c60-b1c7-9b97df58121a",
+            "server": "104.19.45.130",
+            "server_port": 2095,
+            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -1831,14 +1835,21 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.19.45.130"
+                }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 11",
+            "tag": "🇳🇱NL | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "bcbacaa-caab-baca-dbca-cacbbcbbacaa",
+            "server": "141.11.187.74",
+            "server_port": 34885,
+            "uuid": "88d652d9-93ee-4c60-b1c7-9b97df58121a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
