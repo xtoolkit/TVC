@@ -156,7 +156,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 19",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 3",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @Capoit | 15",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 16",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 17",
@@ -229,7 +229,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 19",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 3",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
                 "🇺🇸US | 🔴 | vless | @Capoit | 15",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 16",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 17",
@@ -1374,17 +1374,34 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 19",
             "type": "vless",
-            "server": "151.101.67.8",
-            "server_port": 80,
-            "uuid": "TELEGRAM-CONFiGLiNE-52",
+            "server": "162.159.152.53",
+            "server_port": 443,
+            "uuid": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vless.hubp.de",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "vless.hubp.de"
+                }
             }
         },
         {
