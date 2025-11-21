@@ -164,13 +164,13 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 18",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 3",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 14",
-                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 15",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 8",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 6",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 15",
@@ -257,13 +257,13 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 18",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 3",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 4",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 14",
-                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 15",
+                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 8",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🔴 | vless | @free1_vpn | 6",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
-                "🇨🇳CN | 🟢 | vmess | @Hope_Net | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 15",
@@ -1620,23 +1620,40 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 8",
             "type": "vless",
-            "server": "104.24.23.180",
-            "server_port": 80,
-            "uuid": "6aff899c-a2ca-442f-a173-5a3fce0686b3",
+            "server": "172.66.47.156",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET"
+                }
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 15",
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 9",
             "type": "vless",
-            "server": "95.217.233.18",
+            "server": "128.140.61.203",
             "server_port": 443,
             "uuid": "Warpi-Free-Vpn-In-GooglePlay",
             "flow": "",
@@ -1737,6 +1754,23 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 2",
+            "type": "vmess",
+            "server": "107.148.192.150",
+            "server_port": 41911,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
             "server": "104.31.16.136",
@@ -1768,23 +1802,6 @@
                 "headers": {
                     "Host": "Rockp.Blanku.Me"
                 }
-            }
-        },
-        {
-            "tag": "🇨🇳CN | 🟢 | vmess | @Hope_Net | 4",
-            "type": "vmess",
-            "server": "183.236.51.23",
-            "server_port": 45020,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
