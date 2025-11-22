@@ -12,13 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 14 = vmess, 172.67.170.11, 443, username = edbb1059-1633-4271-b66e-ed4fba47a1bf, ws = true, tls = 1, vmess-aead = false, ws-path = /linkws, ws-headers = Host:"linde06.indiavideo.sbs", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 15 = vmess, 172.64.167.35, 443, username = 25d1b318-87e8-4c1e-a784-69783be4b30a, ws = true, tls = 1, vmess-aead = false, ws-path = dongtaiwang.com, ws-headers = Host:"ip1.589643.xyz", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 12 = vmess, 188.114.97.2, 443, username = 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, ws = true, tls = 1, vmess-aead = false, ws-path = /linkws, ws-headers = Host:"obdii.cfd", skip-cert-verify = true, tfo = false
 🇭🇰HK | 🟢 | vmess | @v2Line | 4 = vmess, 8.210.52.211, 20522, username = 37827036-1fc5-41ea-9fc5-111af1db49dc, ws = true, tls = , vmess-aead = true, ws-path = /telegram_@sswia, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 14,🇺🇸US | 🟢 | vmess | @Hope_Net | 15,🇭🇰HK | 🟢 | vmess | @v2Line | 4
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 14,🇺🇸US | 🟢 | vmess | @Hope_Net | 15,🇭🇰HK | 🟢 | vmess | @v2Line | 4
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 14,🇺🇸US | 🟢 | vmess | @Hope_Net | 15,🇭🇰HK | 🟢 | vmess | @v2Line | 4
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 12,🇭🇰HK | 🟢 | vmess | @v2Line | 4
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 12,🇭🇰HK | 🟢 | vmess | @v2Line | 4
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 12,🇭🇰HK | 🟢 | vmess | @v2Line | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
