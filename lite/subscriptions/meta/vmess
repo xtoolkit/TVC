@@ -120,51 +120,51 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"❔XX | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"❔XX | 🟢 | vmess | @oneclickvpnkeys | 6","type":"vmess","server":"82.198.246.97","port":"180","cipher":"auto","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"❔XX | 🟢 | vmess | @oneclickvpnkeys | 7","type":"vmess","server":"89.169.13.60","port":"28838","cipher":"auto","uuid":"b9d3c414-89cc-455d-b717-10c7ca1665a1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
+  - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6","type":"vmess","server":"82.198.246.97","port":"180","cipher":"auto","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"❔XX | 🟢 | vmess | @Hope_Net | 16","type":"vmess","server":"195.154.102.210","port":80,"cipher":"auto","uuid":"2a8a10fb-9ca3-367e-a234-cf09f841be4f","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/v133PDXkklxLEcOvD","headers":{"host":"fr1e-unmetered.v2freevpn.com"}}}
-  - {"name":"❔XX | 🟢 | vmess | @v2Line | 4","type":"vmess","server":"8.210.52.211","port":"20522","cipher":"auto","uuid":"37827036-1fc5-41ea-9fc5-111af1db49dc","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/telegram_@sswia","headers":{"host":""}}}
-  - {"name":"❔XX | 🟢 | vmess | @v2Line | 5","type":"vmess","server":"82.197.69.131","port":"39674","cipher":"auto","uuid":"5a89386a-827b-4f54-8778-2f1b5122c6ef","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 14","type":"vmess","server":"172.67.170.11","port":443,"cipher":"auto","uuid":"edbb1059-1633-4271-b66e-ed4fba47a1bf","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"linde06.indiavideo.sbs"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 15","type":"vmess","server":"172.64.167.35","port":443,"cipher":"auto","uuid":"25d1b318-87e8-4c1e-a784-69783be4b30a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/dongtaiwang.com","headers":{"host":"ip1.589643.xyz"}}}
+  - {"name":"🇭🇰HK | 🟢 | vmess | @v2Line | 4","type":"vmess","server":"8.210.52.211","port":"20522","cipher":"auto","uuid":"37827036-1fc5-41ea-9fc5-111af1db49dc","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/telegram_@sswia","headers":{"host":""}}}
+  - {"name":"🇸🇬SG | 🟢 | vmess | @v2Line | 5","type":"vmess","server":"82.197.69.131","port":"39674","cipher":"auto","uuid":"5a89386a-827b-4f54-8778-2f1b5122c6ef","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🟢 | vmess | @mftizi | 17'
-      - '❔XX | 🟢 | vmess | @oneclickvpnkeys | 6'
-      - '❔XX | 🟢 | vmess | @oneclickvpnkeys | 7'
+      - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '❔XX | 🟢 | vmess | @Hope_Net | 16'
-      - '❔XX | 🟢 | vmess | @v2Line | 4'
-      - '❔XX | 🟢 | vmess | @v2Line | 5'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 14'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 15'
+      - '🇭🇰HK | 🟢 | vmess | @v2Line | 4'
+      - '🇸🇬SG | 🟢 | vmess | @v2Line | 5'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🟢 | vmess | @mftizi | 17'
-      - '❔XX | 🟢 | vmess | @oneclickvpnkeys | 6'
-      - '❔XX | 🟢 | vmess | @oneclickvpnkeys | 7'
+      - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '❔XX | 🟢 | vmess | @Hope_Net | 16'
-      - '❔XX | 🟢 | vmess | @v2Line | 4'
-      - '❔XX | 🟢 | vmess | @v2Line | 5'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 14'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 15'
+      - '🇭🇰HK | 🟢 | vmess | @v2Line | 4'
+      - '🇸🇬SG | 🟢 | vmess | @v2Line | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🟢 | vmess | @mftizi | 17'
-      - '❔XX | 🟢 | vmess | @oneclickvpnkeys | 6'
-      - '❔XX | 🟢 | vmess | @oneclickvpnkeys | 7'
+      - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 6'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '❔XX | 🟢 | vmess | @Hope_Net | 16'
-      - '❔XX | 🟢 | vmess | @v2Line | 4'
-      - '❔XX | 🟢 | vmess | @v2Line | 5'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 14'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 15'
+      - '🇭🇰HK | 🟢 | vmess | @v2Line | 4'
+      - '🇸🇬SG | 🟢 | vmess | @v2Line | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
