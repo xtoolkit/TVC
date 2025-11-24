@@ -107,13 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 8",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 9",
-                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18",
+                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 6",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 5"
             ]
@@ -123,13 +121,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 8",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 9",
-                "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18",
+                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇬🇧GB | 🟢 | vmess | @Hope_Net | 6",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 5"
             ],
@@ -171,7 +167,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 8",
+            "tag": "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 9",
             "type": "vmess",
             "server": "91.107.185.224",
             "server_port": 443,
@@ -195,57 +191,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 9",
-            "type": "vmess",
-            "server": "209.126.84.189",
-            "server_port": 443,
-            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vmessws",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vmess | @ConfigsHUB | 18",
-            "type": "vmess",
-            "server": "185.231.59.249",
-            "server_port": 19292,
-            "uuid": "1b3324bc-5751-413f-a623-d565bdebf4ad",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -307,7 +252,41 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+            "type": "vmess",
+            "server": "104.19.47.65",
+            "server_port": 443,
+            "uuid": "25d1b318-87e8-4c1e-a784-69783be4b30a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "104.19.47.65",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/dongtaiwang.com",
+                "headers": {
+                    "Host": "104.19.47.65"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
             "server": "5.39.254.196",
             "server_port": 17805,
@@ -327,40 +306,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "5.39.254.196"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
-            "type": "vmess",
-            "server": "173.245.58.37",
-            "server_port": 443,
-            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "173.245.58.37",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/glweidf.cfd\/linkws",
-                "headers": {
-                    "Host": "173.245.58.37"
                 }
             }
         },
