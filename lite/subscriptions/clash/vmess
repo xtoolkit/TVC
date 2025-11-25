@@ -119,8 +119,9 @@ dns:
 
 proxies:
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 19","type":"vmess","server":"82.197.69.131","port":"39674","cipher":"auto","uuid":"5a89386a-827b-4f54-8778-2f1b5122c6ef","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"❔XX | 🟢 | vmess | @Hope_Net | 13","type":"vmess","server":"PL.nexitally.xyz","port":"443","cipher":"auto","uuid":"54c6c823-4957-4c6c-b10c-359bc51f7cc3","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/a54e284cb6/","headers":{"host":"PL.nexitally.xyz"}}}
+  - {"name":"❔XX | 🟢 | vmess | @Hope_Net | 15","type":"vmess","server":"PL.nexitally.xyz","port":"443","cipher":"auto","uuid":"54c6c823-4957-4c6c-b10c-359bc51f7cc3","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/a54e284cb6/","headers":{"host":"PL.nexitally.xyz"}}}
   - {"name":"🇭🇰HK | 🟢 | vmess | @v2Line | 5","type":"vmess","server":"8.210.52.211","port":"20522","cipher":"auto","uuid":"37827036-1fc5-41ea-9fc5-111af1db49dc","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/telegram_@sswia","headers":{"host":""}}}
 proxy-groups:
   - name: MANUAL
@@ -129,8 +130,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 19'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '❔XX | 🟢 | vmess | @Hope_Net | 13'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 15'
       - '🇭🇰HK | 🟢 | vmess | @v2Line | 5'
   - name: URL-TEST
     type: url-test
@@ -139,8 +141,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 19'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '❔XX | 🟢 | vmess | @Hope_Net | 13'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 15'
       - '🇭🇰HK | 🟢 | vmess | @v2Line | 5'
   - name: FALLBACK
     type: fallback
@@ -148,8 +151,9 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇸🇬SG | 🟢 | vmess | @ConfigsHUB | 19'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '❔XX | 🟢 | vmess | @Hope_Net | 13'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 15'
       - '🇭🇰HK | 🟢 | vmess | @v2Line | 5'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
