@@ -12,13 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, rben.miaoge.gay, 443, username = 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"rben.miaoge.gay", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 12 = vmess, jp04-vm0.entry.srthdw.art, 447, username = d27a32a9-ef65-3ef1-8ee2-99330c2345cf, ws = true, tls = , vmess-aead = false, ws-path = /hls/cctv5phd.m3u8, ws-headers = Host:"bf419d5f59f7d0.windowsupdate.com", skip-cert-verify = true, tfo = false
 🇭🇰HK | 🟢 | vmess | @v2Line | 5 = vmess, 8.210.52.211, 20522, username = 37827036-1fc5-41ea-9fc5-111af1db49dc, ws = true, tls = , vmess-aead = true, ws-path = /telegram_@sswia, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12,🇭🇰HK | 🟢 | vmess | @v2Line | 5
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12,🇭🇰HK | 🟢 | vmess | @v2Line | 5
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12,🇭🇰HK | 🟢 | vmess | @v2Line | 5
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @v2Line | 5
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @v2Line | 5
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @v2Line | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
