@@ -109,8 +109,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13",
+                "❔XX | 🟢 | vmess | @Hope_Net | 11",
+                "❔XX | 🟢 | vmess | @Hope_Net | 12",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 5"
             ]
@@ -122,8 +122,8 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
-                "❔XX | 🟢 | vmess | @Hope_Net | 13",
+                "❔XX | 🟢 | vmess | @Hope_Net | 11",
+                "❔XX | 🟢 | vmess | @Hope_Net | 12",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
                 "🇭🇰HK | 🟢 | vmess | @v2Line | 5"
             ],
@@ -223,11 +223,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 11",
             "type": "vmess",
-            "server": "104.19.21.63",
-            "server_port": 2086,
-            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "server": "rben.miaoge.gay",
+            "server_port": 443,
+            "uuid": "4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -238,22 +238,32 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "rben.miaoge.gay",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/github.com\/Alvin9999",
+                "path": "\/",
                 "headers": {
-                    "Host": "104.19.21.63"
+                    "Host": "rben.miaoge.gay"
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 12",
             "type": "vmess",
-            "server": "www.letter4u.net",
-            "server_port": 12363,
-            "uuid": "8ee75e76-9d9d-4f37-bd62-7f7733f49458",
+            "server": "jp04-vm0.entry.srthdw.art",
+            "server_port": 447,
+            "uuid": "d27a32a9-ef65-3ef1-8ee2-99330c2345cf",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -261,6 +271,13 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/hls\/cctv5phd.m3u8",
+                "headers": {
+                    "Host": "jp04-vm0.entry.srthdw.art"
+                }
             }
         },
         {
