@@ -119,10 +119,9 @@ dns:
 
 proxies:
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 7","type":"vmess","server":"62.146.235.193","port":"28011","cipher":"auto","uuid":"cfc5a87f-3c13-4e25-b556-176cdd6b5c6a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 7","type":"vmess","server":"cf.fovi.tk","port":"443","cipher":"auto","uuid":"bf67437e-6c90-45ca-abc2-c7240a5ce2aa","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/eisasqa","headers":{"host":"foxlux.fovi.tk"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 8","type":"vmess","server":"192.3.124.36","port":"40001","cipher":"auto","uuid":"247b1165-4ae2-45b1-926a-5186c061b0e9","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 8","type":"vmess","server":"104.21.4.6","port":"443","cipher":"auto","uuid":"1052f24e-7b09-45eb-b0c5-d858eb124192","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.cfd"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 9","type":"vmess","server":"cf.fovi.tk","port":"443","cipher":"auto","uuid":"bf67437e-6c90-45ca-abc2-c7240a5ce2aa","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/eisasqa","headers":{"host":"foxlux.fovi.tk"}}}
   - {"name":"🇭🇰HK | 🟢 | vmess | @v2Line | 5","type":"vmess","server":"8.210.52.211","port":"20522","cipher":"auto","uuid":"37827036-1fc5-41ea-9fc5-111af1db49dc","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/telegram_@sswia","headers":{"host":""}}}
 proxy-groups:
   - name: MANUAL
@@ -131,10 +130,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 7'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 7'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 8'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
       - '🇭🇰HK | 🟢 | vmess | @v2Line | 5'
   - name: URL-TEST
     type: url-test
@@ -143,10 +141,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 7'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 7'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 8'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
       - '🇭🇰HK | 🟢 | vmess | @v2Line | 5'
   - name: FALLBACK
     type: fallback
@@ -154,10 +151,9 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 7'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 7'
       - '🇺🇸US | 🟢 | vmess | @Hope_Net | 8'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 9'
       - '🇭🇰HK | 🟢 | vmess | @v2Line | 5'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
