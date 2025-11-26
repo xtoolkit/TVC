@@ -110,8 +110,8 @@
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
                 "🇸🇬SG | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5"
             ]
@@ -124,8 +124,8 @@
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
                 "🇸🇬SG | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5"
             ],
@@ -259,6 +259,33 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+            "type": "vmess",
+            "server": "51.81.223.29",
+            "server_port": 443,
+            "uuid": "c0156451-4efb-45e2-84fc-8d315c4650db",
+            "security": "auto",
+            "alter_id": 32,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "51.81.223.29",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
             "server": "cdn.bootloader.cf",
@@ -279,30 +306,6 @@
                 "path": "\/aries",
                 "headers": {
                     "Host": "cdn.bootloader.cf"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
-            "type": "vmess",
-            "server": "104.16.60.8",
-            "server_port": 8880,
-            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linde06.indiavideo.sbs\/linkws",
-                "headers": {
-                    "Host": "104.16.60.8"
                 }
             }
         },
