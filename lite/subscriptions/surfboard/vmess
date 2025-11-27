@@ -12,11 +12,10 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇭🇰HK | 🟢 | vmess | @free1_vpn | 5 = vmess, 36.50.90.241, 35951, username = f282b878-8711-45a1-8c69-5564172123c1, ws = true, tls = 1, vmess-aead = true, ws-path = /Geo-Project/36.50.90.241-35951, ws-headers = Host:"vm.gpj1.web.id", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @free1_vpn | 5
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @free1_vpn | 5
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇰HK | 🟢 | vmess | @free1_vpn | 5
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

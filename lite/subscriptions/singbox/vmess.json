@@ -108,11 +108,11 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 133",
+                "🇳🇱NL | 🟢 | vmess | @v2ray1_ng | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @free1_vpn | 5",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 3",
-                "🇸🇬SG | 🟢 | vmess | @v2Line | 4"
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
+                "🇸🇬SG | 🟢 | vmess | @v2Line | 5"
             ]
         },
         {
@@ -121,11 +121,11 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇩🇪DE | 🟢 | vmess | @prrofile_purple | 133",
+                "🇳🇱NL | 🟢 | vmess | @v2ray1_ng | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @free1_vpn | 5",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 3",
-                "🇸🇬SG | 🟢 | vmess | @v2Line | 4"
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
+                "🇸🇬SG | 🟢 | vmess | @v2Line | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -170,6 +170,23 @@
             "server": "91.98.72.199",
             "server_port": 80,
             "uuid": "39ac19f8-1dbc-4408-915c-e730351cdb6e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vmess | @v2ray1_ng | 2",
+            "type": "vmess",
+            "server": "5.79.71.184",
+            "server_port": 8080,
+            "uuid": "628171ee-048b-47be-85fe-7a659006e8a2",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -240,41 +257,7 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vmess | @free1_vpn | 5",
-            "type": "vmess",
-            "server": "36.50.90.241",
-            "server_port": 35951,
-            "uuid": "f282b878-8711-45a1-8c69-5564172123c1",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "vm.gpj1.web.id",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Geo-Project\/36.50.90.241-35951",
-                "headers": {
-                    "Host": "vm.gpj1.web.id"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🟢 | vmess | @v2Line | 3",
+            "tag": "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -308,7 +291,7 @@
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vmess | @v2Line | 4",
+            "tag": "🇸🇬SG | 🟢 | vmess | @v2Line | 5",
             "type": "vmess",
             "server": "82.197.69.131",
             "server_port": 39674,
