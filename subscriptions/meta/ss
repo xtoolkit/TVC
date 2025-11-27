@@ -135,6 +135,9 @@ proxies:
   - {"name":"🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 13","type":"ss","server":"81.19.141.45","port":443,"password":"Cu5X4a4Zn2tRJeJWMnyeC9","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇧🇷BR | 🟢 | ss | @OutlineVpnOfficial | 14","type":"ss","server":"185.192.124.188","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"92.112.126.90","port":443,"password":"9tqhMdIrTkgQ46PvhyAtMH","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇷🇺RU | 🟢 | ss | @proxy_mtm | 0","type":"ss","server":"90.156.203.62","port":5112,"password":"VVlAff77CnAU43Aoc5j15Y","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @proxy_mtm | 1","type":"ss","server":"213.176.16.77","port":7022,"password":"8HtC7rj6NfZncXYvAjDV5t","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @proxy_mtm | 2","type":"ss","server":"193.29.139.144","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -156,6 +159,9 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 13'
       - '🇧🇷BR | 🟢 | ss | @OutlineVpnOfficial | 14'
       - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇷🇺RU | 🟢 | ss | @proxy_mtm | 0'
+      - '🇳🇱NL | 🟢 | ss | @proxy_mtm | 1'
+      - '🇳🇱NL | 🟢 | ss | @proxy_mtm | 2'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -177,6 +183,9 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 13'
       - '🇧🇷BR | 🟢 | ss | @OutlineVpnOfficial | 14'
       - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇷🇺RU | 🟢 | ss | @proxy_mtm | 0'
+      - '🇳🇱NL | 🟢 | ss | @proxy_mtm | 1'
+      - '🇳🇱NL | 🟢 | ss | @proxy_mtm | 2'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -197,6 +206,9 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | ss | @OutlineVpnOfficial | 13'
       - '🇧🇷BR | 🟢 | ss | @OutlineVpnOfficial | 14'
       - '🇳🇱NL | 🟢 | ss | @OutlineVpnOfficial | 17'
+      - '🇷🇺RU | 🟢 | ss | @proxy_mtm | 0'
+      - '🇳🇱NL | 🟢 | ss | @proxy_mtm | 1'
+      - '🇳🇱NL | 🟢 | ss | @proxy_mtm | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
