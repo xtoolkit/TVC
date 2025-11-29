@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇸🇬SG | 🟢 | vmess | @Hope_Net | 17 = vmess, 206.238.236.36, 80, username = bc864078-dcf3-4bf4-8dbf-ca9f200b56be, ws = true, tls = , vmess-aead = true, ws-path = /gwdef.sbs/linkws, ws-headers = Host:"mysan2.jaquay22.workers.dev", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 17 = vmess, hvoou-1042-v2-1.tyo-d-kcd.ap.cjhh.beauty, 888, username = fc541302-7a84-4957-8e93-b974094cc7a0, ws = true, tls = 1, vmess-aead = true, ws-path = /je5x3pBN1vez3NQudNkB, ws-headers = Host:"s3.cjhh.beauty", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 18 = vmess, 172.64.166.22, 2086, username = e9e3cc13-db48-4cc1-8c24-7626439a5339, ws = true, tls = , vmess-aead = true, ws-path = github.com/Alvin9999, ws-headers = Host:"ip2.1457230.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 17
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 17
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇸🇬SG | 🟢 | vmess | @Hope_Net | 17
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 17,🇺🇸US | 🟢 | vmess | @Hope_Net | 18
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 17,🇺🇸US | 🟢 | vmess | @Hope_Net | 18
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 17,🇺🇸US | 🟢 | vmess | @Hope_Net | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
