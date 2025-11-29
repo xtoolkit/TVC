@@ -157,7 +157,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 20",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 2",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 3",
-                "🇵🇱PL | 🔴 | vless | @ConfigsHUB | 13",
+                "🇸🇬SG | 🟢 | vless | @ConfigsHUB | 16",
                 "❔XX | 🔴 | vless | @Capoit | 18",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 19",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 17",
@@ -233,7 +233,7 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 20",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 2",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 3",
-                "🇵🇱PL | 🔴 | vless | @ConfigsHUB | 13",
+                "🇸🇬SG | 🟢 | vless | @ConfigsHUB | 16",
                 "❔XX | 🔴 | vless | @Capoit | 18",
                 "🇨🇿CZ | 🔴 | vless | @Capoit | 19",
                 "🇺🇸US | 🔴 | vless | @flyv2ray | 17",
@@ -1350,7 +1350,7 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 19",
             "type": "vless",
-            "server": "159.89.50.126",
+            "server": "24.144.89.99",
             "server_port": 443,
             "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
             "flow": "xtls-rprx-vision",
@@ -1379,7 +1379,7 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @DailyV2RY | 20",
             "type": "vless",
-            "server": "157.245.241.173",
+            "server": "159.89.50.126",
             "server_port": 443,
             "uuid": "a7e04b44-855e-4fe7-8fa0-31894e928bce",
             "flow": "xtls-rprx-vision",
@@ -1434,17 +1434,34 @@
             }
         },
         {
-            "tag": "🇵🇱PL | 🔴 | vless | @ConfigsHUB | 13",
+            "tag": "🇸🇬SG | 🟢 | vless | @ConfigsHUB | 16",
             "type": "vless",
-            "server": "144.31.1.122",
-            "server_port": 8080,
-            "uuid": "9036dc47-d0ec-4837-bf55-86f497937cff",
+            "server": "206.238.236.167",
+            "server_port": 443,
+            "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hj.kpcloud.eu.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/blue",
+                "headers": {
+                    "Host": "hj.kpcloud.eu.org"
+                }
             }
         },
         {
