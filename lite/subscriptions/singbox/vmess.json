@@ -106,30 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇳🇱NL | 🟢 | vmess | @ConfigsHUB | 16",
+                "❔XX | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
-                "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇩🇪DE | 🟢 | vmess | @free1_vpn | 4",
+                "❔XX | 🟢 | vmess | @yaney_01 | 5",
+                "❔XX | 🟢 | vmess | @free1_vpn | 4",
                 "❔XX | 🟢 | vmess | @Hope_Net | 2",
                 "❔XX | 🟢 | vmess | @Hope_Net | 3",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 3",
-                "🇸🇬SG | 🟢 | vmess | @v2Line | 4"
+                "❔XX | 🟢 | vmess | @v2Line | 3",
+                "❔XX | 🟢 | vmess | @v2Line | 4"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇳🇱NL | 🟢 | vmess | @ConfigsHUB | 16",
+                "❔XX | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
-                "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇩🇪DE | 🟢 | vmess | @free1_vpn | 4",
+                "❔XX | 🟢 | vmess | @yaney_01 | 5",
+                "❔XX | 🟢 | vmess | @free1_vpn | 4",
                 "❔XX | 🟢 | vmess | @Hope_Net | 2",
                 "❔XX | 🟢 | vmess | @Hope_Net | 3",
-                "🇨🇦CA | 🟢 | vmess | @v2Line | 3",
-                "🇸🇬SG | 🟢 | vmess | @v2Line | 4"
+                "❔XX | 🟢 | vmess | @v2Line | 3",
+                "❔XX | 🟢 | vmess | @v2Line | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -152,30 +150,13 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+            "tag": "❔XX | 🟢 | vmess | @mftizi | 17",
             "type": "vmess",
             "server": "183.236.51.23",
             "server_port": 53002,
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | vmess | @ConfigsHUB | 16",
-            "type": "vmess",
-            "server": "178.62.220.64",
-            "server_port": 35416,
-            "uuid": "e017d65d-6da7-4cfe-bfaa-85b46158b82e",
-            "security": "auto",
-            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -210,7 +191,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+            "tag": "❔XX | 🟢 | vmess | @yaney_01 | 5",
             "type": "vmess",
             "server": "104.26.8.210",
             "server_port": 443,
@@ -244,7 +225,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @free1_vpn | 4",
+            "tag": "❔XX | 🟢 | vmess | @free1_vpn | 4",
             "type": "vmess",
             "server": "57.129.28.212",
             "server_port": 443,
@@ -281,8 +262,8 @@
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 2",
             "type": "vmess",
             "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "acbaacb-acab-caab-bdac-cbaabacccabb",
+            "server_port": 1080,
+            "uuid": "aabcbca-bcaa-acab-dbac-acbbccaabbac",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -297,9 +278,9 @@
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 3",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "caacbab-cbaa-bcaa-dabc-abcbbcccabaa",
+            "server": "cfcdn3.sanfencdn9.com",
+            "server_port": 80,
+            "uuid": "cd47cb10-d851-489b-86cd-ffaf659ed943",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -309,10 +290,17 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/video\/RPKZwKFW",
+                "headers": {
+                    "Host": "cfcdn3.sanfencdn9.com"
+                }
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @v2Line | 3",
+            "tag": "❔XX | 🟢 | vmess | @v2Line | 3",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -346,7 +334,7 @@
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vmess | @v2Line | 4",
+            "tag": "❔XX | 🟢 | vmess | @v2Line | 4",
             "type": "vmess",
             "server": "82.197.69.131",
             "server_port": 39674,
