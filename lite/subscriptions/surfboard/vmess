@@ -13,11 +13,10 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @Hope_Net | 5 = vmess, 104.18.3.2, 80, username = cb1d03f1-693a-42dc-9dd2-0369a413fe55, ws = true, tls = , vmess-aead = true, ws-path = /vmess-ntls, ws-headers = Host:"sshsg1.cloudtik.biz.id", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 6 = vmess, 154.85.0.230, 41007, username = 20b30916-e203-412e-8ec0-900f3acd5128, ws = true, tls = 1, vmess-aead = false, ws-path = /path/312009042920, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5,🇺🇸US | 🟢 | vmess | @Hope_Net | 6
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5,🇺🇸US | 🟢 | vmess | @Hope_Net | 6
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5,🇺🇸US | 🟢 | vmess | @Hope_Net | 6
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
