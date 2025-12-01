@@ -129,6 +129,7 @@
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
                 "🇮🇷IR | 🔴 | vless | @Watashi_VPN | 1",
+                "🇫🇷FR | 🔴 | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | 🔴 | vless | @V2rayNGn | 7",
                 "🇺🇸US | 🔴 | vless | @V2rayNGn | 8",
                 "🇫🇮FI | 🟢 | vless | @Outline_Vpn | 16",
@@ -156,8 +157,8 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 19",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 2",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 3",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 14",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 15",
+                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 17",
+                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 3",
                 "🇫🇷FR | 🔴 | vless | @free1_vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Capoit | 19",
@@ -207,6 +208,7 @@
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
                 "🇮🇷IR | 🔴 | vless | @Watashi_VPN | 1",
+                "🇫🇷FR | 🔴 | vless | @azadi_az_inja_migzare | 0",
                 "🇩🇪DE | 🔴 | vless | @V2rayNGn | 7",
                 "🇺🇸US | 🔴 | vless | @V2rayNGn | 8",
                 "🇫🇮FI | 🟢 | vless | @Outline_Vpn | 16",
@@ -234,8 +236,8 @@
                 "🇺🇸US | 🔴 | vless | @DailyV2RY | 19",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 2",
                 "🇩🇪DE | 🔴 | vless | @lrnbymaa | 3",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 14",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 15",
+                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 17",
+                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 18",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 3",
                 "🇫🇷FR | 🔴 | vless | @free1_vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Capoit | 19",
@@ -841,6 +843,30 @@
             }
         },
         {
+            "tag": "🇫🇷FR | 🔴 | vless | @azadi_az_inja_migzare | 0",
+            "type": "vless",
+            "server": "statue.lnmarketplace.net",
+            "server_port": 443,
+            "uuid": "7c63f43f-f526-49bb-b5c8-2be26e11ef00",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "statue.lnmarketplace.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @V2rayNGn | 7",
             "type": "vless",
             "server": "91.99.192.185",
@@ -1434,26 +1460,12 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 14",
+            "tag": "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "91.107.149.83",
-            "server_port": 8443,
-            "uuid": "9a5f5f37-14e9-496e-862d-255d3691a1f4",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 15",
-            "type": "vless",
-            "server": "www.speedtest.net",
+            "server": "45.89.110.227",
             "server_port": 443,
-            "uuid": "17805789-e705-4b20-b487-e9372b06fe4c",
-            "flow": "",
+            "uuid": "839fde0d-552c-46da-929c-60511e6bca76",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1462,19 +1474,53 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "001.eLEcTRoceLLcO-Cf-003.WORkeRS.dEV",
+                "server_name": "www.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "EULIFV6_Z6idSQUsWx3UcG8iKBuA-HvLqyur8SlRmVQ",
+                    "short_id": "2f8c5445d1a6b661"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "t.me\/entryNET",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "65.109.186.184",
+            "server_port": 53429,
+            "uuid": "788eff20-6e26-4569-850b-af662610d9c4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/eyJqdW5rIjoidTFKWmpMZmRod1Jqa2pPUyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN",
-                "headers": {
-                    "Host": "001.eLEcTRoceLLcO-Cf-003.WORkeRS.dEV"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "hEU7C96M54hRMdrrOsZ7Jx0Wd52hP_dVxUNVwOLsgCI",
+                    "short_id": "cc"
                 }
             }
         },
