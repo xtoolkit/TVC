@@ -11,12 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 19 = vmess, 45.136.12.37, 20521, username = 090d0bd9-f9c4-4c3b-8aae-ffa678765935, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"45.136.12.37", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 10 = vmess, 104.16.126.42, 2052, username = 1dbf5c96-31cb-4fd7-8f63-ba8d2bdace34, ws = true, tls = , vmess-aead = true, ws-path = /video/u4eCZTxW, ws-headers = Host:"jpafzyhfsg3.yofnhkfc.xyz", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 9 = vmess, fbi.gov, 2086, username = e9e3cc13-db48-4cc1-8c24-7626439a5339, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"ip1.1789034.xyz", skip-cert-verify = true, tfo = false
+🇸🇬SG | 🟢 | vmess | @Hope_Net | 10 = vmess, 206.238.236.36, 80, username = bc864078-dcf3-4bf4-8dbf-ca9f200b56be, ws = true, tls = , vmess-aead = true, ws-path = /gwdef.sbs/linkws, ws-headers = Host:"mysan2.jaquay22.workers.dev", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
+MANUAL = select,URL-TEST,FALLBACK,🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 9,🇸🇬SG | 🟢 | vmess | @Hope_Net | 10
+URL-TEST = url-test,🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 9,🇸🇬SG | 🟢 | vmess | @Hope_Net | 10
+FALLBACK = fallback,🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 9,🇸🇬SG | 🟢 | vmess | @Hope_Net | 10
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
