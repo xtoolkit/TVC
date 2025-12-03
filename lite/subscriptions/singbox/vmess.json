@@ -108,11 +108,11 @@
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🟢 | vmess | @prrofile_purple | 132",
+                "🇺🇸US | 🟢 | vmess | @prrofile_purple | 136",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vmess | @free1_vpn | 3",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "❔XX | 🟢 | vmess | @Hope_Net | 9",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5"
@@ -124,11 +124,11 @@
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🟢 | vmess | @prrofile_purple | 132",
+                "🇺🇸US | 🟢 | vmess | @prrofile_purple | 136",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vmess | @free1_vpn | 3",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "❔XX | 🟢 | vmess | @Hope_Net | 9",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5"
@@ -205,7 +205,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @prrofile_purple | 132",
+            "tag": "🇺🇸US | 🟢 | vmess | @prrofile_purple | 136",
             "type": "vmess",
             "server": "putihb.org",
             "server_port": 443,
@@ -331,7 +331,24 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
+            "type": "vmess",
+            "server": "127.0.0.1",
+            "server_port": 8080,
+            "uuid": "baaaccb-aacb-baac-cadb-abcaabacbccb",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
             "server": "172.64.167.10",
             "server_port": 2086,
@@ -351,40 +368,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "172.64.167.10"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
-            "type": "vmess",
-            "server": "104.21.52.103",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "aveiror.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "aveiror.com"
                 }
             }
         },
