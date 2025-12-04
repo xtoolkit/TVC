@@ -112,8 +112,8 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vmess | @free1_vpn | 3",
-                "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 8",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5"
             ]
@@ -128,8 +128,8 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇩🇪DE | 🟢 | vmess | @free1_vpn | 3",
-                "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+                "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7",
+                "🇸🇬SG | 🟢 | vmess | @Hope_Net | 8",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 4",
                 "🇩🇪DE | 🟢 | vmess | @v2Line | 5"
             ],
@@ -314,28 +314,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "🇯🇵JP | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 1080,
-            "uuid": "cabcaab-aacb-acba-cdba-bacacbbbacac",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
-            "type": "vmess",
-            "server": "icook.tw",
-            "server_port": 2086,
-            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "server": "103.173.178.110",
+            "server_port": 40443,
+            "uuid": "B2560548-5F75-3015-82F9-1C3DF8628009",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -346,12 +329,32 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/github.com\/Alvin9999",
-                "headers": {
-                    "Host": "icook.tw"
+            "tls": {
+                "enabled": true,
+                "server_name": "103.173.178.110",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "🇸🇬SG | 🟢 | vmess | @Hope_Net | 8",
+            "type": "vmess",
+            "server": "139.59.244.143",
+            "server_port": 38941,
+            "uuid": "3dc5c1c9-7d8c-432e-daff-4422103a7918",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
