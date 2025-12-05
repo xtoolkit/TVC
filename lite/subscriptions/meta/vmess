@@ -121,11 +121,11 @@ dns:
 
 proxies:
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇳🇱NL | 🟢 | vmess | @oneclickvpnkeys | 7","type":"vmess","server":"cg1c13.waimaojd.com","port":"443","cipher":"auto","uuid":"091e7354-f07f-44aa-a443-4ad43f51a9f9","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/api/v1/graphql","headers":{"host":"cg1c13.waimaojd.com"}}}
   - {"name":"🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 8","type":"vmess","server":"62.146.235.193","port":"28011","cipher":"auto","uuid":"cfc5a87f-3c13-4e25-b556-176cdd6b5c6a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇭🇰HK | 🟢 | vmess | @oneclickvpnkeys | 9","type":"vmess","server":"8.210.134.183","port":"3721","cipher":"auto","uuid":"e72f5c6b-220f-40b3-a115-2d81473458cf","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":""}}}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 6","type":"vmess","server":"104.18.24.92","port":"2052","cipher":"auto","uuid":"f584de15-2034-4170-a723-f48c2bae5e0f","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/afrhms16v.bestxray.buzz/linkws","headers":{"host":"mysan2.jaquay22.workers.dev"}}}
-  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 7","type":"vmess","server":"104.17.81.7","port":8880,"cipher":"auto","uuid":"de8a6fd5-9b7f-4f5c-9800-b3ff59bc0d44","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/bcxQresd","headers":{"host":"us6rCQacjGq.inivtrak.xyz"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 4","type":"vmess","server":"104.21.24.170","port":"443","cipher":"auto","uuid":"b321fd5d-e6ec-4293-a644-164e3885f52e","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"adenc36v.xtooltech.cfd"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @Hope_Net | 5","type":"vmess","server":"malaysia.com","port":"2086","cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -133,11 +133,11 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇳🇱NL | 🟢 | vmess | @oneclickvpnkeys | 7'
       - '🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 8'
-      - '🇭🇰HK | 🟢 | vmess | @oneclickvpnkeys | 9'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 6'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 7'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 4'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 5'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -145,22 +145,22 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇳🇱NL | 🟢 | vmess | @oneclickvpnkeys | 7'
       - '🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 8'
-      - '🇭🇰HK | 🟢 | vmess | @oneclickvpnkeys | 9'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 6'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 7'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 4'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
+      - '🇳🇱NL | 🟢 | vmess | @oneclickvpnkeys | 7'
       - '🇸🇬SG | 🟢 | vmess | @oneclickvpnkeys | 8'
-      - '🇭🇰HK | 🟢 | vmess | @oneclickvpnkeys | 9'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 6'
-      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 7'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 4'
+      - '🇺🇸US | 🟢 | vmess | @Hope_Net | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
