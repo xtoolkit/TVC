@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🟢 | vless | @EliV2ray | 6",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 14",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 15",
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 1",
@@ -122,6 +123,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🟢 | vless | @EliV2ray | 6",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 14",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 15",
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 1",
@@ -152,6 +154,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @EliV2ray | 6",
+            "type": "vless",
+            "server": "nld26.luckernld.org",
+            "server_port": 443,
+            "uuid": "40d7798a-6c76-4298-a9d4-9e6181cd2dd7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cybo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @Parsashonam | 14",
