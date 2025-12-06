@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
@@ -123,7 +124,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 3",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
@@ -171,9 +173,26 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
+            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
             "type": "vmess",
-            "server": "57.129.28.213",
+            "server": "lt.fxlcn.com",
+            "server_port": 45291,
+            "uuid": "469e0b31-30c3-4dab-800d-711232634ce1",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "57.129.25.25",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
@@ -188,7 +207,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fapeng.org",
+                "server_name": "57.129.25.25",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -200,7 +219,7 @@
                 "type": "ws",
                 "path": "\/linkvws",
                 "headers": {
-                    "Host": "fapeng.org"
+                    "Host": "57.129.25.25"
                 }
             }
         },
