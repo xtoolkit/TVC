@@ -11,14 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 18 = vmess, seoul03.zgjok.com, 443, username = 72a0dac4-9689-4a57-b164-5c65bfa94772, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"seoul03.zgjok.com", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇻🇳VN | 🟢 | vmess | @Hope_Net | 8 = vmess, 103.186.148.113, 80, username = 67468d89-cf87-443c-baca-49f1e73b5991, ws = true, tls = , vmess-aead = true, ws-path = /shopvpn.net, ws-headers = Host:"103.186.148.113", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 9 = vmess, 23.156.152.106, 80, username = 2d9a81f6-e86e-48e6-9646-b3b1325f8d61, ws = true, tls = , vmess-aead = true, ws-path = /syjsq/data, ws-headers = Host:"syjsq.us4.flyidc.top", skip-cert-verify = true, tfo = false
+🇻🇳VN | 🟢 | vmess | @Hope_Net | 9 = vmess, 103.186.148.113, 80, username = 67468d89-cf87-443c-baca-49f1e73b5991, ws = true, tls = , vmess-aead = true, ws-path = /shopvpn.net, ws-headers = Host:"103.186.148.113", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 10 = vmess, 23.156.152.106, 80, username = 2d9a81f6-e86e-48e6-9646-b3b1325f8d61, ws = true, tls = , vmess-aead = true, ws-path = /syjsq/data, ws-headers = Host:"syjsq.us4.flyidc.top", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 18,❔XX | 🟢 | vmess | @yaney_01 | 4,🇻🇳VN | 🟢 | vmess | @Hope_Net | 8,🇺🇸US | 🟢 | vmess | @Hope_Net | 9
-URL-TEST = url-test,🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 18,❔XX | 🟢 | vmess | @yaney_01 | 4,🇻🇳VN | 🟢 | vmess | @Hope_Net | 8,🇺🇸US | 🟢 | vmess | @Hope_Net | 9
-FALLBACK = fallback,🇰🇷KR | 🟢 | vmess | @ConfigsHUB | 18,❔XX | 🟢 | vmess | @yaney_01 | 4,🇻🇳VN | 🟢 | vmess | @Hope_Net | 8,🇺🇸US | 🟢 | vmess | @Hope_Net | 9
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇻🇳VN | 🟢 | vmess | @Hope_Net | 9,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇻🇳VN | 🟢 | vmess | @Hope_Net | 9,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇻🇳VN | 🟢 | vmess | @Hope_Net | 9,🇺🇸US | 🟢 | vmess | @Hope_Net | 10
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
