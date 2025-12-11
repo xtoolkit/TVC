@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @EliV2ray | 5",
+                "🇦🇹AT | 🟢 | vless | @EliV2ray | 5",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 14",
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 1",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
@@ -115,7 +115,8 @@
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 7",
                 "🇦🇹AT | 🟢 | vless | @VmessProtocol | 11",
                 "🇳🇱NL | 🟢 | vless | @free1_vpn | 5",
-                "🇩🇪DE | 🟢 | vless | @FreakConfig | 14",
+                "🇷🇺RU | 🟢 | vless | @FreakConfig | 14",
+                "🇩🇪DE | 🟢 | vless | @FreakConfig | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 5",
@@ -126,7 +127,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @EliV2ray | 5",
+                "🇦🇹AT | 🟢 | vless | @EliV2ray | 5",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 14",
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 1",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
@@ -135,7 +136,8 @@
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 7",
                 "🇦🇹AT | 🟢 | vless | @VmessProtocol | 11",
                 "🇳🇱NL | 🟢 | vless | @free1_vpn | 5",
-                "🇩🇪DE | 🟢 | vless | @FreakConfig | 14",
+                "🇷🇺RU | 🟢 | vless | @FreakConfig | 14",
+                "🇩🇪DE | 🟢 | vless | @FreakConfig | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 5",
@@ -162,7 +164,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @EliV2ray | 5",
+            "tag": "🇦🇹AT | 🟢 | vless | @EliV2ray | 5",
             "type": "vless",
             "server": "at.ultima.foundation",
             "server_port": 22231,
@@ -423,7 +425,36 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @FreakConfig | 14",
+            "tag": "🇷🇺RU | 🟢 | vless | @FreakConfig | 14",
+            "type": "vless",
+            "server": "45.92.176.55",
+            "server_port": 2243,
+            "uuid": "d7e2c1ec-b2ba-4a4c-a73a-c08f5bd7923b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "rontgen.fasssst.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_ee-ouMazAzx7Q4_cYhWbu6pw53-8VVpt7tuBuCXziU",
+                    "short_id": "e3cbc70477"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @FreakConfig | 15",
             "type": "vless",
             "server": "92.118.231.130",
             "server_port": 4443,
