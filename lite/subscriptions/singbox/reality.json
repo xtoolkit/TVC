@@ -106,17 +106,19 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇦🇹AT | 🟢 | vless | @EliV2ray | 6",
+                "🇩🇪DE | 🟢 | vless | @EliV2ray | 6",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 14",
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 1",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 18",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 7",
-                "TVCgkggareusp",
+                "TVCpjxnbmdtgu",
                 "🇦🇹AT | 🟢 | vless | @VmessProtocol | 11",
-                "🇹🇷TR | 🔴 | vless | @DailyV2RY | 17",
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 15",
+                "🇹🇷TR | 🔴 | vless | @DailyV2RY | 18",
+                "🇵🇱PL | 🟢 | vless | @ConfigsHUB | 15",
+                "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 16",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 4",
+                "🇮🇱IL | 🟢 | vless | @FreakConfig | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 5",
@@ -127,17 +129,19 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇦🇹AT | 🟢 | vless | @EliV2ray | 6",
+                "🇩🇪DE | 🟢 | vless | @EliV2ray | 6",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 14",
                 "🇫🇮FI | 🔴 | vless | @melov2ray | 1",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 18",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 7",
-                "TVCgkggareusp",
+                "TVCpjxnbmdtgu",
                 "🇦🇹AT | 🟢 | vless | @VmessProtocol | 11",
-                "🇹🇷TR | 🔴 | vless | @DailyV2RY | 17",
-                "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 15",
+                "🇹🇷TR | 🔴 | vless | @DailyV2RY | 18",
+                "🇵🇱PL | 🟢 | vless | @ConfigsHUB | 15",
+                "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 16",
                 "🇩🇪DE | 🟢 | vless | @free1_vpn | 4",
+                "🇮🇱IL | 🟢 | vless | @FreakConfig | 15",
                 "❔XX | 🔴 | vless | @vpn_go67 | 20",
                 "❔XX | 🔴 | vless | @vpn_go67 | 21",
                 "❔XX | 🔴 | vless | @SvnTeam | 5",
@@ -164,7 +168,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇦🇹AT | 🟢 | vless | @EliV2ray | 6",
+            "tag": "🇩🇪DE | 🟢 | vless | @EliV2ray | 6",
             "type": "vless",
             "server": "at.ultima.foundation",
             "server_port": 22231,
@@ -338,7 +342,7 @@
             }
         },
         {
-            "tag": "TVCgkggareusp",
+            "tag": "TVCpjxnbmdtgu",
             "type": "vless",
             "server": "185.234.59.74",
             "server_port": 8443,
@@ -396,7 +400,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @DailyV2RY | 17",
+            "tag": "🇹🇷TR | 🔴 | vless | @DailyV2RY | 18",
             "type": "vless",
             "server": "151.241.226.160",
             "server_port": 8443,
@@ -425,9 +429,38 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @ConfigsHUB | 15",
+            "tag": "🇵🇱PL | 🟢 | vless | @ConfigsHUB | 15",
             "type": "vless",
-            "server": "de.intfreed.ru",
+            "server": "wrs.intfreed.ru",
+            "server_port": 443,
+            "uuid": "bf92bdef-ab8d-4481-8798-2d39023357b2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "video.intfreed.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw",
+                    "short_id": "7755e972daf8eec8"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @ConfigsHUB | 16",
+            "type": "vless",
+            "server": "fin.intfreed.ru",
             "server_port": 443,
             "uuid": "bf92bdef-ab8d-4481-8798-2d39023357b2",
             "flow": "xtls-rprx-vision",
@@ -479,6 +512,35 @@
                     "enabled": true,
                     "public_key": "xoeuO8vB3K-bPdSqcjlGV7MNJqJZ1KlJYGQydLB9vnU",
                     "short_id": "c560cdc5"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇱IL | 🟢 | vless | @FreakConfig | 15",
+            "type": "vless",
+            "server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
+            "server_port": 443,
+            "uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "i2pd.website",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
+                    "short_id": "55e6af1a35e64a98"
                 }
             }
         },
