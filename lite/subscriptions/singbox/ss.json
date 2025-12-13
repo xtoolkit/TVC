@@ -105,18 +105,13 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST",
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 3",
-                "❔XX | 🟢 | ss | @OutlineVpnOfficial | 16"
+                "URL-TEST"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 3",
-                "❔XX | 🟢 | ss | @OutlineVpnOfficial | 16"
-            ],
+            "outbounds": [],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -136,26 +131,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 3",
-            "type": "shadowsocks",
-            "server": "185.47.254.87",
-            "server_port": 990,
-            "method": "chacha20-ietf-poly1305",
-            "password": "f8f7aCzcPKbsF8p3",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "❔XX | 🟢 | ss | @OutlineVpnOfficial | 16",
-            "type": "shadowsocks",
-            "server": "45.87.175.181",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "4a2rfixophdjffa8KVA4Aa",
-            "plugin": "",
-            "plugin_opts": ""
         }
     ],
     "route": {
