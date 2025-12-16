@@ -119,7 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"promo1o.bystrivpn.ru","port":443,"password":"0NeN5ta7FLa5B9DLytU0um","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"79.127.200.162","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇷🇴RO | 🟢 | ss | @OutlineVpnOfficial | 17","type":"ss","server":"185.126.237.38","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18'
-      - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇷🇴RO | 🟢 | ss | @OutlineVpnOfficial | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18'
-      - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇷🇴RO | 🟢 | ss | @OutlineVpnOfficial | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18'
-      - '🇨🇦CA | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇷🇴RO | 🟢 | ss | @OutlineVpnOfficial | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
