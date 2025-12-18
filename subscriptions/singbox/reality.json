@@ -157,9 +157,9 @@
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 10",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 11",
                 "🇮🇪IE | 🟢 | vless | @DailyV2RY | 12",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 3",
                 "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 6",
-                "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 10",
+                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 10",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 13",
                 "🇩🇪DE | 🟢 | vless | @proxystore11 | 0",
                 "🇷🇺RU | 🟢 | vless | @free1_vpn | 5",
                 "🇺🇸US | 🟢 | vless | @FreakConfig | 0",
@@ -252,9 +252,9 @@
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 10",
                 "🇺🇸US | 🟢 | vless | @DailyV2RY | 11",
                 "🇮🇪IE | 🟢 | vless | @DailyV2RY | 12",
-                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 3",
                 "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 6",
-                "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 10",
+                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 10",
+                "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 13",
                 "🇩🇪DE | 🟢 | vless | @proxystore11 | 0",
                 "🇷🇺RU | 🟢 | vless | @free1_vpn | 5",
                 "🇺🇸US | 🟢 | vless | @FreakConfig | 0",
@@ -1798,7 +1798,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 3",
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 6",
             "type": "vless",
             "server": "91.107.129.163",
             "server_port": 443,
@@ -1827,7 +1827,36 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 6",
+            "tag": "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 10",
+            "type": "vless",
+            "server": "109.248.203.71",
+            "server_port": 443,
+            "uuid": "6142e134-346a-4ffe-bf5b-c3fb7e3c9dfb",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "PfxP7-Pvot9Y8z5boZwuG3Afyb_zdm0C2HCZezNMTiQ",
+                    "short_id": "85225c27630d023f"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ConfigsHUB | 13",
             "type": "vless",
             "server": "91.107.170.165",
             "server_port": 443,
@@ -1852,35 +1881,6 @@
                     "enabled": true,
                     "public_key": "as04WkYoj-P4vEjJFXB3LeA_Rkt7Ud4pV2oTZ3bZwQg",
                     "short_id": "1c213fd68e13"
-                }
-            }
-        },
-        {
-            "tag": "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 10",
-            "type": "vless",
-            "server": "tr2.tunnely.ru",
-            "server_port": 443,
-            "uuid": "aee540f8-fb73-4ee7-98f9-125d4d1d41ff",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tr2.tunnely.ru",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM",
-                    "short_id": "2e40144ddc07e8e1"
                 }
             }
         },
