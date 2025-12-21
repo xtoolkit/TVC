@@ -114,7 +114,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇰🇷KR | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+                "❔XX | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇫🇷FR | 🟢 | vmess | @v2Line | 8"
             ]
@@ -131,7 +131,7 @@
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇰🇷KR | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+                "❔XX | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 7",
                 "🇫🇷FR | 🟢 | vmess | @v2Line | 8"
             ],
@@ -335,7 +335,7 @@
         {
             "tag": "🇰🇷KR | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "3.35.25.27",
+            "server": "3.36.108.93",
             "server_port": 7787,
             "uuid": "5b028d7f-9e30-4475-a558-ebb2c4b02566",
             "security": "auto",
@@ -350,11 +350,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
-            "server": "104.19.45.19",
-            "server_port": 2095,
-            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
+            "server": "cdn.linil.ml",
+            "server_port": 443,
+            "uuid": "2fb8c800-89c1-44dd-a425-b37bc0bb2a0a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -365,11 +365,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn.linil.ml",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/f65a148681c42\/",
                 "headers": {
-                    "Host": "104.19.45.19"
+                    "Host": "cdn.linil.ml"
                 }
             }
         },
