@@ -108,12 +108,12 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+                "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 16",
                 "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 6",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 5"
             ]
@@ -124,12 +124,12 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+                "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 16",
                 "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 0",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 4",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 6",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 5"
             ],
@@ -188,11 +188,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+            "tag": "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 16",
             "type": "vmess",
-            "server": "15.235.50.172",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "47.250.45.234",
+            "server_port": 43063,
+            "uuid": "c77f48f5-4be3-4461-b52b-49998e7b897b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -203,21 +203,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "15.235.50.172",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/arki",
                 "headers": {
-                    "Host": "15.235.50.172"
+                    "Host": "47.250.45.234"
                 }
             }
         },
@@ -314,7 +304,31 @@
             }
         },
         {
-            "tag": "🇵🇱PL | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+            "type": "vmess",
+            "server": "104.17.148.22",
+            "server_port": 80,
+            "uuid": "6149b865-0d3c-4472-bf9c-3c61bfafa61a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇵🇱PL | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
             "server": "172.64.198.249",
             "server_port": 2086,
@@ -334,30 +348,6 @@
                 "path": "\/github.com\/Alvin9999",
                 "headers": {
                     "Host": "172.64.198.249"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
-            "type": "vmess",
-            "server": "104.16.68.38",
-            "server_port": 2086,
-            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/glweidf.sbs\/linkws",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
