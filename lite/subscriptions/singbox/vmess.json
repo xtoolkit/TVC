@@ -108,12 +108,12 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 16",
-                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 2",
+                "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 15",
+                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 5",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 6"
             ]
@@ -124,12 +124,12 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 16",
-                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 2",
+                "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 15",
+                "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
+                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 5",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 6"
             ],
@@ -188,11 +188,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 16",
+            "tag": "🇲🇾MY | 🟢 | vmess | @DeamNet_Proxy | 15",
             "type": "vmess",
-            "server": "lt.fxlcn.com",
-            "server_port": 45231,
-            "uuid": "469e0b31-30c3-4dab-800d-711232634ce1",
+            "server": "47.250.45.234",
+            "server_port": 8613,
+            "uuid": "80039b4d-bac0-4f89-82c7-54fad3b0a1ea",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -202,10 +202,17 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/arki",
+                "headers": {
+                    "Host": "47.250.45.234"
+                }
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 2",
+            "tag": "🇨🇦CA | 🟢 | vmess | @v2ray1_ng | 4",
             "type": "vmess",
             "server": "148.113.176.192",
             "server_port": 443,
@@ -297,11 +304,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "107.173.83.214",
-            "server_port": 37541,
-            "uuid": "ef59a586-0532-4763-f353-948eb413f00d",
+            "server": "23.95.215.14",
+            "server_port": 63100,
+            "uuid": "23ed610e-5a78-4c48-abe9-1da1e5d57311",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -314,11 +321,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "🇭🇰HK | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "speedtest.net",
-            "server_port": 443,
-            "uuid": "c34c6a1f-0602-4b69-946e-89b5192e985e",
+            "server": "tw1-midpoint.kejibear.net",
+            "server_port": 10006,
+            "uuid": "7bcd50fc-414b-3e8a-a1a2-d81bd7fc4586",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -329,21 +336,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "speedtest.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/ws\/",
+                "path": "\/video",
                 "headers": {
-                    "Host": "speedtest.net"
+                    "Host": "tw1-midpoint.kejibear.net"
                 }
             }
         },
