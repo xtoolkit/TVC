@@ -113,7 +113,7 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇨🇦CA | 🟢 | vmess | @free1_vpn | 6",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 3",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 4"
             ]
@@ -129,7 +129,7 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇨🇦CA | 🟢 | vmess | @free1_vpn | 6",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 3",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 4"
             ],
@@ -316,6 +316,40 @@
         {
             "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 4",
             "type": "vmess",
+            "server": "104.21.8.4",
+            "server_port": 2083,
+            "uuid": "ac679897-af78-4197-9bf3-a2afe972a383",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "rbv2.frtm99d.cyou",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "rbv2.frtm99d.cyou"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+            "type": "vmess",
             "server": "172.67.204.84",
             "server_port": 443,
             "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
@@ -345,23 +379,6 @@
                 "headers": {
                     "Host": "jahfkjha.cfd"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 5",
-            "type": "vmess",
-            "server": "127.0.0.1",
-            "server_port": 8080,
-            "uuid": "cabcaba-caba-acab-dbca-cabbcaacbabc",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
