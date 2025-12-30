@@ -106,28 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | vmess | @v2ray_outlineir | 0",
-                "❔XX | 🟢 | vmess | @mftizi | 17",
+                "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
-                "❔XX | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
-                "❔XX | 🟢 | vmess | @v2Line | 4",
-                "❔XX | 🟢 | vmess | @v2Line | 5"
+                "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 5"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | vmess | @v2ray_outlineir | 0",
-                "❔XX | 🟢 | vmess | @mftizi | 17",
+                "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
-                "❔XX | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 7",
-                "❔XX | 🟢 | vmess | @Hope_Net | 8",
-                "❔XX | 🟢 | vmess | @v2Line | 4",
-                "❔XX | 🟢 | vmess | @v2Line | 5"
+                "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
+                "🇨🇦CA | 🟢 | vmess | @v2Line | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -150,7 +150,7 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @v2ray_outlineir | 0",
+            "tag": "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
             "type": "vmess",
             "server": "146.59.147.250",
             "server_port": 29776,
@@ -167,7 +167,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @mftizi | 17",
+            "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
             "type": "vmess",
             "server": "183.236.51.23",
             "server_port": 53002,
@@ -208,7 +208,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @yaney_01 | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
             "type": "vmess",
             "server": "104.26.8.210",
             "server_port": 443,
@@ -242,11 +242,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "104.21.94.64",
-            "server_port": 443,
-            "uuid": "39cec18f-a439-427c-9a4e-aeb6fcdf6f53",
+            "server": "104.18.32.47",
+            "server_port": 80,
+            "uuid": "0cb7b3c3-3c08-4391-af4d-3fc410c9c146",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -257,30 +257,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "linja05.hwcar.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
                 "headers": {
-                    "Host": "linja05.hwcar.sbs"
+                    "Host": ""
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 6",
             "type": "vmess",
-            "server": "172.67.220.83",
-            "server_port": 443,
-            "uuid": "39cec18f-a439-427c-9a4e-aeb6fcdf6f53",
+            "server": "104.26.15.148",
+            "server_port": 80,
+            "uuid": "f1fb28e5-e5b6-450c-972c-13235c94285c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -291,26 +281,16 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "linja05.hwcar.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkws",
+                "path": "\/V2LINE-TELEGRAM-CHANNEL-VMESS-WS",
                 "headers": {
-                    "Host": "linja05.hwcar.sbs"
+                    "Host": ""
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @v2Line | 4",
+            "tag": "🇨🇦CA | 🟢 | vmess | @v2Line | 4",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -344,7 +324,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @v2Line | 5",
+            "tag": "🇨🇦CA | 🟢 | vmess | @v2Line | 5",
             "type": "vmess",
             "server": "158.51.121.63",
             "server_port": 443,
