@@ -158,8 +158,8 @@
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 0",
                 "🇬🇧GB | 🔴 | vless | @Capoit | 12",
                 "❔XX | 🔴 | vless | @Capoit | 13",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 9",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 10",
-                "🇺🇸US | 🔴 | vless | @FreakConfig | 11",
                 "🇷🇺RU | 🔴 | vless | @flyv2ray | 11",
                 "🇩🇪DE | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @iP_CF | 54",
@@ -233,8 +233,8 @@
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 0",
                 "🇬🇧GB | 🔴 | vless | @Capoit | 12",
                 "❔XX | 🔴 | vless | @Capoit | 13",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 9",
                 "🇩🇪DE | 🔴 | vless | @FreakConfig | 10",
-                "🇺🇸US | 🔴 | vless | @FreakConfig | 11",
                 "🇷🇺RU | 🔴 | vless | @flyv2ray | 11",
                 "🇩🇪DE | 🔴 | vless | @flyv2ray | 12",
                 "🇺🇸US | 🔴 | vless | @iP_CF | 54",
@@ -1448,32 +1448,40 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @FreakConfig | 10",
+            "tag": "🇳🇱NL | 🟢 | vless | @FreakConfig | 9",
             "type": "vless",
-            "server": "37.120.184.180",
-            "server_port": 80,
-            "uuid": "53fff6cc-b4ec-43e8-ade5-e0c42972fc33",
-            "flow": "",
+            "server": "45.8.144.198",
+            "server_port": 443,
+            "uuid": "1a539db6-d162-42f4-9b56-687bd57bfbc2",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/news",
-                "headers": {
-                    "Host": "37.120.184.180"
+            "tls": {
+                "enabled": true,
+                "server_name": "mirror.yandex.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KXA-hPtvy_hzNER1ZNtUxBv_VrGGKfmIyi4CQAyjGxs",
+                    "short_id": "d94e8f45"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @FreakConfig | 11",
+            "tag": "🇩🇪DE | 🔴 | vless | @FreakConfig | 10",
             "type": "vless",
-            "server": "delilah.ns.cloudflare.com",
+            "server": "statue.lnmarketplace.net",
             "server_port": 443,
-            "uuid": "39a192ed-7e78-42f4-b956-2f0ea17f677f",
+            "uuid": "7c63f43f-f526-49bb-b5c8-2be26e11ef00",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1483,19 +1491,12 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "639018301854287215.camry-amsjk.info",
+                "server_name": "statue.lnmarketplace.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/rbjisuws",
-                "headers": {
-                    "Host": "639018301854287215.camry-amsjk.info"
                 }
             }
         },
