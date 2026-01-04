@@ -108,14 +108,13 @@
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 11",
                 "🇩🇪DE | 🟢 | vless | @v2_team | 0",
-                "🇳🇱NL | 🔴 | vless | @ARv2ray | 18",
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 15",
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 16",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "❔XX | 🔴 | vless | @azadi_az_inja_migzare | 1",
-                "🇫🇮FI | 🔴 | vless | @V2rayNGn | 4",
-                "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 10",
-                "🇪🇪EE | 🟢 | vless | @customv2ray | 39",
+                "🇫🇮FI | 🔴 | vless | @V2rayNGn | 5",
+                "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 11",
                 "🇫🇮FI | 🟢 | vless | @v2ray1_ng | 3",
-                "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
                 "🇦🇱AL | 🟢 | vless | @kingofilter | 0",
@@ -129,14 +128,13 @@
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @Parsashonam | 11",
                 "🇩🇪DE | 🟢 | vless | @v2_team | 0",
-                "🇳🇱NL | 🔴 | vless | @ARv2ray | 18",
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 15",
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 16",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
                 "❔XX | 🔴 | vless | @azadi_az_inja_migzare | 1",
-                "🇫🇮FI | 🔴 | vless | @V2rayNGn | 4",
-                "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 10",
-                "🇪🇪EE | 🟢 | vless | @customv2ray | 39",
+                "🇫🇮FI | 🔴 | vless | @V2rayNGn | 5",
+                "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 11",
                 "🇫🇮FI | 🟢 | vless | @v2ray1_ng | 3",
-                "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
                 "🇦🇱AL | 🟢 | vless | @kingofilter | 0",
@@ -222,11 +220,47 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 18",
+            "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 15",
             "type": "vless",
             "server": "185.234.65.122",
             "server_port": 443,
             "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "uXUe3HEy4MjZ2nqFa8eMxxB24AxQEbxGdEAbdjxEMgQ",
+                    "short_id": "7a0bea4731381dda"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2rayy",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 16",
+            "type": "vless",
+            "server": "185.234.65.122",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray1",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -316,7 +350,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @V2rayNGn | 4",
+            "tag": "🇫🇮FI | 🔴 | vless | @V2rayNGn | 5",
             "type": "vless",
             "server": "finland.sbrf-cdn342.ru",
             "server_port": 443,
@@ -345,7 +379,7 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 10",
+            "tag": "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 11",
             "type": "vless",
             "server": "217.16.19.114",
             "server_port": 443,
@@ -370,35 +404,6 @@
                     "enabled": true,
                     "public_key": "s0qb5ggFZN3X7QXWtgK4o7UgfS9DlpFC6JT6OWVs6X4",
                     "short_id": "a5d90165"
-                }
-            }
-        },
-        {
-            "tag": "🇪🇪EE | 🟢 | vless | @customv2ray | 39",
-            "type": "vless",
-            "server": "144.31.178.168",
-            "server_port": 443,
-            "uuid": "eb162ab1-a006-4931-b1b3-8fc88a22b10e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tbankru.outlinekeys.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA",
-                    "short_id": ""
                 }
             }
         },
@@ -428,35 +433,6 @@
                     "enabled": true,
                     "public_key": "YLSRUKO-sm6In4ckqgVjagHKrWcA5r2aV7khO5brOUQ",
                     "short_id": "e3c5c005cae07eb7"
-                }
-            }
-        },
-        {
-            "tag": "🇹🇷TR | 🟢 | vless | @ConfigsHUB | 18",
-            "type": "vless",
-            "server": "198.105.123.152",
-            "server_port": 51065,
-            "uuid": "5695e906-fd40-45e7-b261-7bc605af614c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "WXFRU0P2nkI5AcYIdCWZmxonsqm9aD07wnFYWp7O4SY",
-                    "short_id": "0bc95177"
                 }
             }
         },
