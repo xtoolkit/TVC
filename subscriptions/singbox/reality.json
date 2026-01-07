@@ -154,6 +154,7 @@
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 0",
                 "🇰🇷KR | 🔴 | vless | @DailyV2RY | 3",
                 "🇳🇱NL | 🔴 | vless | @DailyV2RY | 12",
+                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 10",
                 "🇷🇺RU | 🟢 | vless | @proxystore11 | 0",
                 "🇳🇱NL | 🟢 | vless | @proxystore11 | 2",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 4",
@@ -188,7 +189,7 @@
                 "❔XX | 🔴 | vless | @vpn_go67 | 17",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
-                "🇳🇱NL | 🔴 | vless | @GozargahVPN | 4",
+                "🇳🇱NL | 🔴 | vless | @GozargahVPN | 5",
                 "❔XX | 🔴 | vless | @SvnTeam | 5",
                 "❔XX | 🔴 | vless | @SvnTeam | 6"
             ]
@@ -245,6 +246,7 @@
                 "🇩🇪DE | 🟢 | vless | @VmessProtocol | 0",
                 "🇰🇷KR | 🔴 | vless | @DailyV2RY | 3",
                 "🇳🇱NL | 🔴 | vless | @DailyV2RY | 12",
+                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 10",
                 "🇷🇺RU | 🟢 | vless | @proxystore11 | 0",
                 "🇳🇱NL | 🟢 | vless | @proxystore11 | 2",
                 "🇫🇮FI | 🟢 | vless | @free1_vpn | 4",
@@ -279,7 +281,7 @@
                 "❔XX | 🔴 | vless | @vpn_go67 | 17",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
-                "🇳🇱NL | 🔴 | vless | @GozargahVPN | 4",
+                "🇳🇱NL | 🔴 | vless | @GozargahVPN | 5",
                 "❔XX | 🔴 | vless | @SvnTeam | 5",
                 "❔XX | 🔴 | vless | @SvnTeam | 6"
             ],
@@ -1759,6 +1761,35 @@
             }
         },
         {
+            "tag": "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 10",
+            "type": "vless",
+            "server": "a.ru.maviks.ru",
+            "server_port": 443,
+            "uuid": "0df1e2bb-10d6-406a-aafb-910ebf5a85a3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maviks.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ",
+                    "short_id": "0f917152a871e9c0"
+                }
+            }
+        },
+        {
             "tag": "🇷🇺RU | 🟢 | vless | @proxystore11 | 0",
             "type": "vless",
             "server": "87.242.100.82",
@@ -2836,7 +2867,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @GozargahVPN | 4",
+            "tag": "🇳🇱NL | 🔴 | vless | @GozargahVPN | 5",
             "type": "vless",
             "server": "142.93.133.94",
             "server_port": 443,
