@@ -112,8 +112,8 @@
                 "🇮🇷IR | 🔴 | vless | @NIM_VPN_ir | 5",
                 "🇬🇧GB | 🔴 | vless | @XsV2ray | 3",
                 "❔XX | 🔴 | vless | @XsV2ray | 4",
-                "🇩🇪DE | 🔴 | vless | @VlessConfig | 12",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 13",
+                "🇩🇪DE | 🔴 | vless | @VlessConfig | 14",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 3",
                 "🇮🇷IR | 🔴 | vless | @frev2ray | 0",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 17",
@@ -161,8 +161,8 @@
                 "🇩🇪DE | 🔴 | vless | @SafeNet_Server | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 6",
                 "🇦🇲AM | 🔴 | vless | @lrnbymaa | 7",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
-                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 19",
+                "🇮🇷IR | 🔴 | vless | @ConfigsHUB | 17",
+                "🇬🇧GB | 🔴 | vless | @ConfigsHUB | 18",
                 "🇭🇰HK | 🔴 | vless | @proxystore11 | 2",
                 "🇳🇱NL | 🟢 | vless | @proxystore11 | 3",
                 "🇺🇸US | 🔴 | vless | @Capoit | 7",
@@ -197,8 +197,8 @@
                 "🇮🇷IR | 🔴 | vless | @NIM_VPN_ir | 5",
                 "🇬🇧GB | 🔴 | vless | @XsV2ray | 3",
                 "❔XX | 🔴 | vless | @XsV2ray | 4",
-                "🇩🇪DE | 🔴 | vless | @VlessConfig | 12",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 13",
+                "🇩🇪DE | 🔴 | vless | @VlessConfig | 14",
                 "🇺🇸US | 🔴 | vless | @V2pedia | 3",
                 "🇮🇷IR | 🔴 | vless | @frev2ray | 0",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 17",
@@ -246,8 +246,8 @@
                 "🇩🇪DE | 🔴 | vless | @SafeNet_Server | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 6",
                 "🇦🇲AM | 🔴 | vless | @lrnbymaa | 7",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
-                "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 19",
+                "🇮🇷IR | 🔴 | vless | @ConfigsHUB | 17",
+                "🇬🇧GB | 🔴 | vless | @ConfigsHUB | 18",
                 "🇭🇰HK | 🔴 | vless | @proxystore11 | 2",
                 "🇳🇱NL | 🟢 | vless | @proxystore11 | 3",
                 "🇺🇸US | 🔴 | vless | @Capoit | 7",
@@ -393,7 +393,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @VlessConfig | 12",
+            "tag": "🇩🇪DE | 🔴 | vless | @VlessConfig | 13",
             "type": "vless",
             "server": "52.29.65.161",
             "server_port": 22224,
@@ -424,7 +424,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @VlessConfig | 13",
+            "tag": "🇩🇪DE | 🔴 | vless | @VlessConfig | 14",
             "type": "vless",
             "server": "63.182.15.247",
             "server_port": 22224,
@@ -1531,11 +1531,25 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 18",
+            "tag": "🇮🇷IR | 🔴 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "151.101.195.8",
-            "server_port": 80,
-            "uuid": "3ff60b54-f6d6-467f-9189-df1a0567c647",
+            "server": "persians.france-learns.ir",
+            "server_port": 42555,
+            "uuid": "6f9b3b98-68d5-4934-9a93-46ce66d2a0cf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "25.26.27.158",
+            "server_port": 2096,
+            "uuid": "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -1543,26 +1557,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "sni.111000.de5.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2052?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "151.101.195.8"
+                    "Host": "sni.111000.de5.net"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @ConfigsHUB | 19",
-            "type": "vless",
-            "server": "209.38.52.51",
-            "server_port": 4655,
-            "uuid": "1602a406-a38e-4211-bbdc-3f75c890303d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
