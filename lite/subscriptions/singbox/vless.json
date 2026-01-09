@@ -142,7 +142,6 @@
                 "❔XX | 🔴 | vless | @UnlimitedDev | 1",
                 "❔XX | 🔴 | vless | @vmessorg | 9",
                 "❔XX | 🔴 | vless | @vmessorg | 10",
-                "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 6",
                 "❔XX | 🔴 | vless | @v2rayngvpn | 14",
                 "❔XX | 🔴 | vless | @FalconPolV2rayNG | 14",
@@ -162,7 +161,6 @@
                 "❔XX | 🔴 | vless | @lrnbymaa | 6",
                 "❔XX | 🔴 | vless | @lrnbymaa | 7",
                 "❔XX | 🔴 | vless | @ConfigsHUB | 18",
-                "❔XX | 🔴 | vless | @ConfigsHUB | 19",
                 "❔XX | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🟢 | vless | @proxystore11 | 3",
                 "❔XX | 🔴 | vless | @Capoit | 7",
@@ -227,7 +225,6 @@
                 "❔XX | 🔴 | vless | @UnlimitedDev | 1",
                 "❔XX | 🔴 | vless | @vmessorg | 9",
                 "❔XX | 🔴 | vless | @vmessorg | 10",
-                "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 6",
                 "❔XX | 🔴 | vless | @v2rayngvpn | 14",
                 "❔XX | 🔴 | vless | @FalconPolV2rayNG | 14",
@@ -247,7 +244,6 @@
                 "❔XX | 🔴 | vless | @lrnbymaa | 6",
                 "❔XX | 🔴 | vless | @lrnbymaa | 7",
                 "❔XX | 🔴 | vless | @ConfigsHUB | 18",
-                "❔XX | 🔴 | vless | @ConfigsHUB | 19",
                 "❔XX | 🔴 | vless | @proxystore11 | 2",
                 "❔XX | 🟢 | vless | @proxystore11 | 3",
                 "❔XX | 🔴 | vless | @Capoit | 7",
@@ -395,7 +391,7 @@
         {
             "tag": "❔XX | 🔴 | vless | @VlessConfig | 12",
             "type": "vless",
-            "server": "3.64.242.226",
+            "server": "15.188.161.63",
             "server_port": 22224,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -426,7 +422,7 @@
         {
             "tag": "❔XX | 🔴 | vless | @VlessConfig | 13",
             "type": "vless",
-            "server": "63.180.81.138",
+            "server": "3.64.242.226",
             "server_port": 22224,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -1129,20 +1125,6 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 5",
-            "type": "vless",
-            "server": "fast.555vpn.nl",
-            "server_port": 80,
-            "uuid": "1602a406-a38e-4211-bbdc-3f75c890303d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 6",
             "type": "vless",
             "server": "fast.panelha.sbs",
@@ -1540,42 +1522,31 @@
         {
             "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 18",
             "type": "vless",
-            "server": "151.101.195.8",
-            "server_port": 80,
-            "uuid": "3ff60b54-f6d6-467f-9189-df1a0567c647",
-            "flow": "",
+            "server": "162.159.19.174",
+            "server_port": 443,
+            "uuid": "e258977b-e413-4718-a3af-02d75492c349",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2052?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn",
-                "headers": {
-                    "Host": "151.101.195.8"
+            "tls": {
+                "enabled": true,
+                "server_name": "tw1.aniusnippets.qzz.io",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 19",
-            "type": "vless",
-            "server": "External-Net.fastly140.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "8cf4d179-a921-49e5-934c-dcacd276c620",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/ma?ed=2560\/---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "External-Net.fastly140.hosting-ip.com"
+                    "Host": "tw1.aniusnippets.qzz.io"
                 }
             }
         },
