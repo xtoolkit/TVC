@@ -116,6 +116,7 @@
                 "❔XX | 🟢 | vless | @ShadowSocks_s | 0",
                 "❔XX | 🔴 | vless | @ServerNett | 1",
                 "❔XX | 🟢 | vless | @VmessProtocol | 0",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vless | @proxystore11 | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -137,6 +138,7 @@
                 "❔XX | 🟢 | vless | @ShadowSocks_s | 0",
                 "❔XX | 🔴 | vless | @ServerNett | 1",
                 "❔XX | 🟢 | vless | @VmessProtocol | 0",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vless | @proxystore11 | 3",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -472,6 +474,42 @@
                     "public_key": "jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "subscribe.getvlessvpn.com",
+            "server_port": 49000,
+            "uuid": "160e9c18-c548-42bf-9c00-905aed8ef96f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "2K2NO2jXF45pA0-eUobqo-gnur61TadbWD4B93Zl_Vc",
+                    "short_id": "170f8a2036"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "t.me\/entryNET",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
