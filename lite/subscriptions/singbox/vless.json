@@ -159,7 +159,7 @@
                 "🇩🇪DE | 🔴 | vless | @SafeNet_Server | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 6",
                 "🇦🇲AM | 🔴 | vless | @lrnbymaa | 7",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇬🇧GB | 🔴 | vless | @ConfigsHUB | 17",
                 "🇭🇰HK | 🔴 | vless | @proxystore11 | 2",
                 "🇳🇱NL | 🟢 | vless | @proxystore11 | 3",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 5",
@@ -241,7 +241,7 @@
                 "🇩🇪DE | 🔴 | vless | @SafeNet_Server | 0",
                 "🇺🇸US | 🔴 | vless | @lrnbymaa | 6",
                 "🇦🇲AM | 🔴 | vless | @lrnbymaa | 7",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+                "🇬🇧GB | 🔴 | vless | @ConfigsHUB | 17",
                 "🇭🇰HK | 🔴 | vless | @proxystore11 | 2",
                 "🇳🇱NL | 🟢 | vless | @proxystore11 | 3",
                 "🇩🇪DE | 🟢 | vless | @Capoit | 5",
@@ -1462,17 +1462,34 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 17",
+            "tag": "🇬🇧GB | 🔴 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "trt.fastlynew.hosting-ip.com",
-            "server_port": 80,
-            "uuid": "50a9ab6c-1e20-41f2-b0d2-93ddec168ef9",
+            "server": "25.26.27.158",
+            "server_port": 2096,
+            "uuid": "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sni.111000.de5.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "sni.111000.de5.net"
+                }
             }
         },
         {
