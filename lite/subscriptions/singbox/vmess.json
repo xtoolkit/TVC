@@ -108,11 +108,11 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 19",
+                "🇦🇺AU | 🟢 | vmess | @DailyV2RY | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
                 "❔XX | 🟢 | vmess | @Hope_Net | 10",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2"
             ]
@@ -123,11 +123,11 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @DailyV2RY | 19",
+                "🇦🇺AU | 🟢 | vmess | @DailyV2RY | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
                 "❔XX | 🟢 | vmess | @Hope_Net | 10",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2"
             ],
@@ -186,11 +186,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @DailyV2RY | 19",
+            "tag": "🇦🇺AU | 🟢 | vmess | @DailyV2RY | 18",
             "type": "vmess",
-            "server": "46.254.106.77",
-            "server_port": 10000,
-            "uuid": "a6d83a36-e46b-11f0-83c8-066c57b94770",
+            "server": "54.206.192.9",
+            "server_port": 16407,
+            "uuid": "08f45028-1db6-4e93-bf51-d344b6c71e19",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -200,13 +200,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vpnjantit",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
@@ -268,6 +261,40 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+            "type": "vmess",
+            "server": "188.114.97.1",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "linde06.indiavideo.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "linde06.indiavideo.sbs"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
             "server": "sg02.elizabethgilbert.buzz",
@@ -288,30 +315,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "sg02.elizabethgilbert.buzz"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
-            "type": "vmess",
-            "server": "104.19.58.185",
-            "server_port": 2052,
-            "uuid": "d6b6d982-d52f-465a-b988-85670b23f64a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "104.19.58.185"
                 }
             }
         },
