@@ -13,12 +13,12 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 4 = vmess, 51.79.103.76, 80, username = 58fe1542-5290-40ad-815a-77707a81afe5, ws = true, tls = , vmess-aead = true, ws-path = /IOebhLMhl1CTbFHbL95myfRX2, ws-headers = Host:"google.com", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 7 = vmess, 38.33.45.87, 37000, username = 418048af-a293-4b99-9b0c-98ca3580dd24, ws = true, tls = 1, vmess-aead = false, ws-path = /path/133220121417, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 8 = vmess, 38.33.45.87, 37000, username = 418048af-a293-4b99-9b0c-98ca3580dd24, ws = true, tls = 1, vmess-aead = false, ws-path = /path/133220121417, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @v2Line | 2 = vmess, 209.126.84.189, 443, username = 2c981164-9b93-4bca-94ff-b78d3f8498d7, ws = true, tls = , vmess-aead = true, ws-path = /vmessws, ws-headers = Host:"209.126.84.189", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 4,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7,🇺🇸US | 🟢 | vmess | @v2Line | 2
-URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 4,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7,🇺🇸US | 🟢 | vmess | @v2Line | 2
-FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 4,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 7,🇺🇸US | 🟢 | vmess | @v2Line | 2
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 4,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8,🇺🇸US | 🟢 | vmess | @v2Line | 2
+URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 4,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8,🇺🇸US | 🟢 | vmess | @v2Line | 2
+FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 4,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8,🇺🇸US | 🟢 | vmess | @v2Line | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
