@@ -115,12 +115,12 @@
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 12",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 83",
                 "🇫🇮FI | 🟢 | vless | @ShadowSocks_s | 0",
-                "🇩🇪DE | 🔴 | vless | @vmessorg | 18",
                 "🇰🇷KR | 🔴 | vless | @DailyV2RY | 19",
                 "🇳🇱NL | 🟢 | vless | @proxystore11 | 3",
                 "🇳🇱NL | 🟢 | vless | @FreakConfig | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
-                "❔XX | 🔴 | vless | @vpn_go67 | 19"
+                "❔XX | 🔴 | vless | @vpn_go67 | 19",
+                "🇳🇱NL | 🔴 | vless | @GozargahVPN | 10"
             ]
         },
         {
@@ -136,12 +136,12 @@
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 12",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 83",
                 "🇫🇮FI | 🟢 | vless | @ShadowSocks_s | 0",
-                "🇩🇪DE | 🔴 | vless | @vmessorg | 18",
                 "🇰🇷KR | 🔴 | vless | @DailyV2RY | 19",
                 "🇳🇱NL | 🟢 | vless | @proxystore11 | 3",
                 "🇳🇱NL | 🟢 | vless | @FreakConfig | 6",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
-                "❔XX | 🔴 | vless | @vpn_go67 | 19"
+                "❔XX | 🔴 | vless | @vpn_go67 | 19",
+                "🇳🇱NL | 🔴 | vless | @GozargahVPN | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -439,35 +439,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @vmessorg | 18",
-            "type": "vless",
-            "server": "191.96.94.33",
-            "server_port": 8080,
-            "uuid": "afa05b4a-edd3-4017-8852-9e6f4c0cc0cb",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.latimes.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "h5wefNkT9fSiGEIa23EXaPo0pLaTyAsmkx7c9BpwLyc",
-                    "short_id": "6b46"
-                }
-            }
-        },
-        {
             "tag": "🇰🇷KR | 🔴 | vless | @DailyV2RY | 19",
             "type": "vless",
             "server": "8.220.219.39",
@@ -621,6 +592,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @GozargahVPN | 10",
+            "type": "vless",
+            "server": "142.93.133.94",
+            "server_port": 443,
+            "uuid": "437d47c9-18b5-471f-b91d-8716f90ecef5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "applepay.cdn-apple.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QCnbjMlzSdZkUdwD2lFQ6N2EZJ8hi7wgND67f_Pqlg0",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN-@GozargahVPN",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
