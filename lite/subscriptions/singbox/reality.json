@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇮🇷IR | 🟢 | vless | @NIM_VPN_ir | 3",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 17",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
@@ -126,6 +127,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇮🇷IR | 🟢 | vless | @NIM_VPN_ir | 3",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 17",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 17",
@@ -160,6 +162,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇮🇷IR | 🟢 | vless | @NIM_VPN_ir | 3",
+            "type": "vless",
+            "server": "hotgsmpnl2.hotgsm.shop",
+            "server_port": 21626,
+            "uuid": "f67a2f20-7f8d-4412-b833-49b4b34b3562",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7B1R-RGfwbRomKWOwCcBENJ1NHC9Bgg0TtNVE3vVqCk",
+                    "short_id": "b0dbf3eb"
+                }
+            }
         },
         {
             "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 17",
