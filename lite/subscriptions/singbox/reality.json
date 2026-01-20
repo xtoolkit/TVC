@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 14",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 20",
                 "❔XX | 🔴 | vless | @azadi_az_inja_migzare | 0",
@@ -123,6 +124,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 14",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
                 "🇩🇪DE | 🔴 | vless | @CUSTOMVPNSERVER | 20",
                 "❔XX | 🔴 | vless | @azadi_az_inja_migzare | 0",
@@ -154,6 +156,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 14",
+            "type": "vless",
+            "server": "185.234.65.143",
+            "server_port": 4423,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "ios"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "uXUe3HEy4MjZ2nqFa8eMxxB24AxQEbxGdEAbdjxEMgQ",
+                    "short_id": "7a0bea4731381dda"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2rayy",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
