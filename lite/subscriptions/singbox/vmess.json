@@ -108,11 +108,11 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @prrofile_purple | 31",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2"
             ]
@@ -123,11 +123,11 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @prrofile_purple | 31",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
+                "🇵🇱PL | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2"
             ],
@@ -186,11 +186,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @prrofile_purple | 31",
+            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
             "server": "chatgpt.com",
-            "server_port": 443,
-            "uuid": "0757c6cf-815c-444f-8ea7-5a70c07a1a73",
+            "server_port": 8443,
+            "uuid": "516d8a7a-3f0b-41d3-bad0-246116381516",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -203,12 +203,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "de.walkerpubg.ir",
+                "server_name": "c7.620720.xyz",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "c7.620720.xyz"
                 }
             }
         },
@@ -271,7 +278,31 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "🇵🇱PL | 🟢 | vmess | @Hope_Net | 10",
+            "type": "vmess",
+            "server": "172.64.198.249",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "172.64.198.249"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
             "type": "vmess",
             "server": "104.19.46.36",
             "server_port": 2086,
@@ -291,30 +322,6 @@
                 "path": "\/github.com\/Alvin9999",
                 "headers": {
                     "Host": "104.19.46.36"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 10",
-            "type": "vmess",
-            "server": "172.64.233.17",
-            "server_port": 2086,
-            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/github.com\/Alvin9999",
-                "headers": {
-                    "Host": "172.64.233.17"
                 }
             }
         },
