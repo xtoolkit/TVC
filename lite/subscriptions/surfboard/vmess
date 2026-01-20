@@ -11,14 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | 🟢 | vmess | @vmessorg | 4 = vmess, chatgpt.com, 443, username = 452feb53-e822-4e22-b2a1-3badd62dfecd, ws = true, tls = 1, vmess-aead = true, ws-path = /?ed=2048, ws-headers = Host:"a.stbthai.com", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇹🇷TR | 🟢 | vmess | @Hope_Net | 13 = vmess, 202.78.162.5, 443, username = 716eded6-2201-4dbd-9d63-1638c9e8e677, ws = true, tls = 1, vmess-aead = false, ws-path = /@forwardv2ray, ws-headers = Host:"pendar.onthewifi.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 14 = vmess, 104.19.38.8, 2086, username = e9e3cc13-db48-4cc1-8c24-7626439a5339, ws = true, tls = , vmess-aead = false, ws-path = github.com/Alvin9999, ws-headers = Host:"ip2.1457230.xyz", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 13 = vmess, 104.19.47.36, 2086, username = e9e3cc13-db48-4cc1-8c24-7626439a5339, ws = true, tls = , vmess-aead = false, ws-path = github.com/Alvin9999, ws-headers = Host:"ip2.1457230.xyz", skip-cert-verify = true, tfo = false
+🇹🇷TR | 🟢 | vmess | @Hope_Net | 14 = vmess, 202.78.162.5, 443, username = 716eded6-2201-4dbd-9d63-1638c9e8e677, ws = true, tls = 1, vmess-aead = false, ws-path = /@forwardv2ray, ws-headers = Host:"pendar.onthewifi.com", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @v2Line | 2 = vmess, 209.126.84.189, 443, username = 2c981164-9b93-4bca-94ff-b78d3f8498d7, ws = true, tls = , vmess-aead = true, ws-path = /vmessws, ws-headers = Host:"209.126.84.189", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇹🇷TR | 🟢 | vmess | @Hope_Net | 13,🇺🇸US | 🟢 | vmess | @Hope_Net | 14,🇺🇸US | 🟢 | vmess | @v2Line | 2
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇹🇷TR | 🟢 | vmess | @Hope_Net | 13,🇺🇸US | 🟢 | vmess | @Hope_Net | 14,🇺🇸US | 🟢 | vmess | @v2Line | 2
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇹🇷TR | 🟢 | vmess | @Hope_Net | 13,🇺🇸US | 🟢 | vmess | @Hope_Net | 14,🇺🇸US | 🟢 | vmess | @v2Line | 2
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @vmessorg | 4,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 13,🇹🇷TR | 🟢 | vmess | @Hope_Net | 14,🇺🇸US | 🟢 | vmess | @v2Line | 2
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @vmessorg | 4,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 13,🇹🇷TR | 🟢 | vmess | @Hope_Net | 14,🇺🇸US | 🟢 | vmess | @v2Line | 2
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @vmessorg | 4,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 13,🇹🇷TR | 🟢 | vmess | @Hope_Net | 14,🇺🇸US | 🟢 | vmess | @v2Line | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
