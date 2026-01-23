@@ -108,6 +108,8 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇰🇷KR | 🟢 | vmess | @oneclickvpnkeys | 3",
+                "🇺🇸US | 🟢 | vmess | @proxystore11 | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
@@ -122,6 +124,8 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇰🇷KR | 🟢 | vmess | @oneclickvpnkeys | 3",
+                "🇺🇸US | 🟢 | vmess | @proxystore11 | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 0",
@@ -174,6 +178,57 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇰🇷KR | 🟢 | vmess | @oneclickvpnkeys | 3",
+            "type": "vmess",
+            "server": "dv4.789900.xyz",
+            "server_port": 2096,
+            "uuid": "0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dv4.789900.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm",
+                "headers": {
+                    "Host": "dv4.789900.xyz"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @proxystore11 | 5",
+            "type": "vmess",
+            "server": "47.251.91.241",
+            "server_port": 42899,
+            "uuid": "0925b355-2bcd-4eae-9720-d2709e4f7e36",
+            "security": "auto",
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
