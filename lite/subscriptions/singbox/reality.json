@@ -110,9 +110,10 @@
                 "🇳🇱NL | 🟢 | vless | @NIM_VPN_ir | 2",
                 "🇩🇪DE | 🟢 | vless | @shh_proxy | 27",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇫🇷FR | 🔴 | vless | @proxy_kafee | 3",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 13",
+                "🇷🇺RU | 🟢 | vless | @UnlimitedDev | 49",
                 "🇫🇮FI | 🔴 | vless | @MehradLearn | 1",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
                 "🇸🇪SE | 🔴 | vless | @kiava | 31",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
@@ -126,9 +127,10 @@
                 "🇳🇱NL | 🟢 | vless | @NIM_VPN_ir | 2",
                 "🇩🇪DE | 🟢 | vless | @shh_proxy | 27",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇫🇷FR | 🔴 | vless | @proxy_kafee | 3",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 13",
+                "🇷🇺RU | 🟢 | vless | @UnlimitedDev | 49",
                 "🇫🇮FI | 🔴 | vless | @MehradLearn | 1",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
                 "🇸🇪SE | 🔴 | vless | @kiava | 31",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
@@ -277,6 +279,35 @@
             }
         },
         {
+            "tag": "🇫🇷FR | 🔴 | vless | @proxy_kafee | 3",
+            "type": "vless",
+            "server": "196.196.35.27",
+            "server_port": 443,
+            "uuid": "7005f499-036f-4570-a2a1-29761cfbbd9e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr.fasti.win",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "CuLjZaOWwaC_didE-f8CZoUK0mGH75iq-0u1St_wjUU",
+                    "short_id": "67f8515f3fa23d2f"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 13",
             "type": "vless",
             "server": "57.129.53.181",
@@ -306,6 +337,35 @@
             }
         },
         {
+            "tag": "🇷🇺RU | 🟢 | vless | @UnlimitedDev | 49",
+            "type": "vless",
+            "server": "ultrawide.zaros.tech",
+            "server_port": 12003,
+            "uuid": "174ba1c4-e694-472f-8f1b-1140752338f5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mjg5hfiykNBo-KPtce-RTU3BumTDlq0BGna1-7CO0gA",
+                    "short_id": "e6488676"
+                }
+            }
+        },
+        {
             "tag": "🇫🇮FI | 🔴 | vless | @MehradLearn | 1",
             "type": "vless",
             "server": "komki.marras1300.com",
@@ -331,35 +391,6 @@
                     "enabled": true,
                     "public_key": "WRbzjN-95L5QSe2N4RPgFoXSBtlTs8G18_VSm2ict1k",
                     "short_id": "36306863"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
-            "type": "vless",
-            "server": "172.234.130.82",
-            "server_port": 10001,
-            "uuid": "53cd8178-2ee6-43d9-a2a7-881f287fd408",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "kKX1o7FhJLyDaVE6sqXUcYpUIuFUgij_ueRYc_E4JhM",
-                    "short_id": "1a24af87"
                 }
             }
         },
