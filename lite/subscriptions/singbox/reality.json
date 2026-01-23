@@ -108,7 +108,8 @@
                 "URL-TEST",
                 "🇬🇧GB | 🔴 | vless | @NIM_VPN_ir | 2",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
-                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 0",
+                "🇺🇸US | 🟢 | vless | @proxy_kafee | 1",
+                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 2",
                 "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
                 "❔XX | 🔴 | vless | @azadi_az_inja_migzare | 1",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 12",
@@ -128,7 +129,8 @@
             "outbounds": [
                 "🇬🇧GB | 🔴 | vless | @NIM_VPN_ir | 2",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
-                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 0",
+                "🇺🇸US | 🟢 | vless | @proxy_kafee | 1",
+                "🇦🇪AE | 🟢 | vless | @proxy_kafee | 2",
                 "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
                 "❔XX | 🔴 | vless | @azadi_az_inja_migzare | 1",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 12",
@@ -227,7 +229,36 @@
             }
         },
         {
-            "tag": "🇦🇪AE | 🟢 | vless | @proxy_kafee | 0",
+            "tag": "🇺🇸US | 🟢 | vless | @proxy_kafee | 1",
+            "type": "vless",
+            "server": "165.140.202.177",
+            "server_port": 587,
+            "uuid": "65a1e22c-d37e-4b92-b6ca-1d09dcd1d441",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "excoino.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HnPEhCDTcZnDejsAiidoOSx2-h0EvJMILj4bv3X1mBc",
+                    "short_id": "916e8258c4a01b02"
+                }
+            }
+        },
+        {
+            "tag": "🇦🇪AE | 🟢 | vless | @proxy_kafee | 2",
             "type": "vless",
             "server": "DUBAI.TORPROSPEED.IR",
             "server_port": 223,
