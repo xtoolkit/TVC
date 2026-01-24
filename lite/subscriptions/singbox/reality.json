@@ -108,8 +108,11 @@
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @NIM_VPN_ir | 0",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇷🇺RU | 🟢 | vless | @proxy_kafee | 5",
+                "🇫🇮FI | 🟢 | vless | @DailyV2RY | 2",
                 "🇫🇮FI | 🔴 | vless | @MehradLearn | 1",
-                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 13",
+                "🇦🇪AE | 🟢 | vless | @ConfigsHUB | 12",
+                "🇬🇧GB | 🟢 | vless | @ConfigsHUB | 13",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ]
@@ -120,8 +123,11 @@
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @NIM_VPN_ir | 0",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇷🇺RU | 🟢 | vless | @proxy_kafee | 5",
+                "🇫🇮FI | 🟢 | vless | @DailyV2RY | 2",
                 "🇫🇮FI | 🔴 | vless | @MehradLearn | 1",
-                "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 13",
+                "🇦🇪AE | 🟢 | vless | @ConfigsHUB | 12",
+                "🇬🇧GB | 🟢 | vless | @ConfigsHUB | 13",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ],
@@ -211,6 +217,64 @@
             }
         },
         {
+            "tag": "🇷🇺RU | 🟢 | vless | @proxy_kafee | 5",
+            "type": "vless",
+            "server": "ss.02020.sbs",
+            "server_port": 8443,
+            "uuid": "c19fb567-74a9-454f-9757-e612fc4be371",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dropbox.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @DailyV2RY | 2",
+            "type": "vless",
+            "server": "hield.ru",
+            "server_port": 3389,
+            "uuid": "5050caf4-5814-44ed-a81b-26db0abfabf3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "ios"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "brMfFpfxMeNeqGqG0ZmWdwlnvZBfBTY92Jjyfz8Qyz4",
+                    "short_id": "0274c94d298e"
+                }
+            }
+        },
+        {
             "tag": "🇫🇮FI | 🔴 | vless | @MehradLearn | 1",
             "type": "vless",
             "server": "komki.marras1300.com",
@@ -240,11 +304,40 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @ConfigsHUB | 13",
+            "tag": "🇦🇪AE | 🟢 | vless | @ConfigsHUB | 12",
             "type": "vless",
-            "server": "5finn.solonettochka.ru",
+            "server": "uae.torprospeed.ir",
+            "server_port": 587,
+            "uuid": "65a1e22c-d37e-4b92-b6ca-1d09dcd1d441",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "excoino.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HnPEhCDTcZnDejsAiidoOSx2-h0EvJMILj4bv3X1mBc",
+                    "short_id": "916e8258c4a01b02"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @ConfigsHUB | 13",
+            "type": "vless",
+            "server": "3bra.solonettochka.ru",
             "server_port": 443,
-            "uuid": "8a56d7cc-e76b-48b0-a706-398f1019e3c9",
+            "uuid": "766ef9db-780e-4e9d-a809-637e960a6aee",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -263,8 +356,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "MOstfzVh65rWLKJSn8D9FKEgbnj605HLh6gY4i7gcB4",
-                    "short_id": "15a0"
+                    "public_key": "sVsjAdrRgJLu8RkHqJM-DIjreO7qsOq1JeyfWU9lUCs",
+                    "short_id": "6f"
                 }
             }
         },
