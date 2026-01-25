@@ -107,8 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇪🇸ES | 🔴 | vless | @prrofile_purple | 61",
                 "🇫🇮FI | 🔴 | vless | @MehradLearn | 2",
-                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 15",
+                "🇩🇪DE | 🟢 | vless | @Capoit | 8",
                 "🇩🇪DE | 🟢 | vless | @kiava | 25",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
@@ -119,8 +120,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇪🇸ES | 🔴 | vless | @prrofile_purple | 61",
                 "🇫🇮FI | 🔴 | vless | @MehradLearn | 2",
-                "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 15",
+                "🇩🇪DE | 🟢 | vless | @Capoit | 8",
                 "🇩🇪DE | 🟢 | vless | @kiava | 25",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
@@ -182,6 +184,42 @@
             }
         },
         {
+            "tag": "🇪🇸ES | 🔴 | vless | @prrofile_purple | 61",
+            "type": "vless",
+            "server": "sp4.fastdbn.com",
+            "server_port": 8443,
+            "uuid": "ec7f2b6a-d627-40ea-a017-36052c4ba426",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "google.com",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇫🇮FI | 🔴 | vless | @MehradLearn | 2",
             "type": "vless",
             "server": "komki.marras1300.com",
@@ -211,11 +249,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @ConfigsHUB | 15",
+            "tag": "🇩🇪DE | 🟢 | vless | @Capoit | 8",
             "type": "vless",
-            "server": "51.158.147.235",
-            "server_port": 443,
-            "uuid": "9d607f98-2b62-4b1e-b5b3-519156b5c30c",
+            "server": "84.21.189.63",
+            "server_port": 8080,
+            "uuid": "0b12f5e0-b23e-4555-96d0-ced10fe6e4f3",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -225,7 +263,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.samsung.com",
+                "server_name": "www.latimes.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -234,8 +272,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw",
-                    "short_id": ""
+                    "public_key": "KzxTSXu6qhbthLT4RtoFFeNa0vvG6ehwHGNPahg0en0",
+                    "short_id": "be7084"
                 }
             }
         },
