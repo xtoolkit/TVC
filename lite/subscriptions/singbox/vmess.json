@@ -113,7 +113,9 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇹🇷TR | 🟢 | vmess | @Hope_Net | 0",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 2"
+                "🇺🇸US | 🟢 | vmess | @v2Line | 2",
+                "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0",
+                "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1"
             ]
         },
         {
@@ -127,7 +129,9 @@
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇹🇷TR | 🟢 | vmess | @Hope_Net | 0",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
-                "🇺🇸US | 🟢 | vmess | @v2Line | 2"
+                "🇺🇸US | 🟢 | vmess | @v2Line | 2",
+                "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0",
+                "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -345,6 +349,54 @@
             "transport": {
                 "type": "ws",
                 "path": "\/vmessws",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0",
+            "type": "vmess",
+            "server": "154.201.76.172",
+            "server_port": 20521,
+            "uuid": "496cec71-a0fd-4f25-bba1-cba9e9d5a52f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1",
+            "type": "vmess",
+            "server": "149.30.232.103",
+            "server_port": 18393,
+            "uuid": "2c1807ce-6a63-4451-9add-a778d2507160",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/arki",
                 "headers": {
                     "Host": ""
                 }
