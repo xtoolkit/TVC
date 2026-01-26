@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇪🇸ES | 🟢 | vless | @shh_proxy | 6",
+                "🇦🇪AE | 🟢 | vless | @shh_proxy | 6",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇵🇱PL | 🟢 | vless | @proxystore11 | 4",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ]
@@ -116,8 +117,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇪🇸ES | 🟢 | vless | @shh_proxy | 6",
+                "🇦🇪AE | 🟢 | vless | @shh_proxy | 6",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇵🇱PL | 🟢 | vless | @proxystore11 | 4",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ],
@@ -142,11 +144,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇪🇸ES | 🟢 | vless | @shh_proxy | 6",
+            "tag": "🇦🇪AE | 🟢 | vless | @shh_proxy | 6",
             "type": "vless",
-            "server": "tunnyl.ru",
-            "server_port": 8443,
-            "uuid": "e5b2a149-94d5-46fb-ab3e-88e4e83ddc87",
+            "server": "dl-uae.iranfastfod.ir",
+            "server_port": 20908,
+            "uuid": "47cb652e-d31f-4951-87bf-184305c8d964",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -156,17 +158,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "google.com",
+                "server_name": "divar.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "ios"
+                    "fingerprint": "random"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "JIEpMViq_q_8PBG4NYKXrSlaGeQMuahbAaa7Qrh3LX0",
-                    "short_id": "38cd424d5ba6441d"
+                    "public_key": "9oJwu4bhYXTQqVvnH_lNuI93w1UI7m-QpLyWxNEkHHA",
+                    "short_id": "eb336182f8c7705d"
                 }
             }
         },
@@ -204,6 +206,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇵🇱PL | 🟢 | vless | @proxystore11 | 4",
+            "type": "vless",
+            "server": "pl.spirako.com",
+            "server_port": 443,
+            "uuid": "0cfb93a5-a707-4538-b298-756ee3ae3695",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "website.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0hH6R90pSxwm7nZPGtJJcJFhwCXU3Rvf-wcEHE7hczo",
+                    "short_id": ""
+                }
             }
         },
         {
