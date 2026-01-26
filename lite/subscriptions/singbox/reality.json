@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇪🇸ES | 🟢 | vless | @shh_proxy | 6",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
                 "🇬🇧GB | 🟢 | vless | @kiava | 23",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
@@ -116,6 +117,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇪🇸ES | 🟢 | vless | @shh_proxy | 6",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
                 "🇬🇧GB | 🟢 | vless | @kiava | 23",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
@@ -140,6 +142,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇪🇸ES | 🟢 | vless | @shh_proxy | 6",
+            "type": "vless",
+            "server": "tunnyl.ru",
+            "server_port": 8443,
+            "uuid": "e5b2a149-94d5-46fb-ab3e-88e4e83ddc87",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "ios"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JIEpMViq_q_8PBG4NYKXrSlaGeQMuahbAaa7Qrh3LX0",
+                    "short_id": "38cd424d5ba6441d"
+                }
+            }
         },
         {
             "tag": "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
