@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇹🇷TR | 🔴 | vless | @CUSTOMVPNSERVER | 11",
                 "🇦🇱AL | 🔴 | vless | @UnlimitedDev | 9",
                 "🇬🇧GB | 🟢 | vless | @proxystore11 | 4",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
@@ -118,6 +119,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇷🇺RU | 🔴 | vless | @rxv2ray | 9",
+                "🇹🇷TR | 🔴 | vless | @CUSTOMVPNSERVER | 11",
                 "🇦🇱AL | 🔴 | vless | @UnlimitedDev | 9",
                 "🇬🇧GB | 🟢 | vless | @proxystore11 | 4",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
@@ -177,6 +179,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇹🇷TR | 🔴 | vless | @CUSTOMVPNSERVER | 11",
+            "type": "vless",
+            "server": "tr-node.vopn.net",
+            "server_port": 443,
+            "uuid": "f4695c75-13cc-45d7-b06e-6d86c3165a42",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tr-node.vopn.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lBCt9m_PzWWdm1HvyZtJyCupmcySkfphwArSyPLPKXk",
+                    "short_id": "63c359bdc3f8562b"
+                }
             }
         },
         {
