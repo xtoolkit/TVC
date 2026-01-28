@@ -156,15 +156,15 @@
                 "🇳🇱NL | 🔴 | vless | @MehradLearn | 2",
                 "🇦🇪AE | 🔴 | vless | @MehradLearn | 3",
                 "🇷🇺RU | 🔴 | vless | @lrnbymaa | 0",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 11",
+                "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 15",
+                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 16",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 0",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
-                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
@@ -243,15 +243,15 @@
                 "🇳🇱NL | 🔴 | vless | @MehradLearn | 2",
                 "🇦🇪AE | 🔴 | vless | @MehradLearn | 3",
                 "🇷🇺RU | 🔴 | vless | @lrnbymaa | 0",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
-                "🇺🇸US | 🔴 | vless | @ConfigsHUB | 11",
+                "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 15",
+                "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 16",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 2",
                 "🇺🇸US | 🔴 | vless | @proxystore11 | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇺🇸US | 🔴 | vless | @free1_vpn | 0",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
-                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 4",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 10",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇺🇸US | 🔴 | vless | @fnet00 | 9",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
@@ -1489,12 +1489,33 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 10",
+            "tag": "🇮🇹IT | 🔴 | vless | @ConfigsHUB | 15",
             "type": "vless",
-            "server": "172.64.152.23",
-            "server_port": 443,
-            "uuid": "89728947-1ea4-497e-842e-4d46bea330c8",
+            "server": "cdn.turbooserver.com",
+            "server_port": 80,
+            "uuid": "turboo-server",
             "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ed=2580",
+                "headers": {
+                    "Host": "cdn.turbooserver.com"
+                }
+            }
+        },
+        {
+            "tag": "🇷🇺RU | 🟢 | vless | @ConfigsHUB | 16",
+            "type": "vless",
+            "server": "217.12.40.76",
+            "server_port": 443,
+            "uuid": "c38e6142-9223-47ef-84ce-2a84a308cafb",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -1503,34 +1524,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "temp.super-jozveh.info",
+                "server_name": "sun9-38.userapi.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+                    "short_id": "43df3983229a1c73"
                 }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "temp.super-jozveh.info"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ConfigsHUB | 11",
-            "type": "vless",
-            "server": "151.101.64.223",
-            "server_port": 80,
-            "uuid": "91f2e3fa-3047-4010-8c21-7ba9351602a5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -1685,7 +1690,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 3",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
             "server": "104.19.33.86",
             "server_port": 80,
@@ -1709,7 +1714,7 @@
             }
         },
         {
-            "tag": "🇰🇷KR | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "🇰🇷KR | 🟢 | vmess | @Hope_Net | 10",
             "type": "vmess",
             "server": "152.67.223.187",
             "server_port": 13774,
