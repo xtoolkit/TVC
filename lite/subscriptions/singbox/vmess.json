@@ -108,12 +108,12 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
+                "🇷🇺RU | 🟢 | vmess | @oneclickvpnkeys | 1",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 10",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
-                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 12",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2",
@@ -127,12 +127,12 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
+                "🇷🇺RU | 🟢 | vmess | @oneclickvpnkeys | 1",
+                "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 10",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
-                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 10",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+                "🇰🇷KR | 🟢 | vmess | @Hope_Net | 12",
                 "🇺🇸US | 🟢 | vmess | @fnet00 | 8",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2",
@@ -194,11 +194,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+            "tag": "🇷🇺RU | 🟢 | vmess | @oneclickvpnkeys | 1",
             "type": "vmess",
-            "server": "172.67.204.84",
-            "server_port": 8080,
-            "uuid": "nasnet",
+            "server": "46.17.43.220",
+            "server_port": 443,
+            "uuid": "d0563aa0-8fdd-481e-bf8a-ae3923c540b5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -209,20 +209,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "cg1c08.waimaojd.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/nasnet\/cdn",
+                "path": "\/api\/v1\/graphql",
                 "headers": {
-                    "Host": ""
+                    "Host": "cg1c08.waimaojd.com"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @ConfigsHUB | 10",
             "type": "vmess",
-            "server": "162.19.248.238",
-            "server_port": 550,
-            "uuid": "ede27a79-b039-490b-932c-495de4b68880",
+            "server": "104.17.162.123",
+            "server_port": 2087,
+            "uuid": "a43e24c0-d278-470f-88df-b664b9ccc306",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -232,6 +242,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zeroclouddd1.officialvpn.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "zeroclouddd1.officialvpn.shop"
+                }
             }
         },
         {
@@ -293,7 +320,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
             "type": "vmess",
             "server": "104.19.33.86",
             "server_port": 80,
@@ -317,7 +344,7 @@
             }
         },
         {
-            "tag": "🇰🇷KR | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "🇰🇷KR | 🟢 | vmess | @Hope_Net | 12",
             "type": "vmess",
             "server": "152.67.223.187",
             "server_port": 13774,
