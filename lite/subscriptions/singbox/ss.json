@@ -105,13 +105,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 14"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 14"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +134,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 14",
+            "type": "shadowsocks",
+            "server": "media.mothyleela.cfd",
+            "server_port": 40521,
+            "method": "chacha20-ietf-poly1305",
+            "password": "2WkRGh6tAv8UmsHh4i3F6zosj2dzA6sCzXbwq4TdXteztMfyA5aZcLy5jY5Z7FZ3QQMcTVwM7TvibdvzYircC7iDZafp2U6z",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
