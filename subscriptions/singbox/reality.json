@@ -108,10 +108,10 @@
                 "URL-TEST",
                 "❔XX | 🟢 | vless | @XsV2ray | 1",
                 "❔XX | 🔴 | vless | @ARv2ray | 3",
+                "❔XX | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 2",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 13",
-                "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 20",
                 "❔XX | 🔴 | vless | @proxy_kafee | 0",
                 "❔XX | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 0",
@@ -159,10 +159,10 @@
             "outbounds": [
                 "❔XX | 🟢 | vless | @XsV2ray | 1",
                 "❔XX | 🔴 | vless | @ARv2ray | 3",
+                "❔XX | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 2",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 13",
-                "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 20",
                 "❔XX | 🔴 | vless | @proxy_kafee | 0",
                 "❔XX | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 0",
@@ -289,6 +289,35 @@
             }
         },
         {
+            "tag": "❔XX | 🟢 | vless | @rxv2ray | 7",
+            "type": "vless",
+            "server": "89.208.86.65",
+            "server_port": 443,
+            "uuid": "3a83ab7a-9b6f-460c-a128-1799f63695e3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tradingview.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
+                    "short_id": "f32140952ba18e18"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 2",
             "type": "vless",
             "server": "51.158.206.93",
@@ -372,35 +401,6 @@
                     "enabled": true,
                     "public_key": "EkZcFQfg79_8AtbnEKXgg7jz8hwCrw7Q1CK_r0mdFVw",
                     "short_id": "6e"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 20",
-            "type": "vless",
-            "server": "tr-node.vopn.net",
-            "server_port": 443,
-            "uuid": "f4695c75-13cc-45d7-b06e-6d86c3165a42",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tr-node.vopn.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "qq"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "lBCt9m_PzWWdm1HvyZtJyCupmcySkfphwArSyPLPKXk",
-                    "short_id": "63c359bdc3f8562b"
                 }
             }
         },
