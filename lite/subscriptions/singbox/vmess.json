@@ -112,8 +112,8 @@
                 "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "❔XX | 🟢 | vmess | @Hope_Net | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2"
             ]
@@ -128,8 +128,8 @@
                 "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
                 "❔XX | 🟢 | vmess | @Hope_Net | 9",
-                "❔XX | 🟢 | vmess | @Hope_Net | 10",
                 "🇨🇦CA | 🟢 | vmess | @v2Line | 1",
                 "🇺🇸US | 🟢 | vmess | @v2Line | 2"
             ],
@@ -304,11 +304,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
+            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "mankadmu.com",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "104.19.48.45",
+            "server_port": 8443,
+            "uuid": "39135a39-e6ca-43df-a360-d859eea58d86",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -321,7 +321,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "mankadmu.com",
+                "server_name": "104.19.48.45",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -331,18 +331,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/",
                 "headers": {
-                    "Host": "mankadmu.com"
+                    "Host": "104.19.48.45"
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 10",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "max.mankadmu.com",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "ingress-i1.onebox6.org",
+            "server_port": 38701,
+            "uuid": "79386685-16da-327c-9e14-aa6d702d86bc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -353,21 +353,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "max.mankadmu.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/hls\/cctv5phd.m3u8",
                 "headers": {
-                    "Host": "max.mankadmu.com"
+                    "Host": "ingress-i1.onebox6.org"
                 }
             }
         },
