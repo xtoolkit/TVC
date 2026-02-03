@@ -105,13 +105,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 16"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 16"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +134,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 16",
+            "type": "shadowsocks",
+            "server": "112.197.26.106",
+            "server_port": 45310,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ca5a5efae00a832b",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
