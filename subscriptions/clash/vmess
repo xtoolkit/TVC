@@ -145,6 +145,7 @@ proxies:
   - {"name":"🚩CF | 🟢 | vmess | @Hope_Net | 3","type":"vmess","server":"108.162.192.63","port":"80","cipher":"none","uuid":"2ac4e269-1576-4f41-8c0d-6242e3c5fd8c","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"1270.0.1.dl3.烏克爾拯救聖誕老人電影.yркельпасаетcанту.фильм.urkel.烏克爾救援.wonkacapitano.buzz."}}}
   - {"name":"🇯🇵JP | 🟢 | vmess | @v2Line | 0","type":"vmess","server":"172.111.146.64","port":"80","cipher":"auto","uuid":"05b8c783-7f59-47f9-9923-06a465679f6a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess/","headers":{"host":""}}}
   - {"name":"🇺🇸US | 🟢 | vmess | @v2Line | 2","type":"vmess","server":"209.126.84.189","port":"443","cipher":"auto","uuid":"2c981164-9b93-4bca-94ff-b78d3f8498d7","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmessws","headers":{"host":"209.126.84.189"}}}
+  - {"name":"🇰🇷KR | 🟢 | vmess | @FreakConfig | 0","type":"vmess","server":"seoul03.zgjok.com","port":"443","cipher":"auto","uuid":"72a0dac4-9689-4a57-b164-5c65bfa94772","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"seoul03.zgjok.com"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -178,6 +179,7 @@ proxy-groups:
       - '🚩CF | 🟢 | vmess | @Hope_Net | 3'
       - '🇯🇵JP | 🟢 | vmess | @v2Line | 0'
       - '🇺🇸US | 🟢 | vmess | @v2Line | 2'
+      - '🇰🇷KR | 🟢 | vmess | @FreakConfig | 0'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -211,6 +213,7 @@ proxy-groups:
       - '🚩CF | 🟢 | vmess | @Hope_Net | 3'
       - '🇯🇵JP | 🟢 | vmess | @v2Line | 0'
       - '🇺🇸US | 🟢 | vmess | @v2Line | 2'
+      - '🇰🇷KR | 🟢 | vmess | @FreakConfig | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -243,6 +246,7 @@ proxy-groups:
       - '🚩CF | 🟢 | vmess | @Hope_Net | 3'
       - '🇯🇵JP | 🟢 | vmess | @v2Line | 0'
       - '🇺🇸US | 🟢 | vmess | @v2Line | 2'
+      - '🇰🇷KR | 🟢 | vmess | @FreakConfig | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
