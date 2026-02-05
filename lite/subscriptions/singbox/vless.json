@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇮🇷IR | 🔴 | vless | @v2_team | 0",
                 "🇮🇷IR | 🔴 | vless | @XsV2ray | 4",
                 "🇨🇿CZ | 🔴 | vless | @XsV2ray | 5",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 16",
@@ -121,6 +122,7 @@
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 0",
                 "🇺🇸US | 🔴 | vless | @DarkTeam_VPN | 2",
                 "🇦🇪AE | 🔴 | vless | @DarkTeam_VPN | 3",
+                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 0",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
                 "🇮🇷IR | 🔴 | vless | @V2rayCollector | 0",
@@ -130,7 +132,8 @@
                 "🇮🇷IR | 🔴 | vless | @prrofile_purple | 82",
                 "🇵🇱PL | 🟢 | vless | @prrofile_purple | 83",
                 "🇺🇸US | 🔴 | vless | @ShadowSocks_s | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 2",
+                "🇦🇱AL | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 5",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 6",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 3",
@@ -171,6 +174,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇮🇷IR | 🔴 | vless | @v2_team | 0",
                 "🇮🇷IR | 🔴 | vless | @XsV2ray | 4",
                 "🇨🇿CZ | 🔴 | vless | @XsV2ray | 5",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 16",
@@ -186,6 +190,7 @@
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 0",
                 "🇺🇸US | 🔴 | vless | @DarkTeam_VPN | 2",
                 "🇦🇪AE | 🔴 | vless | @DarkTeam_VPN | 3",
+                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 0",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
                 "🇮🇷IR | 🔴 | vless | @V2rayCollector | 0",
@@ -195,7 +200,8 @@
                 "🇮🇷IR | 🔴 | vless | @prrofile_purple | 82",
                 "🇵🇱PL | 🟢 | vless | @prrofile_purple | 83",
                 "🇺🇸US | 🔴 | vless | @ShadowSocks_s | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 2",
+                "🇦🇱AL | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 5",
                 "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 6",
                 "🇺🇸US | 🔴 | vless | @FalconPolV2rayNG | 3",
@@ -250,6 +256,20 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @v2_team | 0",
+            "type": "vless",
+            "server": "212.33.206.97",
+            "server_port": 2146,
+            "uuid": "d06a9f9f-d434-4e99-ac98-0c3c32d1810d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇮🇷IR | 🔴 | vless | @XsV2ray | 4",
@@ -593,6 +613,35 @@
             }
         },
         {
+            "tag": "🇨🇭CH | 🔴 | vless | @proxy_kafee | 0",
+            "type": "vless",
+            "server": "199.68.196.108",
+            "server_port": 8443,
+            "uuid": "9c42819a-67a6-4742-9c6d-64900ba62160",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.samsung.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "🇸🇪SE | 🔴 | vless | @v2logy | 9",
             "type": "vless",
             "server": "185.146.173.237",
@@ -812,7 +861,28 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 2",
+            "tag": "🇦🇱AL | 🔴 | vless | @customv2ray | 4",
+            "type": "vless",
+            "server": "pq-albania1.09vpn.com",
+            "server_port": 80,
+            "uuid": "8910cbb3-33b1-4266-a243-ac780ac63394",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "pq-albania1.09vpn.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 5",
             "type": "vless",
             "server": "all.vipfast7.site",
             "server_port": 8080,
