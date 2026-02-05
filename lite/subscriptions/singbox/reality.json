@@ -107,13 +107,15 @@
             "outbounds": [
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇸🇪SE | 🔴 | vless | @proxy_kafee | 0",
-                "🇵🇱PL | 🔴 | vless | @proxy_kafee | 1",
+                "🇸🇪SE | 🔴 | vless | @proxy_kafee | 1",
+                "🇵🇱PL | 🔴 | vless | @proxy_kafee | 2",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 17",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 18",
+                "🇷🇺RU | 🟢 | vless | @prrofile_purple | 83",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
-                "🇳🇱NL | 🟢 | vless | @FreakConfig | 5",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 3",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 52",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -125,13 +127,15 @@
             "type": "urltest",
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇸🇪SE | 🔴 | vless | @proxy_kafee | 0",
-                "🇵🇱PL | 🔴 | vless | @proxy_kafee | 1",
+                "🇸🇪SE | 🔴 | vless | @proxy_kafee | 1",
+                "🇵🇱PL | 🔴 | vless | @proxy_kafee | 2",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 17",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 18",
+                "🇷🇺RU | 🟢 | vless | @prrofile_purple | 83",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
-                "🇳🇱NL | 🟢 | vless | @FreakConfig | 5",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 3",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 52",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -187,7 +191,7 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @proxy_kafee | 0",
+            "tag": "🇸🇪SE | 🔴 | vless | @proxy_kafee | 1",
             "type": "vless",
             "server": "dd.openaccessnode.com",
             "server_port": 504,
@@ -223,7 +227,7 @@
             }
         },
         {
-            "tag": "🇵🇱PL | 🔴 | vless | @proxy_kafee | 1",
+            "tag": "🇵🇱PL | 🔴 | vless | @proxy_kafee | 2",
             "type": "vless",
             "server": "pol01-rblx01.tcp-reset-club.net",
             "server_port": 443,
@@ -310,6 +314,35 @@
             }
         },
         {
+            "tag": "🇷🇺RU | 🟢 | vless | @prrofile_purple | 83",
+            "type": "vless",
+            "server": "85.192.34.4",
+            "server_port": 3443,
+            "uuid": "231cd1b7-d0b0-49a7-ab7a-19aab29d036f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yandex.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ZXOWG_vt-nC0CYeQxvhrTu3evw0AJqTjkcUI5JvvNis",
+                    "short_id": "73c18c092cf76666"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🔴 | vless | @Capital_NET | 44",
             "type": "vless",
             "server": "ec76.kiava.fun",
@@ -368,7 +401,36 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @FreakConfig | 5",
+            "tag": "🇳🇱NL | 🟢 | vless | @FreakConfig | 3",
+            "type": "vless",
+            "server": "77.239.124.88",
+            "server_port": 443,
+            "uuid": "ca911bd2-e08f-42d8-aefb-3117494d3367",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mskhost.outlinekeys.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3zn513ilYXOJngXLRP0MUnK23HuB9TKLjQ7YG20dzTQ",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @FreakConfig | 4",
             "type": "vless",
             "server": "188.253.26.39",
             "server_port": 442,
