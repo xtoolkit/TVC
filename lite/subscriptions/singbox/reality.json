@@ -108,10 +108,11 @@
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇷🇺RU | 🔴 | vless | @proxy_kafee | 0",
+                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 15",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 16",
-                "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 17",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 52",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -124,10 +125,11 @@
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇷🇺RU | 🔴 | vless | @proxy_kafee | 0",
+                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 15",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 16",
-                "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 17",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+                "🇳🇱NL | 🟢 | vless | @FreakConfig | 4",
                 "🇩🇪DE | 🔴 | vless | @kiava | 52",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -212,6 +214,35 @@
             }
         },
         {
+            "tag": "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 15",
+            "type": "vless",
+            "server": "94.232.247.168",
+            "server_port": 41360,
+            "uuid": "e16a35ea-6715-4e75-9845-d20358bd0876",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
+                    "short_id": "1aab45"
+                }
+            }
+        },
+        {
             "tag": "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 16",
             "type": "vless",
             "server": "212.111.84.187",
@@ -237,35 +268,6 @@
                     "enabled": true,
                     "public_key": "Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc",
                     "short_id": "887c0d72e771a934"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 17",
-            "type": "vless",
-            "server": "51.158.206.93",
-            "server_port": 23576,
-            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fuck.rkn",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-                    "short_id": "01"
                 }
             }
         },
@@ -324,6 +326,35 @@
                     "enabled": true,
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @FreakConfig | 4",
+            "type": "vless",
+            "server": "51.158.206.93",
+            "server_port": 23576,
+            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fuck.rkn",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+                    "short_id": "01"
                 }
             }
         },
