@@ -110,6 +110,8 @@
                 "🇺🇸US | 🔴 | vless | @proxy_kafee | 0",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 15",
                 "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 16",
+                "❔XX | 🔴 | vless | @Capital_NET | 44",
+                "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
                 "🇩🇪DE | 🔴 | vless | @kiava | 52",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -124,6 +126,8 @@
                 "🇺🇸US | 🔴 | vless | @proxy_kafee | 0",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 15",
                 "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 16",
+                "❔XX | 🔴 | vless | @Capital_NET | 44",
+                "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
                 "🇩🇪DE | 🔴 | vless | @kiava | 52",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -181,7 +185,7 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @proxy_kafee | 0",
             "type": "vless",
-            "server": "103.35.191.224",
+            "server": "103.35.191.215",
             "server_port": 8443,
             "uuid": "93a20fae-54f4-4e25-93ef-995b3e52fc04",
             "flow": "xtls-rprx-vision",
@@ -262,6 +266,64 @@
                     "enabled": true,
                     "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
                     "short_id": "01"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @Capital_NET | 44",
+            "type": "vless",
+            "server": "ec76.kiava.fun",
+            "server_port": 8443,
+            "uuid": "783164cb-6410-4a96-e432-832489e4848c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "coinmarketcap.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wQGZ3Ppa4ajV1HrQUYdpZF9D6yejNt84iWv2fV3kVHc",
+                    "short_id": "5e"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+            "type": "vless",
+            "server": "four.felinetest.site",
+            "server_port": 443,
+            "uuid": "fbe02c0b-775f-4431-8615-a9497255c876",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "none.felinetest.site",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
+                    "short_id": "6f9deca7"
                 }
             }
         },
