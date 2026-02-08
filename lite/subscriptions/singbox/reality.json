@@ -108,13 +108,13 @@
                 "URL-TEST",
                 "🇷🇺RU | 🔴 | vless | @v2_team | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 15",
+                "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 15",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 16",
                 "🇷🇺RU | 🟢 | vless | @lrnbymaa | 5",
                 "🇷🇺RU | 🟢 | vless | @free1_vpn | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
                 "🇫🇮FI | 🟢 | vless | @FreakConfig | 4",
-                "🇫🇷FR | 🟢 | vless | @flyv2ray | 2",
                 "🇩🇪DE | 🟢 | vless | @kiava | 43",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -127,13 +127,13 @@
             "outbounds": [
                 "🇷🇺RU | 🔴 | vless | @v2_team | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 15",
+                "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 15",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 16",
                 "🇷🇺RU | 🟢 | vless | @lrnbymaa | 5",
                 "🇷🇺RU | 🟢 | vless | @free1_vpn | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
                 "🇫🇮FI | 🟢 | vless | @FreakConfig | 4",
-                "🇫🇷FR | 🟢 | vless | @flyv2ray | 2",
                 "🇩🇪DE | 🟢 | vless | @kiava | 43",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -218,7 +218,36 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 15",
+            "tag": "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 15",
+            "type": "vless",
+            "server": "146.185.196.25",
+            "server_port": 59984,
+            "uuid": "881268a6-b20d-46de-bb8a-f6b00deb1cc7",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "eh.vk.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LDMOxwtivbGTx-vhAhrT66N_oaEt_ScqXj9QhbQxHDc",
+                    "short_id": "5acf"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 16",
             "type": "vless",
             "server": "85.234.69.163",
             "server_port": 10100,
@@ -388,35 +417,6 @@
                     "enabled": true,
                     "public_key": "QXGsw1KqljvUiarkvFdBs3T1TeUQq4skwHFlsmbj31o",
                     "short_id": "365c07ed"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vless | @flyv2ray | 2",
-            "type": "vless",
-            "server": "94.232.247.168",
-            "server_port": 41360,
-            "uuid": "e16a35ea-6715-4e75-9845-d20358bd0876",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
-                    "short_id": "1aab45"
                 }
             }
         },
