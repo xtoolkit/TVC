@@ -119,12 +119,9 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 14",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
-                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 5",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 4",
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 5",
                 "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 9",
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 13",
-                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 15",
-                "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 1",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
@@ -166,12 +163,9 @@
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 14",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 15",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 16",
-                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 5",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 4",
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 5",
                 "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 9",
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 13",
-                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 15",
-                "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 1",
                 "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
@@ -437,11 +431,28 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 5",
+            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 4",
             "type": "vmess",
-            "server": "57.129.24.132",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "172.233.229.91",
+            "server_port": 14102,
+            "uuid": "27ba87fc-583f-4763-9060-83cf0b9264db",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 5",
+            "type": "vmess",
+            "server": "5.196.29.123",
+            "server_port": 2082,
+            "uuid": "112ac36f-3f53-4e26-8371-d25c028e1b9a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -452,28 +463,18 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "serkat.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/",
                 "headers": {
-                    "Host": "serkat.org"
+                    "Host": "5.196.29.123"
                 }
             }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 9",
             "type": "vmess",
-            "server": "57.129.59.200",
+            "server": "57.129.25.22",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
@@ -488,7 +489,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "serkat.org",
+                "server_name": "o.metuji.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -500,143 +501,7 @@
                 "type": "ws",
                 "path": "\/linkvws",
                 "headers": {
-                    "Host": "serkat.org"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 13",
-            "type": "vmess",
-            "server": "141.94.155.229",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "141.94.155.229",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "141.94.155.229"
-                }
-            }
-        },
-        {
-            "tag": "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 15",
-            "type": "vmess",
-            "server": "57.128.216.125",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kampong.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "kampong.org"
-                }
-            }
-        },
-        {
-            "tag": "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 17",
-            "type": "vmess",
-            "server": "n1761214918.74qxv.top",
-            "server_port": 443,
-            "uuid": "b141803a-209c-47bd-be6e-14d6bc1e96be",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "n1761214918.74qxv.top",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "n1761214918.74qxv.top"
-                }
-            }
-        },
-        {
-            "tag": "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
-            "type": "vmess",
-            "server": "146.59.118.249",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fapeng.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "fapeng.org"
+                    "Host": "o.metuji.com"
                 }
             }
         },
