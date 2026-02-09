@@ -12,13 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 0 = vmess, www.speedtest.net, 80, username = ae6e1f89-eca9-43d2-91d3-dd2ed68859ee, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"2d.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列列男事的事列上赛.abkon.cyou.", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 1 = vmess, 104.19.48.30, 8443, username = 39135a39-e6ca-43df-a360-d859eea58d86, ws = true, tls = 1, vmess-aead = false, ws-path = /, ws-headers = Host:"hk01.linkitnow.net", skip-cert-verify = true, tfo = false
 🇭🇺HU | 🟢 | vmess | @iP_CF | 7 = vmess, pq-Hungary1.09vpn.com, 80, username = 703f722a-4bdf-4e9d-9afd-a681fdf87c74, ws = true, tls = , vmess-aead = true, ws-path = /vmess/, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 0,🇺🇸US | 🟢 | vmess | @Hope_Net | 1,🇭🇺HU | 🟢 | vmess | @iP_CF | 7
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 0,🇺🇸US | 🟢 | vmess | @Hope_Net | 1,🇭🇺HU | 🟢 | vmess | @iP_CF | 7
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 0,🇺🇸US | 🟢 | vmess | @Hope_Net | 1,🇭🇺HU | 🟢 | vmess | @iP_CF | 7
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇺HU | 🟢 | vmess | @iP_CF | 7
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇺HU | 🟢 | vmess | @iP_CF | 7
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,🇭🇺HU | 🟢 | vmess | @iP_CF | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
