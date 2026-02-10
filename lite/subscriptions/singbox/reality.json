@@ -110,12 +110,12 @@
                 "🇫🇷FR | 🟢 | vless | @proxy_kafee | 11",
                 "🇩🇪DE | 🟢 | vless | @V2rayCollector | 1",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 16",
+                "🇩🇪DE | 🔴 | vless | @ShadowSocks_s | 2",
                 "🇰🇿KZ | 🟢 | vless | @ShadowSocks_s | 3",
-                "🇳🇱NL | 🟢 | vless | @ShadowSocks_s | 4",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 12",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
-                "🇭🇰HK | 🟢 | vless | @flyv2ray | 5",
+                "🇭🇰HK | 🟢 | vless | @flyv2ray | 6",
                 "🇩🇪DE | 🟢 | vless | @kiava | 43",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -130,12 +130,12 @@
                 "🇫🇷FR | 🟢 | vless | @proxy_kafee | 11",
                 "🇩🇪DE | 🟢 | vless | @V2rayCollector | 1",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 16",
+                "🇩🇪DE | 🔴 | vless | @ShadowSocks_s | 2",
                 "🇰🇿KZ | 🟢 | vless | @ShadowSocks_s | 3",
-                "🇳🇱NL | 🟢 | vless | @ShadowSocks_s | 4",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 12",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
-                "🇭🇰HK | 🟢 | vless | @flyv2ray | 5",
+                "🇭🇰HK | 🟢 | vless | @flyv2ray | 6",
                 "🇩🇪DE | 🟢 | vless | @kiava | 43",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19",
@@ -278,6 +278,35 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @ShadowSocks_s | 2",
+            "type": "vless",
+            "server": "57.129.49.1",
+            "server_port": 23576,
+            "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fuck.rkn",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+                    "short_id": "01"
+                }
+            }
+        },
+        {
             "tag": "🇰🇿KZ | 🟢 | vless | @ShadowSocks_s | 3",
             "type": "vless",
             "server": "178.236.16.98",
@@ -303,35 +332,6 @@
                     "enabled": true,
                     "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
                     "short_id": "69a2"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | vless | @ShadowSocks_s | 4",
-            "type": "vless",
-            "server": "188.253.26.39",
-            "server_port": 442,
-            "uuid": "e929f51d-5a95-5432-b66f-cfe725ea1f61",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "T_gyZwngrYUe24q6-mieGT9WJfzja0PQad_y_SnhBk0",
-                    "short_id": "6ac998b514"
                 }
             }
         },
@@ -423,7 +423,7 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vless | @flyv2ray | 5",
+            "tag": "🇭🇰HK | 🟢 | vless | @flyv2ray | 6",
             "type": "vless",
             "server": "hk.griffon-guard.com",
             "server_port": 443,
