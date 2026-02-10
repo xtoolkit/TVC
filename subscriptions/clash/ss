@@ -118,8 +118,10 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"163.171.181.49","port":42936,"password":"877c3b069c335ffc","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"119.159.245.24","port":29700,"password":"fec4e6f9e954aead","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"YLpDMwoLZi9Dvkr7Q6PCfkwCKJt23MkhD1LHDjnKVjS1R9Z4dD9vY5FffuYCtDVcSzHJLdicZbm4Dh6p8Nsd5d88gzAWYrQY","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"154.205.145.37","port":11201,"password":"47509ba3679b9df9","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 5","type":"ss","server":"163.171.181.49","port":42936,"password":"877c3b069c335ffc","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 6","type":"ss","server":"119.159.245.24","port":29700,"password":"fec4e6f9e954aead","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +130,8 @@ proxy-groups:
       - FALLBACK
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 1'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 5'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,6 +140,8 @@ proxy-groups:
     proxies:
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 1'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 5'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -143,6 +149,8 @@ proxy-groups:
     proxies:
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 1'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 5'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 6'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
