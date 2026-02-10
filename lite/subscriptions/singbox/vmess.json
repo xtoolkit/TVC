@@ -107,11 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "❔XX | 🟢 | vmess | @mftizi | 17",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇬🇧GB | 🟢 | vmess | @DeamNet_Proxy | 13",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 3",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 0",
                 "❔XX | 🟢 | vmess | @iP_CF | 7",
                 "❔XX | 🟢 | vmess | @iP_CF | 8"
             ]
@@ -121,11 +123,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "❔XX | 🟢 | vmess | @mftizi | 17",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇬🇧GB | 🟢 | vmess | @DeamNet_Proxy | 13",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 3",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
+                "❔XX | 🟢 | vmess | @Hope_Net | 0",
                 "❔XX | 🟢 | vmess | @iP_CF | 7",
                 "❔XX | 🟢 | vmess | @iP_CF | 8"
             ],
@@ -167,7 +171,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @mftizi | 17",
+            "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
             "type": "vmess",
             "server": "183.236.51.23",
             "server_port": 53002,
@@ -181,6 +185,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vmess | @DeamNet_Proxy | 13",
+            "type": "vmess",
+            "server": "57.128.189.222",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 1,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lammaland.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "lammaland.org"
+                }
             }
         },
         {
@@ -218,7 +256,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 4",
             "type": "vmess",
             "server": "vip3.kaixincloud.top",
             "server_port": 2083,
@@ -306,6 +344,30 @@
                 "path": "\/66",
                 "headers": {
                     "Host": "104.26.8.210"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 0",
+            "type": "vmess",
+            "server": "160.115.193.99",
+            "server_port": 60222,
+            "uuid": "84134d90-e4fe-4a86-c8d6-4d7bedb3c333",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vmess",
+                "headers": {
+                    "Host": "160.115.193.99"
                 }
             }
         },
