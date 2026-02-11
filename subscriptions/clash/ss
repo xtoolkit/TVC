@@ -118,35 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 8","type":"ss","server":"64.227.144.190","port":50690,"password":"PMeTVu76168UHquRQkb8f0","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 16","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"vgHT4AF253YLbcGh8WG1jMRX4SFsgYxszwpocdbeaCUoaBDwNoC8SxtaiSHh1Mm51cFhhrMpfrgyyFj71kbE44VnRPcgxPAg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"82.38.31.101","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 3","type":"ss","server":"38.54.57.90","port":990,"password":"ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 12","type":"ss","server":"64.227.144.190","port":50690,"password":"PMeTVu76168UHquRQkb8f0","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 8'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 8'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 8'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 12'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
