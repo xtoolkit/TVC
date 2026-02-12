@@ -122,7 +122,8 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 17","type":"vmess","server":"183.236.51.23","port":"53002","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"❔XX | 🟢 | vmess | @oneclickvpnkeys | 5","type":"vmess","server":"51.79.103.76","port":"80","cipher":"aes-128-gcm","uuid":"58fe1542-5290-40ad-815a-77707a81afe5","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/IOebhLMhl1CTbFHbL95myfRX2","headers":{"host":"google.com"}}}
+  - {"name":"🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 18","type":"vmess","server":"singapore02.zgjok.com","port":"443","cipher":"auto","uuid":"780c7671-e8c8-45ab-922b-4fdfc4310aa0","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"singapore02.zgjok.com"}}}
+  - {"name":"🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5","type":"vmess","server":"51.79.103.76","port":"80","cipher":"aes-128-gcm","uuid":"58fe1542-5290-40ad-815a-77707a81afe5","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/IOebhLMhl1CTbFHbL95myfRX2","headers":{"host":"google.com"}}}
   - {"name":"❔XX | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
 proxy-groups:
   - name: MANUAL
@@ -132,7 +133,8 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '❔XX | 🟢 | vmess | @oneclickvpnkeys | 5'
+      - '🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 18'
+      - '🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
   - name: URL-TEST
     type: url-test
@@ -142,7 +144,8 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '❔XX | 🟢 | vmess | @oneclickvpnkeys | 5'
+      - '🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 18'
+      - '🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
   - name: FALLBACK
     type: fallback
@@ -151,7 +154,8 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0'
       - '🇨🇳CN | 🟢 | vmess | @mftizi | 17'
-      - '❔XX | 🟢 | vmess | @oneclickvpnkeys | 5'
+      - '🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 18'
+      - '🇨🇦CA | 🟢 | vmess | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | vmess | @yaney_01 | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
