@@ -118,10 +118,9 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"57.129.35.242","port":11201,"password":"b2871db02e5f7e2f","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 3","type":"ss","server":"imap.roomyinmita.name","port":40565,"password":"2AJogKuFsiVa5SrhD7vPn8P28se9DBAT564XTGDnE9h5HZPh593bzJRxYavWzryacr6CAN5nHFm8RpsHfqRnasyhbsRzY4Np","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"2976kAmfLwdNpCtfWXxo3PmijgKToEYnVNUZ7Wqq8XgbM8NBB8GcvktWdaG77ZkG1z6awQeTKFFin44Re8fK7dZXgT5ez6ZH","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 8","type":"ss","server":"91.106.109.17","port":48213,"password":"1a17c1f74cdc51d5","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"163.171.206.24","port":44236,"password":"9d97433688e7efd5","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 8","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"2Bn7QVszJGr45J6EWLA12YxYFSos8uMHbDTZMerfA5khEoCpTKkkyFECW9XHDuwMJVAeJ37gakGALiykWCWU7S7agEMrfzrD","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 15","type":"ss","server":"38.54.29.82","port":9090,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,9 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 3'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 4'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 8'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,18 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 3'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 4'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 8'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 3'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 4'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 8'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 15'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
