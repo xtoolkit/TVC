@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, filimooo.com, 48008, username = 4a5848af-8749-4e97-8488-aa7d456c55f9, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 10 = vmess, 104.19.48.16, 8443, username = 39135a39-e6ca-43df-a360-d859eea58d86, ws = true, tls = 1, vmess-aead = true, ws-path = /, ws-headers = Host:"hk01.linkitnow.net", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, 104.19.46.36, 2086, username = e9e3cc13-db48-4cc1-8c24-7626439a5339, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 10,❔XX | 🟢 | vmess | @Hope_Net | 11
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 10,❔XX | 🟢 | vmess | @Hope_Net | 11
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 10,❔XX | 🟢 | vmess | @Hope_Net | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

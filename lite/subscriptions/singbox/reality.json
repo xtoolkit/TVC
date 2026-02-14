@@ -107,8 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇫🇮FI | 🟢 | vless | @Outline_Vpn | 16",
                 "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 0",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 1",
+                "❔XX | 🟢 | vless | @lrnbymaa | 14",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @FreakConfig | 18",
@@ -123,8 +125,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇫🇮FI | 🟢 | vless | @Outline_Vpn | 16",
                 "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 0",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 1",
+                "❔XX | 🟢 | vless | @lrnbymaa | 14",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @FreakConfig | 18",
@@ -183,6 +187,35 @@
             }
         },
         {
+            "tag": "🇫🇮FI | 🟢 | vless | @Outline_Vpn | 16",
+            "type": "vless",
+            "server": "fl-2.bot-iphone.ru",
+            "server_port": 8443,
+            "uuid": "9c42819a-67a6-4742-9c6d-64900ba62160",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.samsung.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 0",
             "type": "vless",
             "server": "Sw.shOpfoRkiDS.iR",
@@ -237,6 +270,35 @@
                     "enabled": true,
                     "public_key": "D8uvi--0Aq7Hjc7cYnfcJGY0h4SSBCrPh7wEp1mvFlw",
                     "short_id": "b7b70c104ad267b8"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @lrnbymaa | 14",
+            "type": "vless",
+            "server": "188.253.26.39",
+            "server_port": 442,
+            "uuid": "e929f51d-5a95-5432-b66f-cfe725ea1f61",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "T_gyZwngrYUe24q6-mieGT9WJfzja0PQad_y_SnhBk0",
+                    "short_id": "6ac998b514"
                 }
             }
         },
