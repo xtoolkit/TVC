@@ -123,7 +123,7 @@
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 0",
                 "🇧🇪BE | 🔴 | vless | @DarkTeam_VPN | 2",
                 "🇳🇱NL | 🔴 | vless | @DarkTeam_VPN | 3",
-                "🇺🇸US | 🔴 | vless | @proxy_kafee | 3",
+                "🇵🇱PL | 🟢 | vless | @proxy_kafee | 3",
                 "🇺🇸US | 🔴 | vless | @proxy_kafee | 4",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
@@ -188,7 +188,7 @@
                 "🇺🇸US | 🔴 | vless | @DigiV2ray | 0",
                 "🇧🇪BE | 🔴 | vless | @DarkTeam_VPN | 2",
                 "🇳🇱NL | 🔴 | vless | @DarkTeam_VPN | 3",
-                "🇺🇸US | 🔴 | vless | @proxy_kafee | 3",
+                "🇵🇱PL | 🟢 | vless | @proxy_kafee | 3",
                 "🇺🇸US | 🔴 | vless | @proxy_kafee | 4",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
@@ -641,23 +641,38 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @proxy_kafee | 3",
+            "tag": "🇵🇱PL | 🟢 | vless | @proxy_kafee | 3",
             "type": "vless",
-            "server": "198.62.62.99",
-            "server_port": 2052,
-            "uuid": "2271c50f-ac7a-4d7f-8b04-64085b0daa56",
-            "flow": "",
+            "server": "195.3.223.143",
+            "server_port": 443,
+            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pl.jojack.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "hSTtlpXKAYVVu5ybX3hQfq8dfsUrO_HoFVgfGGoCHVw",
+                    "short_id": "a7ab02dfcc1f2c04"
+                }
             }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @proxy_kafee | 4",
             "type": "vless",
-            "server": "172.64.152.170",
+            "server": "198.62.62.99",
             "server_port": 2052,
             "uuid": "2271c50f-ac7a-4d7f-8b04-64085b0daa56",
             "flow": "",
