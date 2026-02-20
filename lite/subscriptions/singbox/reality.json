@@ -365,6 +365,35 @@
         {
             "tag": "❔XX | 🟢 | vless | @FreakConfig | 17",
             "type": "vless",
+            "server": "212.111.84.82",
+            "server_port": 8443,
+            "uuid": "3c5c4ccc-b502-42cb-8c42-cfa714db4767",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "m.vk.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg",
+                    "short_id": "f4b4a6365558ea2e"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @FreakConfig | 18",
+            "type": "vless",
             "server": "77.83.245.169",
             "server_port": 22107,
             "uuid": "3b5ef7ea-ccb8-4126-a500-626c650e7e3a",
@@ -388,35 +417,6 @@
                     "enabled": true,
                     "public_key": "MaK15ybWQMEURQWUPLmkVcTlwTn-NVpgQjSJ7TxiyEw",
                     "short_id": "ca149cc9d87c3cb6"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @FreakConfig | 18",
-            "type": "vless",
-            "server": "game.pineappled.org",
-            "server_port": 443,
-            "uuid": "18f72be7-0651-4037-928b-8a309d685796",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU",
-                    "short_id": "9eb31eb7572c0882"
                 }
             }
         },
