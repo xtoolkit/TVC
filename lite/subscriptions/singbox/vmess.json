@@ -108,10 +108,12 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 4",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
+                "❔XX | 🟢 | vmess | @free1_vpn | 3",
+                "❔XX | 🟢 | vmess | @Hope_Net | 0",
                 "❔XX | 🟢 | vmess | @v2Line | 5",
                 "❔XX | 🟢 | vmess | @v2Line | 6",
                 "❔XX | 🟢 | vmess | @iP_CF | 3"
@@ -123,10 +125,12 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 4",
-                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
+                "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+                "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
+                "❔XX | 🟢 | vmess | @free1_vpn | 3",
+                "❔XX | 🟢 | vmess | @Hope_Net | 0",
                 "❔XX | 🟢 | vmess | @v2Line | 5",
                 "❔XX | 🟢 | vmess | @v2Line | 6",
                 "❔XX | 🟢 | vmess | @iP_CF | 3"
@@ -186,7 +190,31 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 4",
+            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 4",
+            "type": "vmess",
+            "server": "104.19.37.10",
+            "server_port": 8080,
+            "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/NASNET\/cdn",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 5",
             "type": "vmess",
             "server": "141.95.126.134",
             "server_port": 443,
@@ -216,30 +244,6 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "jamekk.org"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @oneclickvpnkeys | 5",
-            "type": "vmess",
-            "server": "nmki.1yy.ccwu.cc",
-            "server_port": 80,
-            "uuid": "4e45c1b4-9107-45dd-9995-cdf7cbb44d9d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/iSRWSKUJKNuXvVzsYHmsMrnO",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
@@ -298,6 +302,64 @@
                 "path": "\/66",
                 "headers": {
                     "Host": "104.26.8.210"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @free1_vpn | 3",
+            "type": "vmess",
+            "server": "104.19.37.10",
+            "server_port": 8080,
+            "uuid": "nasnet",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/NASNET\/cdn",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 0",
+            "type": "vmess",
+            "server": "104.21.94.64",
+            "server_port": 443,
+            "uuid": "39cec18f-a439-427c-9a4e-aeb6fcdf6f53",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "linja05.hwcar.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "linja05.hwcar.sbs"
                 }
             }
         },
