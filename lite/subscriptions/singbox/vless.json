@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @Parsashonam | 1",
                 "🇺🇸US | 🔴 | vless | @Parsashonam | 2",
-                "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
+                "🇩🇪DE | 🔴 | vless | @VlessConfig | 18",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 19",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇵🇹PT | 🔴 | vless | @ARv2ray | 4",
@@ -116,11 +116,11 @@
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 17",
                 "🇩🇪DE | 🔴 | vless | @rxv2ray | 6",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 8",
+                "🇮🇷IR | 🔴 | vless | @CUSTOMVPNSERVER | 8",
                 "🇺🇸US | 🔴 | vless | @CUSTOMVPNSERVER | 9",
                 "🇮🇷IR | 🔴 | vless | @DigiV2ray | 0",
+                "🇮🇷IR | 🔴 | vless | @proxy_kafee | 7",
                 "🇮🇷IR | 🔴 | vless | @proxy_kafee | 8",
-                "🇮🇷IR | 🔴 | vless | @proxy_kafee | 9",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
                 "❔XX | 🔴 | vless | @V2rayCollector | 0",
@@ -162,7 +162,7 @@
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @Parsashonam | 1",
                 "🇺🇸US | 🔴 | vless | @Parsashonam | 2",
-                "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
+                "🇩🇪DE | 🔴 | vless | @VlessConfig | 18",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 19",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇵🇹PT | 🔴 | vless | @ARv2ray | 4",
@@ -170,11 +170,11 @@
                 "🇺🇸US | 🔴 | vless | @Lockey_vpn | 17",
                 "🇩🇪DE | 🔴 | vless | @rxv2ray | 6",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 8",
+                "🇮🇷IR | 🔴 | vless | @CUSTOMVPNSERVER | 8",
                 "🇺🇸US | 🔴 | vless | @CUSTOMVPNSERVER | 9",
                 "🇮🇷IR | 🔴 | vless | @DigiV2ray | 0",
+                "🇮🇷IR | 🔴 | vless | @proxy_kafee | 7",
                 "🇮🇷IR | 🔴 | vless | @proxy_kafee | 8",
-                "🇮🇷IR | 🔴 | vless | @proxy_kafee | 9",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
                 "❔XX | 🔴 | vless | @V2rayCollector | 0",
@@ -278,9 +278,9 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
+            "tag": "🇩🇪DE | 🔴 | vless | @VlessConfig | 18",
             "type": "vless",
-            "server": "52.47.129.194",
+            "server": "3.123.242.84",
             "server_port": 22224,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -311,7 +311,7 @@
         {
             "tag": "🇫🇷FR | 🔴 | vless | @VlessConfig | 19",
             "type": "vless",
-            "server": "51.45.39.44",
+            "server": "52.47.129.194",
             "server_port": 22224,
             "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
             "flow": "",
@@ -488,7 +488,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 8",
+            "tag": "🇮🇷IR | 🔴 | vless | @CUSTOMVPNSERVER | 8",
             "type": "vless",
             "server": "cart.ankerios.ir",
             "server_port": 8443,
@@ -547,6 +547,27 @@
             }
         },
         {
+            "tag": "🇮🇷IR | 🔴 | vless | @proxy_kafee | 7",
+            "type": "vless",
+            "server": "snapp.ir",
+            "server_port": 80,
+            "uuid": "d9749e17-2e5c-4fe6-bd3b-2b5c5c2060ec",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "snapp.ir"
+                }
+            }
+        },
+        {
             "tag": "🇮🇷IR | 🔴 | vless | @proxy_kafee | 8",
             "type": "vless",
             "server": "snapp.ir",
@@ -564,37 +585,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "snapp.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @proxy_kafee | 9",
-            "type": "vless",
-            "server": "iri.hosmci.ir",
-            "server_port": 35163,
-            "uuid": "ea7ae912-3566-4b67-bf67-54397d5f8736",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "de.hosmci.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/upload\/?ed=2560",
-                "headers": {
-                    "Host": "de.hosmci.ir"
                 }
             }
         },
