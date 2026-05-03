@@ -107,10 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
-                "❔XX | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
-                "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 4",
+                "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇳🇱NL | 🟢 | vless | @CUSTOMVPNSERVER | 3",
+                "🇺🇸US | 🟢 | vless | @CUSTOMVPNSERVER | 4",
                 "❔XX | 🔴 | vless | @v2logy | 6",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 1",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
                 "❔XX | 🔴 | vless | @Capital_NET | 9",
@@ -170,10 +171,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
-                "❔XX | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
-                "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 4",
+                "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇳🇱NL | 🟢 | vless | @CUSTOMVPNSERVER | 3",
+                "🇺🇸US | 🟢 | vless | @CUSTOMVPNSERVER | 4",
                 "❔XX | 🔴 | vless | @v2logy | 6",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 1",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
                 "❔XX | 🔴 | vless | @Capital_NET | 9",
@@ -284,7 +286,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @rxv2ray | 7",
+            "tag": "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
             "type": "vless",
             "server": "89.208.86.65",
             "server_port": 443,
@@ -313,7 +315,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
+            "tag": "🇳🇱NL | 🟢 | vless | @CUSTOMVPNSERVER | 3",
             "type": "vless",
             "server": "51.158.206.93",
             "server_port": 23576,
@@ -342,7 +344,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 4",
+            "tag": "🇺🇸US | 🟢 | vless | @CUSTOMVPNSERVER | 4",
             "type": "vless",
             "server": "137.184.218.169",
             "server_port": 36925,
@@ -404,6 +406,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @v2rayngvpn | 1",
+            "type": "vless",
+            "server": "s1.arisping-ir.online",
+            "server_port": 8080,
+            "uuid": "ed29bb58-07e0-4eb6-a2c6-ed427066fd4b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LOS87LofEJA0paPzrS2mIFhmTaqkOZC-AUFgNvE1UEs",
+                    "short_id": "82cada35130f1ef2"
+                }
             }
         },
         {
