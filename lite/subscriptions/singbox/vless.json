@@ -106,8 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @Parsashonam | 1",
-                "🇺🇸US | 🔴 | vless | @Parsashonam | 2",
+                "🇺🇸US | 🔴 | vless | @Parsashonam | 0",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 19",
                 "🇵🇹PT | 🔴 | vless | @ARv2ray | 5",
@@ -124,6 +123,7 @@
                 "❔XX | 🔴 | vless | @V2rayCollector | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 12",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
+                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 16",
                 "🇮🇷IR | 🔴 | vless | @prrofile_purple | 17",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 0",
                 "🇺🇸US | 🟢 | vless | @vmessorg | 1",
@@ -131,11 +131,11 @@
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "🇺🇸US | 🔴 | vless | @v2rayngvpn | 0",
                 "🇮🇷IR | 🔴 | vless | @v2rayngvpn | 1",
-                "❔XX | 🔴 | vless | @v2ray_swhil | 43",
+                "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
-                "🇺🇸US | 🔴 | vless | @VmessProtocol | 0",
+                "❔XX | 🔴 | vless | @VmessProtocol | 0",
                 "❔XX | 🔴 | vless | @MehradLearn | 0",
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
                 "❔XX | 🔴 | vless | @free1_vpn | 0",
@@ -160,8 +160,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @Parsashonam | 1",
-                "🇺🇸US | 🔴 | vless | @Parsashonam | 2",
+                "🇺🇸US | 🔴 | vless | @Parsashonam | 0",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 19",
                 "🇵🇹PT | 🔴 | vless | @ARv2ray | 5",
@@ -178,6 +177,7 @@
                 "❔XX | 🔴 | vless | @V2rayCollector | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 12",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
+                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 16",
                 "🇮🇷IR | 🔴 | vless | @prrofile_purple | 17",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 0",
                 "🇺🇸US | 🟢 | vless | @vmessorg | 1",
@@ -185,11 +185,11 @@
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "🇺🇸US | 🔴 | vless | @v2rayngvpn | 0",
                 "🇮🇷IR | 🔴 | vless | @v2rayngvpn | 1",
-                "❔XX | 🔴 | vless | @v2ray_swhil | 43",
+                "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
-                "🇺🇸US | 🔴 | vless | @VmessProtocol | 0",
+                "❔XX | 🔴 | vless | @VmessProtocol | 0",
                 "❔XX | 🔴 | vless | @MehradLearn | 0",
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
                 "❔XX | 🔴 | vless | @free1_vpn | 0",
@@ -230,7 +230,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Parsashonam | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @Parsashonam | 0",
             "type": "vless",
             "server": "kubernetes.io",
             "server_port": 443,
@@ -245,30 +245,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "kubernetes.io",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @Parsashonam | 2",
-            "type": "vless",
-            "server": "nextjs.org",
-            "server_port": 443,
-            "uuid": "Parsashonam",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nextjs.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -677,6 +653,27 @@
             }
         },
         {
+            "tag": "🇮🇷IR | 🔴 | vless | @prrofile_purple | 16",
+            "type": "vless",
+            "server": "snapp.ir",
+            "server_port": 8880,
+            "uuid": "4a10586c-31bb-437c-a9e7-e2fb25625388",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Novavpni",
+                "headers": {
+                    "Host": "snapp.ir"
+                }
+            }
+        },
+        {
             "tag": "🇮🇷IR | 🔴 | vless | @prrofile_purple | 17",
             "type": "vless",
             "server": "62.60.147.73",
@@ -840,7 +837,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @v2ray_swhil | 43",
+            "tag": "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 8443,
@@ -944,7 +941,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @VmessProtocol | 0",
+            "tag": "❔XX | 🔴 | vless | @VmessProtocol | 0",
             "type": "vless",
             "server": "104.20.6.134",
             "server_port": 8443,
