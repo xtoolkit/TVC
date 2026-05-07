@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | 🔴 | vless | @Parsashonam | 0",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 19",
                 "🇮🇷IR | 🔴 | vless | @V2pedia | 0",
@@ -132,11 +133,11 @@
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 6",
                 "🇮🇷IR | 🔴 | vless | @v2rayngvpn | 2",
-                "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
-                "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
-                "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
+                "❔XX | 🔴 | vless | @v2ray_swhil | 43",
+                "❔XX | 🔴 | vless | @v2ray_swhil | 44",
+                "❔XX | 🔴 | vless | @vless_vmess | 18",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
-                "🇮🇷IR | 🔴 | vless | @v2ray_vpn_ir | 0",
+                "❔XX | 🔴 | vless | @v2ray_vpn_ir | 0",
                 "🇮🇷IR | 🔴 | vless | @proxystore11 | 10",
                 "❔XX | 🔴 | vless | @proxystore11 | 11",
                 "❔XX | 🔴 | vless | @free1_vpn | 0",
@@ -162,6 +163,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | 🔴 | vless | @Parsashonam | 0",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 19",
                 "🇮🇷IR | 🔴 | vless | @V2pedia | 0",
@@ -188,11 +190,11 @@
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 5",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 6",
                 "🇮🇷IR | 🔴 | vless | @v2rayngvpn | 2",
-                "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
-                "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
-                "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
+                "❔XX | 🔴 | vless | @v2ray_swhil | 43",
+                "❔XX | 🔴 | vless | @v2ray_swhil | 44",
+                "❔XX | 🔴 | vless | @vless_vmess | 18",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
-                "🇮🇷IR | 🔴 | vless | @v2ray_vpn_ir | 0",
+                "❔XX | 🔴 | vless | @v2ray_vpn_ir | 0",
                 "🇮🇷IR | 🔴 | vless | @proxystore11 | 10",
                 "❔XX | 🔴 | vless | @proxystore11 | 11",
                 "❔XX | 🔴 | vless | @free1_vpn | 0",
@@ -232,6 +234,30 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @Parsashonam | 0",
+            "type": "vless",
+            "server": "kubernetes.io",
+            "server_port": 443,
+            "uuid": "Telegram-Parsashonam",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kubernetes.io",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
@@ -872,7 +898,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
+            "tag": "❔XX | 🔴 | vless | @v2ray_swhil | 43",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 8443,
@@ -903,7 +929,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
+            "tag": "❔XX | 🔴 | vless | @v2ray_swhil | 44",
             "type": "vless",
             "server": "speedtest.net",
             "server_port": 443,
@@ -934,7 +960,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
+            "tag": "❔XX | 🔴 | vless | @vless_vmess | 18",
             "type": "vless",
             "server": "172.67.141.140",
             "server_port": 8880,
@@ -976,7 +1002,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @v2ray_vpn_ir | 0",
+            "tag": "❔XX | 🔴 | vless | @v2ray_vpn_ir | 0",
             "type": "vless",
             "server": "185.143.233.122",
             "server_port": 80,
