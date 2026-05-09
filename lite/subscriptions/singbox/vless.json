@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @Parsashonam | 0",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 19",
                 "🇮🇷IR | 🔴 | vless | @V2pedia | 0",
@@ -136,12 +135,11 @@
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇮🇷IR | 🔴 | vless | @v2ray1_ng | 0",
-                "❔XX | 🔴 | vless | @vless_vmess | 18",
+                "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
                 "❔XX | 🔴 | vless | @vless_vmess | 19",
                 "❔XX | 🔴 | vless | @v2ray_vpn_ir | 7",
                 "❔XX | 🔴 | vless | @proxystore11 | 8",
                 "❔XX | 🔴 | vless | @proxystore11 | 9",
-                "❔XX | 🔴 | vless | @free1_vpn | 1",
                 "❔XX | 🔴 | vless | @fnet00 | 0",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
@@ -162,7 +160,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @Parsashonam | 0",
                 "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
                 "🇩🇪DE | 🔴 | vless | @VlessConfig | 19",
                 "🇮🇷IR | 🔴 | vless | @V2pedia | 0",
@@ -192,12 +189,11 @@
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇮🇷IR | 🔴 | vless | @v2ray1_ng | 0",
-                "❔XX | 🔴 | vless | @vless_vmess | 18",
+                "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
                 "❔XX | 🔴 | vless | @vless_vmess | 19",
                 "❔XX | 🔴 | vless | @v2ray_vpn_ir | 7",
                 "❔XX | 🔴 | vless | @proxystore11 | 8",
                 "❔XX | 🔴 | vless | @proxystore11 | 9",
-                "❔XX | 🔴 | vless | @free1_vpn | 1",
                 "❔XX | 🔴 | vless | @fnet00 | 0",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
@@ -232,30 +228,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @Parsashonam | 0",
-            "type": "vless",
-            "server": "kubernetes.io",
-            "server_port": 443,
-            "uuid": "Telegram-Parsashonam",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kubernetes.io",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
         },
         {
             "tag": "🇫🇷FR | 🔴 | vless | @VlessConfig | 18",
@@ -959,7 +931,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @vless_vmess | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
             "type": "vless",
             "server": "172.67.141.140",
             "server_port": 8880,
@@ -1053,37 +1025,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "185.143.233.5"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @free1_vpn | 1",
-            "type": "vless",
-            "server": "8.6.112.6",
-            "server_port": 443,
-            "uuid": "Telegram-Parsashonam",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "test.atlasw.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "test.atlasw.ir"
                 }
             }
         },
