@@ -127,13 +127,13 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 12",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
-                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 31",
-                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 32",
+                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 33",
+                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 34",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 0",
-                "🇺🇸US | 🟢 | vless | @vmessorg | 1",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 11",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 12",
                 "🇮🇷IR | 🔴 | vless | @v2rayngvpn | 0",
@@ -189,13 +189,13 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 12",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
-                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 31",
-                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 32",
+                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 33",
+                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 34",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 0",
-                "🇺🇸US | 🟢 | vless | @vmessorg | 1",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 11",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 12",
                 "🇮🇷IR | 🔴 | vless | @v2rayngvpn | 0",
@@ -734,6 +734,25 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8",
+            "type": "trojan",
+            "server": "162.159.36.20",
+            "server_port": 443,
+            "password": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?proxyip=ip.111000.de5.net:443",
+                "headers": {
+                    "Host": "sni.111000.dynv6.net"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
             "type": "vmess",
             "server": null,
@@ -811,11 +830,11 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @prrofile_purple | 31",
+            "tag": "🇮🇷IR | 🔴 | vless | @prrofile_purple | 33",
             "type": "vless",
-            "server": "185.143.235.201",
-            "server_port": 80,
-            "uuid": "9012f0c7-74d8-491f-bfb1-47e2574cfa99",
+            "server": "snapp.ir",
+            "server_port": 8080,
+            "uuid": "eaaebf33-04a2-41bd-9662-be086b8d5f1d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -827,16 +846,16 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "185.143.235.201"
+                    "Host": "snapp.ir"
                 }
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @prrofile_purple | 32",
+            "tag": "🇮🇷IR | 🔴 | vless | @prrofile_purple | 34",
             "type": "vless",
-            "server": "ger1bot-ws.headerip.com",
+            "server": "snapp.ir",
             "server_port": 80,
-            "uuid": "7b048a03-a987-4957-9171-4475094dc7d6",
+            "uuid": "a0064597-a864-42db-a26c-5b4309ebffbc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -848,7 +867,7 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "ger1bot-ws.headerip.com"
+                    "Host": "snapp.ir"
                 }
             }
         },
@@ -880,37 +899,6 @@
                 "path": "\/ws",
                 "headers": {
                     "Host": "cdn.hosseincapri.sbs"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vless | @vmessorg | 1",
-            "type": "vless",
-            "server": "104.20.6.134",
-            "server_port": 2096,
-            "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "sni.111000.indevs.in",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "sni.111000.indevs.in"
                 }
             }
         },
