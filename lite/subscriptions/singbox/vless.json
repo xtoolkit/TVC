@@ -116,13 +116,14 @@
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 8",
                 "🇺🇸US | 🔴 | vless | @CUSTOMVPNSERVER | 9",
                 "🇮🇷IR | 🔴 | vless | @DigiV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @DarkTeam_VPN | 0",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
                 "❔XX | 🔴 | vless | @V2rayCollector | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
+                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 30",
                 "🇮🇷IR | 🔴 | vless | @prrofile_purple | 31",
-                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 32",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 9",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 10",
                 "🇮🇷IR | 🔴 | vless | @v2rayngvpn | 0",
@@ -133,7 +134,7 @@
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
                 "🇮🇷IR | 🔴 | vless | @proxystore11 | 0",
-                "🆥🆥 | 🔴 | vless | @fnet00 | 0",
+                "❔XX | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 1",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
@@ -163,13 +164,14 @@
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 8",
                 "🇺🇸US | 🔴 | vless | @CUSTOMVPNSERVER | 9",
                 "🇮🇷IR | 🔴 | vless | @DigiV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @DarkTeam_VPN | 0",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
                 "❔XX | 🔴 | vless | @v2logy | 10",
                 "❔XX | 🔴 | vless | @V2rayCollector | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
+                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 30",
                 "🇮🇷IR | 🔴 | vless | @prrofile_purple | 31",
-                "🇮🇷IR | 🔴 | vless | @prrofile_purple | 32",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 9",
                 "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 10",
                 "🇮🇷IR | 🔴 | vless | @v2rayngvpn | 0",
@@ -180,7 +182,7 @@
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
                 "🇮🇷IR | 🔴 | vless | @proxystore11 | 0",
-                "🆥🆥 | 🔴 | vless | @fnet00 | 0",
+                "❔XX | 🔴 | vless | @fnet00 | 0",
                 "🇩🇪DE | 🔴 | vless | @fnet00 | 1",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
@@ -449,6 +451,37 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @DarkTeam_VPN | 0",
+            "type": "vless",
+            "server": "104.19.229.21",
+            "server_port": 443,
+            "uuid": "8efcbd18-5825-44f9-b684-86665d09e0e1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "de1.uploadsho.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/upload\/?ed=2560",
+                "headers": {
+                    "Host": "de1.uploadsho.com"
+                }
+            }
+        },
+        {
             "tag": "🇸🇪SE | 🔴 | vless | @v2logy | 9",
             "type": "vless",
             "server": "185.146.173.237",
@@ -594,6 +627,27 @@
             }
         },
         {
+            "tag": "🇮🇷IR | 🔴 | vless | @prrofile_purple | 30",
+            "type": "vless",
+            "server": "185.143.234.235",
+            "server_port": 80,
+            "uuid": "c59834b1-ec3d-4682-8580-861a400235bd",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "185.143.234.235"
+                }
+            }
+        },
+        {
             "tag": "🇮🇷IR | 🔴 | vless | @prrofile_purple | 31",
             "type": "vless",
             "server": "www.varzesh3.com",
@@ -621,27 +675,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "androidproject.amiramskow.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @prrofile_purple | 32",
-            "type": "vless",
-            "server": "SnaPp.ir",
-            "server_port": 2082,
-            "uuid": "ca807778-9071-4ac0-b783-fb43724348e6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "SnaPp.ir"
                 }
             }
         },
@@ -886,7 +919,7 @@
             }
         },
         {
-            "tag": "🆥🆥 | 🔴 | vless | @fnet00 | 0",
+            "tag": "❔XX | 🔴 | vless | @fnet00 | 0",
             "type": "vless",
             "server": "127.0.0.1",
             "server_port": 40443,
