@@ -110,6 +110,7 @@
                 "❔XX | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 4",
+                "❔XX | 🔴 | vless | @DarkTeam_VPN | 0",
                 "❔XX | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
@@ -169,6 +170,7 @@
                 "❔XX | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 4",
+                "❔XX | 🔴 | vless | @DarkTeam_VPN | 0",
                 "❔XX | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
@@ -360,6 +362,42 @@
                     "public_key": "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0",
                     "short_id": ""
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @DarkTeam_VPN | 0",
+            "type": "vless",
+            "server": "194.59.215.153",
+            "server_port": 13276,
+            "uuid": "734d37dd-f0f3-4786-af4c-561d124463cd",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lZhnPs3mM0yaBLd2jWaQoX3DVaXz4l-t9SdKr0vUy1U",
+                    "short_id": "fb8e0edb66000f28"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "xyz",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
