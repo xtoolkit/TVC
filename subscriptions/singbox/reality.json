@@ -138,6 +138,8 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 42",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🔴 | vless | @Capoit | 0",
+                "❔XX | 🔴 | vless | @Capoit | 2",
                 "❔XX | 🟢 | vless | @kiava | 48",
                 "❔XX | 🔴 | vless | @kiava | 52",
                 "❔XX | 🟢 | vless | @kiava | 53",
@@ -199,6 +201,8 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 42",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🔴 | vless | @Capoit | 0",
+                "❔XX | 🔴 | vless | @Capoit | 2",
                 "❔XX | 🟢 | vless | @kiava | 48",
                 "❔XX | 🔴 | vless | @kiava | 52",
                 "❔XX | 🟢 | vless | @kiava | 53",
@@ -1210,6 +1214,71 @@
                     "enabled": true,
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @Capoit | 0",
+            "type": "vless",
+            "server": "212.192.14.50",
+            "server_port": 61825,
+            "uuid": "b6083a84-80a5-3e88-9dbb-5c8ef241be3a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "github.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "G8hjZomMXOCmbVboqMiuf2sVvcnihjQ4BdyVo3XewW4",
+                    "short_id": "6bcde426"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "newinsight",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @Capoit | 2",
+            "type": "vless",
+            "server": "85.158.109.113",
+            "server_port": 443,
+            "uuid": "87be8be2-9296-4912-944e-d49cc81485d8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.kinopoisk.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ice5ApDYceTGVoxODC51F4RVW0HBoykvMpgL4_qLABw",
+                    "short_id": "aabbccdd"
                 }
             }
         },
