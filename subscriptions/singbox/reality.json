@@ -107,10 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
+                "🇬🇪GE | 🟢 | vless | @shh_proxy | 0",
                 "❔XX | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 4",
-                "❔XX | 🔴 | vless | @proxy_kafee | 0",
+                "❔XX | 🔴 | vless | @proxy_kafee | 2",
                 "❔XX | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🟢 | vless | @ServerNett | 1",
                 "❔XX | 🟢 | vless | @ServerNett | 2",
@@ -171,10 +172,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
+                "🇬🇪GE | 🟢 | vless | @shh_proxy | 0",
                 "❔XX | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 4",
-                "❔XX | 🔴 | vless | @proxy_kafee | 0",
+                "❔XX | 🔴 | vless | @proxy_kafee | 2",
                 "❔XX | 🔴 | vless | @v2logy | 6",
                 "❔XX | 🟢 | vless | @ServerNett | 1",
                 "❔XX | 🟢 | vless | @ServerNett | 2",
@@ -286,6 +288,35 @@
             }
         },
         {
+            "tag": "🇬🇪GE | 🟢 | vless | @shh_proxy | 0",
+            "type": "vless",
+            "server": "scan.capitaledge.blog",
+            "server_port": 8443,
+            "uuid": "600c333c-53dd-4eb9-80cf-c5716cc570f8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hartfordmedia.online",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg",
+                    "short_id": "2356d1ae4b"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vless | @rxv2ray | 7",
             "type": "vless",
             "server": "89.208.86.65",
@@ -373,7 +404,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @proxy_kafee | 0",
+            "tag": "❔XX | 🔴 | vless | @proxy_kafee | 2",
             "type": "vless",
             "server": "138.124.115.134",
             "server_port": 8443,
