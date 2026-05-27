@@ -106,9 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇪GE | 🟢 | vless | @shh_proxy | 3",
+                "🇬🇪GE | 🟢 | vless | @shh_proxy | 4",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🟢 | vless | @ServerNett | 2",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 2",
+                "🇩🇪DE | 🟢 | vless | @ServerNett | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @flyv2ray | 0",
@@ -122,9 +123,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇪GE | 🟢 | vless | @shh_proxy | 3",
+                "🇬🇪GE | 🟢 | vless | @shh_proxy | 4",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🟢 | vless | @ServerNett | 2",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 2",
+                "🇩🇪DE | 🟢 | vless | @ServerNett | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @flyv2ray | 0",
@@ -154,7 +156,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇪GE | 🟢 | vless | @shh_proxy | 3",
+            "tag": "🇬🇪GE | 🟢 | vless | @shh_proxy | 4",
             "type": "vless",
             "server": "scan.capitaledge.blog",
             "server_port": 8443,
@@ -212,7 +214,36 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @ServerNett | 2",
+            "tag": "❔XX | 🟢 | vless | @v2rayngvpn | 2",
+            "type": "vless",
+            "server": "91.225.217.26",
+            "server_port": 443,
+            "uuid": "0dc22208-cea4-4423-b3c3-a36957e23233",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Zd5BqaW-kyJqZANUH2cIARr466QZw09pNngYjsEK1w8",
+                    "short_id": "30fa"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @ServerNett | 2",
             "type": "vless",
             "server": "216.57.108.24",
             "server_port": 443,
