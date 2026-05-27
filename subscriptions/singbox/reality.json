@@ -107,12 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
-                "🇬🇪GE | 🟢 | vless | @shh_proxy | 0",
+                "🇬🇪GE | 🟢 | vless | @shh_proxy | 3",
                 "❔XX | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 4",
-                "❔XX | 🔴 | vless | @proxy_kafee | 2",
                 "❔XX | 🔴 | vless | @v2logy | 6",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 0",
                 "❔XX | 🟢 | vless | @ServerNett | 1",
                 "❔XX | 🟢 | vless | @ServerNett | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
@@ -172,12 +172,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
-                "🇬🇪GE | 🟢 | vless | @shh_proxy | 0",
+                "🇬🇪GE | 🟢 | vless | @shh_proxy | 3",
                 "❔XX | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 3",
                 "❔XX | 🟢 | vless | @CUSTOMVPNSERVER | 4",
-                "❔XX | 🔴 | vless | @proxy_kafee | 2",
                 "❔XX | 🔴 | vless | @v2logy | 6",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 0",
                 "❔XX | 🟢 | vless | @ServerNett | 1",
                 "❔XX | 🟢 | vless | @ServerNett | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
@@ -288,7 +288,7 @@
             }
         },
         {
-            "tag": "🇬🇪GE | 🟢 | vless | @shh_proxy | 0",
+            "tag": "🇬🇪GE | 🟢 | vless | @shh_proxy | 3",
             "type": "vless",
             "server": "scan.capitaledge.blog",
             "server_port": 8443,
@@ -404,35 +404,6 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @proxy_kafee | 2",
-            "type": "vless",
-            "server": "138.124.115.134",
-            "server_port": 8443,
-            "uuid": "4cc55b53-c144-4890-ba79-68a89e883843",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "G4Bc0Q8ynWYT-5fGxuCw7qUYp6ayRuQGtSaynzt85FQ",
-                    "short_id": "1fb0b1a7"
-                }
-            }
-        },
-        {
             "tag": "❔XX | 🔴 | vless | @v2logy | 6",
             "type": "vless",
             "server": "188.245.65.59",
@@ -466,6 +437,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @v2rayngvpn | 0",
+            "type": "vless",
+            "server": "91.225.217.26",
+            "server_port": 443,
+            "uuid": "0dc22208-cea4-4423-b3c3-a36957e23233",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Zd5BqaW-kyJqZANUH2cIARr466QZw09pNngYjsEK1w8",
+                    "short_id": "30fa"
+                }
             }
         },
         {
