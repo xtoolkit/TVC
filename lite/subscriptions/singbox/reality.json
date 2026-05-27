@@ -106,10 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇬🇪GE | 🟢 | vless | @shh_proxy | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @ServerNett | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🟢 | vless | @flyv2ray | 0",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
@@ -120,10 +122,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇬🇪GE | 🟢 | vless | @shh_proxy | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "❔XX | 🟢 | vless | @ServerNett | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🟢 | vless | @flyv2ray | 0",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
@@ -148,6 +152,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇬🇪GE | 🟢 | vless | @shh_proxy | 3",
+            "type": "vless",
+            "server": "scan.capitaledge.blog",
+            "server_port": 8443,
+            "uuid": "600c333c-53dd-4eb9-80cf-c5716cc570f8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hartfordmedia.online",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg",
+                    "short_id": "2356d1ae4b"
+                }
+            }
         },
         {
             "tag": "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
@@ -262,6 +295,35 @@
                     "enabled": true,
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @flyv2ray | 0",
+            "type": "vless",
+            "server": "5.75.203.82",
+            "server_port": 19562,
+            "uuid": "71026fa9-703f-4e66-93b2-7ef1173f3fdc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com:443",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "49r73mAf_oqz13QPNzCNDpSHwQOSrtWSM1y9ytZASV4",
+                    "short_id": "fd36e1fafcc52b39"
                 }
             }
         },
