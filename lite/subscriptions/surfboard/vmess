@@ -11,13 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 0 = vmess, 158.69.208.120, 80, username = bed62ee5-2b42-41b0-aeae-e95d043da869, ws = true, tls = , vmess-aead = true, ws-path = /api/v1, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @SafeNet_Server | 0 = vmess, 158.69.208.120, 80, username = bed62ee5-2b42-41b0-aeae-e95d043da869, ws = true, tls = , vmess-aead = true, ws-path = /api/v1, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇱🇺LU | 🟢 | vmess | @iP_CF | 0 = vmess, 45.128.72.44, 80, username = a2170d39-140a-47f9-85b8-084078856c36, ws = true, tls = , vmess-aead = true, ws-path = /api/v1, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @iP_CF | 0 = vmess, 45.128.72.44, 80, username = a2170d39-140a-47f9-85b8-084078856c36, ws = true, tls = , vmess-aead = true, ws-path = /api/v1, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 0,❔XX | 🟢 | vmess | @yaney_01 | 4,🇱🇺LU | 🟢 | vmess | @iP_CF | 0
-URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 0,❔XX | 🟢 | vmess | @yaney_01 | 4,🇱🇺LU | 🟢 | vmess | @iP_CF | 0
-FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 0,❔XX | 🟢 | vmess | @yaney_01 | 4,🇱🇺LU | 🟢 | vmess | @iP_CF | 0
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @SafeNet_Server | 0,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @iP_CF | 0
+URL-TEST = url-test,❔XX | 🟢 | vmess | @SafeNet_Server | 0,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @iP_CF | 0
+FALLBACK = fallback,❔XX | 🟢 | vmess | @SafeNet_Server | 0,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @iP_CF | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
