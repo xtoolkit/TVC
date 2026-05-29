@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇫🇷FR | 🟢 | vless | @proxy_kafee | 0",
+                "🇩🇪DE | 🟢 | vless | @proxy_kafee | 2",
+                "🇫🇷FR | 🟢 | vless | @proxy_kafee | 3",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -121,7 +122,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇫🇷FR | 🟢 | vless | @proxy_kafee | 0",
+                "🇩🇪DE | 🟢 | vless | @proxy_kafee | 2",
+                "🇫🇷FR | 🟢 | vless | @proxy_kafee | 3",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -179,7 +181,36 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @proxy_kafee | 0",
+            "tag": "🇩🇪DE | 🟢 | vless | @proxy_kafee | 2",
+            "type": "vless",
+            "server": "138.124.186.202",
+            "server_port": 443,
+            "uuid": "e346f220-4ca4-4f69-a66b-52e992b3b625",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.fh-aachen.de",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @proxy_kafee | 3",
             "type": "vless",
             "server": "fr.denditop.site",
             "server_port": 443,
