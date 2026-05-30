@@ -118,10 +118,10 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15","type":"trojan","server":"15.188.222.65","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16","type":"trojan","server":"15.224.25.236","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"15.188.222.65","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"15.224.25.236","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14","type":"trojan","server":"63.179.214.248","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15","type":"trojan","server":"63.180.99.32","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"63.179.214.248","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"63.180.99.32","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"❔XX | 🔴 | trojan | @v2ray1_ng | 1","type":"trojan","server":"45.130.125.76","port":443,"udp":false,"password":"humanity","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
 proxy-groups:
   - name: MANUAL
@@ -129,10 +129,10 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15'
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '❔XX | 🔴 | trojan | @v2ray1_ng | 1'
   - name: URL-TEST
     type: url-test
@@ -140,20 +140,20 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15'
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '❔XX | 🔴 | trojan | @v2ray1_ng | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15'
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 14'
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 15'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '❔XX | 🔴 | trojan | @v2ray1_ng | 1'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
