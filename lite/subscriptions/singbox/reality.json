@@ -107,10 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇩🇪DE | 🔴 | vless | @proxy_kafee | 1",
+                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 2",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 1",
                 "❔XX | 🟢 | vless | @free1_vpn | 3",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🔴 | vless | @Capoit | 3",
                 "❔XX | 🟢 | vless | @mehrosaboran | 4",
                 "❔XX | 🟢 | vless | @mehrosaboran | 5",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -124,10 +127,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇩🇪DE | 🔴 | vless | @proxy_kafee | 1",
+                "🇳🇱NL | 🟢 | vless | @proxy_kafee | 2",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 1",
                 "❔XX | 🟢 | vless | @free1_vpn | 3",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🔴 | vless | @Capoit | 3",
                 "❔XX | 🟢 | vless | @mehrosaboran | 4",
                 "❔XX | 🟢 | vless | @mehrosaboran | 5",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -181,6 +187,64 @@
                     "enabled": true,
                     "public_key": "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
                     "short_id": "f32140952ba18e18"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @proxy_kafee | 1",
+            "type": "vless",
+            "server": "23.26.37.19",
+            "server_port": 2040,
+            "uuid": "17451fec-af94-4715-8c2f-7f6839130d0a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tradingview.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0",
+                    "short_id": "53197c66aef53c44"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @proxy_kafee | 2",
+            "type": "vless",
+            "server": "88.218.120.60",
+            "server_port": 4443,
+            "uuid": "41b903e0-7d0a-45d0-9b29-83086024a88b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sni4.streisand.lt",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-psPIZaOXQOuX1O1BpZ0_zyXEvx1YwW6ouBIkYGb2Dg",
+                    "short_id": "612d8fa72c"
                 }
             }
         },
@@ -297,6 +361,35 @@
                     "enabled": true,
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @Capoit | 3",
+            "type": "vless",
+            "server": "104.167.199.23",
+            "server_port": 80,
+            "uuid": "56bc7592-aa7a-40ab-b991-14d525cbdee5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.samsung.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wtVFe9j0FtOMtxUBKJqjd7NZs9-47lsjbnUlWq_MGEs",
+                    "short_id": "21366a5f4d"
                 }
             }
         },
