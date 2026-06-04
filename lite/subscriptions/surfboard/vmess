@@ -13,11 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 ❔XX | 🟢 | vmess | @SafeNet_Server | 2 = vmess, 158.69.208.120, 80, username = bed62ee5-2b42-41b0-aeae-e95d043da869, ws = true, tls = , vmess-aead = true, ws-path = /api/v1, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 0 = vmess, cfcdn1.sanfencdn9.com, 2052, username = 423caa0c-0542-4326-92e1-18769b6608e7, ws = true, tls = , vmess-aead = false, ws-path = /video/WNMicnDh, ws-headers = Host:"tw1eskJpKcA.inivtrak.xyz", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 1 = vmess, cfcdn1.sanfencdn9.com, 2052, username = 423caa0c-0542-4326-92e1-18769b6608e7, ws = true, tls = , vmess-aead = false, ws-path = /video/WNMicnDh, ws-headers = Host:"tw1eskJpKcA.inivtrak.xyz", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 0
-URL-TEST = url-test,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 0
-FALLBACK = fallback,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 0
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 1
+URL-TEST = url-test,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 1
+FALLBACK = fallback,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
