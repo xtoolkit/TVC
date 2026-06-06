@@ -11,13 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | vmess | @SafeNet_Server | 2 = vmess, 158.69.208.120, 80, username = bed62ee5-2b42-41b0-aeae-e95d043da869, ws = true, tls = , vmess-aead = true, ws-path = /api/v1, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 2 = vmess, 158.69.208.120, 80, username = bed62ee5-2b42-41b0-aeae-e95d043da869, ws = true, tls = , vmess-aead = true, ws-path = /api/v1, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 8 = vmess, b2n.ir, 443, username = b3a21def-5fcc-47a8-a6a0-a34e29d5288a, ws = true, tls = 1, vmess-aead = false, ws-path = /wss51068, ws-headers = Host:"b2n.ir", skip-cert-verify = true, tfo = false
+🇳🇱NL | 🟢 | vmess | @Hope_Net | 8 = vmess, 95.211.249.49, 41065, username = a81cc101-bc8b-4124-acc6-4b1eba08fefa, ws = true, tls = , vmess-aead = false, ws-path = /dfgd55dg5dG, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8
-URL-TEST = url-test,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8
-FALLBACK = fallback,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,🇳🇱NL | 🟢 | vmess | @Hope_Net | 8
+URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,🇳🇱NL | 🟢 | vmess | @Hope_Net | 8
+FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,🇳🇱NL | 🟢 | vmess | @Hope_Net | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
