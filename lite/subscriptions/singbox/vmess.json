@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @SafeNet_Server | 2",
+                "🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 8",
@@ -122,7 +122,7 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @SafeNet_Server | 2",
+                "🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 8",
@@ -184,7 +184,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @SafeNet_Server | 2",
+            "tag": "🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 2",
             "type": "vmess",
             "server": "158.69.208.120",
             "server_port": 80,
@@ -268,9 +268,9 @@
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "8.210.140.23",
-            "server_port": 54809,
-            "uuid": "fde73daf-cc67-42f3-9935-35b132b01abd",
+            "server": "serkat.org",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -281,20 +281,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "serkat.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/arki",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": ""
+                    "Host": "serkat.org"
                 }
             }
         },
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "tw-1.qwqjsq.top",
-            "server_port": 443,
-            "uuid": "b0543a3b-d690-3ed9-9a81-f24f852e74f7",
+            "server": "206.168.190.218",
+            "server_port": 2083,
+            "uuid": "dadc15c0-3169-11ee-b437-205c6d5f5d78",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -305,9 +315,19 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/V2RayyNGvpn",
                 "headers": {
                     "Host": ""
                 }
