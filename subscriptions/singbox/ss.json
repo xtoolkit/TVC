@@ -105,13 +105,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "❔XX | 🟢 | ss | @proxy_mtm | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "❔XX | 🟢 | ss | @proxy_mtm | 1"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +134,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 1",
+            "type": "shadowsocks",
+            "server": "shx.sanflow.ir",
+            "server_port": 126,
+            "method": "chacha20-ietf-poly1305",
+            "password": "j1syjxQbDIcRDnOEVKaDhw",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
