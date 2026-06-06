@@ -13,12 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 ❔XX | 🟢 | vmess | @SafeNet_Server | 2 = vmess, 158.69.208.120, 80, username = bed62ee5-2b42-41b0-aeae-e95d043da869, ws = true, tls = , vmess-aead = true, ws-path = /api/v1, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 5 = vmess, 203.23.104.222, 443, username = b3a21def-5fcc-47a8-a6a0-a34e29d5288a, ws = true, tls = 1, vmess-aead = false, ws-path = /wss51068, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 6 = vmess, cg1c04.waimaojd.com, 443, username = be8e3136-b874-4085-bd23-ec3699300490, ws = true, tls = 1, vmess-aead = true, ws-path = /api/v1/graphql, ws-headers = Host:"cg1c04.waimaojd.com", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 8 = vmess, b2n.ir, 443, username = b3a21def-5fcc-47a8-a6a0-a34e29d5288a, ws = true, tls = 1, vmess-aead = false, ws-path = /wss51068, ws-headers = Host:"b2n.ir", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 5,❔XX | 🟢 | vmess | @Hope_Net | 6
-URL-TEST = url-test,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 5,❔XX | 🟢 | vmess | @Hope_Net | 6
-FALLBACK = fallback,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 5,❔XX | 🟢 | vmess | @Hope_Net | 6
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8
+URL-TEST = url-test,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8
+FALLBACK = fallback,❔XX | 🟢 | vmess | @SafeNet_Server | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
