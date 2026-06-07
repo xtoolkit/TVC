@@ -13,12 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 ❔XX | 🟢 | vmess | @SafeNet_Server | 5 = vmess, 158.69.208.120, 80, username = bed62ee5-2b42-41b0-aeae-e95d043da869, ws = true, tls = , vmess-aead = true, ws-path = /api/v1, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 8 = vmess, 172.67.115.6, 2095, username = 417d27fb-cb93-3bd8-9bf7-71cd91319821, ws = true, tls = , vmess-aead = false, ws-path = /hgcefomn, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 9 = vmess, 107.167.20.183, 443, username = 418048af-a293-4b99-9b0c-98ca3580dd24, ws = true, tls = 1, vmess-aead = false, ws-path = /path/243535322906, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 9 = vmess, 162.159.200.75, 80, username = 19428c44-85b3-4a7c-8bc4-b58396138322, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @SafeNet_Server | 5,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8,❔XX | 🟢 | vmess | @Hope_Net | 9
-URL-TEST = url-test,❔XX | 🟢 | vmess | @SafeNet_Server | 5,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8,❔XX | 🟢 | vmess | @Hope_Net | 9
-FALLBACK = fallback,❔XX | 🟢 | vmess | @SafeNet_Server | 5,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8,❔XX | 🟢 | vmess | @Hope_Net | 9
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @SafeNet_Server | 5,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 9
+URL-TEST = url-test,❔XX | 🟢 | vmess | @SafeNet_Server | 5,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 9
+FALLBACK = fallback,❔XX | 🟢 | vmess | @SafeNet_Server | 5,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
