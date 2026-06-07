@@ -108,14 +108,16 @@
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇹🇷TR | 🟢 | vless | @prrofile_purple | 11",
-                "❔XX | 🟢 | vless | @SafeNet_Server | 2",
-                "❔XX | 🟢 | vless | @v2ray_vpn_ir | 6",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 9",
+                "❔XX | 🟢 | vless | @SafeNet_Server | 3",
+                "🇺🇸US | 🟢 | vless | @v2ray_vpn_ir | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 7",
                 "❔XX | 🟢 | vless | @Capoit | 8",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
+                "❔XX | 🔴 | vless | @proxy_mtm | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ]
@@ -126,14 +128,16 @@
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇹🇷TR | 🟢 | vless | @prrofile_purple | 11",
-                "❔XX | 🟢 | vless | @SafeNet_Server | 2",
-                "❔XX | 🟢 | vless | @v2ray_vpn_ir | 6",
+                "❔XX | 🟢 | vless | @v2rayngvpn | 9",
+                "❔XX | 🟢 | vless | @SafeNet_Server | 3",
+                "🇺🇸US | 🟢 | vless | @v2ray_vpn_ir | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 7",
                 "❔XX | 🟢 | vless | @Capoit | 8",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
+                "❔XX | 🔴 | vless | @proxy_mtm | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ],
@@ -216,7 +220,36 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @SafeNet_Server | 2",
+            "tag": "❔XX | 🟢 | vless | @v2rayngvpn | 9",
+            "type": "vless",
+            "server": "46.224.213.206",
+            "server_port": 11332,
+            "uuid": "179f8884-44ed-4cc1-b7c8-fc7dfec83145",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Yozi8V5IYT7TzszTYwxnxMO-RZ93qCRFpgzZYehbqiM",
+                    "short_id": "74bc0da65781e5dd"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @SafeNet_Server | 3",
             "type": "vless",
             "server": "panel.panel.pythash.tr",
             "server_port": 443,
@@ -245,7 +278,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @v2ray_vpn_ir | 6",
+            "tag": "🇺🇸US | 🟢 | vless | @v2ray_vpn_ir | 6",
             "type": "vless",
             "server": "159.89.87.21",
             "server_port": 28190,
@@ -456,6 +489,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet-netmet",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @proxy_mtm | 18",
+            "type": "vless",
+            "server": "ser.moktana.app",
+            "server_port": 443,
+            "uuid": "2cfb47db-5b73-43cf-be67-6e28d73df7d4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "se.moktana.app",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+                    "short_id": "4a7d3e9f2b8c6a1d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "moktana.net.v1.StreamService",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
