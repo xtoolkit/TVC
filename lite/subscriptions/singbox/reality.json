@@ -107,17 +107,17 @@
             "outbounds": [
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇹🇷TR | 🟢 | vless | @prrofile_purple | 11",
-                "❔XX | 🟢 | vless | @v2rayngvpn | 11",
-                "❔XX | 🟢 | vless | @SafeNet_Server | 3",
-                "❔XX | 🟢 | vless | @v2ray_vpn_ir | 6",
+                "🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 1",
+                "❔XX | 🟢 | vless | @prrofile_purple | 11",
+                "❔XX | 🟢 | vless | @SafeNet_Server | 4",
+                "🇺🇸US | 🟢 | vless | @v2ray_vpn_ir | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
-                "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🟢 | vless | @Capoit | 7",
-                "❔XX | 🟢 | vless | @Capoit | 8",
+                "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+                "🇳🇱NL | 🟢 | vless | @Capoit | 8",
+                "🇩🇰DK | 🟢 | vless | @Capoit | 9",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
-                "❔XX | 🔴 | vless | @proxy_mtm | 18",
+                "🇷🇺RU | 🔴 | vless | @proxy_mtm | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ]
@@ -127,17 +127,17 @@
             "type": "urltest",
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇹🇷TR | 🟢 | vless | @prrofile_purple | 11",
-                "❔XX | 🟢 | vless | @v2rayngvpn | 11",
-                "❔XX | 🟢 | vless | @SafeNet_Server | 3",
-                "❔XX | 🟢 | vless | @v2ray_vpn_ir | 6",
+                "🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 1",
+                "❔XX | 🟢 | vless | @prrofile_purple | 11",
+                "❔XX | 🟢 | vless | @SafeNet_Server | 4",
+                "🇺🇸US | 🟢 | vless | @v2ray_vpn_ir | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
-                "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🟢 | vless | @Capoit | 7",
-                "❔XX | 🟢 | vless | @Capoit | 8",
+                "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+                "🇳🇱NL | 🟢 | vless | @Capoit | 8",
+                "🇩🇰DK | 🟢 | vless | @Capoit | 9",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
-                "❔XX | 🔴 | vless | @proxy_mtm | 18",
+                "🇷🇺RU | 🔴 | vless | @proxy_mtm | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ],
@@ -191,7 +191,43 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | vless | @prrofile_purple | 11",
+            "tag": "🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 1",
+            "type": "vless",
+            "server": "best1.vipt-t.info",
+            "server_port": 443,
+            "uuid": "0a65e0fa-62c8-40f2-ae2b-7549ddb69338",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.amazon.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "iGmGz1yVM3MwLtgj-R0xqrLbysfBxgcRRlbXN6f883Y",
+                    "short_id": "8ba354e84e"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "DarkTeam_VPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @prrofile_purple | 11",
             "type": "vless",
             "server": "213.156.152.186",
             "server_port": 443,
@@ -220,36 +256,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @v2rayngvpn | 11",
-            "type": "vless",
-            "server": "46.224.213.206",
-            "server_port": 11332,
-            "uuid": "179f8884-44ed-4cc1-b7c8-fc7dfec83145",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Yozi8V5IYT7TzszTYwxnxMO-RZ93qCRFpgzZYehbqiM",
-                    "short_id": "74bc0da65781e5dd"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @SafeNet_Server | 3",
+            "tag": "❔XX | 🟢 | vless | @SafeNet_Server | 4",
             "type": "vless",
             "server": "panel.panel.pythash.tr",
             "server_port": 443,
@@ -278,7 +285,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @v2ray_vpn_ir | 6",
+            "tag": "🇺🇸US | 🟢 | vless | @v2ray_vpn_ir | 6",
             "type": "vless",
             "server": "159.89.87.21",
             "server_port": 28190,
@@ -336,7 +343,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @Capital_NET | 45",
+            "tag": "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
             "type": "vless",
             "server": "four.felinetest.site",
             "server_port": 443,
@@ -365,7 +372,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @Capoit | 7",
+            "tag": "🇳🇱NL | 🟢 | vless | @Capoit | 8",
             "type": "vless",
             "server": "nl01.goodmaximum.com",
             "server_port": 443,
@@ -394,7 +401,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @Capoit | 8",
+            "tag": "🇩🇰DK | 🟢 | vless | @Capoit | 9",
             "type": "vless",
             "server": "iranfuture.xyz",
             "server_port": 80,
@@ -495,7 +502,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @proxy_mtm | 18",
+            "tag": "🇷🇺RU | 🔴 | vless | @proxy_mtm | 18",
             "type": "vless",
             "server": "ser.moktana.app",
             "server_port": 443,
