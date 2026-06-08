@@ -108,12 +108,12 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 3",
-                "🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 6",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 5",
+                "❔XX | 🟢 | vmess | @SafeNet_Server | 7",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 12",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13"
+                "❔XX | 🟢 | vmess | @Hope_Net | 18",
+                "❔XX | 🟢 | vmess | @Hope_Net | 19"
             ]
         },
         {
@@ -122,12 +122,12 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 3",
-                "🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 6",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 5",
+                "❔XX | 🟢 | vmess | @SafeNet_Server | 7",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
-                "🇭🇰HK | 🟢 | vmess | @Hope_Net | 12",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 13"
+                "❔XX | 🟢 | vmess | @Hope_Net | 18",
+                "❔XX | 🟢 | vmess | @Hope_Net | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -184,7 +184,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 3",
+            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 5",
             "type": "vmess",
             "server": null,
             "server_port": 0,
@@ -201,7 +201,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @SafeNet_Server | 6",
+            "tag": "❔XX | 🟢 | vmess | @SafeNet_Server | 7",
             "type": "vmess",
             "server": "158.69.208.120",
             "server_port": 80,
@@ -283,11 +283,11 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 18",
             "type": "vmess",
-            "server": "47.244.120.197",
-            "server_port": 44867,
-            "uuid": "845e6b08-2919-4290-ade0-5dc7dcea59ca",
+            "server": "38.75.136.73",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -298,20 +298,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/arki",
+                "path": "\/",
                 "headers": {
                     "Host": ""
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @Hope_Net | 13",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 19",
             "type": "vmess",
-            "server": "47.88.89.251",
-            "server_port": 80,
-            "uuid": "dd92e2b3-03f3-4899-a34e-797ff6a0cea8",
+            "server": "in-full.privateip.net",
+            "server_port": 443,
+            "uuid": "07722fc6-a688-49fd-9896-fb9e1ca748d6",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -322,11 +332,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "in-full.privateip.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/MqINN7CF6UeFSASP4LNTFNn",
+                "path": "\/racevpn",
                 "headers": {
-                    "Host": ""
+                    "Host": "in-full.privateip.net"
                 }
             }
         }
