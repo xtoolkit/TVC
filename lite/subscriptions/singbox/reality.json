@@ -106,10 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇬🇧GB | 🟢 | vless | @shh_proxy | 0",
                 "🇳🇱NL | 🟢 | vless | @shh_proxy | 1",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🔴 | vless | @v2ray1_ng | 2",
+                "❔XX | 🔴 | vless | @v2rayngvpn | 13",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 7",
+                "❔XX | 🔴 | vless | @free1_vpn | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -123,10 +125,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇬🇧GB | 🟢 | vless | @shh_proxy | 0",
                 "🇳🇱NL | 🟢 | vless | @shh_proxy | 1",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🔴 | vless | @v2ray1_ng | 2",
+                "❔XX | 🔴 | vless | @v2rayngvpn | 13",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 7",
+                "❔XX | 🔴 | vless | @free1_vpn | 2",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -154,6 +158,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @shh_proxy | 0",
+            "type": "vless",
+            "server": "167.104.223.57",
+            "server_port": 7443,
+            "uuid": "adea61c0-0bb2-4ad3-8dba-7766eebd50f8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+                    "short_id": "d82fb387"
+                }
+            }
         },
         {
             "tag": "🇳🇱NL | 🟢 | vless | @shh_proxy | 1",
@@ -214,11 +247,11 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @v2ray1_ng | 2",
+            "tag": "❔XX | 🔴 | vless | @v2rayngvpn | 13",
             "type": "vless",
-            "server": "82.40.62.3",
-            "server_port": 80,
-            "uuid": "540db6ea-ab26-465c-a9bb-8395b8b0b466",
+            "server": "62.238.32.25",
+            "server_port": 443,
+            "uuid": "1b9e301d-cecd-4eb1-8b36-eef811c2696d",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -228,7 +261,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.samsung.com",
+                "server_name": "yastatic.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -237,8 +270,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "PecpMnk9UK6kjpMZ18UBTNvpMQQNetgpu2Ne0fqoIlg",
-                    "short_id": "43"
+                    "public_key": "3LUIM_6cYceTgNt6LWnR8YSVrenpLsh-FIGDrmfjjwc",
+                    "short_id": "5e841fab"
                 }
             }
         },
@@ -268,6 +301,35 @@
                     "enabled": true,
                     "public_key": "MbVEbNu2iMIDhD5ziJFLKVfV0lBY7tGGpklBrwqVCyg",
                     "short_id": "61ad"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @free1_vpn | 2",
+            "type": "vless",
+            "server": "82.40.62.3",
+            "server_port": 80,
+            "uuid": "540db6ea-ab26-465c-a9bb-8395b8b0b466",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.samsung.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "PecpMnk9UK6kjpMZ18UBTNvpMQQNetgpu2Ne0fqoIlg",
+                    "short_id": "43"
                 }
             }
         },
