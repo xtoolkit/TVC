@@ -105,13 +105,22 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "❔XX | 🟢 | ss | @proxy_mtm | 0",
+                "❔XX | 🟢 | ss | @proxy_mtm | 2",
+                "❔XX | 🟢 | ss | @proxy_mtm | 4",
+                "❔XX | 🟢 | ss | @proxy_mtm | 9"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "❔XX | 🟢 | ss | @proxy_mtm | 0",
+                "❔XX | 🟢 | ss | @proxy_mtm | 2",
+                "❔XX | 🟢 | ss | @proxy_mtm | 4",
+                "❔XX | 🟢 | ss | @proxy_mtm | 9"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +140,46 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 0",
+            "type": "shadowsocks",
+            "server": "95.182.89.179",
+            "server_port": 1012,
+            "method": "aes-256-gcm",
+            "password": "GFH34e",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 2",
+            "type": "shadowsocks",
+            "server": "45.38.60.81",
+            "server_port": 1011,
+            "method": "aes-256-gcm",
+            "password": "Bd7XkL",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 4",
+            "type": "shadowsocks",
+            "server": "31.56.113.147",
+            "server_port": 1015,
+            "method": "aes-256-gcm",
+            "password": "1RRIY6",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 9",
+            "type": "shadowsocks",
+            "server": "188.130.207.77",
+            "server_port": 1018,
+            "method": "aes-256-gcm",
+            "password": "Tu3PxL",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {

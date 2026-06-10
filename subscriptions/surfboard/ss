@@ -11,10 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+❔XX | 🟢 | ss | @proxy_mtm | 0 = ss, 95.182.89.179, 1012, encrypt-method = aes-256-gcm, password = GFH34e
+❔XX | 🟢 | ss | @proxy_mtm | 2 = ss, 45.38.60.81, 1011, encrypt-method = aes-256-gcm, password = Bd7XkL
+❔XX | 🟢 | ss | @proxy_mtm | 4 = ss, 31.56.113.147, 1015, encrypt-method = aes-256-gcm, password = 1RRIY6
+❔XX | 🟢 | ss | @proxy_mtm | 9 = ss, 188.130.207.77, 1018, encrypt-method = aes-256-gcm, password = Tu3PxL
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK
-URL-TEST = url-test
-FALLBACK = fallback
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @proxy_mtm | 0,❔XX | 🟢 | ss | @proxy_mtm | 2,❔XX | 🟢 | ss | @proxy_mtm | 4,❔XX | 🟢 | ss | @proxy_mtm | 9
+URL-TEST = url-test,❔XX | 🟢 | ss | @proxy_mtm | 0,❔XX | 🟢 | ss | @proxy_mtm | 2,❔XX | 🟢 | ss | @proxy_mtm | 4,❔XX | 🟢 | ss | @proxy_mtm | 9
+FALLBACK = fallback,❔XX | 🟢 | ss | @proxy_mtm | 0,❔XX | 🟢 | ss | @proxy_mtm | 2,❔XX | 🟢 | ss | @proxy_mtm | 4,❔XX | 🟢 | ss | @proxy_mtm | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
