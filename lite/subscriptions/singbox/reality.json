@@ -107,8 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 1",
-                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 15",
+                "🇵🇱PL | 🔴 | vless | @proxy_kafee | 1",
+                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 2",
+                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 16",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
@@ -125,8 +126,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 1",
-                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 15",
+                "🇵🇱PL | 🔴 | vless | @proxy_kafee | 1",
+                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 2",
+                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 16",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
@@ -187,7 +189,36 @@
             }
         },
         {
-            "tag": "🇨🇭CH | 🔴 | vless | @proxy_kafee | 1",
+            "tag": "🇵🇱PL | 🔴 | vless | @proxy_kafee | 1",
+            "type": "vless",
+            "server": "31.56.188.15",
+            "server_port": 7443,
+            "uuid": "1c0277ad-bb4d-496f-bc0c-40ccee03fca5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mi.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+                    "short_id": "be0ce047"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇭CH | 🔴 | vless | @proxy_kafee | 2",
             "type": "vless",
             "server": "germany-vip.soft26.ir",
             "server_port": 8443,
@@ -216,7 +247,7 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 15",
+            "tag": "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 16",
             "type": "vless",
             "server": "51.255.71.16",
             "server_port": 443,
