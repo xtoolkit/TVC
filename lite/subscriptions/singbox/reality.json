@@ -108,10 +108,11 @@
                 "URL-TEST",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 16",
+                "🇷🇺RU | 🟢 | vless | @prrofile_purple | 42",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
-                "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🟢 | vless | @Capoit | 2",
+                "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🟢 | vless | @Capoit | 3",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
                 "❔XX | 🟢 | vless | @proxy_mtm | 27",
@@ -125,10 +126,11 @@
             "outbounds": [
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 16",
+                "🇷🇺RU | 🟢 | vless | @prrofile_purple | 42",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
-                "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🟢 | vless | @Capoit | 2",
+                "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🟢 | vless | @Capoit | 3",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
                 "❔XX | 🟢 | vless | @proxy_mtm | 27",
@@ -214,6 +216,35 @@
             }
         },
         {
+            "tag": "🇷🇺RU | 🟢 | vless | @prrofile_purple | 42",
+            "type": "vless",
+            "server": "b3aa11az-k15gg1.ru.y-tun.com",
+            "server_port": 8443,
+            "uuid": "17172b99-16ae-4453-99f9-bd15191228a9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "api-maps.yandex.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM",
+                    "short_id": "a1b2c3d4e5f6789a"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vless | @SafeNet_Server | 10",
             "type": "vless",
             "server": "panel.panel.pythash.tr",
@@ -272,7 +303,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @Capital_NET | 45",
+            "tag": "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
             "type": "vless",
             "server": "four.felinetest.site",
             "server_port": 443,
@@ -301,7 +332,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @Capoit | 2",
+            "tag": "❔XX | 🟢 | vless | @Capoit | 3",
             "type": "vless",
             "server": "192.142.12.67",
             "server_port": 443,
