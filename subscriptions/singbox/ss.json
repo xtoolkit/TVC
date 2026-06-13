@@ -106,20 +106,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | ss | @proxy_mtm | 3",
-                "❔XX | 🟢 | ss | @proxy_mtm | 5",
-                "❔XX | 🟢 | ss | @proxy_mtm | 7",
-                "❔XX | 🟢 | ss | @proxy_mtm | 12"
+                "❔XX | 🟢 | ss | @VmessProtocol | 0",
+                "❔XX | 🟢 | ss | @proxy_mtm | 4",
+                "❔XX | 🟢 | ss | @proxy_mtm | 6",
+                "❔XX | 🟢 | ss | @proxy_mtm | 8",
+                "❔XX | 🟢 | ss | @proxy_mtm | 13"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | ss | @proxy_mtm | 3",
-                "❔XX | 🟢 | ss | @proxy_mtm | 5",
-                "❔XX | 🟢 | ss | @proxy_mtm | 7",
-                "❔XX | 🟢 | ss | @proxy_mtm | 12"
+                "❔XX | 🟢 | ss | @VmessProtocol | 0",
+                "❔XX | 🟢 | ss | @proxy_mtm | 4",
+                "❔XX | 🟢 | ss | @proxy_mtm | 6",
+                "❔XX | 🟢 | ss | @proxy_mtm | 8",
+                "❔XX | 🟢 | ss | @proxy_mtm | 13"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,7 +144,17 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 3",
+            "tag": "❔XX | 🟢 | ss | @VmessProtocol | 0",
+            "type": "shadowsocks",
+            "server": "82.38.31.7",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 4",
             "type": "shadowsocks",
             "server": "95.182.89.179",
             "server_port": 1012,
@@ -152,7 +164,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 5",
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 6",
             "type": "shadowsocks",
             "server": "45.38.60.81",
             "server_port": 1011,
@@ -162,7 +174,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 7",
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 8",
             "type": "shadowsocks",
             "server": "31.56.113.147",
             "server_port": 1015,
@@ -172,7 +184,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 12",
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 13",
             "type": "shadowsocks",
             "server": "188.130.207.77",
             "server_port": 1018,
