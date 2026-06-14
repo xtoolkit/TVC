@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, 192.99.8.99, 36005, username = 05c38399-5296-4bf2-a606-1cec3b71c942, ws = true, tls = 1, vmess-aead = false, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, 203.24.108.10, 443, username = 17b2a313-37a0-4945-a8e4-e63375506b4a, ws = true, tls = 1, vmess-aead = false, ws-path = /A2DJOPFT, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 12 = vmess, sdhdffjblkgfh_cdn.hfhfb.homes, 2095, username = f76a8afe-2788-40f4-9b1b-f35bf82dacf5, ws = true, tls = , vmess-aead = true, ws-path = /?ed=1024, ws-headers = Host:"itcdn.fask511.cfd", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
