@@ -116,10 +116,10 @@
                 "❔XX | 🟢 | vless | @free1_vpn | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🔴 | vless | @Capoit | 6",
                 "❔XX | 🟢 | vless | @FreakConfig | 14",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
-                "❔XX | 🟢 | vless | @proxy_mtm | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ]
@@ -138,10 +138,10 @@
                 "❔XX | 🟢 | vless | @free1_vpn | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🔴 | vless | @Capoit | 6",
                 "❔XX | 🟢 | vless | @FreakConfig | 14",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
-                "❔XX | 🟢 | vless | @proxy_mtm | 9",
                 "❔XX | 🔴 | vless | @vpn_go67 | 18",
                 "❔XX | 🔴 | vless | @vpn_go67 | 19"
             ],
@@ -456,6 +456,35 @@
             }
         },
         {
+            "tag": "❔XX | 🔴 | vless | @Capoit | 6",
+            "type": "vless",
+            "server": "test.axylegend.ir",
+            "server_port": 10489,
+            "uuid": "c2e1d7e9-cb26-40fa-bf69-7d7f74cbc6f5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "play.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "ios"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "BWFQ-BxFck2L0gjbXILc0Sh_rOy_YH9YYFf5kw5SsAI",
+                    "short_id": "c5a3ab7b"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vless | @FreakConfig | 14",
             "type": "vless",
             "server": "45.196.224.110",
@@ -554,35 +583,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @proxy_mtm | 9",
-            "type": "vless",
-            "server": "enns1.vertatech.ir",
-            "server_port": 7005,
-            "uuid": "b4dbdbf9-640e-4f66-a885-c5d308a73e79",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "play.google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "yuhrNGOXd061lVl8AfE9wc7ctTApk-K6XAVnArJpWF8",
-                    "short_id": "dd9da58e3c5c641c"
-                }
             }
         },
         {
