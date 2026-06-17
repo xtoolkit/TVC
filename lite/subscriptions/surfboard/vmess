@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, 67.21.72.41, 443, username = 2566d00f-218c-48f7-9a36-13d3d6f1a724, ws = true, tls = 1, vmess-aead = false, ws-path = /path/173418141123, ws-headers = Host:"", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 12 = vmess, 104.16.68.38, 2082, username = 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, ws = true, tls = , vmess-aead = false, ws-path = /glweidf.sbs/linkws, ws-headers = Host:"snowy-river-f497.turkeys-radford.workers.dev", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 13 = vmess, 67.21.72.41, 443, username = 2566d00f-218c-48f7-9a36-13d3d6f1a724, ws = true, tls = 1, vmess-aead = false, ws-path = /path/173418141123, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 13
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 13
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 13
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
