@@ -129,8 +129,8 @@
                 "❔XX | 🟢 | vless | @v2ray1_ng | 0",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 1",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 3",
+                "❔XX | 🟢 | vless | @v2ray1_ng | 4",
                 "❔XX | 🟢 | vless | @VmessProtocol | 0",
-                "❔XX | 🟢 | vless | @free1_vpn | 4",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
                 "❔XX | 🔴 | vless | @Capital_NET | 9",
@@ -217,8 +217,8 @@
                 "❔XX | 🟢 | vless | @v2ray1_ng | 0",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 1",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 3",
+                "❔XX | 🟢 | vless | @v2ray1_ng | 4",
                 "❔XX | 🟢 | vless | @VmessProtocol | 0",
-                "❔XX | 🟢 | vless | @free1_vpn | 4",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
                 "❔XX | 🔴 | vless | @Capital_NET | 9",
@@ -979,6 +979,35 @@
             }
         },
         {
+            "tag": "❔XX | 🟢 | vless | @v2ray1_ng | 4",
+            "type": "vless",
+            "server": "31.76.91.28",
+            "server_port": 443,
+            "uuid": "dfc0cb9d-f005-41b0-848c-7703bd39d0de",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jp.s3-cloud.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "edge"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs",
+                    "short_id": "7a3f9e2b1c8d4f6a"
+                }
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vless | @VmessProtocol | 0",
             "type": "vless",
             "server": "159.195.60.65",
@@ -1004,35 +1033,6 @@
                     "enabled": true,
                     "public_key": "vTtRZ_FeFQoAigFr_pmVc_O85RaE9H8aVL0SitFYcmI",
                     "short_id": "53cd45d26d7b53fe"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @free1_vpn | 4",
-            "type": "vless",
-            "server": "31.76.91.28",
-            "server_port": 443,
-            "uuid": "dfc0cb9d-f005-41b0-848c-7703bd39d0de",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jp.s3-cloud.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "edge"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs",
-                    "short_id": "7a3f9e2b1c8d4f6a"
                 }
             }
         },
