@@ -106,15 +106,15 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @shh_proxy | 1",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 0",
+                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 1",
                 "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 18",
-                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 80",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 88",
                 "🇦🇪AE | 🟢 | vless | @vmessorg | 2",
                 "🇨🇭CH | 🟢 | vless | @v2rayNG_Matsuri | 9",
-                "🇨🇭CH | 🟢 | vless | @v2ray1_ng | 4",
+                "🇨🇭CH | 🟢 | vless | @v2ray1_ng | 6",
                 "❔XX | 🟢 | vless | @lrnbymaa | 0",
-                "❔XX | 🟢 | vless | @free1_vpn | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @Capoit | 11",
@@ -131,15 +131,15 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @shh_proxy | 1",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 0",
+                "🇨🇭CH | 🔴 | vless | @proxy_kafee | 1",
                 "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 18",
-                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 80",
+                "🇩🇪DE | 🟢 | vless | @prrofile_purple | 88",
                 "🇦🇪AE | 🟢 | vless | @vmessorg | 2",
                 "🇨🇭CH | 🟢 | vless | @v2rayNG_Matsuri | 9",
-                "🇨🇭CH | 🟢 | vless | @v2ray1_ng | 4",
+                "🇨🇭CH | 🟢 | vless | @v2ray1_ng | 6",
                 "❔XX | 🟢 | vless | @lrnbymaa | 0",
-                "❔XX | 🟢 | vless | @free1_vpn | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @Capoit | 11",
@@ -172,6 +172,35 @@
             "type": "dns"
         },
         {
+            "tag": "🇩🇪DE | 🟢 | vless | @shh_proxy | 1",
+            "type": "vless",
+            "server": "194.5.193.150",
+            "server_port": 2083,
+            "uuid": "89049f79-320b-48a0-b1cf-110165cae30c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY",
+                    "short_id": "4e590fdc"
+                }
+            }
+        },
+        {
             "tag": "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
             "type": "vless",
             "server": "89.208.86.65",
@@ -201,7 +230,7 @@
             }
         },
         {
-            "tag": "🇨🇭CH | 🔴 | vless | @proxy_kafee | 0",
+            "tag": "🇨🇭CH | 🔴 | vless | @proxy_kafee | 1",
             "type": "vless",
             "server": "37.156.44.6",
             "server_port": 2083,
@@ -259,7 +288,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 80",
+            "tag": "🇩🇪DE | 🟢 | vless | @prrofile_purple | 88",
             "type": "vless",
             "server": "ge3.pandaonline.org",
             "server_port": 443,
@@ -346,7 +375,7 @@
             }
         },
         {
-            "tag": "🇨🇭CH | 🟢 | vless | @v2ray1_ng | 4",
+            "tag": "🇨🇭CH | 🟢 | vless | @v2ray1_ng | 6",
             "type": "vless",
             "server": "37.156.45.237",
             "server_port": 2083,
@@ -400,35 +429,6 @@
                     "enabled": true,
                     "public_key": "y4_NnPQc2X8Bj97LpUL9r9xuK-R2pLwjd5cZbBw2HSo",
                     "short_id": "15052edc8120b63d"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @free1_vpn | 6",
-            "type": "vless",
-            "server": "95.182.80.48",
-            "server_port": 15370,
-            "uuid": "8e13e299-1bbf-46da-a297-8ee19fe4c914",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "oYCopzg1jDV54b-i8nR9_ULi7uivm_qfCM95LwRBfXU",
-                    "short_id": "61"
                 }
             }
         },
