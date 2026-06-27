@@ -140,11 +140,11 @@
                 "🇺🇸US | 🔴 | vless | @v2ray1_ng | 3",
                 "🇱🇹LT | 🟢 | vless | @v2ray1_ng | 4",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
-                "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
-                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 10",
+                "❔XX | 🔴 | vless | @vless_vmess | 19",
+                "❔XX | 🟢 | vless | @VmessProtocol | 10",
+                "🇺🇸US | 🔴 | vless | @SafeNet_Server | 10",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 11",
-                "❔XX | 🟢 | vless | @SafeNet_Server | 12",
-                "❔XX | 🔴 | vless | @lrnbymaa | 0",
+                "🇺🇸US | 🔴 | vless | @lrnbymaa | 0",
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
                 "❔XX | 🔴 | vless | @proxystore11 | 7",
                 "❔XX | 🔴 | vless | @fnet00 | 0",
@@ -152,7 +152,6 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @Capoit | 7",
-                "❔XX | 🔴 | vless | @FreakConfig | 14",
                 "❔XX | 🔴 | vless | @FreakConfig | 15",
                 "❔XX | 🔴 | vless | @flyv2ray | 7",
                 "❔XX | 🔴 | vless | @flyv2ray | 8",
@@ -209,11 +208,11 @@
                 "🇺🇸US | 🔴 | vless | @v2ray1_ng | 3",
                 "🇱🇹LT | 🟢 | vless | @v2ray1_ng | 4",
                 "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
-                "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
-                "🇩🇪DE | 🟢 | vless | @VmessProtocol | 10",
+                "❔XX | 🔴 | vless | @vless_vmess | 19",
+                "❔XX | 🟢 | vless | @VmessProtocol | 10",
+                "🇺🇸US | 🔴 | vless | @SafeNet_Server | 10",
                 "❔XX | 🟢 | vless | @SafeNet_Server | 11",
-                "❔XX | 🟢 | vless | @SafeNet_Server | 12",
-                "❔XX | 🔴 | vless | @lrnbymaa | 0",
+                "🇺🇸US | 🔴 | vless | @lrnbymaa | 0",
                 "❔XX | 🔴 | vless | @proxystore11 | 6",
                 "❔XX | 🔴 | vless | @proxystore11 | 7",
                 "❔XX | 🔴 | vless | @fnet00 | 0",
@@ -221,7 +220,6 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @Capoit | 7",
-                "❔XX | 🔴 | vless | @FreakConfig | 14",
                 "❔XX | 🔴 | vless | @FreakConfig | 15",
                 "❔XX | 🔴 | vless | @flyv2ray | 7",
                 "❔XX | 🔴 | vless | @flyv2ray | 8",
@@ -1147,7 +1145,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
+            "tag": "❔XX | 🔴 | vless | @vless_vmess | 19",
             "type": "vless",
             "server": "104.16.85.3",
             "server_port": 8880,
@@ -1168,7 +1166,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @VmessProtocol | 10",
+            "tag": "❔XX | 🟢 | vless | @VmessProtocol | 10",
             "type": "vless",
             "server": "79.127.240.44",
             "server_port": 8443,
@@ -1188,6 +1186,27 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @SafeNet_Server | 10",
+            "type": "vless",
+            "server": "167.82.0.1",
+            "server_port": 80,
+            "uuid": "cabbfe13-038b-4dbb-9c45-5079c829abfa",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "167.82.0.1"
                 }
             }
         },
@@ -1216,31 +1235,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @SafeNet_Server | 12",
-            "type": "vless",
-            "server": "77.74.123.163",
-            "server_port": 8443,
-            "uuid": "931729a8-3c20-4841-89a1-f18dc9ce0a6f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdn3-87.vk-cdnvideo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @lrnbymaa | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @lrnbymaa | 0",
             "type": "vless",
             "server": "global.cloud-play.ir",
             "server_port": 80,
@@ -1433,7 +1428,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @FreakConfig | 14",
+            "tag": "❔XX | 🔴 | vless | @FreakConfig | 15",
             "type": "vless",
             "server": "global.connectingissues.ir",
             "server_port": 80,
@@ -1444,30 +1439,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @FreakConfig | 15",
-            "type": "vless",
-            "server": "45.130.125.162",
-            "server_port": 8443,
-            "uuid": "5960576d-829e-4d09-8232-0e80121a6fe4",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "vi.mojaz-persian-music.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
