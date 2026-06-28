@@ -106,9 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @shh_proxy | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🟢 | vless | @v2ray1_ng | 2",
-                "🇮🇹IT | 🟢 | vless | @free1_vpn | 5",
+                "❔XX | 🟢 | vless | @free1_vpn | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @iP_CF | 0",
@@ -125,9 +125,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @shh_proxy | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "❔XX | 🟢 | vless | @v2ray1_ng | 2",
-                "🇮🇹IT | 🟢 | vless | @free1_vpn | 5",
+                "❔XX | 🟢 | vless | @free1_vpn | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @iP_CF | 0",
@@ -160,6 +160,35 @@
             "type": "dns"
         },
         {
+            "tag": "🇩🇪DE | 🟢 | vless | @shh_proxy | 0",
+            "type": "vless",
+            "server": "5.75.207.247",
+            "server_port": 44004,
+            "uuid": "32eae87d-cb5b-4155-9a60-218f44d52b3d",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.intel.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KTAuJl8Ga2u2IZmfizQj6yEw3fOcqxLeYVhCA_r1wmQ",
+                    "short_id": "77b0689f"
+                }
+            }
+        },
+        {
             "tag": "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
             "type": "vless",
             "server": "89.208.86.65",
@@ -189,36 +218,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @v2ray1_ng | 2",
-            "type": "vless",
-            "server": "45.194.10.209",
-            "server_port": 8443,
-            "uuid": "3e7cede4-721a-4807-b0a2-5fe6586af907",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "storage.yandex.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
-                    "short_id": "2cfb5a0ae8ab0cb0"
-                }
-            }
-        },
-        {
-            "tag": "🇮🇹IT | 🟢 | vless | @free1_vpn | 5",
+            "tag": "❔XX | 🟢 | vless | @free1_vpn | 6",
             "type": "vless",
             "server": "31.76.113.25",
             "server_port": 443,
