@@ -109,8 +109,8 @@
                 "🇩🇪DE | 🟢 | vless | @shh_proxy | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇨🇭CH | 🔴 | vless | @proxy_kafee | 2",
+                "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇵🇪PE | 🟢 | vless | @v2ray1_ng | 4",
-                "❔XX | 🟢 | vless | @free1_vpn | 7",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 7",
@@ -132,8 +132,8 @@
                 "🇩🇪DE | 🟢 | vless | @shh_proxy | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇨🇭CH | 🔴 | vless | @proxy_kafee | 2",
+                "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇵🇪PE | 🟢 | vless | @v2ray1_ng | 4",
-                "❔XX | 🟢 | vless | @free1_vpn | 7",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 7",
@@ -255,6 +255,35 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 0",
+            "type": "vless",
+            "server": "5.75.207.247",
+            "server_port": 4227,
+            "uuid": "a1d262a9-6d57-4ff0-99e4-594782c2ca7c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "aws.amazon.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "L5dWvFThmaEvNqnz8xbBkyT10TWINOZbn-BAdKtXNzk",
+                    "short_id": "0c26b2e657586df6"
+                }
+            }
+        },
+        {
             "tag": "🇵🇪PE | 🟢 | vless | @v2ray1_ng | 4",
             "type": "vless",
             "server": "45.194.10.209",
@@ -280,35 +309,6 @@
                     "enabled": true,
                     "public_key": "L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA",
                     "short_id": "2cfb5a0ae8ab0cb0"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @free1_vpn | 7",
-            "type": "vless",
-            "server": "31.76.113.25",
-            "server_port": 443,
-            "uuid": "dfc0cb9d-f005-41b0-848c-7703bd39d0de",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "it.s3-cloud.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY",
-                    "short_id": "7a3f9e2b1c8d4f6a"
                 }
             }
         },
