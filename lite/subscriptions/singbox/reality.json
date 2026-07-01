@@ -108,12 +108,13 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vless | @shh_proxy | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇫🇷FR | 🟢 | vless | @proxy_kafee | 2",
                 "🇬🇧GB | 🟢 | vless | @Outline_Vpn | 16",
                 "🇸🇪SE | 🟢 | vless | @prrofile_purple | 75",
                 "🇨🇭CH | 🟢 | vless | @v2rayNG_Matsuri | 6",
-                "🇵🇪PE | 🟢 | vless | @v2ray1_ng | 4",
-                "🇳🇱NL | 🟢 | vless | @v2ray1_ng | 5",
-                "🇯🇵JP | 🟢 | vless | @VmessProtocol | 10",
+                "🇵🇪PE | 🟢 | vless | @v2ray1_ng | 7",
+                "❔XX | 🟢 | vless | @VmessProtocol | 10",
+                "🇦🇪AE | 🟢 | vless | @proxystore11 | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @iP_CF | 0",
@@ -133,12 +134,13 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | vless | @shh_proxy | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇫🇷FR | 🟢 | vless | @proxy_kafee | 2",
                 "🇬🇧GB | 🟢 | vless | @Outline_Vpn | 16",
                 "🇸🇪SE | 🟢 | vless | @prrofile_purple | 75",
                 "🇨🇭CH | 🟢 | vless | @v2rayNG_Matsuri | 6",
-                "🇵🇪PE | 🟢 | vless | @v2ray1_ng | 4",
-                "🇳🇱NL | 🟢 | vless | @v2ray1_ng | 5",
-                "🇯🇵JP | 🟢 | vless | @VmessProtocol | 10",
+                "🇵🇪PE | 🟢 | vless | @v2ray1_ng | 7",
+                "❔XX | 🟢 | vless | @VmessProtocol | 10",
+                "🇦🇪AE | 🟢 | vless | @proxystore11 | 6",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @iP_CF | 0",
@@ -230,6 +232,35 @@
             }
         },
         {
+            "tag": "🇫🇷FR | 🟢 | vless | @proxy_kafee | 2",
+            "type": "vless",
+            "server": "45.13.119.3",
+            "server_port": 8443,
+            "uuid": "3b715892-8610-4fdc-9086-647b36af5443",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "play.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "uGYj7gkQdNaabDVQZdbHeSVizGPrzj8YD5jdYm7stG0",
+                    "short_id": "6ba85179e30d4fc2"
+                }
+            }
+        },
+        {
             "tag": "🇬🇧GB | 🟢 | vless | @Outline_Vpn | 16",
             "type": "vless",
             "server": "138.68.150.88",
@@ -317,7 +348,7 @@
             }
         },
         {
-            "tag": "🇵🇪PE | 🟢 | vless | @v2ray1_ng | 4",
+            "tag": "🇵🇪PE | 🟢 | vless | @v2ray1_ng | 7",
             "type": "vless",
             "server": "45.194.10.83",
             "server_port": 8443,
@@ -346,36 +377,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @v2ray1_ng | 5",
-            "type": "vless",
-            "server": "195.254.165.243",
-            "server_port": 443,
-            "uuid": "1f6531a1-a6eb-4274-9f51-4a0899456fcf",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "play.google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zSjG6wndmLAzE8ykCBXpAm2eh0viWVSy3gt2juXF4EE",
-                    "short_id": "eaa8"
-                }
-            }
-        },
-        {
-            "tag": "🇯🇵JP | 🟢 | vless | @VmessProtocol | 10",
+            "tag": "❔XX | 🟢 | vless | @VmessProtocol | 10",
             "type": "vless",
             "server": "89.125.20.104",
             "server_port": 443,
@@ -400,6 +402,35 @@
                     "enabled": true,
                     "public_key": "V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ",
                     "short_id": "abcd"
+                }
+            }
+        },
+        {
+            "tag": "🇦🇪AE | 🟢 | vless | @proxystore11 | 6",
+            "type": "vless",
+            "server": "109.61.18.135",
+            "server_port": 40732,
+            "uuid": "d6fc11f0-74c7-4e37-9119-8b1090b54cfb",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.wechat.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "V-fTxzejwmP5x9rjQR5i1IE7WrSn-syZq9Qp41jukFE",
+                    "short_id": "a7"
                 }
             }
         },
