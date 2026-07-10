@@ -122,6 +122,8 @@
                 "❔XX | 🔴 | vless | @FOX_VPN66 | 0",
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 8",
                 "🇺🇸US | 🔴 | vless | @CUSTOMVPNSERVER | 9",
+                "🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 2",
+                "🇬🇧GB | 🔴 | vless | @DarkTeam_VPN | 3",
                 "🇩🇪DE | 🔴 | vless | @proxy_kafee | 0",
                 "🇺🇸US | 🔴 | vless | @proxy_kafee | 1",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
@@ -138,11 +140,11 @@
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @v2ray1_ng | 5",
-                "❔XX | 🔴 | vless | @vless_vmess | 18",
-                "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
+                "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
+                "❔XX | 🔴 | vless | @vless_vmess | 19",
                 "❔XX | 🔴 | vless | @VmessProtocol | 10",
                 "❔XX | 🟢 | vless | @VmessProtocol | 11",
-                "🇸🇨SC | 🔴 | vless | @SafeNet_Server | 9",
+                "❔XX | 🔴 | vless | @SafeNet_Server | 9",
                 "❔XX | 🔴 | vless | @SafeNet_Server | 10",
                 "❔XX | 🟢 | vless | @lrnbymaa | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 0",
@@ -192,6 +194,8 @@
                 "❔XX | 🔴 | vless | @FOX_VPN66 | 0",
                 "❔XX | 🔴 | vless | @CUSTOMVPNSERVER | 8",
                 "🇺🇸US | 🔴 | vless | @CUSTOMVPNSERVER | 9",
+                "🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 2",
+                "🇬🇧GB | 🔴 | vless | @DarkTeam_VPN | 3",
                 "🇩🇪DE | 🔴 | vless | @proxy_kafee | 0",
                 "🇺🇸US | 🔴 | vless | @proxy_kafee | 1",
                 "🇸🇪SE | 🔴 | vless | @v2logy | 9",
@@ -208,11 +212,11 @@
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 43",
                 "🇺🇸US | 🔴 | vless | @v2ray_swhil | 44",
                 "🇺🇸US | 🔴 | vless | @v2ray1_ng | 5",
-                "❔XX | 🔴 | vless | @vless_vmess | 18",
-                "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
+                "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
+                "❔XX | 🔴 | vless | @vless_vmess | 19",
                 "❔XX | 🔴 | vless | @VmessProtocol | 10",
                 "❔XX | 🟢 | vless | @VmessProtocol | 11",
-                "🇸🇨SC | 🔴 | vless | @SafeNet_Server | 9",
+                "❔XX | 🔴 | vless | @SafeNet_Server | 9",
                 "❔XX | 🔴 | vless | @SafeNet_Server | 10",
                 "❔XX | 🟢 | vless | @lrnbymaa | 2",
                 "❔XX | 🔴 | vless | @proxystore11 | 0",
@@ -633,6 +637,66 @@
                 "path": "\/",
                 "headers": {
                     "Host": "ca.adobe-connect.top"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @DarkTeam_VPN | 2",
+            "type": "vless",
+            "server": "debuz.linuxbase.ir",
+            "server_port": 1152,
+            "uuid": "0ad65088-3cd9-43f1-b07a-c37304a4d296",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YzQz4D9KFIpJ5YB4W5UqPs8wgowbeujf9KEOyuATSE4",
+                    "short_id": "e5115b6a2127146d"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🔴 | vless | @DarkTeam_VPN | 3",
+            "type": "vless",
+            "server": "91.193.58.201",
+            "server_port": 2096,
+            "uuid": "0ad65088-3cd9-43f1-b07a-c37304a4d296",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn-p1z.persia.my",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "cdn-p1z.persia.my"
                 }
             }
         },
@@ -1076,7 +1140,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @vless_vmess | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @vless_vmess | 18",
             "type": "vless",
             "server": "172.67.141.140",
             "server_port": 8880,
@@ -1097,7 +1161,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vless_vmess | 19",
+            "tag": "❔XX | 🔴 | vless | @vless_vmess | 19",
             "type": "vless",
             "server": "104.16.85.3",
             "server_port": 8880,
@@ -1173,7 +1237,7 @@
             }
         },
         {
-            "tag": "🇸🇨SC | 🔴 | vless | @SafeNet_Server | 9",
+            "tag": "❔XX | 🔴 | vless | @SafeNet_Server | 9",
             "type": "vless",
             "server": "45.130.125.114",
             "server_port": 8443,
