@@ -118,11 +118,11 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
+  - {"name":"🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 5","type":"trojan","server":"63.177.32.122","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 6","type":"trojan","server":"15.237.66.35","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 7","type":"trojan","server":"35.181.217.107","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 5","type":"trojan","server":"63.177.32.122","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 6","type":"trojan","server":"15.237.66.35","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 7","type":"trojan","server":"35.181.217.107","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"upright-hamster.rooster465.autos","port":443,"udp":false,"password":"PI36027154","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"162.159.8.101","port":443,"udp":false,"password":"MITIVPN","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"UsAa-bUs.App-Cloud.ir"}
   - {"name":"❔XX | 🔴 | trojan | @kingofilter | 0","type":"trojan","server":"162.159.8.101","port":443,"udp":false,"password":"MITIVPN","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"UsAa-bUs.App-Cloud.ir"}
 proxy-groups:
   - name: MANUAL
@@ -130,11 +130,11 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 5'
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 6'
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 7'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 5'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 6'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 7'
-      - '🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '❔XX | 🔴 | trojan | @kingofilter | 0'
   - name: URL-TEST
     type: url-test
@@ -142,22 +142,22 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 5'
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 6'
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 7'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 5'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 6'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 7'
-      - '🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '❔XX | 🔴 | trojan | @kingofilter | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 5'
       - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 6'
-      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 7'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 5'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 6'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 7'
-      - '🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '❔XX | 🔴 | trojan | @kingofilter | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
