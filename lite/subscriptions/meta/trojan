@@ -120,7 +120,8 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"172.67.75.194","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"wbjj-bbcs-.MaQRor.Ir"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
   - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8","type":"trojan","server":"104.16.174.12","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
   - {"name":"❔XX | 🔴 | trojan | @kingofilter | 0","type":"trojan","server":"162.159.8.101","port":443,"udp":false,"password":"MITIVPN","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"UsAa-bUs.App-Cloud.ir"}
 proxy-groups:
@@ -130,6 +131,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
       - '❔XX | 🔴 | trojan | @kingofilter | 0'
   - name: URL-TEST
@@ -139,6 +141,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
       - '❔XX | 🔴 | trojan | @kingofilter | 0'
   - name: FALLBACK
@@ -147,6 +150,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
       - '❔XX | 🔴 | trojan | @kingofilter | 0'
 rule-providers:
