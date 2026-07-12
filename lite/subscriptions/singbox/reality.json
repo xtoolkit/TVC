@@ -106,10 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇵🇱PL | 🔴 | vless | @proxy_kafee | 0",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 75",
                 "🇬🇧GB | 🔴 | vless | @lrnbymaa | 0",
-                "❔XX | 🔴 | vless | @proxystore11 | 0",
+                "🇩🇪DE | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vless | @proxystore11 | 1",
                 "❔XX | 🟢 | vless | @free1_vpn | 11",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
@@ -124,10 +126,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇵🇱PL | 🔴 | vless | @proxy_kafee | 0",
                 "🇩🇪DE | 🟢 | vless | @prrofile_purple | 75",
                 "🇬🇧GB | 🔴 | vless | @lrnbymaa | 0",
-                "❔XX | 🔴 | vless | @proxystore11 | 0",
+                "🇩🇪DE | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vless | @proxystore11 | 1",
                 "❔XX | 🟢 | vless | @free1_vpn | 11",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
@@ -158,6 +162,42 @@
             "type": "dns"
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
+            "type": "vless",
+            "server": "185.234.65.232",
+            "server_port": 4423,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "animejs.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "D4fo-UBIrSlLx3R8qu3iWSoynAvArdXpn5uZoDEt3Uc",
+                    "short_id": "b740"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2rayy",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
             "type": "vless",
             "server": "89.208.86.65",
@@ -183,6 +223,35 @@
                     "enabled": true,
                     "public_key": "_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM",
                     "short_id": "f32140952ba18e18"
+                }
+            }
+        },
+        {
+            "tag": "🇵🇱PL | 🔴 | vless | @proxy_kafee | 0",
+            "type": "vless",
+            "server": "82.40.62.136",
+            "server_port": 443,
+            "uuid": "693a9953-8b79-4cc4-9374-58aa0fc48906",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "video-api.sapi.yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "H5hgQcSKg6K_1yVLs_2zL3kGwYK805hvnlAtSr0QpEI",
+                    "short_id": "9b0cf2"
                 }
             }
         },
@@ -245,7 +314,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @proxystore11 | 0",
+            "tag": "🇩🇪DE | 🔴 | vless | @proxystore11 | 0",
             "type": "vless",
             "server": "142.93.174.176",
             "server_port": 443,
