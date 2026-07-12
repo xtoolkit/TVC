@@ -118,7 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"172.67.75.194","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"wbjj-bbcs-.MaQRor.Ir"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"172.67.75.194","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"wbjj-bbcs-.MaQRor.Ir"}
   - {"name":"❔XX | 🔴 | trojan | @kingofilter | 0","type":"trojan","server":"162.159.8.101","port":443,"udp":false,"password":"MITIVPN","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"UsAa-bUs.App-Cloud.ir"}
 proxy-groups:
   - name: MANUAL
@@ -126,7 +126,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '❔XX | 🔴 | trojan | @kingofilter | 0'
   - name: URL-TEST
     type: url-test
@@ -134,14 +134,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '❔XX | 🔴 | trojan | @kingofilter | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '❔XX | 🔴 | trojan | @kingofilter | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
