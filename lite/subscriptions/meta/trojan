@@ -120,39 +120,35 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇱🇹LT | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"89.116.250.135","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"Swdb-ueu-oe.MaQror.IR"}
   - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"185.137.157.140","port":443,"udp":false,"password":"dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 11","type":"trojan","server":"77.74.123.132","port":449,"udp":false,"password":"Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"grape-zet-turbo-nl.yyuyy.com"}
   - {"name":"🇺🇸US | 🔴 | trojan | @VmessProtocol | 11","type":"trojan","server":"141.193.213.21","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
-  - {"name":"❔XX | 🟢 | trojan | @kingofilter | 1","type":"trojan","server":"188.213.131.90","port":59618,"udp":false,"password":"7f5rouvmiqm83905","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"google.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇱🇹LT | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 11'
       - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 11'
-      - '❔XX | 🟢 | trojan | @kingofilter | 1'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇱🇹LT | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 11'
       - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 11'
-      - '❔XX | 🟢 | trojan | @kingofilter | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇱🇹LT | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 11'
       - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 11'
-      - '❔XX | 🟢 | trojan | @kingofilter | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
