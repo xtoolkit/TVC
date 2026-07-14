@@ -118,35 +118,39 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"185.137.157.138","port":443,"udp":false,"password":"dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"185.137.157.142","port":443,"udp":false,"password":"dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @VmessProtocol | 10","type":"trojan","server":"141.193.213.21","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
+  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"185.137.157.140","port":443,"udp":false,"password":"dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 11","type":"trojan","server":"77.74.123.132","port":449,"udp":false,"password":"Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"grape-zet-turbo-nl.yyuyy.com"}
+  - {"name":"❔XX | 🔴 | trojan | @VmessProtocol | 11","type":"trojan","server":"141.193.213.21","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
+  - {"name":"❔XX | 🟢 | trojan | @kingofilter | 1","type":"trojan","server":"188.213.131.90","port":59618,"udp":false,"password":"7f5rouvmiqm83905","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"google.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 10'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 11'
+      - '❔XX | 🔴 | trojan | @VmessProtocol | 11'
+      - '❔XX | 🟢 | trojan | @kingofilter | 1'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 10'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 11'
+      - '❔XX | 🔴 | trojan | @VmessProtocol | 11'
+      - '❔XX | 🟢 | trojan | @kingofilter | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 10'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 11'
+      - '❔XX | 🔴 | trojan | @VmessProtocol | 11'
+      - '❔XX | 🟢 | trojan | @kingofilter | 1'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
