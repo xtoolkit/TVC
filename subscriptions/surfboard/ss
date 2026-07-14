@@ -11,11 +11,10 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | ss | @kingofilter | 3 = ss, 23.100.50.48, 443, encrypt-method = chacha20-ietf-poly1305, password = 6ZhroVa0UjRSUl06
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @kingofilter | 3
-URL-TEST = url-test,❔XX | 🟢 | ss | @kingofilter | 3
-FALLBACK = fallback,❔XX | 🟢 | ss | @kingofilter | 3
+MANUAL = select,URL-TEST,FALLBACK
+URL-TEST = url-test
+FALLBACK = fallback
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
