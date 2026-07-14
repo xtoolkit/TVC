@@ -106,18 +106,21 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "❔XX | 🟢 | vless | @Parsashonam | 1",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇨🇭CH | 🟢 | vless | @prrofile_purple | 70",
+                "🇨🇭CH | 🟢 | vless | @prrofile_purple | 78",
+                "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 0",
                 "🇦🇹AT | 🔴 | vless | @v2rayNG_Matsuri | 1",
                 "🇹🇷TR | 🟢 | vless | @ShadowProxy66 | 0",
-                "🇬🇧GB | 🔴 | vless | @lrnbymaa | 0",
+                "❔XX | 🔴 | vless | @lrnbymaa | 0",
                 "❔XX | 🔴 | vless | @ConfigsHUB | 13",
                 "❔XX | 🔴 | vless | @ConfigsHUB | 14",
                 "❔XX | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vless | @proxystore11 | 1",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🟢 | vless | @FreakConfig | 14",
                 "❔XX | 🔴 | vless | @flyv2ray | 7",
                 "❔XX | 🔴 | vless | @mehrosaboran | 0",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -130,18 +133,21 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "❔XX | 🟢 | vless | @Parsashonam | 1",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇨🇭CH | 🟢 | vless | @prrofile_purple | 70",
+                "🇨🇭CH | 🟢 | vless | @prrofile_purple | 78",
+                "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 0",
                 "🇦🇹AT | 🔴 | vless | @v2rayNG_Matsuri | 1",
                 "🇹🇷TR | 🟢 | vless | @ShadowProxy66 | 0",
-                "🇬🇧GB | 🔴 | vless | @lrnbymaa | 0",
+                "❔XX | 🔴 | vless | @lrnbymaa | 0",
                 "❔XX | 🔴 | vless | @ConfigsHUB | 13",
                 "❔XX | 🔴 | vless | @ConfigsHUB | 14",
                 "❔XX | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vless | @proxystore11 | 1",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🟢 | vless | @FreakConfig | 14",
                 "❔XX | 🔴 | vless | @flyv2ray | 7",
                 "❔XX | 🔴 | vless | @mehrosaboran | 0",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -168,6 +174,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @Parsashonam | 1",
+            "type": "vless",
+            "server": "ip",
+            "server_port": 443,
+            "uuid": "Telegram-Parsashonam",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "domian",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "rd71EGp4BCn3x_hIoaYi5R6GaqF9TIA4F6t5WyOPaXc",
+                    "short_id": "83dc602558"
+                }
+            }
         },
         {
             "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
@@ -235,7 +270,7 @@
             }
         },
         {
-            "tag": "🇨🇭CH | 🟢 | vless | @prrofile_purple | 70",
+            "tag": "🇨🇭CH | 🟢 | vless | @prrofile_purple | 78",
             "type": "vless",
             "server": "ch-zicid.locations-sub.com",
             "server_port": 6200,
@@ -260,6 +295,35 @@
                     "enabled": true,
                     "public_key": "lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo",
                     "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 0",
+            "type": "vless",
+            "server": "khc.dearhossein-taktaz.ir",
+            "server_port": 443,
+            "uuid": "37847c7e-ef5e-49cc-b6ac-0b3b5a7863f2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "A_i3XS8URva3ya7OkH05o4DRNin77O3kiJ98Ge_Qh2k",
+                    "short_id": "a46330177b55b1"
                 }
             }
         },
@@ -329,7 +393,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @lrnbymaa | 0",
+            "tag": "❔XX | 🔴 | vless | @lrnbymaa | 0",
             "type": "vless",
             "server": "87.120.219.225",
             "server_port": 443,
@@ -535,6 +599,35 @@
                     "enabled": true,
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @FreakConfig | 14",
+            "type": "vless",
+            "server": "46.8.229.199",
+            "server_port": 443,
+            "uuid": "59d08a71-f206-4ca3-9a42-8c56d3bfdc3c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "intel.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4o2G9iT8IN7YWwiDLgjMrpPmvwU5IQT6C6nE5Rh-wSQ",
+                    "short_id": "da"
                 }
             }
         },
