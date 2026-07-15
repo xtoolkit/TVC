@@ -106,10 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @Parsashonam | 0",
+                "❔XX | 🟢 | vless | @Parsashonam | 1",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇫🇷FR | 🔴 | vless | @proxy_kafee | 0",
-                "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 2",
+                "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 3",
                 "❔XX | 🔴 | vless | @lrnbymaa | 0",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vless | @proxystore11 | 1",
@@ -128,10 +130,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @Parsashonam | 0",
+                "❔XX | 🟢 | vless | @Parsashonam | 1",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇫🇷FR | 🔴 | vless | @proxy_kafee | 0",
-                "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 2",
+                "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 3",
                 "❔XX | 🔴 | vless | @lrnbymaa | 0",
                 "🇩🇪DE | 🔴 | vless | @proxystore11 | 0",
                 "❔XX | 🟢 | vless | @proxystore11 | 1",
@@ -164,6 +168,64 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @Parsashonam | 0",
+            "type": "vless",
+            "server": "178.105.179.72",
+            "server_port": 443,
+            "uuid": "Telegram-Parsashonam",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "play.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "k2hbpFLj1gfVXbx0Hae2bvMIZIaBwJcVG71XiEDkSD0",
+                    "short_id": "21cee1c9ab"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @Parsashonam | 1",
+            "type": "vless",
+            "server": "ip",
+            "server_port": 443,
+            "uuid": "Telegram-Parsashonam",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "domian",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "rd71EGp4BCn3x_hIoaYi5R6GaqF9TIA4F6t5WyOPaXc",
+                    "short_id": "83dc602558"
+                }
+            }
         },
         {
             "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
@@ -260,7 +322,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 2",
+            "tag": "🇫🇮FI | 🟢 | vless | @v2rayNG_Matsuri | 3",
             "type": "vless",
             "server": "khc.dearhossein-taktaz.ir",
             "server_port": 443,
