@@ -122,7 +122,7 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"185.137.157.142","port":443,"udp":false,"password":"dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"77.74.123.132","port":449,"udp":false,"password":"Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"grape-zet-turbo-nl.yyuyy.com"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @VmessProtocol | 11","type":"trojan","server":"141.193.213.21","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @VmessProtocol | 12","type":"trojan","server":"141.193.213.21","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +131,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 11'
+      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 12'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -140,7 +140,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 11'
+      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 12'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -148,7 +148,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 11'
+      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 12'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
