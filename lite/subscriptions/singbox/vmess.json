@@ -108,11 +108,11 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 8",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 11",
                 "❔XX | 🟢 | vmess | @Hope_Net | 12",
-                "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1"
+                "❔XX | 🟢 | vmess | @Hope_Net | 13"
             ]
         },
         {
@@ -121,11 +121,11 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 8",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 11",
                 "❔XX | 🟢 | vmess | @Hope_Net | 12",
-                "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1"
+                "❔XX | 🟢 | vmess | @Hope_Net | 13"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -172,6 +172,23 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 8",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -240,9 +257,9 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 11",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 12",
             "type": "vmess",
-            "server": "104.19.45.123",
+            "server": "104.19.45.7",
             "server_port": 2095,
             "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
             "security": "auto",
@@ -259,16 +276,16 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "104.19.45.123"
+                    "Host": "104.19.45.7"
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 12",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 13",
             "type": "vmess",
-            "server": "104.19.38.62",
-            "server_port": 2086,
-            "uuid": "29eebb60-b27b-4a9d-bba5-947763d9205e",
+            "server": "akazz-1048-v2-2.tyo-r-kcd-a.nd.cjhh.mom",
+            "server_port": 39928,
+            "uuid": "fbc2efb0-786a-4074-81ea-8ab12ca5422c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -279,29 +296,22 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "akazz-1048-v2-2.tyo-r-kcd-a.nd.cjhh.mom",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/github.com\/Alvin9999",
+                "path": "\/je5x3pBN1vez3NQudNkB",
                 "headers": {
-                    "Host": "104.19.38.62"
+                    "Host": "akazz-1048-v2-2.tyo-r-kcd-a.nd.cjhh.mom"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
-            "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
