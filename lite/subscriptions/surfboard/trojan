@@ -11,14 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, 151.101.1.194, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = true, sni = ssl.fastly.com, ws = false
 🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 6 = trojan, wired-tick.rooster465.autos, 443, password = OD90375861, udp-delay = true, skip-cert-verify = false, ws = false
-🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 7 = trojan, 185.137.157.145, 443, password = dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, udp-delay = true, skip-cert-verify = false, ws = false
 🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7 = trojan, 151.101.34.144, 443, password = 4aFbwy5BHa, udp-delay = true, skip-cert-verify = false, sni = global.fastly.com, ws = false
 🇺🇸US | 🔴 | trojan | @VmessProtocol | 13 = trojan, 141.193.213.21, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmloud.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 6,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 7,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7,🇺🇸US | 🔴 | trojan | @VmessProtocol | 13
-URL-TEST = url-test,🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 6,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 7,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7,🇺🇸US | 🔴 | trojan | @VmessProtocol | 13
-FALLBACK = fallback,🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 6,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 7,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7,🇺🇸US | 🔴 | trojan | @VmessProtocol | 13
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5,🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 6,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7,🇺🇸US | 🔴 | trojan | @VmessProtocol | 13
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5,🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 6,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7,🇺🇸US | 🔴 | trojan | @VmessProtocol | 13
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5,🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 6,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7,🇺🇸US | 🔴 | trojan | @VmessProtocol | 13
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
