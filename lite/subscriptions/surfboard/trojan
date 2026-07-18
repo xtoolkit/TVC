@@ -11,13 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7 = trojan, 151.101.1.194, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = true, sni = ssl.fastly.com, ws = false
-🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, wired-tick.rooster465.autos, 443, password = OD90375861, udp-delay = true, skip-cert-verify = false, ws = false
+🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, harmless-lab.rooster465.autos, 443, password = CF68213490, udp-delay = true, skip-cert-verify = true, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9 = trojan, 151.101.1.194, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = true, sni = ssl.fastly.com, ws = false
 ❔XX | 🔴 | trojan | @VmessProtocol | 13 = trojan, 141.193.213.21, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmloud.com, ws = false
+❔XX | 🟢 | trojan | @ConfigsHUB | 10 = trojan, 104.17.111.3, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🔴 | trojan | @VmessProtocol | 13
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🔴 | trojan | @VmessProtocol | 13
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🔴 | trojan | @VmessProtocol | 13
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9,❔XX | 🔴 | trojan | @VmessProtocol | 13,❔XX | 🟢 | trojan | @ConfigsHUB | 10
+URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9,❔XX | 🔴 | trojan | @VmessProtocol | 13,❔XX | 🟢 | trojan | @ConfigsHUB | 10
+FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9,❔XX | 🔴 | trojan | @VmessProtocol | 13,❔XX | 🟢 | trojan | @ConfigsHUB | 10
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
