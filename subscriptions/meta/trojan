@@ -133,8 +133,6 @@ proxies:
   - {"name":"🚩CF | 🔴 | trojan | @VmessProtocol | 6","type":"trojan","server":"104.18.152.246","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
   - {"name":"❔XX | 🔴 | trojan | @VmessProtocol | 13","type":"trojan","server":"141.193.213.21","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
   - {"name":"🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 0","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"VPNCUSTOMIZE","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"ww.offers.de5.net"}
-  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 5","type":"trojan","server":"185.18.250.252","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.multiplydose.com"}
-  - {"name":"🚩CF | 🔴 | trojan | @ConfigsHUB | 16","type":"trojan","server":"188.114.98.0","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.creationlong.org"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -154,8 +152,6 @@ proxy-groups:
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 6'
       - '❔XX | 🔴 | trojan | @VmessProtocol | 13'
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 0'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 5'
-      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -175,8 +171,6 @@ proxy-groups:
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 6'
       - '❔XX | 🔴 | trojan | @VmessProtocol | 13'
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 0'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 5'
-      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -195,8 +189,6 @@ proxy-groups:
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 6'
       - '❔XX | 🔴 | trojan | @VmessProtocol | 13'
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 0'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 5'
-      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 16'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
