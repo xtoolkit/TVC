@@ -122,10 +122,10 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @Capoit | 10",
                 "❔XX | 🟢 | vless | @FreakConfig | 11",
+                "❔XX | 🟢 | vless | @mehrosaboran | 5",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
-                "❔XX | 🔴 | vless | @vpn_go67 | 18",
-                "❔XX | 🔴 | vless | @vpn_go67 | 19",
+                "❔XX | 🔴 | vless | @proxy_mtm | 32",
                 "❔XX | 🟢 | vless | @kingofilter | 0"
             ]
         },
@@ -149,10 +149,10 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @Capoit | 10",
                 "❔XX | 🟢 | vless | @FreakConfig | 11",
+                "❔XX | 🟢 | vless | @mehrosaboran | 5",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
-                "❔XX | 🔴 | vless | @vpn_go67 | 18",
-                "❔XX | 🔴 | vless | @vpn_go67 | 19",
+                "❔XX | 🔴 | vless | @proxy_mtm | 32",
                 "❔XX | 🟢 | vless | @kingofilter | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -654,6 +654,42 @@
             }
         },
         {
+            "tag": "❔XX | 🟢 | vless | @mehrosaboran | 5",
+            "type": "vless",
+            "server": "main.oneoker.com",
+            "server_port": 443,
+            "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "main.oneoker.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "yiX2T6z3GavNIgnnxsoU57vgq2pdfngXAU83vhBDQlA",
+                    "short_id": "a9b0c08836bad3c5"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "api.v1.StreamService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "❔XX | 🔴 | vless | @kiava | 83",
             "type": "vless",
             "server": "partners.dissertationhelpspecialist.com",
@@ -726,11 +762,11 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @vpn_go67 | 18",
+            "tag": "❔XX | 🔴 | vless | @proxy_mtm | 32",
             "type": "vless",
-            "server": "public.alpanel.top",
-            "server_port": 1380,
-            "uuid": "58c15a7e-8111-4abb-afd2-47590085c3f4",
+            "server": "add.oneoker.com",
+            "server_port": 443,
+            "uuid": "86208db7-8bbc-42c2-9eb2-ffe5675502c3",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -740,7 +776,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.iranserver.com",
+                "server_name": "add.oneoker.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -749,49 +785,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "u2Xf8Og6H4iPcoYIZC8Cm8ziH2LA4ifvpHxEpp8bfUw",
-                    "short_id": "4c5aaad0"
+                    "public_key": "W329R9_hAiG_wGLcIhfbm0AA8Si7DVhz4es2aASZACY",
+                    "short_id": "9c478d3655bfa85d"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @vpn_go67 | 19",
-            "type": "vless",
-            "server": "public.alpanel.top",
-            "server_port": 1403,
-            "uuid": "671b9a72-7c75-46b9-be82-db2734bae2fc",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tuyacn.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA",
-                    "short_id": "99"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam",
+                "service_name": "api.v1.StreamService",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
