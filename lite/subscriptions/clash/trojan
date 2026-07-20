@@ -118,35 +118,35 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
+  - {"name":"🇨🇭CH | 🟢 | trojan | @EliV2ray | 1","type":"trojan","server":"8y7r-2-4-3-1-4-5-2-2-3.poki-pakipon.ir","port":30000,"udp":false,"password":"-----------BanV2ray------------","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"chi.yahoo.com"}
   - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"3.75.174.185","port":443,"udp":false,"password":"NQ26071394","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"certain-prawn.rooster465.autos"}
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 11","type":"trojan","server":"3.76.41.23","port":443,"udp":false,"password":"KV63147582","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"evolving-baboon.rooster465.autos"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @VmessProtocol | 13","type":"trojan","server":"141.193.213.21","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
+  - {"name":"❔XX | 🔴 | trojan | @VmessProtocol | 13","type":"trojan","server":"141.193.213.21","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 11'
-      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 13'
+      - '❔XX | 🔴 | trojan | @VmessProtocol | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 11'
-      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 13'
+      - '❔XX | 🔴 | trojan | @VmessProtocol | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 11'
-      - '🇺🇸US | 🔴 | trojan | @VmessProtocol | 13'
+      - '❔XX | 🔴 | trojan | @VmessProtocol | 13'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
