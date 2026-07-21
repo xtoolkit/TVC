@@ -122,6 +122,7 @@ dns:
 proxies:
   - {"name":"❔XX | 🟢 | ss | @proxy_mtm | 20","type":"ss","server":"82.38.31.39","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
   - {"name":"❔XX | 🟢 | ss | @proxy_mtm | 22","type":"ss","server":"213.109.147.242","port":62685,"password":"VpKABcOpNNA0l5G2AVOmw8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @kingofilter | 0","type":"ss","server":"20.166.58.64","port":443,"password":"217Fg9zpgpVS4DGE","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,6 +131,7 @@ proxy-groups:
       - FALLBACK
       - '❔XX | 🟢 | ss | @proxy_mtm | 20'
       - '❔XX | 🟢 | ss | @proxy_mtm | 22'
+      - '❔XX | 🟢 | ss | @kingofilter | 0'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,6 +140,7 @@ proxy-groups:
     proxies:
       - '❔XX | 🟢 | ss | @proxy_mtm | 20'
       - '❔XX | 🟢 | ss | @proxy_mtm | 22'
+      - '❔XX | 🟢 | ss | @kingofilter | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -145,6 +148,7 @@ proxy-groups:
     proxies:
       - '❔XX | 🟢 | ss | @proxy_mtm | 20'
       - '❔XX | 🟢 | ss | @proxy_mtm | 22'
+      - '❔XX | 🟢 | ss | @kingofilter | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
