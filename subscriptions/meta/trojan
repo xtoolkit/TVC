@@ -134,9 +134,6 @@ proxies:
   - {"name":"🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 2","type":"trojan","server":"162.159.38.119","port":443,"udp":false,"password":"humanity","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"www.gossipglove.com"}
   - {"name":"🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 3","type":"trojan","server":"162.159.38.119","port":443,"udp":false,"password":"humanity","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"www.creationlong.org"}
   - {"name":"❔XX | 🟢 | trojan | @v2ray_vpn_ir | 5","type":"trojan","server":"45.130.125.112","port":443,"udp":false,"password":"humanity","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
-  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 3","type":"trojan","server":"127.0.0.1","port":8080,"udp":false,"password":"bcaabac-acab-cbaa-acdb-ccbaababccba","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🚩CF | 🟢 | trojan | @ConfigsHUB | 9","type":"trojan","server":"162.159.153.243","port":443,"udp":false,"password":"auto","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"fe9b5676-a2aa-4b6a-8257-cd2dd0910205.8c98ef2b-bee2-470b-b759-9f5efbc10812.freeddns.org"}
-  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 11","type":"trojan","server":"13.60.120.194","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -157,9 +154,6 @@ proxy-groups:
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 2'
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 3'
       - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 5'
-      - '❔XX | 🟢 | trojan | @ConfigsHUB | 3'
-      - '🚩CF | 🟢 | trojan | @ConfigsHUB | 9'
-      - '❔XX | 🟢 | trojan | @ConfigsHUB | 11'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -180,9 +174,6 @@ proxy-groups:
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 2'
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 3'
       - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 5'
-      - '❔XX | 🟢 | trojan | @ConfigsHUB | 3'
-      - '🚩CF | 🟢 | trojan | @ConfigsHUB | 9'
-      - '❔XX | 🟢 | trojan | @ConfigsHUB | 11'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -202,9 +193,6 @@ proxy-groups:
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 2'
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 3'
       - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 5'
-      - '❔XX | 🟢 | trojan | @ConfigsHUB | 3'
-      - '🚩CF | 🟢 | trojan | @ConfigsHUB | 9'
-      - '❔XX | 🟢 | trojan | @ConfigsHUB | 11'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
