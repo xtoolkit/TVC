@@ -11,11 +11,10 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | ss | @proxy_mtm | 22 = ss, 82.38.31.39, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @proxy_mtm | 22
-URL-TEST = url-test,❔XX | 🟢 | ss | @proxy_mtm | 22
-FALLBACK = fallback,❔XX | 🟢 | ss | @proxy_mtm | 22
+MANUAL = select,URL-TEST,FALLBACK
+URL-TEST = url-test
+FALLBACK = fallback
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
