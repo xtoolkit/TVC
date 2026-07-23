@@ -119,8 +119,10 @@ dns:
 
 proxies:
   - {"name":"🇨🇭CH | 🟢 | trojan | @EliV2ray | 1","type":"trojan","server":"8y7r-2-4-3-1-4-5-2-2-3.poki-pakipon.ir","port":30000,"udp":false,"password":"-----------BanV2ray------------","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"chi.yahoo.com"}
-  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"cheerful-swan.rooster465.autos","port":443,"udp":false,"password":"IQ68037294","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 7","type":"trojan","server":"89.39.70.159","port":443,"udp":false,"password":"XG59623478","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"upward-hedgehog.rooster465.autos"}
+  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 7","type":"trojan","server":"cheerful-swan.rooster465.autos","port":443,"udp":false,"password":"IQ68037294","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8","type":"trojan","server":"89.39.70.159","port":443,"udp":false,"password":"XG59623478","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"upward-hedgehog.rooster465.autos"}
+  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 14","type":"trojan","server":"179.237.74.104","port":4406,"udp":false,"password":"---------BanV2ray---------","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"world.yahoo.com:443"}
+  - {"name":"🇨🇭CH | 🔴 | trojan | @ConfigsHUB | 15","type":"trojan","server":"37.156.45.60","port":3768,"udp":false,"password":"------------BanV2ray-----------","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"world.yahoo.com:443"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,8 +130,10 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
-      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 6'
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 14'
+      - '🇨🇭CH | 🔴 | trojan | @ConfigsHUB | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,16 +141,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
-      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 6'
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 14'
+      - '🇨🇭CH | 🔴 | trojan | @ConfigsHUB | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
-      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 6'
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 14'
+      - '🇨🇭CH | 🔴 | trojan | @ConfigsHUB | 15'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
