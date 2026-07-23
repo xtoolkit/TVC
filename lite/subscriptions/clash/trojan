@@ -119,8 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇨🇭CH | 🟢 | trojan | @EliV2ray | 1","type":"trojan","server":"8y7r-2-4-3-1-4-5-2-2-3.poki-pakipon.ir","port":30000,"udp":false,"password":"-----------BanV2ray------------","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"chi.yahoo.com"}
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"18.184.169.90","port":443,"udp":false,"password":"NQ26071394","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"square-pheasant.rooster465.autos"}
-  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"185.247.117.209","port":56431,"udp":false,"password":"8240cd21ddf3112d50c4b6e52a70f0ce","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"185.247.117.209.sslip.io"}
+  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"cheerful-swan.rooster465.autos","port":443,"udp":false,"password":"IQ68037294","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"89.39.70.159","port":443,"udp":false,"password":"XG59623478","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"upward-hedgehog.rooster465.autos"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,8 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,16 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 6'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
