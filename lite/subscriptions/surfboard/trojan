@@ -12,10 +12,13 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇭CH | 🟢 | trojan | @EliV2ray | 1 = trojan, 8y7r-2-4-3-1-4-5-2-2-3.poki-pakipon.ir, 30000, password = -----------BanV2ray------------, udp-delay = true, skip-cert-verify = false, sni = chi.yahoo.com, ws = false
+🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, 151.101.1.194, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = true, sni = ssl.fastly.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 167.68.4.199, 2053, password = Aimer, udp-delay = true, skip-cert-verify = false, sni = epge.muarua.filegear-sg.me, ws = false
+❔XX | 🟢 | trojan | @ConfigsHUB | 17 = trojan, 37.156.45.60, 37161, password = 1------------------BanV2ray------------------1, udp-delay = true, skip-cert-verify = false, sni = world.yahoo.com:443, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇭CH | 🟢 | trojan | @EliV2ray | 1
-URL-TEST = url-test,🇨🇭CH | 🟢 | trojan | @EliV2ray | 1
-FALLBACK = fallback,🇨🇭CH | 🟢 | trojan | @EliV2ray | 1
+MANUAL = select,URL-TEST,FALLBACK,🇨🇭CH | 🟢 | trojan | @EliV2ray | 1,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @ConfigsHUB | 17
+URL-TEST = url-test,🇨🇭CH | 🟢 | trojan | @EliV2ray | 1,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @ConfigsHUB | 17
+FALLBACK = fallback,🇨🇭CH | 🟢 | trojan | @EliV2ray | 1,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @ConfigsHUB | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

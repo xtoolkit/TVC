@@ -119,6 +119,9 @@ dns:
 
 proxies:
   - {"name":"🇨🇭CH | 🟢 | trojan | @EliV2ray | 1","type":"trojan","server":"8y7r-2-4-3-1-4-5-2-2-3.poki-pakipon.ir","port":30000,"udp":false,"password":"-----------BanV2ray------------","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"chi.yahoo.com"}
+  - {"name":"🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"151.101.1.194","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"ssl.fastly.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"167.68.4.199","port":2053,"udp":false,"password":"Aimer","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"epge.muarua.filegear-sg.me"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 17","type":"trojan","server":"37.156.45.60","port":37161,"udp":false,"password":"1------------------BanV2ray------------------1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"world.yahoo.com:443"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -126,6 +129,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -133,12 +139,18 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
