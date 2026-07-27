@@ -121,8 +121,8 @@ dns:
 
 proxies:
   - {"name":"🇨🇭CH | 🟢 | trojan | @EliV2ray | 1","type":"trojan","server":"8y7r-2-4-3-1-4-5-2-2-3.poki-pakipon.ir","port":30000,"udp":false,"password":"-----------BanV2ray------------","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"chi.yahoo.com"}
+  - {"name":"🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"musical-shrew.rooster465.autos","port":443,"udp":false,"password":"JT80563429","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"wealthy-loon.rooster465.autos","port":443,"udp":false,"password":"NQ26071394","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇰🇷KR | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"mutual-puma.rooster465.autos","port":443,"udp":false,"password":"JT80563429","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"❔XX | 🟢 | trojan | @v2ray_vpn_ir | 2","type":"trojan","server":"162.159.38.119","port":443,"udp":false,"password":"humanity","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"www.creationlong.org"}
 proxy-groups:
   - name: MANUAL
@@ -131,8 +131,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
+      - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇰🇷KR | 🔴 | trojan | @oneclickvpnkeys | 6'
       - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 2'
   - name: URL-TEST
     type: url-test
@@ -141,8 +141,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
+      - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇰🇷KR | 🔴 | trojan | @oneclickvpnkeys | 6'
       - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 2'
   - name: FALLBACK
     type: fallback
@@ -150,8 +150,8 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
+      - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇰🇷KR | 🔴 | trojan | @oneclickvpnkeys | 6'
       - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
