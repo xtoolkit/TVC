@@ -121,9 +121,10 @@ dns:
 
 proxies:
   - {"name":"🇨🇭CH | 🟢 | trojan | @EliV2ray | 1","type":"trojan","server":"8y7r-2-4-3-1-4-5-2-2-3.poki-pakipon.ir","port":30000,"udp":false,"password":"-----------BanV2ray------------","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"chi.yahoo.com"}
-  - {"name":"🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"musical-shrew.rooster465.autos","port":443,"udp":false,"password":"JT80563429","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"wealthy-loon.rooster465.autos","port":443,"udp":false,"password":"NQ26071394","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"❔XX | 🟢 | trojan | @v2ray_vpn_ir | 2","type":"trojan","server":"162.159.38.119","port":443,"udp":false,"password":"humanity","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"www.creationlong.org"}
+  - {"name":"🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"more-trout.rooster465.autos","port":443,"udp":false,"password":"KV63147582","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"casual-stallion.rooster465.autos","port":443,"udp":false,"password":"IQ68037294","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇺🇸US | 🟢 | trojan | @v2ray_vpn_ir | 2","type":"trojan","server":"162.159.38.119","port":443,"udp":false,"password":"humanity","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"www.creationlong.org"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 17","type":"trojan","server":"104.16.159.6","port":443,"udp":false,"password":"669d0ac7b5b64ebbb1abb75d5d540a5c","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"bangladeshipatri.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,9 +132,10 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
-      - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 2'
+      - '🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇺🇸US | 🟢 | trojan | @v2ray_vpn_ir | 2'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -141,18 +143,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
-      - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 2'
+      - '🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇺🇸US | 🟢 | trojan | @v2ray_vpn_ir | 2'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
-      - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 2'
+      - '🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇺🇸US | 🟢 | trojan | @v2ray_vpn_ir | 2'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 17'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
