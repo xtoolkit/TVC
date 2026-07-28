@@ -112,15 +112,18 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @proxy_kafee | 1",
+                "🇺🇸US | 🟢 | vless | @V2rayCollector | 32",
+                "🇸🇪SE | 🟢 | vless | @V2rayCollector | 33",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 9",
                 "❔XX | 🔴 | vless | @lrnbymaa | 0",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🔴 | vless | @FreakConfig | 12",
+                "❔XX | 🔴 | vless | @FreakConfig | 13",
                 "❔XX | 🟢 | vless | @flyv2ray | 2",
                 "❔XX | 🟢 | vless | @flyv2ray | 3",
                 "❔XX | 🔴 | vless | @kiava | 83",
-                "❔XX | 🔴 | vless | @kiava | 84"
+                "❔XX | 🔴 | vless | @kiava | 84",
+                "❔XX | 🟢 | vless | @kingofilter | 0"
             ]
         },
         {
@@ -133,15 +136,18 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @proxy_kafee | 1",
+                "🇺🇸US | 🟢 | vless | @V2rayCollector | 32",
+                "🇸🇪SE | 🟢 | vless | @V2rayCollector | 33",
                 "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 9",
                 "❔XX | 🔴 | vless | @lrnbymaa | 0",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🔴 | vless | @FreakConfig | 12",
+                "❔XX | 🔴 | vless | @FreakConfig | 13",
                 "❔XX | 🟢 | vless | @flyv2ray | 2",
                 "❔XX | 🟢 | vless | @flyv2ray | 3",
                 "❔XX | 🔴 | vless | @kiava | 83",
-                "❔XX | 🔴 | vless | @kiava | 84"
+                "❔XX | 🔴 | vless | @kiava | 84",
+                "❔XX | 🟢 | vless | @kingofilter | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -345,6 +351,64 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🟢 | vless | @V2rayCollector | 32",
+            "type": "vless",
+            "server": "47.253.226.114",
+            "server_port": 443,
+            "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🟢 | vless | @V2rayCollector | 33",
+            "type": "vless",
+            "server": "46.246.92.109",
+            "server_port": 443,
+            "uuid": "14f19724-de91-4285-a633-aa8e2caaf812",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "site.rumedia-cdn.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JwL5KoiWkCJI2vMJxyTEplfv-zBAtwxOH8SMbw6QHzY",
+                    "short_id": "cd40c992fe4b10c2"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🟢 | vless | @v2ray1_ng | 9",
             "type": "vless",
             "server": "h2.zynovax.ir",
@@ -461,7 +525,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @FreakConfig | 12",
+            "tag": "❔XX | 🔴 | vless | @FreakConfig | 13",
             "type": "vless",
             "server": "185.185.142.98",
             "server_port": 8443,
@@ -617,6 +681,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @kingofilter | 0",
+            "type": "vless",
+            "server": "154.83.246.50",
+            "server_port": 443,
+            "uuid": "7216b4e8-e935-4d68-b959-73d145accdee",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "storage.yandex.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8",
+                    "short_id": "500aec9e9e5e2212"
+                }
             }
         }
     ],
