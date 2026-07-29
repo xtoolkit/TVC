@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 8 = vmess, www.speedtest.net, 80, username = 83361983-a49b-490b-9910-e0de7e8d3a07, ws = true, tls = , vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"8.V.WwW.SPeedTEst.NET.Ftp.dEbiAn.ORG.isvpHP.Ir.", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 9 = vmess, www.speedtest.net, 80, username = cc142606-f36d-4004-bd2d-c5c2aa7efd4d, ws = true, tls = , vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"V.v.V.v.C.v.C.v.X.o.ZuLa.Ir.FaSt.CoM.iSvPhP.Ir.", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 7 = vmess, 172.67.156.22, 443, username = f584de15-2034-4170-a723-f48c2bae5e0f, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws/afrhms16v.bestxray.buzz, ws-headers = Host:"nezuko.raidenshogun.cloudns.org", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8,❔XX | 🟢 | vmess | @Hope_Net | 9
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8,❔XX | 🟢 | vmess | @Hope_Net | 9
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 8,❔XX | 🟢 | vmess | @Hope_Net | 9
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 7
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 7
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
