@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | ss | @kingofilter | 5"
+                "❔XX | 🟢 | ss | @kingofilter | 0",
+                "❔XX | 🟢 | ss | @kingofilter | 6"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | ss | @kingofilter | 5"
+                "❔XX | 🟢 | ss | @kingofilter | 0",
+                "❔XX | 🟢 | ss | @kingofilter | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,7 +138,17 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | ss | @kingofilter | 5",
+            "tag": "❔XX | 🟢 | ss | @kingofilter | 0",
+            "type": "shadowsocks",
+            "server": "146.70.53.62",
+            "server_port": 1080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "XF0klw7870vXn3uQIxe19Q",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @kingofilter | 6",
             "type": "shadowsocks",
             "server": "82.38.31.180",
             "server_port": 8080,
