@@ -120,67 +120,55 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇨🇭CH | 🟢 | trojan | @EliV2ray | 1","type":"trojan","server":"8y7r-2-4-3-1-4-5-2-2-3.poki-pakipon.ir","port":30000,"udp":false,"password":"-----------BanV2ray------------","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"chi.yahoo.com"}
   - {"name":"🚩CF | 🔴 | trojan | @oneclickvpnkeys | 0","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"MITIVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"usa-i--MiTiVPN---MiTiVPN-7.aPp-cLoud.IR"}
   - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"millionaire.levikogjgfdd.ir","port":443,"udp":false,"password":"521314","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"tjplay.lxdxo.kdns.fr"}
   - {"name":"🚩CF | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"172.67.149.60","port":443,"udp":false,"password":"c206d543-023d-46cc-9d5a-1f0f2fc16323","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"space.byu.id.yxls.eu.cc"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"202.37.33.80","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.creationlong.org"}
   - {"name":"🚩CF | 🔴 | trojan | @VmessProtocol | 0","type":"trojan","server":"104.16.174.121","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
   - {"name":"🚩CF | 🔴 | trojan | @VmessProtocol | 10","type":"trojan","server":"104.18.152.246","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
   - {"name":"🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 2","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"kami","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"ww.gameserver.de5.net"}
-  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 15","type":"trojan","server":"6r6e6e6ryrfyfyydur6r6f6r6r6r6d6d6e6s6d6s6d7d7d7e6s.poki-pakipon.ir","port":16350,"udp":false,"password":"l6R5znJSPJ","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"rd.autos.yahoo.com:40069"}
-  - {"name":"❔XX | 🔴 | trojan | @kingofilter | 2","type":"trojan","server":"1------------------------------------------------2.poki-pakipon.ir","port":27142,"udp":false,"password":"oeaQHjIg021hag3UB1gHR60iA1iaNSs2","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.icloud.com"}
-  - {"name":"❔XX | 🔴 | trojan | @kingofilter | 3","type":"trojan","server":"1------------------------------------------------2.poki-pakipon.ir","port":16924,"udp":false,"password":"oeaQHjIg021hag3UB1gHR60iA1iaNSs2","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.icloud.com"}
+  - {"name":"❔XX | 🔴 | trojan | @kingofilter | 3","type":"trojan","server":"1------------------------------------------------2.poki-pakipon.ir","port":27142,"udp":false,"password":"oeaQHjIg021hag3UB1gHR60iA1iaNSs2","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.icloud.com"}
+  - {"name":"❔XX | 🔴 | trojan | @kingofilter | 4","type":"trojan","server":"1------------------------------------------------2.poki-pakipon.ir","port":16924,"udp":false,"password":"oeaQHjIg021hag3UB1gHR60iA1iaNSs2","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.icloud.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
       - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 0'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 0'
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 10'
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 2'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 15'
-      - '❔XX | 🔴 | trojan | @kingofilter | 2'
       - '❔XX | 🔴 | trojan | @kingofilter | 3'
+      - '❔XX | 🔴 | trojan | @kingofilter | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
       - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 0'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 0'
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 10'
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 2'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 15'
-      - '❔XX | 🔴 | trojan | @kingofilter | 2'
       - '❔XX | 🔴 | trojan | @kingofilter | 3'
+      - '❔XX | 🔴 | trojan | @kingofilter | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇭CH | 🟢 | trojan | @EliV2ray | 1'
       - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 0'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
       - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 0'
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 10'
       - '🚩CF | 🟢 | trojan | @v2ray_vpn_ir | 2'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 15'
-      - '❔XX | 🔴 | trojan | @kingofilter | 2'
       - '❔XX | 🔴 | trojan | @kingofilter | 3'
+      - '❔XX | 🔴 | trojan | @kingofilter | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
