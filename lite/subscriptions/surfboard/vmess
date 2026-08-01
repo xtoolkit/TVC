@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 6 = vmess, www.speedtest.net, 80, username = 33ae86a0-473d-11ef-a6cd-1239d0255272, ws = true, tls = , vmess-aead = true, ws-path = /vmws, ws-headers = Host:"Us1.socifiles.com.", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 7 = vmess, www.zula.ir, 80, username = 2e0ce6f3-7dc7-469a-9611-c8405a8ea5c1, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"nlch.blueberrynetwork.store", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 7 = vmess, 38.33.45.87, 37000, username = 418048af-a293-4b99-9b0c-98ca3580dd24, ws = true, tls = 1, vmess-aead = false, ws-path = /path/133220121417, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 6,❔XX | 🟢 | vmess | @Hope_Net | 7
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 6,❔XX | 🟢 | vmess | @Hope_Net | 7
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 6,❔XX | 🟢 | vmess | @Hope_Net | 7
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 7
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 7
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
