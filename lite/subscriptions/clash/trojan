@@ -118,39 +118,35 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"172.67.149.60","port":443,"udp":false,"password":"c206d543-023d-46cc-9d5a-1f0f2fc16323","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"space.byu.id.yxls.eu.cc"}
   - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"millionaire.levikogjgfdd.ir","port":443,"udp":false,"password":"521314","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"tjplay.lxdxo.kdns.fr"}
+  - {"name":"🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"172.67.149.60","port":443,"udp":false,"password":"c206d543-023d-46cc-9d5a-1f0f2fc16323","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"space.byu.id.yxls.eu.cc"}
   - {"name":"❔XX | 🟢 | trojan | @v2ray_vpn_ir | 6","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"kami","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"ww.gameserver.de5.net"}
-  - {"name":"❔XX | 🔴 | trojan | @kingofilter | 3","type":"trojan","server":"1------------------------------------------------2.poki-pakipon.ir","port":27142,"udp":false,"password":"oeaQHjIg021hag3UB1gHR60iA1iaNSs2","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.icloud.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 6'
-      - '❔XX | 🔴 | trojan | @kingofilter | 3'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 6'
-      - '❔XX | 🔴 | trojan | @kingofilter | 3'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '❔XX | 🟢 | trojan | @v2ray_vpn_ir | 6'
-      - '❔XX | 🔴 | trojan | @kingofilter | 3'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
