@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 9 = vmess, 104.19.55.79, 2052, username = d6b6d982-d52f-465a-b988-85670b23f64a, ws = true, tls = , vmess-aead = true, ws-path = github.com/Alvin9999, ws-headers = Host:"cdn2.freegradely.xyz", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 9 = vmess, 38.33.45.87, 37000, username = 418048af-a293-4b99-9b0c-98ca3580dd24, ws = true, tls = 1, vmess-aead = false, ws-path = /path/133220121417, ws-headers = Host:"", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 10 = vmess, edge.get.media.laserbylily.ca, 80, username = bd831106-94e1-4ef3-b473-c1a8418ca107, ws = true, tls = , vmess-aead = true, ws-path = /2jLawPUqb4le83LAqUg, ws-headers = Host:"pokh.torii-leather.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9,❔XX | 🟢 | vmess | @Hope_Net | 10
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9,❔XX | 🟢 | vmess | @Hope_Net | 10
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9,❔XX | 🟢 | vmess | @Hope_Net | 10
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
