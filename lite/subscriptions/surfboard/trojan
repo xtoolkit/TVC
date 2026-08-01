@@ -13,10 +13,12 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 ❔XX | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, Hkdcrtc-e.catcat321.com, 20041, password = ba07a8af-5544-48ac-ab62-3b6c00a44fa6, udp-delay = true, skip-cert-verify = true, sni = de.catxstar.com, ws = false
 ❔XX | 🔴 | trojan | @oneclickvpnkeys | 6 = trojan, 188.114.97.6, 443, password = MITIVPN, udp-delay = true, skip-cert-verify = false, sni = usa-i--MiTiVPN---MiTiVPN-7.aPp-cLoud.IR, ws = false
+❔XX | 🔴 | trojan | @v2ray_vpn_ir | 1 = trojan, millionaire.levikogjgfdd.ir, 443, password = 521314, udp-delay = true, skip-cert-verify = false, sni = tjplay.lxdxo.kdns.fr, ws = false
+❔XX | 🔴 | trojan | @v2ray_vpn_ir | 2 = trojan, 6r6e6e6ryrfyfyydur6r6f6r6r6r6d6d6e6s6d6s6d7d7d7e6s.poki-pakipon.ir, 41464, password = uRkZYGid1r, udp-delay = true, skip-cert-verify = true, sni = rd.autos.yahoo.com:40069, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🔴 | trojan | @v2ray_vpn_ir | 1,❔XX | 🔴 | trojan | @v2ray_vpn_ir | 2
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🔴 | trojan | @v2ray_vpn_ir | 1,❔XX | 🔴 | trojan | @v2ray_vpn_ir | 2
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🔴 | trojan | @v2ray_vpn_ir | 1,❔XX | 🔴 | trojan | @v2ray_vpn_ir | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
