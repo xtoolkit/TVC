@@ -112,13 +112,14 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @shh_proxy | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇷🇺RU | 🔴 | vless | @proxy_kafee | 2",
-                "🇹🇷TR | 🔴 | vless | @proxy_kafee | 3",
+                "🇷🇺RU | 🔴 | vless | @proxy_kafee | 3",
+                "🇹🇷TR | 🔴 | vless | @proxy_kafee | 4",
                 "🇭🇺HU | 🟢 | vless | @V2rayCollector | 30",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 16",
                 "❔XX | 🟢 | vless | @VmessProtocol | 12",
                 "❔XX | 🔴 | vless | @lrnbymaa | 0",
-                "❔XX | 🔴 | vless | @ConfigsHUB | 17",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 17",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 18",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 13",
@@ -140,13 +141,14 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @shh_proxy | 0",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇷🇺RU | 🔴 | vless | @proxy_kafee | 2",
-                "🇹🇷TR | 🔴 | vless | @proxy_kafee | 3",
+                "🇷🇺RU | 🔴 | vless | @proxy_kafee | 3",
+                "🇹🇷TR | 🔴 | vless | @proxy_kafee | 4",
                 "🇭🇺HU | 🟢 | vless | @V2rayCollector | 30",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 16",
                 "❔XX | 🟢 | vless | @VmessProtocol | 12",
                 "❔XX | 🔴 | vless | @lrnbymaa | 0",
-                "❔XX | 🔴 | vless | @ConfigsHUB | 17",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 17",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 18",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 13",
@@ -359,7 +361,7 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🔴 | vless | @proxy_kafee | 2",
+            "tag": "🇷🇺RU | 🔴 | vless | @proxy_kafee | 3",
             "type": "vless",
             "server": "status.netraidly.ru",
             "server_port": 40443,
@@ -388,7 +390,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @proxy_kafee | 3",
+            "tag": "🇹🇷TR | 🔴 | vless | @proxy_kafee | 4",
             "type": "vless",
             "server": "45.196.201.129",
             "server_port": 443,
@@ -533,11 +535,11 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 17",
+            "tag": "❔XX | 🟢 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "lv.lorzema.ir",
-            "server_port": 2583,
-            "uuid": "83e13b2f-250f-43e4-8257-486c341ffb81",
+            "server": "45.196.201.6",
+            "server_port": 443,
+            "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -547,7 +549,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.yahoo.com",
+                "server_name": "storage.yandex.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -556,16 +558,38 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "noT46H0V_OysEB7xcYbl-YdWRpvBQ87C8TOlSwqrcVg",
-                    "short_id": "99a46066104c46f9"
+                    "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
+                    "short_id": "c6ef72e4635d15a5"
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "45.196.201.108",
+            "server_port": 443,
+            "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
-            "transport": {
-                "type": "grpc",
-                "service_name": "yourServiceName",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+            "tls": {
+                "enabled": true,
+                "server_name": "storage.yandex.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
+                    "short_id": "c6ef72e4635d15a5"
+                }
             }
         },
         {
