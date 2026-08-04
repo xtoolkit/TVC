@@ -106,24 +106,26 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
+                "❔XX | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 4",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5"
+                "❔XX | 🟢 | vmess | @Hope_Net | 7",
+                "❔XX | 🟢 | vmess | @Hope_Net | 8"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
+                "❔XX | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
-                "❔XX | 🟢 | vmess | @Hope_Net | 4",
-                "❔XX | 🟢 | vmess | @Hope_Net | 5"
+                "❔XX | 🟢 | vmess | @Hope_Net | 7",
+                "❔XX | 🟢 | vmess | @Hope_Net | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,7 +148,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
+            "tag": "❔XX | 🟢 | vmess | @v2ray_outlineir | 0",
             "type": "vmess",
             "server": "146.59.147.250",
             "server_port": 29776,
@@ -170,6 +172,23 @@
             "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 64,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -238,11 +257,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 4",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 7",
             "type": "vmess",
-            "server": "zula.ir",
-            "server_port": 2096,
-            "uuid": "a8205f07-37bf-4882-acff-88c83c5695fa",
+            "server": "38.99.82.128",
+            "server_port": 22324,
+            "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -252,31 +271,14 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kingo.hightechservice.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "kingo.hightechservice.ir"
-                }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 5",
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
             "server": "zula.ir",
             "server_port": 2096,
-            "uuid": "6647660f-9cfb-4ba3-8ca3-6214cfcdb8f0",
+            "uuid": "a8205f07-37bf-4882-acff-88c83c5695fa",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
