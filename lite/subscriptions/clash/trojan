@@ -118,7 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"2----------------------------------------------------3.poki-pakipon.ir","port":62181,"udp":false,"password":"oeaQHjIg021hag3UB1gHR60iA1iaNSs2","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.icloud.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8","type":"trojan","server":"64.94.95.115","port":57142,"udp":false,"password":"kkzh2prsyr2ik47as615","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"❔XX | 🔴 | trojan | @v2ray1_ng | 11","type":"trojan","server":"millionaire.levikogjgfdd.ir","port":443,"udp":false,"password":"521314","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"tjplay.lxdxo.kdns.fr"}
   - {"name":"❔XX | 🔴 | trojan | @VmessProtocol | 10","type":"trojan","server":"104.18.152.246","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmloud.com"}
 proxy-groups:
   - name: MANUAL
@@ -126,7 +127,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '❔XX | 🔴 | trojan | @v2ray1_ng | 11'
       - '❔XX | 🔴 | trojan | @VmessProtocol | 10'
   - name: URL-TEST
     type: url-test
@@ -134,14 +136,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '❔XX | 🔴 | trojan | @v2ray1_ng | 11'
       - '❔XX | 🔴 | trojan | @VmessProtocol | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '❔XX | 🔴 | trojan | @v2ray1_ng | 11'
       - '❔XX | 🔴 | trojan | @VmessProtocol | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
