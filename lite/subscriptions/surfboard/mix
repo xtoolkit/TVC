@@ -11,15 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 9 = trojan, large-baboon.rooster465.autos, 443, password = ND91608427, udp-delay = true, skip-cert-verify = false, ws = false
-🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 10 = trojan, classic-gator.rooster465.autos, 443, password = ND91608427, udp-delay = true, skip-cert-verify = false, ws = false
+🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, 54.93.65.133, 443, password = ND91608427, udp-delay = true, skip-cert-verify = false, sni = next-turkey.rooster465.autos, ws = false
 ❔XX | 🔴 | trojan | @VmessProtocol | 10 = trojan, 104.18.152.246, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmloud.com, ws = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 0 = vmess, mmjp11.micloud.buzz, 46011, username = e0affd30-6517-4f32-a2bd-71faab70b40a, ws = true, tls = , vmess-aead = true, ws-path = /zh-cn, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 9,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 10,❔XX | 🔴 | trojan | @VmessProtocol | 10,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 0
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 9,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 10,❔XX | 🔴 | trojan | @VmessProtocol | 10,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 0
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 9,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 10,❔XX | 🔴 | trojan | @VmessProtocol | 10,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 0
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🔴 | trojan | @VmessProtocol | 10,❔XX | 🟢 | vmess | @yaney_01 | 4
+URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🔴 | trojan | @VmessProtocol | 10,❔XX | 🟢 | vmess | @yaney_01 | 4
+FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🔴 | trojan | @VmessProtocol | 10,❔XX | 🟢 | vmess | @yaney_01 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
