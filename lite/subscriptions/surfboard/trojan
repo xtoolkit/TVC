@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 7 = trojan, careful-tadpole.rooster465.autos, 443, password = ND91608427, udp-delay = true, skip-cert-verify = false, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 7 = trojan, careful-tadpole.rooster465.autos, 443, password = ND91608427, udp-delay = true, skip-cert-verify = false, ws = false
 ❔XX | 🔴 | trojan | @VmessProtocol | 10 = trojan, 104.18.152.246, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmloud.com, ws = false
+❔XX | 🟢 | trojan | @ConfigsHUB | 18 = trojan, www.visa.com.sg, 8443, password = Watashi_VPN, udp-delay = true, skip-cert-verify = false, sni = t-watashi-r-jacket-o-people-jan.watashi-java.ir, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🔴 | trojan | @VmessProtocol | 10
-URL-TEST = url-test,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🔴 | trojan | @VmessProtocol | 10
-FALLBACK = fallback,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🔴 | trojan | @VmessProtocol | 10
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🔴 | trojan | @VmessProtocol | 10,❔XX | 🟢 | trojan | @ConfigsHUB | 18
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🔴 | trojan | @VmessProtocol | 10,❔XX | 🟢 | trojan | @ConfigsHUB | 18
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🔴 | trojan | @VmessProtocol | 10,❔XX | 🟢 | trojan | @ConfigsHUB | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
