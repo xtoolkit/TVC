@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 9 = trojan, relaxed-gull.rooster465.autos, 443, password = ND91608427, udp-delay = true, skip-cert-verify = true, ws = false
-🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 10 = trojan, 15.237.137.197, 443, password = ND91608427, udp-delay = true, skip-cert-verify = false, sni = fancy-skink.rooster465.autos, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 9 = trojan, relaxed-gull.rooster465.autos, 443, password = ND91608427, udp-delay = true, skip-cert-verify = true, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 10 = trojan, 15.237.137.197, 443, password = ND91608427, udp-delay = true, skip-cert-verify = false, sni = fancy-skink.rooster465.autos, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 16 = trojan, 188.114.96.3, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 9,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 10
-URL-TEST = url-test,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 9,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 10
-FALLBACK = fallback,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 9,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 10
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 9,❔XX | 🔴 | trojan | @oneclickvpnkeys | 10,❔XX | 🔴 | trojan | @ConfigsHUB | 16
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 9,❔XX | 🔴 | trojan | @oneclickvpnkeys | 10,❔XX | 🔴 | trojan | @ConfigsHUB | 16
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 9,❔XX | 🔴 | trojan | @oneclickvpnkeys | 10,❔XX | 🔴 | trojan | @ConfigsHUB | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
