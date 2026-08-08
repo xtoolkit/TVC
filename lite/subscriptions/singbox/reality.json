@@ -111,16 +111,17 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @shh_proxy | 2",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇪🇸ES | 🔴 | vless | @proxy_kafee | 2",
+                "🇫🇮FI | 🔴 | vless | @proxy_kafee | 2",
                 "🇳🇱NL | 🔴 | vless | @V2rayCollector | 29",
                 "❔XX | 🔴 | vless | @Outline_Vpn | 17",
                 "❔XX | 🔴 | vless | @prrofile_purple | 117",
-                "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 10",
-                "❔XX | 🟢 | vless | @v2ray1_ng | 11",
+                "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 10",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 16",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 17",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🟢 | vless | @Capoit | 9",
                 "❔XX | 🟢 | vless | @Capoit | 10",
+                "❔XX | 🟢 | vless | @Capoit | 11",
                 "❔XX | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🔴 | vless | @flyv2ray | 3",
                 "❔XX | 🟢 | vless | @mehrosaboran | 11",
@@ -138,16 +139,17 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @shh_proxy | 2",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇪🇸ES | 🔴 | vless | @proxy_kafee | 2",
+                "🇫🇮FI | 🔴 | vless | @proxy_kafee | 2",
                 "🇳🇱NL | 🔴 | vless | @V2rayCollector | 29",
                 "❔XX | 🔴 | vless | @Outline_Vpn | 17",
                 "❔XX | 🔴 | vless | @prrofile_purple | 117",
-                "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 10",
-                "❔XX | 🟢 | vless | @v2ray1_ng | 11",
+                "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 10",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 16",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 17",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🟢 | vless | @Capoit | 9",
                 "❔XX | 🟢 | vless | @Capoit | 10",
+                "❔XX | 🟢 | vless | @Capoit | 11",
                 "❔XX | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🔴 | vless | @flyv2ray | 3",
                 "❔XX | 🟢 | vless | @mehrosaboran | 11",
@@ -328,7 +330,7 @@
             }
         },
         {
-            "tag": "🇪🇸ES | 🔴 | vless | @proxy_kafee | 2",
+            "tag": "🇫🇮FI | 🔴 | vless | @proxy_kafee | 2",
             "type": "vless",
             "server": "170.168.97.5",
             "server_port": 8443,
@@ -465,11 +467,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 10",
+            "tag": "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 10",
             "type": "vless",
-            "server": "185.204.171.107",
+            "server": "files.noneok.com",
             "server_port": 443,
-            "uuid": "eda6b321-aa59-4b1e-b823-3616af020b4a",
+            "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -479,7 +481,43 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "play.google.com",
+                "server_name": "files.noneok.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g",
+                    "short_id": "d3b394558cfe0266"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "api.v1.StreamService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @ConfigsHUB | 16",
+            "type": "vless",
+            "server": "45.77.139.80",
+            "server_port": 443,
+            "uuid": "dfbbc8de-8a4f-407d-8069-6de38d83c4e1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.survive.org.uk",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -488,17 +526,17 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "8Cho6K3KB6Aoty9x_TCAbY3yv7m-ToCHqaKkZTxR3jM",
-                    "short_id": "d6c3c9"
+                    "public_key": "gZLTRrh9Z0TIvMoXHB7_ih3EN6Zn0IuLstFFZ0y7Ryc",
+                    "short_id": "cc61d4"
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @v2ray1_ng | 11",
+            "tag": "❔XX | 🟢 | vless | @ConfigsHUB | 17",
             "type": "vless",
-            "server": "45.92.219.204",
-            "server_port": 8088,
-            "uuid": "06f86f1b-1fa0-437e-9e5d-8f8cf27bdf96",
+            "server": "64.49.38.6",
+            "server_port": 993,
+            "uuid": "e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -508,17 +546,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "play.google.com",
+                "server_name": "download.nvidia.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "ios"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "6m_clJWpXHndi176bB428JqroczCuJVMyhfMGuI9wRI",
-                    "short_id": "11e9"
+                    "public_key": "JeVpfwIwteGa8xfysPJUzrbHgmOPyLGomRqyH8Pi7W0",
+                    "short_id": ""
                 }
             }
         },
@@ -581,7 +619,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @Capoit | 9",
+            "tag": "❔XX | 🟢 | vless | @Capoit | 10",
             "type": "vless",
             "server": "45.196.201.61",
             "server_port": 443,
@@ -610,7 +648,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @Capoit | 10",
+            "tag": "❔XX | 🟢 | vless | @Capoit | 11",
             "type": "vless",
             "server": "45.196.201.129",
             "server_port": 443,
