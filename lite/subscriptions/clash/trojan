@@ -118,35 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"relaxed-gull.rooster465.autos","port":443,"udp":false,"password":"ND91608427","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"15.237.137.197","port":443,"udp":false,"password":"ND91608427","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"fancy-skink.rooster465.autos"}
-  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 16","type":"trojan","server":"188.114.96.3","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"Nl1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe"}
+  - {"name":"🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"86.106.84.195","port":53261,"udp":false,"password":"y3b03zx3tznhyo538p4c","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"speedtest.tinkoff.ru"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"relaxed-gull.rooster465.autos","port":443,"udp":false,"password":"ND91608427","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 9'
+      - '🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 9'
+      - '🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 9'
+      - '🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 10'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 16'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
