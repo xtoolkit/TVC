@@ -111,16 +111,18 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @shh_proxy | 2",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇪🇸ES | 🔴 | vless | @proxy_kafee | 3",
+                "🇪🇸ES | 🔴 | vless | @proxy_kafee | 4",
                 "🇬🇧GB | 🟢 | vless | @V2rayCollector | 35",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 16",
                 "❔XX | 🔴 | vless | @prrofile_purple | 123",
                 "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 10",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 10",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 15",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @Capoit | 10",
                 "❔XX | 🟢 | vless | @Capoit | 11",
+                "❔XX | 🔴 | vless | @FreakConfig | 11",
                 "❔XX | 🟢 | vless | @flyv2ray | 1",
                 "❔XX | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🟢 | vless | @mehrosaboran | 10",
@@ -138,16 +140,18 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @shh_proxy | 2",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇪🇸ES | 🔴 | vless | @proxy_kafee | 3",
+                "🇪🇸ES | 🔴 | vless | @proxy_kafee | 4",
                 "🇬🇧GB | 🟢 | vless | @V2rayCollector | 35",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 16",
                 "❔XX | 🔴 | vless | @prrofile_purple | 123",
                 "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 10",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 10",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 15",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @Capoit | 10",
                 "❔XX | 🟢 | vless | @Capoit | 11",
+                "❔XX | 🔴 | vless | @FreakConfig | 11",
                 "❔XX | 🟢 | vless | @flyv2ray | 1",
                 "❔XX | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🟢 | vless | @mehrosaboran | 10",
@@ -328,7 +332,7 @@
             }
         },
         {
-            "tag": "🇪🇸ES | 🔴 | vless | @proxy_kafee | 3",
+            "tag": "🇪🇸ES | 🔴 | vless | @proxy_kafee | 4",
             "type": "vless",
             "server": "170.168.97.5",
             "server_port": 8443,
@@ -523,6 +527,42 @@
             }
         },
         {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 15",
+            "type": "vless",
+            "server": "88.216.220.88",
+            "server_port": 443,
+            "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "files.noneok.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "q3kOYHdjmqWLLYj8oikvna1bTjofk45ktegGaJE611g",
+                    "short_id": "d3b394558cfe0266"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "api.v1.StreamService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "❔XX | 🔴 | vless | @Capital_NET | 44",
             "type": "vless",
             "server": "ec76.kiava.fun",
@@ -635,6 +675,35 @@
                     "enabled": true,
                     "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
                     "short_id": "c6ef72e4635d15a5"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @FreakConfig | 11",
+            "type": "vless",
+            "server": "185.137.232.194",
+            "server_port": 443,
+            "uuid": "7aa508f3-176f-0024-add3-646af94d6288",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "aispir.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+                    "short_id": "8ba6e72ee60667f6"
                 }
             }
         },
