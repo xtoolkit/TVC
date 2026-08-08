@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, 64.94.95.115, 57142, password = kkzh2prsyr2ik47as615, udp-delay = true, skip-cert-verify = true, sni = static.rutube.ru, ws = false
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 9 = trojan, 86.106.84.195, 53261, password = y3b03zx3tznhyo538p4c, udp-delay = true, skip-cert-verify = true, sni = speedtest.tinkoff.ru, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, 64.94.95.115, 57142, password = kkzh2prsyr2ik47as615, udp-delay = true, skip-cert-verify = true, sni = static.rutube.ru, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🔴 | trojan | @oneclickvpnkeys | 9
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🔴 | trojan | @oneclickvpnkeys | 9
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🔴 | trojan | @oneclickvpnkeys | 9
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
