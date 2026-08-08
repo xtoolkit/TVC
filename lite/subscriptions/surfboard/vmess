@@ -12,12 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, 104.19.38.88, 2086, username = e9e3cc13-db48-4cc1-8c24-7626439a5339, ws = true, tls = , vmess-aead = false, ws-path = github.com/Alvin9999, ws-headers = Host:"ip5-4.freegradely.xyz", skip-cert-verify = true, tfo = false
-❔XX | 🟢 | vmess | @Hope_Net | 12 = vmess, 172.67.171.43, 80, username = b79a6959-6feb-43ba-b3c7-f1afae9ea32c, ws = true, tls = , vmess-aead = false, ws-path = /, ws-headers = Host:"Uk2.vmess.site.", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 10 = vmess, 172.64.233.15, 2086, username = e9e3cc13-db48-4cc1-8c24-7626439a5339, ws = true, tls = , vmess-aead = false, ws-path = github.com/Alvin9999, ws-headers = Host:"ip2.1457230.xyz", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, 104.208.66.126, 10003, username = 9b3a6753-2f33-4e0b-bb2e-84e5076d445c, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12
-URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12
-FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | vmess | @Hope_Net | 12
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 10,❔XX | 🟢 | vmess | @Hope_Net | 11
+URL-TEST = url-test,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 10,❔XX | 🟢 | vmess | @Hope_Net | 11
+FALLBACK = fallback,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 10,❔XX | 🟢 | vmess | @Hope_Net | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
