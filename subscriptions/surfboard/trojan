@@ -14,11 +14,12 @@ DIRECT = direct
 ❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, discrete-basilisk.rooster465.autos, 443, password = ND91608427, udp-delay = true, skip-cert-verify = false, ws = false
 ❔XX | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 151.101.56.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = true, sni = default.fastly.com, ws = false
 ❔XX | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 151.101.56.172, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = true, sni = default.fastly.com, ws = false
+🚩CF | 🔴 | trojan | @v2ray1_ng | 10 = trojan, 172.67.149.60, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 🚩CF | 🔴 | trojan | @VmessProtocol | 4 = trojan, 104.16.174.121, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @VmessProtocol | 4
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @VmessProtocol | 4
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @VmessProtocol | 4
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @v2ray1_ng | 10,🚩CF | 🔴 | trojan | @VmessProtocol | 4
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @v2ray1_ng | 10,🚩CF | 🔴 | trojan | @VmessProtocol | 4
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @v2ray1_ng | 10,🚩CF | 🔴 | trojan | @VmessProtocol | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
