@@ -126,7 +126,11 @@ proxies:
   - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"151.101.56.7","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"default.fastly.com"}
   - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"151.101.56.172","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"default.fastly.com"}
   - {"name":"🚩CF | 🔴 | trojan | @VmessProtocol | 4","type":"trojan","server":"104.16.174.121","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
-  - {"name":"🚩CF | 🔴 | trojan | @ConfigsHUB | 3","type":"trojan","server":"172.67.149.60","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 1","type":"trojan","server":"138.124.90.40","port":26030,"udp":false,"password":"ac8TgkjDb6","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.amazon.com"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 4","type":"trojan","server":"138.124.90.40","port":12591,"udp":false,"password":"zzkgsr3jAG","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.apple.com"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 8","type":"trojan","server":"138.124.90.40","port":13751,"udp":false,"password":"uiUuLPcDqU","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.apple.com"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 10","type":"trojan","server":"138.124.90.40","port":37600,"udp":false,"password":"PY3pHlWGsN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.amazon.com"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 13","type":"trojan","server":"138.124.90.40","port":52556,"udp":false,"password":"fQkGQafiTd","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"aws.amazon.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -139,7 +143,11 @@ proxy-groups:
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 3'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 4'
-      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 3'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 1'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 4'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 8'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 10'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -152,7 +160,11 @@ proxy-groups:
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 3'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 4'
-      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 3'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 1'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 4'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 8'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 10'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -164,7 +176,11 @@ proxy-groups:
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 3'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🚩CF | 🔴 | trojan | @VmessProtocol | 4'
-      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 3'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 1'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 4'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 8'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 10'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 13'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
