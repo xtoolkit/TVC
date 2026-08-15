@@ -131,9 +131,9 @@
                 "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 5",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 6",
-                "❔XX | 🔴 | trojan | @oneclickvpnkeys | 7",
-                "❔XX | 🔴 | vless | @Outline_Vpn | 15",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 7",
+                "🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 8",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
                 "❔XX | 🟢 | vless | @prrofile_purple | 124",
                 "🇺🇸US | 🟢 | vless | @prrofile_purple | 125",
                 "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 14",
@@ -208,9 +208,9 @@
                 "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 5",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 6",
-                "❔XX | 🔴 | trojan | @oneclickvpnkeys | 7",
-                "❔XX | 🔴 | vless | @Outline_Vpn | 15",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 7",
+                "🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 8",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
                 "❔XX | 🟢 | vless | @prrofile_purple | 124",
                 "🇺🇸US | 🟢 | vless | @prrofile_purple | 125",
                 "❔XX | 🔴 | vless | @v2rayNG_Matsuri | 14",
@@ -811,9 +811,26 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 6",
+            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 7",
+            "type": "vmess",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇮🇪IE | 🔴 | trojan | @oneclickvpnkeys | 8",
             "type": "trojan",
-            "server": "one-quail.rooster465.autos",
+            "server": "worthy-labrador.rooster465.autos",
             "server_port": 443,
             "password": "AE62539071",
             "multiplex": {
@@ -823,26 +840,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | trojan | @oneclickvpnkeys | 7",
-            "type": "trojan",
-            "server": "151.101.56.0",
-            "server_port": 443,
-            "password": "MiTiVPN",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/s-w@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN\/---@MiTiVPN---@MiTiVPN",
-                "headers": {
-                    "Host": "default.fastly.com"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @Outline_Vpn | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
             "type": "vless",
             "server": "108.162.195.58",
             "server_port": 443,
@@ -1591,6 +1589,42 @@
         {
             "tag": "❔XX | 🔴 | vless | @FreakConfig | 12",
             "type": "vless",
+            "server": "88.218.44.5",
+            "server_port": 8443,
+            "uuid": "adf1fac3-cf57-ff40-574c-cf514457eb3f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl.kaspersky.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "TunService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @FreakConfig | 13",
+            "type": "vless",
             "server": "a2.arshia-nova.ir",
             "server_port": 443,
             "uuid": "81df88b4-ab24-4510-dc5f-7ebdbf24ff0a",
@@ -1617,20 +1651,6 @@
                 "headers": {
                     "Host": "ssl.fastly.com"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @FreakConfig | 13",
-            "type": "vless",
-            "server": "13.39.45.65",
-            "server_port": 22222,
-            "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
