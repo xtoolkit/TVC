@@ -119,7 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"one-quail.rooster465.autos","port":443,"udp":false,"password":"AE62539071","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 7","type":"trojan","server":"151.101.56.0","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"default.fastly.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7","type":"trojan","server":"151.101.56.0","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"default.fastly.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 6'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 6'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 6'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
