@@ -106,15 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇳CN | 🟢 | vless | @EliV2ray | 0",
+                "🇷🇺RU | 🟢 | vless | @EliV2ray | 0",
                 "🇩🇪DE | 🟢 | vless | @Parsashonam | 0",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇷🇺RU | 🔴 | vless | @V2rayCollector | 50",
                 "❔XX | 🟢 | vless | @VmessProtocol | 8",
                 "❔XX | 🟢 | vless | @ConfigsHUB | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🔴 | vless | @FreakConfig | 12",
+                "❔XX | 🟢 | vless | @FreakConfig | 10",
                 "❔XX | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
@@ -126,15 +127,16 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇳CN | 🟢 | vless | @EliV2ray | 0",
+                "🇷🇺RU | 🟢 | vless | @EliV2ray | 0",
                 "🇩🇪DE | 🟢 | vless | @Parsashonam | 0",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
+                "🇷🇺RU | 🔴 | vless | @V2rayCollector | 50",
                 "❔XX | 🟢 | vless | @VmessProtocol | 8",
                 "❔XX | 🟢 | vless | @ConfigsHUB | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
-                "❔XX | 🔴 | vless | @FreakConfig | 12",
+                "❔XX | 🟢 | vless | @FreakConfig | 10",
                 "❔XX | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
@@ -162,7 +164,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vless | @EliV2ray | 0",
+            "tag": "🇷🇺RU | 🟢 | vless | @EliV2ray | 0",
             "type": "vless",
             "server": "45.131.212.22",
             "server_port": 443,
@@ -285,6 +287,42 @@
             }
         },
         {
+            "tag": "🇷🇺RU | 🔴 | vless | @V2rayCollector | 50",
+            "type": "vless",
+            "server": "176.109.106.34",
+            "server_port": 9888,
+            "uuid": "130e6aab-9eba-441e-9021-22cbccc72832",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+                    "short_id": "aabbccdd"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc-tunnel",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "❔XX | 🟢 | vless | @VmessProtocol | 8",
             "type": "vless",
             "server": "159.195.46.178",
@@ -401,11 +439,11 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @FreakConfig | 12",
+            "tag": "❔XX | 🟢 | vless | @FreakConfig | 10",
             "type": "vless",
-            "server": "88.218.44.5",
-            "server_port": 8443,
-            "uuid": "adf1fac3-cf57-ff40-574c-cf514457eb3f",
+            "server": "EN1.ZAG-FA.SOLVETA.IR",
+            "server_port": 9982,
+            "uuid": "b2a21714-fd64-461f-9364-49ea2ddc8b59",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -415,25 +453,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "dl.kaspersky.com",
+                "server_name": "play.google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "edge"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4",
-                    "short_id": ""
+                    "public_key": "mPYP_E1bJqvNXD-uKRU4QFyXk6B9lweXX5cqgbq3l3M",
+                    "short_id": "16b3713dce93ee0c"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "TunService",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
