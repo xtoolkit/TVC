@@ -173,8 +173,8 @@
                 "❔XX | 🟢 | vless | @VmessProtocol | 0",
                 "❔XX | 🟢 | vless | @VmessProtocol | 2",
                 "❔XX | 🟢 | vless | @VmessProtocol | 8",
-                "❔XX | 🟢 | vless | @ConfigsHUB | 0",
-                "❔XX | 🔴 | vless | @ConfigsHUB | 6",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 4",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 7",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
                 "❔XX | 🔴 | vless | @Capital_NET | 9",
@@ -296,8 +296,8 @@
                 "❔XX | 🟢 | vless | @VmessProtocol | 0",
                 "❔XX | 🟢 | vless | @VmessProtocol | 2",
                 "❔XX | 🟢 | vless | @VmessProtocol | 8",
-                "❔XX | 🟢 | vless | @ConfigsHUB | 0",
-                "❔XX | 🔴 | vless | @ConfigsHUB | 6",
+                "❔XX | 🟢 | vless | @ConfigsHUB | 4",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 7",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
                 "❔XX | 🔴 | vless | @Capital_NET | 9",
@@ -2416,11 +2416,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @ConfigsHUB | 0",
+            "tag": "❔XX | 🟢 | vless | @ConfigsHUB | 4",
             "type": "vless",
-            "server": "193.233.126.82",
-            "server_port": 9443,
-            "uuid": "37a098ab-8fec-4352-8ee8-294ae5bca68f",
+            "server": "nl-04.vacvps.com",
+            "server_port": 443,
+            "uuid": "0f6ecc1c-4cd4-4f69-970e-a385d9c5afe3",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -2430,7 +2430,36 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.amd.com",
+                "server_name": "nl-04.vacvps.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "LyVBHJ_qK2ron24Qfw_mhZ8n-T94xHCzXPrFM02EaQw",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 7",
+            "type": "vless",
+            "server": "31.76.4.103",
+            "server_port": 443,
+            "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "eu-central.cendora.ru",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -2439,45 +2468,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "Te5lrfzw_MytTzQJB92DhWw7fk1qTK3mhzz7Bz41gVc",
-                    "short_id": "0240e83f65a25e"
+                    "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+                    "short_id": "00bca5982f82d083"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 6",
-            "type": "vless",
-            "server": "gr2.levikogjgfdd.ir",
-            "server_port": 443,
-            "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "api.noneok.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w",
-                    "short_id": "1ea59febb8d4fc8e"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "api.v1.StreamService",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
