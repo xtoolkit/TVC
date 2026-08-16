@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 6 = trojan, 18.198.1.232, 443, password = AE62539071, udp-delay = true, skip-cert-verify = false, sni = teaching-gnu.rooster465.autos, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 6 = trojan, 18.198.1.232, 443, password = AE62539071, udp-delay = true, skip-cert-verify = false, sni = teaching-gnu.rooster465.autos, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 15 = trojan, adapting-giraffe.rooster465.autos, 443, password = FH72359861, udp-delay = true, skip-cert-verify = false, sni = adapting-giraffe.rooster465.autos, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 6
-URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 6
-FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 6
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🔴 | trojan | @ConfigsHUB | 15
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🔴 | trojan | @ConfigsHUB | 15
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🔴 | trojan | @ConfigsHUB | 15
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
