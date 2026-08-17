@@ -117,6 +117,7 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 13",
+                "❔XX | 🔴 | vless | @FreakConfig | 11",
                 "❔XX | 🔴 | vless | @FreakConfig | 12",
                 "❔XX | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -138,6 +139,7 @@
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 13",
+                "❔XX | 🔴 | vless | @FreakConfig | 11",
                 "❔XX | 🔴 | vless | @FreakConfig | 12",
                 "❔XX | 🔴 | vless | @flyv2ray | 2",
                 "❔XX | 🔴 | vless | @kiava | 83",
@@ -490,7 +492,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @FreakConfig | 12",
+            "tag": "❔XX | 🔴 | vless | @FreakConfig | 11",
             "type": "vless",
             "server": "57.131.42.58",
             "server_port": 8008,
@@ -516,6 +518,42 @@
                     "public_key": "yGB6HD9OYiD77YWTH1YxcG9yIYkyeEYOEcHL-WnwQn8",
                     "short_id": "5f9a"
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @FreakConfig | 12",
+            "type": "vless",
+            "server": "88.218.44.5",
+            "server_port": 8443,
+            "uuid": "adf1fac3-cf57-ff40-574c-cf514457eb3f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl.kaspersky.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "TunService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
