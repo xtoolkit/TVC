@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | trojan | @ConfigsHUB | 18","type":"trojan","server":"assets.fiverr.com","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 14","type":"trojan","server":"ethical-raccoon.rooster465.autos","port":443,"udp":false,"password":"PQ05174892","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":""}
+  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 15","type":"trojan","server":"natural-swan.rooster465.autos","port":443,"udp":false,"password":"FH72359861","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 18'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 14'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 18'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 14'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 18'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 14'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 15'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
