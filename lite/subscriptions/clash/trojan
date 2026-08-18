@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"3.120.70.66","port":443,"udp":false,"password":"FH72359861","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"renewed-porpoise.rooster465.autos"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"humane-bird.rooster465.autos","port":443,"udp":false,"password":"PQ05174892","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"nl-vk.tkbvpcompany.site","port":443,"udp":false,"password":"SEYnpOitNLndBhDtkZyeAShl","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
