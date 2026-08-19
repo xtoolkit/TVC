@@ -118,31 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 8","type":"trojan","server":"47.131.229.80","port":443,"udp":false,"password":"AE62539071","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"elegant-marten.rooster465.autos"}
-  - {"name":"🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"13.212.77.228","port":443,"udp":false,"password":"FH72359861","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"probable-weasel.rooster465.autos"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 8","type":"trojan","server":"47.131.229.80","port":443,"udp":false,"password":"AE62539071","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"elegant-marten.rooster465.autos"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"13.212.77.228","port":443,"udp":false,"password":"FH72359861","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"probable-weasel.rooster465.autos"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 8'
-      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 9'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 9'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 8'
-      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 9'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 8'
-      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 9'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 9'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
