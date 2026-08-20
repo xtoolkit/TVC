@@ -111,14 +111,14 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇫🇮FI | 🟢 | vless | @proxy_kafee | 6",
-                "🇳🇱NL | 🔴 | vless | @V2rayCollector | 34",
+                "🇳🇱NL | 🔴 | vless | @V2rayCollector | 50",
+                "❔XX | 🔴 | vless | @Outline_Vpn | 14",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 15",
                 "❔XX | 🟢 | vless | @prrofile_purple | 115",
                 "❔XX | 🟢 | vless | @prrofile_purple | 116",
-                "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 9",
-                "❔XX | 🔴 | vless | @ConfigsHUB | 17",
+                "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
-                "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
                 "❔XX | 🟢 | vless | @nofiltering2 | 18"
@@ -133,14 +133,14 @@
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇫🇮FI | 🟢 | vless | @proxy_kafee | 6",
-                "🇳🇱NL | 🔴 | vless | @V2rayCollector | 34",
+                "🇳🇱NL | 🔴 | vless | @V2rayCollector | 50",
+                "❔XX | 🔴 | vless | @Outline_Vpn | 14",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 15",
                 "❔XX | 🟢 | vless | @prrofile_purple | 115",
                 "❔XX | 🟢 | vless | @prrofile_purple | 116",
-                "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 9",
-                "❔XX | 🔴 | vless | @ConfigsHUB | 17",
+                "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
-                "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
                 "❔XX | 🟢 | vless | @nofiltering2 | 18"
@@ -318,7 +318,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @V2rayCollector | 34",
+            "tag": "🇳🇱NL | 🔴 | vless | @V2rayCollector | 50",
             "type": "vless",
             "server": "185.141.227.153",
             "server_port": 9002,
@@ -354,11 +354,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @Outline_Vpn | 15",
+            "tag": "❔XX | 🔴 | vless | @Outline_Vpn | 14",
             "type": "vless",
-            "server": "205.237.109.215",
-            "server_port": 448,
-            "uuid": "70df38ff-5a22-4ffc-a3f9-1725515e0ea5",
+            "server": "api.noneok.com",
+            "server_port": 443,
+            "uuid": "a8e3155b-ceb1-4fcb-bc0c-2e77ec005401",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -368,7 +368,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.samsung.com",
+                "server_name": "api.noneok.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -377,8 +377,44 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "IuB1jsALd-wN_8jRTGxVLBbVG5eSxNbOXjvFyZlm3UU",
-                    "short_id": "113241ad01e99a2d"
+                    "public_key": "S8O8R938N960cpQfIIDXsJTxeGAkbVv6PlIqP0-d30w",
+                    "short_id": "1ea59febb8d4fc8e"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "api.v1.StreamService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @Outline_Vpn | 15",
+            "type": "vless",
+            "server": "144.31.0.34",
+            "server_port": 7443,
+            "uuid": "1fef5248-fdd2-40d6-b3b9-6c33d4e74724",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "_custom_",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8wD0IhR27ftD5LyJDq9CaFzi6DgA4vFtB-UP6QIdWVc",
+                    "short_id": "e8ca5079a5e91481"
                 }
             }
         },
@@ -441,7 +477,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 9",
+            "tag": "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 10",
             "type": "vless",
             "server": "147.45.50.24",
             "server_port": 13868,
@@ -466,35 +502,6 @@
                     "enabled": true,
                     "public_key": "sgpya-5ohMKCjzyrDe4RWz7b8O9XegDzQ88oHCV45Gk",
                     "short_id": "e852dc"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 17",
-            "type": "vless",
-            "server": "turkey.blueheartz.ir",
-            "server_port": 27632,
-            "uuid": "71418563-ee29-48ea-82c6-206c15a44c1c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "play-fe.googleapis.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tge1_umgZzzbe243U0RmtmHKF9LNp-Hg6xg0KV7Zv1c",
-                    "short_id": "405edc07"
                 }
             }
         },
@@ -528,7 +535,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @Capital_NET | 45",
+            "tag": "❔XX | 🔴 | vless | @Capital_NET | 45",
             "type": "vless",
             "server": "four.felinetest.site",
             "server_port": 443,
