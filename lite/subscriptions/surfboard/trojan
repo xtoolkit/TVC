@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 10 = trojan, 13.39.249.40, 443, password = AE62539071, udp-delay = true, skip-cert-verify = false, sni = one-quail.rooster465.autos, ws = false
 🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 11 = trojan, moral-dolphin.rooster465.autos, 443, password = PQ05174892, udp-delay = true, skip-cert-verify = false, ws = false
+🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 12 = trojan, 172.232.42.44, 5577, password = fg20mtCFHy, udp-delay = true, skip-cert-verify = true, sni = gtyxz.southbyte.xyz, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 10,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 11
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 10,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 11
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 10,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 11
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 11,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 12
+URL-TEST = url-test,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 11,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 12
+FALLBACK = fallback,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 11,🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 12
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
