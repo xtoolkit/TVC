@@ -119,7 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"35.156.115.70","port":443,"udp":false,"password":"PQ05174892","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"fine-elf.rooster465.autos"}
-  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"89.39.70.238","port":443,"udp":false,"password":"AE62539071","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"present-warthog.rooster465.autos"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"89.39.70.238","port":443,"udp":false,"password":"AE62539071","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"present-warthog.rooster465.autos"}
+  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 7","type":"trojan","server":"3.124.187.220","port":443,"udp":false,"password":"PQ05174892","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"rapid-firefly.rooster465.autos"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
-      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 7'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
-      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 7'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
-      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 7'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
