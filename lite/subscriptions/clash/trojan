@@ -118,31 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 7","type":"trojan","server":"89.39.70.9","port":443,"udp":false,"password":"AE62539071","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"whole-woodcock.rooster465.autos"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 8","type":"trojan","server":"35.156.115.70","port":443,"udp":false,"password":"PQ05174892","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"fine-elf.rooster465.autos"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7","type":"trojan","server":"pretty-mollusk.rooster465.autos","port":443,"udp":false,"password":"EQ30679154","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8","type":"trojan","server":"89.39.70.9","port":443,"udp":false,"password":"AE62539071","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"whole-woodcock.rooster465.autos"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 7'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 7'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 7'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
