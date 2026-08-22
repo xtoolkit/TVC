@@ -115,6 +115,7 @@
                 "❔XX | 🟢 | vless | @proxy_kafee | 1",
                 "❔XX | 🔴 | vless | @proxy_kafee | 2",
                 "❔XX | 🔴 | vless | @v2logy | 6",
+                "❔XX | 🔴 | vless | @V2rayCollector | 9",
                 "❔XX | 🟢 | vless | @V2rayCollector | 10",
                 "❔XX | 🟢 | vless | @V2rayCollector | 11",
                 "❔XX | 🟢 | vless | @V2rayCollector | 12",
@@ -128,7 +129,6 @@
                 "❔XX | 🟢 | vless | @V2rayCollector | 40",
                 "❔XX | 🟢 | vless | @V2rayCollector | 42",
                 "❔XX | 🟢 | vless | @V2rayCollector | 43",
-                "❔XX | 🟢 | vless | @V2rayCollector | 49",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 1",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 3",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 5",
@@ -163,6 +163,10 @@
                 "❔XX | 🟢 | vless | @v2ray1_ng | 7",
                 "❔XX | 🟢 | vless | @VmessProtocol | 2",
                 "❔XX | 🟢 | vless | @VmessProtocol | 4",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 5",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 6",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 7",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vless | @free1_vpn | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
@@ -239,6 +243,7 @@
                 "❔XX | 🟢 | vless | @proxy_kafee | 1",
                 "❔XX | 🔴 | vless | @proxy_kafee | 2",
                 "❔XX | 🔴 | vless | @v2logy | 6",
+                "❔XX | 🔴 | vless | @V2rayCollector | 9",
                 "❔XX | 🟢 | vless | @V2rayCollector | 10",
                 "❔XX | 🟢 | vless | @V2rayCollector | 11",
                 "❔XX | 🟢 | vless | @V2rayCollector | 12",
@@ -252,7 +257,6 @@
                 "❔XX | 🟢 | vless | @V2rayCollector | 40",
                 "❔XX | 🟢 | vless | @V2rayCollector | 42",
                 "❔XX | 🟢 | vless | @V2rayCollector | 43",
-                "❔XX | 🟢 | vless | @V2rayCollector | 49",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 1",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 3",
                 "❔XX | 🟢 | vless | @Outline_Vpn | 5",
@@ -287,6 +291,10 @@
                 "❔XX | 🟢 | vless | @v2ray1_ng | 7",
                 "❔XX | 🟢 | vless | @VmessProtocol | 2",
                 "❔XX | 🟢 | vless | @VmessProtocol | 4",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 5",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 6",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 7",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 18",
                 "❔XX | 🟢 | vless | @free1_vpn | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 6",
                 "❔XX | 🟢 | vless | @Capital_NET | 8",
@@ -639,6 +647,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @V2rayCollector | 9",
+            "type": "vless",
+            "server": "31.76.84.62",
+            "server_port": 443,
+            "uuid": "791a171e-c0af-4bd7-b8ce-43541c7585db",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "id.pervye.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QZz4tjRkxYsgTZBlRALOQU4O5YnAGtSGkXF8OSX11m8",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ns",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -1018,35 +1062,6 @@
                     "enabled": true,
                     "public_key": "4sT8gYkbYI1RUPlO-SFVpJENKfGgMWoYQpflbcfspkI",
                     "short_id": "4844fb0c077b20b7"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @V2rayCollector | 49",
-            "type": "vless",
-            "server": "br1.levikogjgfdd.ir",
-            "server_port": 443,
-            "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": null
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
-                    "short_id": "c39cc7310a"
                 }
             }
         },
@@ -2054,6 +2069,122 @@
                     "enabled": true,
                     "public_key": "dJDkS3qV0P2GnLUkGBpmeWhu5brRDMVUeBE4ng1WcnQ",
                     "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 5",
+            "type": "vless",
+            "server": "meow-warsaw.nethcloud.top",
+            "server_port": 443,
+            "uuid": "a34b5e88-cf0d-4c01-8199-2d1002d3c787",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.wikihow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": ""
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 6",
+            "type": "vless",
+            "server": "64.188.77.13",
+            "server_port": 443,
+            "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "eu-west.cendora.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0",
+                    "short_id": "dd3ff38418d29d22"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 7",
+            "type": "vless",
+            "server": "2.27.9.209",
+            "server_port": 443,
+            "uuid": "d4d4d103-5074-47e9-96e6-5431f4e35c57",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nodefulcrum.mooo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "IhbpvWBZmJEzDs4eI2zoFmL_a-1J_7Z7Sepyrn7-xF8",
+                    "short_id": "6547735997055a35"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 18",
+            "type": "vless",
+            "server": "85.192.49.151",
+            "server_port": 443,
+            "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "de.servers.gracevpnbuy.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
+                    "short_id": "b91a73752053b039"
                 }
             }
         },
