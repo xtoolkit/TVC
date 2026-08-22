@@ -11,13 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 6 = trojan, xth1trWxty3u5JGt1spEVVJ0M1, , password = , udp-delay = true, skip-cert-verify = true, ws = false
 🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7 = trojan, pretty-mollusk.rooster465.autos, 443, password = EQ30679154, udp-delay = true, skip-cert-verify = false, ws = false
-🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, 89.39.70.9, 443, password = AE62539071, udp-delay = true, skip-cert-verify = false, sni = whole-woodcock.rooster465.autos, ws = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
+❔XX | 🟢 | vmess | @Hope_Net | 11 = vmess, 104.19.45.85, 2095, username = 7a737f41-b792-4260-94ff-3d864da67b80, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"onea.flha.ru", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | vmess | @yaney_01 | 4
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | vmess | @yaney_01 | 4
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | vmess | @yaney_01 | 4
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 6,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11
+URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 6,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11
+FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 6,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
