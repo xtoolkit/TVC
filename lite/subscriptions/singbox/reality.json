@@ -111,10 +111,10 @@
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇫🇷FR | 🔴 | vless | @V2rayCollector | 21",
                 "🇬🇧GB | 🟢 | vless | @Outline_Vpn | 10",
-                "❔XX | 🟢 | vless | @Outline_Vpn | 11",
-                "❔XX | 🟢 | vless | @prrofile_purple | 123",
-                "❔XX | 🟢 | vless | @prrofile_purple | 124",
-                "🇸🇬SG | 🟢 | vless | @v2rayNG_Matsuri | 7",
+                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 11",
+                "🇩🇪DE | 🔴 | vless | @prrofile_purple | 116",
+                "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 7",
+                "❔XX | 🔴 | vless | @v2ray1_ng | 7",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @FreakConfig | 15",
@@ -134,10 +134,10 @@
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
                 "🇫🇷FR | 🔴 | vless | @V2rayCollector | 21",
                 "🇬🇧GB | 🟢 | vless | @Outline_Vpn | 10",
-                "❔XX | 🟢 | vless | @Outline_Vpn | 11",
-                "❔XX | 🟢 | vless | @prrofile_purple | 123",
-                "❔XX | 🟢 | vless | @prrofile_purple | 124",
-                "🇸🇬SG | 🟢 | vless | @v2rayNG_Matsuri | 7",
+                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 11",
+                "🇩🇪DE | 🔴 | vless | @prrofile_purple | 116",
+                "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 7",
+                "❔XX | 🔴 | vless | @v2ray1_ng | 7",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @FreakConfig | 15",
@@ -320,7 +320,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @Outline_Vpn | 11",
+            "tag": "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 11",
             "type": "vless",
             "server": "xfr.saturn-cloud.net",
             "server_port": 443,
@@ -349,11 +349,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @prrofile_purple | 123",
+            "tag": "🇩🇪DE | 🔴 | vless | @prrofile_purple | 116",
             "type": "vless",
-            "server": "45.196.201.48",
+            "server": "core.noneok.com",
             "server_port": 443,
-            "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
+            "uuid": "340e4de3-144b-49c4-ad72-b49b35713728",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -363,51 +363,29 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "storage.yandex.net",
+                "server_name": "core.noneok.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
-                    "short_id": "c6ef72e4635d15a5"
+                    "public_key": "HAqqALwpxu_tx-IFcYaZWVshVKyKttGGrxoEfuP_Lgs",
+                    "short_id": "fde63d9c58210bf9"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @prrofile_purple | 124",
-            "type": "vless",
-            "server": "45.196.201.46",
-            "server_port": 443,
-            "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "storage.yandex.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
-                    "short_id": "c6ef72e4635d15a5"
-                }
+            "transport": {
+                "type": "grpc",
+                "service_name": "api.v1.StreamService",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "🇸🇬SG | 🟢 | vless | @v2rayNG_Matsuri | 7",
+            "tag": "❔XX | 🟢 | vless | @v2rayNG_Matsuri | 7",
             "type": "vless",
             "server": "sg10.levikogjgfdd.ir",
             "server_port": 443,
@@ -433,6 +411,42 @@
                     "public_key": "rJ-aDop3jUC-FzyETfI2uDSXQ659PFlehr7XWm5Cm0A",
                     "short_id": "fe1a104caf309f5a"
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @v2ray1_ng | 7",
+            "type": "vless",
+            "server": "31.76.91.138",
+            "server_port": 2087,
+            "uuid": "309b0ce3-09a8-4883-bfe4-bd56e215be44",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ads.x5.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JfuItzJ81sJehx1PbxyliWSJvuBMKoa9ahNgPO3R7R4",
+                    "short_id": "c226283c4de5b1ad"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
