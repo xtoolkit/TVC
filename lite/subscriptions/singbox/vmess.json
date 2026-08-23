@@ -240,9 +240,9 @@
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 8",
             "type": "vmess",
-            "server": "172.64.175.213",
-            "server_port": 2086,
-            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "server": "max.mankadmu.com",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -253,20 +253,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "max.mankadmu.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/github.com\/Alvin9999",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "172.64.175.213"
+                    "Host": "max.mankadmu.com"
                 }
             }
         },
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 9",
             "type": "vmess",
-            "server": "198.41.193.181",
-            "server_port": 80,
-            "uuid": "92791642-1471-4b93-980a-81030985f3ce",
+            "server": "f.khilei.com",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -277,11 +287,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "f.khilei.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "198.41.193.181"
+                    "Host": "f.khilei.com"
                 }
             }
         }
