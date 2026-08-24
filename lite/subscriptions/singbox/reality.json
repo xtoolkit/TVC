@@ -106,14 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇷🇺RU | 🟢 | vless | @EliV2ray | 0",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇩🇪DE | 🔴 | vless | @V2rayCollector | 37",
-                "❔XX | 🟢 | vless | @Outline_Vpn | 13",
+                "🇺🇸US | 🔴 | vless | @V2rayCollector | 36",
+                "🇺🇸US | 🔴 | vless | @V2rayCollector | 37",
+                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 12",
+                "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 13",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 8",
                 "❔XX | 🔴 | vless | @free1_vpn | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🟢 | vless | @mehrosaboran | 7",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
                 "❔XX | 🟢 | vless | @nofiltering2 | 18",
@@ -124,14 +128,18 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇷🇺RU | 🟢 | vless | @EliV2ray | 0",
                 "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
                 "🇷🇺RU | 🟢 | vless | @rxv2ray | 7",
-                "🇩🇪DE | 🔴 | vless | @V2rayCollector | 37",
-                "❔XX | 🟢 | vless | @Outline_Vpn | 13",
+                "🇺🇸US | 🔴 | vless | @V2rayCollector | 36",
+                "🇺🇸US | 🔴 | vless | @V2rayCollector | 37",
+                "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 12",
+                "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 13",
                 "❔XX | 🟢 | vless | @v2ray1_ng | 8",
                 "❔XX | 🔴 | vless | @free1_vpn | 10",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
+                "❔XX | 🟢 | vless | @mehrosaboran | 7",
                 "❔XX | 🔴 | vless | @kiava | 83",
                 "❔XX | 🔴 | vless | @kiava | 84",
                 "❔XX | 🟢 | vless | @nofiltering2 | 18",
@@ -156,6 +164,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇷🇺RU | 🟢 | vless | @EliV2ray | 0",
+            "type": "vless",
+            "server": "45.131.212.22",
+            "server_port": 443,
+            "uuid": "85329505-90c2-43d1-9c4a-689b1a0be884",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sellflow.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "🇳🇱NL | 🔴 | vless | @ARv2ray | 3",
@@ -223,11 +260,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @V2rayCollector | 37",
+            "tag": "🇺🇸US | 🔴 | vless | @V2rayCollector | 36",
             "type": "vless",
-            "server": "universe.whit3.net",
-            "server_port": 4443,
-            "uuid": "a6cf4b28-ba72-4e8c-90f8-6a884107ab3c",
+            "server": "31.76.70.32",
+            "server_port": 443,
+            "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -237,7 +274,36 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "universe.whit3.net",
+                "server_name": "baltic.cendora.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik",
+                    "short_id": "4a46213c935e2ee4"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @V2rayCollector | 37",
+            "type": "vless",
+            "server": "47.89.186.170",
+            "server_port": 55861,
+            "uuid": "d51ed55c-d6dd-400b-aaf6-017c33969bfe",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.intel.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -246,17 +312,17 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "4p9HuPujWxxtdp0GB_cJN42sFnF-woybk26SXLb1qAo",
-                    "short_id": "4eb17bfdb000bef0"
+                    "public_key": "t2ndf6SeVxinFCo5bcemnW_ZZhAtmHWiAkllks5qPWs",
+                    "short_id": "7551ed1b"
                 }
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @Outline_Vpn | 13",
+            "tag": "🇫🇷FR | 🟢 | vless | @Outline_Vpn | 12",
             "type": "vless",
-            "server": "pol3.freeinternat.com",
+            "server": "xfr.saturn-cloud.net",
             "server_port": 443,
-            "uuid": "fbb74aa8-b89a-4f20-9504-6b25aadf6681",
+            "uuid": "95ae0de8-d944-4b1e-b450-d34d80f9a528",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -266,7 +332,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "pol3.freeinternat.com",
+                "server_name": "xfr.saturn-cloud.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -275,8 +341,37 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk",
-                    "short_id": "ff776ff77be48b88"
+                    "public_key": "UjwVdSvY-6dV5UKCNO7ROokiSF_aLaXYyUaG6RybOmI",
+                    "short_id": "2762604ed2e0fa2f"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @Outline_Vpn | 13",
+            "type": "vless",
+            "server": "144.31.237.206",
+            "server_port": 443,
+            "uuid": "9500cf8b-020a-4a70-906c-e14bb5375875",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.sciencedirect.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cNWgfJHerzIEb0RXxncP8R9Ex8-FkALOtbhneEIHpR0",
+                    "short_id": "a1b2c4d4a1b2c5d5"
                 }
             }
         },
@@ -400,6 +495,35 @@
                     "enabled": true,
                     "public_key": "fabWUdBWxh7NsMaqOF35petD3ljQbKf6OSDnROV9jDs",
                     "short_id": "6f9deca7"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @mehrosaboran | 7",
+            "type": "vless",
+            "server": "85.192.49.151",
+            "server_port": 443,
+            "uuid": "bb05f9d7-a3d1-4b81-a790-f6dba0301907",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "de.servers.gracevpnbuy.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500",
+                    "short_id": "b91a73752053b039"
                 }
             }
         },
