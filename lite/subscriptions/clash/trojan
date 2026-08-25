@@ -120,7 +120,6 @@ dns:
 proxies:
   - {"name":"🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"tr-switzerlandgopota.unlimited-access.ru","port":443,"udp":false,"password":"kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"140.248.185.253","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"ssl.fastly.com"}
-  - {"name":"🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3","type":"trojan","server":"188.114.98.0","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - FALLBACK
       - '🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +136,6 @@ proxy-groups:
     proxies:
       - '🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +143,6 @@ proxy-groups:
     proxies:
       - '🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
