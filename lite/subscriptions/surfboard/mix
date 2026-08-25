@@ -11,14 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, tr-switzerlandgopota.unlimited-access.ru, 443, password = kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi, udp-delay = true, skip-cert-verify = false, ws = false
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 140.248.185.253, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = true, sni = ssl.fastly.com, ws = false
+🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, tr-switzerlandgopota.unlimited-access.ru, 443, password = kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi, udp-delay = true, skip-cert-verify = false, ws = false
 🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3 = trojan, 188.114.98.0, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
-URL-TEST = url-test,🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
-FALLBACK = fallback,🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
+MANUAL = select,URL-TEST,FALLBACK,🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 4,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
+URL-TEST = url-test,🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 4,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
+FALLBACK = fallback,🇨🇭CH | 🔴 | trojan | @oneclickvpnkeys | 4,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
