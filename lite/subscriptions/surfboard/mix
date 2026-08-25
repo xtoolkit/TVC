@@ -12,12 +12,13 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 140.248.185.253, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = true, sni = ssl.fastly.com, ws = false
-🇺🇸US | 🔴 | trojan | @ConfigsHUB | 3 = trojan, 188.114.98.0, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3 = trojan, 188.114.98.0, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
+🇺🇸US | 🟢 | vmess | @Hope_Net | 2 = vmess, 104.16.61.8, 2086, username = 441da342-ce90-441e-bff9-d2ceb55e68ca, ws = true, tls = , vmess-aead = true, ws-path = /ivideos.sbs/linkws, ws-headers = Host:"vmess.taxar71054.workers.dev", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 2
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 2
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
