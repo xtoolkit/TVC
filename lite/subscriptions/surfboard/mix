@@ -13,10 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, 167.68.4.199, 2053, password = Aimer, udp-delay = true, skip-cert-verify = false, sni = epge.muarua.filegear-sg.me, ws = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
+🇨🇦CA | 🟢 | vmess | @Hope_Net | 1 = vmess, jahfkjha.cfd, 443, username = 950db6aa-4926-4616-816e-ec0312dcb87b, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | vmess | @yaney_01 | 4
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | vmess | @yaney_01 | 4
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | vmess | @yaney_01 | 4
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 1
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 1
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
