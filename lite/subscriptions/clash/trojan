@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇦🇹AT | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"212.183.88.136","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
+  - {"name":"🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"64.74.163.118","port":58536,"udp":false,"password":"lEjtI3pFYfU7O1UYozJcfZV5K6Fwfths","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 15","type":"trojan","server":"166.1.36.83","port":443,"udp":false,"password":"50414e45-4c5f-5a45-5553-6cb928e8df1e","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"sazxlkeeuo9s.8264291.workers.dev"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇦🇹AT | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇦🇹AT | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇦🇹AT | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 15'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
