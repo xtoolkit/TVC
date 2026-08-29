@@ -120,8 +120,9 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"94.156.250.148","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 16","type":"ss","server":"142.4.216.225","port":443,"password":"ytw2awn","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 3","type":"ss","server":"51.222.155.113","port":5601,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 14","type":"ss","server":"51.77.225.200","port":8388,"password":"zRZNBszYyWo5","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 16","type":"ss","server":"193.29.139.144","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
   - {"name":"❔XX | 🟢 | ss | @VmessProtocol | 5","type":"ss","server":"193.29.139.230","port":443,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -129,7 +130,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 14'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @VmessProtocol | 5'
   - name: URL-TEST
@@ -138,7 +140,8 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 14'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @VmessProtocol | 5'
   - name: FALLBACK
@@ -146,7 +149,8 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 14'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @VmessProtocol | 5'
 rule-providers:
