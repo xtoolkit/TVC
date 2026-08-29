@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 7",
                 "❔XX | 🟢 | ss | @VmessProtocol | 4"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 7",
                 "❔XX | 🟢 | ss | @VmessProtocol | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 7",
+            "type": "shadowsocks",
+            "server": "142.4.216.225",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ytw2awn",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "❔XX | 🟢 | ss | @VmessProtocol | 4",
