@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | ss | @DeamNet_Proxy | 11 = ss, 142.4.216.225, 443, encrypt-method = chacha20-ietf-poly1305, password = ytw2awn
+❔XX | 🟢 | ss | @DeamNet_Proxy | 2 = ss, 94.156.250.148, 7001, encrypt-method = aes-256-gcm, password = RexnBgU7EV5ADxG
+❔XX | 🟢 | ss | @DeamNet_Proxy | 16 = ss, 142.4.216.225, 443, encrypt-method = chacha20-ietf-poly1305, password = ytw2awn
 ❔XX | 🟢 | ss | @VmessProtocol | 5 = ss, 193.29.139.230, 443, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @DeamNet_Proxy | 11,❔XX | 🟢 | ss | @VmessProtocol | 5
-URL-TEST = url-test,❔XX | 🟢 | ss | @DeamNet_Proxy | 11,❔XX | 🟢 | ss | @VmessProtocol | 5
-FALLBACK = fallback,❔XX | 🟢 | ss | @DeamNet_Proxy | 11,❔XX | 🟢 | ss | @VmessProtocol | 5
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @DeamNet_Proxy | 2,❔XX | 🟢 | ss | @DeamNet_Proxy | 16,❔XX | 🟢 | ss | @VmessProtocol | 5
+URL-TEST = url-test,❔XX | 🟢 | ss | @DeamNet_Proxy | 2,❔XX | 🟢 | ss | @DeamNet_Proxy | 16,❔XX | 🟢 | ss | @VmessProtocol | 5
+FALLBACK = fallback,❔XX | 🟢 | ss | @DeamNet_Proxy | 2,❔XX | 🟢 | ss | @DeamNet_Proxy | 16,❔XX | 🟢 | ss | @VmessProtocol | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

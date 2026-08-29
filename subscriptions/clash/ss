@@ -118,7 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 11","type":"ss","server":"142.4.216.225","port":443,"password":"ytw2awn","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"94.156.250.148","port":7001,"password":"RexnBgU7EV5ADxG","cipher":"aes-256-gcm"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 16","type":"ss","server":"142.4.216.225","port":443,"password":"ytw2awn","cipher":"chacha20-ietf-poly1305"}
   - {"name":"❔XX | 🟢 | ss | @VmessProtocol | 5","type":"ss","server":"193.29.139.230","port":443,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -126,7 +127,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 11'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @VmessProtocol | 5'
   - name: URL-TEST
     type: url-test
@@ -134,14 +136,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 11'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @VmessProtocol | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 11'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @VmessProtocol | 5'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
