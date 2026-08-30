@@ -12,13 +12,13 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17 = ss, 51.77.225.200, 8388, encrypt-method = chacha20-ietf-poly1305, password = zRZNBszYyWo5
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 6 = trojan, [2606:4700:3036::6815:2a81], 8080, password = eabf1999fefbb7d2, udp-delay = true, skip-cert-verify = false, ws = false
-🇺🇸US | 🟢 | ss | @VmessProtocol | 5 = ss, 193.29.139.230, 443, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, [2606:4700:3036::6815:2a81], 8080, password = eabf1999fefbb7d2, udp-delay = true, skip-cert-verify = false, ws = false
+❔XX | 🟢 | ss | @VmessProtocol | 5 = ss, 193.29.139.230, 443, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6,🇺🇸US | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | vmess | @yaney_01 | 4
-URL-TEST = url-test,🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6,🇺🇸US | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | vmess | @yaney_01 | 4
-FALLBACK = fallback,🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17,❔XX | 🔴 | trojan | @oneclickvpnkeys | 6,🇺🇸US | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | vmess | @yaney_01 | 4
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17,❔XX | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | vmess | @yaney_01 | 4
+URL-TEST = url-test,🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17,❔XX | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | vmess | @yaney_01 | 4
+FALLBACK = fallback,🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17,❔XX | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | vmess | @yaney_01 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
