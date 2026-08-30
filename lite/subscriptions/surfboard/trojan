@@ -11,11 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, [2606:4700:3036::6815:2a81], 8080, password = eabf1999fefbb7d2, udp-delay = true, skip-cert-verify = false, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7 = trojan, 107.150.105.84, 20065, password = 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e, udp-delay = true, skip-cert-verify = true, sni = www.microsoft.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 8
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 8
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 8
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
