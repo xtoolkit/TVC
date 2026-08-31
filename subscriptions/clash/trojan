@@ -118,8 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"109.206.241.10","port":449,"udp":false,"password":"oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"russiapower.accesscam.org"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"[2606:4700:3035::ac43:cdde]","port":8080,"udp":false,"password":"eabf1999fefbb7d2","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"109.206.241.10","port":449,"udp":false,"password":"oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"russiapower.accesscam.org"}
   - {"name":"❔XX | 🟢 | trojan | @VmessProtocol | 4","type":"trojan","server":"moral-dolphin.rooster465.autos","port":443,"udp":false,"password":"PQ05174892","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
@@ -127,8 +126,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 4'
   - name: URL-TEST
     type: url-test
@@ -136,16 +134,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve

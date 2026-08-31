@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 109.206.241.10, 449, password = oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1, udp-delay = true, skip-cert-verify = true, sni = russiapower.accesscam.org, ws = false
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, [2606:4700:3035::ac43:cdde], 8080, password = eabf1999fefbb7d2, udp-delay = true, skip-cert-verify = false, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 109.206.241.10, 449, password = oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1, udp-delay = true, skip-cert-verify = true, sni = russiapower.accesscam.org, ws = false
 ❔XX | 🟢 | trojan | @VmessProtocol | 4 = trojan, moral-dolphin.rooster465.autos, 443, password = PQ05174892, udp-delay = true, skip-cert-verify = false, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🟢 | trojan | @VmessProtocol | 4
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🟢 | trojan | @VmessProtocol | 4
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🟢 | trojan | @VmessProtocol | 4
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @VmessProtocol | 4
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @VmessProtocol | 4
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @VmessProtocol | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
