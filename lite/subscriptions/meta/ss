@@ -120,7 +120,6 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"51.77.225.200","port":8388,"password":"zRZNBszYyWo5","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @VmessProtocol | 5","type":"ss","server":"193.29.139.230","port":443,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +127,6 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 5'
   - name: URL-TEST
     type: url-test
@@ -136,14 +134,12 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇺🇸US | 🟢 | ss | @VmessProtocol | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
