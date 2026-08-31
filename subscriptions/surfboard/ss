@@ -11,14 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | ss | @DeamNet_Proxy | 6 = ss, 51.222.155.113, 5601, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
-❔XX | 🟢 | ss | @DeamNet_Proxy | 17 = ss, 51.77.225.200, 8388, encrypt-method = chacha20-ietf-poly1305, password = zRZNBszYyWo5
+❔XX | 🟢 | ss | @DeamNet_Proxy | 0 = ss, 194.61.121.93, 7538, encrypt-method = chacha20-ietf-poly1305, password = U9YAoqBgg5VyGBc6vQv1sN
+❔XX | 🟢 | ss | @DeamNet_Proxy | 8 = ss, 51.222.155.113, 5601, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
 ❔XX | 🟢 | ss | @VmessProtocol | 5 = ss, 193.29.139.230, 443, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
-❔XX | 🟢 | ss | @proxy_mtm | 24 = ss, 82.38.31.9, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
+❔XX | 🟢 | ss | @proxy_mtm | 48 = ss, 82.38.31.9, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @DeamNet_Proxy | 6,❔XX | 🟢 | ss | @DeamNet_Proxy | 17,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 24
-URL-TEST = url-test,❔XX | 🟢 | ss | @DeamNet_Proxy | 6,❔XX | 🟢 | ss | @DeamNet_Proxy | 17,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 24
-FALLBACK = fallback,❔XX | 🟢 | ss | @DeamNet_Proxy | 6,❔XX | 🟢 | ss | @DeamNet_Proxy | 17,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 24
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @DeamNet_Proxy | 0,❔XX | 🟢 | ss | @DeamNet_Proxy | 8,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 48
+URL-TEST = url-test,❔XX | 🟢 | ss | @DeamNet_Proxy | 0,❔XX | 🟢 | ss | @DeamNet_Proxy | 8,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 48
+FALLBACK = fallback,❔XX | 🟢 | ss | @DeamNet_Proxy | 0,❔XX | 🟢 | ss | @DeamNet_Proxy | 8,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 48
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

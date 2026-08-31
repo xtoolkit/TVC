@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 6",
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 17",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 0",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 8",
                 "❔XX | 🟢 | ss | @VmessProtocol | 5",
-                "❔XX | 🟢 | ss | @proxy_mtm | 24"
+                "❔XX | 🟢 | ss | @proxy_mtm | 48"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 6",
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 17",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 0",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 8",
                 "❔XX | 🟢 | ss | @VmessProtocol | 5",
-                "❔XX | 🟢 | ss | @proxy_mtm | 24"
+                "❔XX | 🟢 | ss | @proxy_mtm | 48"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,22 +142,22 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 6",
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 0",
+            "type": "shadowsocks",
+            "server": "194.61.121.93",
+            "server_port": 7538,
+            "method": "chacha20-ietf-poly1305",
+            "password": "U9YAoqBgg5VyGBc6vQv1sN",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 8",
             "type": "shadowsocks",
             "server": "51.222.155.113",
             "server_port": 5601,
             "method": "aes-256-gcm",
             "password": "Y6R9pAtvxxzmGC",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 17",
-            "type": "shadowsocks",
-            "server": "51.77.225.200",
-            "server_port": 8388,
-            "method": "chacha20-ietf-poly1305",
-            "password": "zRZNBszYyWo5",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -172,7 +172,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 24",
+            "tag": "❔XX | 🟢 | ss | @proxy_mtm | 48",
             "type": "shadowsocks",
             "server": "82.38.31.9",
             "server_port": 8080,
