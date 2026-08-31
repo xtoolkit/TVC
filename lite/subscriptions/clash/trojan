@@ -118,27 +118,27 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇪🇪EE | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"109.206.241.10","port":449,"udp":false,"password":"oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"russiapower.accesscam.org"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 16","type":"trojan","server":"188.114.98.0","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇪🇪EE | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇪🇪EE | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇪🇪EE | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 16'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
