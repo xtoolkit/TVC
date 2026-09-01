@@ -12,14 +12,10 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | trojan | @VmessProtocol | 4 = trojan, moral-dolphin.rooster465.autos, 443, password = PQ05174892, udp-delay = true, skip-cert-verify = false, ws = false
-🚩CF | 🔴 | trojan | @ConfigsHUB | 0 = trojan, 104.18.83.74, 443, password = 50414e45-4c5f-5a45-5553-6221afad00a6, udp-delay = true, skip-cert-verify = false, sni = v1z4pne1ufas.turquoise43.workers.dev, ws = false
-🇫🇷FR | 🔴 | trojan | @ConfigsHUB | 1 = trojan, 2.16.113.75, 443, password = 50414e45-4c5f-5a45-5553-6221afad00a6, udp-delay = true, skip-cert-verify = false, sni = v1z4pne1ufas.turquoise43.workers.dev, ws = false
-🚩CF | 🔴 | trojan | @ConfigsHUB | 8 = trojan, 172.67.238.241, 443, password = 50414e45-4c5f-5a45-5553-6221afad00a6, udp-delay = true, skip-cert-verify = false, sni = v1z4pne1ufas.turquoise43.workers.dev, ws = false
-🚩CF | 🔴 | trojan | @ConfigsHUB | 13 = trojan, 104.18.59.44, 443, password = 50414e45-4c5f-5a45-5553-6221afad00a6, udp-delay = true, skip-cert-verify = false, sni = v1z4pne1ufas.turquoise43.workers.dev, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | trojan | @VmessProtocol | 4,🚩CF | 🔴 | trojan | @ConfigsHUB | 0,🇫🇷FR | 🔴 | trojan | @ConfigsHUB | 1,🚩CF | 🔴 | trojan | @ConfigsHUB | 8,🚩CF | 🔴 | trojan | @ConfigsHUB | 13
-URL-TEST = url-test,❔XX | 🟢 | trojan | @VmessProtocol | 4,🚩CF | 🔴 | trojan | @ConfigsHUB | 0,🇫🇷FR | 🔴 | trojan | @ConfigsHUB | 1,🚩CF | 🔴 | trojan | @ConfigsHUB | 8,🚩CF | 🔴 | trojan | @ConfigsHUB | 13
-FALLBACK = fallback,❔XX | 🟢 | trojan | @VmessProtocol | 4,🚩CF | 🔴 | trojan | @ConfigsHUB | 0,🇫🇷FR | 🔴 | trojan | @ConfigsHUB | 1,🚩CF | 🔴 | trojan | @ConfigsHUB | 8,🚩CF | 🔴 | trojan | @ConfigsHUB | 13
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | trojan | @VmessProtocol | 4
+URL-TEST = url-test,❔XX | 🟢 | trojan | @VmessProtocol | 4
+FALLBACK = fallback,❔XX | 🟢 | trojan | @VmessProtocol | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
