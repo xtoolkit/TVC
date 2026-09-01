@@ -121,6 +121,10 @@ dns:
 
 proxies:
   - {"name":"❔XX | 🟢 | trojan | @VmessProtocol | 4","type":"trojan","server":"moral-dolphin.rooster465.autos","port":443,"udp":false,"password":"PQ05174892","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🚩CF | 🔴 | trojan | @ConfigsHUB | 0","type":"trojan","server":"104.18.83.74","port":443,"udp":false,"password":"50414e45-4c5f-5a45-5553-6221afad00a6","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"v1z4pne1ufas.turquoise43.workers.dev"}
+  - {"name":"🇫🇷FR | 🔴 | trojan | @ConfigsHUB | 1","type":"trojan","server":"2.16.113.75","port":443,"udp":false,"password":"50414e45-4c5f-5a45-5553-6221afad00a6","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"v1z4pne1ufas.turquoise43.workers.dev"}
+  - {"name":"🚩CF | 🔴 | trojan | @ConfigsHUB | 8","type":"trojan","server":"172.67.238.241","port":443,"udp":false,"password":"50414e45-4c5f-5a45-5553-6221afad00a6","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"v1z4pne1ufas.turquoise43.workers.dev"}
+  - {"name":"🚩CF | 🔴 | trojan | @ConfigsHUB | 13","type":"trojan","server":"104.18.59.44","port":443,"udp":false,"password":"50414e45-4c5f-5a45-5553-6221afad00a6","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"v1z4pne1ufas.turquoise43.workers.dev"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +132,10 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '❔XX | 🟢 | trojan | @VmessProtocol | 4'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 0'
+      - '🇫🇷FR | 🔴 | trojan | @ConfigsHUB | 1'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 8'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,12 +143,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '❔XX | 🟢 | trojan | @VmessProtocol | 4'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 0'
+      - '🇫🇷FR | 🔴 | trojan | @ConfigsHUB | 1'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 8'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '❔XX | 🟢 | trojan | @VmessProtocol | 4'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 0'
+      - '🇫🇷FR | 🔴 | trojan | @ConfigsHUB | 1'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 8'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 13'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}

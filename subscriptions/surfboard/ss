@@ -11,14 +11,20 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | ss | @DeamNet_Proxy | 0 = ss, 194.61.121.93, 7538, encrypt-method = chacha20-ietf-poly1305, password = U9YAoqBgg5VyGBc6vQv1sN
-❔XX | 🟢 | ss | @DeamNet_Proxy | 8 = ss, 51.222.155.113, 5601, encrypt-method = aes-256-gcm, password = Y6R9pAtvxxzmGC
-❔XX | 🟢 | ss | @VmessProtocol | 5 = ss, 193.29.139.230, 443, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
+🇳🇴NO | 🟢 | ss | @DeamNet_Proxy | 0 = ss, 185.213.23.63, 990, encrypt-method = chacha20-ietf-poly1305, password = ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 1 = ss, 141.164.45.187, 7001, encrypt-method = aes-256-gcm, password = RexnBgU7EV5ADxG
+🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2 = ss, 15.204.246.108, 8881, encrypt-method = aes-256-gcm, password = kDWvXYZoTBcGkC4
+🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 3 = ss, 51.222.155.32, 5003, encrypt-method = aes-256-gcm, password = g5MeD6Ft3CWlJId
+🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 6 = ss, 15.204.247.175, 8008, encrypt-method = aes-256-gcm, password = XKFKl2rULjIp74
+🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 8 = ss, 141.164.45.187, 8000, encrypt-method = aes-256-gcm, password = KixLvKzwjekG00rm
+🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 12 = ss, 51.79.49.116, 8882, encrypt-method = aes-256-gcm, password = kDWvXYZoTBcGkC4
+❔XX | 🟢 | ss | @DeamNet_Proxy | 15 = ss, 194.61.121.93, 7538, encrypt-method = chacha20-ietf-poly1305, password = U9YAoqBgg5VyGBc6vQv1sN
+🇳🇱NL | 🟢 | ss | @VmessProtocol | 5 = ss, 193.29.139.230, 443, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
 ❔XX | 🟢 | ss | @proxy_mtm | 59 = ss, 82.38.31.9, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @DeamNet_Proxy | 0,❔XX | 🟢 | ss | @DeamNet_Proxy | 8,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 59
-URL-TEST = url-test,❔XX | 🟢 | ss | @DeamNet_Proxy | 0,❔XX | 🟢 | ss | @DeamNet_Proxy | 8,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 59
-FALLBACK = fallback,❔XX | 🟢 | ss | @DeamNet_Proxy | 0,❔XX | 🟢 | ss | @DeamNet_Proxy | 8,❔XX | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 59
+MANUAL = select,URL-TEST,FALLBACK,🇳🇴NO | 🟢 | ss | @DeamNet_Proxy | 0,🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 1,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2,🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 3,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 6,🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 8,🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 12,❔XX | 🟢 | ss | @DeamNet_Proxy | 15,🇳🇱NL | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 59
+URL-TEST = url-test,🇳🇴NO | 🟢 | ss | @DeamNet_Proxy | 0,🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 1,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2,🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 3,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 6,🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 8,🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 12,❔XX | 🟢 | ss | @DeamNet_Proxy | 15,🇳🇱NL | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 59
+FALLBACK = fallback,🇳🇴NO | 🟢 | ss | @DeamNet_Proxy | 0,🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 1,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2,🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 3,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 6,🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 8,🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 12,❔XX | 🟢 | ss | @DeamNet_Proxy | 15,🇳🇱NL | 🟢 | ss | @VmessProtocol | 5,❔XX | 🟢 | ss | @proxy_mtm | 59
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
