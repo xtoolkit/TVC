@@ -118,6 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
+  - {"name":"🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 16","type":"ss","server":"194.61.121.93","port":7538,"password":"U9YAoqBgg5VyGBc6vQv1sN","cipher":"chacha20-ietf-poly1305"}
   - {"name":"❔XX | 🟢 | ss | @VmessProtocol | 5","type":"ss","server":"193.29.139.230","port":443,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -125,6 +126,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @VmessProtocol | 5'
   - name: URL-TEST
     type: url-test
@@ -132,12 +134,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @VmessProtocol | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @VmessProtocol | 5'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
