@@ -12,10 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 ❔XX | 🟢 | trojan | @VmessProtocol | 4 = trojan, moral-dolphin.rooster465.autos, 443, password = PQ05174892, udp-delay = true, skip-cert-verify = false, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 16 = trojan, openai.com, 443, password = MITIVPN, udp-delay = true, skip-cert-verify = false, sni = UsAba-bUbks.App-CloUd.IR, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | trojan | @VmessProtocol | 4
-URL-TEST = url-test,❔XX | 🟢 | trojan | @VmessProtocol | 4
-FALLBACK = fallback,❔XX | 🟢 | trojan | @VmessProtocol | 4
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | trojan | @VmessProtocol | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 16
+URL-TEST = url-test,❔XX | 🟢 | trojan | @VmessProtocol | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 16
+FALLBACK = fallback,❔XX | 🟢 | trojan | @VmessProtocol | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
