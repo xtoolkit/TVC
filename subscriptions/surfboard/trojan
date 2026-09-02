@@ -11,12 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 167.68.4.199, 2053, password = Aimer, udp-delay = true, skip-cert-verify = false, sni = epge.muarua.filegear-sg.me, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 167.68.4.199, 2053, password = Aimer, udp-delay = true, skip-cert-verify = false, sni = epge.muarua.filegear-sg.me, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, 167.68.4.199, 2053, password = Aimer, udp-delay = true, skip-cert-verify = false, sni = epge.muarua.filegear-sg.me, ws = false
 ❔XX | 🟢 | trojan | @VmessProtocol | 4 = trojan, moral-dolphin.rooster465.autos, 443, password = PQ05174892, udp-delay = true, skip-cert-verify = false, ws = false
-❔XX | 🔴 | trojan | @ConfigsHUB | 16 = trojan, openai.com, 443, password = MITIVPN, udp-delay = true, skip-cert-verify = false, sni = UsAba-bUbks.App-CloUd.IR, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | trojan | @VmessProtocol | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 16
-URL-TEST = url-test,❔XX | 🟢 | trojan | @VmessProtocol | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 16
-FALLBACK = fallback,❔XX | 🟢 | trojan | @VmessProtocol | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 16
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 3,❔XX | 🟢 | trojan | @VmessProtocol | 4
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 3,❔XX | 🟢 | trojan | @VmessProtocol | 4
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 3,❔XX | 🟢 | trojan | @VmessProtocol | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
