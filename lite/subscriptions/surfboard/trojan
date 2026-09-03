@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6 = trojan, 199.232.78.160, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
-❔XX | 🔴 | trojan | @ConfigsHUB | 19 = trojan, xn--1ugy405pdua.gayvibe.dpdns.org, 2174, password = tripitropa444, udp-delay = true, skip-cert-verify = false, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7 = trojan, 199.232.78.160, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 10 = trojan, www.speedtest.net, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+❔XX | 🔴 | trojan | @kingofilter | 0 = trojan, 151.101.56.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🔴 | trojan | @ConfigsHUB | 19
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🔴 | trojan | @ConfigsHUB | 19
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🔴 | trojan | @ConfigsHUB | 19
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🔴 | trojan | @ConfigsHUB | 10,❔XX | 🔴 | trojan | @kingofilter | 0
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🔴 | trojan | @ConfigsHUB | 10,❔XX | 🔴 | trojan | @kingofilter | 0
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,❔XX | 🔴 | trojan | @ConfigsHUB | 10,❔XX | 🔴 | trojan | @kingofilter | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
