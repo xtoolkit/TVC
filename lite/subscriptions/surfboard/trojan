@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @kingofilter | 0 = trojan, 151.101.56.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 151.101.56.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, 199.232.78.160, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @kingofilter | 0
-URL-TEST = url-test,❔XX | 🔴 | trojan | @kingofilter | 0
-FALLBACK = fallback,❔XX | 🔴 | trojan | @kingofilter | 0
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
