@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 151.101.56.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, 199.232.78.160, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, 151.101.56.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 199.232.78.160, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
