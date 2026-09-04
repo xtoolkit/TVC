@@ -13,10 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 ❔XX | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 167.68.4.199, 2053, password = Aimer, udp-delay = true, skip-cert-verify = false, sni = epge.muarua.filegear-sg.me, ws = false
 ❔XX | 🟢 | trojan | @VmessProtocol | 5 = trojan, moral-dolphin.rooster465.autos, 443, password = PQ05174892, udp-delay = true, skip-cert-verify = false, ws = false
+🚩CF | 🔴 | trojan | @ConfigsHUB | 0 = trojan, 188.114.97.7, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🟢 | trojan | @VmessProtocol | 5
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🟢 | trojan | @VmessProtocol | 5
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🟢 | trojan | @VmessProtocol | 5
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🟢 | trojan | @VmessProtocol | 5,🚩CF | 🔴 | trojan | @ConfigsHUB | 0
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🟢 | trojan | @VmessProtocol | 5,🚩CF | 🔴 | trojan | @ConfigsHUB | 0
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🟢 | trojan | @VmessProtocol | 5,🚩CF | 🔴 | trojan | @ConfigsHUB | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
