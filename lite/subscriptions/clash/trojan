@@ -118,27 +118,27 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 2","type":"trojan","server":"188.114.96.8","port":443,"udp":false,"password":"EPI4SnpMUxd6L-I.B9","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"lhNS3wW2-cXq-gj1vVObkePIg4NOPkc.hqU4V38HI9IFTCp6mZFmx-3BMX.WOrkers.DeV"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"167.68.4.199","port":2053,"udp":false,"password":"Aimer","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"epge.muarua.filegear-sg.me"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 2'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 2'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇦CA | 🟢 | trojan | @ConfigsHUB | 2'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
