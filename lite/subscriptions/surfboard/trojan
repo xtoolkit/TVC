@@ -11,11 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @ConfigsHUB | 8 = trojan, 151.101.56.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, www.speedtest.net, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @ConfigsHUB | 8
-URL-TEST = url-test,❔XX | 🔴 | trojan | @ConfigsHUB | 8
-FALLBACK = fallback,❔XX | 🔴 | trojan | @ConfigsHUB | 8
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 8
+URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 8
+FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
