@@ -14,10 +14,11 @@ DIRECT = direct
 ❔XX | 🟢 | ss | @DeamNet_Proxy | 3 = ss, 193.29.139.230, 443, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
 ❔XX | 🟢 | ss | @DeamNet_Proxy | 5 = ss, 193.29.139.147, 8080, encrypt-method = chacha20-ietf-poly1305, password = k1dBOmOB4oqi7Ump37a1bQ
 ❔XX | 🟢 | ss | @DeamNet_Proxy | 10 = ss, 45.207.207.25, 443, encrypt-method = aes-256-gcm, password = gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+❔XX | 🟢 | ss | @proxy_mtm | 2 = ss, 52.236.93.60, 443, encrypt-method = chacha20-ietf-poly1305, password = gMvuOJ2BhtjWmjjX
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @DeamNet_Proxy | 3,❔XX | 🟢 | ss | @DeamNet_Proxy | 5,❔XX | 🟢 | ss | @DeamNet_Proxy | 10
-URL-TEST = url-test,❔XX | 🟢 | ss | @DeamNet_Proxy | 3,❔XX | 🟢 | ss | @DeamNet_Proxy | 5,❔XX | 🟢 | ss | @DeamNet_Proxy | 10
-FALLBACK = fallback,❔XX | 🟢 | ss | @DeamNet_Proxy | 3,❔XX | 🟢 | ss | @DeamNet_Proxy | 5,❔XX | 🟢 | ss | @DeamNet_Proxy | 10
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @DeamNet_Proxy | 3,❔XX | 🟢 | ss | @DeamNet_Proxy | 5,❔XX | 🟢 | ss | @DeamNet_Proxy | 10,❔XX | 🟢 | ss | @proxy_mtm | 2
+URL-TEST = url-test,❔XX | 🟢 | ss | @DeamNet_Proxy | 3,❔XX | 🟢 | ss | @DeamNet_Proxy | 5,❔XX | 🟢 | ss | @DeamNet_Proxy | 10,❔XX | 🟢 | ss | @proxy_mtm | 2
+FALLBACK = fallback,❔XX | 🟢 | ss | @DeamNet_Proxy | 3,❔XX | 🟢 | ss | @DeamNet_Proxy | 5,❔XX | 🟢 | ss | @DeamNet_Proxy | 10,❔XX | 🟢 | ss | @proxy_mtm | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
