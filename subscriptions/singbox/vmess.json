@@ -119,15 +119,14 @@
                 "❔XX | 🟢 | vmess | @mftizi | 14",
                 "❔XX | 🟢 | vmess | @mftizi | 15",
                 "❔XX | 🟢 | vmess | @mftizi | 16",
-                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 11",
-                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 14",
+                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 5",
+                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 9",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 1",
                 "❔XX | 🟢 | vmess | @yaney_01 | 1",
                 "❔XX | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🚩CF | 🟢 | vmess | @yaney_01 | 5",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 0",
                 "❔XX | 🟢 | vmess | @nofiltering2 | 9",
                 "❔XX | 🟢 | vmess | @ISVvpn | 0"
             ]
@@ -149,15 +148,14 @@
                 "❔XX | 🟢 | vmess | @mftizi | 14",
                 "❔XX | 🟢 | vmess | @mftizi | 15",
                 "❔XX | 🟢 | vmess | @mftizi | 16",
-                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 11",
-                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 14",
+                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 5",
+                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 9",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 1",
                 "❔XX | 🟢 | vmess | @yaney_01 | 1",
                 "❔XX | 🟢 | vmess | @yaney_01 | 2",
                 "❔XX | 🟢 | vmess | @yaney_01 | 3",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🚩CF | 🟢 | vmess | @yaney_01 | 5",
-                "🚩CF | 🟢 | vmess | @Hope_Net | 0",
                 "❔XX | 🟢 | vmess | @nofiltering2 | 9",
                 "❔XX | 🟢 | vmess | @ISVvpn | 0"
             ],
@@ -403,11 +401,28 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @DeamNet_Proxy | 11",
+            "tag": "❔XX | 🟢 | vmess | @DeamNet_Proxy | 5",
             "type": "vmess",
-            "server": "renderer-stream-2-62.mirra.now",
+            "server": "149.88.23.207",
+            "server_port": 18000,
+            "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @DeamNet_Proxy | 9",
+            "type": "vmess",
+            "server": "165.140.216.142",
             "server_port": 443,
-            "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+            "uuid": "b65a2d69-5634-42a2-e4be-54e8a6176900",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -420,37 +435,13 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "renderer-stream-2-62.mirra.now",
+                "server_name": "165.140.216.142",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/api\/v1\/gpu-stream\/socket",
-                "headers": {
-                    "Host": "renderer-stream-2-62.mirra.now"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @DeamNet_Proxy | 14",
-            "type": "vmess",
-            "server": "82.198.246.233",
-            "server_port": 180,
-            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -617,30 +608,6 @@
                 "path": "\/66",
                 "headers": {
                     "Host": "104.26.8.210"
-                }
-            }
-        },
-        {
-            "tag": "🚩CF | 🟢 | vmess | @Hope_Net | 0",
-            "type": "vmess",
-            "server": "188.114.96.221",
-            "server_port": 80,
-            "uuid": "310fabb7-2abc-4301-b302-22aa49c954fb",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vmess",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
