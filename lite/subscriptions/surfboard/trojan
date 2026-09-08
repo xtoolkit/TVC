@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6 = trojan, 199.232.78.160, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 8.47.69.0, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
 ❔XX | 🟢 | trojan | @VmessProtocol | 7 = trojan, moral-dolphin.rooster465.autos, 443, password = PQ05174892, udp-delay = true, skip-cert-verify = false, ws = false
-❔XX | 🔴 | trojan | @ConfigsHUB | 3 = trojan, 213.182.199.137, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🟢 | trojan | @VmessProtocol | 7,❔XX | 🔴 | trojan | @ConfigsHUB | 3
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🟢 | trojan | @VmessProtocol | 7,❔XX | 🔴 | trojan | @ConfigsHUB | 3
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6,❔XX | 🟢 | trojan | @VmessProtocol | 7,❔XX | 🔴 | trojan | @ConfigsHUB | 3
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @VmessProtocol | 7
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @VmessProtocol | 7
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @VmessProtocol | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
