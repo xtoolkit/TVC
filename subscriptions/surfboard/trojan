@@ -16,10 +16,11 @@ DIRECT = direct
 free x114 @outline_vpn#❔XX | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 107.150.105.84, 46292, password = 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e, udp-delay = true, skip-cert-verify = true, sni = www.microsoft.com, ws = false
 ❔XX | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, 199.232.78.160, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 ❔XX | 🟢 | trojan | @VmessProtocol | 7 = trojan, moral-dolphin.rooster465.autos, 443, password = PQ05174892, udp-delay = true, skip-cert-verify = false, ws = false
+❔XX | 🟢 | trojan | @ConfigsHUB | 4 = trojan, de9w7ehd8ejr9fyd-development-m0t2g.lucity.app, 443, password = 1e0cc178-82ff-8111-42b1-916b4210ca9b, udp-delay = true, skip-cert-verify = false, sni = de9w7ehd8ejr9fyd-development-m0t2g.lucity.app, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,free x114 @outline_vpn#❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🟢 | trojan | @VmessProtocol | 7
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,free x114 @outline_vpn#❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🟢 | trojan | @VmessProtocol | 7
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,free x114 @outline_vpn#❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🟢 | trojan | @VmessProtocol | 7
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,free x114 @outline_vpn#❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🟢 | trojan | @VmessProtocol | 7,❔XX | 🟢 | trojan | @ConfigsHUB | 4
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,free x114 @outline_vpn#❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🟢 | trojan | @VmessProtocol | 7,❔XX | 🟢 | trojan | @ConfigsHUB | 4
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,free x114 @outline_vpn#❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🟢 | trojan | @VmessProtocol | 7,❔XX | 🟢 | trojan | @ConfigsHUB | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
