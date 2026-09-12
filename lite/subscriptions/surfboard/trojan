@@ -12,11 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, 213.182.199.137, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
+🇩🇪DE | 🟢 | trojan | @v2ray1_ng | 9 = trojan, jgzt1997.qivfelo.ir, 1080, password = BbNnpOgc1j9WOaWoslbSyeob1r47IRHV, udp-delay = true, skip-cert-verify = false, sni = maps.google.com, ws = false
 ❔XX | 🟢 | trojan | @VmessProtocol | 10 = trojan, moral-dolphin.rooster465.autos, 443, password = PQ05174892, udp-delay = true, skip-cert-verify = false, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | trojan | @VmessProtocol | 10
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | trojan | @VmessProtocol | 10
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,❔XX | 🟢 | trojan | @VmessProtocol | 10
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,🇩🇪DE | 🟢 | trojan | @v2ray1_ng | 9,❔XX | 🟢 | trojan | @VmessProtocol | 10
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,🇩🇪DE | 🟢 | trojan | @v2ray1_ng | 9,❔XX | 🟢 | trojan | @VmessProtocol | 10
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,🇩🇪DE | 🟢 | trojan | @v2ray1_ng | 9,❔XX | 🟢 | trojan | @VmessProtocol | 10
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
