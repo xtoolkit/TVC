@@ -120,8 +120,8 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"64.94.95.114","port":57142,"udp":false,"password":"kkzh2prsyr2ik47as615","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"185.220.100.168","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
+  - {"name":"🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"Telegram_healer_config","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"jfw5Fii30i7-sc560AVFNfNH613.i6JSQ7Mr66E-e14trd.wOrkeRs.dev"}
+  - {"name":"🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"c0c17d1da2c2c9299d5094c8","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ez-3e9698.ezaccess1ec1f0c.workers.dev"}
   - {"name":"❔XX | 🟢 | trojan | @VmessProtocol | 10","type":"trojan","server":"moral-dolphin.rooster465.autos","port":443,"udp":false,"password":"PQ05174892","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
@@ -129,8 +129,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9'
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 9'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 10'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 10'
   - name: URL-TEST
     type: url-test
@@ -138,16 +138,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9'
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 9'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 10'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9'
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 9'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 10'
       - '❔XX | 🟢 | trojan | @VmessProtocol | 10'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
