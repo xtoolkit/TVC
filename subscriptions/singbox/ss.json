@@ -106,18 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 1",
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 7",
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 9"
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 0",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 3",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 9",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 11"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 1",
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 7",
-                "❔XX | 🟢 | ss | @DeamNet_Proxy | 9"
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 0",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 3",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 9",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,7 +142,17 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 1",
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 0",
+            "type": "shadowsocks",
+            "server": "bogging-eyeteeth-fly.freesocks.work",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "QFWzCw2uX9B9i6qAYeFBIE",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 3",
             "type": "shadowsocks",
             "server": "82.38.31.16",
             "server_port": 8080,
@@ -150,7 +162,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 7",
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 9",
             "type": "shadowsocks",
             "server": "82.38.31.185",
             "server_port": 8080,
@@ -160,7 +172,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 9",
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 11",
             "type": "shadowsocks",
             "server": "193.29.139.198",
             "server_port": 8080,
