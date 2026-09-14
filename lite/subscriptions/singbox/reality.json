@@ -108,6 +108,8 @@
                 "URL-TEST",
                 "🇬🇧GB | 🔴 | vless | @shh_proxy | 9",
                 "🇲🇩MD | 🔴 | vless | @proxy_kafee | 2",
+                "🇳🇱NL | 🟢 | vless | @V2rayCollector | 39",
+                "🇫🇷FR | 🟢 | vless | @V2rayCollector | 40",
                 "🇮🇹IT | 🟢 | vless | @Outline_Vpn | 14",
                 "🇩🇪DE | 🟢 | vless | @v2rayNG_Matsuri | 10",
                 "❔XX | 🟢 | vless | @free1_vpn | 11",
@@ -124,6 +126,8 @@
             "outbounds": [
                 "🇬🇧GB | 🔴 | vless | @shh_proxy | 9",
                 "🇲🇩MD | 🔴 | vless | @proxy_kafee | 2",
+                "🇳🇱NL | 🟢 | vless | @V2rayCollector | 39",
+                "🇫🇷FR | 🟢 | vless | @V2rayCollector | 40",
                 "🇮🇹IT | 🟢 | vless | @Outline_Vpn | 14",
                 "🇩🇪DE | 🟢 | vless | @v2rayNG_Matsuri | 10",
                 "❔XX | 🟢 | vless | @free1_vpn | 11",
@@ -216,6 +220,64 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @V2rayCollector | 39",
+            "type": "vless",
+            "server": "alnilam.yokkastars.com",
+            "server_port": 40443,
+            "uuid": "279a8eef-898f-44ef-b4f5-67a494f4b542",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "deepl.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "vAG5o6TQvpZAlvDnlyhHEFZBuSgEV_ybQigD_mGKh1M",
+                    "short_id": "5b98"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @V2rayCollector | 40",
+            "type": "vless",
+            "server": "95.133.247.18",
+            "server_port": 8443,
+            "uuid": "42d932cb-8768-41de-b57b-299252a493d2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr.atlanta-api.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "dJqaQL_kSl2DFR7Dx3igZXhPuw1uW9d7XejtyYSvkGg",
+                    "short_id": "aaa2ba7d45c12957"
+                }
             }
         },
         {
