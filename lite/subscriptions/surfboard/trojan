@@ -11,11 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 10 = trojan, 151.101.56.7, 443, password = MITIVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8 = trojan, 167.82.76.7, 443, password = MITIVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9 = trojan, 8.47.69.0, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
+🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 5 = trojan, 188.114.97.7, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 10
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 10
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 10
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 5
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 5
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 8,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 9,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
