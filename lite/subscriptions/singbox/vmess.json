@@ -266,26 +266,9 @@
         {
             "tag": "❔XX | 🟢 | vmess | @Hope_Net | 5",
             "type": "vmess",
-            "server": "192.210.231.59",
-            "server_port": 58164,
-            "uuid": "39a1dff4-9c7d-487b-9917-2f2c8e9572f2",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
-            "type": "vmess",
-            "server": "104.19.45.90",
-            "server_port": 2086,
-            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "server": "cf.fullcloud.tk",
+            "server_port": 2053,
+            "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -296,11 +279,55 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "cf.fullcloud.tk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/github.com\/Alvin9999",
+                "path": "\/eisasqa",
                 "headers": {
-                    "Host": "104.19.45.90"
+                    "Host": "cf.fullcloud.tk"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @Hope_Net | 6",
+            "type": "vmess",
+            "server": "104.17.197.31",
+            "server_port": 443,
+            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "quiet-moon-132a.xetag42714.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ivideos.sbs\/linkws",
+                "headers": {
+                    "Host": "quiet-moon-132a.xetag42714.workers.dev"
                 }
             }
         }
