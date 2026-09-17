@@ -13,11 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 15 = vmess, 47.244.120.197, 44867, username = 845e6b08-2919-4290-ade0-5dc7dcea59ca, ws = true, tls = , vmess-aead = true, ws-path = /arki?ed=2048, ws-headers = Host:"google.com", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
-🇺🇸US | 🟢 | vmess | @Hope_Net | 8 = vmess, 104.19.47.15, 8443, username = 39135a39-e6ca-43df-a360-d859eea58d86, ws = true, tls = 1, vmess-aead = false, ws-path = /, ws-headers = Host:"hk01.linkitnow.net", skip-cert-verify = true, tfo = false
+🇨🇦CA | 🟢 | vmess | @Hope_Net | 6 = vmess, russia.com, 8080, username = b7c56170-edb4-4c4a-bb64-ed5ef40b8739, ws = true, tls = , vmess-aead = true, ws-path = /api/v3/download.getFile, ws-headers = Host:"sssub.v2.001.ssrsub.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 15,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8
-URL-TEST = url-test,🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 15,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8
-FALLBACK = fallback,🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 15,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 8
+MANUAL = select,URL-TEST,FALLBACK,🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 15,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 6
+URL-TEST = url-test,🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 15,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 6
+FALLBACK = fallback,🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 15,❔XX | 🟢 | vmess | @yaney_01 | 4,🇨🇦CA | 🟢 | vmess | @Hope_Net | 6
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
