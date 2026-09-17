@@ -11,13 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🚩CF | 🔴 | trojan | @v2ray1_ng | 6 = trojan, 188.114.97.7, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
-❔XX | 🟢 | trojan | @ConfigsHUB | 14 = trojan, 3.219.67.133, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-❔XX | 🟢 | trojan | @ConfigsHUB | 15 = trojan, 3.77.17.140, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+❔XX | 🟢 | trojan | @ConfigsHUB | 2 = trojan, 15.237.242.27, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🚩CF | 🔴 | trojan | @v2ray1_ng | 6,❔XX | 🟢 | trojan | @ConfigsHUB | 14,❔XX | 🟢 | trojan | @ConfigsHUB | 15
-URL-TEST = url-test,🚩CF | 🔴 | trojan | @v2ray1_ng | 6,❔XX | 🟢 | trojan | @ConfigsHUB | 14,❔XX | 🟢 | trojan | @ConfigsHUB | 15
-FALLBACK = fallback,🚩CF | 🔴 | trojan | @v2ray1_ng | 6,❔XX | 🟢 | trojan | @ConfigsHUB | 14,❔XX | 🟢 | trojan | @ConfigsHUB | 15
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | trojan | @ConfigsHUB | 2
+URL-TEST = url-test,❔XX | 🟢 | trojan | @ConfigsHUB | 2
+FALLBACK = fallback,❔XX | 🟢 | trojan | @ConfigsHUB | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
