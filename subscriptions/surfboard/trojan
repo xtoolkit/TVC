@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @ConfigsHUB | 13 = trojan, 116.47.10.236, 27335, password = moist, udp-delay = true, skip-cert-verify = true, sni = trojan.freenods.sbs, ws = false
-❔XX | 🔴 | trojan | @ConfigsHUB | 14 = trojan, 147.135.128.19, 20143, password = 8815d654-7115-41c2-ae1a-4bb54e4995ca, udp-delay = true, skip-cert-verify = false, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 45.131.4.118, 443, password = f18d6149-e214-8554-e737-f7523c8b2eea, udp-delay = true, skip-cert-verify = false, sni = 0403.infinityconfig4.workers.dev, ws = false
+🚩CF | 🔴 | trojan | @ConfigsHUB | 3 = trojan, 104.18.152.219, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @ConfigsHUB | 13,❔XX | 🔴 | trojan | @ConfigsHUB | 14
-URL-TEST = url-test,❔XX | 🔴 | trojan | @ConfigsHUB | 13,❔XX | 🔴 | trojan | @ConfigsHUB | 14
-FALLBACK = fallback,❔XX | 🔴 | trojan | @ConfigsHUB | 13,❔XX | 🔴 | trojan | @ConfigsHUB | 14
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @ConfigsHUB | 3
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @ConfigsHUB | 3
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @ConfigsHUB | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

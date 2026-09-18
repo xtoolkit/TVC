@@ -118,31 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 13","type":"trojan","server":"116.47.10.236","port":27335,"udp":false,"password":"moist","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.freenods.sbs"}
-  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 14","type":"trojan","server":"147.135.128.19","port":20143,"udp":false,"password":"8815d654-7115-41c2-ae1a-4bb54e4995ca","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 0","type":"trojan","server":"45.131.4.118","port":443,"udp":false,"password":"f18d6149-e214-8554-e737-f7523c8b2eea","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"0403.infinityconfig4.workers.dev"}
+  - {"name":"🚩CF | 🔴 | trojan | @ConfigsHUB | 3","type":"trojan","server":"104.18.152.219","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 13'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 14'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 3'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 13'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 14'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 3'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 13'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 14'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
+      - '🚩CF | 🔴 | trojan | @ConfigsHUB | 3'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
