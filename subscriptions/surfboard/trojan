@@ -11,14 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | trojan | @ConfigsHUB | 0 = trojan, 199.232.78.160, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
-❔XX | 🟢 | trojan | @ConfigsHUB | 4 = trojan, 167.82.76.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
-❔XX | 🟢 | trojan | @ConfigsHUB | 12 = trojan, 151.101.56.6, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
-❔XX | 🟢 | trojan | @ConfigsHUB | 17 = trojan, 199.232.78.101, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 13 = trojan, 116.47.10.236, 27335, password = moist, udp-delay = true, skip-cert-verify = true, sni = trojan.freenods.sbs, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 14 = trojan, 147.135.128.19, 20143, password = 8815d654-7115-41c2-ae1a-4bb54e4995ca, udp-delay = true, skip-cert-verify = false, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | trojan | @ConfigsHUB | 0,❔XX | 🟢 | trojan | @ConfigsHUB | 4,❔XX | 🟢 | trojan | @ConfigsHUB | 12,❔XX | 🟢 | trojan | @ConfigsHUB | 17
-URL-TEST = url-test,❔XX | 🟢 | trojan | @ConfigsHUB | 0,❔XX | 🟢 | trojan | @ConfigsHUB | 4,❔XX | 🟢 | trojan | @ConfigsHUB | 12,❔XX | 🟢 | trojan | @ConfigsHUB | 17
-FALLBACK = fallback,❔XX | 🟢 | trojan | @ConfigsHUB | 0,❔XX | 🟢 | trojan | @ConfigsHUB | 4,❔XX | 🟢 | trojan | @ConfigsHUB | 12,❔XX | 🟢 | trojan | @ConfigsHUB | 17
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @ConfigsHUB | 13,❔XX | 🔴 | trojan | @ConfigsHUB | 14
+URL-TEST = url-test,❔XX | 🔴 | trojan | @ConfigsHUB | 13,❔XX | 🔴 | trojan | @ConfigsHUB | 14
+FALLBACK = fallback,❔XX | 🔴 | trojan | @ConfigsHUB | 13,❔XX | 🔴 | trojan | @ConfigsHUB | 14
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
