@@ -13,10 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 ❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, TsX0XJKMa2h&, , password = , udp-delay = true, skip-cert-verify = false, ws = false
 ❔XX | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 151.101.56.7, 443, password = mitivpn, udp-delay = true, skip-cert-verify = true, sni = ssl.fastly.com, ws = false
+🚩CF | 🟢 | trojan | @ConfigsHUB | 8 = trojan, 104.18.152.244, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,🚩CF | 🟢 | trojan | @ConfigsHUB | 8
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,🚩CF | 🟢 | trojan | @ConfigsHUB | 8
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,🚩CF | 🟢 | trojan | @ConfigsHUB | 8
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
