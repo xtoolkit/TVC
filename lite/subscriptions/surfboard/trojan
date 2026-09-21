@@ -11,11 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 165.215.250.14, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 12 = trojan, 188.114.97.7, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 12
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 12
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 1,🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 12
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
