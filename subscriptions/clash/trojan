@@ -118,8 +118,9 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 0","type":"trojan","server":"165.215.250.14","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
-  - {"name":"🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.pleadcourt.org"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 0","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"Siw3_iSte@ulOTO,-","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"4ZGCCbcB10pQYiBnWMm4nvZNj4.Royaehman5.WorKErs.DEV"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"165.215.250.14","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
+  - {"name":"🚩CF | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.pleadcourt.org"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
-      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 2'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
-      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 2'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
-      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
