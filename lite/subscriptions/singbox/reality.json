@@ -106,14 +106,15 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇮FI | 🔴 | vless | @V2rayCollector | 31",
+                "🇫🇮FI | 🔴 | vless | @V2rayCollector | 40",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 13",
                 "🇫🇷FR | 🔴 | vless | @prrofile_purple | 129",
                 "🇫🇷FR | 🟢 | vless | @prrofile_purple | 130",
                 "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 7",
                 "🇪🇪EE | 🟢 | vless | @v2ray1_ng | 8",
-                "🇧🇾BY | 🟢 | vless | @lrnbymaa | 3",
-                "🇩🇪DE | 🔴 | vless | @lrnbymaa | 4",
+                "❔XX | 🟢 | vless | @lrnbymaa | 3",
+                "❔XX | 🔴 | vless | @lrnbymaa | 4",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 4",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 12",
@@ -129,14 +130,15 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇮FI | 🔴 | vless | @V2rayCollector | 31",
+                "🇫🇮FI | 🔴 | vless | @V2rayCollector | 40",
                 "🇷🇺RU | 🟢 | vless | @Outline_Vpn | 13",
                 "🇫🇷FR | 🔴 | vless | @prrofile_purple | 129",
                 "🇫🇷FR | 🟢 | vless | @prrofile_purple | 130",
                 "🇩🇪DE | 🔴 | vless | @v2rayNG_Matsuri | 7",
                 "🇪🇪EE | 🟢 | vless | @v2ray1_ng | 8",
-                "🇧🇾BY | 🟢 | vless | @lrnbymaa | 3",
-                "🇩🇪DE | 🔴 | vless | @lrnbymaa | 4",
+                "❔XX | 🟢 | vless | @lrnbymaa | 3",
+                "❔XX | 🔴 | vless | @lrnbymaa | 4",
+                "❔XX | 🔴 | vless | @ConfigsHUB | 4",
                 "❔XX | 🔴 | vless | @Capital_NET | 44",
                 "❔XX | 🔴 | vless | @Capital_NET | 45",
                 "❔XX | 🟢 | vless | @Capoit | 12",
@@ -168,7 +170,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @V2rayCollector | 31",
+            "tag": "🇫🇮FI | 🔴 | vless | @V2rayCollector | 40",
             "type": "vless",
             "server": "31.77.7.139",
             "server_port": 2055,
@@ -349,7 +351,7 @@
             }
         },
         {
-            "tag": "🇧🇾BY | 🟢 | vless | @lrnbymaa | 3",
+            "tag": "❔XX | 🟢 | vless | @lrnbymaa | 3",
             "type": "vless",
             "server": "144.31.131.38",
             "server_port": 443,
@@ -378,7 +380,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @lrnbymaa | 4",
+            "tag": "❔XX | 🔴 | vless | @lrnbymaa | 4",
             "type": "vless",
             "server": "91.107.250.76",
             "server_port": 443,
@@ -404,6 +406,42 @@
                     "public_key": "gWADnxn4FeCUq7gG1hK-gk012Wt4c-Utyr00An2geGQ",
                     "short_id": "6d62a416f077"
                 }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ConfigsHUB | 4",
+            "type": "vless",
+            "server": "152.233.41.30",
+            "server_port": 16923,
+            "uuid": "c065e1bb-cb56-41e5-b043-9dfd15b67565",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "api-maps.yandex.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": null
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA",
+                    "short_id": "10ffb85da1c2d986"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "neurex",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
