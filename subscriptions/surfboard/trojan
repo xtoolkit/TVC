@@ -11,14 +11,16 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 167.82.76.7, 443, password = MITIVpN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
-🚩CF | 🔴 | trojan | @v2ray1_ng | 7 = trojan, 188.114.97.7, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
-🚩CF | 🔴 | trojan | @v2ray1_ng | 9 = trojan, 172.67.149.60, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
-❔XX | 🔴 | trojan | @kingofilter | 2 = trojan, 199.232.78.101, 443, password = MiTIVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 88.99.189.60, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 167.82.76.7, 443, password = MITIVpN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+🚩CF | 🔴 | trojan | @v2ray1_ng | 8 = trojan, 188.114.97.7, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
+❔XX | 🟢 | trojan | @ConfigsHUB | 2 = trojan, api.ohbah.com, 3004, password = 9SmhZnHv0G, udp-delay = true, skip-cert-verify = false, ws = false
+🚩CF | 🔴 | trojan | @kingofilter | 0 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @v2ray1_ng | 7,🚩CF | 🔴 | trojan | @v2ray1_ng | 9,❔XX | 🔴 | trojan | @kingofilter | 2
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @v2ray1_ng | 7,🚩CF | 🔴 | trojan | @v2ray1_ng | 9,❔XX | 🔴 | trojan | @kingofilter | 2
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @v2ray1_ng | 7,🚩CF | 🔴 | trojan | @v2ray1_ng | 9,❔XX | 🔴 | trojan | @kingofilter | 2
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @v2ray1_ng | 8,❔XX | 🟢 | trojan | @ConfigsHUB | 2,🚩CF | 🔴 | trojan | @kingofilter | 0
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @v2ray1_ng | 8,❔XX | 🟢 | trojan | @ConfigsHUB | 2,🚩CF | 🔴 | trojan | @kingofilter | 0
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @v2ray1_ng | 8,❔XX | 🟢 | trojan | @ConfigsHUB | 2,🚩CF | 🔴 | trojan | @kingofilter | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

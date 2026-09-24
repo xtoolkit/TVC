@@ -118,10 +118,12 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 0","type":"trojan","server":"167.82.76.7","port":443,"udp":false,"password":"MITIVpN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ssl.fastly.com"}
-  - {"name":"🚩CF | 🔴 | trojan | @v2ray1_ng | 7","type":"trojan","server":"188.114.97.7","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
-  - {"name":"🚩CF | 🔴 | trojan | @v2ray1_ng | 9","type":"trojan","server":"172.67.149.60","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
-  - {"name":"❔XX | 🔴 | trojan | @kingofilter | 2","type":"trojan","server":"199.232.78.101","port":443,"udp":false,"password":"MiTIVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ssl.fastly.com"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 0","type":"trojan","server":"88.99.189.60","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
+  - {"name":"🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.pleadcourt.org"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"167.82.76.7","port":443,"udp":false,"password":"MITIVpN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ssl.fastly.com"}
+  - {"name":"🚩CF | 🔴 | trojan | @v2ray1_ng | 8","type":"trojan","server":"188.114.97.7","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 2","type":"trojan","server":"api.ohbah.com","port":3004,"udp":false,"password":"9SmhZnHv0G","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🚩CF | 🔴 | trojan | @kingofilter | 0","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,9 +131,11 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
-      - '🚩CF | 🔴 | trojan | @v2ray1_ng | 7'
-      - '🚩CF | 🔴 | trojan | @v2ray1_ng | 9'
-      - '❔XX | 🔴 | trojan | @kingofilter | 2'
+      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
+      - '🚩CF | 🔴 | trojan | @v2ray1_ng | 8'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 2'
+      - '🚩CF | 🔴 | trojan | @kingofilter | 0'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,18 +143,22 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
-      - '🚩CF | 🔴 | trojan | @v2ray1_ng | 7'
-      - '🚩CF | 🔴 | trojan | @v2ray1_ng | 9'
-      - '❔XX | 🔴 | trojan | @kingofilter | 2'
+      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
+      - '🚩CF | 🔴 | trojan | @v2ray1_ng | 8'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 2'
+      - '🚩CF | 🔴 | trojan | @kingofilter | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
-      - '🚩CF | 🔴 | trojan | @v2ray1_ng | 7'
-      - '🚩CF | 🔴 | trojan | @v2ray1_ng | 9'
-      - '❔XX | 🔴 | trojan | @kingofilter | 2'
+      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
+      - '🚩CF | 🔴 | trojan | @v2ray1_ng | 8'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 2'
+      - '🚩CF | 🔴 | trojan | @kingofilter | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
