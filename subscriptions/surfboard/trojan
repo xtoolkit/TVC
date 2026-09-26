@@ -11,14 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 212.227.144.37, 8443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 45.130.125.160, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 45.130.125.160, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 212.227.144.37, 8443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
 ❔XX | 🟢 | trojan | @v2ray1_ng | 2 = trojan, 194.93.61.120, 443, password = pkj3BBnG2NE4wD-72SwgzNcfaHSes-dr, udp-delay = true, skip-cert-verify = false, sni = 16.img.avito.st, ws = false
 🚩CF | 🔴 | trojan | @kingofilter | 0 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @v2ray1_ng | 2,🚩CF | 🔴 | trojan | @kingofilter | 0
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @v2ray1_ng | 2,🚩CF | 🔴 | trojan | @kingofilter | 0
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @v2ray1_ng | 2,🚩CF | 🔴 | trojan | @kingofilter | 0
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @v2ray1_ng | 2,🚩CF | 🔴 | trojan | @kingofilter | 0
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @v2ray1_ng | 2,🚩CF | 🔴 | trojan | @kingofilter | 0
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🟢 | trojan | @v2ray1_ng | 2,🚩CF | 🔴 | trojan | @kingofilter | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
