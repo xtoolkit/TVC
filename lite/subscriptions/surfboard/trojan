@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇸🇨SC | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 45.130.125.160, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
 ❔XX | 🔴 | trojan | @kingofilter | 0 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @kingofilter | 0
-URL-TEST = url-test,❔XX | 🔴 | trojan | @kingofilter | 0
-FALLBACK = fallback,❔XX | 🔴 | trojan | @kingofilter | 0
+MANUAL = select,URL-TEST,FALLBACK,🇸🇨SC | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🔴 | trojan | @kingofilter | 0
+URL-TEST = url-test,🇸🇨SC | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🔴 | trojan | @kingofilter | 0
+FALLBACK = fallback,🇸🇨SC | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🔴 | trojan | @kingofilter | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
