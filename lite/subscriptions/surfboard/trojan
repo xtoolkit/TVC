@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇳🇱NL | 🟢 | trojan | @v2ray1_ng | 7 = trojan, 194.93.61.120, 443, password = pkj3BBnG2NE4wD-72SwgzNcfaHSes-dr, udp-delay = true, skip-cert-verify = false, sni = 16.img.avito.st, ws = false
+🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 119.246.1.143, 443, password = BxceQaOe, udp-delay = true, skip-cert-verify = true, sni = t.me/ripaojiedian, ws = false
+❔XX | 🔴 | trojan | @kingofilter | 1 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | trojan | @v2ray1_ng | 7
-URL-TEST = url-test,🇳🇱NL | 🟢 | trojan | @v2ray1_ng | 7
-FALLBACK = fallback,🇳🇱NL | 🟢 | trojan | @v2ray1_ng | 7
+MANUAL = select,URL-TEST,FALLBACK,🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🔴 | trojan | @kingofilter | 1
+URL-TEST = url-test,🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🔴 | trojan | @kingofilter | 1
+FALLBACK = fallback,🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🔴 | trojan | @kingofilter | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
