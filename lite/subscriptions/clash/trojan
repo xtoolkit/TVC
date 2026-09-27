@@ -118,31 +118,35 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"119.246.1.143","port":443,"udp":false,"password":"BxceQaOe","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"t.me/ripaojiedian"}
-  - {"name":"❔XX | 🔴 | trojan | @kingofilter | 1","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
+  - {"name":"🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 5","type":"trojan","server":"188.114.97.7","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 6","type":"trojan","server":"render.com","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
+  - {"name":"❔XX | 🔴 | trojan | @kingofilter | 3","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '❔XX | 🔴 | trojan | @kingofilter | 1'
+      - '🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 5'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 6'
+      - '❔XX | 🔴 | trojan | @kingofilter | 3'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '❔XX | 🔴 | trojan | @kingofilter | 1'
+      - '🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 5'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 6'
+      - '❔XX | 🔴 | trojan | @kingofilter | 3'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '❔XX | 🔴 | trojan | @kingofilter | 1'
+      - '🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 5'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 6'
+      - '❔XX | 🔴 | trojan | @kingofilter | 3'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
