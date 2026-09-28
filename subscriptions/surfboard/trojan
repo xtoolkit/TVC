@@ -13,14 +13,15 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 ❔XX | 🔴 | trojan | @v2ray1_ng | 0 = trojan, www.speedtest.net, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 ❔XX | 🔴 | trojan | @v2ray1_ng | 1 = trojan, render.com, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
+🚩CF | 🔴 | trojan | @v2ray1_ng | 5 = trojan, 188.114.97.7, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 ❔XX | 🔴 | trojan | @kingofilter | 0 = trojan, 151.101.56.9, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 🚩CF | 🔴 | trojan | @kingofilter | 1 = trojan, 172.67.149.60, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 ❔XX | 🟢 | trojan | @kingofilter | 2 = trojan, 151.101.56.9, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 🚩CF | 🔴 | trojan | @kingofilter | 3 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @v2ray1_ng | 0,❔XX | 🔴 | trojan | @v2ray1_ng | 1,❔XX | 🔴 | trojan | @kingofilter | 0,🚩CF | 🔴 | trojan | @kingofilter | 1,❔XX | 🟢 | trojan | @kingofilter | 2,🚩CF | 🔴 | trojan | @kingofilter | 3
-URL-TEST = url-test,❔XX | 🔴 | trojan | @v2ray1_ng | 0,❔XX | 🔴 | trojan | @v2ray1_ng | 1,❔XX | 🔴 | trojan | @kingofilter | 0,🚩CF | 🔴 | trojan | @kingofilter | 1,❔XX | 🟢 | trojan | @kingofilter | 2,🚩CF | 🔴 | trojan | @kingofilter | 3
-FALLBACK = fallback,❔XX | 🔴 | trojan | @v2ray1_ng | 0,❔XX | 🔴 | trojan | @v2ray1_ng | 1,❔XX | 🔴 | trojan | @kingofilter | 0,🚩CF | 🔴 | trojan | @kingofilter | 1,❔XX | 🟢 | trojan | @kingofilter | 2,🚩CF | 🔴 | trojan | @kingofilter | 3
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @v2ray1_ng | 0,❔XX | 🔴 | trojan | @v2ray1_ng | 1,🚩CF | 🔴 | trojan | @v2ray1_ng | 5,❔XX | 🔴 | trojan | @kingofilter | 0,🚩CF | 🔴 | trojan | @kingofilter | 1,❔XX | 🟢 | trojan | @kingofilter | 2,🚩CF | 🔴 | trojan | @kingofilter | 3
+URL-TEST = url-test,❔XX | 🔴 | trojan | @v2ray1_ng | 0,❔XX | 🔴 | trojan | @v2ray1_ng | 1,🚩CF | 🔴 | trojan | @v2ray1_ng | 5,❔XX | 🔴 | trojan | @kingofilter | 0,🚩CF | 🔴 | trojan | @kingofilter | 1,❔XX | 🟢 | trojan | @kingofilter | 2,🚩CF | 🔴 | trojan | @kingofilter | 3
+FALLBACK = fallback,❔XX | 🔴 | trojan | @v2ray1_ng | 0,❔XX | 🔴 | trojan | @v2ray1_ng | 1,🚩CF | 🔴 | trojan | @v2ray1_ng | 5,❔XX | 🔴 | trojan | @kingofilter | 0,🚩CF | 🔴 | trojan | @kingofilter | 1,❔XX | 🟢 | trojan | @kingofilter | 2,🚩CF | 🔴 | trojan | @kingofilter | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
