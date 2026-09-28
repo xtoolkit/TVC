@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6 = trojan, 188.114.97.7, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
-❔XX | 🔴 | trojan | @kingofilter | 4 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
+🇺🇸US | 🔴 | trojan | @kingofilter | 5 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6,❔XX | 🔴 | trojan | @kingofilter | 4
-URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6,❔XX | 🔴 | trojan | @kingofilter | 4
-FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6,❔XX | 🔴 | trojan | @kingofilter | 4
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @kingofilter | 5
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @kingofilter | 5
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @kingofilter | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
