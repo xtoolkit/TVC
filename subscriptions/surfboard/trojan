@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @v2ray1_ng | 4 = trojan, www.speedtest.net, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
-❔XX | 🔴 | trojan | @v2ray1_ng | 5 = trojan, render.com, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
-❔XX | 🔴 | trojan | @ConfigsHUB | 10 = trojan, 199.232.78.160, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
+❔XX | 🔴 | trojan | @v2ray1_ng | 6 = trojan, www.speedtest.net, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
+❔XX | 🔴 | trojan | @kingofilter | 0 = trojan, 199.232.78.101, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @v2ray1_ng | 4,❔XX | 🔴 | trojan | @v2ray1_ng | 5,❔XX | 🔴 | trojan | @ConfigsHUB | 10
-URL-TEST = url-test,❔XX | 🔴 | trojan | @v2ray1_ng | 4,❔XX | 🔴 | trojan | @v2ray1_ng | 5,❔XX | 🔴 | trojan | @ConfigsHUB | 10
-FALLBACK = fallback,❔XX | 🔴 | trojan | @v2ray1_ng | 4,❔XX | 🔴 | trojan | @v2ray1_ng | 5,❔XX | 🔴 | trojan | @ConfigsHUB | 10
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @v2ray1_ng | 6,❔XX | 🔴 | trojan | @kingofilter | 0
+URL-TEST = url-test,❔XX | 🔴 | trojan | @v2ray1_ng | 6,❔XX | 🔴 | trojan | @kingofilter | 0
+FALLBACK = fallback,❔XX | 🔴 | trojan | @v2ray1_ng | 6,❔XX | 🔴 | trojan | @kingofilter | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
