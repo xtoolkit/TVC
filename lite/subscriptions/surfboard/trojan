@@ -12,10 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6 = trojan, www.speedtest.net, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.ignitelimit.com, ws = false
+🇺🇸US | 🟢 | trojan | @ConfigsHUB | 17 = trojan, 199.232.78.101, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6
-URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6
-FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6,🇺🇸US | 🟢 | trojan | @ConfigsHUB | 17
+URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6,🇺🇸US | 🟢 | trojan | @ConfigsHUB | 17
+FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 6,🇺🇸US | 🟢 | trojan | @ConfigsHUB | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
