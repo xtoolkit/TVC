@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7","type":"trojan","server":"render.com","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
+  - {"name":"🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 7","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8","type":"trojan","server":"render.com","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.ignitelimit.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7'
+      - '🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 7'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7'
+      - '🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 7'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7'
+      - '🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 7'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
