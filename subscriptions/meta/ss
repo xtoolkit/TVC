@@ -120,11 +120,13 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"82.38.31.208","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 5","type":"ss","server":"82.38.31.193","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 13","type":"ss","server":"82.38.31.202","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 14","type":"ss","server":"82.38.31.35","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @proxy_mtm | 1","type":"ss","server":"20.123.34.66","port":443,"password":"r5D6YOSrT6kC76ro","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"82.38.31.211","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 7","type":"ss","server":"82.38.31.210","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 10","type":"ss","server":"82.38.31.213","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 16","type":"ss","server":"15.204.247.124","port":2375,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"193.29.139.132","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @proxy_mtm | 3","type":"ss","server":"20.123.34.66","port":443,"password":"r5D6YOSrT6kC76ro","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @kingofilter | 1","type":"ss","server":"20.166.59.119","port":443,"password":"gJe7umStIck5Mieg","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,10 +134,12 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 4'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 5'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 13'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 14'
-      - '❔XX | 🟢 | ss | @proxy_mtm | 1'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 10'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '❔XX | 🟢 | ss | @proxy_mtm | 3'
+      - '❔XX | 🟢 | ss | @kingofilter | 1'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -143,20 +147,24 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 4'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 5'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 13'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 14'
-      - '❔XX | 🟢 | ss | @proxy_mtm | 1'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 10'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '❔XX | 🟢 | ss | @proxy_mtm | 3'
+      - '❔XX | 🟢 | ss | @kingofilter | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 4'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 5'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 13'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 14'
-      - '❔XX | 🟢 | ss | @proxy_mtm | 1'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 10'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '❔XX | 🟢 | ss | @proxy_mtm | 3'
+      - '❔XX | 🟢 | ss | @kingofilter | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
