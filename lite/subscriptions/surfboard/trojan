@@ -11,13 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, meet-goshawk.rooster465.autos, 443, password = UX82473651, udp-delay = true, skip-cert-verify = false, ws = false
-🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, real-cardinal.rooster465.autos, 443, password = UX82473651, udp-delay = true, skip-cert-verify = true, ws = false
-🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 10 = trojan, 188.114.97.6, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 167.82.76.7, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4,🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 10
-URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4,🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 10
-FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4,🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5,🇨🇦CA | 🔴 | trojan | @v2ray1_ng | 10
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
