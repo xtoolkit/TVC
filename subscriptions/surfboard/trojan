@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 141.193.213.172, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, 63.178.198.94, 443, password = UX82473651, udp-delay = true, skip-cert-verify = false, sni = pleased-albacore.rooster465.autos, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 185.255.179.166, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 141.193.213.172, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 4 = trojan, 167.82.76.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 3
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 3
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 3
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 4
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 4
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
