@@ -11,13 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 185.255.179.166, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, 141.193.213.172, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
-❔XX | 🔴 | trojan | @ConfigsHUB | 17 = trojan, 199.232.78.160, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = mitivpn.fastly.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 8.47.69.0, 443, password = humanity, udp-delay = true, skip-cert-verify = true, sni = www.pleadcourt.org, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🔴 | trojan | @ConfigsHUB | 17
-URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🔴 | trojan | @ConfigsHUB | 17
-FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5,❔XX | 🔴 | trojan | @ConfigsHUB | 17
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
