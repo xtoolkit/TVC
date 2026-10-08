@@ -120,67 +120,67 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"193.29.139.147","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"82.38.31.215","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"193.29.139.147","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"82.38.31.215","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"82.38.31.16","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
   - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 5","type":"ss","server":"185.213.23.63","port":990,"password":"ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=","cipher":"chacha20-ietf-poly1305"}
   - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 6","type":"ss","server":"108.181.0.177","port":8388,"password":"G5p6ww4o67HB","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 7","type":"ss","server":"82.38.31.176","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 7","type":"ss","server":"82.38.31.176","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 11","type":"ss","server":"15.204.247.175","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
   - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 16","type":"ss","server":"82.38.31.206","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"82.38.31.203","port":8080,"password":"k1dBOmOB4oqi7Ump37a1bQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @proxy_mtm | 0","type":"ss","server":"c3.nastuh.link","port":443,"password":"y7KeRTzmH0vXT2kp","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇮🇪IE | 🟢 | ss | @kingofilter | 1","type":"ss","server":"20.166.33.115","port":443,"password":"xyn9JRjicrWOWqAJ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @proxy_mtm | 1","type":"ss","server":"c3.nastuh.link","port":443,"password":"y7KeRTzmH0vXT2kp","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @kingofilter | 1","type":"ss","server":"20.166.33.115","port":443,"password":"xyn9JRjicrWOWqAJ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 1'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 4'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 5'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 6'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 7'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 11'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 18'
-      - '❔XX | 🟢 | ss | @proxy_mtm | 0'
-      - '🇮🇪IE | 🟢 | ss | @kingofilter | 1'
+      - '❔XX | 🟢 | ss | @proxy_mtm | 1'
+      - '❔XX | 🟢 | ss | @kingofilter | 1'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 1'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 4'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 5'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 6'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 7'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 11'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 18'
-      - '❔XX | 🟢 | ss | @proxy_mtm | 0'
-      - '🇮🇪IE | 🟢 | ss | @kingofilter | 1'
+      - '❔XX | 🟢 | ss | @proxy_mtm | 1'
+      - '❔XX | 🟢 | ss | @kingofilter | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 1'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 2'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 4'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 5'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 6'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 7'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 11'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 16'
       - '❔XX | 🟢 | ss | @DeamNet_Proxy | 18'
-      - '❔XX | 🟢 | ss | @proxy_mtm | 0'
-      - '🇮🇪IE | 🟢 | ss | @kingofilter | 1'
+      - '❔XX | 🟢 | ss | @proxy_mtm | 1'
+      - '❔XX | 🟢 | ss | @kingofilter | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
