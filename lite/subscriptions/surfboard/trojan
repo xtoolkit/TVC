@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇧🇬BG | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 193.239.160.134, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+🇧🇬BG | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, 193.239.160.134, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
+🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 9 = trojan, www.speedtest.net, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇧🇬BG | 🔴 | trojan | @oneclickvpnkeys | 4
-URL-TEST = url-test,🇧🇬BG | 🔴 | trojan | @oneclickvpnkeys | 4
-FALLBACK = fallback,🇧🇬BG | 🔴 | trojan | @oneclickvpnkeys | 4
+MANUAL = select,URL-TEST,FALLBACK,🇧🇬BG | 🔴 | trojan | @oneclickvpnkeys | 5,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 9
+URL-TEST = url-test,🇧🇬BG | 🔴 | trojan | @oneclickvpnkeys | 5,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 9
+FALLBACK = fallback,🇧🇬BG | 🔴 | trojan | @oneclickvpnkeys | 5,🇨🇦CA | 🔴 | trojan | @ConfigsHUB | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
