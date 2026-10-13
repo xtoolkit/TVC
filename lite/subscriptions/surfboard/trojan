@@ -11,12 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3 = trojan, 3.74.47.221, 443, password = UX82473651, udp-delay = true, skip-cert-verify = true, sni = cuddly-sheepdog.rooster465.autos, ws = false
+🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 3.74.47.221, 443, password = UX82473651, udp-delay = true, skip-cert-verify = true, sni = cuddly-sheepdog.rooster465.autos, ws = false
+🇺🇸US | 🔴 | trojan | @v2ray1_ng | 5 = trojan, 172.66.40.99, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.trusteeforward.com, ws = false
 🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9 = trojan, www.speedtest.net, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.calmlunch.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9
-URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9
-FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 5,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9
+URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 5,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9
+FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 5,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

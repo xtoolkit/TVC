@@ -118,7 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"3.74.47.221","port":443,"udp":false,"password":"UX82473651","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"cuddly-sheepdog.rooster465.autos"}
+  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"3.74.47.221","port":443,"udp":false,"password":"UX82473651","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"cuddly-sheepdog.rooster465.autos"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 5","type":"trojan","server":"172.66.40.99","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.trusteeforward.com"}
   - {"name":"🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
 proxy-groups:
   - name: MANUAL
@@ -126,7 +127,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 5'
       - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9'
   - name: URL-TEST
     type: url-test
@@ -134,14 +136,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 5'
       - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 5'
       - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 9'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
