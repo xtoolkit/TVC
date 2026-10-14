@@ -118,8 +118,9 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"3.74.47.221","port":443,"udp":false,"password":"UX82473651","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"cuddly-sheepdog.rooster465.autos"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7","type":"trojan","server":"172.66.40.99","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.trusteeforward.com"}
+  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"de-bots4.h1cloud.net","port":25267,"udp":false,"password":"happybirthdaydaniel","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"t.me/FuckTheWall"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8","type":"trojan","server":"172.66.40.99","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.trusteeforward.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @ConfigsHUB | 16","type":"trojan","server":"167.82.64.46","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"play.google.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
+      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
+      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
+      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 16'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
