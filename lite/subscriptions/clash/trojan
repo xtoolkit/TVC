@@ -118,7 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇪🇪EE | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"109.206.241.10","port":449,"udp":false,"password":"oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"188.42.145.180","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"wWw.Volumeroot.cOm."}
+  - {"name":"🇫🇮FI | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"46.62.230.149","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.pleadcourt.org"}
   - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 6","type":"trojan","server":"172.67.131.217","port":443,"udp":false,"password":"6c73b7937b3e44e5982f9d5efa57d8cd","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"aUTO-scale-728382.BuiLD-sVc-267891.wORkErs.dEv"}
 proxy-groups:
   - name: MANUAL
@@ -126,7 +127,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇪🇪EE | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇫🇮FI | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 6'
   - name: URL-TEST
     type: url-test
@@ -134,14 +136,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇪🇪EE | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇫🇮FI | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇪🇪EE | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 3'
+      - '🇫🇮FI | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 6'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
