@@ -11,13 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 199.232.78.160, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = google.com, ws = false
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 188.42.145.180, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.volumeroot.com, ws = false
-❔XX | 🔴 | trojan | @v2ray1_ng | 0 = trojan, 199.232.78.160, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = google.com, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 89.150.34.41, 2053, password = humanity, udp-delay = true, skip-cert-verify = true, sni = www.calmlunch.com, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 199.232.78.160, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = google.com, ws = false
+❔XX | 🔴 | trojan | @v2ray1_ng | 1 = trojan, 199.232.78.160, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = google.com, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 4 = trojan, 146.75.57.238, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = www.google.com, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 5 = trojan, 167.82.64.46, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = firefox.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🔴 | trojan | @v2ray1_ng | 0
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🔴 | trojan | @v2ray1_ng | 0
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 4,❔XX | 🔴 | trojan | @v2ray1_ng | 0
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @v2ray1_ng | 1,❔XX | 🔴 | trojan | @ConfigsHUB | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 5
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @v2ray1_ng | 1,❔XX | 🔴 | trojan | @ConfigsHUB | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 5
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @v2ray1_ng | 1,❔XX | 🔴 | trojan | @ConfigsHUB | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
