@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"188.42.145.180","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.volumeroot.com"}
-  - {"name":"🇳🇱NL | 🔴 | trojan | @ConfigsHUB | 6","type":"trojan","server":"151.101.38.6","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.firefox.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇳🇱NL | 🔴 | trojan | @ConfigsHUB | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,14 +135,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇳🇱NL | 🔴 | trojan | @ConfigsHUB | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇳🇱NL | 🔴 | trojan | @ConfigsHUB | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
