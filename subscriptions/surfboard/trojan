@@ -11,14 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 139.180.146.200, 8886, password = e26a229d-e8f2-4ff9-8c7d-58a9d83ee437, udp-delay = true, skip-cert-verify = true, ws = false
-🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 141.101.115.104, 443, password = humanity, udp-delay = true, skip-cert-verify = true, sni = www.calmlunch.com, ws = false
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, b2n.ir, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = de.mitivpn.in.net, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 139.180.146.200, 8886, password = e26a229d-e8f2-4ff9-8c7d-58a9d83ee437, udp-delay = true, skip-cert-verify = true, ws = false
+🚩CF | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 141.101.115.104, 443, password = humanity, udp-delay = true, skip-cert-verify = true, sni = www.calmlunch.com, ws = false
 🚩CF | 🔴 | trojan | @proxystore11 | 3 = trojan, 188.114.97.6, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = d-e.mitivpn.in.net, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @proxystore11 | 3
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @proxystore11 | 3
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,🚩CF | 🔴 | trojan | @oneclickvpnkeys | 1,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @proxystore11 | 3
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,🚩CF | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @proxystore11 | 3
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,🚩CF | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @proxystore11 | 3
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 1,🚩CF | 🔴 | trojan | @oneclickvpnkeys | 2,🚩CF | 🔴 | trojan | @proxystore11 | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
