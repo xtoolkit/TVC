@@ -121,12 +121,9 @@ dns:
 
 proxies:
   - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 0","type":"trojan","server":"b2n.ir","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"de.mitivpn.in.net"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"179.254.115.148","port":25267,"udp":false,"password":"happybirthdaydaniel","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"de3.dedushka.top","port":443,"udp":false,"password":"4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"de6.dedushka.top","port":443,"udp":false,"password":"4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"179.254.115.148","port":25267,"udp":false,"password":"happybirthdaydaniel","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🚩CF | 🔴 | trojan | @v2ray1_ng | 6","type":"trojan","server":"188.114.98.0","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.pleadcourt.org"}
-  - {"name":"🚩CF | 🔴 | trojan | @proxystore11 | 0","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"d-e.mitivpn.in.net"}
+  - {"name":"🚩CF | 🔴 | trojan | @proxystore11 | 3","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"d-e.mitivpn.in.net"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -134,12 +131,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🚩CF | 🔴 | trojan | @v2ray1_ng | 6'
-      - '🚩CF | 🔴 | trojan | @proxystore11 | 0'
+      - '🚩CF | 🔴 | trojan | @proxystore11 | 3'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -147,24 +141,18 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🚩CF | 🔴 | trojan | @v2ray1_ng | 6'
-      - '🚩CF | 🔴 | trojan | @proxystore11 | 0'
+      - '🚩CF | 🔴 | trojan | @proxystore11 | 3'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🚩CF | 🔴 | trojan | @v2ray1_ng | 6'
-      - '🚩CF | 🔴 | trojan | @proxystore11 | 0'
+      - '🚩CF | 🔴 | trojan | @proxystore11 | 3'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
