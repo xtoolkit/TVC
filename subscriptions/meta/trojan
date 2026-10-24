@@ -120,9 +120,9 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"212.183.88.136","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
-  - {"name":"🚩CF | 🔴 | trojan | @oneclickvpnkeys | 3","type":"trojan","server":"141.101.115.104","port":443,"udp":false,"password":"humanity","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"139.180.146.200","port":8886,"udp":false,"password":"e26a229d-e8f2-4ff9-8c7d-58a9d83ee437","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 0","type":"trojan","server":"212.183.88.136","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"212.183.88.136","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
+  - {"name":"🚩CF | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"141.101.115.104","port":443,"udp":false,"password":"humanity","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"www.calmlunch.com"}
   - {"name":"🚩CF | 🔴 | trojan | @proxystore11 | 5","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"d-e.mitivpn.in.net"}
 proxy-groups:
   - name: MANUAL
@@ -130,9 +130,9 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
-      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
+      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🚩CF | 🔴 | trojan | @proxystore11 | 5'
   - name: URL-TEST
     type: url-test
@@ -140,18 +140,18 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
-      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
+      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🚩CF | 🔴 | trojan | @proxystore11 | 5'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
-      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 3'
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 0'
+      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
+      - '🚩CF | 🔴 | trojan | @oneclickvpnkeys | 4'
       - '🚩CF | 🔴 | trojan | @proxystore11 | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
