@@ -118,35 +118,35 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"145.241.235.204","port":20022,"udp":false,"password":"5e4a2c58499345c3","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"ikuk204.zxom.eu.org"}
-  - {"name":"🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"154.81.141.42","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.pleadcourt.org"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 9","type":"trojan","server":"167.82.64.46","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"firefox.com"}
+  - {"name":"🇪🇸ES | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"109.234.211.232","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.pleadcourt.org"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"199.232.78.160","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"community.fastly.steamstatic.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8","type":"trojan","server":"167.82.64.46","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"firefox.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 9'
+      - '🇪🇸ES | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 9'
+      - '🇪🇸ES | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 9'
+      - '🇪🇸ES | 🔴 | trojan | @oneclickvpnkeys | 4'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 8'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
