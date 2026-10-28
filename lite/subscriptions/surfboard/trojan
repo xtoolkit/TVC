@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 154.81.141.42, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
-🇱🇹LT | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, 88.216.69.253, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
+🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 145.241.235.204, 20022, password = 5e4a2c58499345c3, udp-delay = true, skip-cert-verify = true, sni = ikuk204.zxom.eu.org, ws = false
+🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, 154.81.141.42, 443, password = humanity, udp-delay = true, skip-cert-verify = false, sni = www.pleadcourt.org, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 4,🇱🇹LT | 🔴 | trojan | @oneclickvpnkeys | 5
-URL-TEST = url-test,🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 4,🇱🇹LT | 🔴 | trojan | @oneclickvpnkeys | 5
-FALLBACK = fallback,🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 4,🇱🇹LT | 🔴 | trojan | @oneclickvpnkeys | 5
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 4,🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5
+URL-TEST = url-test,🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 4,🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5
+FALLBACK = fallback,🇬🇧GB | 🔴 | trojan | @oneclickvpnkeys | 4,🇸🇬SG | 🔴 | trojan | @oneclickvpnkeys | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
