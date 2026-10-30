@@ -118,39 +118,35 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 10","type":"ss","server":"82.38.31.28","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 13","type":"ss","server":"216.105.168.18","port":443,"password":"bQZl7HDxSabr1FurTYQHFU","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 14","type":"ss","server":"82.38.31.48","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @kingofilter | 6","type":"ss","server":"193.29.139.197","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @DeamNet_Proxy | 9","type":"ss","server":"82.38.31.11","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 12","type":"ss","server":"82.38.31.16","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | ss | @kingofilter | 6","type":"ss","server":"193.29.139.197","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 10'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 13'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 14'
-      - '🇳🇱NL | 🟢 | ss | @kingofilter | 6'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 9'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 12'
+      - '❔XX | 🟢 | ss | @kingofilter | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 10'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 13'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 14'
-      - '🇳🇱NL | 🟢 | ss | @kingofilter | 6'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 9'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 12'
+      - '❔XX | 🟢 | ss | @kingofilter | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 10'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 13'
-      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 14'
-      - '🇳🇱NL | 🟢 | ss | @kingofilter | 6'
+      - '❔XX | 🟢 | ss | @DeamNet_Proxy | 9'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 12'
+      - '❔XX | 🟢 | ss | @kingofilter | 6'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
