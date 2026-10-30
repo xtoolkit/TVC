@@ -108,9 +108,10 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇮🇷IR | 🟢 | vmess | @v2ray1_ng | 9",
+                "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇮🇷IR | 🟢 | vmess | @free1_vpn | 10",
                 "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
                 "❔XX | 🟢 | vmess | @kingofilter | 5"
@@ -122,9 +123,10 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
-                "🇮🇷IR | 🟢 | vmess | @v2ray1_ng | 9",
+                "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
+                "🇮🇷IR | 🟢 | vmess | @free1_vpn | 10",
                 "🇨🇳CN | 🟢 | vmess | @Hope_Net | 8",
                 "🇺🇸US | 🟢 | vmess | @Hope_Net | 9",
                 "❔XX | 🟢 | vmess | @kingofilter | 5"
@@ -184,11 +186,11 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🟢 | vmess | @v2ray1_ng | 9",
+            "tag": "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
-            "server": "asiatun.roshdiran1.ir",
-            "server_port": 4242,
-            "uuid": "558fecaf-bea9-4bca-9e18-2f28240dd2df",
+            "server": "vah4urdzl3jdx5r2.v.3dns.vip",
+            "server_port": 443,
+            "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -198,6 +200,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vah4urdzl3jdx5r2.v.3dns.vip",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ws-vmess",
+                "headers": {
+                    "Host": "vah4urdzl3jdx5r2.v.3dns.vip"
+                }
             }
         },
         {
@@ -256,6 +275,23 @@
                 "headers": {
                     "Host": "104.26.8.210"
                 }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🟢 | vmess | @free1_vpn | 10",
+            "type": "vmess",
+            "server": "asiatun.roshdiran1.ir",
+            "server_port": 4242,
+            "uuid": "558fecaf-bea9-4bca-9e18-2f28240dd2df",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
