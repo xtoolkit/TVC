@@ -120,7 +120,8 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"45.32.157.84","port":443,"udp":false,"password":"Tg3RnK7Xp8B1","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"172.66.40.99","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.trusteeforward.com"}
+  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 7","type":"trojan","server":"45.32.157.84","port":443,"udp":false,"password":"Tg3RnK7Xp8B1","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com"}
   - {"name":"🇺🇸US | 🔴 | trojan | @ConfigsHUB | 6","type":"trojan","server":"www.speedtest.net","port":8443,"udp":false,"password":"uFepQ5r4JSusbY","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"floral-grass-aa1e.dianawpewpek1.workers.dev"}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +129,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 7'
       - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 6'
   - name: URL-TEST
     type: url-test
@@ -136,14 +138,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 7'
       - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 7'
       - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
