@@ -120,31 +120,35 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"216.152.147.89","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.connectingpeoplewithgreatjobs.com"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"167.82.64.120","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"firefox.com"}
+  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"193.108.119.29","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"blog.iloverussia2026.com"}
+  - {"name":"🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 7","type":"trojan","server":"216.152.147.89","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.connectingpeoplewithgreatjobs.com"}
+  - {"name":"Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org#🇺🇸US | 🔴 | trojan | @ConfigsHUB | 14","type":"trojan","server":"108.162.194.134","port":443,"udp":false,"password":"humanity","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - 'Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org#🇺🇸US | 🔴 | trojan | @ConfigsHUB | 14'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - 'Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org#🇺🇸US | 🔴 | trojan | @ConfigsHUB | 14'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 7'
+      - 'Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org#🇺🇸US | 🔴 | trojan | @ConfigsHUB | 14'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
