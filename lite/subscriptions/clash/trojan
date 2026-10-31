@@ -120,7 +120,6 @@ dns:
 proxies:
   - {"name":"🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"216.152.147.89","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"www.connectingpeoplewithgreatjobs.com"}
   - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"167.82.64.120","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"firefox.com"}
-  - {"name":"🇸🇪SE | 🔴 | trojan | @ConfigsHUB | 11","type":"trojan","server":"wwww.qarvian.ir","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"firefox.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - FALLBACK
       - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
-      - '🇸🇪SE | 🔴 | trojan | @ConfigsHUB | 11'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +136,6 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
-      - '🇸🇪SE | 🔴 | trojan | @ConfigsHUB | 11'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +143,6 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @oneclickvpnkeys | 5'
       - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
-      - '🇸🇪SE | 🔴 | trojan | @ConfigsHUB | 11'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
