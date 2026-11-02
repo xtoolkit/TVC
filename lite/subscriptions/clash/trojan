@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"fr001.zestapp778.com","port":16778,"udp":false,"password":"5t6i121em5lkmsmk","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"216.152.156.212","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @v2ray1_ng | 10","type":"trojan","server":"193.108.119.96","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"learn.iloverussia2026.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🟢 | trojan | @v2ray1_ng | 10'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🟢 | trojan | @v2ray1_ng | 10'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | 🔴 | trojan | @oneclickvpnkeys | 5'
+      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🟢 | trojan | @v2ray1_ng | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
