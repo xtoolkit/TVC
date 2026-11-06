@@ -120,7 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8","type":"trojan","server":"45.32.157.84","port":443,"udp":false,"password":"Tg3RnK7Xp8B1","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com"}
+  - {"name":"🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"Sclass-C1.catcat321.com","port":20065,"udp":false,"password":"d9064589-74af-432a-9390-5d8a9da281bf","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"hk.catxstar.com"}
   - {"name":"🇺🇸US | 🔴 | trojan | @proxystore11 | 11","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"d-e.mitivpn.in.net"}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +128,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
   - name: URL-TEST
     type: url-test
@@ -136,14 +136,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 8'
+      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
