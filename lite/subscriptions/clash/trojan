@@ -118,7 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 10","type":"trojan","server":"Sclass-C1.catcat321.com","port":20065,"udp":false,"password":"d9064589-74af-432a-9390-5d8a9da281bf","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"hk.catxstar.com"}
+  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9","type":"trojan","server":"193.108.119.78","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇺🇸US | 🔴 | trojan | @proxystore11 | 11","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"d-e.mitivpn.in.net"}
 proxy-groups:
   - name: MANUAL
@@ -126,7 +126,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
   - name: URL-TEST
     type: url-test
@@ -134,14 +134,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇭🇰HK | 🔴 | trojan | @oneclickvpnkeys | 10'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 9'
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
