@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7 = trojan, 146.75.57.120, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = cdn.akamai.steamstatic.com, ws = false
 🇺🇸US | 🔴 | trojan | @proxystore11 | 11 = trojan, 188.114.97.6, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = d-e.mitivpn.in.net, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 7,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
