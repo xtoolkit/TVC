@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 45.77.54.204, 51520, password = 5t6i121em5lkmsmk, udp-delay = true, skip-cert-verify = false, sni = de001.zestapp778.com, ws = false
 🇺🇸US | 🔴 | trojan | @proxystore11 | 11 = trojan, 188.114.97.6, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = d-e.mitivpn.in.net, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
