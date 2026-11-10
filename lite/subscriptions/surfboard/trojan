@@ -11,13 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 146.75.57.7, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = cdn.akamai.steamstatic.com, ws = false
-🇺🇸US | 🟢 | trojan | @v2ray1_ng | 9 = trojan, 170.101.101.237, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = false, sni = cdn.explorecreativejobsandenhanceyourcareerportfolio.com, ws = false
 🇺🇸US | 🔴 | trojan | @proxystore11 | 11 = trojan, 188.114.97.6, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = d-e.mitivpn.in.net, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🟢 | trojan | @v2ray1_ng | 9,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🟢 | trojan | @v2ray1_ng | 9,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🟢 | trojan | @v2ray1_ng | 9,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
