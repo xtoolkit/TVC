@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | 🔴 | trojan | @ConfigsHUB | 16 = trojan, blog.findlocaljobnetworkandbuildcommunityconnections.com, 443, password = dba20dcb635e430fa4d3bfc303a149d2, udp-delay = true, skip-cert-verify = true, sni = blog.findlocaljobnetworkandbuildcommunityconnections.com, ws = false
 🇺🇸US | 🔴 | trojan | @proxystore11 | 11 = trojan, 188.114.97.6, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = d-e.mitivpn.in.net, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 16,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 16,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 16,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
