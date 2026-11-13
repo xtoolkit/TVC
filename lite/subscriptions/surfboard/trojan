@@ -12,10 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | 🔴 | trojan | @proxystore11 | 11 = trojan, 188.114.97.6, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = d-e.mitivpn.in.net, ws = false
+❔XX | 🟢 | trojan | @kingofilter | 0 = trojan, 66.163.127.44, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = false, sni = learn.indyourperfectremotetechjobfromthecomfortofhome.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @proxystore11 | 11
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @proxystore11 | 11,❔XX | 🟢 | trojan | @kingofilter | 0
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @proxystore11 | 11,❔XX | 🟢 | trojan | @kingofilter | 0
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @proxystore11 | 11,❔XX | 🟢 | trojan | @kingofilter | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

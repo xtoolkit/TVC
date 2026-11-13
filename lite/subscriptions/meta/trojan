@@ -121,6 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🔴 | trojan | @proxystore11 | 11","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"d-e.mitivpn.in.net"}
+  - {"name":"❔XX | 🟢 | trojan | @kingofilter | 0","type":"trojan","server":"66.163.127.44","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"learn.indyourperfectremotetechjobfromthecomfortofhome.com"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
+      - '❔XX | 🟢 | trojan | @kingofilter | 0'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,12 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
+      - '❔XX | 🟢 | trojan | @kingofilter | 0'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
+      - '❔XX | 🟢 | trojan | @kingofilter | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
