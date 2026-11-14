@@ -108,12 +108,14 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
-                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 6",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+                "🇨🇦CA | 🟢 | vmess | @FreakConfig | 4",
+                "🇺🇸US | 🟢 | vmess | @FreakConfig | 5"
             ]
         },
         {
@@ -122,12 +124,14 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
                 "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
-                "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 6",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "🇺🇸US | 🟢 | vmess | @yaney_01 | 5",
                 "🇨🇳CN | 🟢 | vmess | @Hope_Net | 10",
-                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11"
+                "🇺🇸US | 🟢 | vmess | @Hope_Net | 11",
+                "🇨🇦CA | 🟢 | vmess | @FreakConfig | 4",
+                "🇺🇸US | 🟢 | vmess | @FreakConfig | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -184,11 +188,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
+            "tag": "🇭🇰HK | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
-            "server": null,
-            "server_port": 0,
-            "uuid": null,
+            "server": "dog-tw.kunlun01dns.com",
+            "server_port": 21035,
+            "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -201,11 +205,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @v2ray1_ng | 6",
+            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 9",
             "type": "vmess",
-            "server": "38.91.107.49",
-            "server_port": 18000,
-            "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+            "server": null,
+            "server_port": 0,
+            "uuid": null,
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -323,6 +327,57 @@
                 "path": "\/linkws",
                 "headers": {
                     "Host": "obdii.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | vmess | @FreakConfig | 4",
+            "type": "vmess",
+            "server": "23.162.200.198",
+            "server_port": 18000,
+            "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @FreakConfig | 5",
+            "type": "vmess",
+            "server": "www.windowssearchtools.com",
+            "server_port": 443,
+            "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.windowssearchtools.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/truth",
+                "headers": {
+                    "Host": "www.windowssearchtools.com"
                 }
             }
         }
