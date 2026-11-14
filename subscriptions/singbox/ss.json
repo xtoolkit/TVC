@@ -105,13 +105,22 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 0",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 5",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 10",
+                "❔XX | 🟢 | ss | @kingofilter | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 0",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 5",
+                "❔XX | 🟢 | ss | @DeamNet_Proxy | 10",
+                "❔XX | 🟢 | ss | @kingofilter | 1"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +140,46 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 0",
+            "type": "shadowsocks",
+            "server": "94.156.250.148",
+            "server_port": 7001,
+            "method": "aes-256-gcm",
+            "password": "RexnBgU7EV5ADxG",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 5",
+            "type": "shadowsocks",
+            "server": "84.247.155.196",
+            "server_port": 80,
+            "method": "aes-256-gcm",
+            "password": "3eOFeNssde7PYYMv",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @DeamNet_Proxy | 10",
+            "type": "shadowsocks",
+            "server": "185.164.175.81",
+            "server_port": 19999,
+            "method": "aes-256-gcm",
+            "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "❔XX | 🟢 | ss | @kingofilter | 1",
+            "type": "shadowsocks",
+            "server": "57.131.4.13",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "mx81glqbtlwuhcjo",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
