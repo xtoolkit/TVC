@@ -11,14 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 13 = trojan, c-cm.jiasu.one, 19972, password = f5b7d963-ec43-4515-8bd5-33cbcc5582ec, udp-delay = true, skip-cert-verify = false, sni = 6track.jiasu.one, ws = false
 🇺🇸US | 🔴 | trojan | @proxystore11 | 11 = trojan, 188.114.97.6, 443, password = mitivpn, udp-delay = true, skip-cert-verify = false, sni = d-e.mitivpn.in.net, ws = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @Hope_Net | 11 = vmess, 172.67.71.160, 443, username = 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"obdii.cfd", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | trojan | @kingofilter | 0 = trojan, 66.163.127.44, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = false, sni = learn.indyourperfectremotetechjobfromthecomfortofhome.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @proxystore11 | 11,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | trojan | @kingofilter | 0
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @proxystore11 | 11,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | trojan | @kingofilter | 0
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @proxystore11 | 11,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | trojan | @kingofilter | 0
+MANUAL = select,URL-TEST,FALLBACK,🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 13,🇺🇸US | 🔴 | trojan | @proxystore11 | 11,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | trojan | @kingofilter | 0
+URL-TEST = url-test,🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 13,🇺🇸US | 🔴 | trojan | @proxystore11 | 11,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | trojan | @kingofilter | 0
+FALLBACK = fallback,🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 13,🇺🇸US | 🔴 | trojan | @proxystore11 | 11,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11,❔XX | 🟢 | trojan | @kingofilter | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

@@ -118,6 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
+  - {"name":"🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 13","type":"trojan","server":"c-cm.jiasu.one","port":19972,"udp":false,"password":"f5b7d963-ec43-4515-8bd5-33cbcc5582ec","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"6track.jiasu.one"}
   - {"name":"🇺🇸US | 🔴 | trojan | @proxystore11 | 11","type":"trojan","server":"188.114.97.6","port":443,"udp":false,"password":"mitivpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"d-e.mitivpn.in.net"}
   - {"name":"❔XX | 🟢 | trojan | @kingofilter | 0","type":"trojan","server":"66.163.127.44","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"learn.indyourperfectremotetechjobfromthecomfortofhome.com"}
 proxy-groups:
@@ -126,6 +127,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 13'
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
       - '❔XX | 🟢 | trojan | @kingofilter | 0'
   - name: URL-TEST
@@ -134,6 +136,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 13'
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
       - '❔XX | 🟢 | trojan | @kingofilter | 0'
   - name: FALLBACK
@@ -141,6 +144,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 13'
       - '🇺🇸US | 🔴 | trojan | @proxystore11 | 11'
       - '❔XX | 🟢 | trojan | @kingofilter | 0'
 rules:
