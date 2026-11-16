@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, 64.188.79.139, 2084, password = M6EqM5cCx-10FAcmYnGBz4Cwr1zzSYb1, udp-delay = true, skip-cert-verify = false, sni = login.vk.com, ws = false
-🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6 = trojan, 66.163.112.13, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = true, ws = false
+🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 193.108.119.96, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = true, ws = false
+🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 38.180.101.235, 5443, password = X00HagvwL8gQXNDAnsxsN8dv1_VdneEo, udp-delay = true, skip-cert-verify = false, sni = rs.nebulaguard.org, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6
-URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6
-FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1,🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2
+URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1,🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2
+FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1,🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

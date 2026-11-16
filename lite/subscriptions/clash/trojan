@@ -118,31 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5","type":"trojan","server":"64.188.79.139","port":2084,"udp":false,"password":"M6EqM5cCx-10FAcmYnGBz4Cwr1zzSYb1","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"login.vk.com"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6","type":"trojan","server":"66.163.112.13","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"193.108.119.96","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"38.180.101.235","port":5443,"udp":false,"password":"X00HagvwL8gQXNDAnsxsN8dv1_VdneEo","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"rs.nebulaguard.org"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 5'
-      - '🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 6'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1'
+      - '🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
