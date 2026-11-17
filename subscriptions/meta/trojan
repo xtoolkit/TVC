@@ -120,55 +120,35 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"193.108.119.96","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"38.180.101.235","port":5443,"udp":false,"password":"X00HagvwL8gQXNDAnsxsN8dv1_VdneEo","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"rs.nebulaguard.org"}
-  - {"name":"❔XX | 🔴 | trojan | @v2ray1_ng | 1","type":"trojan","server":"image-web-production-2ec53b05.up.railway.app","port":443,"udp":false,"password":"05cbf32b-7349-4497-b763-65702079929c","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"image-web-production-2ec53b05.up.railway.app"}
-  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 5","type":"trojan","server":"c-cm.jiasu.one","port":56262,"udp":false,"password":"5398a62d-6fae-465d-8ffe-19418a8b561e","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"hk06.jiasu.one"}
-  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 6","type":"trojan","server":"216.106.186.155","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"api.findlocaljobnetworkandbuildcommunityconnections.com"}
-  - {"name":"🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 7","type":"trojan","server":"c-cm.jiasu.one","port":47072,"udp":false,"password":"5398a62d-6fae-465d-8ffe-19418a8b561e","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"jp04.jiasu.one"}
-  - {"name":"❔XX | 🟢 | trojan | @kingofilter | 0","type":"trojan","server":"66.163.127.44","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"learn.indyourperfectremotetechjobfromthecomfortofhome.com"}
-  - {"name":"❔XX | 🔴 | trojan | @kingofilter | 1","type":"trojan","server":"199.232.78.159","port":443,"udp":false,"password":"jcTG9WSWMJAmR4rv10xpww","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cdn.akamai.steamstatic.com"}
+  - {"name":"❔XX | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"193.108.119.96","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"❔XX | 🔴 | trojan | @v2ray1_ng | 2","type":"trojan","server":"image-web-production-2ec53b05.up.railway.app","port":443,"udp":false,"password":"05cbf32b-7349-4497-b763-65702079929c","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"image-web-production-2ec53b05.up.railway.app"}
+  - {"name":"❔XX | 🟢 | trojan | @ConfigsHUB | 8","type":"trojan","server":"170.101.101.211","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"api.explorecreativejobsandenhanceyourcareerportfolio.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
-      - '❔XX | 🔴 | trojan | @v2ray1_ng | 1'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 5'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 6'
-      - '🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 7'
-      - '❔XX | 🟢 | trojan | @kingofilter | 0'
-      - '❔XX | 🔴 | trojan | @kingofilter | 1'
+      - '❔XX | 🔴 | trojan | @v2ray1_ng | 2'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 8'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
-      - '❔XX | 🔴 | trojan | @v2ray1_ng | 1'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 5'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 6'
-      - '🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 7'
-      - '❔XX | 🟢 | trojan | @kingofilter | 0'
-      - '❔XX | 🔴 | trojan | @kingofilter | 1'
+      - '❔XX | 🔴 | trojan | @v2ray1_ng | 2'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 8'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 1'
       - '❔XX | 🔴 | trojan | @oneclickvpnkeys | 2'
-      - '❔XX | 🔴 | trojan | @v2ray1_ng | 1'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 5'
-      - '❔XX | 🔴 | trojan | @ConfigsHUB | 6'
-      - '🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 7'
-      - '❔XX | 🟢 | trojan | @kingofilter | 0'
-      - '❔XX | 🔴 | trojan | @kingofilter | 1'
+      - '❔XX | 🔴 | trojan | @v2ray1_ng | 2'
+      - '❔XX | 🟢 | trojan | @ConfigsHUB | 8'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
