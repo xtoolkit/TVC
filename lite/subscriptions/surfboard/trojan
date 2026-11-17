@@ -13,10 +13,12 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1 = trojan, 193.108.119.96, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = true, ws = false
 🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 38.180.101.235, 5443, password = X00HagvwL8gQXNDAnsxsN8dv1_VdneEo, udp-delay = true, skip-cert-verify = false, sni = rs.nebulaguard.org, ws = false
+🇺🇸US | 🔴 | trojan | @ConfigsHUB | 8 = trojan, 216.106.186.155, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = false, sni = api.findlocaljobnetworkandbuildcommunityconnections.com, ws = false
+🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 9 = trojan, c-cm.jiasu.one, 47072, password = 5398a62d-6fae-465d-8ffe-19418a8b561e, udp-delay = true, skip-cert-verify = false, sni = jp04.jiasu.one, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1,🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2
-URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1,🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2
-FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1,🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1,🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 8,🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 9
+URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1,🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 8,🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 9
+FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1,🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2,🇺🇸US | 🔴 | trojan | @ConfigsHUB | 8,🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
