@@ -118,39 +118,27 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1","type":"trojan","server":"193.108.119.96","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"38.180.101.235","port":5443,"udp":false,"password":"X00HagvwL8gQXNDAnsxsN8dv1_VdneEo","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"rs.nebulaguard.org"}
-  - {"name":"🇺🇸US | 🔴 | trojan | @ConfigsHUB | 8","type":"trojan","server":"216.106.186.155","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"api.findlocaljobnetworkandbuildcommunityconnections.com"}
-  - {"name":"🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 9","type":"trojan","server":"c-cm.jiasu.one","port":47072,"udp":false,"password":"5398a62d-6fae-465d-8ffe-19418a8b561e","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"jp04.jiasu.one"}
+  - {"name":"🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2","type":"trojan","server":"193.108.119.96","port":443,"udp":false,"password":"0ab6c98dae3b48e8b9c4a776b6c9c19a","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1'
-      - '🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2'
-      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 8'
-      - '🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 9'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1'
-      - '🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2'
-      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 8'
-      - '🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 9'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 1'
-      - '🇷🇸RS | 🔴 | trojan | @oneclickvpnkeys | 2'
-      - '🇺🇸US | 🔴 | trojan | @ConfigsHUB | 8'
-      - '🇯🇵JP | 🔴 | trojan | @ConfigsHUB | 9'
+      - '🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
