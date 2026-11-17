@@ -11,13 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 193.108.119.96, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = true, ws = false
-❔XX | 🔴 | trojan | @v2ray1_ng | 2 = trojan, image-web-production-2ec53b05.up.railway.app, 443, password = 05cbf32b-7349-4497-b763-65702079929c, udp-delay = true, skip-cert-verify = false, sni = image-web-production-2ec53b05.up.railway.app, ws = false
-❔XX | 🟢 | trojan | @ConfigsHUB | 8 = trojan, 170.101.101.211, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = false, sni = api.explorecreativejobsandenhanceyourcareerportfolio.com, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 187.52.45.183, 54032, password = c76f0a11e6ba410084c745ad5e92db5f, udp-delay = true, skip-cert-verify = false, sni = flawers.shop, ws = false
+❔XX | 🔴 | trojan | @v2ray1_ng | 4 = trojan, image-web-production-2ec53b05.up.railway.app, 443, password = 05cbf32b-7349-4497-b763-65702079929c, udp-delay = true, skip-cert-verify = false, sni = image-web-production-2ec53b05.up.railway.app, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @v2ray1_ng | 2,❔XX | 🟢 | trojan | @ConfigsHUB | 8
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @v2ray1_ng | 2,❔XX | 🟢 | trojan | @ConfigsHUB | 8
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @v2ray1_ng | 2,❔XX | 🟢 | trojan | @ConfigsHUB | 8
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @v2ray1_ng | 4
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @v2ray1_ng | 4
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @v2ray1_ng | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
