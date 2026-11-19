@@ -12,12 +12,14 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 19 = ss, 82.38.31.194, 8080, encrypt-method = chacha20-ietf-poly1305, password = k1dBOmOB4oqi7Ump37a1bQ
+🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 187.52.45.183, 54032, password = c76f0a11e6ba410084c745ad5e92db5f, udp-delay = true, skip-cert-verify = false, sni = flawers.shop, ws = false
+🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16 = trojan, 151.101.56.101, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @Hope_Net | 11 = vmess, 172.67.71.160, 443, username = 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"obdii.cfd", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11
-URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11
-FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 19,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11
+MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 19,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4,🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11
+URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 19,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4,🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11
+FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 19,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4,🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16,❔XX | 🟢 | vmess | @yaney_01 | 4,🇺🇸US | 🟢 | vmess | @Hope_Net | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

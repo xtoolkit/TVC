@@ -11,11 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 193.108.119.96, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = true, ws = false
+🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 187.52.45.183, 54032, password = c76f0a11e6ba410084c745ad5e92db5f, udp-delay = true, skip-cert-verify = false, sni = flawers.shop, ws = false
+🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16 = trojan, 151.101.56.101, 443, password = MiTiVPN, udp-delay = true, skip-cert-verify = false, sni = ssl.fastly.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2
-URL-TEST = url-test,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2
-FALLBACK = fallback,🇩🇪DE | 🔴 | trojan | @oneclickvpnkeys | 2
+MANUAL = select,URL-TEST,FALLBACK,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4,🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16
+URL-TEST = url-test,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4,🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16
+FALLBACK = fallback,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4,🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
