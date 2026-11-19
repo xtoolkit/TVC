@@ -119,7 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4","type":"trojan","server":"187.52.45.183","port":54032,"udp":false,"password":"c76f0a11e6ba410084c745ad5e92db5f","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"flawers.shop"}
-  - {"name":"🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16","type":"trojan","server":"151.101.56.101","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ssl.fastly.com"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7","type":"trojan","server":"image-web-production-2ec53b05.up.railway.app","port":443,"udp":false,"password":"05cbf32b-7349-4497-b763-65702079929c","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"image-web-production-2ec53b05.up.railway.app"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -127,7 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,14 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4'
-      - '🇬🇧GB | 🔴 | trojan | @ConfigsHUB | 16'
+      - '🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
