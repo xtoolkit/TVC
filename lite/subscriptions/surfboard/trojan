@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 187.52.45.183, 54032, password = c76f0a11e6ba410084c745ad5e92db5f, udp-delay = true, skip-cert-verify = false, sni = flawers.shop, ws = false
-🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7 = trojan, image-web-production-2ec53b05.up.railway.app, 443, password = 05cbf32b-7349-4497-b763-65702079929c, udp-delay = true, skip-cert-verify = false, sni = image-web-production-2ec53b05.up.railway.app, ws = false
+🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 217.60.34.72, 59321, password = c76f0a11e6ba410084c745ad5e92db5f, udp-delay = true, skip-cert-verify = false, sni = flawers.shop, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5 = trojan, us.ctt25.uk, 443, password = 123456, udp-delay = true, skip-cert-verify = true, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7
-URL-TEST = url-test,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7
-FALLBACK = fallback,🇵🇱PL | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🔴 | trojan | @v2ray1_ng | 7
+MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5
+URL-TEST = url-test,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5
+FALLBACK = fallback,🇳🇱NL | 🔴 | trojan | @oneclickvpnkeys | 4,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
