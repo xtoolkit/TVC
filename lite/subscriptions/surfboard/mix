@@ -11,14 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | ss | @DeamNet_Proxy | 1 = ss, glance.asuscomm.com, 10099, encrypt-method = chacha20-ietf-poly1305, password = 12242
+🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 1 = ss, glance.asuscomm.com, 10099, encrypt-method = chacha20-ietf-poly1305, password = 12242
 ❔XX | 🟢 | ss | @DeamNet_Proxy | 2 = ss, 51.79.64.198, 8119, encrypt-method = aes-256-gcm, password = cdBIDV42DCwnfIN
 ❔XX | 🟢 | vmess | @yaney_01 | 4 = vmess, ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub, 80, username = 46cfcfe1-e450-459d-a3ab-9406011ab3eb, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"tms.dingtalk.com", skip-cert-verify = true, tfo = false
 ❔XX | 🟢 | vmess | @Hope_Net | 9 = vmess, uk2-full.privateip.net, 443, username = e364b787-6545-42dd-aaa4-9ee76fd21e89, ws = true, tls = 1, vmess-aead = true, ws-path = /RACEVPN, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @DeamNet_Proxy | 1,❔XX | 🟢 | ss | @DeamNet_Proxy | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9
-URL-TEST = url-test,❔XX | 🟢 | ss | @DeamNet_Proxy | 1,❔XX | 🟢 | ss | @DeamNet_Proxy | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9
-FALLBACK = fallback,❔XX | 🟢 | ss | @DeamNet_Proxy | 1,❔XX | 🟢 | ss | @DeamNet_Proxy | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9
+MANUAL = select,URL-TEST,FALLBACK,🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 1,❔XX | 🟢 | ss | @DeamNet_Proxy | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9
+URL-TEST = url-test,🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 1,❔XX | 🟢 | ss | @DeamNet_Proxy | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9
+FALLBACK = fallback,🇰🇷KR | 🟢 | ss | @DeamNet_Proxy | 1,❔XX | 🟢 | ss | @DeamNet_Proxy | 2,❔XX | 🟢 | vmess | @yaney_01 | 4,❔XX | 🟢 | vmess | @Hope_Net | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
