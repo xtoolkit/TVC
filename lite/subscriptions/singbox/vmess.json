@@ -107,9 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "❔XX | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 0",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 7",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 6",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 16",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 9",
@@ -122,9 +122,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0",
-                "❔XX | 🟢 | vmess | @mftizi | 17",
-                "❔XX | 🟢 | vmess | @DeamNet_Proxy | 0",
-                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 7",
+                "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
+                "❔XX | 🟢 | vmess | @oneclickvpnkeys | 6",
+                "❔XX | 🟢 | vmess | @ConfigsHUB | 16",
                 "❔XX | 🟢 | vmess | @yaney_01 | 4",
                 "❔XX | 🟢 | vmess | @yaney_01 | 5",
                 "❔XX | 🟢 | vmess | @Hope_Net | 9",
@@ -169,7 +169,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @mftizi | 17",
+            "tag": "🇨🇳CN | 🟢 | vmess | @mftizi | 17",
             "type": "vmess",
             "server": "183.236.51.23",
             "server_port": 53002,
@@ -186,24 +186,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vmess | @DeamNet_Proxy | 0",
-            "type": "vmess",
-            "server": "zfd-jpv2.kunlun01dns.com",
-            "server_port": 16120,
-            "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 7",
+            "tag": "❔XX | 🟢 | vmess | @oneclickvpnkeys | 6",
             "type": "vmess",
             "server": null,
             "server_port": 0,
@@ -217,6 +200,40 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vmess | @ConfigsHUB | 16",
+            "type": "vmess",
+            "server": "www.windowssearchtools.com",
+            "server_port": 443,
+            "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.windowssearchtools.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/truth",
+                "headers": {
+                    "Host": "www.windowssearchtools.com"
+                }
             }
         },
         {
