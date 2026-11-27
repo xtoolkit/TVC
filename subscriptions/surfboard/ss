@@ -11,11 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🟢 | ss | @proxy_mtm | 3 = ss, 20.166.121.63, 443, encrypt-method = chacha20-ietf-poly1305, password = RoARJLTlMJOFVIuQ
+❔XX | 🟢 | ss | @proxy_mtm | 5 = ss, 20.166.121.63, 443, encrypt-method = chacha20-ietf-poly1305, password = RoARJLTlMJOFVIuQ
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @proxy_mtm | 3
-URL-TEST = url-test,❔XX | 🟢 | ss | @proxy_mtm | 3
-FALLBACK = fallback,❔XX | 🟢 | ss | @proxy_mtm | 3
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🟢 | ss | @proxy_mtm | 5
+URL-TEST = url-test,❔XX | 🟢 | ss | @proxy_mtm | 5
+FALLBACK = fallback,❔XX | 🟢 | ss | @proxy_mtm | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

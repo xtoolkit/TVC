@@ -11,11 +11,16 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 216.152.156.49, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = false, sni = cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 0 = trojan, 193.108.119.96, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = false, sni = learn.iloverussia2026.com, ws = false
+❔XX | 🔴 | trojan | @oneclickvpnkeys | 2 = trojan, 216.152.156.49, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = false, sni = cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 2 = trojan, ipfast.kingmna.com, 443, password = Z-jckziI1rW4yrUMorrv0Q, udp-delay = true, skip-cert-verify = true, sni = cdn.akamai.steamstatic.com, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 3 = trojan, ipfast.kingmna.com, 443, password = Z-jckziI1rW4yrUMorrv0Q, udp-delay = true, skip-cert-verify = true, sni = cdn.akamai.steamstatic.com, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 4 = trojan, ipfast.kingmna.com, 443, password = Z-jckziI1rW4yrUMorrv0Q, udp-delay = true, skip-cert-verify = true, sni = cdn.akamai.steamstatic.com, ws = false
+❔XX | 🔴 | trojan | @ConfigsHUB | 5 = trojan, ipfast.kingmna.com, 443, password = Z-jckziI1rW4yrUMorrv0Q, udp-delay = true, skip-cert-verify = true, sni = cdn.akamai.steamstatic.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0
-URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0
-FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0
+MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🔴 | trojan | @ConfigsHUB | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 5
+URL-TEST = url-test,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🔴 | trojan | @ConfigsHUB | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 5
+FALLBACK = fallback,❔XX | 🔴 | trojan | @oneclickvpnkeys | 0,❔XX | 🔴 | trojan | @oneclickvpnkeys | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 2,❔XX | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🔴 | trojan | @ConfigsHUB | 4,❔XX | 🔴 | trojan | @ConfigsHUB | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
