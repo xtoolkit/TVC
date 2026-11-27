@@ -120,13 +120,15 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 4","type":"trojan","server":"167.82.76.7","port":443,"udp":false,"password":"MiTiVPN","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ssl.fastly.com"}
+  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 3","type":"trojan","server":"ipfast.kingmna.com","port":443,"udp":false,"password":"Z-jckziI1rW4yrUMorrv0Q","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"cdn.akamai.steamstatic.com"}
+  - {"name":"❔XX | 🔴 | trojan | @ConfigsHUB | 4","type":"trojan","server":"ipfast.kingmna.com","port":443,"udp":false,"password":"Z-jckziI1rW4yrUMorrv0Q","skip-cert-verify":true,"network":"tcp","client-fingerprint":"chrome","sni":"cdn.akamai.steamstatic.com"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 3'
       - '❔XX | 🔴 | trojan | @ConfigsHUB | 4'
   - name: URL-TEST
     type: url-test
@@ -134,12 +136,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 3'
       - '❔XX | 🔴 | trojan | @ConfigsHUB | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '❔XX | 🔴 | trojan | @ConfigsHUB | 3'
       - '❔XX | 🔴 | trojan | @ConfigsHUB | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
