@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-❔XX | 🔴 | trojan | @ConfigsHUB | 3 = trojan, ipfast.kingmna.com, 443, password = Z-jckziI1rW4yrUMorrv0Q, udp-delay = true, skip-cert-verify = true, sni = cdn.akamai.steamstatic.com, ws = false
-❔XX | 🔴 | trojan | @ConfigsHUB | 4 = trojan, ipfast.kingmna.com, 443, password = Z-jckziI1rW4yrUMorrv0Q, udp-delay = true, skip-cert-verify = true, sni = cdn.akamai.steamstatic.com, ws = false
+🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4 = trojan, 216.152.156.49, 443, password = 0ab6c98dae3b48e8b9c4a776b6c9c19a, udp-delay = true, skip-cert-verify = false, sni = cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,❔XX | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🔴 | trojan | @ConfigsHUB | 4
-URL-TEST = url-test,❔XX | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🔴 | trojan | @ConfigsHUB | 4
-FALLBACK = fallback,❔XX | 🔴 | trojan | @ConfigsHUB | 3,❔XX | 🔴 | trojan | @ConfigsHUB | 4
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @oneclickvpnkeys | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
